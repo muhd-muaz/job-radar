@@ -17,28 +17,6 @@
   "missing": []
  },
  {
-  "company": "Example Sdn Bhd",
-  "title": "Data Analyst (example)",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "We are looking for a Data Analyst with 1-3 years of experience.",
-  "score": 87,
-  "first_seen": "2026-10-23",
-  "matched": [
-   "dashboard",
-   "erp",
-   "etl",
-   "power bi",
-   "python",
-   "requirements gathering",
-   "sql"
-  ],
-  "missing": [
-   "airflow",
-   "dbt",
-   "stakeholder management"
-  ]
- },
- {
   "company": "AIA",
   "title": "Data Engineering, Consultant",
   "location": "Kuala Lumpur, MY-AIA Malaysia",
