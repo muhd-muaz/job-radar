@@ -14,3 +14,5 @@ URL: https://...
 ```
 
 The next daily run scores it with the rest. Delete the file when you're done with the job.
+
+Files whose name starts with `example` are ignored.

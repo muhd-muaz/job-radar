@@ -35,8 +35,11 @@ def test_word_boundaries():
     assert "erp" not in FIND("enterprise")
 
 
-def test_inbox_parsing():
-    jobs = sources.inbox(ROOT / "inbox")
-    ex = next(j for j in jobs if j["id"] == "inbox:example-data-analyst")
+def test_inbox_parsing(tmp_path):
+    (tmp_path / "example-skip.txt").write_text("Title: ignored")
+    (tmp_path / "acme-da.txt").write_text((ROOT / "inbox/example-data-analyst.txt").read_text())
+    jobs = sources.inbox(tmp_path)
+    assert [j["id"] for j in jobs] == ["inbox:acme-da"]
+    ex = jobs[0]
     assert ex["company"] == "Example Sdn Bhd"
     assert sources.in_malaysia(ex["location"])

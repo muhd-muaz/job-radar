@@ -123,6 +123,8 @@ def inbox(folder):
     Optional header lines: Title:, Company:, Location:, URL:. Everything else is the ad text."""
     jobs = []
     for f in sorted(Path(folder).glob("*.txt")):
+        if f.name.startswith("example"):
+            continue
         text = f.read_text(encoding="utf-8", errors="ignore")
         meta = dict(re.findall(r"^(title|company|location|url):\s*(.+)$", text, flags=re.I | re.M))
         meta = {k.lower(): v.strip() for k, v in meta.items()}

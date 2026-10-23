@@ -2,7 +2,6 @@
   "_note": "Public career feeds only. ats = workday | greenhouse | lever | smartrecruiters. Run `python -m jobradar check` to see which entries work.",
   "companies": [
     {"name": "Intel", "ats": "workday", "host": "intel.wd1.myworkdayjobs.com", "tenant": "intel", "site": "External"},
-    {"name": "Dell", "ats": "workday", "host": "dell.wd1.myworkdayjobs.com", "tenant": "dell", "site": "External"},
     {"name": "Micron", "ats": "workday", "host": "micron.wd1.myworkdayjobs.com", "tenant": "micron", "site": "External"},
     {"name": "Shell", "ats": "workday", "host": "shell.wd3.myworkdayjobs.com", "tenant": "shell", "site": "ShellCareers"},
     {"name": "HP", "ats": "workday", "host": "hp.wd5.myworkdayjobs.com", "tenant": "hp", "site": "ExternalCareerSite"},
@@ -13,17 +12,16 @@
     {"name": "Motorola Solutions", "ats": "workday", "host": "motorolasolutions.wd5.myworkdayjobs.com", "tenant": "motorolasolutions", "site": "Careers"},
     {"name": "NVIDIA", "ats": "workday", "host": "nvidia.wd5.myworkdayjobs.com", "tenant": "nvidia", "site": "NVIDIAExternalCareerSite"},
     {"name": "AIA", "ats": "workday", "host": "aia.wd3.myworkdayjobs.com", "tenant": "aia", "site": "External"},
-    {"name": "Western Digital", "ats": "workday", "host": "wdc.wd1.myworkdayjobs.com", "tenant": "wdc", "site": "WD_Careers"},
-    {"name": "Experian", "ats": "workday", "host": "experian.wd5.myworkdayjobs.com", "tenant": "experian", "site": "ExperianCareers"},
     {"name": "Bosch", "ats": "smartrecruiters", "slug": "BoschGroup"},
     {"name": "Visa", "ats": "smartrecruiters", "slug": "Visa"},
     {"name": "Delivery Hero / foodpanda", "ats": "smartrecruiters", "slug": "DeliveryHero"},
-    {"name": "Grab", "ats": "greenhouse", "slug": "grab"},
-    {"name": "Airwallex", "ats": "greenhouse", "slug": "airwallex"},
-    {"name": "Carousell", "ats": "greenhouse", "slug": "carousell"},
-    {"name": "Wise", "ats": "greenhouse", "slug": "wise"},
-    {"name": "ShopBack", "ats": "lever", "slug": "shopback"},
-    {"name": "Aspire", "ats": "lever", "slug": "aspire"}
+    {"name": "Wise", "ats": "greenhouse", "slug": "wise"}
   ],
-  "workday_search_terms": ["data analyst", "data engineer", "business analyst", "business intelligence", "analytics"]
+  "workday_search_terms": [
+    "data analyst",
+    "data engineer",
+    "business analyst",
+    "business intelligence",
+    "analytics"
+  ]
 }

@@ -60,8 +60,12 @@ def build(outdir, active, runs, profile, today):
     peak = max([n for _, n in top] or [1])
     bars = "".join(f'<div class="bar"><span>{_e(s)}</span><i class="{"l" if s in learning else ""}" '
                    f'style="width:{n / peak * 100:.0f}%"></i><span>{n}</span></div>' for s, n in top) or "<p>No data yet.</p>"
-    cards = []
+    cards, shown = [], set()
     for j in active:
+        key = (j["company"].lower(), j["title"].strip().lower())
+        if key in shown:  # same role posted twice
+            continue
+        shown.add(key)
         cls = "hi" if j["score"] >= 60 else "mid" if j["score"] >= 40 else "lo"
         chips = "".join(f'<span class="chip m">{_e(s)}</span>' for s in j["matched"])
         chips += "".join(f'<span class="chip x">{_e(s)}</span>' for s in j["missing"])
