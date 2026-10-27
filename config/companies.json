@@ -52,7 +52,7 @@
     {"name": "NTT DATA", "ats": "smartrecruiters", "slug": "NTTDATA"},
     {"name": "Careerjet (all MY job boards)", "ats": "careerjet", "locations": [ "Kuala Lumpur", "Selangor" ]},
     {"name": "Jooble (all MY job boards)", "ats": "jooble", "locations": [ "Kuala Lumpur", "Selangor" ]},
-    {"name": "Job alert emails", "ats": "email_alerts", "days": 4}
+    {"name": "Job alert emails", "ats": "email_alerts", "days": 10}
   ],
   "workday_search_terms": [
     "data analyst",
