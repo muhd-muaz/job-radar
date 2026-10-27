@@ -1,13 +1,35 @@
 """Writes docs/index.html (the shortlist page) and docs/jobs.json.
 The page is one static file: job data is embedded as JSON and rendered in the browser."""
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
 TEMPLATE = Path(__file__).with_name("page.html")
 
 
-def build(outdir, active, runs, profile, today):
+SALARY = re.compile(r"(?:RM|MYR)\s?(\d[\d,.]*)\s*(k)?\s*(?:-|–|to)\s*(?:RM|MYR)?\s?(\d[\d,.]*)\s*(k)?", re.I)
+
+
+def salary(text):
+    """'RM 4,000 - RM 6,000' -> 'RM 4,000 – 6,000' (monthly figures only; yearly ranges are skipped)."""
+    for m in SALARY.finditer(text or ""):
+        lo, hi = (float(v.replace(",", "")) * (1000 if k else 1) for v, k in ((m.group(1), m.group(2)), (m.group(3), m.group(4))))
+        if 1000 <= lo <= hi <= 50000:
+            return f"RM {lo:,.0f} – {hi:,.0f}"
+    return ""
+
+
+def slim(j, posts):
+    out = {k: j[k] for k in ("id", "company", "title", "location", "url", "source", "score",
+                             "first_seen", "last_seen", "matched", "missing", "learning", "projects")}
+    out["salary"] = salary(j.get("description"))
+    out["posts"] = posts.get((j["company"].lower(), j["title"].strip().lower()), 1)
+    return out
+
+
+def build(outdir, active, runs, profile, today, closed=(), posts=None):
+    posts = posts or {}
     outdir.mkdir(exist_ok=True)
     jobs, shown = [], set()
     for j in active:
@@ -15,11 +37,11 @@ def build(outdir, active, runs, profile, today):
         if key in shown:  # same role posted twice
             continue
         shown.add(key)
-        jobs.append({k: j[k] for k in ("id", "company", "title", "location", "url", "source", "score",
-                                       "first_seen", "matched", "missing", "learning", "projects")})
+        jobs.append(slim(j, posts))
     gaps = Counter(s for j in jobs for s in j["missing"]).most_common(15)
     data = {
         "today": today, "jobs": jobs, "gaps": gaps,
+        "closed": [slim(j, posts) for j in closed],
         "learning": profile.get("learning_skills", []),
         "preferred": profile.get("preferred_locations", []),
         "projects": {p["name"]: p.get("url", "") for p in profile["projects"]},

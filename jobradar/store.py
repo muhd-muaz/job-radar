@@ -36,7 +36,21 @@ def log_run(db, today, source, company, ok, n, error=""):
 
 
 def active_jobs(db, since):
-    rows = db.execute("SELECT * FROM jobs WHERE last_seen >= ? ORDER BY score DESC, first_seen DESC", (since,))
+    return _rows(db.execute("SELECT * FROM jobs WHERE last_seen >= ? ORDER BY score DESC, first_seen DESC", (since,)))
+
+
+def closed_jobs(db, since, oldest):
+    """Jobs that dropped out of their feed recently (closed or filled)."""
+    return _rows(db.execute("SELECT * FROM jobs WHERE last_seen < ? AND last_seen >= ?", (since, oldest)))
+
+
+def post_counts(db):
+    """How many separate postings each (company, title) has had: >1 means reposted."""
+    return {(c.lower(), t.strip().lower()): n for c, t, n in db.execute(
+        "SELECT company, title, COUNT(*) FROM jobs GROUP BY lower(company), lower(trim(title))")}
+
+
+def _rows(rows):
     out = []
     for r in rows:
         d = dict(r)

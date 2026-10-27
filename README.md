@@ -36,6 +36,7 @@ python -m pytest tests        # tests (needs pytest)
 |---|---|
 | `config/profile.json` | target titles, my skills and weights, skills I'm learning, my projects, seniority penalties |
 | `config/companies.json` | which companies to collect from and how |
+| `config/discovered.json` | companies found monthly from the [ats-scrapers](https://github.com/kalil0321/ats-scrapers) lists (MIT) that post jobs in Malaysia |
 | `config/skills.json` | the skill list (and spellings) used for matching and the gap report |
 
 ## Optional secrets (Settings > Secrets and variables > Actions)
@@ -45,7 +46,10 @@ python -m pytest tests        # tests (needs pytest)
 | `ALERT_IMAP_USER`, `ALERT_IMAP_PASSWORD` | reading job-alert emails (use a mailbox made only for alerts, with an app password) |
 | `CAREERJET_AFFID` | Careerjet search API |
 | `JOOBLE_KEY` | Jooble search API |
+| `NOTIFY_TO` | daily email of new strong KL/Selangor matches (sent from the alerts mailbox) |
 
 ## Data and ethics
 
 Only public, unauthenticated career-site APIs are used, at most once a day, with an identifying user agent. No scraping of LinkedIn, JobStreet or other boards, and no logged-in sessions; those jobs only arrive through the alert emails the sites send. Job descriptions are stored for scoring; the published page shows only title, company, location, link and skills.
+
+The SQLite database is kept on the `data` branch as a single commit, so the main branch's history doesn't grow every day.

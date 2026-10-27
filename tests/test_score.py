@@ -71,3 +71,15 @@ def test_full_time_entry_level_beats_contract():
     intern = score(job("Data Analyst Intern", desc), PROFILE, FIND(desc))
     assert perm["score"] >= 80
     assert contract["score"] <= 45 and intern["score"] <= 45
+
+
+def test_salary_and_notify_pick():
+    from jobradar.notify import pick
+    from jobradar.report import salary
+    assert salary("Salary RM 4,000 - RM 6,000 monthly") == "RM 4,000 – 6,000"
+    assert salary("RM 60,000 - 90,000 per annum") == ""
+    jobs = [{"first_seen": "2026-10-27", "score": 70, "location": "Kuala Lumpur"},
+            {"first_seen": "2026-10-27", "score": 70, "location": "Penang"},
+            {"first_seen": "2026-10-26", "score": 90, "location": "Kuala Lumpur"},
+            {"first_seen": "2026-10-27", "score": 50, "location": "Selangor"}]
+    assert pick(jobs, "2026-10-27", PROFILE) == [jobs[0]]

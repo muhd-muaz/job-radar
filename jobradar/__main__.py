@@ -8,7 +8,7 @@ import json
 import sys
 from pathlib import Path
 
-from . import report, sources, store
+from . import notify, report, sources, store
 from .score import build_skill_finder, score
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -25,6 +25,11 @@ def main(argv):
     today = dt.date.today().isoformat()
     (ROOT / "data").mkdir(exist_ok=True)
     db = store.connect(ROOT / "data" / "jobs.sqlite")
+
+    # monthly-discovered companies: one broad "Malaysia" search each, to keep the daily run short
+    disc = ROOT / "config" / "discovered.json"
+    if disc.exists():
+        comp["companies"] += [{**c, "terms": [""]} for c in json.loads(disc.read_text(encoding="utf-8"))["companies"]]
 
     jobs = []
     if "--offline" not in argv:
@@ -49,9 +54,17 @@ def main(argv):
     db.commit()
 
     since = (dt.date.today() - dt.timedelta(days=3)).isoformat()
+    # rescore open jobs too, so a change to profile.json applies to every job, not just new ones
+    for j in store.active_jobs(db, since):
+        store.upsert(db, j, score(j, profile, find(j["title"] + "\n" + j["description"])), j["last_seen"])
+    db.commit()
     active = store.active_jobs(db, since)
     runs = [dict(r) for r in db.execute("SELECT * FROM runs WHERE run_date = ?", (today,))]
-    report.build(ROOT / "docs", active, runs, profile, today)
+    closed = store.closed_jobs(db, since, (dt.date.today() - dt.timedelta(days=45)).isoformat())
+    posts = store.post_counts(db)
+    report.build(ROOT / "docs", active, runs, profile, today, closed, posts)
+    if "--offline" not in argv:
+        notify.send_new_matches(active, today, profile)
     print(f"{len(jobs)} collected today, {len(active)} active, report in docs/index.html")
 
 

@@ -27,7 +27,6 @@
     "process analyst": 2,
     "it analyst": 2,
     "product analyst": 2,
-    "automation": 1,
     "rpa": 1,
     "digital transformation": 1
   },
@@ -187,5 +186,8 @@
     "permanent": 5,
     "full-time": 3,
     "full time": 3
+  },
+  "language_penalty": {
+    "mandarin": 25
   }
 }

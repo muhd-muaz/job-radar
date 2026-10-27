@@ -1,0 +1,29 @@
+name: discover-companies
+
+on:
+  schedule:
+    - cron: "0 20 1 * *"   # 1st of each month, 04:00 Malaysia time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check company lists for Malaysian jobs
+        run: python -m jobradar.discover
+      - name: Commit
+        run: |
+          git config user.name "job-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/discovered.json
+          git diff --cached --quiet || git commit -m "discovered companies $(date -u +%F)"
+          git pull -q --rebase origin main
+          git push

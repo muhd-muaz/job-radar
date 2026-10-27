@@ -26,11 +26,13 @@ def score(job, profile, found):
     matched = sorted(s for s in asked if s in have)
     missing = sorted(s for s in asked if s not in have)
     skill_fit = sum(have[s] for s in matched) / max(1, sum(have[s] for s in matched) + 2 * len(missing))
+    skill_fit *= 0.6 + 0.4 * min(1, len(matched) / 4)  # an ad naming only 1-2 skills is weak evidence
     penalty = max((p for k, p in profile["seniority_penalty"].items() if k in title), default=0)
     yrs = [int(n) for n in re.findall(r"(\d{1,2})\s*\+?\s*(?:-\s*\d+\s*)?years?", job["description"].lower()) if int(n) < 20]
     if yrs and min(yrs) >= 5:
         penalty += 15
     desc = job["description"].lower()
+    penalty += sum(p for lang, p in profile.get("language_penalty", {}).items() if lang in found)
     # full-time, fresh grad to mid level: push contract / part-time roles down, lift entry-level ones
     penalty += max((p for k, p in profile.get("job_type_penalty", {}).items() if k in title), default=0) or \
         max((p for k, p in profile.get("job_type_penalty", {}).items() if k in desc[:600]), default=0) // 2

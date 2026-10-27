@@ -46,7 +46,7 @@ def title_wanted(title, targets):
 def workday(c, targets, terms):
     base = f"https://{c['host']}/wday/cxs/{c['tenant']}/{c['site']}"
     seen, jobs = set(), []
-    for term in terms:
+    for term in c.get("terms", terms):
         for offset in range(0, 100, 20):
             res = http_json(f"{base}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset,
                                              "searchText": f"{term} Malaysia"})

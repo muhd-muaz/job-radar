@@ -57,6 +57,9 @@ select{height:40px;border:1px solid var(--line);border-radius:10px;background:va
 .ring b{width:42px;height:42px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
 .title{font-weight:600;font-size:16px;line-height:1.3;text-decoration:none;letter-spacing:-.01em}
 a.title:hover{color:var(--accent)}
+.badge.warn{background:var(--warn-soft);color:var(--warn)}
+.badge.off{background:var(--surface-2);color:var(--mute)}
+.pay{color:var(--good);font-weight:600}
 .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:2px;background:var(--accent-soft);color:var(--accent)}
 .meta{font-size:13px;color:var(--mute);margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 12px}
 .meta .co{color:var(--ink-2);font-weight:500}
@@ -178,14 +181,15 @@ const tone = s => s >= 60 ? "var(--hi)" : s >= 40 ? "var(--mid)" : "var(--lo)";
 function card(j) {
   const m = marks[j.id];
   const isNew = j.first_seen === D.today;
+  const isClosed = j.closed;
   const title = j.url ? `<a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="title">${esc(j.title)}</span>`;
   const chips = j.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") +
                 j.missing.map(s => `<span class="chip gap">${esc(s)}</span>`).join("");
   const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(", ");
   return `<article class="job${m === "applied" ? " applied" : ""}">
     <div class="ring" style="--p:${j.score};--c:${tone(j.score)}"><b>${j.score}</b></div>
-    <div>${title}${isNew ? '<span class="badge">NEW</span>' : ""}
-      <div class="meta"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span><span>${esc(j.source)}</span><span>found ${age(j.first_seen)}</span></div>
+    <div>${title}${isNew ? '<span class="badge">NEW</span>' : ""}${isClosed ? '<span class="badge off">CLOSED</span>' : ""}${j.posts > 1 ? `<span class="badge warn" title="Same role posted ${j.posts} times. It may be hard to fill, or a ghost listing.">POSTED ${j.posts}×</span>` : ""}
+      <div class="meta"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span>${j.salary ? `<span class="pay">${esc(j.salary)}</span>` : ""}<span>${esc(j.source)}</span><span>found ${age(j.first_seen)}</span></div>
       ${chips ? `<div class="chips">${chips}</div>` : ""}
       ${proj ? `<div class="why">Mention: ${proj}</div>` : ""}
     </div>
@@ -206,8 +210,10 @@ function render() {
   $("#jobs").innerHTML = list.map(card).join("") || `<p class="empty">No jobs match these filters.</p>`;
   $("#count").textContent = `${list.length} of ${D.jobs.length} jobs`;
   $("#n-list").textContent = list.length;
-  const saved = D.jobs.filter(j => marks[j.id]).sort((a, b) => (marks[a.id] > marks[b.id]) - (marks[a.id] < marks[b.id]) || b.score - a.score);
+  const closed = D.closed.map(j => ({...j, closed: true}));
+  const saved = D.jobs.concat(closed).filter(j => marks[j.id]).sort((a, b) => (marks[a.id] > marks[b.id]) - (marks[a.id] < marks[b.id]) || b.score - a.score);
   $("#saved-jobs").innerHTML = saved.map(card).join("") || `<p class="empty">Nothing saved yet. Use Save or Mark applied on any job.</p>`;
+  // a saved job that left its feed shows as CLOSED for 45 days, then drops off
   $("#count-saved").textContent = saved.length ? `${saved.filter(j => marks[j.id] === "applied").length} applied, ${saved.filter(j => marks[j.id] === "saved").length} saved` : "";
   $("#n-saved").textContent = saved.length || "";
 }
