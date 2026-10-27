@@ -3,10 +3,10 @@
   "target_titles": {
     "data engineer": 3,
     "analytics engineer": 3,
-    "data analyst": 3,
-    "business analyst": 3,
-    "bi analyst": 3,
-    "business intelligence": 3,
+    "data analyst": 2,
+    "business analyst": 2,
+    "bi analyst": 2,
+    "business intelligence": 2,
     "reporting analyst": 2,
     "systems analyst": 2,
     "application support": 2,
@@ -28,7 +28,16 @@
     "it analyst": 2,
     "product analyst": 2,
     "rpa": 1,
-    "digital transformation": 1
+    "digital transformation": 1,
+    "etl developer": 3,
+    "etl": 3,
+    "data platform": 3,
+    "data integration": 3,
+    "big data": 2,
+    "database developer": 2,
+    "sql developer": 3,
+    "data warehouse": 3,
+    "pipeline": 3
   },
   "have_skills": {
     "python": 3,
@@ -129,7 +138,11 @@
     "intern": 40,
     "sr ": 20,
     "internship": 40,
-    "trainee": 15
+    "trainee": 15,
+    "vp": 35,
+    "vice president": 35,
+    "avp": 25,
+    "chief": 40
   },
   "preferred_locations": [
     "kuala lumpur",
@@ -189,6 +202,32 @@
     "full time": 3
   },
   "language_penalty": {
-    "mandarin": 25
-  }
+    "mandarin": 25,
+    "cantonese": 25,
+    "japanese": 25,
+    "korean": 25,
+    "vietnamese": 25,
+    "thai": 25,
+    "bahasa indonesia": 25,
+    "bilingual": 25
+  },
+  "learning_counts_half": true,
+  "off_track_titles": [
+    "accountant",
+    "accounting",
+    "finance",
+    "financial",
+    "audit",
+    "actuar",
+    "sales",
+    "marketing",
+    "officer",
+    "nurse",
+    "engineer, hardware",
+    "design engineer",
+    "mechanical",
+    "chemist",
+    "legal",
+    "recruit"
+  ]
 }

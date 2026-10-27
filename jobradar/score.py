@@ -25,14 +25,17 @@ def score(job, profile, found):
     asked = found - {"mandarin", "bahasa malaysia"}
     matched = sorted(s for s in asked if s in have)
     missing = sorted(s for s in asked if s not in have)
-    skill_fit = sum(have[s] for s in matched) / max(1, sum(have[s] for s in matched) + 2 * len(missing))
+    learning = set(profile.get("learning_skills", []))
+    # skills I'm actively learning count as half a gap, so data-engineering ads aren't buried
+    gap = sum(1 if s in learning and profile.get("learning_counts_half") else 2 for s in missing)
+    skill_fit = sum(have[s] for s in matched) / max(1, sum(have[s] for s in matched) + gap)
     skill_fit *= 0.6 + 0.4 * min(1, len(matched) / 4)  # an ad naming only 1-2 skills is weak evidence
     penalty = max((p for k, p in profile["seniority_penalty"].items() if k in title), default=0)
     yrs = [int(n) for n in re.findall(r"(\d{1,2})\s*\+?\s*(?:-\s*\d+\s*)?years?", job["description"].lower()) if int(n) < 20]
     if yrs and min(yrs) >= 5:
         penalty += 15
     desc = job["description"].lower()
-    penalty += sum(p for lang, p in profile.get("language_penalty", {}).items() if lang in found)
+    penalty += max((p for lang, p in profile.get("language_penalty", {}).items() if lang in title or lang in desc), default=0)
     # full-time, fresh grad to mid level: push contract / part-time roles down, lift entry-level ones
     penalty += max((p for k, p in profile.get("job_type_penalty", {}).items() if k in title), default=0) or \
         max((p for k, p in profile.get("job_type_penalty", {}).items() if k in desc[:600]), default=0) // 2
@@ -45,6 +48,11 @@ def score(job, profile, found):
         penalty -= bonus.get("elsewhere_in_malaysia", 0)
     # not full-time, or an internship: never a strong fit
     cap = 45 if any(k in title for k in list(profile.get("job_type_penalty", {})) + ["intern"]) else 100
+    # the title decides the track: no target title, or an off-track one (finance, sales...), caps the score
+    if not title_pts:
+        cap = min(cap, 50)
+    if any(k in title for k in profile.get("off_track_titles", [])) and title_pts < 3:
+        cap = min(cap, 50)
     pts = title_pts / 3 * 45 + skill_fit * 55 - penalty
     projects = [p["name"] for p in profile["projects"] if set(p["skills"]) & set(matched)]
     return {

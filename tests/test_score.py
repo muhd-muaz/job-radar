@@ -83,3 +83,11 @@ def test_salary_and_notify_pick():
             {"first_seen": "2026-10-26", "score": 90, "location": "Kuala Lumpur"},
             {"first_seen": "2026-10-27", "score": 50, "location": "Selangor"}]
     assert pick(jobs, "2026-10-27", PROFILE) == [jobs[0]]
+
+
+def test_title_decides_track():
+    desc = "SQL, Python, Power BI dashboards, ETL pipelines, data warehouse, KPI reporting."
+    de = score(job("Data Engineer", desc), PROFILE, FIND(desc))
+    acct = score(job("Financial Reporting Accountant", desc), PROFILE, FIND(desc))
+    other = score(job("Enterprise Resiliency Officer", desc), PROFILE, FIND(desc))
+    assert de["score"] >= 80 and acct["score"] <= 50 and other["score"] <= 50
