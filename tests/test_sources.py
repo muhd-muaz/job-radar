@@ -32,3 +32,22 @@ def test_greenhouse(monkeypatch):
     ]})
     jobs = sources.greenhouse({"name": "G", "slug": "g"}, TARGETS, [])
     assert len(jobs) == 1 and jobs[0]["description"] == "Python"
+
+
+def test_alert_email_parsing():
+    body = '''<table><tr><td><a href="https://www.jobstreet.com.my/job/123?ref=alert">Data Analyst</a>
+    <p>Acme Sdn Bhd</p><p>Petaling Jaya, Selangor</p></td></tr>
+    <tr><td><a href="https://x/unsubscribe">Unsubscribe</a></td></tr>
+    <tr><td><a href="https://www.jobstreet.com.my/job/456">Chef de Partie</a></td></tr></table>'''
+    jobs = sources.parse_alert_html(body, "jobstreet", TARGETS)
+    assert len(jobs) == 1
+    j = jobs[0]
+    assert (j["title"], j["company"], j["location"]) == ("Data Analyst", "Acme Sdn Bhd", "Petaling Jaya, Selangor")
+    assert j["url"].startswith("https://www.jobstreet.com.my/job/123")
+
+
+def test_missing_key_is_skipped(monkeypatch):
+    monkeypatch.delenv("JOOBLE_KEY", raising=False)
+    import pytest
+    with pytest.raises(sources.Skip):
+        sources.jooble({"name": "J"}, TARGETS, ["data"])

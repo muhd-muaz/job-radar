@@ -1,0 +1,4 @@
+PASTE JOB ADS BELOW THE LINE. Old or new, as many as you like.
+Put a line with --- between ads (or start each ad with its link). The daily run reads everything,
+removes duplicates, files the ads away and empties this file again.
+==================== PASTE BELOW ====================

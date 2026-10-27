@@ -35,11 +35,30 @@ def test_word_boundaries():
     assert "erp" not in FIND("enterprise")
 
 
-def test_inbox_parsing(tmp_path):
-    (tmp_path / "example-skip.txt").write_text("Title: ignored")
-    (tmp_path / "acme-da.txt").write_text((ROOT / "inbox/example-data-analyst.txt").read_text())
-    jobs = sources.inbox(tmp_path)
-    assert [j["id"] for j in jobs] == ["inbox:acme-da"]
-    ex = jobs[0]
-    assert ex["company"] == "Example Sdn Bhd"
-    assert sources.in_malaysia(ex["location"])
+def test_inbox_dump(tmp_path):
+    inbox, archive = tmp_path / "inbox", tmp_path / "data" / "pasted.jsonl"
+    inbox.mkdir()
+    ad1 = (ROOT / "tests/fixtures/ad-with-headers.txt").read_text()
+    ad2 = """Business Analyst
+Contoso Bhd
+Shah Alam, Selangor
+We need someone to gather business requirements, run UAT and build Power BI dashboards. SQL is a plus."""
+    ad3 = """https://www.jobstreet.com.my/job/999
+Data Engineer
+Fabrikam Sdn Bhd
+Cyberjaya
+Build ETL pipelines in Python and Airflow on AWS. 2 years of experience."""
+    (inbox / "dump.txt").write_text(sources.DUMP_HEADER + ad1 + "\n---\n" + ad2 + "\n\n" + ad3 + "\n---\n" + ad2)
+    jobs = sources.inbox(inbox, archive, today="2026-10-27")
+    assert sorted(j["title"] for j in jobs) == ["Business Analyst", "Data Analyst (example)", "Data Engineer"]
+    de = next(j for j in jobs if j["title"] == "Data Engineer")
+    assert (de["company"], de["location"], de["url"]) == ("Fabrikam Sdn Bhd", "Cyberjaya", "https://www.jobstreet.com.my/job/999")
+    ba = next(j for j in jobs if j["title"] == "Business Analyst")
+    assert (ba["company"], ba["location"]) == ("Contoso Bhd", "Shah Alam, Selangor")
+    # dump is emptied, and pasting the same ad again adds nothing
+    assert (inbox / "dump.txt").read_text() == sources.DUMP_HEADER
+    (inbox / "dump.txt").write_text(ad2)
+    assert len(sources.inbox(inbox, archive, today="2026-10-28")) == 3
+    # ads older than 30 days drop off the list but stay archived
+    assert sources.inbox(inbox, archive, today="2026-12-15") == []
+    assert len(archive.read_text().splitlines()) == 3

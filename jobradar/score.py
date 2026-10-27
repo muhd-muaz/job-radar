@@ -30,6 +30,12 @@ def score(job, profile, found):
     yrs = [int(n) for n in re.findall(r"(\d{1,2})\s*\+?\s*(?:-\s*\d+\s*)?years?", job["description"].lower()) if int(n) < 20]
     if yrs and min(yrs) >= 5:
         penalty += 15
+    loc = job.get("location", "").lower()
+    bonus = profile.get("location_bonus", {})
+    if any(w in loc for w in profile.get("preferred_locations", [])):
+        penalty -= bonus.get("preferred", 0)
+    elif any(w in loc for w in ("penang", "pulau pinang", "johor", "kedah", "kulim", "melaka", "sabah", "sarawak", "ipoh", "perak")):
+        penalty -= bonus.get("elsewhere_in_malaysia", 0)
     pts = title_pts / 3 * 45 + skill_fit * 55 - penalty
     projects = [p["name"] for p in profile["projects"] if set(p["skills"]) & set(matched)]
     return {

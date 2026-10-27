@@ -7,11 +7,11 @@ A small daily pipeline that finds data analyst, business analyst and data engine
 ## What it does
 
 1. **Collects** postings from public career feeds (Workday, Greenhouse, Lever, SmartRecruiters) for a list of target companies, keeping only Malaysia-based roles with relevant titles.
-2. **Adds** job ads I paste by hand into [`inbox/`](inbox/) (for sites like JobStreet and LinkedIn, which don't allow scraping).
-3. **Scores** each job 0-100: title fit, how many of the requested skills I have, and a penalty for senior roles or 5+ years of experience.
+2. **Adds** jobs from sites that don't allow scraping (JobStreet, LinkedIn, Hiredly, Maukerja) two ways: their own job-alert emails, read from a dedicated mailbox, and ads I paste into [`inbox/dump.txt`](inbox/dump.txt). Optional aggregator APIs (Careerjet, Jooble) switch on when a key is set.
+3. **Scores** each job 0-100: title fit, how many of the requested skills I have, a bonus for Kuala Lumpur / Selangor, and a penalty for senior roles or 5+ years of experience.
 4. **Finds skill gaps**: counts which skills employers ask for that I don't list yet, so I know what to learn next.
 5. **Suggests projects** to mention in each application, based on the skills the ad asks for.
-6. **Publishes** a static page to GitHub Pages and keeps history in SQLite, every morning via GitHub Actions.
+6. **Publishes** a static page (filters, save / applied tracking, skills-to-learn chart, source status) to GitHub Pages and keeps history in SQLite, every morning via GitHub Actions.
 
 ```
 career feeds ─┐
@@ -38,6 +38,14 @@ python -m pytest tests        # tests (needs pytest)
 | `config/companies.json` | which companies to collect from and how |
 | `config/skills.json` | the skill list (and spellings) used for matching and the gap report |
 
+## Optional secrets (Settings > Secrets and variables > Actions)
+
+| Secret | Turns on |
+|---|---|
+| `ALERT_IMAP_USER`, `ALERT_IMAP_PASSWORD` | reading job-alert emails (use a mailbox made only for alerts, with an app password) |
+| `CAREERJET_AFFID` | Careerjet search API |
+| `JOOBLE_KEY` | Jooble search API |
+
 ## Data and ethics
 
-Only public, unauthenticated career-site APIs are used, at most once a day, with an identifying user agent. No LinkedIn or JobStreet scraping. Job descriptions are stored for scoring; the published page shows only title, company, location, link and skills.
+Only public, unauthenticated career-site APIs are used, at most once a day, with an identifying user agent. No scraping of LinkedIn, JobStreet or other boards, and no logged-in sessions; those jobs only arrive through the alert emails the sites send. Job descriptions are stored for scoring; the published page shows only title, company, location, link and skills.

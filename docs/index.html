@@ -1,43 +1,260 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Job Radar</title>
+<meta name="description" content="Data, BA and BI jobs in Kuala Lumpur and Selangor, scored daily against my skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#1c1e21;--mute:#667085;--line:#e4e7ec;--acc:#2563eb;--good:#16a34a;--warn:#d97706;--bad:#dc2626}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b21;--ink:#e6e8eb;--mute:#98a2b3;--line:#2a2f37;--acc:#60a5fa}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:1100px;margin:0 auto;padding:24px 16px}h1{margin:0 0 4px;font-size:26px}h2{font-size:17px;margin:28px 0 10px}
-.sub{color:var(--mute);margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.card b{display:block;font-size:26px}
-.card span{color:var(--mute);font-size:13px}.bars{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
-.bar{display:grid;grid-template-columns:150px 1fr 40px;gap:10px;align-items:center;margin:5px 0;font-size:14px}
-.bar i{display:block;height:10px;border-radius:5px;background:var(--warn)}.bar i.l{background:var(--acc)}
-input{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-size:15px;margin-bottom:10px}
-.job{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:56px 1fr;gap:14px}
-.sc{font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:8px 0;background:var(--bg)}
-.hi{color:var(--good)}.mid{color:var(--warn)}.lo{color:var(--mute)}
-.job a{color:var(--ink);font-weight:600;text-decoration:none}.job a:hover{color:var(--acc)}
-.meta{color:var(--mute);font-size:13px}.chips{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px}
-.chip{font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid var(--line)}.chip.m{border-color:var(--good);color:var(--good)}
-.chip.x{border-color:var(--warn);color:var(--warn)}.chip.p{border-color:var(--acc);color:var(--acc)}.new{color:var(--acc);font-size:12px;font-weight:700}
-footer{color:var(--mute);font-size:13px;margin-top:30px}footer a{color:var(--mute)}
-@media (max-width:560px){.bar{grid-template-columns:110px 1fr 30px}}
-</style></head><body><main>
-<h1>Job Radar</h1>
-<p class="sub">Data analyst, BA and data engineering roles in Malaysia, collected from public career feeds and scored against my skills. Updated 2026-10-26.</p>
-<div class="cards">
-<div class="card"><b>27</b><span>open matches</span></div>
-<div class="card"><b>0</b><span>new today</span></div>
-<div class="card"><b>11</b><span>score 60+</span></div>
-<div class="card"><b>15/15</b><span>feeds working today</span></div>
-</div>
-<h2>Skills employers ask for that I don't list yet</h2>
-<div class="bars"><div class="bar"><span>stakeholder management</span><i class="" style="width:100%"></i><span>15</span></div><div class="bar"><span>uat</span><i class="" style="width:80%"></i><span>12</span></div><div class="bar"><span>data quality</span><i class="" style="width:53%"></i><span>8</span></div><div class="bar"><span>data modeling</span><i class="" style="width:33%"></i><span>5</span></div><div class="bar"><span>tableau</span><i class="l" style="width:33%"></i><span>5</span></div><div class="bar"><span>process mapping</span><i class="" style="width:33%"></i><span>5</span></div><div class="bar"><span>bigquery</span><i class="" style="width:27%"></i><span>4</span></div><div class="bar"><span>dbt</span><i class="l" style="width:27%"></i><span>4</span></div><div class="bar"><span>looker</span><i class="" style="width:27%"></i><span>4</span></div><div class="bar"><span>agile</span><i class="" style="width:27%"></i><span>4</span></div><div class="bar"><span>jira</span><i class="" style="width:27%"></i><span>4</span></div><div class="bar"><span>azure</span><i class="l" style="width:20%"></i><span>3</span></div></div>
-<p class="meta">Blue = already learning. Count = open matches that mention the skill.</p>
-<h2>Shortlist</h2>
-<input id="q" placeholder="Filter by title, company or skill">
-<div id="list"><div class="job"><div class="sc hi">100</div><div><a href="https://jobs.smartrecruiters.com/BoschGroup/744000140613329-business-analyst-finance-financial-planning-and-analysis-" target="_blank" rel="noopener">Business Analyst - Finance (Financial Planning and Analysis)</a><div class="meta">Bosch · Bayan Lepas, Malaysia · smartrecruiters · seen since 2026-10-23</div><div class="chips"><span class="chip m">dashboard</span><span class="chip m">erp</span><span class="chip m">excel</span><span class="chip m">kpi</span><span class="chip m">power bi</span><span class="chip m">power query</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">75</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Data-Engineering--Consultant_JR-68096" target="_blank" rel="noopener">Data Engineering, Consultant</a><div class="meta">AIA · Kuala Lumpur, MY-AIA Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">data pipeline</span><span class="chip m">etl</span><span class="chip m">git</span><span class="chip m">python</span><span class="chip m">requirements gathering</span><span class="chip m">rest api</span><span class="chip m">sql</span><span class="chip x">azure</span><span class="chip x">ci/cd</span><span class="chip x">data modeling</span><span class="chip x">databricks</span><span class="chip x">kafka</span><span class="chip x">spark</span><span class="chip x">stakeholder management</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">73</div><div><a href="https://jobs.smartrecruiters.com/DeliveryHero/744000151531499-data-analyst-quick-commerce-partnerships-" target="_blank" rel="noopener">Data Analyst (Quick Commerce &amp; Partnerships) </a><div class="meta">Delivery Hero / foodpanda · Kuala Lumpur, Malaysia · smartrecruiters · seen since 2026-10-23</div><div class="chips"><span class="chip m">automation</span><span class="chip m">dashboard</span><span class="chip m">data visualization</span><span class="chip m">excel</span><span class="chip m">kpi</span><span class="chip m">sql</span><span class="chip m">statistics</span><span class="chip x">bigquery</span><span class="chip x">data modeling</span><span class="chip x">data quality</span><span class="chip x">dbt</span><span class="chip x">looker</span><span class="chip x">stakeholder management</span><span class="chip x">tableau</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">72</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Business-Analyst---User-Acceptance-Testing--Hong-Kong-Market-_JR-63770" target="_blank" rel="noopener">Business Analyst &amp; User Acceptance Testing (Hong Kong Market)</a><div class="meta">AIA · Putrajaya, MY-AIA Shared Services Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">71</div><div><a href="https://jobs.smartrecruiters.com/BoschGroup/744000156772019-senior-data-engineer" target="_blank" rel="noopener">Senior Data Engineer</a><div class="meta">Bosch · Batu Kawan, Malaysia · smartrecruiters · seen since 2026-10-23</div><div class="chips"><span class="chip m">data pipeline</span><span class="chip m">data visualization</span><span class="chip m">etl</span><span class="chip m">sql</span><span class="chip x">data quality</span><span class="chip x">data warehouse</span><span class="chip x">spark</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: Job radar (this project)</span></div></div></div><div class="job"><div class="sc hi">70</div><div><a href="https://iqvia.wd1.myworkdayjobs.com/IQVIA/job/Wilayah-Persekutuan-Kuala-Lumpur-Malaysia/Business-Operations-Analyst_R1567216" target="_blank" rel="noopener">Business Operations Analyst (6 months contract)</a><div class="meta">IQVIA · Wilayah Persekutuan Kuala Lumpur, Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">excel</span></div></div></div><div class="job"><div class="sc hi">64</div><div><a href="https://jobs.smartrecruiters.com/DeliveryHero/744000156703519-senior-data-analyst-quick-commerce-" target="_blank" rel="noopener">Senior Data Analyst (Quick Commerce) </a><div class="meta">Delivery Hero / foodpanda · Kuala Lumpur, Malaysia · smartrecruiters · seen since 2026-10-23</div><div class="chips"><span class="chip m">automation</span><span class="chip m">dashboard</span><span class="chip m">data visualization</span><span class="chip m">kpi</span><span class="chip m">python</span><span class="chip m">sql</span><span class="chip m">statistics</span><span class="chip x">airflow</span><span class="chip x">bigquery</span><span class="chip x">data modeling</span><span class="chip x">dbt</span><span class="chip x">looker</span><span class="chip x">stakeholder management</span><span class="chip x">tableau</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">63</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist-Business-Analyst---UAT--SG-Market-_JR-69017" target="_blank" rel="noopener">Specialist-Business Analyst &amp; UAT (SG Market)</a><div class="meta">AIA · Putrajaya, MY-AIA Shared Services Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">62</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Actuarial-and-Finance-ETL-Application-Support_JR-69700-1" target="_blank" rel="noopener">Lead Analyst, Actuarial and Finance ETL Application Support</a><div class="meta">AIA · Kuala Lumpur, AIA Digital+ Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">automation</span><span class="chip m">data pipeline</span><span class="chip m">etl</span><span class="chip m">sql</span><span class="chip x">stakeholder management</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc hi">61</div><div><a href="https://jobs.smartrecruiters.com/DeliveryHero/744000153398719-senior-data-analyst-finance-" target="_blank" rel="noopener">Senior Data Analyst (Finance)</a><div class="meta">Delivery Hero / foodpanda · Kuala Lumpur, Malaysia · smartrecruiters · seen since 2026-10-23</div><div class="chips"><span class="chip m">automation</span><span class="chip m">dashboard</span><span class="chip m">data visualization</span><span class="chip m">python</span><span class="chip m">sql</span><span class="chip m">statistics</span><span class="chip x">a/b testing</span><span class="chip x">airflow</span><span class="chip x">bigquery</span><span class="chip x">data modeling</span><span class="chip x">dbt</span><span class="chip x">looker</span><span class="chip x">stakeholder management</span><span class="chip x">tableau</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">59</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Malaysia/Technical-Business-Analyst--Analyst_JR-68529" target="_blank" rel="noopener">Technical Business Analyst, Analyst</a><div class="meta">AIA · Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">agile</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">55</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Data-Engineer_JR-69839-1" target="_blank" rel="noopener">Intern, Data Engineer</a><div class="meta">AIA · Kuala Lumpur, AIA Digital+ Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">data pipeline</span><span class="chip m">etl</span><span class="chip m">git</span><span class="chip m">python</span><span class="chip m">requirements gathering</span><span class="chip m">rest api</span><span class="chip m">sql</span><span class="chip x">agile</span><span class="chip x">data quality</span><span class="chip x">databricks</span><span class="chip x">spark</span><span class="chip x">stakeholder management</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">55</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Manager---Risk-Management-Business-Analyst_JR-60602" target="_blank" rel="noopener">Manager - Risk Management Business Analyst</a><div class="meta">AIA · Putrajaya, MY-AIA Shared Services Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">automation</span><span class="chip m">dashboard</span><span class="chip m">data visualization</span><span class="chip m">kpi</span><span class="chip m">machine learning</span><span class="chip m">power bi</span><span class="chip m">python</span><span class="chip m">sql</span><span class="chip m">statistics</span><span class="chip x">data quality</span><span class="chip x">tableau</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">54</div><div><a href="https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Business-Operations-Analyst_3168838-1" target="_blank" rel="noopener">Business Operations Analyst</a><div class="meta">HP · Batu Kawan, Pulau Pinang (Penang), Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">erp</span><span class="chip m">kpi</span><span class="chip x">process mapping</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">54</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist---Data-Scientist_JR-66156" target="_blank" rel="noopener">Specialist - Data Scientist</a><div class="meta">AIA · Putrajaya, MY-AIA Shared Services Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">automation</span><span class="chip m">data pipeline</span><span class="chip x">stakeholder management</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">53</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Associate-Business-Analyst--HK-Market-_JR-66373" target="_blank" rel="noopener">Senior Associate-Business Analyst (HK Market)</a><div class="meta">AIA · Putrajaya, MY-AIA Shared Services Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">50</div><div><a href="https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Sales-Operations-Analyst_JR0286156" target="_blank" rel="noopener">Sales Operations Analyst</a><div class="meta">Intel · Malaysia, Penang · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">data visualization</span><span class="chip m">erp</span><span class="chip m">excel</span><span class="chip x">data quality</span><span class="chip x">jira</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">48</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Business-Analyst--Specialist_JR-69947" target="_blank" rel="noopener">Business Analyst, Specialist</a><div class="meta">AIA · Kuala Lumpur, MY-AIA Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc mid">45</div><div><a href="https://wd1.myworkdaysite.com/recruiting/parexel/Parexel_External_Careers/job/Malaysia-Petaling-Jaya/clinical-Data-Analyst-I_R0000047186-1" target="_blank" rel="noopener">Clinical Data Analyst I</a><div class="meta">Parexel · Malaysia-Petaling Jaya · workday · seen since 2026-10-23</div><div class="chips"><span class="chip x">data quality</span><span class="chip x">gcp</span><span class="chip x">sas</span><span class="chip x">uat</span></div></div></div><div class="job"><div class="sc lo">39</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Business-Analyst_JR-69468" target="_blank" rel="noopener">Lead Analyst, Business Analyst</a><div class="meta">AIA · Kuala Lumpur, AIA Digital+ Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">azure</span><span class="chip x">jira</span><span class="chip x">process mapping</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc lo">38</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Manager---Operational-Risk-Management_JR-37965" target="_blank" rel="noopener">Senior Business Analyst - Operational Risk Management System Support</a><div class="meta">AIA · Putrajaya, MY-AIA Shared Services Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip x">process mapping</span><span class="chip x">uat</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc lo">33</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Enterprise-Platform-Transformation_JR-69465-1" target="_blank" rel="noopener">Assistant Manager, Enterprise Platform Transformation</a><div class="meta">AIA · Kuala Lumpur, AIA Digital+ Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">kpi</span><span class="chip m">machine learning</span><span class="chip m">requirements gathering</span><span class="chip m">rest api</span><span class="chip x">agile</span><span class="chip x">jira</span><span class="chip x">process mapping</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc lo">23</div><div><a href="https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Enterprise-Solutions_JR-68261-2" target="_blank" rel="noopener">Intern, Enterprise Solutions</a><div class="meta">AIA · Kuala Lumpur, AIA Digital+ Malaysia · workday · seen since 2026-10-23</div><div class="chips"><span class="chip m">requirements gathering</span><span class="chip m">sql</span><span class="chip x">agile</span><span class="chip x">azure</span><span class="chip x">jira</span><span class="chip x">stakeholder management</span><span class="chip x">uat</span><span class="chip p">show: Lift breakdown analytics</span><span class="chip p">show: ERP automation (Exact Synergy REST)</span></div></div></div><div class="job"><div class="sc lo">20</div><div><a href="https://wd1.myworkdaysite.com/recruiting/parexel/Parexel_External_Careers/job/Malaysia-Petaling-Jaya/Clinical-Data-Analyst-Intern-2027_R0000047177" target="_blank" rel="noopener">Clinical Data Analyst Intern 2027</a><div class="meta">Parexel · Malaysia-Petaling Jaya · workday · seen since 2026-10-23</div><div class="chips"><span class="chip x">data quality</span><span class="chip x">gcp</span><span class="chip x">sas</span><span class="chip x">uat</span></div></div></div></div>
-<footer>Built with Python + SQLite, runs daily on GitHub Actions. Sources: public Workday, Greenhouse, Lever and SmartRecruiters feeds, plus ads pasted by hand. Source code: <a href="https://github.com/muhd-muaz/job-radar">github.com/muhd-muaz/job-radar</a></footer>
-</main><script>
-const q=document.getElementById('q'),jobs=[...document.querySelectorAll('.job')];
-q.addEventListener('input',()=>{const t=q.value.toLowerCase();jobs.forEach(j=>j.style.display=j.textContent.toLowerCase().includes(t)?'':'none')});
-</script></body></html>
+:root{
+  --bg:#f5f6f8;--surface:#fff;--surface-2:#f0f2f5;--ink:#111418;--ink-2:#4a5260;--mute:#7b8494;--line:#e3e6eb;
+  --accent:#2f5bea;--accent-soft:#e8eefd;--good:#14915a;--good-soft:#e3f5ec;--warn:#b86a00;--warn-soft:#fdf1df;
+  --hi:#14915a;--mid:#c27c0e;--lo:#9aa2af;--shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d0f13;--surface:#161a20;--surface-2:#1d222a;--ink:#eceff3;--ink-2:#b7bfcb;--mute:#8590a0;--line:#272d36;
+  --accent:#7b9cff;--accent-soft:#1f2940;--good:#4cc68a;--good-soft:#16302a;--warn:#f0a640;--warn-soft:#33281a;
+  --hi:#4cc68a;--mid:#f0a640;--lo:#5d6675;--shadow:none}}
+:root[data-theme="dark"]{
+  --bg:#0d0f13;--surface:#161a20;--surface-2:#1d222a;--ink:#eceff3;--ink-2:#b7bfcb;--mute:#8590a0;--line:#272d36;
+  --accent:#7b9cff;--accent-soft:#1f2940;--good:#4cc68a;--good-soft:#16302a;--warn:#f0a640;--warn-soft:#33281a;
+  --hi:#4cc68a;--mid:#f0a640;--lo:#5d6675;--shadow:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:32px 0 8px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:30px;line-height:1.15;margin:6px 0 6px;letter-spacing:-.02em}
+.lede{color:var(--ink-2);margin:0;max-width:620px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 4px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:24px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--mute)}
+nav.tabs{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:18px}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tab{appearance:none;border:0;background:none;color:var(--mute);font:inherit;font-weight:600;font-size:14px;padding:12px 12px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tab .n{font-weight:500;color:var(--mute);margin-left:4px}
+section{display:none;padding:18px 0 40px}section.on{display:block}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.search{flex:1 1 240px;position:relative}
+.search input{width:100%;height:40px;padding:0 12px 0 36px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.search input:focus{outline:2px solid var(--accent-soft);border-color:var(--accent)}
+.search svg{position:absolute;left:11px;top:11px;width:18px;height:18px;color:var(--mute)}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:10px;padding:3px}
+.seg button{appearance:none;border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--mute);padding:7px 11px;border-radius:8px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+select{height:40px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:13.5px;padding:0 10px}
+.count{font-size:13px;color:var(--mute);margin:0 0 10px}
+.job{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:10px;box-shadow:var(--shadow);transition:border-color .15s}
+.job:hover{border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.job.applied{opacity:.6}
+.ring{--p:0;--c:var(--lo);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--surface-2) 0)}
+.ring b{width:42px;height:42px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.title{font-weight:600;font-size:16px;line-height:1.3;text-decoration:none;letter-spacing:-.01em}
+a.title:hover{color:var(--accent)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:2px;background:var(--accent-soft);color:var(--accent)}
+.meta{font-size:13px;color:var(--mute);margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.meta .co{color:var(--ink-2);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.chip{font-size:12px;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+.chip.have{background:var(--good-soft);color:var(--good)}
+.chip.gap{background:var(--warn-soft);color:var(--warn)}
+.why{font-size:12.5px;color:var(--mute);margin-top:8px}
+.why a{color:var(--accent);text-decoration:none}
+.actions{display:flex;flex-direction:column;gap:6px}
+.btn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:13px;font-weight:600;padding:7px 12px;border-radius:9px;cursor:pointer;text-decoration:none;text-align:center;white-space:nowrap}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn[aria-pressed="true"]{background:var(--good-soft);border-color:transparent;color:var(--good)}
+.empty{text-align:center;color:var(--mute);padding:40px 0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.panel h2{font-size:16px;margin:0 0 4px}.panel p.sub{color:var(--mute);font-size:13px;margin:0 0 14px}
+.bar{display:grid;grid-template-columns:160px 1fr 34px;gap:12px;align-items:center;padding:6px 0;font-size:14px}
+.bar .track{height:8px;border-radius:4px;background:var(--surface-2);overflow:hidden}
+.bar .fill{height:100%;border-radius:4px;background:var(--warn)}
+.bar .fill.l{background:var(--accent)}
+.bar .num{text-align:right;color:var(--mute);font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--mute);margin-top:12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+td.r{text-align:right;font-variant-numeric:tabular-nums}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;background:var(--good)}
+.dot.bad{background:#d64545}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--mute);font-size:13px}
+footer a{color:var(--ink-2)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.theme{font-size:12px;padding:5px 10px;color:var(--mute)}
+@media (max-width:640px){
+  h1{font-size:25px}.stats{grid-template-columns:repeat(2,1fr)}
+  .job{grid-template-columns:44px 1fr;gap:12px;padding:14px}
+  .ring{width:44px;height:44px}.ring b{width:36px;height:36px;font-size:13px}
+  .actions{grid-column:1/-1;flex-direction:row}.actions .btn{flex:1}
+  .bar{grid-template-columns:110px 1fr 28px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top"><div class="eyebrow">Job Radar · Kuala Lumpur &amp; Selangor</div>
+  <button class="btn theme" id="theme" aria-label="Switch light or dark mode">Dark / light</button></div>
+  <h1>Data &amp; BA roles, ranked by fit</h1>
+  <p class="lede">Collected every morning from company career feeds and job-alert emails, then scored against my skills: Python, SQL, data pipelines, dashboards and ERP automation.</p>
+  <div class="stats">
+    <div class="stat"><b id="s-open">0</b><span>open matches</span></div>
+    <div class="stat"><b id="s-new">0</b><span>new today</span></div>
+    <div class="stat"><b id="s-strong">0</b><span>strong fit (60+)</span></div>
+    <div class="stat"><b id="s-local">0</b><span>in KL / Selangor</span></div>
+  </div>
+</div></header>
+
+<nav class="tabs"><div class="wrap" role="tablist">
+  <button class="tab" role="tab" data-tab="list" aria-selected="true">Shortlist<span class="n" id="n-list"></span></button>
+  <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved &amp; applied<span class="n" id="n-saved"></span></button>
+  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills to learn</button>
+  <button class="tab" role="tab" data-tab="feeds" aria-selected="false">Sources</button>
+</div></nav>
+
+<main class="wrap">
+<section id="list" class="on">
+  <div class="toolbar">
+    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search title, company or skill" aria-label="Search"></label>
+    <div class="seg" id="where">
+      <button data-v="local" aria-pressed="true">KL &amp; Selangor</button>
+      <button data-v="all" aria-pressed="false">All Malaysia</button>
+    </div>
+    <select id="min" aria-label="Minimum score">
+      <option value="0">Any score</option><option value="40" selected>Score 40+</option><option value="60">Score 60+</option>
+    </select>
+    <select id="sort" aria-label="Sort">
+      <option value="score">Best fit</option><option value="new">Newest</option><option value="company">Company</option>
+    </select>
+  </div>
+  <p class="count" id="count"></p>
+  <div id="jobs"></div>
+</section>
+
+<section id="saved"><p class="count" id="count-saved"></p><div id="saved-jobs"></div></section>
+
+<section id="skills"><div class="panel">
+  <h2>Skills employers ask for that I don't list yet</h2>
+  <p class="sub">Count of open matches that mention each skill. Learning these widens the pool most.</p>
+  <div id="bars"></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>Already learning</span><span><i style="background:var(--warn)"></i>Not started</span></div>
+</div></section>
+
+<section id="feeds"><div class="panel">
+  <h2>Sources checked today</h2>
+  <p class="sub">Public career feeds only. JobStreet, LinkedIn, Hiredly and Maukerja jobs arrive through their own job-alert emails.</p>
+  <table><thead><tr><th>Source</th><th class="r">Jobs</th></tr></thead><tbody id="feed-rows"></tbody></table>
+</div></section>
+</main>
+
+<footer><div class="wrap">Python + SQLite pipeline, runs daily on GitHub Actions. Saved and applied marks stay in this browser only.
+  Code: <a href="https://github.com/muhd-muaz/job-radar">github.com/muhd-muaz/job-radar</a></div></footer>
+
+<script>
+const D = {"today": "2026-10-27", "jobs": [{"id": "sr:BoschGroup:744000140613329", "company": "Bosch", "title": "Business Analyst - Finance (Financial Planning and Analysis)", "location": "Bayan Lepas, Malaysia", "url": "https://jobs.smartrecruiters.com/BoschGroup/744000140613329-business-analyst-finance-financial-planning-and-analysis-", "source": "smartrecruiters", "score": 100, "first_seen": "2026-10-23", "matched": ["dashboard", "erp", "excel", "kpi", "power bi", "power query"], "missing": [], "learning": [], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-68096", "company": "AIA", "title": "Data Engineering, Consultant", "location": "Kuala Lumpur, MY-AIA Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Data-Engineering--Consultant_JR-68096", "source": "workday", "score": 83, "first_seen": "2026-10-23", "matched": ["data pipeline", "etl", "git", "python", "requirements gathering", "rest api", "sql"], "missing": ["azure", "ci/cd", "data modeling", "databricks", "kafka", "spark", "stakeholder management"], "learning": ["azure", "databricks", "spark"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "sr:DeliveryHero:744000151531499", "company": "Delivery Hero / foodpanda", "title": "Data Analyst (Quick Commerce & Partnerships) ", "location": "Kuala Lumpur, Malaysia", "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000151531499-data-analyst-quick-commerce-partnerships-", "source": "smartrecruiters", "score": 81, "first_seen": "2026-10-23", "matched": ["automation", "dashboard", "data visualization", "excel", "kpi", "sql", "statistics"], "missing": ["bigquery", "data modeling", "data quality", "dbt", "looker", "stakeholder management", "tableau"], "learning": ["dbt", "tableau"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-63770", "company": "AIA", "title": "Business Analyst & User Acceptance Testing (Hong Kong Market)", "location": "Putrajaya, MY-AIA Shared Services Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Business-Analyst---User-Acceptance-Testing--Hong-Kong-Market-_JR-63770", "source": "workday", "score": 80, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["uat"], "learning": [], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "wd:iqvia:R1567216", "company": "IQVIA", "title": "Business Operations Analyst (6 months contract)", "location": "Wilayah Persekutuan Kuala Lumpur, Malaysia", "url": "https://iqvia.wd1.myworkdayjobs.com/IQVIA/job/Wilayah-Persekutuan-Kuala-Lumpur-Malaysia/Business-Operations-Analyst_R1567216", "source": "workday", "score": 78, "first_seen": "2026-10-23", "matched": ["excel"], "missing": [], "learning": [], "projects": []}, {"id": "sr:DeliveryHero:744000156703519", "company": "Delivery Hero / foodpanda", "title": "Senior Data Analyst (Quick Commerce) ", "location": "Kuala Lumpur, Malaysia", "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000156703519-senior-data-analyst-quick-commerce-", "source": "smartrecruiters", "score": 72, "first_seen": "2026-10-23", "matched": ["automation", "dashboard", "data visualization", "kpi", "python", "sql", "statistics"], "missing": ["airflow", "bigquery", "data modeling", "dbt", "looker", "stakeholder management", "tableau"], "learning": ["airflow", "dbt", "tableau"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-69017", "company": "AIA", "title": "Specialist-Business Analyst & UAT (SG Market)", "location": "Putrajaya, MY-AIA Shared Services Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist-Business-Analyst---UAT--SG-Market-_JR-69017", "source": "workday", "score": 71, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["stakeholder management", "uat"], "learning": [], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "sr:BoschGroup:744000156772019", "company": "Bosch", "title": "Senior Data Engineer", "location": "Batu Kawan, Malaysia", "url": "https://jobs.smartrecruiters.com/BoschGroup/744000156772019-senior-data-engineer", "source": "smartrecruiters", "score": 71, "first_seen": "2026-10-23", "matched": ["data pipeline", "data visualization", "etl", "sql"], "missing": ["data quality", "data warehouse", "spark"], "learning": ["spark"], "projects": ["Lift breakdown analytics", "Job radar (this project)"]}, {"id": "wd:aia:JR-69700", "company": "AIA", "title": "Lead Analyst, Actuarial and Finance ETL Application Support", "location": "Kuala Lumpur, AIA Digital+ Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Actuarial-and-Finance-ETL-Application-Support_JR-69700-1", "source": "workday", "score": 70, "first_seen": "2026-10-23", "matched": ["automation", "data pipeline", "etl", "sql"], "missing": ["stakeholder management"], "learning": [], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "sr:DeliveryHero:744000153398719", "company": "Delivery Hero / foodpanda", "title": "Senior Data Analyst (Finance)", "location": "Kuala Lumpur, Malaysia", "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000153398719-senior-data-analyst-finance-", "source": "smartrecruiters", "score": 69, "first_seen": "2026-10-23", "matched": ["automation", "dashboard", "data visualization", "python", "sql", "statistics"], "missing": ["a/b testing", "airflow", "bigquery", "data modeling", "dbt", "looker", "stakeholder management", "tableau"], "learning": ["airflow", "dbt", "tableau"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-69839", "company": "AIA", "title": "Intern, Data Engineer", "location": "Kuala Lumpur, AIA Digital+ Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Data-Engineer_JR-69839-1", "source": "workday", "score": 63, "first_seen": "2026-10-23", "matched": ["data pipeline", "etl", "git", "python", "requirements gathering", "rest api", "sql"], "missing": ["agile", "data quality", "databricks", "spark", "stakeholder management"], "learning": ["databricks", "spark"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-60602", "company": "AIA", "title": "Manager - Risk Management Business Analyst", "location": "Putrajaya, MY-AIA Shared Services Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Manager---Risk-Management-Business-Analyst_JR-60602", "source": "workday", "score": 63, "first_seen": "2026-10-23", "matched": ["automation", "dashboard", "data visualization", "kpi", "machine learning", "power bi", "python", "sql", "statistics"], "missing": ["data quality", "tableau"], "learning": ["tableau"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-66156", "company": "AIA", "title": "Specialist - Data Scientist", "location": "Putrajaya, MY-AIA Shared Services Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist---Data-Scientist_JR-66156", "source": "workday", "score": 62, "first_seen": "2026-10-23", "matched": ["automation", "data pipeline"], "missing": ["stakeholder management"], "learning": [], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)", "Job radar (this project)"]}, {"id": "wd:aia:JR-66373", "company": "AIA", "title": "Senior Associate-Business Analyst (HK Market)", "location": "Putrajaya, MY-AIA Shared Services Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Associate-Business-Analyst--HK-Market-_JR-66373", "source": "workday", "score": 61, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["stakeholder management", "uat"], "learning": [], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "wd:aia:JR-68529", "company": "AIA", "title": "Technical Business Analyst, Analyst", "location": "Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Malaysia/Technical-Business-Analyst--Analyst_JR-68529", "source": "workday", "score": 59, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["agile", "stakeholder management", "uat"], "learning": [], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "wd:aia:JR-69947", "company": "AIA", "title": "Business Analyst, Specialist", "location": "Kuala Lumpur, MY-AIA Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Business-Analyst--Specialist_JR-69947", "source": "workday", "score": 56, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["stakeholder management", "uat"], "learning": [], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "wd:parexel:R0000047186", "company": "Parexel", "title": "Clinical Data Analyst I", "location": "Malaysia-Petaling Jaya", "url": "https://wd1.myworkdaysite.com/recruiting/parexel/Parexel_External_Careers/job/Malaysia-Petaling-Jaya/clinical-Data-Analyst-I_R0000047186-1", "source": "workday", "score": 53, "first_seen": "2026-10-23", "matched": [], "missing": ["data quality", "gcp", "sas", "uat"], "learning": [], "projects": []}, {"id": "wd:aia:JR-69468", "company": "AIA", "title": "Lead Analyst, Business Analyst", "location": "Kuala Lumpur, AIA Digital+ Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Business-Analyst_JR-69468", "source": "workday", "score": 47, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["azure", "jira", "process mapping", "stakeholder management", "uat"], "learning": ["azure"], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "wd:aia:JR-37965", "company": "AIA", "title": "Senior Business Analyst - Operational Risk Management System Support", "location": "Putrajaya, MY-AIA Shared Services Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Manager---Operational-Risk-Management_JR-37965", "source": "workday", "score": 46, "first_seen": "2026-10-23", "matched": ["requirements gathering"], "missing": ["process mapping", "uat"], "learning": [], "projects": ["ERP automation (Exact Synergy REST)"]}, {"id": "wd:hp:3168838", "company": "HP", "title": "Business Operations Analyst", "location": "Batu Kawan, Pulau Pinang (Penang), Malaysia", "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Business-Operations-Analyst_3168838-1", "source": "workday", "score": 44, "first_seen": "2026-10-23", "matched": ["erp", "kpi"], "missing": ["process mapping"], "learning": [], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)"]}, {"id": "wd:aia:JR-69465", "company": "AIA", "title": "Assistant Manager, Enterprise Platform Transformation", "location": "Kuala Lumpur, AIA Digital+ Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Enterprise-Platform-Transformation_JR-69465-1", "source": "workday", "score": 41, "first_seen": "2026-10-23", "matched": ["kpi", "machine learning", "requirements gathering", "rest api"], "missing": ["agile", "jira", "process mapping", "stakeholder management", "uat"], "learning": [], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)"]}, {"id": "wd:intel:JR0286156", "company": "Intel", "title": "Sales Operations Analyst", "location": "Malaysia, Penang", "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Sales-Operations-Analyst_JR0286156", "source": "workday", "score": 40, "first_seen": "2026-10-23", "matched": ["data visualization", "erp", "excel"], "missing": ["data quality", "jira"], "learning": [], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)"]}, {"id": "wd:aia:JR-68261", "company": "AIA", "title": "Intern, Enterprise Solutions", "location": "Kuala Lumpur, AIA Digital+ Malaysia", "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Enterprise-Solutions_JR-68261-2", "source": "workday", "score": 31, "first_seen": "2026-10-23", "matched": ["requirements gathering", "sql"], "missing": ["agile", "azure", "jira", "stakeholder management", "uat"], "learning": ["azure"], "projects": ["Lift breakdown analytics", "ERP automation (Exact Synergy REST)"]}, {"id": "wd:parexel:R0000047177", "company": "Parexel", "title": "Clinical Data Analyst Intern 2027", "location": "Malaysia-Petaling Jaya", "url": "https://wd1.myworkdaysite.com/recruiting/parexel/Parexel_External_Careers/job/Malaysia-Petaling-Jaya/Clinical-Data-Analyst-Intern-2027_R0000047177", "source": "workday", "score": 28, "first_seen": "2026-10-23", "matched": [], "missing": ["data quality", "gcp", "sas", "uat"], "learning": [], "projects": []}], "gaps": [["stakeholder management", 14], ["uat", 11], ["data quality", 7], ["data modeling", 4], ["tableau", 4], ["agile", 4], ["jira", 4], ["process mapping", 4], ["azure", 3], ["spark", 3], ["bigquery", 3], ["dbt", 3], ["looker", 3], ["databricks", 2], ["airflow", 2]], "learning": ["dbt", "airflow", "aws", "azure", "docker", "spark", "tableau", "snowflake", "databricks"], "preferred": ["kuala lumpur", "selangor", "petaling jaya", "shah alam", "subang", "cyberjaya", "putrajaya", "klang", "puchong", "bangsar", "mont kiara", "damansara", "seri kembangan", "bangi", "sepang", "cheras", "ampang", "kl ", "wilayah persekutuan", "glenmarie"], "projects": {"Lift breakdown analytics": "https://muhd-muaz.github.io/lift-breakdown-analytics/", "ERP automation (Exact Synergy REST)": "", "Job radar (this project)": "https://github.com/muhd-muaz/job-radar"}, "feeds": []};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+let marks = store.get("jr-marks", {});           // id -> "saved" | "applied"
+const state = { q: "", where: "local", min: 40, sort: "score" };
+
+const isLocal = j => D.preferred.some(w => (j.location + " ").toLowerCase().includes(w));
+const days = d => Math.round((new Date(D.today) - new Date(d)) / 864e5);
+const age = d => { const n = days(d); return n <= 0 ? "today" : n === 1 ? "yesterday" : n + " days ago"; };
+const tone = s => s >= 60 ? "var(--hi)" : s >= 40 ? "var(--mid)" : "var(--lo)";
+
+function card(j) {
+  const m = marks[j.id];
+  const isNew = j.first_seen === D.today;
+  const title = j.url ? `<a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="title">${esc(j.title)}</span>`;
+  const chips = j.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") +
+                j.missing.map(s => `<span class="chip gap">${esc(s)}</span>`).join("");
+  const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(", ");
+  return `<article class="job${m === "applied" ? " applied" : ""}">
+    <div class="ring" style="--p:${j.score};--c:${tone(j.score)}"><b>${j.score}</b></div>
+    <div>${title}${isNew ? '<span class="badge">NEW</span>' : ""}
+      <div class="meta"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span><span>${esc(j.source)}</span><span>found ${age(j.first_seen)}</span></div>
+      ${chips ? `<div class="chips">${chips}</div>` : ""}
+      ${proj ? `<div class="why">Mention: ${proj}</div>` : ""}
+    </div>
+    <div class="actions">
+      ${j.url ? `<a class="btn primary" href="${esc(j.url)}" target="_blank" rel="noopener">Apply</a>` : ""}
+      <button class="btn" data-mark="saved" data-id="${esc(j.id)}" aria-pressed="${m === "saved"}">${m === "saved" ? "Saved" : "Save"}</button>
+      <button class="btn" data-mark="applied" data-id="${esc(j.id)}" aria-pressed="${m === "applied"}">${m === "applied" ? "Applied" : "Mark applied"}</button>
+    </div></article>`;
+}
+
+function render() {
+  const q = state.q.toLowerCase();
+  let list = D.jobs.filter(j => j.score >= state.min && (state.where === "all" || isLocal(j)) &&
+    (!q || [j.title, j.company, j.location, ...j.matched, ...j.missing].join(" ").toLowerCase().includes(q)));
+  const by = { score: (a, b) => b.score - a.score, new: (a, b) => b.first_seen.localeCompare(a.first_seen) || b.score - a.score,
+               company: (a, b) => a.company.localeCompare(b.company) };
+  list.sort(by[state.sort]);
+  $("#jobs").innerHTML = list.map(card).join("") || `<p class="empty">No jobs match these filters.</p>`;
+  $("#count").textContent = `${list.length} of ${D.jobs.length} jobs`;
+  $("#n-list").textContent = list.length;
+  const saved = D.jobs.filter(j => marks[j.id]).sort((a, b) => (marks[a.id] > marks[b.id]) - (marks[a.id] < marks[b.id]) || b.score - a.score);
+  $("#saved-jobs").innerHTML = saved.map(card).join("") || `<p class="empty">Nothing saved yet. Use Save or Mark applied on any job.</p>`;
+  $("#count-saved").textContent = saved.length ? `${saved.filter(j => marks[j.id] === "applied").length} applied, ${saved.filter(j => marks[j.id] === "saved").length} saved` : "";
+  $("#n-saved").textContent = saved.length || "";
+}
+
+// header numbers
+$("#s-open").textContent = D.jobs.length;
+$("#s-new").textContent = D.jobs.filter(j => j.first_seen === D.today).length;
+$("#s-strong").textContent = D.jobs.filter(j => j.score >= 60).length;
+$("#s-local").textContent = D.jobs.filter(isLocal).length;
+
+// skills panel
+const peak = Math.max(1, ...D.gaps.map(g => g[1]));
+$("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="bar"><span>${esc(s)}</span>
+  <div class="track"><div class="fill${D.learning.includes(s) ? " l" : ""}" style="width:${n / peak * 100}%"></div></div><span class="num">${n}</span></div>`).join("")
+  || `<p class="empty">No data yet.</p>`;
+
+// sources panel
+$("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name)).map(f =>
+  `<tr><td><span class="dot${f.ok ? "" : " bad"}"></span>${esc(f.name)}${f.ok ? "" : ` <span style="color:var(--mute);font-size:12px">(not reachable today)</span>`}</td><td class="r">${f.jobs}</td></tr>`).join("");
+
+// events
+$("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("#min").addEventListener("change", e => { state.min = +e.target.value; render(); });
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+$("#where").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  state.where = b.dataset.v;
+  $("#where").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-mark]"); if (!b) return;
+  const { id, mark } = b.dataset;
+  if (marks[id] === mark) delete marks[id]; else marks[id] = mark;
+  store.set("jr-marks", marks); render();
+});
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+  document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === t.dataset.tab));
+}));
+const root = document.documentElement, saved = store.get("jr-theme", null);
+if (saved) root.dataset.theme = saved;
+$("#theme").addEventListener("click", () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark"; store.set("jr-theme", root.dataset.theme);
+});
+render();
+</script>
+</body>
+</html>

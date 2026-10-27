@@ -13,7 +13,23 @@
     "erp": 2,
     "data scientist": 1,
     "insights analyst": 2,
-    "operations analyst": 1
+    "operations analyst": 1,
+    "data": 1,
+    "analytics": 2,
+    "reporting": 2,
+    "mis ": 2,
+    "power bi": 3,
+    "bi developer": 3,
+    "sql": 2,
+    "sap": 1,
+    "data quality": 2,
+    "data governance": 1,
+    "process analyst": 2,
+    "it analyst": 2,
+    "product analyst": 2,
+    "automation": 1,
+    "rpa": 1,
+    "digital transformation": 1
   },
   "have_skills": {
     "python": 3,
@@ -37,25 +53,71 @@
     "machine learning": 1,
     "statistics": 1
   },
-  "learning_skills": ["dbt", "airflow", "aws", "azure", "docker", "spark", "tableau", "snowflake", "databricks"],
+  "learning_skills": [
+    "dbt",
+    "airflow",
+    "aws",
+    "azure",
+    "docker",
+    "spark",
+    "tableau",
+    "snowflake",
+    "databricks"
+  ],
   "projects": [
     {
       "name": "Lift breakdown analytics",
       "url": "https://muhd-muaz.github.io/lift-breakdown-analytics/",
-      "skills": ["python", "sql", "etl", "data pipeline", "dashboard", "kpi", "data visualization", "automation", "sqlite", "rest api"]
+      "skills": [
+        "python",
+        "sql",
+        "etl",
+        "data pipeline",
+        "dashboard",
+        "kpi",
+        "data visualization",
+        "automation",
+        "sqlite",
+        "rest api"
+      ]
     },
     {
       "name": "ERP automation (Exact Synergy REST)",
       "url": "",
-      "skills": ["erp", "rest api", "automation", "requirements gathering", "python"]
+      "skills": [
+        "erp",
+        "rest api",
+        "automation",
+        "requirements gathering",
+        "python"
+      ]
     },
     {
       "name": "Job radar (this project)",
       "url": "https://github.com/muhd-muaz/job-radar",
-      "skills": ["python", "etl", "data pipeline", "sqlite", "automation", "git", "dashboard"]
+      "skills": [
+        "python",
+        "etl",
+        "data pipeline",
+        "sqlite",
+        "automation",
+        "git",
+        "dashboard"
+      ]
     }
   ],
-  "locations_ok": ["malaysia", "kuala lumpur", "petaling jaya", "selangor", "cyberjaya", "putrajaya", "shah alam", "penang", "johor", "remote"],
+  "locations_ok": [
+    "malaysia",
+    "kuala lumpur",
+    "petaling jaya",
+    "selangor",
+    "cyberjaya",
+    "putrajaya",
+    "shah alam",
+    "penang",
+    "johor",
+    "remote"
+  ],
   "seniority_penalty": {
     "principal": 30,
     "director": 40,
@@ -66,5 +128,31 @@
     "sr.": 10,
     "staff ": 15,
     "intern": 25
+  },
+  "preferred_locations": [
+    "kuala lumpur",
+    "selangor",
+    "petaling jaya",
+    "shah alam",
+    "subang",
+    "cyberjaya",
+    "putrajaya",
+    "klang",
+    "puchong",
+    "bangsar",
+    "mont kiara",
+    "damansara",
+    "seri kembangan",
+    "bangi",
+    "sepang",
+    "cheras",
+    "ampang",
+    "kl ",
+    "wilayah persekutuan",
+    "glenmarie"
+  ],
+  "location_bonus": {
+    "preferred": 8,
+    "elsewhere_in_malaysia": -10
   }
 }

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Radar</title>
+<meta name="description" content="Data, BA and BI jobs in Kuala Lumpur and Selangor, scored daily against my skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6f8;--surface:#fff;--surface-2:#f0f2f5;--ink:#111418;--ink-2:#4a5260;--mute:#7b8494;--line:#e3e6eb;
+  --accent:#2f5bea;--accent-soft:#e8eefd;--good:#14915a;--good-soft:#e3f5ec;--warn:#b86a00;--warn-soft:#fdf1df;
+  --hi:#14915a;--mid:#c27c0e;--lo:#9aa2af;--shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d0f13;--surface:#161a20;--surface-2:#1d222a;--ink:#eceff3;--ink-2:#b7bfcb;--mute:#8590a0;--line:#272d36;
+  --accent:#7b9cff;--accent-soft:#1f2940;--good:#4cc68a;--good-soft:#16302a;--warn:#f0a640;--warn-soft:#33281a;
+  --hi:#4cc68a;--mid:#f0a640;--lo:#5d6675;--shadow:none}}
+:root[data-theme="dark"]{
+  --bg:#0d0f13;--surface:#161a20;--surface-2:#1d222a;--ink:#eceff3;--ink-2:#b7bfcb;--mute:#8590a0;--line:#272d36;
+  --accent:#7b9cff;--accent-soft:#1f2940;--good:#4cc68a;--good-soft:#16302a;--warn:#f0a640;--warn-soft:#33281a;
+  --hi:#4cc68a;--mid:#f0a640;--lo:#5d6675;--shadow:none}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:32px 0 8px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:30px;line-height:1.15;margin:6px 0 6px;letter-spacing:-.02em}
+.lede{color:var(--ink-2);margin:0;max-width:620px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 4px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:24px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--mute)}
+nav.tabs{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:18px}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tab{appearance:none;border:0;background:none;color:var(--mute);font:inherit;font-weight:600;font-size:14px;padding:12px 12px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tab .n{font-weight:500;color:var(--mute);margin-left:4px}
+section{display:none;padding:18px 0 40px}section.on{display:block}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.search{flex:1 1 240px;position:relative}
+.search input{width:100%;height:40px;padding:0 12px 0 36px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.search input:focus{outline:2px solid var(--accent-soft);border-color:var(--accent)}
+.search svg{position:absolute;left:11px;top:11px;width:18px;height:18px;color:var(--mute)}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:10px;padding:3px}
+.seg button{appearance:none;border:0;background:none;font:inherit;font-size:13px;font-weight:600;color:var(--mute);padding:7px 11px;border-radius:8px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+select{height:40px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;font-size:13.5px;padding:0 10px}
+.count{font-size:13px;color:var(--mute);margin:0 0 10px}
+.job{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:10px;box-shadow:var(--shadow);transition:border-color .15s}
+.job:hover{border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.job.applied{opacity:.6}
+.ring{--p:0;--c:var(--lo);width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--surface-2) 0)}
+.ring b{width:42px;height:42px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.title{font-weight:600;font-size:16px;line-height:1.3;text-decoration:none;letter-spacing:-.01em}
+a.title:hover{color:var(--accent)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:2px;background:var(--accent-soft);color:var(--accent)}
+.meta{font-size:13px;color:var(--mute);margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.meta .co{color:var(--ink-2);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.chip{font-size:12px;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+.chip.have{background:var(--good-soft);color:var(--good)}
+.chip.gap{background:var(--warn-soft);color:var(--warn)}
+.why{font-size:12.5px;color:var(--mute);margin-top:8px}
+.why a{color:var(--accent);text-decoration:none}
+.actions{display:flex;flex-direction:column;gap:6px}
+.btn{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:13px;font-weight:600;padding:7px 12px;border-radius:9px;cursor:pointer;text-decoration:none;text-align:center;white-space:nowrap}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn[aria-pressed="true"]{background:var(--good-soft);border-color:transparent;color:var(--good)}
+.empty{text-align:center;color:var(--mute);padding:40px 0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.panel h2{font-size:16px;margin:0 0 4px}.panel p.sub{color:var(--mute);font-size:13px;margin:0 0 14px}
+.bar{display:grid;grid-template-columns:160px 1fr 34px;gap:12px;align-items:center;padding:6px 0;font-size:14px}
+.bar .track{height:8px;border-radius:4px;background:var(--surface-2);overflow:hidden}
+.bar .fill{height:100%;border-radius:4px;background:var(--warn)}
+.bar .fill.l{background:var(--accent)}
+.bar .num{text-align:right;color:var(--mute);font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--mute);margin-top:12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+td.r{text-align:right;font-variant-numeric:tabular-nums}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;background:var(--good)}
+.dot.bad{background:#d64545}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--mute);font-size:13px}
+footer a{color:var(--ink-2)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.theme{font-size:12px;padding:5px 10px;color:var(--mute)}
+@media (max-width:640px){
+  h1{font-size:25px}.stats{grid-template-columns:repeat(2,1fr)}
+  .job{grid-template-columns:44px 1fr;gap:12px;padding:14px}
+  .ring{width:44px;height:44px}.ring b{width:36px;height:36px;font-size:13px}
+  .actions{grid-column:1/-1;flex-direction:row}.actions .btn{flex:1}
+  .bar{grid-template-columns:110px 1fr 28px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top"><div class="eyebrow">Job Radar · Kuala Lumpur &amp; Selangor</div>
+  <button class="btn theme" id="theme" aria-label="Switch light or dark mode">Dark / light</button></div>
+  <h1>Data &amp; BA roles, ranked by fit</h1>
+  <p class="lede">Collected every morning from company career feeds and job-alert emails, then scored against my skills: Python, SQL, data pipelines, dashboards and ERP automation.</p>
+  <div class="stats">
+    <div class="stat"><b id="s-open">0</b><span>open matches</span></div>
+    <div class="stat"><b id="s-new">0</b><span>new today</span></div>
+    <div class="stat"><b id="s-strong">0</b><span>strong fit (60+)</span></div>
+    <div class="stat"><b id="s-local">0</b><span>in KL / Selangor</span></div>
+  </div>
+</div></header>
+
+<nav class="tabs"><div class="wrap" role="tablist">
+  <button class="tab" role="tab" data-tab="list" aria-selected="true">Shortlist<span class="n" id="n-list"></span></button>
+  <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved &amp; applied<span class="n" id="n-saved"></span></button>
+  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills to learn</button>
+  <button class="tab" role="tab" data-tab="feeds" aria-selected="false">Sources</button>
+</div></nav>
+
+<main class="wrap">
+<section id="list" class="on">
+  <div class="toolbar">
+    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search title, company or skill" aria-label="Search"></label>
+    <div class="seg" id="where">
+      <button data-v="local" aria-pressed="true">KL &amp; Selangor</button>
+      <button data-v="all" aria-pressed="false">All Malaysia</button>
+    </div>
+    <select id="min" aria-label="Minimum score">
+      <option value="0">Any score</option><option value="40" selected>Score 40+</option><option value="60">Score 60+</option>
+    </select>
+    <select id="sort" aria-label="Sort">
+      <option value="score">Best fit</option><option value="new">Newest</option><option value="company">Company</option>
+    </select>
+  </div>
+  <p class="count" id="count"></p>
+  <div id="jobs"></div>
+</section>
+
+<section id="saved"><p class="count" id="count-saved"></p><div id="saved-jobs"></div></section>
+
+<section id="skills"><div class="panel">
+  <h2>Skills employers ask for that I don't list yet</h2>
+  <p class="sub">Count of open matches that mention each skill. Learning these widens the pool most.</p>
+  <div id="bars"></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>Already learning</span><span><i style="background:var(--warn)"></i>Not started</span></div>
+</div></section>
+
+<section id="feeds"><div class="panel">
+  <h2>Sources checked today</h2>
+  <p class="sub">Public career feeds only. JobStreet, LinkedIn, Hiredly and Maukerja jobs arrive through their own job-alert emails.</p>
+  <table><thead><tr><th>Source</th><th class="r">Jobs</th></tr></thead><tbody id="feed-rows"></tbody></table>
+</div></section>
+</main>
+
+<footer><div class="wrap">Python + SQLite pipeline, runs daily on GitHub Actions. Saved and applied marks stay in this browser only.
+  Code: <a href="https://github.com/muhd-muaz/job-radar">github.com/muhd-muaz/job-radar</a></div></footer>
+
+<script>
+const D = __DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+let marks = store.get("jr-marks", {});           // id -> "saved" | "applied"
+const state = { q: "", where: "local", min: 40, sort: "score" };
+
+const isLocal = j => D.preferred.some(w => (j.location + " ").toLowerCase().includes(w));
+const days = d => Math.round((new Date(D.today) - new Date(d)) / 864e5);
+const age = d => { const n = days(d); return n <= 0 ? "today" : n === 1 ? "yesterday" : n + " days ago"; };
+const tone = s => s >= 60 ? "var(--hi)" : s >= 40 ? "var(--mid)" : "var(--lo)";
+
+function card(j) {
+  const m = marks[j.id];
+  const isNew = j.first_seen === D.today;
+  const title = j.url ? `<a class="title" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="title">${esc(j.title)}</span>`;
+  const chips = j.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") +
+                j.missing.map(s => `<span class="chip gap">${esc(s)}</span>`).join("");
+  const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(", ");
+  return `<article class="job${m === "applied" ? " applied" : ""}">
+    <div class="ring" style="--p:${j.score};--c:${tone(j.score)}"><b>${j.score}</b></div>
+    <div>${title}${isNew ? '<span class="badge">NEW</span>' : ""}
+      <div class="meta"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span><span>${esc(j.source)}</span><span>found ${age(j.first_seen)}</span></div>
+      ${chips ? `<div class="chips">${chips}</div>` : ""}
+      ${proj ? `<div class="why">Mention: ${proj}</div>` : ""}
+    </div>
+    <div class="actions">
+      ${j.url ? `<a class="btn primary" href="${esc(j.url)}" target="_blank" rel="noopener">Apply</a>` : ""}
+      <button class="btn" data-mark="saved" data-id="${esc(j.id)}" aria-pressed="${m === "saved"}">${m === "saved" ? "Saved" : "Save"}</button>
+      <button class="btn" data-mark="applied" data-id="${esc(j.id)}" aria-pressed="${m === "applied"}">${m === "applied" ? "Applied" : "Mark applied"}</button>
+    </div></article>`;
+}
+
+function render() {
+  const q = state.q.toLowerCase();
+  let list = D.jobs.filter(j => j.score >= state.min && (state.where === "all" || isLocal(j)) &&
+    (!q || [j.title, j.company, j.location, ...j.matched, ...j.missing].join(" ").toLowerCase().includes(q)));
+  const by = { score: (a, b) => b.score - a.score, new: (a, b) => b.first_seen.localeCompare(a.first_seen) || b.score - a.score,
+               company: (a, b) => a.company.localeCompare(b.company) };
+  list.sort(by[state.sort]);
+  $("#jobs").innerHTML = list.map(card).join("") || `<p class="empty">No jobs match these filters.</p>`;
+  $("#count").textContent = `${list.length} of ${D.jobs.length} jobs`;
+  $("#n-list").textContent = list.length;
+  const saved = D.jobs.filter(j => marks[j.id]).sort((a, b) => (marks[a.id] > marks[b.id]) - (marks[a.id] < marks[b.id]) || b.score - a.score);
+  $("#saved-jobs").innerHTML = saved.map(card).join("") || `<p class="empty">Nothing saved yet. Use Save or Mark applied on any job.</p>`;
+  $("#count-saved").textContent = saved.length ? `${saved.filter(j => marks[j.id] === "applied").length} applied, ${saved.filter(j => marks[j.id] === "saved").length} saved` : "";
+  $("#n-saved").textContent = saved.length || "";
+}
+
+// header numbers
+$("#s-open").textContent = D.jobs.length;
+$("#s-new").textContent = D.jobs.filter(j => j.first_seen === D.today).length;
+$("#s-strong").textContent = D.jobs.filter(j => j.score >= 60).length;
+$("#s-local").textContent = D.jobs.filter(isLocal).length;
+
+// skills panel
+const peak = Math.max(1, ...D.gaps.map(g => g[1]));
+$("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="bar"><span>${esc(s)}</span>
+  <div class="track"><div class="fill${D.learning.includes(s) ? " l" : ""}" style="width:${n / peak * 100}%"></div></div><span class="num">${n}</span></div>`).join("")
+  || `<p class="empty">No data yet.</p>`;
+
+// sources panel
+$("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name)).map(f =>
+  `<tr><td><span class="dot${f.ok ? "" : " bad"}"></span>${esc(f.name)}${f.ok ? "" : ` <span style="color:var(--mute);font-size:12px">(not reachable today)</span>`}</td><td class="r">${f.jobs}</td></tr>`).join("");
+
+// events
+$("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("#min").addEventListener("change", e => { state.min = +e.target.value; render(); });
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+$("#where").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  state.where = b.dataset.v;
+  $("#where").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-mark]"); if (!b) return;
+  const { id, mark } = b.dataset;
+  if (marks[id] === mark) delete marks[id]; else marks[id] = mark;
+  store.set("jr-marks", marks); render();
+});
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+  document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === t.dataset.tab));
+}));
+const root = document.documentElement, saved = store.get("jr-theme", null);
+if (saved) root.dataset.theme = saved;
+$("#theme").addEventListener("click", () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark"; store.set("jr-theme", root.dataset.theme);
+});
+render();
+</script>
+</body>
+</html>

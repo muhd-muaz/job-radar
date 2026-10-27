@@ -34,13 +34,15 @@ def main(argv):
                 store.log_run(db, today, c["ats"], c["name"], True, len(got))
                 jobs += got
                 print(f"ok    {c['name']:<28} {len(got)} jobs")
+            except sources.Skip as e:
+                print(f"skip  {c['name']:<28} {e}")
             except Exception as e:  # one broken feed must not stop the run
                 store.log_run(db, today, c["ats"], c["name"], False, 0, repr(e))
                 print(f"FAIL  {c['name']:<28} {e!r}")
     if "check" in argv:
         db.commit()
         return
-    jobs += sources.inbox(ROOT / "inbox")
+    jobs += sources.inbox(ROOT / "inbox", ROOT / "data" / "pasted.jsonl")
 
     for j in jobs:
         store.upsert(db, j, score(j, profile, find(j["title"] + "\n" + j["description"])), today)
