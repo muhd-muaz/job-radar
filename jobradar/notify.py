@@ -36,6 +36,6 @@ def send_new_matches(active, today, profile):
     msg.add_alternative(f'<table style="font:14px system-ui,sans-serif">{rows}</table>'
                         f'<p><a href="{PAGE}">Open the full shortlist</a></p>', subtype="html")
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
-        s.login(user, pw)
+        s.login(user, pw.replace(" ", ""))
         s.send_message(msg)
     print(f"notify: emailed {len(new)} new matches")

@@ -175,7 +175,7 @@ def email_alerts(c, targets, terms):
     if not (user and pw):
         raise Skip("ALERT_IMAP_USER / ALERT_IMAP_PASSWORD not set")
     box = imaplib.IMAP4_SSL(c.get("imap_host", "imap.gmail.com"))
-    box.login(user, pw)
+    box.login(user, pw.replace(" ", ""))
     box.select("INBOX", readonly=True)
     since = (date.today() - timedelta(days=c.get("days", 4))).strftime("%d-%b-%Y")
     _, ids = box.search(None, "SINCE", since)

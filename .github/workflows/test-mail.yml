@@ -1,0 +1,20 @@
+name: test-mail
+
+# One-minute check that the alerts mailbox login works and the daily email can be sent.
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check mailbox and send a test email
+        env:
+          ALERT_IMAP_USER: ${{ secrets.ALERT_IMAP_USER }}
+          ALERT_IMAP_PASSWORD: ${{ secrets.ALERT_IMAP_PASSWORD }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+        run: python -m jobradar.mailcheck
