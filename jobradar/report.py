@@ -24,6 +24,7 @@ def slim(j, posts):
     out = {k: j[k] for k in ("id", "company", "title", "location", "url", "source", "score",
                              "first_seen", "last_seen", "matched", "missing", "learning", "projects")}
     out["salary"] = salary(j.get("description"))
+    out.update({k: j.get(k) for k in ("parts", "track", "reach_out")})
     out["posts"] = posts.get((j["company"].lower(), j["title"].strip().lower()), 1)
     return out
 
@@ -45,6 +46,8 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None):
         "learning": profile.get("learning_skills", []),
         "preferred": profile.get("preferred_locations", []),
         "projects": {p["name"]: p.get("url", "") for p in profile["projects"]},
+        "have": sorted(profile["have_skills"]),
+        "outreach": profile.get("outreach", {}),
         "feeds": [{"name": r["company"], "ok": bool(r["ok"]), "jobs": r["jobs"], "error": r["error"]} for r in runs],
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")

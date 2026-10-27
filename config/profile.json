@@ -37,7 +37,7 @@
     "database developer": 2,
     "sql developer": 3,
     "data warehouse": 3,
-    "pipeline": 3
+    "data pipeline": 3
   },
   "have_skills": {
     "python": 3,
@@ -228,6 +228,15 @@
     "mechanical",
     "chemist",
     "legal",
-    "recruit"
-  ]
+    "recruit",
+    "hr ",
+    "human resource",
+    "talent"
+  ],
+  "outreach": {
+    "_note": "Draft for the 'Ask about junior roles' button on senior jobs. {company} {title} {track} {skills} are filled in per job. Nothing is sent automatically.",
+    "name": "Muhammad Mu'az",
+    "subject": "Junior {track} roles at {company}?",
+    "body": "Hi {company} hiring team,\n\nI saw your {title} opening. I know it is a senior role and I am earlier in my career, so I would like to ask whether your team has, or expects to have, a junior or associate position in {track}.\n\nI am an Application Support Executive at EITA Elevator and I finish my BSc in Data Analytics at Universiti Malaysia Terengganu in February 2027. In my current job I use {skills} day to day. For example, I turned a manual Excel breakdown report into a daily Python and SQL pipeline with a live dashboard.\n\nPortfolio: https://muhd-muaz.github.io/lift-breakdown-analytics/\nLinkedIn: https://www.linkedin.com/in/muhammadmuazmuhammad\n\nIf someone else handles this, I would be grateful if you could point me to them.\n\nThank you for your time,\n{name}"
+  }
 }

@@ -17,18 +17,24 @@ def connect(path):
     db = sqlite3.connect(path)
     db.row_factory = sqlite3.Row
     db.executescript(SCHEMA)
+    if "extra" not in {r[1] for r in db.execute("PRAGMA table_info(jobs)")}:
+        db.execute("ALTER TABLE jobs ADD COLUMN extra TEXT")  # score breakdown, track, reach-out flag
     return db
 
 
 def upsert(db, job, s, today):
     db.execute("""
-      INSERT INTO jobs VALUES (:id,:source,:company,:title,:location,:url,:posted,:description,
-                               :today,:today,:score,:matched,:missing,:learning,:projects)
+      INSERT INTO jobs (id,source,company,title,location,url,posted,description,first_seen,last_seen,
+                        score,matched,missing,learning,projects,extra)
+      VALUES (:id,:source,:company,:title,:location,:url,:posted,:description,
+              :today,:today,:score,:matched,:missing,:learning,:projects,:extra)
       ON CONFLICT(id) DO UPDATE SET title=excluded.title, location=excluded.location, url=excluded.url,
         description=excluded.description, last_seen=excluded.last_seen, score=excluded.score,
-        matched=excluded.matched, missing=excluded.missing, learning=excluded.learning, projects=excluded.projects
+        matched=excluded.matched, missing=excluded.missing, learning=excluded.learning, projects=excluded.projects,
+        extra=excluded.extra
     """, {**job, "today": today, "score": s["score"],
-          **{k: json.dumps(s[k]) for k in ("matched", "missing", "learning", "projects")}})
+          **{k: json.dumps(s[k]) for k in ("matched", "missing", "learning", "projects")},
+          "extra": json.dumps({k: s.get(k) for k in ("parts", "track", "reach_out")})})
 
 
 def log_run(db, today, source, company, ok, n, error=""):
@@ -56,5 +62,6 @@ def _rows(rows):
         d = dict(r)
         for k in ("matched", "missing", "learning", "projects"):
             d[k] = json.loads(d[k] or "[]")
+        d.update(json.loads(d.pop("extra", None) or "{}"))
         out.append(d)
     return out

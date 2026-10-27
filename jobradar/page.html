@@ -49,10 +49,17 @@ header{padding:28px 0 8px}
 #radar .blip.old{fill:var(--panel);stroke:var(--accent);stroke-width:2}
 #radar .blip:hover,#radar .blip.hot{r:8}
 #radar .sweep{fill:url(#sweepGrad);transform-origin:0 0}
+#radar .sector.me{fill:var(--accent-soft);opacity:.55}
+#radar .sector-label{fill:var(--ink-2);font-size:11.5px;font-weight:600}
+#radar .sector-label tspan.c{fill:var(--mute);font-weight:400}
 .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:12.5px;line-height:1.35;padding:7px 9px;border-radius:7px;max-width:240px;opacity:0;transform:translate(-50%,calc(-100% - 12px));transition:opacity .1s}
 .tip b{display:block;font-weight:600}
 .hero h1{font:700 clamp(30px,4.6vw,48px)/1.04 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.025em;margin:0 0 14px;max-width:16ch}
 .hero p{color:var(--ink-2);margin:0 0 10px;max-width:46ch}
+.how{margin:14px 0 0;padding:0;list-style:none;font-size:14px;color:var(--ink-2);max-width:48ch}
+.how li{padding:6px 0 6px 26px;position:relative;border-top:1px solid var(--rule-2)}
+.how li b{color:var(--ink);font-weight:600}
+.how li::before{content:attr(data-n);position:absolute;left:0;top:6px;width:18px;height:18px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:11px;font-weight:600;display:grid;place-items:center}
 .key{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--mute);font-size:13px;margin-top:16px}
 .key i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px;background:var(--accent)}
 .key i.o{background:var(--panel);box-shadow:inset 0 0 0 2px var(--accent)}
@@ -107,6 +114,30 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .chip.have{background:var(--have-soft);color:var(--have)}
 .chip.gap{background:var(--gap-soft);color:var(--gap)}
 .why{font-size:13.5px;color:var(--ink-2);margin:10px 0 0}
+.detail{display:grid;grid-template-columns:250px minmax(0,1fr);gap:20px;align-items:start}
+.detail .pz{width:250px;height:200px}
+.detail h4,.panel h3{font-size:12.5px;font-weight:600;color:var(--mute);margin:0 0 6px;text-transform:uppercase;letter-spacing:.04em}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn2{appearance:none;border:1px solid var(--rule);background:var(--panel);color:var(--ink);font:inherit;font-weight:600;font-size:14px;padding:7px 13px;border-radius:8px;cursor:pointer;text-decoration:none}
+.reach{display:none;margin-top:12px;border:1px solid var(--rule);border-radius:10px;padding:12px;background:var(--panel)}
+.reach.on{display:block}
+.reach p{margin:0 0 8px;font-size:13px;color:var(--mute)}
+.reach input,.reach textarea{width:100%;border:1px solid var(--rule);border-radius:7px;background:var(--paper);color:var(--ink);font:13.5px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:8px 10px}
+.reach textarea{height:260px;resize:vertical;margin-top:6px}
+/* Pizza charts (Football Manager style): one wedge per attribute, length = value */
+.pz .bg{fill:var(--rule-2)}
+.pz .grid{fill:none;stroke:var(--panel);stroke-width:1;stroke-dasharray:2 3}
+.pz .lab{fill:var(--ink-2);font-size:10.5px;font-weight:500}
+.pz .val{font-size:10px;font-weight:700;fill:#fff}
+.pz .core{fill:var(--panel);stroke:var(--rule)}
+.pz .core-n{fill:var(--ink);font:700 22px "Bricolage Grotesque",system-ui,sans-serif}
+.pz .core-t{fill:var(--mute);font-size:9px}
+.pz-legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--mute);margin-top:6px}
+.pz-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.two{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:28px;align-items:start}
+.two svg.pz{width:100%;max-width:420px;aspect-ratio:1;display:block}
+.notes{font-size:13.5px;color:var(--ink-2)}
+.notes p{margin:0 0 10px}
 .why a{color:var(--accent-ink)}
 .apply{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:8px 14px;border-radius:8px}
 .row.applied .t{color:var(--mute)}
@@ -135,7 +166,10 @@ footer a{color:var(--ink-2)}
   .radar-box{max-width:340px;width:100%;margin:0 auto;order:2}
   .head{grid-template-columns:48px minmax(0,1fr);gap:12px}
   .mark{grid-column:2}
-  .more{padding-left:64px}
+  .more{padding-left:4px}
+  .detail{grid-template-columns:1fr}
+  .detail .pz{margin:0 auto}
+  .two{grid-template-columns:1fr}
   .sk{grid-template-columns:110px 1fr 32px}
 }
 @media (prefers-reduced-motion:reduce){#radar .sweep{display:none}.row.flash{animation:none}}
@@ -147,14 +181,18 @@ footer a{color:var(--ink-2)}
     <button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></div>
   <div class="hero">
     <div class="radar-box">
-      <svg id="radar" viewBox="-210 -210 420 420" role="img" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
+      <svg id="radar" viewBox="-262 -232 524 464" role="img" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
       <div class="tip" id="tip"></div>
     </div>
     <div>
       <h1 id="headline">Data and BA jobs near me</h1>
       <p id="lede"></p>
-      <p>The closer a dot sits to the centre, the better the job fits my skills in Python, SQL, data pipelines, dashboards and ERP automation. Tap a dot to jump to the job.</p>
-      <div class="key"><span><i></i>New today</span><span><i class="o"></i>Seen before</span><span>Rings show the score</span></div>
+      <ol class="how">
+        <li data-n="1"><b>Each slice is a job track</b>, worked out from the job title. The number beside it counts the open jobs shown. Data engineering, the track I'm aiming for, is shaded.</li>
+        <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles.</li>
+        <li data-n="3"><b>Tap a dot</b> to open the job and see its score broken down as a pizza chart.</li>
+      </ol>
+      <div class="key"><span><i></i>New today</span><span><i class="o"></i>Seen before</span></div>
     </div>
   </div>
 </div></header>
@@ -162,7 +200,7 @@ footer a{color:var(--ink-2)}
 <nav class="tabs"><div class="wrap" role="tablist">
   <button class="tab" role="tab" data-tab="list" aria-selected="true">Shortlist<span class="n num" id="n-list"></span></button>
   <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved and applied<span class="n num" id="n-saved"></span></button>
-  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills to learn</button>
+  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills and market</button>
   <button class="tab" role="tab" data-tab="feeds" aria-selected="false">Sources</button>
 </div></nav>
 
@@ -188,7 +226,15 @@ footer a{color:var(--ink-2)}
 
 <section id="saved"><p class="count" id="count-saved"></p><div class="list" id="saved-jobs"></div></section>
 
-<section id="skills"><div class="panel">
+<section id="skills"><div class="panel" style="margin-bottom:16px">
+  <h2>What the market asks for, and what I bring</h2>
+  <p class="lede" id="pz-lede"></p>
+  <div class="two">
+    <div><svg class="pz" id="market" viewBox="-240 -215 480 430" role="img" aria-label="Pizza chart of the skills data jobs ask for most"></svg>
+      <div class="pz-legend"><span><i style="background:var(--have)"></i>I have it</span><span><i style="background:var(--accent)"></i>Learning now</span><span><i style="background:var(--gap)"></i>Gap</span></div></div>
+    <div class="notes" id="market-notes"></div>
+  </div>
+</div><div class="panel">
   <h2>Skills employers ask for that I don't list yet</h2>
   <p class="lede">How many open matches mention each skill. Learning the top few opens the most doors.</p>
   <div id="bars"></div>
@@ -223,6 +269,83 @@ const ICON = {
   applied: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>'
 };
 
+// ---------- Pizza charts (Football Manager style) ----------
+const P = (r, a) => [(Math.cos(a) * r).toFixed(1), (Math.sin(a) * r).toFixed(1)];
+function wedge(r0, r1, a0, a1) {
+  const big = a1 - a0 > Math.PI ? 1 : 0, [x0, y0] = P(r0, a0), [x1, y1] = P(r1, a0), [x2, y2] = P(r1, a1), [x3, y3] = P(r0, a1);
+  return `M${x0} ${y0}L${x1} ${y1}A${r1} ${r1} 0 ${big} 1 ${x2} ${y2}L${x3} ${y3}A${r0} ${r0} 0 ${big} 0 ${x0} ${y0}Z`;
+}
+// items: [{label, value 0-100 (slice length), shown (badge text), color, note}]
+function pizza(items, { R, r0, font, core }) {
+  const n = items.length, step = Math.PI * 2 / n, gap = 0.035;
+  let out = items.map((it, i) => {
+    const a0 = -Math.PI / 2 + i * step + gap, a1 = a0 + step - 2 * gap, mid = (a0 + a1) / 2;
+    const r1 = r0 + (R - r0) * Math.max(0, Math.min(100, it.value)) / 100;
+    const [bx, by] = P(Math.max(r0 + 13, r1 - 12), mid), [lx, ly] = P(R + font * 1.1, mid);
+    const c = Math.cos(mid), anchor = Math.abs(c) < .25 ? "middle" : c > 0 ? "start" : "end";
+    const dy = Math.sin(mid) > .6 ? font * .9 : Math.sin(mid) < -.6 ? 0 : font * .35;
+    return [`<path class="bg" d="${wedge(r0, R, a0, a1)}"/><path d="${wedge(r0, r1, a0, a1)}" fill="${it.color}"/>`,
+      `<g><title>${esc(it.label)}: ${esc(it.shown)}${it.note ? ". " + esc(it.note) : ""}</title>
+      <path d="${wedge(r0, R, a0, a1)}" fill="transparent"/>
+      <circle cx="${bx}" cy="${by}" r="11" fill="${it.color}" stroke="var(--panel)" stroke-width="1.5"/>
+      <text class="val num" x="${bx}" y="${by}" dy="3.5" text-anchor="middle" style="fill:var(--panel)">${esc(it.shown)}</text>
+      <text class="lab" x="${lx}" y="${ly}" dy="${dy - (it.label.length > 12 && it.label.includes(" ") ? font * .5 : 0)}" text-anchor="${anchor}" style="font-size:${font}px">${
+        it.label.length > 12 && it.label.includes(" ") ? it.label.replace(/^(\S+(?:\s\S+)?)\s(.+)$/, (m, a, b) => `${esc(a)}<tspan x="${lx}" dy="${font * 1.1}">${esc(b)}</tspan>`) : esc(it.label)}</text></g>`];
+  });
+  const grid = [25, 50, 75].map(v => `<circle class="grid" r="${(r0 + (R - r0) * v / 100).toFixed(1)}"/>`).join("");
+  out = out.map(o => o[0]).join("") + grid + out.map(o => o[1]).join("");
+  if (core) out += `<circle class="core" r="${r0 - 2}"/><text class="core-n num" text-anchor="middle" dy="5">${esc(core)}</text>`;
+  return out;
+}
+const PART_NOTE = {
+  "Job title": "How close the title is to my target tracks (data engineering ranks highest)",
+  "Skills": "Share of the skills the ad asks for that I already have",
+  "Level": "Shorter when the title is senior, lead or manager, or asks for 5+ years",
+  "Entry-friendly": "Longer when the ad mentions fresh graduates, junior or 1-3 years",
+  "Full-time": "Shorter for contract, temporary or part-time roles",
+  "Language": "Shorter when the ad needs Mandarin or another language I don't speak",
+  "Location": "Full in KL and Selangor, empty in other states"
+};
+const SHORT = { "Job title": "Title", "Entry-friendly": "Entry level" };
+function jobPizza(j) {
+  return pizza(Object.entries(j.parts).map(([k, v], i) => ({
+    label: SHORT[k] || k, value: v, shown: v, note: PART_NOTE[k],
+    color: i < 2 ? "var(--accent)" : v >= 50 ? "var(--have)" : "var(--gap)"
+  })), { R: 112, r0: 28, font: 12.5, core: j.score });
+}
+function explain(j) {
+  const p = j.parts, bad = [];
+  if (p["Level"] < 100) bad.push("senior title or 5+ years asked");
+  if (p["Full-time"] < 100) bad.push("not a permanent full-time role");
+  if (p["Language"] < 100) bad.push("needs another language");
+  if (p["Location"] === 0) bad.push("outside KL and Selangor");
+  const good = [];
+  if (p["Entry-friendly"] > 50) good.push("open to juniors or fresh graduates");
+  if (p["Location"] === 100) good.push("in KL or Selangor");
+  return `Blue slices make the score: title ${p["Job title"]} and skills ${p["Skills"]} out of 100. ` +
+    (bad.length ? `Points off: ${bad.join(", ")}. ` : "") + (good.length ? `In its favour: ${good.join(", ")}.` : "");
+}
+
+// ---------- Cold-email draft for senior roles in my track ----------
+const TRACK_WORDS = { "Data engineering": "data engineering", "BI and reporting": "BI and reporting", "Data analysis": "data analysis",
+  "Data science": "data science", "Business and systems": "business or systems analysis", "Other": "data" };
+const list3 = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a[0] || "";
+function fill(t, j) {
+  const skills = list3((j.matched.length ? j.matched : ["python", "sql"]).slice(0, 3).map(s => s.length <= 4 ? s.toUpperCase() : s));
+  return t.replace(/\{company\}/g, j.company).replace(/\{title\}/g, j.title).replace(/\{track\}/g, TRACK_WORDS[j.track] || "data")
+          .replace(/\{skills\}/g, skills).replace(/\{name\}/g, D.outreach.name || "");
+}
+function reachBox(j) {
+  const subj = fill(D.outreach.subject, j), body = fill(D.outreach.body, j);
+  return `<div class="reach" id="reach-${esc(j.id)}">
+    <p>This is a senior role, but the team may have junior openings. Send this draft to the company's careers email, or as a LinkedIn message to the hiring manager or recruiter. Read it once and change anything that doesn't sound like you. Nothing is sent automatically.</p>
+    <input readonly value="${esc(subj)}" aria-label="Subject">
+    <textarea aria-label="Email draft">${esc(body)}</textarea>
+    <div class="actions"><button class="btn2" data-copy="${esc(j.id)}">Copy email</button>
+      <a class="btn2" href="mailto:?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}">Open in my email app</a></div>
+  </div>`;
+}
+
 function filtered() {
   const q = state.q.toLowerCase();
   const list = D.jobs.filter(j => j.score >= state.min && (state.where === "all" || isLocal(j)) &&
@@ -252,11 +375,20 @@ function row(j) {
         <button class="icon" data-mark="applied" data-id="${esc(j.id)}" aria-pressed="${m === "applied"}" aria-label="Mark applied" title="Mark applied">${ICON.applied}</button>
       </div>
     </div>
-    <div class="more">
-      ${chips ? `<div class="chips">${chips}</div>` : '<p class="why">The ad names no skills I track.</p>'}
-      ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
-      ${j.url ? `<a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
-    </div></div>`;
+    <div class="more"><div class="detail">
+      ${j.parts ? `<div><h4>Why ${j.score}</h4><svg class="pz" viewBox="-200 -160 400 320" role="img" aria-label="Score breakdown">${jobPizza(j)}</svg></div>` : ""}
+      <div>
+        <h4>${esc(j.track || "Skills")}</h4>
+        ${chips ? `<div class="chips">${chips}</div>` : '<p class="why">The ad names no skills I track.</p>'}
+        ${j.parts ? `<p class="why">${explain(j)}</p>` : ""}
+        ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
+        <div class="actions">
+          ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
+          ${j.reach_out && D.outreach.body ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
+        </div>
+        ${j.reach_out && D.outreach.body ? reachBox(j) : ""}
+      </div>
+    </div></div></div>`;
 }
 
 function render() {
@@ -274,28 +406,41 @@ function render() {
   drawRadar(list);
 }
 
-// Radar: distance from centre = 100 - score; angle groups a company's jobs together.
-const R = 190;
+// Radar: one slice per job track; distance from centre = 100 - score.
+const TRACKS = ["Data engineering", "BI and reporting", "Data analysis", "Data science", "Business and systems", "Other"];
+const TRACK_LABEL = { "Business and systems": "Business & systems", "BI and reporting": "BI & reporting" };
+const R = 168, SPAN = Math.PI * 2 / TRACKS.length, A0 = -Math.PI / 2 - SPAN / 2;   // data engineering centred at the top
 let lo = 40;                  // lowest score shown sits on the outer ring
 const rOf = s => (100 - s) / (100 - lo) * R;
-function hashAngle(str) { let h = 0; for (const c of str) h = (h * 31 + c.charCodeAt(0)) >>> 0; return (h % 3600) / 3600 * Math.PI * 2; }
+function hash01(str) { let h = 0; for (const c of str) h = (h * 31 + c.charCodeAt(0)) >>> 0; return (h % 1000) / 1000; }
 function drawRadar(list) {
   const svg = $("#radar");
   lo = Math.min(state.min, 80) || 20;
-  const pts = list.filter(j => j.score >= lo).slice(0, 260);
-  const rings = [90, 80, 60, 40, 20].filter(s => s > lo).map(s => `<circle class="ring" r="${rOf(s).toFixed(1)}"/>` +
-    `<text class="ring-label num" x="${(-rOf(s) * .72 - 4).toFixed(1)}" y="${(-rOf(s) * .72 - 4).toFixed(1)}" text-anchor="end">${s}</text>`).join("") +
-    `<text class="ring-label num" x="${(-R * .72 - 4).toFixed(1)}" y="${(-R * .72 - 4).toFixed(1)}" text-anchor="end">${lo}</text>`;
-  const spokes = [0, 45, 90, 135].map(a => { const t = a * Math.PI / 180, x = Math.cos(t) * R, y = Math.sin(t) * R;
-    return `<line class="spoke" x1="${-x}" y1="${-y}" x2="${x}" y2="${y}"/>`; }).join("");
-  const blips = pts.map((j, i) => {
-    // spread a company's jobs a little so dots don't stack
-    const a = hashAngle(j.company) + (i % 5 - 2) * 0.05, r = Math.max(6, rOf(j.score));
-    return `<circle class="blip${j.first_seen === D.today ? "" : " old"}" r="5.5" cx="${(Math.cos(a) * r).toFixed(1)}" cy="${(Math.sin(a) * r).toFixed(1)}" data-id="${esc(j.id)}" tabindex="-1"/>`;
+  const pts = list.filter(j => j.score >= lo).slice(0, 300);
+  const count = Object.fromEntries(TRACKS.map(t => [t, 0]));
+  pts.forEach(j => count[TRACKS.includes(j.track) ? j.track : "Other"]++);
+  const ringVals = [90, 80, 60].filter(s => s > lo);
+  const rings = ringVals.map(s => `<circle class="ring" r="${rOf(s).toFixed(1)}"/>`).join("");
+  const ringLab = ringVals.concat(lo).map(s => { const [x, y] = P(s === lo ? R : rOf(s), A0);
+    return `<text class="ring-label num" x="${x}" y="${y}" dx="-3" dy="-3" text-anchor="end">${s}</text>`; }).join("");
+  const sectors = TRACKS.map((t, i) => {
+    const a = A0 + i * SPAN, [x, y] = P(R, a), mid = a + SPAN / 2, [lx, ly] = P(R + 16, mid);
+    const c = Math.cos(mid), anchor = Math.abs(c) < .3 ? "middle" : c > 0 ? "start" : "end";
+    const dy = Math.sin(mid) > .5 ? 10 : Math.sin(mid) < -.5 ? -12 : -2;
+    return (i === 0 ? `<path class="sector me" d="${wedge(0.01, R, a, a + SPAN)}"/>` : "") +
+      `<line class="spoke" x1="0" y1="0" x2="${x}" y2="${y}"/>` +
+      `<text class="sector-label" x="${lx}" y="${ly}" dy="${dy}" text-anchor="${anchor}">${esc(TRACK_LABEL[t] || t)}` +
+      `<tspan class="c num" x="${lx}" dy="13">${count[t]} job${count[t] === 1 ? "" : "s"}</tspan></text>`;
+  }).join("");
+  const blips = pts.map(j => {
+    const i = Math.max(0, TRACKS.indexOf(j.track)), pad = 0.08;
+    const a = A0 + i * SPAN + pad + hash01(j.id + j.company) * (SPAN - 2 * pad), r = Math.max(7, rOf(j.score));
+    const [x, y] = P(r, a);
+    return `<circle class="blip${j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="-1"/>`;
   }).join("");
   svg.innerHTML = `<defs><radialGradient id="sweepGrad" cx="0" cy="0" r="${R}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--accent)" stop-opacity=".22"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
-    <circle class="ring" r="${R}"/>${rings}${spokes}
+    ${sectors}<circle class="ring" r="${R}"/>${rings}${ringLab}
     <path class="sweep" d="M0 0 L${R} 0 A${R} ${R} 0 0 0 ${(Math.cos(-0.6) * R).toFixed(1)} ${(Math.sin(-0.6) * R).toFixed(1)} Z"/>
     ${blips}<circle r="3" fill="var(--ink)"/>`;
   sweepOnce();
@@ -338,6 +483,38 @@ $("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(s)}${
   <div class="track"><div class="fill" style="width:${(n / peak * 100).toFixed(1)}%"></div></div><span class="v num">${n}</span></div>`).join("")
   || `<p class="empty">No skill gaps found yet.</p>`;
 
+// Market pizza: how often on-track jobs near me ask for each skill, coloured by whether I have it
+(() => {
+  const pool = D.jobs.filter(j => isLocal(j) && j.track && j.track !== "Other" && (j.matched.length + j.missing.length));
+  const asks = {};
+  pool.forEach(j => new Set(j.matched.concat(j.missing)).forEach(s => asks[s] = (asks[s] || 0) + 1));
+  const top = Object.entries(asks).sort((a, b) => b[1] - a[1]).slice(0, 12);
+  if (!top.length) { $("#pz-lede").textContent = "Not enough jobs yet."; return; }
+  const peak = top[0][1], pct = n => Math.round(n / pool.length * 100);
+  const kind = s => D.have.includes(s) ? "have" : D.learning.includes(s) ? "learning" : "gap";
+  const colour = { have: "var(--have)", learning: "var(--accent)", gap: "var(--gap)" };
+  const order = { have: 0, learning: 1, gap: 2 };
+  const slices = top.slice().sort((a, b) => order[kind(a[0])] - order[kind(b[0])] || b[1] - a[1]);
+  $("#market").innerHTML = pizza(slices.map(([s, n]) => ({ label: s, value: Math.sqrt(n / peak) * 100, shown: pct(n) + "%",
+    note: `asked for in ${n} of ${pool.length} jobs`, color: colour[kind(s)] })), { R: 150, r0: 32, font: 12, core: pool.length });
+  $("#pz-lede").textContent = `The ${top.length} skills most asked for across ${pool.length} data, BI and analyst jobs in KL and Selangor (the number in the middle). Slices are grouped like a player profile: skills I have, then skills I'm learning, then gaps. A longer slice means the skill is asked for more often, and the badge gives the share of jobs.`;
+  const mine = top.filter(([s]) => kind(s) === "have"), learn = top.filter(([s]) => kind(s) === "learning"), gaps = top.filter(([s]) => kind(s) === "gap");
+  const de = pool.filter(j => j.track === "Data engineering"), deAsks = {};
+  de.forEach(j => j.missing.forEach(s => deAsks[s] = (deAsks[s] || 0) + 1));
+  const deTop = Object.entries(deAsks).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([s, n]) => `${s} (${n})`);
+  const byTrack = TRACKS.map(t => { const js = D.jobs.filter(j => isLocal(j) && (j.track || "Other") === t);
+    return [t, js.length, js.filter(j => j.score >= 60).length]; });
+  const peakT = Math.max(1, ...byTrack.map(r => r[1]));
+  $("#market-notes").innerHTML = `
+    <p><b>I already cover ${mine.length} of the top ${top.length}:</b> ${esc(list3(mine.map(m => m[0]))) || "none yet"}.</p>
+    ${learn.length ? `<p><b>Learning now:</b> ${esc(list3(learn.map(m => m[0])))}.</p>` : ""}
+    ${gaps.length ? `<p><b>Gaps worth closing:</b> ${esc(list3(gaps.map(m => `${m[0]} (${pct(m[1])}%)`)))}.</p>` : ""}
+    ${deTop.length ? `<p><b>For data engineering roles</b> (${de.length} nearby), the most common missing skills are ${esc(list3(deTop))}.</p>` : ""}
+    <h3 style="margin-top:16px">Jobs nearby by track</h3>
+    ${byTrack.map(([t, n, g]) => `<div class="sk"><span>${esc(t)}</span><div class="track"><div class="fill" style="width:${(n / peakT * 100).toFixed(1)}%;background:color-mix(in srgb,var(--accent) 28%,transparent)"><div class="fill" style="width:${n ? (g / n * 100).toFixed(1) : 0}%"></div></div></div><span class="v num">${g}/${n}</span></div>`).join("")}
+    <p class="st" style="margin-top:6px">Pale bar: all open jobs. Dark part and first number: jobs scoring 60 or more.</p>`;
+})();
+
 // Sources panel
 $("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name)).map(f =>
   `<tr><td>${esc(f.name)}${f.ok ? "" : ' <span class="st bad">not reachable today</span>'}</td><td class="r num">${f.jobs}</td></tr>`).join("");
@@ -362,6 +539,15 @@ document.addEventListener("click", e => {
     render(); open.forEach(id => document.getElementById(id)?.classList.add("open"));
     return;
   }
+  const r = e.target.closest("[data-reach]");
+  if (r) { document.getElementById("reach-" + r.dataset.reach)?.classList.toggle("on"); return; }
+  const c = e.target.closest("[data-copy]");
+  if (c) {
+    const box = document.getElementById("reach-" + c.dataset.copy), text = `Subject: ${box.querySelector("input").value}\n\n${box.querySelector("textarea").value}`;
+    navigator.clipboard?.writeText(text).then(() => { c.textContent = "Copied"; setTimeout(() => c.textContent = "Copy email", 1500); },
+      () => { box.querySelector("textarea").select(); });
+    return;
+  }
   const h = e.target.closest("[data-toggle]");
   if (h && !e.target.closest("a")) h.parentElement.classList.toggle("open");
 });
@@ -370,11 +556,7 @@ document.addEventListener("keydown", e => {
   if (h && e.target === h && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); h.parentElement.classList.toggle("open"); }
 });
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
-  document.addEventListener("keydown", e => {
-  const h = e.target.closest?.("[data-toggle]");
-  if (h && e.target === h && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); h.parentElement.classList.toggle("open"); }
-});
-document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
   document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === t.dataset.tab));
 }));
 const root = document.documentElement, theme = store.get("jr-theme", null);
