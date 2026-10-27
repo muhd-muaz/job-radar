@@ -1,33 +1,5 @@
 [
  {
-  "id": "gh:binance:5002563101",
-  "company": "Binance",
-  "title": "Binance Accelerator Program - Research On Chain Data Analyst",
-  "location": "Hong Kong; Malaysia; Singapore",
-  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002563101",
-  "source": "greenhouse",
-  "score": 100,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "etl",
-   "machine learning",
-   "python",
-   "rest api",
-   "sql",
-   "statistics"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "sr:BoschGroup:744000140613329",
   "company": "Bosch",
   "title": "Business Analyst - Finance (Financial Planning and Analysis)",
@@ -878,6 +850,25 @@
    "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
   ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:hp:3170248",
+  "company": "HP",
+  "title": "Business Analyst",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur-Malaysia/Business-Analyst_3170248-2",
+  "source": "workday",
+  "score": 80,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "power bi"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [],
   "salary": "",
   "posts": 1
  },
@@ -3455,6 +3446,29 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-71589",
+  "company": "AIA",
+  "title": "Associate-Investment Accounting (Data Control)",
+  "location": "Putrajaya, MY-AIA Global Financial Solutions Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Associate-Investment-Accounting--Data-Control-_JR-71589",
+  "source": "workday",
+  "score": 56,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
   "id": "wd:intel:JR0287791",
   "company": "Intel",
   "title": "E-Core CPU Design Automation Engineer",
@@ -3598,29 +3612,6 @@
    "aws",
    "spark"
   ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "gh:binance:5002693101",
-  "company": "Binance",
-  "title": "Binance Accelerator Program - Data Scientist (On Chain background) Fully Remote",
-  "location": "Australia; Hong Kong; Malaysia; New Zealand; Singapore; Taiwan",
-  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002693101",
-  "source": "greenhouse",
-  "score": 54,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "python"
-  ],
-  "missing": [],
-  "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -5362,6 +5353,34 @@
   "learning": [],
   "projects": [
    "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "gh:binance:5002563101",
+  "company": "Binance",
+  "title": "Binance Accelerator Program - Research On Chain Data Analyst",
+  "location": "Hong Kong; Malaysia; Singapore",
+  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002563101",
+  "source": "greenhouse",
+  "score": 45,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "etl",
+   "machine learning",
+   "python",
+   "rest api",
+   "sql",
+   "statistics"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
@@ -8854,6 +8873,29 @@
   "posts": 1
  },
  {
+  "id": "gh:binance:5002693101",
+  "company": "Binance",
+  "title": "Binance Accelerator Program - Data Scientist (On Chain background) Fully Remote",
+  "location": "Australia; Hong Kong; Malaysia; New Zealand; Singapore; Taiwan",
+  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002693101",
+  "source": "greenhouse",
+  "score": 24,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "python"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
   "id": "wd:centific:JR103313",
   "company": "Centific",
   "title": "Data Annotator (English) (1-Year Contract, renewable)-1",
@@ -10033,31 +10075,6 @@
   ],
   "learning": [],
   "projects": [],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "gh:binance:5002681101",
-  "company": "Binance",
-  "title": "Binance Accelerator Program - Data Scientist (Transaction Monitoring)",
-  "location": "Australia; Hong Kong; Malaysia; New Zealand; Singapore; Taiwan",
-  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002681101",
-  "source": "greenhouse",
-  "score": 15,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
   "salary": "",
   "posts": 1
  },
@@ -11807,6 +11824,31 @@
   ],
   "learning": [],
   "projects": [],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "gh:binance:5002681101",
+  "company": "Binance",
+  "title": "Binance Accelerator Program - Data Scientist (Transaction Monitoring)",
+  "location": "Australia; Hong Kong; Malaysia; New Zealand; Singapore; Taiwan",
+  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002681101",
+  "source": "greenhouse",
+  "score": 0,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
   "salary": "",
   "posts": 1
  },
