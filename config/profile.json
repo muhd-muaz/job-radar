@@ -169,7 +169,8 @@
     "months contract": 30,
     "6-month": 30,
     "12-month": 20,
-    "secondment": 20
+    "secondment": 20,
+    "accelerator program": 30
   },
   "level_bonus": {
     "fresh graduate": 10,

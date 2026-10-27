@@ -59,7 +59,8 @@ def main(argv):
         store.upsert(db, j, score(j, profile, find(j["title"] + "\n" + j["description"])), j["last_seen"])
     db.commit()
     active = store.active_jobs(db, since)
-    runs = [dict(r) for r in db.execute("SELECT * FROM runs WHERE run_date = ?", (today,))]
+    runs = [dict(r) for r in db.execute(  # latest result per source today
+        "SELECT * FROM runs WHERE rowid IN (SELECT max(rowid) FROM runs WHERE run_date = ? GROUP BY company)", (today,))]
     closed = store.closed_jobs(db, since, (dt.date.today() - dt.timedelta(days=45)).isoformat())
     posts = store.post_counts(db)
     report.build(ROOT / "docs", active, runs, profile, today, closed, posts)
