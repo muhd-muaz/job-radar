@@ -28,29 +28,6 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-66785",
-  "company": "AIA",
-  "title": "Associate-Data Process Operation (Mandarin Speaking)",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Associate-Data-Process-Operation--Mandarin-Speaking-_JR-66785",
-  "source": "workday",
-  "score": 88,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "kpi",
-   "requirements gathering"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "sr:DeliveryHero:744000151531499",
   "company": "Delivery Hero / foodpanda",
   "title": "Data Analyst (Quick Commerce & Partnerships) ",
@@ -160,53 +137,6 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-63770",
-  "company": "AIA",
-  "title": "Business Analyst & User Acceptance Testing (Hong Kong Market)",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Business-Analyst---User-Acceptance-Testing--Hong-Kong-Market-_JR-63770",
-  "source": "workday",
-  "score": 80,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-69017",
-  "company": "AIA",
-  "title": "Specialist-Business Analyst & UAT (SG Market)",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist-Business-Analyst---UAT--SG-Market-_JR-69017",
-  "source": "workday",
-  "score": 79,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-68675",
   "company": "AIA",
   "title": "Data Science, Analyst",
@@ -233,58 +163,13 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-66644",
-  "company": "AIA",
-  "title": "Business & Financial Reporting, Specialist",
-  "location": "Kuala Lumpur, MY-AIA Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Business---Financial-Reporting--Specialist_JR-66644",
-  "source": "workday",
-  "score": 78,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "excel"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:flextronics:WD232058",
-  "company": "Flex",
-  "title": "Business Systems Analyst",
-  "location": "Malaysia, Penang",
-  "url": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/Malaysia-Penang/Business-Systems-Analyst_WD232058",
-  "source": "workday",
-  "score": 75,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "wd:jabil:J2421185",
   "company": "Jabil",
   "title": "Enterprise Solutions Specialist (SAP IMWM)",
   "location": "Penang",
   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solutions-Specialist--SAP-IMWM-_J2421185",
   "source": "workday",
-  "score": 75,
+  "score": 70,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
@@ -297,57 +182,6 @@
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:intel:JR0287791",
-  "company": "Intel",
-  "title": "E-Core CPU Design Automation Engineer",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/E-Core-CPU-Design-Automation-Engineer_JR0287791",
-  "source": "workday",
-  "score": 70,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "machine learning",
-   "python",
-   "statistics"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 2
- },
- {
-  "id": "sr:BoschGroup:744000154351264",
-  "company": "Bosch",
-  "title": "Technician - Production (Automation Line)",
-  "location": "Bayan Lepas, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154351264-technician-production-automation-line-",
-  "source": "smartrecruiters",
-  "score": 70,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "erp",
-   "kpi"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
@@ -384,31 +218,6 @@
   "learning": [
    "tableau"
   ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "sr:WesternDigital:744000152066139",
-  "company": "Western Digital",
-  "title": "Robotics Automation Engineer, Manufacturing Engineering",
-  "location": "Kuching, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000152066139-robotics-automation-engineer-manufacturing-engineering",
-  "source": "smartrecruiters",
-  "score": 70,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "python",
-   "sql"
-  ],
-  "missing": [],
-  "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -459,80 +268,20 @@
   "posts": 1
  },
  {
-  "id": "wd:intel:JR0288232",
-  "company": "Intel",
-  "title": "EDA Design Automation Engineer",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/EDA-Design-Automation-Engineer_JR0288232",
+  "id": "wd:aia:JR-66644",
+  "company": "AIA",
+  "title": "Business & Financial Reporting, Specialist",
+  "location": "Kuala Lumpur, MY-AIA Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Business---Financial-Reporting--Specialist_JR-66644",
   "source": "workday",
-  "score": 68,
+  "score": 67,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
    "automation",
-   "python"
+   "excel"
   ],
   "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-70579",
-  "company": "AIA",
-  "title": "Specialist-R2R Financial Reporting",
-  "location": "Putrajaya, MY-AIA Global Financial Solutions Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Specialist-R2R-Financial-Reporting_JR-70579",
-  "source": "workday",
-  "score": 68,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "requirements gathering"
-  ],
-  "missing": [
-   "process mapping",
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:pwc:765474WD",
-  "company": "PwC",
-  "title": "Experienced Associate - HRMS Business Process & Automation Specialist",
-  "location": "Kuala Lumpur",
-  "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/Kuala-Lumpur/Experienced-Associate---HRMS-Business-Process---Automation-Specialist_765474WD",
-  "source": "workday",
-  "score": 68,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data visualization",
-   "excel",
-   "power query",
-   "python",
-   "sql"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management"
-  ],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
@@ -584,33 +333,6 @@
   "posts": 2
  },
  {
-  "id": "wd:sanofi:R2875579",
-  "company": "Sanofi",
-  "title": "A2R Closing and Reporting Senior Analyst",
-  "location": "Kuala Lumpur",
-  "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Kuala-Lumpur/A2R-Closing-and-Reporting-Senior-Analyst_R2875579",
-  "source": "workday",
-  "score": 66,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "erp",
-   "excel"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "wd:prudential:25100026",
   "company": "Prudential",
   "title": "Enterprise Architect",
@@ -635,6 +357,34 @@
   "learning": [
    "azure"
   ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-70579",
+  "company": "AIA",
+  "title": "Specialist-R2R Financial Reporting",
+  "location": "Putrajaya, MY-AIA Global Financial Solutions Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Specialist-R2R-Financial-Reporting_JR-70579",
+  "source": "workday",
+  "score": 64,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "requirements gathering"
+  ],
+  "missing": [
+   "process mapping",
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -683,69 +433,19 @@
   "posts": 1
  },
  {
-  "id": "wd:prudential:26100236",
-  "company": "Prudential",
-  "title": "HR Project Delivery & Application Support Analyst",
-  "location": "Kuala Lumpur (Group Head Office)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/HR-Project-Delivery---Application-Support-Analyst_26100236-4",
-  "source": "workday",
-  "score": 64,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "kpi",
-   "rest api"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-69947",
-  "company": "AIA",
-  "title": "Business Analyst, Specialist",
-  "location": "Kuala Lumpur, MY-AIA Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Business-Analyst--Specialist_JR-69947",
-  "source": "workday",
-  "score": 64,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-66156",
-  "company": "AIA",
-  "title": "Specialist - Data Scientist",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist---Data-Scientist_JR-66156",
+  "id": "wd:sanofi:R2875579",
+  "company": "Sanofi",
+  "title": "A2R Closing and Reporting Senior Analyst",
+  "location": "Kuala Lumpur",
+  "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Kuala-Lumpur/A2R-Closing-and-Reporting-Senior-Analyst_R2875579",
   "source": "workday",
   "score": 62,
-  "first_seen": "2026-10-23",
+  "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
    "automation",
-   "data pipeline"
+   "erp",
+   "excel"
   ],
   "missing": [
    "stakeholder management"
@@ -755,31 +455,6 @@
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:jabil:J2421179",
-  "company": "Jabil",
-  "title": "Enterprise Business Integration (IT System Application Admin)",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Business-Integration--IT-System-Application-Admin-_J2421179",
-  "source": "workday",
-  "score": 61,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp",
-   "sql"
-  ],
-  "missing": [
-   "linux"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
@@ -816,29 +491,6 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-51089",
-  "company": "AIA",
-  "title": "Associate-Operations Optimization (Data Management) - Mandarin Support",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Associate-Operations-Optimization--Data-Management----Mandarin-Support_JR-51089",
-  "source": "workday",
-  "score": 60,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "data quality"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "wd:jabil:J2447705",
   "company": "Jabil",
   "title": "Data Scientist",
@@ -866,47 +518,22 @@
   "posts": 1
  },
  {
-  "id": "wd:jabil:J2457274",
-  "company": "Jabil",
-  "title": "Automation Design Engineer I",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Automation-Design-Engineer-I_J2457274",
-  "source": "workday",
-  "score": 60,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:agilent:4039476",
-  "company": "Agilent",
-  "title": "Product Data Management Change Analyst (ECO Change Analyst)",
-  "location": "Malaysia-Penang",
-  "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/Malaysia-Penang/Product-Data-Management-Change-Analyst--ECO-Change-Analyst-_4039476",
+  "id": "wd:prudential:26100236",
+  "company": "Prudential",
+  "title": "HR Project Delivery & Application Support Analyst",
+  "location": "Kuala Lumpur (Group Head Office)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/HR-Project-Delivery---Application-Support-Analyst_26100236-4",
   "source": "workday",
   "score": 60,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
    "automation",
-   "erp",
-   "excel",
    "kpi",
-   "python"
+   "rest api"
   ],
   "missing": [
-   "agile"
+   "stakeholder management"
   ],
   "learning": [],
   "projects": [
@@ -946,11 +573,11 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-68529",
+  "id": "wd:aia:JR-69947",
   "company": "AIA",
-  "title": "Technical Business Analyst, Analyst",
-  "location": "Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Malaysia/Technical-Business-Analyst--Analyst_JR-68529",
+  "title": "Business Analyst, Specialist",
+  "location": "Kuala Lumpur, MY-AIA Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Business-Analyst--Specialist_JR-69947",
   "source": "workday",
   "score": 59,
   "first_seen": "2026-10-23",
@@ -959,7 +586,6 @@
    "requirements gathering"
   ],
   "missing": [
-   "agile",
    "stakeholder management",
    "uat"
   ],
@@ -971,26 +597,51 @@
   "posts": 1
  },
  {
-  "id": "wd:manulife:JR26071509",
-  "company": "Manulife",
-  "title": "Product Analyst",
-  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
-  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Product-Analyst_JR26071509",
+  "id": "wd:flextronics:WD232058",
+  "company": "Flex",
+  "title": "Business Systems Analyst",
+  "location": "Malaysia, Penang",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/Malaysia-Penang/Business-Systems-Analyst_WD232058",
   "source": "workday",
-  "score": 56,
+  "score": 58,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "power bi"
+   "erp"
   ],
-  "missing": [
-   "stakeholder management",
-   "uat"
-  ],
+  "missing": [],
   "learning": [],
-  "projects": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
   "salary": "",
   "posts": 1
+ },
+ {
+  "id": "wd:intel:JR0287791",
+  "company": "Intel",
+  "title": "E-Core CPU Design Automation Engineer",
+  "location": "Malaysia, Penang",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/E-Core-CPU-Design-Automation-Engineer_JR0287791",
+  "source": "workday",
+  "score": 55,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "machine learning",
+   "python",
+   "statistics"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 2
  },
  {
   "id": "sr:DeliveryHero:744000150045909",
@@ -1026,32 +677,6 @@
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-68375",
-  "company": "AIA",
-  "title": "Enterprise Risk Management, Consultant",
-  "location": "Kuala Lumpur, MY-AIA Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Enterprise-Risk-Management--Consultant_JR-68375",
-  "source": "workday",
-  "score": 54,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "dashboard",
-   "data visualization"
-  ],
-  "missing": [
-   "process mapping",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
    "Job radar (this project)"
   ],
   "salary": "",
@@ -1101,6 +726,32 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-66156",
+  "company": "AIA",
+  "title": "Specialist - Data Scientist",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist---Data-Scientist_JR-66156",
+  "source": "workday",
+  "score": 54,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "data pipeline"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
   "id": "wd:aia:JR-71518",
   "company": "AIA",
   "title": "Analytics, Specialist",
@@ -1141,19 +792,28 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-55295",
-  "company": "AIA",
-  "title": "Lead Analyst, GASC-USC – Service Hub – RPA",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--GASC-USC---Service-Hub---RPA_JR-55295-1",
+  "id": "wd:pwc:765474WD",
+  "company": "PwC",
+  "title": "Experienced Associate - HRMS Business Process & Automation Specialist",
+  "location": "Kuala Lumpur",
+  "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/Kuala-Lumpur/Experienced-Associate---HRMS-Business-Process---Automation-Specialist_765474WD",
   "source": "workday",
   "score": 53,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation"
+   "automation",
+   "dashboard",
+   "data visualization",
+   "excel",
+   "power query",
+   "python",
+   "sql"
   ],
-  "missing": [],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
@@ -1164,29 +824,29 @@
   "posts": 1
  },
  {
-  "id": "wd:jabil:J2457282",
+  "id": "wd:jabil:J2421179",
   "company": "Jabil",
-  "title": "Automation Design Engineer Sr",
+  "title": "Enterprise Business Integration (IT System Application Admin)",
   "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Automation-Design-Engineer-Sr_J2457282",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Business-Integration--IT-System-Application-Admin-_J2421179",
   "source": "workday",
   "score": 53,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation",
-   "data visualization",
-   "statistics"
+   "erp",
+   "sql"
   ],
-  "missing": [],
+  "missing": [
+   "linux"
+  ],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
-  "posts": 2
+  "posts": 1
  },
  {
   "id": "wd:prudential:25090375",
@@ -1281,47 +941,66 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-61229",
+  "id": "wd:aia:JR-66785",
   "company": "AIA",
-  "title": "Lead Specialist - Group Financial Reporting (Regulatory)",
+  "title": "Associate-Data Process Operation (Mandarin Speaking)",
   "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Lead-Specialist---Group-Financial-Reporting--Regulatory-_JR-61229",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Associate-Data-Process-Operation--Mandarin-Speaking-_JR-66785",
   "source": "workday",
   "score": 52,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "erp",
-   "excel"
+   "kpi",
+   "requirements gathering"
   ],
-  "missing": [
-   "stakeholder management"
-  ],
+  "missing": [],
   "learning": [],
   "projects": [
+   "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
  },
  {
-  "id": "wd:sanofi:R2874182",
-  "company": "Sanofi",
-  "title": "Senior Accountant - Reporting, Kuala Lumpur Hub",
-  "location": "Petaling Jaya",
-  "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Petaling-Jaya/Senior-Accountant---Reporting--Kuala-Lumpur-Hub_R2874182",
+  "id": "wd:manulife:JR26071509",
+  "company": "Manulife",
+  "title": "Product Analyst",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Product-Analyst_JR26071509",
   "source": "workday",
   "score": 51,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation",
-   "erp",
-   "excel"
+   "power bi"
   ],
   "missing": [
-   "stakeholder management"
+   "stakeholder management",
+   "uat"
   ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "sr:BoschGroup:744000154351264",
+  "company": "Bosch",
+  "title": "Technician - Production (Automation Line)",
+  "location": "Bayan Lepas, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154351264-technician-production-automation-line-",
+  "source": "smartrecruiters",
+  "score": 50,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "erp",
+   "kpi"
+  ],
+  "missing": [],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
@@ -1332,38 +1011,38 @@
   "posts": 1
  },
  {
-  "id": "wd:jabil:J2454591",
-  "company": "Jabil",
-  "title": "Enterprise Solutions Specialist (SAP MM, IMWM, PLM))",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solutions-Specialist--SAP-MM--IMWM--PLM--_J2454591",
-  "source": "workday",
-  "score": 51,
+  "id": "sr:WesternDigital:744000152066139",
+  "company": "Western Digital",
+  "title": "Robotics Automation Engineer, Manufacturing Engineering",
+  "location": "Kuching, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000152066139-robotics-automation-engineer-manufacturing-engineering",
+  "source": "smartrecruiters",
+  "score": 50,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "erp",
-   "requirements gathering"
+   "automation",
+   "python",
+   "sql"
   ],
-  "missing": [
-   "sas",
-   "stakeholder management"
-  ],
+  "missing": [],
   "learning": [],
   "projects": [
-   "ERP automation (Exact Synergy REST)"
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-66373",
+  "id": "wd:aia:JR-69017",
   "company": "AIA",
-  "title": "Senior Associate-Business Analyst (HK Market)",
+  "title": "Specialist-Business Analyst & UAT (SG Market)",
   "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Associate-Business-Analyst--HK-Market-_JR-66373",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Specialist-Business-Analyst---UAT--SG-Market-_JR-69017",
   "source": "workday",
-  "score": 51,
+  "score": 49,
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-27",
   "matched": [
@@ -1379,54 +1058,6 @@
   ],
   "salary": "",
   "posts": 1
- },
- {
-  "id": "wd:flextronics:WD227899",
-  "company": "Flex",
-  "title": "Automation Engineer",
-  "location": "Malaysia, Johor",
-  "url": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/Malaysia-Johor/Automation-Engineer_WD227899",
-  "source": "workday",
-  "score": 50,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:hp:3168838",
-  "company": "HP",
-  "title": "Business Operations Analyst",
-  "location": "Batu Kawan, Pulau Pinang (Penang), Malaysia",
-  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Business-Operations-Analyst_3168838-1",
-  "source": "workday",
-  "score": 50,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp",
-   "kpi"
-  ],
-  "missing": [
-   "process mapping"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 2
  },
  {
   "id": "wd:flextronics:WD222009",
@@ -1471,56 +1102,50 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-70834",
+  "id": "wd:aia:JR-68375",
   "company": "AIA",
-  "title": "Specialist-Group Financial Reporting",
-  "location": "Putrajaya, MY-AIA Global Financial Solutions Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Specialist-Group-Financial-Reporting_JR-70834",
+  "title": "Enterprise Risk Management, Consultant",
+  "location": "Kuala Lumpur, MY-AIA Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Enterprise-Risk-Management--Consultant_JR-68375",
   "source": "workday",
   "score": 47,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "erp"
+   "dashboard",
+   "data visualization"
   ],
   "missing": [
-   "azure",
+   "process mapping",
    "stakeholder management"
   ],
-  "learning": [
-   "azure"
-  ],
+  "learning": [],
   "projects": [
-   "ERP automation (Exact Synergy REST)"
+   "Lift breakdown analytics",
+   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
  },
  {
-  "id": "sr:BoschGroup:744000153126021",
-  "company": "Bosch",
-  "title": "SAP Logistics Process Expert   / Key User",
-  "location": "Batu Kawan, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000153126021-sap-logistics-process-expert-key-user",
-  "source": "smartrecruiters",
-  "score": 46,
-  "first_seen": "2026-10-27",
+  "id": "wd:aia:JR-63770",
+  "company": "AIA",
+  "title": "Business Analyst & User Acceptance Testing (Hong Kong Market)",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Business-Analyst---User-Acceptance-Testing--Hong-Kong-Market-_JR-63770",
+  "source": "workday",
+  "score": 47,
+  "first_seen": "2026-10-23",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation",
-   "erp"
+   "requirements gathering"
   ],
   "missing": [
-   "data quality",
-   "spark"
+   "uat"
   ],
-  "learning": [
-   "spark"
-  ],
+  "learning": [],
   "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
@@ -1563,25 +1188,6 @@
   "posts": 1
  },
  {
-  "id": "wd:iqvia:R1567216",
-  "company": "IQVIA",
-  "title": "Business Operations Analyst (6 months contract)",
-  "location": "Wilayah Persekutuan Kuala Lumpur, Malaysia",
-  "url": "https://iqvia.wd1.myworkdayjobs.com/IQVIA/job/Wilayah-Persekutuan-Kuala-Lumpur-Malaysia/Business-Operations-Analyst_R1567216",
-  "source": "workday",
-  "score": 45,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "excel"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-69839",
   "company": "AIA",
   "title": "Intern, Data Engineer",
@@ -1620,11 +1226,35 @@
   "posts": 1
  },
  {
-  "id": "wd:jabil:J2466474",
+  "id": "wd:aia:JR-61229",
+  "company": "AIA",
+  "title": "Lead Specialist - Group Financial Reporting (Regulatory)",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Lead-Specialist---Group-Financial-Reporting--Regulatory-_JR-61229",
+  "source": "workday",
+  "score": 44,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "excel"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:jabil:J2454591",
   "company": "Jabil",
-  "title": "Enterprise Solution Specialist II (SAP IMWM)",
+  "title": "Enterprise Solutions Specialist (SAP MM, IMWM, PLM))",
   "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solution-Specialist-II--SAP-IMWM-_J2466474",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solutions-Specialist--SAP-MM--IMWM--PLM--_J2454591",
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
@@ -1634,11 +1264,116 @@
    "requirements gathering"
   ],
   "missing": [
-   "uat"
+   "sas",
+   "stakeholder management"
   ],
   "learning": [],
   "projects": [
    "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:intel:JR0288232",
+  "company": "Intel",
+  "title": "EDA Design Automation Engineer",
+  "location": "Malaysia, Penang",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/EDA-Design-Automation-Engineer_JR0288232",
+  "source": "workday",
+  "score": 42,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "python"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:hp:3168838",
+  "company": "HP",
+  "title": "Business Operations Analyst",
+  "location": "Batu Kawan, Pulau Pinang (Penang), Malaysia",
+  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Business-Operations-Analyst_3168838-1",
+  "source": "workday",
+  "score": 42,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "kpi"
+  ],
+  "missing": [
+   "process mapping"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 2
+ },
+ {
+  "id": "wd:aia:JR-70834",
+  "company": "AIA",
+  "title": "Specialist-Group Financial Reporting",
+  "location": "Putrajaya, MY-AIA Global Financial Solutions Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Specialist-Group-Financial-Reporting_JR-70834",
+  "source": "workday",
+  "score": 40,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp"
+  ],
+  "missing": [
+   "azure",
+   "stakeholder management"
+  ],
+  "learning": [
+   "azure"
+  ],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "sr:BoschGroup:744000153126021",
+  "company": "Bosch",
+  "title": "SAP Logistics Process Expert   / Key User",
+  "location": "Batu Kawan, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000153126021-sap-logistics-process-expert-key-user",
+  "source": "smartrecruiters",
+  "score": 39,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "erp"
+  ],
+  "missing": [
+   "data quality",
+   "spark"
+  ],
+  "learning": [
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
@@ -1650,7 +1385,7 @@
   "location": "Kuala Lumpur, Malaysia",
   "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000156463079-specialist-product-ops-data-specialist",
   "source": "smartrecruiters",
-  "score": 40,
+  "score": 38,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
@@ -1680,112 +1415,13 @@
   "posts": 1
  },
  {
-  "id": "wd:intel:JR0286156",
-  "company": "Intel",
-  "title": "Sales Operations Analyst",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Sales-Operations-Analyst_JR0286156",
-  "source": "workday",
-  "score": 40,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "data visualization",
-   "erp",
-   "excel"
-  ],
-  "missing": [
-   "data quality",
-   "jira"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:medtronic:R76967",
-  "company": "Medtronic",
-  "title": "Senior IT Business Analyst (SAP/ERP)",
-  "location": "Kulim, Kedah, Malaysia",
-  "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Kulim-Kedah-Malaysia/Sr-IT-Business-Analyst--SAP-ERP-_R76967-1",
-  "source": "workday",
-  "score": 39,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp",
-   "requirements gathering"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:medtronic:R76965",
-  "company": "Medtronic",
-  "title": "Senior IT Business Analyst ( Manufacturing Execution System )",
-  "location": "Kulim, Kedah, Malaysia",
-  "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Kulim-Kedah-Malaysia/Sr-IT-Business-Analyst-MES_R76965-1",
-  "source": "workday",
-  "score": 39,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp",
-   "requirements gathering"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-62758",
+  "id": "wd:aia:JR-55295",
   "company": "AIA",
-  "title": "Intern, Transformation Automation-2",
+  "title": "Lead Analyst, GASC-USC – Service Hub – RPA",
   "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Transformation-Automation-2_JR-62758-1",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--GASC-USC---Service-Hub---RPA_JR-55295-1",
   "source": "workday",
-  "score": 38,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "rest api"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "lv:ninjavan:ad6f5641-e233-472c-9e7d-38827d34d232",
-  "company": "Ninja Van",
-  "title": "Intern, Automation (Warehouse)",
-  "location": "Shah Alam, Selangor, Malaysia",
-  "url": "https://jobs.lever.co/ninjavan/ad6f5641-e233-472c-9e7d-38827d34d232",
-  "source": "lever",
-  "score": 38,
+  "score": 36,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
@@ -1802,141 +1438,27 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-66507",
-  "company": "AIA",
-  "title": "Internship - Technology or Data",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Internship---Technology-Data_JR-66507",
+  "id": "wd:intel:JR0286156",
+  "company": "Intel",
+  "title": "Sales Operations Analyst",
+  "location": "Malaysia, Penang",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Sales-Operations-Analyst_JR0286156",
   "source": "workday",
-  "score": 37,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "excel",
-   "power bi",
-   "requirements gathering"
-  ],
-  "missing": [
-   "process mapping"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "sr:BoschGroup:744000150296530",
-  "company": "Bosch",
-  "title": "SMT Digitalization & Automation Project Lead",
-  "location": "Bayan Lepas, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150296530-smt-digitalization-automation-project-lead",
-  "source": "smartrecruiters",
-  "score": 37,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "data visualization",
-   "erp",
-   "power bi",
-   "python",
-   "rest api",
-   "sql"
-  ],
-  "missing": [
-   "spark",
-   "tableau"
-  ],
-  "learning": [
-   "spark",
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-69468",
-  "company": "AIA",
-  "title": "Lead Analyst, Business Analyst",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Business-Analyst_JR-69468",
-  "source": "workday",
-  "score": 37,
+  "score": 36,
   "first_seen": "2026-10-23",
   "last_seen": "2026-10-27",
   "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "azure",
-   "jira",
-   "process mapping",
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [
-   "azure"
-  ],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:manulife:JR26081069",
-  "company": "Manulife",
-  "title": "Wealth Operations Analyst",
-  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
-  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Investment-Operations-Analyst_JR26081069",
-  "source": "workday",
-  "score": 36,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
+   "data visualization",
+   "erp",
    "excel"
   ],
   "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-37965",
-  "company": "AIA",
-  "title": "Senior Business Analyst - Operational Risk Management System Support",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Manager---Operational-Risk-Management_JR-37965",
-  "source": "workday",
-  "score": 36,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "process mapping",
-   "uat"
+   "data quality",
+   "jira"
   ],
   "learning": [],
   "projects": [
+   "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
@@ -1979,57 +1501,26 @@
   "posts": 1
  },
  {
-  "id": "wd:sanofi:R2870422",
-  "company": "Sanofi",
-  "title": "Customer Master Data Senior Analyst",
-  "location": "Petaling Jaya",
-  "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Petaling-Jaya/Customer-Master-Data-Senior-Analyst_R2870422-1",
+  "id": "wd:agilent:4039476",
+  "company": "Agilent",
+  "title": "Product Data Management Change Analyst (ECO Change Analyst)",
+  "location": "Malaysia-Penang",
+  "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/Malaysia-Penang/Product-Data-Management-Change-Analyst--ECO-Change-Analyst-_4039476",
   "source": "workday",
   "score": 35,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
+   "automation",
    "erp",
    "excel",
    "kpi",
-   "machine learning",
-   "requirements gathering"
+   "python"
   ],
   "missing": [
-   "data quality",
-   "jira"
+   "agile"
   ],
   "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:prudential:26070330",
-  "company": "Prudential",
-  "title": "Manager, Data Quality",
-  "location": "Kuala Lumpur",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur/Manager--Data-Quality_26070330",
-  "source": "workday",
-  "score": 35,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "dashboard",
-   "requirements gathering"
-  ],
-  "missing": [
-   "data quality",
-   "databricks",
-   "gdpr / pdpa",
-   "stakeholder management"
-  ],
-  "learning": [
-   "databricks"
-  ],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -2069,46 +1560,48 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-66504",
+  "id": "wd:aia:JR-69468",
   "company": "AIA",
-  "title": "Internship - Technology or Data (Mandarin Speaking)",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Internship---Technology-Data--Mandarin-Speaking-_JR-66504",
+  "title": "Lead Analyst, Business Analyst",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Business-Analyst_JR-69468",
   "source": "workday",
-  "score": 33,
-  "first_seen": "2026-10-27",
+  "score": 34,
+  "first_seen": "2026-10-23",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation",
-   "excel",
-   "power bi",
    "requirements gathering"
   ],
   "missing": [
+   "azure",
+   "jira",
+   "process mapping",
+   "stakeholder management",
    "uat"
   ],
-  "learning": [],
+  "learning": [
+   "azure"
+  ],
   "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
  },
  {
-  "id": "sr:DeliveryHero:744000133509270",
-  "company": "Delivery Hero / foodpanda",
-  "title": "Manager, Process & Automation",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000133509270-manager-process-automation",
-  "source": "smartrecruiters",
-  "score": 33,
+  "id": "wd:jabil:J2457282",
+  "company": "Jabil",
+  "title": "Automation Design Engineer Sr",
+  "location": "Penang",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Automation-Design-Engineer-Sr_J2457282",
+  "source": "workday",
+  "score": 32,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
    "automation",
-   "kpi"
+   "data visualization",
+   "statistics"
   ],
   "missing": [],
   "learning": [],
@@ -2118,37 +1611,24 @@
    "Job radar (this project)"
   ],
   "salary": "",
-  "posts": 1
+  "posts": 2
  },
  {
-  "id": "wd:prudential:26100115",
-  "company": "Prudential",
-  "title": "Manager, Security Automation & Engineering",
-  "location": "Kuala Lumpur (Group Head Office)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/Manager--Security-Automation---Engineering_26100115",
+  "id": "wd:iqvia:R1567216",
+  "company": "IQVIA",
+  "title": "Business Operations Analyst (6 months contract)",
+  "location": "Wilayah Persekutuan Kuala Lumpur, Malaysia",
+  "url": "https://iqvia.wd1.myworkdayjobs.com/IQVIA/job/Wilayah-Persekutuan-Kuala-Lumpur-Malaysia/Business-Operations-Analyst_R1567216",
   "source": "workday",
   "score": 32,
-  "first_seen": "2026-10-27",
+  "first_seen": "2026-10-23",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "kpi",
-   "python",
-   "requirements gathering"
+   "excel"
   ],
-  "missing": [
-   "data modeling",
-   "data quality",
-   "stakeholder management"
-  ],
+  "missing": [],
   "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
+  "projects": [],
   "salary": "",
   "posts": 1
  },
@@ -2177,6 +1657,109 @@
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:prudential:26070330",
+  "company": "Prudential",
+  "title": "Manager, Data Quality",
+  "location": "Kuala Lumpur",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur/Manager--Data-Quality_26070330",
+  "source": "workday",
+  "score": 31,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "dashboard",
+   "requirements gathering"
+  ],
+  "missing": [
+   "data quality",
+   "databricks",
+   "gdpr / pdpa",
+   "stakeholder management"
+  ],
+  "learning": [
+   "databricks"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:medtronic:R76967",
+  "company": "Medtronic",
+  "title": "Senior IT Business Analyst (SAP/ERP)",
+  "location": "Kulim, Kedah, Malaysia",
+  "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Kulim-Kedah-Malaysia/Sr-IT-Business-Analyst--SAP-ERP-_R76967-1",
+  "source": "workday",
+  "score": 31,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "requirements gathering"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:medtronic:R76965",
+  "company": "Medtronic",
+  "title": "Senior IT Business Analyst ( Manufacturing Execution System )",
+  "location": "Kulim, Kedah, Malaysia",
+  "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Kulim-Kedah-Malaysia/Sr-IT-Business-Analyst-MES_R76965-1",
+  "source": "workday",
+  "score": 31,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "requirements gathering"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-37965",
+  "company": "AIA",
+  "title": "Senior Business Analyst - Operational Risk Management System Support",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Manager---Operational-Risk-Management_JR-37965",
+  "source": "workday",
+  "score": 31,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "requirements gathering"
+  ],
+  "missing": [
+   "process mapping",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
@@ -2213,89 +1796,94 @@
   "posts": 1
  },
  {
-  "id": "wd:manulife:JR26071192",
-  "company": "Manulife",
-  "title": "Suspense Reporting Manager",
-  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
-  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Suspense-Reporting-Manager_JR26071192",
+  "id": "wd:aia:JR-68529",
+  "company": "AIA",
+  "title": "Technical Business Analyst, Analyst",
+  "location": "Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Malaysia/Technical-Business-Analyst--Analyst_JR-68529",
   "source": "workday",
   "score": 30,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "requirements gathering"
+  ],
+  "missing": [
+   "agile",
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:jabil:J2457274",
+  "company": "Jabil",
+  "title": "Automation Design Engineer I",
+  "location": "Penang",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Automation-Design-Engineer-I_J2457274",
+  "source": "workday",
+  "score": 28,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation",
+   "automation"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-51089",
+  "company": "AIA",
+  "title": "Associate-Operations Optimization (Data Management) - Mandarin Support",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Associate-Operations-Optimization--Data-Management----Mandarin-Support_JR-51089",
+  "source": "workday",
+  "score": 27,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "requirements gathering"
+  ],
+  "missing": [
+   "data quality"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:manulife:JR26081069",
+  "company": "Manulife",
+  "title": "Wealth Operations Analyst",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Investment-Operations-Analyst_JR26081069",
+  "source": "workday",
+  "score": 27,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
    "excel"
   ],
   "missing": [
    "stakeholder management"
   ],
   "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "sr:DeliveryHero:744000145880579",
-  "company": "Delivery Hero / foodpanda",
-  "title": "Senior Specialist, AM Ops Automation and Efficiency",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000145880579-senior-specialist-am-ops-automation-and-efficiency",
-  "source": "smartrecruiters",
-  "score": 27,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "data visualization",
-   "kpi",
-   "machine learning",
-   "sql"
-  ],
-  "missing": [
-   "stakeholder management",
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:jabil:J2443591",
-  "company": "Jabil",
-  "title": "Vision Engineer for Data Services Squad",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Business-Systems-Analyst-for-Data-Services-Squad_J2443591",
-  "source": "workday",
-  "score": 26,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "kpi",
-   "machine learning",
-   "requirements gathering"
-  ],
-  "missing": [
-   "agile",
-   "data quality",
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
+  "projects": [],
   "salary": "",
   "posts": 1
  },
@@ -2340,30 +1928,6 @@
    "snowflake",
    "spark"
   ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:intel:JR0288233",
-  "company": "Intel",
-  "title": "Senior EDA Design Automation Engineer - Digital Implementation",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Senior-EDA-Design-Automation-Engineer---Digital-Implementation_JR0288233",
-  "source": "workday",
-  "score": 25,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "python"
-  ],
-  "missing": [],
-  "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -2451,75 +2015,57 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-68270",
-  "company": "AIA",
-  "title": "Assistant Manager, Reporting",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Reporting_JR-68270-1",
+  "id": "wd:motorolasolutions:R70031",
+  "company": "Motorola Solutions",
+  "title": "Pricing & Analytics Intern",
+  "location": "Penang, Malaysia",
+  "url": "https://motorolasolutions.wd5.myworkdayjobs.com/Careers/job/Penang-Malaysia/Pricing---Analytics-Intern_R70031",
   "source": "workday",
   "score": 24,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "erp",
-   "requirements gathering"
+   "data pipeline",
+   "excel"
   ],
-  "missing": [
-   "data modeling",
-   "stakeholder management"
-  ],
+  "missing": [],
   "learning": [],
   "projects": [
-   "ERP automation (Exact Synergy REST)"
+   "Lift breakdown analytics",
+   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
  },
  {
-  "id": "wd:manulife:JR26031121",
-  "company": "Manulife",
-  "title": "Manager, Financial Reporting",
-  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
-  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Financial-Reporting--Manager--Japanese-Speaking-_JR26031121",
-  "source": "workday",
-  "score": 24,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "excel",
-   "sql"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:prudential:25120026",
-  "company": "Prudential",
-  "title": "Assistant Manager, IFRS 17 Reporting",
-  "location": "Kuala Lumpur (Takaful)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Takaful/Assistant-Manager--IFRS-17-Reporting_25120026",
-  "source": "workday",
-  "score": 23,
+  "id": "sr:BoschGroup:744000150296530",
+  "company": "Bosch",
+  "title": "SMT Digitalization & Automation Project Lead",
+  "location": "Bayan Lepas, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150296530-smt-digitalization-automation-project-lead",
+  "source": "smartrecruiters",
+  "score": 22,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
    "automation",
-   "excel"
+   "dashboard",
+   "data pipeline",
+   "data visualization",
+   "erp",
+   "power bi",
+   "python",
+   "rest api",
+   "sql"
   ],
   "missing": [
-   "data quality",
-   "process mapping",
-   "stakeholder management"
+   "spark",
+   "tableau"
   ],
-  "learning": [],
+  "learning": [
+   "spark",
+   "tableau"
+  ],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -2562,26 +2108,78 @@
   "posts": 1
  },
  {
-  "id": "wd:hp:3169071",
-  "company": "HP",
-  "title": "Factory Automation Technical Specialist",
-  "location": "Batu Kawan, Pulau Pinang (Penang), Malaysia",
-  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Factory-Automation-Technical-Specialist_3169071-1",
+  "id": "wd:manulife:JR26071192",
+  "company": "Manulife",
+  "title": "Suspense Reporting Manager",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Suspense-Reporting-Manager_JR26071192",
   "source": "workday",
-  "score": 20,
+  "score": 22,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "automation"
+   "automation",
+   "excel"
   ],
   "missing": [
-   "process mapping"
+   "stakeholder management"
   ],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:sanofi:R2874182",
+  "company": "Sanofi",
+  "title": "Senior Accountant - Reporting, Kuala Lumpur Hub",
+  "location": "Petaling Jaya",
+  "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Petaling-Jaya/Senior-Accountant---Reporting--Kuala-Lumpur-Hub_R2874182",
+  "source": "workday",
+  "score": 22,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "erp",
+   "excel"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-66373",
+  "company": "AIA",
+  "title": "Senior Associate-Business Analyst (HK Market)",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Senior-Associate-Business-Analyst--HK-Market-_JR-66373",
+  "source": "workday",
+  "score": 21,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "requirements gathering"
+  ],
+  "missing": [
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
@@ -2676,6 +2274,82 @@
   "posts": 1
  },
  {
+  "id": "wd:prudential:25120026",
+  "company": "Prudential",
+  "title": "Assistant Manager, IFRS 17 Reporting",
+  "location": "Kuala Lumpur (Takaful)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Takaful/Assistant-Manager--IFRS-17-Reporting_25120026",
+  "source": "workday",
+  "score": 19,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "excel"
+  ],
+  "missing": [
+   "data quality",
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:flextronics:WD227899",
+  "company": "Flex",
+  "title": "Automation Engineer",
+  "location": "Malaysia, Johor",
+  "url": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/Malaysia-Johor/Automation-Engineer_WD227899",
+  "source": "workday",
+  "score": 18,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-68270",
+  "company": "AIA",
+  "title": "Assistant Manager, Reporting",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Reporting_JR-68270-1",
+  "source": "workday",
+  "score": 17,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "requirements gathering"
+  ],
+  "missing": [
+   "data modeling",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
   "id": "sr:BoschGroup:744000131638937",
   "company": "Bosch",
   "title": "Senior Data Specialist",
@@ -2712,32 +2386,58 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-68261",
-  "company": "AIA",
-  "title": "Intern, Enterprise Solutions",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Enterprise-Solutions_JR-68261-2",
+  "id": "wd:manulife:JR26031121",
+  "company": "Manulife",
+  "title": "Manager, Financial Reporting",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Financial-Reporting--Manager--Japanese-Speaking-_JR26031121",
   "source": "workday",
-  "score": 16,
-  "first_seen": "2026-10-23",
+  "score": 17,
+  "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "requirements gathering",
+   "excel",
    "sql"
   ],
   "missing": [
-   "agile",
-   "azure",
-   "jira",
-   "stakeholder management",
-   "uat"
+   "data quality",
+   "stakeholder management"
   ],
-  "learning": [
-   "azure"
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
   ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:prudential:26100115",
+  "company": "Prudential",
+  "title": "Manager, Security Automation & Engineering",
+  "location": "Kuala Lumpur (Group Head Office)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/Manager--Security-Automation---Engineering_26100115",
+  "source": "workday",
+  "score": 17,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "dashboard",
+   "data pipeline",
+   "kpi",
+   "python",
+   "requirements gathering"
+  ],
+  "missing": [
+   "data modeling",
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
   "projects": [
    "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
   ],
   "salary": "",
   "posts": 1
@@ -2758,32 +2458,6 @@
   ],
   "learning": [],
   "projects": [],
-  "salary": "",
-  "posts": 1
- },
- {
-  "id": "wd:prudential:26080118",
-  "company": "Prudential",
-  "title": "Assistant Director, Analytics & Insights",
-  "location": "Kuala Lumpur",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur/Assistant-Director--Analytics---Insights_26080118",
-  "source": "workday",
-  "score": 14,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "kpi",
-   "power bi",
-   "statistics"
-  ],
-  "missing": [
-   "sas",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
   "salary": "",
   "posts": 1
  },
@@ -2841,6 +2515,147 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-68261",
+  "company": "AIA",
+  "title": "Intern, Enterprise Solutions",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Enterprise-Solutions_JR-68261-2",
+  "source": "workday",
+  "score": 13,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "requirements gathering",
+   "sql"
+  ],
+  "missing": [
+   "agile",
+   "azure",
+   "jira",
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [
+   "azure"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-66507",
+  "company": "AIA",
+  "title": "Internship - Technology or Data",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Internship---Technology-Data_JR-66507",
+  "source": "workday",
+  "score": 12,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "dashboard",
+   "data pipeline",
+   "excel",
+   "power bi",
+   "requirements gathering"
+  ],
+  "missing": [
+   "process mapping"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-62758",
+  "company": "AIA",
+  "title": "Intern, Transformation Automation-2",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Transformation-Automation-2_JR-62758-1",
+  "source": "workday",
+  "score": 12,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "rest api"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "sr:DeliveryHero:744000145880579",
+  "company": "Delivery Hero / foodpanda",
+  "title": "Senior Specialist, AM Ops Automation and Efficiency",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000145880579-senior-specialist-am-ops-automation-and-efficiency",
+  "source": "smartrecruiters",
+  "score": 12,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "data visualization",
+   "kpi",
+   "machine learning",
+   "sql"
+  ],
+  "missing": [
+   "stakeholder management",
+   "tableau"
+  ],
+  "learning": [
+   "tableau"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:jabil:J2466474",
+  "company": "Jabil",
+  "title": "Enterprise Solution Specialist II (SAP IMWM)",
+  "location": "Penang",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solution-Specialist-II--SAP-IMWM-_J2466474",
+  "source": "workday",
+  "score": 11,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "requirements gathering"
+  ],
+  "missing": [
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
   "id": "wd:aia:JR-66128",
   "company": "AIA",
   "title": "Customer Data Domain & GenAI Product Owner,  Principal",
@@ -2873,26 +2688,83 @@
   "posts": 1
  },
  {
-  "id": "wd:prudential:26040151",
-  "company": "Prudential",
-  "title": "PBTB | Senior Manager, Data Governance and Privacy",
-  "location": "Kuala Lumpur (Takaful)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Takaful/Senior-Manager--Data-Governance_26040151",
+  "id": "wd:sanofi:R2870422",
+  "company": "Sanofi",
+  "title": "Customer Master Data Senior Analyst",
+  "location": "Petaling Jaya",
+  "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Petaling-Jaya/Customer-Master-Data-Senior-Analyst_R2870422-1",
   "source": "workday",
-  "score": 9,
+  "score": 10,
   "first_seen": "2026-10-27",
   "last_seen": "2026-10-27",
   "matched": [
-   "dashboard",
-   "kpi"
+   "erp",
+   "excel",
+   "kpi",
+   "machine learning",
+   "requirements gathering"
   ],
   "missing": [
    "data quality",
-   "stakeholder management"
+   "jira"
   ],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:prudential:26080118",
+  "company": "Prudential",
+  "title": "Assistant Director, Analytics & Insights",
+  "location": "Kuala Lumpur",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur/Assistant-Director--Analytics---Insights_26080118",
+  "source": "workday",
+  "score": 10,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "kpi",
+   "power bi",
+   "statistics"
+  ],
+  "missing": [
+   "sas",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-66504",
+  "company": "AIA",
+  "title": "Internship - Technology or Data (Mandarin Speaking)",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Internship---Technology-Data--Mandarin-Speaking-_JR-66504",
+  "source": "workday",
+  "score": 8,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "excel",
+   "power bi",
+   "requirements gathering"
+  ],
+  "missing": [
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
   ],
   "salary": "",
@@ -2917,6 +2789,30 @@
    "spark"
   ],
   "projects": [],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "sr:DeliveryHero:744000133509270",
+  "company": "Delivery Hero / foodpanda",
+  "title": "Manager, Process & Automation",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000133509270-manager-process-automation",
+  "source": "smartrecruiters",
+  "score": 7,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "kpi"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
   "salary": "",
   "posts": 1
  },
@@ -2952,6 +2848,104 @@
    "databricks",
    "spark"
   ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "lv:ninjavan:ad6f5641-e233-472c-9e7d-38827d34d232",
+  "company": "Ninja Van",
+  "title": "Intern, Automation (Warehouse)",
+  "location": "Shah Alam, Selangor, Malaysia",
+  "url": "https://jobs.lever.co/ninjavan/ad6f5641-e233-472c-9e7d-38827d34d232",
+  "source": "lever",
+  "score": 6,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:prudential:26040151",
+  "company": "Prudential",
+  "title": "PBTB | Senior Manager, Data Governance and Privacy",
+  "location": "Kuala Lumpur (Takaful)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Takaful/Senior-Manager--Data-Governance_26040151",
+  "source": "workday",
+  "score": 2,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "dashboard",
+   "kpi"
+  ],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:intel:JR0288233",
+  "company": "Intel",
+  "title": "Senior EDA Design Automation Engineer - Digital Implementation",
+  "location": "Malaysia, Penang",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Senior-EDA-Design-Automation-Engineer---Digital-Implementation_JR0288233",
+  "source": "workday",
+  "score": 0,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "python"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:hp:3169071",
+  "company": "HP",
+  "title": "Factory Automation Technical Specialist",
+  "location": "Batu Kawan, Pulau Pinang (Penang), Malaysia",
+  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Factory-Automation-Technical-Specialist_3169071-1",
+  "source": "workday",
+  "score": 0,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation"
+  ],
+  "missing": [
+   "process mapping"
+  ],
+  "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -3064,6 +3058,35 @@
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:jabil:J2443591",
+  "company": "Jabil",
+  "title": "Vision Engineer for Data Services Squad",
+  "location": "Penang",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Business-Systems-Analyst-for-Data-Services-Squad_J2443591",
+  "source": "workday",
+  "score": 0,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "kpi",
+   "machine learning",
+   "requirements gathering"
+  ],
+  "missing": [
+   "agile",
+   "data quality",
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "posts": 1
