@@ -2381,6 +2381,36 @@
   "posts": 1
  },
  {
+  "id": "wd:prudential:26070476",
+  "company": "Prudential",
+  "title": "Solution Architect - Finance & ERP",
+  "location": "Kuala Lumpur (Group Head Office)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/Solution-Architect---Finance---ERP_26070476",
+  "source": "workday",
+  "score": 65,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "erp",
+   "requirements gathering",
+   "rest api"
+  ],
+  "missing": [
+   "azure",
+   "gcp",
+   "stakeholder management"
+  ],
+  "learning": [
+   "azure"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
   "id": "wd:aia:JR-70579",
   "company": "AIA",
   "title": "Specialist-R2R Financial Reporting",
@@ -4721,6 +4751,45 @@
    "stakeholder management"
   ],
   "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "posts": 1
+ },
+ {
+  "id": "wd:edwards:Req-51305",
+  "company": "Edwards Lifesciences",
+  "title": "Salesforce Business Analyst",
+  "location": "Malaysia-Kuala Lumpur BSC",
+  "url": "https://edwards.wd5.myworkdayjobs.com/EdwardsCareers/job/Malaysia-Kuala-Lumpur-BSC/Salesforce-Business-Analyst_Req-51305",
+  "source": "workday",
+  "score": 50,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-27",
+  "matched": [
+   "automation",
+   "dashboard",
+   "erp",
+   "requirements gathering",
+   "rest api"
+  ],
+  "missing": [
+   "agile",
+   "data modeling",
+   "data quality",
+   "data warehouse",
+   "jira",
+   "salesforce",
+   "stakeholder management",
+   "tableau",
+   "uat"
+  ],
+  "learning": [
+   "tableau"
+  ],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
