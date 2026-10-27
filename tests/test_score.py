@@ -62,3 +62,12 @@ Build ETL pipelines in Python and Airflow on AWS. 2 years of experience."""
     # ads older than 30 days drop off the list but stay archived
     assert sources.inbox(inbox, archive, today="2026-12-15") == []
     assert len(archive.read_text().splitlines()) == 3
+
+
+def test_full_time_entry_level_beats_contract():
+    desc = "SQL, Python, Power BI dashboards. Fresh graduates are welcome."
+    perm = score(job("Data Analyst", desc), PROFILE, FIND(desc))
+    contract = score(job("Data Analyst (6 months contract)", desc), PROFILE, FIND(desc))
+    intern = score(job("Data Analyst Intern", desc), PROFILE, FIND(desc))
+    assert perm["score"] >= 80
+    assert contract["score"] <= 45 and intern["score"] <= 45

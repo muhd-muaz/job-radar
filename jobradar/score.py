@@ -30,16 +30,23 @@ def score(job, profile, found):
     yrs = [int(n) for n in re.findall(r"(\d{1,2})\s*\+?\s*(?:-\s*\d+\s*)?years?", job["description"].lower()) if int(n) < 20]
     if yrs and min(yrs) >= 5:
         penalty += 15
+    desc = job["description"].lower()
+    # full-time, fresh grad to mid level: push contract / part-time roles down, lift entry-level ones
+    penalty += max((p for k, p in profile.get("job_type_penalty", {}).items() if k in title), default=0) or \
+        max((p for k, p in profile.get("job_type_penalty", {}).items() if k in desc[:600]), default=0) // 2
+    penalty -= max((b for k, b in profile.get("level_bonus", {}).items() if k in title or k in desc), default=0)
     loc = job.get("location", "").lower()
     bonus = profile.get("location_bonus", {})
     if any(w in loc for w in profile.get("preferred_locations", [])):
         penalty -= bonus.get("preferred", 0)
     elif any(w in loc for w in ("penang", "pulau pinang", "johor", "kedah", "kulim", "melaka", "sabah", "sarawak", "ipoh", "perak")):
         penalty -= bonus.get("elsewhere_in_malaysia", 0)
+    # not full-time, or an internship: never a strong fit
+    cap = 45 if any(k in title for k in list(profile.get("job_type_penalty", {})) + ["intern"]) else 100
     pts = title_pts / 3 * 45 + skill_fit * 55 - penalty
     projects = [p["name"] for p in profile["projects"] if set(p["skills"]) & set(matched)]
     return {
-        "score": max(0, min(100, round(pts))),
+        "score": max(0, min(cap, round(pts))),
         "matched": matched, "missing": missing,
         "learning": sorted(s for s in missing if s in profile.get("learning_skills", [])),
         "projects": projects,

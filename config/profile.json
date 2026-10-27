@@ -119,15 +119,18 @@
     "remote"
   ],
   "seniority_penalty": {
-    "principal": 30,
+    "principal": 40,
     "director": 40,
     "head of": 40,
-    "manager": 20,
-    "lead": 15,
-    "senior": 10,
-    "sr.": 10,
-    "staff ": 15,
-    "intern": 25
+    "manager": 30,
+    "lead": 25,
+    "senior": 20,
+    "sr.": 20,
+    "staff ": 25,
+    "intern": 40,
+    "sr ": 20,
+    "internship": 40,
+    "trainee": 15
   },
   "preferred_locations": [
     "kuala lumpur",
@@ -154,5 +157,35 @@
   "location_bonus": {
     "preferred": 8,
     "elsewhere_in_malaysia": -10
+  },
+  "job_type_penalty": {
+    "contract": 30,
+    "temporary": 30,
+    "temp ": 30,
+    "part-time": 40,
+    "part time": 40,
+    "freelance": 40,
+    "fixed term": 30,
+    "fixed-term": 30,
+    "months contract": 30,
+    "6-month": 30,
+    "12-month": 20,
+    "secondment": 20
+  },
+  "level_bonus": {
+    "fresh graduate": 10,
+    "fresh grad": 10,
+    "entry level": 10,
+    "entry-level": 10,
+    "junior": 8,
+    "graduate": 6,
+    "0-2 years": 8,
+    "1-3 years": 8,
+    "2-4 years": 5,
+    "1-2 years": 8,
+    "2-3 years": 6,
+    "permanent": 5,
+    "full-time": 3,
+    "full time": 3
   }
 }
