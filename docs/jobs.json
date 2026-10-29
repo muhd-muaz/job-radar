@@ -12152,6 +12152,38 @@
   "posts": 1
  },
  {
+  "id": "sr:nielseniq:744000158477589",
+  "company": "NielsenIQ",
+  "title": "Jr. Customer Support Analyst (Mandarin Speaker) – Data Troubleshooting",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158477589-jr-customer-support-analyst-mandarin-speaker-data-troubleshooting",
+  "source": "smartrecruiters",
+  "score": 25,
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-10-29",
+  "matched": [
+   "excel"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 35,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:altera:R03303",
   "company": "Altera",
   "title": "Business Operations Analyst",
