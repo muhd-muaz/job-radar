@@ -3,86 +3,336 @@
   "name": "Muhammad Mu'az bin Muhammad",
   "location": "Klang, Selangor",
   "links": [
-    {"label": "linkedin.com/in/muhammadmuazmuhammad", "url": "https://www.linkedin.com/in/muhammadmuazmuhammad"},
-    {"label": "github.com/muhd-muaz", "url": "https://github.com/muhd-muaz"}
+    {
+      "label": "linkedin.com/in/muhammadmuazmuhammad",
+      "url": "https://www.linkedin.com/in/muhammadmuazmuhammad"
+    },
+    {
+      "label": "github.com/muhd-muaz",
+      "url": "https://github.com/muhd-muaz"
+    }
   ],
   "summary": {
-    "Data engineering": "Application Support Executive building data pipelines around the ERP and call-centre systems in daily use. Automated breakdown reporting and monthly invoice reconciliation with Python, SQL, REST APIs and Power Query. Final-year BSc Data Analytics student (UMT, CGPA 3.36), seeking a junior data engineering role.",
-    "BI and reporting": "Application Support Executive who turns ERP and call-centre data into daily dashboards and month-end reports. Builds the pipelines behind them in Python, SQL and Power Query. Final-year BSc Data Analytics student (UMT, CGPA 3.36), seeking a BI or reporting role.",
-    "Data analysis": "Data Analytics student (UMT, CGPA 3.36) working as an Application Support Executive, analysing five years of lift breakdown data to find what drives repeat faults. Comfortable with Python, SQL, Power BI and statistics, and with explaining findings to operations teams.",
-    "Data science": "Data Analytics student (UMT, CGPA 3.36) with a statistics grounding (regression, PCA, Bayesian methods) and hands-on data pipelines at work. Analyses breakdown history in Python and SQL to find the lifts and faults behind most callbacks.",
-    "Business and systems": "Application Support Executive and main Exact Synergy contact at EITA Elevator: supports and trains users, maintains workflows, and automates reporting and invoice checks. Final-year BSc Data Analytics student (UMT, CGPA 3.36), seeking a business or systems analyst role.",
-    "Other": "Application Support Executive who automates reporting and reconciliation around ERP systems with Python, SQL and Power Query. Final-year BSc Data Analytics student (UMT, CGPA 3.36)."
+    "Data engineering": "Application Support Executive building data pipelines around the ERP and call-centre systems in daily use. Automated breakdown reporting and monthly invoice reconciliation with Python, SQL, REST APIs and Power Query. Final-year BSc Data Analytics student (UMT, CGPA 3.51), seeking a junior data engineering role.",
+    "BI and reporting": "Application Support Executive who turns ERP and call-centre data into daily dashboards and month-end reports. Builds the pipelines behind them in Python, SQL and Power Query. Final-year BSc Data Analytics student (UMT, CGPA 3.51), seeking a BI or reporting role.",
+    "Data analysis": "Data Analytics student (UMT, CGPA 3.51) working as an Application Support Executive, analysing five years of lift breakdown data to find what drives repeat faults. Comfortable with Python, SQL, Power BI and statistics, and with explaining findings to operations teams.",
+    "Data science": "Data Analytics student (UMT, CGPA 3.51) with a statistics grounding (regression, PCA, Bayesian methods) and hands-on data pipelines at work. Analyses breakdown history in Python and SQL to find the lifts and faults behind most callbacks.",
+    "Business and systems": "Application Support Executive and main Exact Synergy contact at EITA Elevator: supports and trains users, maintains workflows, and automates reporting and invoice checks. Final-year BSc Data Analytics student (UMT, CGPA 3.51), seeking a business or systems analyst role.",
+    "Other": "Application Support Executive who automates reporting and reconciliation around ERP systems with Python, SQL and Power Query. Final-year BSc Data Analytics student (UMT, CGPA 3.51)."
   },
   "jobs": [
     {
-      "title": "Application Support Executive", "org": "EITA Elevator (M) Sdn Bhd", "where": "Klang, Selangor", "dates": "Jul 2026 – Present",
+      "title": "Application Support Executive",
+      "org": "EITA Elevator (M) Sdn Bhd",
+      "where": "Klang, Selangor",
+      "dates": "Jul 2026 – Present",
       "bullets": [
-        {"text": "Automated the lift breakdown report: replaced a manual Excel and Power Query process with a Python and SQLite pipeline that pulls from the Exact Synergy REST API and the Electcoms call-centre system every weekday morning.",
-         "tags": ["python", "sql", "sqlite", "etl", "data pipeline", "rest api", "automation"], "tracks": ["Data engineering", "BI and reporting"]},
-        {"text": "Matched about 90% of work orders to call-centre tickets automatically and moved breakdown timings to system timestamps, removing errors from times keyed in by hand.",
-         "tags": ["data quality", "etl", "python", "data pipeline"], "tracks": ["Data engineering", "Data analysis"]},
-        {"text": "Built a daily dashboard and month-end report on five years of service history: response times, entrapments, preventive maintenance and repeat faults.",
-         "tags": ["dashboard", "kpi", "data visualization", "power bi", "reporting"], "tracks": ["BI and reporting", "Data analysis"]},
-        {"text": "Showed that a small group of lifts caused most breakdowns, driven by repeat faults rather than missed maintenance, so the service team could target them.",
-         "tags": ["statistics", "data analysis", "stakeholder management"], "tracks": ["Data analysis", "Data science"]},
-        {"text": "Main contact for Exact Synergy (workflow and service-contract system): resolves day-to-day issues for staff across departments, mostly maintenance, using admin rights for changes users cannot make.",
-         "tags": ["erp", "application support", "troubleshooting", "stakeholder management"], "tracks": ["Business and systems"]},
-        {"text": "Trains new Synergy users in the maintenance department, from technicians and supervisors to managers, one-to-one and in groups.",
-         "tags": ["training", "stakeholder management", "erp"], "tracks": ["Business and systems"]},
-        {"text": "Maintains Synergy workflow settings: approval routing, request form fields and request types.",
-         "tags": ["erp", "requirements gathering", "process mapping"], "tracks": ["Business and systems"]},
-        {"text": "Raises, checks and corrects about 120–140 maintenance, repair and modernisation invoices a month in Exact Globe, and runs a monthly reconciliation to catch missing or mismatched invoices.",
-         "tags": ["erp", "excel", "power query", "data quality"], "tracks": ["Business and systems", "Data analysis"]},
-        {"text": "Updated contract billing through the REST API with a backup, a test run and a read-back check, and reassigned about 130 open work orders in bulk instead of one by one.",
-         "tags": ["rest api", "automation", "erp"], "tracks": ["Data engineering", "Business and systems"]},
-        {"text": "Traced a Synergy search problem to an out-of-date search index, set up a workaround and prepared the vendor escalation.",
-         "tags": ["troubleshooting", "application support"], "tracks": ["Business and systems"]}
+        {
+          "text": "Automated the lift breakdown report: replaced a manual Excel and Power Query process with a Python and SQLite pipeline that pulls from the Exact Synergy REST API and the Electcoms call-centre system every weekday morning.",
+          "tags": [
+            "python",
+            "sql",
+            "sqlite",
+            "etl",
+            "data pipeline",
+            "rest api",
+            "automation"
+          ],
+          "tracks": [
+            "Data engineering",
+            "BI and reporting"
+          ]
+        },
+        {
+          "text": "Matched about 90% of work orders to call-centre tickets automatically and moved breakdown timings to system timestamps, removing errors from times keyed in by hand.",
+          "tags": [
+            "data quality",
+            "etl",
+            "python",
+            "data pipeline"
+          ],
+          "tracks": [
+            "Data engineering",
+            "Data analysis"
+          ]
+        },
+        {
+          "text": "Built a daily dashboard and month-end report on five years of service history: response times, entrapments, preventive maintenance and repeat faults.",
+          "tags": [
+            "dashboard",
+            "kpi",
+            "data visualization",
+            "power bi",
+            "reporting"
+          ],
+          "tracks": [
+            "BI and reporting",
+            "Data analysis"
+          ]
+        },
+        {
+          "text": "Showed that a small group of lifts caused most breakdowns, driven by repeat faults rather than missed maintenance, so the service team could target them.",
+          "tags": [
+            "statistics",
+            "data analysis",
+            "stakeholder management"
+          ],
+          "tracks": [
+            "Data analysis",
+            "Data science"
+          ]
+        },
+        {
+          "text": "Main contact for Exact Synergy (workflow and service-contract system): resolves day-to-day issues for staff across departments, mostly maintenance, using admin rights for changes users cannot make.",
+          "tags": [
+            "erp",
+            "application support",
+            "troubleshooting",
+            "stakeholder management"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        },
+        {
+          "text": "Trains new Synergy users in the maintenance department, from technicians and supervisors to managers, one-to-one and in groups.",
+          "tags": [
+            "training",
+            "stakeholder management",
+            "erp"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        },
+        {
+          "text": "Maintains Synergy workflow settings: approval routing, request form fields and request types.",
+          "tags": [
+            "erp",
+            "requirements gathering",
+            "process mapping"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        },
+        {
+          "text": "Raises, checks and corrects about 120–140 maintenance, repair and modernisation invoices a month in Exact Globe, and runs a monthly reconciliation to catch missing or mismatched invoices.",
+          "tags": [
+            "erp",
+            "excel",
+            "power query",
+            "data quality"
+          ],
+          "tracks": [
+            "Business and systems",
+            "Data analysis"
+          ]
+        },
+        {
+          "text": "Updated contract billing through the REST API with a backup, a test run and a read-back check, and reassigned about 130 open work orders in bulk instead of one by one.",
+          "tags": [
+            "rest api",
+            "automation",
+            "erp"
+          ],
+          "tracks": [
+            "Data engineering",
+            "Business and systems"
+          ]
+        },
+        {
+          "text": "Traced a Synergy search problem to an out-of-date search index, set up a workaround and prepared the vendor escalation.",
+          "tags": [
+            "troubleshooting",
+            "application support"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        }
       ]
     },
     {
-      "title": "System Intern", "org": "EITA Elevator (M) Sdn Bhd", "where": "Klang, Selangor", "dates": "Feb 2026 – Jun 2026",
+      "title": "System Intern",
+      "org": "EITA Elevator (M) Sdn Bhd",
+      "where": "Klang, Selangor",
+      "dates": "Feb 2026 – Jun 2026",
       "bullets": [
-        {"text": "Built a Power Query reconciliation (17 queries) comparing e-Builder billing, Exact Globe postings and the CRM account list; it checks about 750 invoices a month, matches 95% automatically and flags missing invoices and amount differences.",
-         "tags": ["power query", "etl", "data quality", "excel", "data pipeline", "sql"], "tracks": ["Data engineering", "Data analysis", "BI and reporting"]},
-        {"text": "Cleared a backlog of maintenance, repair and modernisation invoices in Exact Globe, generating 200+ invoices a day at peak.",
-         "tags": ["erp", "excel"], "tracks": ["Business and systems"]},
-        {"text": "Supported Exact Synergy users with errors, data-entry problems and workflow questions, escalating to senior staff when needed.",
-         "tags": ["application support", "erp", "troubleshooting"], "tracks": ["Business and systems"]},
-        {"text": "Documented how Synergy's data and workflows fit together, which laid the groundwork for later automation.",
-         "tags": ["data modeling", "process mapping", "requirements gathering"], "tracks": ["Data engineering", "Business and systems"]}
+        {
+          "text": "Built a Power Query reconciliation (17 queries) comparing e-Builder billing, Exact Globe postings and the CRM account list; it checks about 750 invoices a month, matches 95% automatically and flags missing invoices and amount differences.",
+          "tags": [
+            "power query",
+            "etl",
+            "data quality",
+            "excel",
+            "data pipeline",
+            "sql"
+          ],
+          "tracks": [
+            "Data engineering",
+            "Data analysis",
+            "BI and reporting"
+          ]
+        },
+        {
+          "text": "Cleared a backlog of maintenance, repair and modernisation invoices in Exact Globe, generating 200+ invoices a day at peak.",
+          "tags": [
+            "erp",
+            "excel"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        },
+        {
+          "text": "Supported Exact Synergy users with errors, data-entry problems and workflow questions, escalating to senior staff when needed.",
+          "tags": [
+            "application support",
+            "erp",
+            "troubleshooting"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        },
+        {
+          "text": "Documented how Synergy's data and workflows fit together, which laid the groundwork for later automation.",
+          "tags": [
+            "data modeling",
+            "process mapping",
+            "requirements gathering"
+          ],
+          "tracks": [
+            "Data engineering",
+            "Business and systems"
+          ]
+        }
       ]
     }
   ],
   "projects": [
-    {"name": "Job Radar", "stack": "Python, SQLite, GitHub Actions", "url": "https://github.com/muhd-muaz/job-radar",
-     "text": "Daily ETL pipeline collecting openings from 450+ company career sites through public job APIs into SQLite, scoring them against a skills profile and publishing a dashboard and email alerts, with unit tests and scheduled runs.",
-     "tags": ["python", "etl", "data pipeline", "sqlite", "rest api", "git", "ci/cd", "dashboard", "automation"]},
-    {"name": "Lift breakdown analytics (public demo)", "stack": "Python, SQL, dashboard", "url": "https://muhd-muaz.github.io/lift-breakdown-analytics/",
-     "text": "Anonymised version of the work breakdown pipeline and dashboard on synthetic data.",
-     "tags": ["python", "sql", "dashboard", "kpi", "data visualization"]},
-    {"name": "Malaysia Affordability Gap Index (DOSM Datathon 2025)", "stack": "Python, Power BI", "url": "",
-     "text": "Joined four national datasets (HIES, CPI, LFS, Census) in Python and built a Power BI dashboard comparing affordability across regions.",
-     "tags": ["python", "power bi", "data visualization", "statistics", "dashboard"]}
+    {
+      "name": "Job Radar",
+      "stack": "Python, SQLite, GitHub Actions",
+      "url": "https://github.com/muhd-muaz/job-radar",
+      "text": "Daily ETL pipeline collecting openings from 450+ company career sites through public job APIs into SQLite, scoring them against a skills profile and publishing a dashboard and email alerts, with unit tests and scheduled runs.",
+      "tags": [
+        "python",
+        "etl",
+        "data pipeline",
+        "sqlite",
+        "rest api",
+        "git",
+        "ci/cd",
+        "dashboard",
+        "automation"
+      ]
+    },
+    {
+      "name": "Lift breakdown analytics (public demo)",
+      "stack": "Python, SQL, dashboard",
+      "url": "https://muhd-muaz.github.io/lift-breakdown-analytics/",
+      "text": "Anonymised version of the work breakdown pipeline and dashboard on synthetic data.",
+      "tags": [
+        "python",
+        "sql",
+        "dashboard",
+        "kpi",
+        "data visualization"
+      ]
+    },
+    {
+      "name": "Malaysia Affordability Gap Index (DOSM Datathon 2025)",
+      "stack": "Python, Power BI",
+      "url": "",
+      "text": "Joined four national datasets (HIES, CPI, LFS, Census) in Python and built a Power BI dashboard comparing affordability across regions.",
+      "tags": [
+        "python",
+        "power bi",
+        "data visualization",
+        "statistics",
+        "dashboard"
+      ]
+    }
   ],
   "skills": {
-    "Data engineering": ["python", "sql", "sqlite", "etl", "data pipeline", "rest api", "power query", "git", "pandas"],
-    "Analytics and BI": ["power bi", "excel", "tableau", "alteryx", "statistics", "dashboard", "kpi"],
-    "Business systems": ["Exact Synergy (admin)", "Exact Globe", "Electcoms", "e-Builder"],
-    "Languages": ["Malay (native)", "English (fluent, MUET Band 4)"]
+    "Data engineering": [
+      "python",
+      "sql",
+      "sqlite",
+      "etl",
+      "data pipeline",
+      "rest api",
+      "power query",
+      "git",
+      "pandas"
+    ],
+    "Analytics and BI": [
+      "power bi",
+      "excel",
+      "tableau",
+      "alteryx",
+      "statistics",
+      "dashboard",
+      "kpi"
+    ],
+    "Business systems": [
+      "Exact Synergy (admin)",
+      "Exact Globe",
+      "Electcoms",
+      "e-Builder"
+    ],
+    "Languages": [
+      "Malay (native)",
+      "English (fluent, MUET Band 4)"
+    ]
   },
   "education": [
-    {"title": "BSc Data Analytics", "org": "Universiti Malaysia Terengganu", "dates": "Oct 2023 – Feb 2027",
-     "notes": ["CGPA 3.36; Dean's List, Semesters II and III", "YTM Future Leader Scholarship recipient"]},
-    {"title": "Foundation in STEM", "org": "Universiti Malaysia Terengganu", "dates": "Aug 2022 – Jul 2023", "notes": [], "cv_only": true},
-    {"title": "SPM, Science stream (6 As)", "org": "Sekolah Menengah Sains Hulu Selangor", "dates": "2021", "notes": [], "cv_only": true}
+    {
+      "title": "BSc Data Analytics",
+      "org": "Universiti Malaysia Terengganu",
+      "dates": "Oct 2023 – Feb 2027",
+      "notes": [
+        "CGPA 3.51; Dean's List, Semesters II and III; industrial training graded A",
+        "Relevant coursework: Database, Data Structures and Algorithms, Data Visualisation, Multivariate Statistics, Predictive Analytics, Machine Learning",
+        "YTM Future Leader Scholarship recipient"
+      ]
+    },
+    {
+      "title": "Foundation in STEM",
+      "org": "Universiti Malaysia Terengganu",
+      "dates": "Aug 2022 – Jul 2023",
+      "notes": [],
+      "cv_only": true
+    },
+    {
+      "title": "SPM, Science stream (6 As)",
+      "org": "Sekolah Menengah Sains Hulu Selangor",
+      "dates": "2021",
+      "notes": [],
+      "cv_only": true
+    }
   ],
   "extras": [
-    {"text": "Gold Award, 2nd International Education Innovation Competition, UPSI (May 2025)"},
-    {"text": "Malaysia Data Innovation Talent x DOSM Datathon (Sep 2025)", "cv_only": true},
-    {"text": "Joint Mobility Mathlink Venture, UIN SUSKA Riau – UMT (Jun 2025)", "cv_only": true},
-    {"text": "ICDL Documents and ICDL Spreadsheets, ICDL Asia (Mar 2025)"},
-    {"text": "AI For MY Future; Gemini Certified Educator", "cv_only": true}
+    {
+      "text": "Gold Award, 2nd International Education Innovation Competition, UPSI (May 2025)"
+    },
+    {
+      "text": "Malaysia Data Innovation Talent x DOSM Datathon (Sep 2025)",
+      "cv_only": true
+    },
+    {
+      "text": "Joint Mobility Mathlink Venture, UIN SUSKA Riau – UMT (Jun 2025)",
+      "cv_only": true
+    },
+    {
+      "text": "ICDL Documents and ICDL Spreadsheets, ICDL Asia (Mar 2025)"
+    },
+    {
+      "text": "AI For MY Future; Gemini Certified Educator",
+      "cv_only": true
+    }
   ],
   "gap_plan": {
     "_note": "Realistic ways to close a gap, shown beside the tailored resume (never printed).",

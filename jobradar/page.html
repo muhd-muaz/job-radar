@@ -193,14 +193,16 @@ footer a{color:var(--ink-2)}
 .fitnotes .gapi{border-top:1px solid var(--rule-2);padding:9px 0}
 .fitnotes .gapi b{color:var(--gap);display:block}
 @media print{
-  @page{size:A4;margin:0}
+  @page{size:A4;margin:12mm 0}   /* every page, so page 2 gets a top margin and page 1 a bottom one */
   body.printing-cv>*:not(#cv-ov){display:none!important}
   body.printing-cv{background:#fff}
   body.printing-cv #cv-ov{position:static;display:block;background:#fff;overflow:visible}
   body.printing-cv .cv-bar,body.printing-cv .fitnotes{display:none!important}
   body.printing-cv .cv-body{display:block;padding:0;margin:0}
   body.printing-cv .sheet-scale{transform:none!important;height:auto!important}
-  body.printing-cv .sheet{box-shadow:none;width:210mm;min-height:0;padding:44px 54px}
+  body.printing-cv .sheet{box-shadow:none;width:210mm;min-height:0;padding:0 54px}
+  body.printing-cv .sheet li,body.printing-cv .sheet .rrow{break-inside:avoid}
+  body.printing-cv .sheet h3{break-after:avoid}
   body.printing-cv .sheet.over::after{display:none}
 }
 @media (max-width:980px){.cv-body{grid-template-columns:1fr}}
