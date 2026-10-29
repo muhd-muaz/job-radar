@@ -64,7 +64,9 @@ def main(argv):
     closed = store.closed_jobs(db, since, (dt.date.today() - dt.timedelta(days=45)).isoformat())
     posts = store.post_counts(db)
     cv = load("cv.sample.json")  # the public page only ever carries the sample; real CVs stay in the browser
-    report.build(ROOT / "docs", active, runs, profile, today, closed, posts, cv)
+    # cv.locked.json = your own CV encrypted with your password on the page (Sign in); safe to publish
+    locked = load("cv.locked.json") if (ROOT / "config" / "cv.locked.json").exists() else None
+    report.build(ROOT / "docs", active, runs, profile, today, closed, posts, cv, skills, locked)
     if "--offline" not in argv:
         notify.send_new_matches(active, today, profile)
     print(f"{len(jobs)} collected today, {len(active)} active, report in docs/index.html")

@@ -29,7 +29,7 @@ def slim(j, posts):
     return out
 
 
-def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None):
+def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, skills=None, locked=None):
     posts = posts or {}
     outdir.mkdir(exist_ok=True)
     jobs, shown = [], set()
@@ -49,6 +49,8 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None):
         "have": sorted(profile["have_skills"]),
         "outreach": profile.get("outreach", {}),
         "cv": cv or {},
+        "skills": skills or {},
+        "locked": locked or None,
         "feeds": [{"name": r["company"], "ok": bool(r["ok"]), "jobs": r["jobs"], "error": r["error"]} for r in runs],
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")

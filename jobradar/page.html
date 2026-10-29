@@ -224,7 +224,7 @@ footer a{color:var(--ink-2)}
 <body>
 <header><div class="wrap">
   <div class="top"><span><b>Job Radar</b>, updated <span id="updated"></span> from <span id="nsrc"></span> sources</span>
-    <span style="display:flex;gap:6px"><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
+    <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign in</button><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
   <div class="hero">
     <div class="radar-box">
       <svg id="radar" viewBox="-280 -235 560 470" role="img" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
@@ -302,6 +302,7 @@ footer a{color:var(--ink-2)}
     <input id="cv-email" type="email" placeholder="Email (kept in this browser)" aria-label="Email for the resume">
     <input id="cv-phone" type="tel" placeholder="Phone (kept in this browser)" aria-label="Phone for the resume">
     <label class="btn2" for="cv-file" style="cursor:pointer">Load my CV</label><input id="cv-file" type="file" accept=".json,application/json" hidden>
+    <button class="btn2" id="cv-lock" hidden title="Encrypt your CV with a password so you can sign in from any device">Set a password</button>
     <button class="btn2" id="cv-forget" hidden>Remove my CV</button>
     <a class="btn2" id="cv-template" download="my-cv.json">Template</a>
     <button class="btn2" id="cv-print" style="background:var(--accent);color:#fff;border-color:var(--accent)">Save as PDF</button>
@@ -310,6 +311,17 @@ footer a{color:var(--ink-2)}
   <div class="cv-body">
     <div class="sheet-wrap" id="sheet-wrap"><div class="sheet-scale" id="sheet-scale"><div class="sheet" id="sheet"></div></div></div>
     <aside class="fitnotes" id="fitnotes"></aside>
+  </div>
+</div>
+
+<div class="cv-ov" id="pw-ov" role="dialog" aria-modal="true" aria-labelledby="pw-title" style="z-index:60">
+  <div class="panel" style="max-width:420px;margin:12vh auto 0">
+    <h2 id="pw-title">Sign in</h2>
+    <p class="lede" id="pw-lede"></p>
+    <input id="pw1" type="password" autocomplete="current-password" placeholder="Password" style="width:100%;height:42px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px">
+    <input id="pw2" type="password" autocomplete="new-password" placeholder="Type it again" hidden style="width:100%;height:42px;margin-top:8px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px">
+    <p class="st bad" id="pw-msg" style="min-height:1.4em;margin:8px 0"></p>
+    <div class="actions"><button class="btn2" id="pw-go" style="background:var(--accent);color:#fff;border-color:var(--accent)">Unlock</button><button class="btn2" id="pw-cancel">Cancel</button></div>
   </div>
 </div>
 
@@ -595,13 +607,15 @@ const NICE = { sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Pow
 const nice = s => NICE[s] || (s === s.toLowerCase() ? s[0].toUpperCase() + s.slice(1) : s);
 const cvState = { job: null, mode: "resume" };
 const contact = store.get("jr-contact", { email: "", phone: "" });
-function rel(tags, job) {
+function rel(tags, job, text = "") {
   if (!job) return 0;
-  return tags.filter(t => job.matched.includes(t)).length * 2 + tags.filter(t => job.missing.includes(t)).length;
+  // words shared with a pasted ad also count, so this works for any profession, not just data roles
+  const words = job.adWords ? text.toLowerCase().split(/[^a-z0-9+#]+/).filter(w => w.length > 4 && job.adWords.has(w)).length * 0.6 : 0;
+  return tags.filter(t => job.matched.includes(t)).length * 2 + tags.filter(t => job.missing.includes(t)).length + words;
 }
 function buildSheet(job, mode, keep, nproj = 2) {
   const C = CV(), track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
-  const score = b => rel(b.tags, job) * 2 + (b.tracks.includes(track) ? 3 : 0);
+  const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 3 : 0);
   const rank = list => list.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s);
   const jobsHtml = C.jobs.map((r, k) => {
     let bs = rank(r.bullets);
@@ -609,7 +623,7 @@ function buildSheet(job, mode, keep, nproj = 2) {
     return `<div class="rrow"><span>${esc(r.title)}</span><span>${esc(r.dates)}</span></div><div class="org">${esc(r.org)}, ${esc(r.where)}</div>
       <ul>${bs.map(b => `<li>${esc(b.text)}</li>`).join("")}</ul>`;
   }).join("");
-  const projs = C.projects.map(p => ({ ...p, s: rel(p.tags, job) })).sort((a, b) => b.s - a.s).slice(0, mode === "resume" ? nproj : 9);
+  const projs = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) })).sort((a, b) => b.s - a.s).slice(0, mode === "resume" ? nproj : 9);
   const asked = job ? job.matched : [];
   const skills = Object.entries(C.skills).map(([g, list]) => {
     const sorted = list.slice().sort((a, b) => asked.includes(b) - asked.includes(a));
@@ -644,9 +658,9 @@ function renderCv() {
   sheet.classList.toggle("over", cvState.mode === "resume" && sheet.scrollHeight > 1110);
   sheet.style.minHeight = "";
   fitSheet();
-  $("#cv-sub").textContent = (job ? `Tailored for ${job.title}, ${job.company}` : "General version") +
+  $("#cv-sub").textContent = (job ? `Tailored for ${job.title}${job.company ? ", " + job.company : ""}` : "General version") +
     (MYCV ? " · your CV, kept in this browser only" : " · showing a SAMPLE person: press Load my CV");
-  $("#cv-forget").hidden = !MYCV;
+  $("#cv-forget").hidden = !MYCV; $("#cv-lock").hidden = !MYCV;
   const gp = CV().gap_plan || D.cv.gap_plan || {};
   $("#fitnotes").innerHTML = job ? `<div class="panel">
       <h4>Keywords you can honestly claim</h4>
@@ -655,8 +669,82 @@ function renderCv() {
       <h4 style="margin-top:16px">What you're missing, and a realistic way to prepare</h4>
       ${job.missing.length ? job.missing.map(s => `<div class="gapi"><b>${esc(s)}${D.learning.includes(s) ? " · learning" : ""}</b>${esc(gp[s] || "Not covered yet. Leave it off the resume; if asked, say you're keen to learn it and name something close you've done.")}</div>`).join("") : "<p>No gaps found in this ad.</p>"}
       <p class="why">Only gaps you have actually practised go on the resume. Missing skills are never added to it automatically.</p>
-    </div>` : `<div class="panel"><h4>Tip</h4><p>Open any job and press <b>Tailored resume</b> to put that ad's keywords first and see what you're missing.</p></div>`;
+    </div>` : "";
+  $("#fitnotes").innerHTML += `<div class="panel" style="margin-top:${job ? 16 : 0}px"><h4>Tailor to any job ad</h4>
+      <p class="why" style="margin-top:0">Paste a job ad from anywhere, any profession. Your matching lines move to the top. Nothing leaves this browser.</p>
+      <textarea id="ad-text" style="width:100%;height:150px;margin-top:8px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:13.5px/1.5 inherit;padding:8px">${job && job.id === "pasted" ? esc(job.raw) : ""}</textarea>
+      <div class="actions"><button class="btn2" id="ad-go">Tailor to this ad</button></div></div>`;
 }
+const FIND = Object.entries(D.skills).map(([s, al]) => [s, (s.length > 1 ? [s] : []).concat(al).filter(t => t.trim())
+  .map(t => new RegExp("(?<![a-z0-9])" + t.trim().toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![a-z0-9])"))]);
+const TRACK_KEYS = [["Data engineering", /data engineer|analytics engineer|etl|data pipeline|data platform|data warehouse|data integration|big data|database|sql developer/],
+  ["BI and reporting", /\bbi\b|business intelligence|power bi|reporting|dashboard/], ["Data science", /data scientist|machine learning/],
+  ["Data analysis", /data analyst|analytics|insight|data/], ["Business and systems", /business analyst|systems? analyst|erp|sap|application support|analyst/]];
+function pastedJob(raw) {
+  const C = CV(), t = raw.toLowerCase(), title = raw.trim().split("\n")[0].slice(0, 90) || "Pasted job ad";
+  const asked = FIND.filter(([, rx]) => rx.some(r => r.test(t))).map(([s]) => s);
+  const mine = new Set(C.jobs.flatMap(j => j.bullets.flatMap(b => b.tags)).concat(...Object.values(C.skills)).map(x => x.toLowerCase()));
+  const stop = new Set("about above after again their there these those which while would should could where other being having years skills ability strong working experience candidate requirements responsibilities".split(" "));
+  return { id: "pasted", raw, title, company: "", track: (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0],
+    matched: asked.filter(s => mine.has(s)), missing: asked.filter(s => !mine.has(s)),
+    adWords: new Set(t.split(/[^a-z0-9+#]+/).filter(w => w.length > 4 && !stop.has(w))) };
+}
+// Password lock: the CV is encrypted in this browser (PBKDF2 + AES-GCM); only the scrambled file is ever published.
+const b64 = u => btoa(String.fromCharCode(...new Uint8Array(u))), unb64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+async function keyFor(pw, salt, iter) {
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
+  return crypto.subtle.deriveKey({ name: "PBKDF2", salt, iterations: iter, hash: "SHA-256" }, base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
+}
+async function lockCv(cv, pw) {
+  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12)), iter = 600000;
+  const ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv }, await keyFor(pw, salt, iter), new TextEncoder().encode(JSON.stringify(cv)));
+  return { v: 1, kdf: "PBKDF2-SHA256", iter, salt: b64(salt), iv: b64(iv), ct: b64(ct) };
+}
+async function unlockCv(L, pw) {
+  const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: unb64(L.iv) }, await keyFor(pw, unb64(L.salt), L.iter), unb64(L.ct));
+  return JSON.parse(new TextDecoder().decode(pt));
+}
+let pwMode = "unlock";
+function askPw(mode) {
+  pwMode = mode; $("#pw1").value = $("#pw2").value = ""; $("#pw-msg").textContent = "";
+  $("#pw2").hidden = mode !== "lock";
+  $("#pw-title").textContent = mode === "lock" ? "Set a password" : "Sign in";
+  $("#pw-go").textContent = mode === "lock" ? "Create locked file" : "Unlock";
+  $("#pw-lede").textContent = mode === "lock"
+    ? "Your CV gets scrambled with this password and downloaded as cv.locked.json. Publish that file and you can sign in from any device. Use 4 or more random words. The password is never stored or sent anywhere, and it can't be recovered if you forget it."
+    : "Enter your password to load your own CV on this device.";
+  $("#pw-ov").classList.add("on"); $("#pw1").focus();
+}
+$("#pw-cancel").addEventListener("click", () => $("#pw-ov").classList.remove("on"));
+$("#pw1").addEventListener("keydown", e => { if (e.key === "Enter" && pwMode === "unlock") $("#pw-go").click(); });
+$("#pw-go").addEventListener("click", async () => {
+  const pw = $("#pw1").value, msg = $("#pw-msg");
+  try {
+    if (pwMode === "lock") {
+      if (pw.length < 12) return msg.textContent = "Use at least 12 characters (4 random words is best).";
+      if (pw !== $("#pw2").value) return msg.textContent = "The two passwords don't match.";
+      msg.textContent = "Scrambling…";
+      const L = await lockCv(MYCV, pw), a = document.createElement("a");
+      a.href = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(L)); a.download = "cv.locked.json"; a.click();
+      msg.textContent = ""; $("#pw-ov").classList.remove("on");
+    } else {
+      msg.textContent = "Checking…";
+      MYCV = await unlockCv(D.locked, pw); store.set("jr-cv", MYCV);
+      $("#pw-ov").classList.remove("on"); syncSignin(); render(); if ($("#cv-ov").classList.contains("on")) renderCv();
+    }
+  } catch { msg.textContent = pwMode === "lock" ? "Couldn't create the file in this browser." : "Wrong password."; }
+});
+function syncSignin() {
+  const b = $("#signin"); b.hidden = !D.locked && !MYCV;
+  b.textContent = MYCV ? "Sign out" : "Sign in";
+}
+$("#signin").addEventListener("click", () => {
+  if (MYCV) { if (!confirm("Sign out? Your CV is removed from this browser.")) return;
+    MYCV = null; try { localStorage.removeItem("jr-cv"); } catch {} syncSignin(); render(); return; }
+  askPw("unlock");
+});
+syncSignin();
+
 function fitSheet() {
   const w = $("#sheet-wrap").clientWidth, k = Math.min(1, w / 794), sc = $("#sheet-scale");
   sc.style.transform = `scale(${k})`; sc.style.height = ($("#sheet").offsetHeight * k) + "px";
@@ -687,13 +775,18 @@ $("#cv-file").addEventListener("change", async e => {
   try {
     const c = JSON.parse(await f.text());
     if (!c.name || !Array.isArray(c.jobs)) throw new Error("missing name or jobs");
-    MYCV = c; store.set("jr-cv", c); renderCv(); render();
+    MYCV = c; store.set("jr-cv", c); renderCv(); render(); syncSignin();
   } catch (err) { alert("That file isn't a CV in the template's format (" + err.message + "). Press Template to see the format."); }
   e.target.value = "";
 });
+$("#cv-lock").addEventListener("click", () => askPw("lock"));
+$("#fitnotes").addEventListener("click", e => {
+  if (!e.target.closest("#ad-go")) return;
+  const t = $("#ad-text").value.trim(); if (t) { cvState.job = pastedJob(t); renderCv(); }
+});
 $("#cv-forget").addEventListener("click", () => {
   if (!confirm("Remove your CV from this browser? The public page will show the sample again.")) return;
-  MYCV = null; try { localStorage.removeItem("jr-cv"); } catch {} renderCv(); render();
+  MYCV = null; try { localStorage.removeItem("jr-cv"); } catch {} renderCv(); render(); syncSignin();
 });
 addEventListener("resize", () => { if ($("#cv-ov").classList.contains("on")) fitSheet(); });
 
