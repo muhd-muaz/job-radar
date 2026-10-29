@@ -36,7 +36,7 @@ def main(argv):
         for c in comp["companies"]:
             try:
                 got = sources.COLLECTORS[c["ats"]](c, targets, comp["workday_search_terms"])
-                store.log_run(db, today, c["ats"], c["name"], True, len(got))
+                store.log_run(db, today, c["ats"], c["name"], True, len(got), sources.NOTES.pop(c["ats"], ""))
                 jobs += got
                 print(f"ok    {c['name']:<28} {len(got)} jobs")
             except sources.Skip as e:

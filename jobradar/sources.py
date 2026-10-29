@@ -165,6 +165,7 @@ def jooble(c, targets, terms):
     return out
 
 
+NOTES = {}  # per-collector diagnostics for the runs table
 ALERT_SENDERS = ("jobstreet", "linkedin", "hiredly", "maukerja", "indeed", "glints", "jobsdb", "ricebowl")
 
 
@@ -179,18 +180,25 @@ def email_alerts(c, targets, terms):
     box.select("INBOX", readonly=True)
     since = (date.today() - timedelta(days=c.get("days", 4))).strftime("%d-%b-%Y")
     _, ids = box.search(None, "SINCE", since)
-    out = []
+    out, seen = [], {}
     for mid in ids[0].split():
         _, data = box.fetch(mid, "(RFC822)")
         msg = email.message_from_bytes(data[0][1])
         sender = (msg.get("From") or "").lower()
         site = next((s for s in ALERT_SENDERS if s in sender), None)
+        dom = sender.rsplit("@", 1)[-1].strip("> ") if "@" in sender else "?"
         if not site:
+            seen[dom] = seen.get(dom, 0) + 1
             continue
         body = next((p.get_payload(decode=True).decode(p.get_content_charset() or "utf-8", "ignore")
                      for p in msg.walk() if p.get_content_type() == "text/html"), "")
-        out += parse_alert_html(body, site, targets)
+        got = parse_alert_html(body, site, targets)
+        seen[site] = seen.get(site, 0) + 1
+        seen[site + " jobs"] = seen.get(site + " jobs", 0) + len(got)
+        out += got
     box.logout()
+    # kept in the runs table so a 0 can be told apart: no mail arriving, or mail the parser can't read
+    NOTES["email_alerts"] = f"{len(ids[0].split())} emails since {since}; by sender: {seen}"
     return out
 
 
