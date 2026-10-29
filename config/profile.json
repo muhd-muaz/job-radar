@@ -237,5 +237,32 @@
     "_note": "Draft for the 'Ask about junior roles' button. {intro}, {links} and {name} come from the CV loaded in your browser (sample CV otherwise). Nothing is sent automatically.",
     "subject": "Junior {track} roles at {company}?",
     "body": "Hi {company} hiring team,\n\nI saw your {title} opening. I know it is a senior role and I am earlier in my career, so I would like to ask whether your team has, or expects to have, a junior or associate position in {track}.\n\n{intro}\n\n{links}\n\nIf someone else handles this, I would be grateful if you could point me to them.\n\nThank you for your time,\n{name}"
+  },
+  "public_teaser": {
+    "_note": "The only part of your own resume shown to everyone (recruiter preview). Keep it LinkedIn-level: no phone, email or internal numbers.",
+    "name": "Muhammad Mu'az bin Muhammad",
+    "headline": "Application Support Executive · Data Analytics student (UMT, Feb 2027) · aiming for data engineering",
+    "summary": "Builds data pipelines around the ERP and call-centre systems used at work: Python, SQL, REST APIs and Power Query, running daily. Looking for a junior data engineering role in Kuala Lumpur or Selangor.",
+    "skills": [
+      "Python",
+      "SQL",
+      "ETL pipelines",
+      "REST APIs",
+      "Power Query",
+      "Power BI",
+      "SQLite",
+      "Git",
+      "GitHub Actions"
+    ],
+    "contact": [
+      {
+        "label": "Message me on LinkedIn",
+        "url": "https://www.linkedin.com/in/muhammadmuazmuhammad"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/muhd-muaz"
+      }
+    ]
   }
 }

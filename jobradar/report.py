@@ -50,6 +50,7 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, 
         "outreach": profile.get("outreach", {}),
         "cv": cv or {},
         "skills": skills or {},
+        "teaser": profile.get("public_teaser", {}),
         "locked": locked or None,
         "feeds": [{"name": r["company"], "ok": bool(r["ok"]), "jobs": r["jobs"], "error": r["error"]} for r in runs],
     }

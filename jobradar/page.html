@@ -28,8 +28,9 @@
   --have:#7fd1a6;--have-soft:#16291f;--gap:#e7b17a;--gap-soft:#2c2116}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);caret-color:var(--accent);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
+::selection{background:var(--accent-soft);color:var(--ink)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
 .num{font-variant-numeric:tabular-nums}
@@ -38,7 +39,7 @@ a{color:inherit}
 header{padding:28px 0 8px}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--mute);font-size:13px}
 .top b{color:var(--ink);font-weight:600}
-.theme{appearance:none;background:none;border:1px solid var(--rule);color:var(--mute);font:inherit;font-size:12.5px;padding:4px 10px;border-radius:999px;cursor:pointer}
+.theme{appearance:none;white-space:nowrap;background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:14px;min-height:40px;padding:6px 14px;border-radius:999px;cursor:pointer}
 .hero{display:grid;grid-template-columns:minmax(0,540px) 1fr;gap:32px;align-items:center;margin-top:18px}
 .radar-box{position:relative;aspect-ratio:560/470}
 #radar{width:100%;height:100%;display:block;overflow:visible}
@@ -65,7 +66,7 @@ header{padding:28px 0 8px}
 .key i.o{background:var(--panel);box-shadow:inset 0 0 0 2px var(--accent)}
 
 /* Tabs */
-nav.tabs{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);margin-top:24px}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);margin-top:24px}
 nav.tabs .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
 .tab{appearance:none;border:0;background:none;color:var(--mute);font:inherit;font-weight:500;font-size:14.5px;padding:13px 12px 11px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
 .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
@@ -75,13 +76,13 @@ section{display:none;padding:18px 0 48px}section.on{display:block}
 /* Filters */
 .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
 .search{flex:1 1 260px;position:relative}
-.search input{width:100%;height:40px;padding:0 12px 0 36px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}
-.search svg{position:absolute;left:11px;top:11px;width:18px;height:18px;color:var(--mute)}
+.search input{width:100%;height:44px;padding:0 12px 0 36px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}
+.search svg{position:absolute;left:12px;top:13px;width:18px;height:18px;color:var(--mute)}
 .seg{display:inline-flex;border:1px solid var(--rule);border-radius:8px;overflow:hidden}
-.seg button{appearance:none;border:0;background:var(--panel);font:inherit;font-size:13.5px;color:var(--mute);padding:0 12px;height:38px;cursor:pointer}
+.seg button{appearance:none;border:0;background:var(--panel);font:inherit;font-size:14.5px;color:var(--ink-2);padding:0 14px;height:44px;cursor:pointer}
 .seg button+button{border-left:1px solid var(--rule)}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-select{height:40px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;font-size:13.5px;padding:0 10px}
+select{height:44px;border:1px solid var(--rule);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit;font-size:13.5px;padding:0 10px}
 .count{font-size:13px;color:var(--mute);margin:0 0 6px}
 
 /* Job list: rows, not cards. The score bar is the scan line. */
@@ -104,7 +105,7 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .tag.warn{background:var(--gap-soft);color:var(--gap)}
 .tag.off{background:var(--rule-2);color:var(--mute)}
 .mark{display:flex;gap:6px}
-.icon{appearance:none;border:1px solid var(--rule);background:var(--panel);color:var(--mute);width:36px;height:36px;border-radius:8px;display:grid;place-items:center;cursor:pointer}
+.icon{appearance:none;border:1px solid var(--rule);background:var(--panel);color:var(--mute);width:44px;height:44px;border-radius:8px;display:grid;place-items:center;cursor:pointer}
 .icon svg{width:18px;height:18px}
 .icon[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 .more{display:none;padding:0 4px 16px 84px}
@@ -116,9 +117,9 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .why{font-size:14.5px;color:var(--ink-2);margin:10px 0 0}
 .detail{display:grid;grid-template-columns:380px minmax(0,1fr);gap:24px;align-items:start}
 .detail .pz{width:380px;height:297px;overflow:visible}
-.detail h4,.panel h3{font-size:13px;color:var(--ink-2)!important;font-weight:600;color:var(--mute);margin:0 0 6px;text-transform:uppercase;letter-spacing:.04em}
+.detail h4,.panel h3{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.btn2{appearance:none;border:1px solid var(--rule);background:var(--panel);color:var(--ink);font:inherit;font-weight:600;font-size:14px;padding:7px 13px;border-radius:8px;cursor:pointer;text-decoration:none}
+.btn2{appearance:none;display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);font:inherit;font-weight:600;font-size:15px;padding:8px 14px;border-radius:8px;cursor:pointer;text-decoration:none}
 .reach{display:none;margin-top:12px;border:1px solid var(--rule);border-radius:10px;padding:12px;background:var(--panel)}
 .reach.on{display:block}
 .reach p{margin:0 0 8px;font-size:13px;color:var(--mute)}
@@ -129,8 +130,7 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .pz .grid{fill:none;stroke:var(--panel);stroke-width:1;stroke-dasharray:2 3}
 .pz .lab{fill:var(--ink);font-weight:600}
 .pz .val{font-weight:700}
-.pz .fillw{transform-origin:0 0;animation:grow .7s cubic-bezier(.2,.7,.2,1) both}
-@keyframes grow{from{transform:scale(.25);opacity:0}to{transform:scale(1);opacity:1}}
+
 .pz .core{fill:var(--panel);stroke:var(--rule)}
 /* core */.pz .core-n{fill:var(--ink);font:700 30px "Bricolage Grotesque",system-ui,sans-serif}
 .pz .core-t{fill:var(--ink-2);font-size:12px;font-weight:500}
@@ -141,7 +141,7 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .notes{font-size:15px;color:var(--ink-2)}
 .notes p{margin:0 0 10px}
 .why a{color:var(--accent-ink)}
-.apply{display:inline-block;margin-top:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:8px 14px;border-radius:8px}
+.apply{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:8px 16px;border-radius:8px}
 .row.applied .t{color:var(--mute)}
 .empty{color:var(--mute);padding:40px 4px;text-align:center}
 
@@ -163,14 +163,37 @@ td.r,th.r{text-align:right}
 footer{border-top:1px solid var(--rule);padding:22px 0 44px;color:var(--mute);font-size:13px}
 footer a{color:var(--ink-2)}
 
+/* Entry strip and the Resume tab */
+.paths{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:20px;padding-top:14px;border-top:1px solid var(--rule)}
+.path{appearance:none;border:0;background:none;color:var(--accent-ink);font:inherit;font-weight:600;font-size:15.5px;padding:10px 0;min-height:44px;cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.path:hover{text-decoration-thickness:2px}
+.duo{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px;align-items:start}
+.teaser{position:relative;background:#fff;color:#111;border-radius:12px;border:1px solid var(--rule);overflow:hidden}
+.teaser .top{padding:26px 28px 6px;display:block;color:#111;font-size:14px}
+.teaser h3{font:700 24px/1.15 "IBM Plex Sans",system-ui,sans-serif;margin:0 0 4px;color:#111}
+.teaser .hl{color:#444;font-size:14px;margin:0 0 12px}
+.teaser .k{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-bottom:1.2px solid #111;padding-bottom:3px;margin:14px 0 6px}
+.teaser .blur{padding:0 28px 28px;filter:blur(4.5px);user-select:none;pointer-events:none;font-size:13.5px;line-height:1.6}
+.teaser .blur i{display:block;height:10px;background:#d9d9d9;border-radius:5px;margin:9px 0}
+.teaser .gate{position:absolute;left:0;right:0;bottom:0;padding:70px 24px 24px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff 45%);text-align:center}
+.teaser .gate p{margin:0 0 12px;color:#222;font-size:15px}
+.teaser .gate .actions{justify-content:center}
+.steps{counter-reset:s;list-style:none;margin:10px 0 0;padding:0}
+.steps li{counter-increment:s;position:relative;padding:10px 0 10px 34px;border-top:1px solid var(--rule-2);font-size:14.5px;color:var(--ink-2)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:10px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:12px;font-weight:600;display:grid;place-items:center}
+.cta{margin-top:28px;padding:20px;border:1px dashed var(--rule);border-radius:12px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.cta p{margin:0;color:var(--ink-2);font-size:15px}
+@media (max-width:760px){.duo{grid-template-columns:1fr}}
+
 /* Resume overlay: the sheet is always paper-white, like the printed page */
-.cv-ov{position:fixed;inset:0;z-index:50;background:color-mix(in srgb,var(--paper) 96%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;overflow:auto}
+.cv-ov{position:fixed;inset:0;z-index:50;background:var(--paper);display:none;overflow:auto}
 .cv-ov.on{display:block}
 .cv-bar{position:sticky;top:0;z-index:2;background:var(--panel);border-bottom:1px solid var(--rule)}
 .cv-bar .wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:10px;padding-bottom:10px;max-width:1280px}
 .cv-bar h2{font:700 18px/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 auto 0 0;min-width:0}
 .cv-bar h2 small{display:block;font:500 13px "IBM Plex Sans",system-ui,sans-serif;color:var(--ink-2)}
-.cv-bar input{height:38px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;padding:0 10px;width:190px}
+.fld{display:flex;flex-direction:column;font-size:12.5px;font-weight:600;color:var(--ink-2);gap:2px}
+.cv-bar input{height:40px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;padding:0 10px;width:190px}
 .cv-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;max-width:1280px;margin:0 auto;padding:20px 16px 60px}
 .sheet-wrap{min-width:0}
 .sheet-scale{transform-origin:0 0}
@@ -189,7 +212,7 @@ footer a{color:var(--ink-2)}
 .sheet .skl b{font-weight:600}
 .fitnotes{font-size:14.5px;color:var(--ink-2)}
 .fitnotes .panel{padding:16px}
-.fitnotes h4{font-size:13px;font-weight:600;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em;margin:0 0 8px}
+.fitnotes h4{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
 .fitnotes .gapi{border-top:1px solid var(--rule-2);padding:9px 0}
 .fitnotes .gapi b{color:var(--gap);display:block}
 @media print{
@@ -239,6 +262,11 @@ footer a{color:var(--ink-2)}
         <li data-n="3"><b>Tap a dot</b> to open the job and see its score broken down as a pizza chart.</li>
       </ol>
       <div class="key"><span><i></i>New today</span><span><i class="o"></i>Seen before</span></div>
+      <div class="paths">
+        <button class="path" data-go="list">Browse today's jobs</button>
+        <button class="path" data-go="resume">Tailor your own resume</button>
+        <button class="path" data-go="resume" data-anchor="teaser">Recruiter? See who built this</button>
+      </div>
     </div>
   </div>
 </div></header>
@@ -247,6 +275,7 @@ footer a{color:var(--ink-2)}
   <button class="tab" role="tab" data-tab="list" aria-selected="true">Shortlist<span class="n num" id="n-list"></span></button>
   <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved and applied<span class="n num" id="n-saved"></span></button>
   <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills and market</button>
+  <button class="tab" role="tab" data-tab="resume" aria-selected="false">Resume</button>
   <button class="tab" role="tab" data-tab="feeds" aria-selected="false">Sources</button>
 </div></nav>
 
@@ -286,11 +315,29 @@ footer a{color:var(--ink-2)}
   <div id="bars"></div>
 </div></section>
 
+<section id="resume"><div class="duo">
+  <div class="teaser" id="teaser"></div>
+  <div class="panel">
+    <h2>Try it with your own CV</h2>
+    <p class="lede">Anyone can use this, for any profession. Your CV stays in your own browser and is never uploaded.</p>
+    <ol class="steps">
+      <li><b>Get the template.</b> Open the resume tool and press <b>Template</b>, or start from the sample person.</li>
+      <li><b>Fill in your details</b> and press <b>Load my CV</b>.</li>
+      <li><b>Paste any job ad</b>, or open a job here and press <b>Tailored resume</b>. Your matching lines move to the top, and you'll see what's missing and how to prepare.</li>
+      <li><b>Save as PDF.</b> It fits one A4 page and job-site scanners can read it.</li>
+    </ol>
+    <div class="actions" style="margin-top:14px"><button class="btn2" data-cv="" style="background:var(--accent);color:#fff;border-color:var(--accent)">Open the resume tool</button></div>
+    <p class="why">Want your own daily job list for another profession? <a href="https://github.com/muhd-muaz/job-radar#use-it-for-your-own-job-search-any-profession">Copy the project on GitHub</a> and change the keywords.</p>
+  </div>
+</div></section>
+
 <section id="feeds"><div class="panel">
   <h2>Where the jobs come from</h2>
   <p class="lede">Public company career pages, checked every morning. JobStreet, LinkedIn, Hiredly and Maukerja jobs arrive through the job alerts those sites email me.</p>
   <table><thead><tr><th>Source</th><th class="r">Jobs today</th></tr></thead><tbody id="feed-rows"></tbody></table>
 </div></section>
+<div class="cta"><p><b>Hiring for data roles?</b> The person behind this page is looking for a junior data engineering job in KL or Selangor.</p>
+  <button class="btn2" data-go="resume" data-anchor="teaser">See the resume preview</button></div>
 </main>
 
 <div class="cv-ov" id="cv-ov" role="dialog" aria-modal="true" aria-labelledby="cv-title">
@@ -299,8 +346,8 @@ footer a{color:var(--ink-2)}
     <div class="seg" id="cv-mode" role="group" aria-label="Format">
       <button data-v="resume" aria-pressed="true">Resume, 1 page</button><button data-v="cv" aria-pressed="false">Full CV</button>
     </div>
-    <input id="cv-email" type="email" placeholder="Email (kept in this browser)" aria-label="Email for the resume">
-    <input id="cv-phone" type="tel" placeholder="Phone (kept in this browser)" aria-label="Phone for the resume">
+    <label class="fld">Email<input id="cv-email" type="email" placeholder="name@example.com"></label>
+    <label class="fld">Phone<input id="cv-phone" type="tel" placeholder="012-345 6789"></label>
     <label class="btn2" for="cv-file" style="cursor:pointer">Load my CV</label><input id="cv-file" type="file" accept=".json,application/json" hidden>
     <button class="btn2" id="cv-lock" hidden title="Encrypt your CV with a password so you can sign in from any device">Set a password</button>
     <button class="btn2" id="cv-forget" hidden>Remove my CV</button>
@@ -790,6 +837,25 @@ $("#cv-forget").addEventListener("click", () => {
 });
 addEventListener("resize", () => { if ($("#cv-ov").classList.contains("on")) fitSheet(); });
 
+// Recruiter preview: only the public teaser is real; the blurred part is placeholder bars, not hidden CV text
+(() => {
+  const T = D.teaser; if (!T || !T.name) { $("#teaser").remove(); return; }
+  const bars = n => Array.from({ length: n }, (_, i) => `<i style="width:${70 + (i * 37) % 30}%"></i>`).join("");
+  $("#teaser").innerHTML = `<div class="top"><h3>${esc(T.name)}</h3><p class="hl">${esc(T.headline)}</p>
+      <div class="k">Summary</div><p style="margin:0">${esc(T.summary)}</p>
+      <div class="k">Skills</div><p style="margin:0">${T.skills.map(esc).join(" · ")}</p>
+      <div class="k">Experience</div></div>
+    <div class="blur" aria-hidden="true">${bars(4)}<br>${bars(3)}<div class="k" style="margin-top:18px">Projects</div>${bars(3)}<div class="k">Education</div>${bars(2)}</div>
+    <div class="gate"><p>The full resume and CV are available on request.</p>
+      <div class="actions">${T.contact.map((c, i) => `<a class="btn2" ${i === 0 ? 'style="background:var(--accent);color:#fff;border-color:var(--accent)"' : ""} href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.label)}</a>`).join("")}</div></div>`;
+})();
+function goTab(id, anchor) {
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x.dataset.tab === id));
+  document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === id));
+  const el = document.getElementById(anchor || id) || $("nav.tabs");
+  $("nav.tabs").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+}
+
 // Sources panel
 $("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name)).map(f =>
   `<tr><td>${esc(f.name)}${f.ok ? "" : ' <span class="st bad">not reachable today</span>'}</td><td class="r num">${f.jobs}</td></tr>`).join("");
@@ -814,6 +880,8 @@ document.addEventListener("click", e => {
     render(); open.forEach(id => document.getElementById(id)?.classList.add("open"));
     return;
   }
+  const go = e.target.closest("[data-go]");
+  if (go) { goTab(go.dataset.go, go.dataset.anchor); return; }
   const cvb = e.target.closest("[data-cv]");
   if (cvb) { openCv(cvb.dataset.cv); return; }
   const r = e.target.closest("[data-reach]");
