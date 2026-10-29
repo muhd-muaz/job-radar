@@ -163,6 +163,48 @@ td.r,th.r{text-align:right}
 footer{border-top:1px solid var(--rule);padding:22px 0 44px;color:var(--mute);font-size:13px}
 footer a{color:var(--ink-2)}
 
+/* Resume overlay: the sheet is always paper-white, like the printed page */
+.cv-ov{position:fixed;inset:0;z-index:50;background:color-mix(in srgb,var(--paper) 96%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;overflow:auto}
+.cv-ov.on{display:block}
+.cv-bar{position:sticky;top:0;z-index:2;background:var(--panel);border-bottom:1px solid var(--rule)}
+.cv-bar .wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:10px;padding-bottom:10px;max-width:1280px}
+.cv-bar h2{font:700 18px/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 auto 0 0;min-width:0}
+.cv-bar h2 small{display:block;font:500 13px "IBM Plex Sans",system-ui,sans-serif;color:var(--ink-2)}
+.cv-bar input{height:38px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;padding:0 10px;width:190px}
+.cv-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;max-width:1280px;margin:0 auto;padding:20px 16px 60px}
+.sheet-wrap{min-width:0}
+.sheet-scale{transform-origin:0 0}
+.sheet{width:794px;min-height:1123px;background:#fff;color:#111;box-shadow:0 1px 3px rgba(0,0,0,.12),0 8px 30px rgba(0,0,0,.08);padding:44px 54px;font:9.8pt/1.34 "IBM Plex Sans",Calibri,Arial,sans-serif;position:relative}
+.sheet.over::after{content:"Runs past one page";position:absolute;left:0;right:0;top:1123px;border-top:2px dashed #c0392b;color:#c0392b;font-size:11px;padding:2px 6px}
+.sheet h1{font:700 21pt/1.1 "IBM Plex Sans",Calibri,Arial,sans-serif;margin:0 0 4px;letter-spacing:-.01em}
+.sheet .contact{font-size:9.5pt;color:#333}
+.sheet .contact a{color:#111;text-decoration:none}
+.sheet h3{font-size:10.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:11px 0 4px;padding-bottom:3px;border-bottom:1.2px solid #111}
+.sheet p{margin:0 0 4px}
+.sheet .rrow{display:flex;justify-content:space-between;gap:12px;font-weight:600;margin-top:6px}
+.sheet .rrow span:last-child{font-weight:400;white-space:nowrap}
+.sheet .org{font-style:italic;color:#222}
+.sheet ul{margin:3px 0 4px;padding-left:16px}
+.sheet li{margin:0 0 2.5px}
+.sheet .skl b{font-weight:600}
+.fitnotes{font-size:14.5px;color:var(--ink-2)}
+.fitnotes .panel{padding:16px}
+.fitnotes h4{font-size:13px;font-weight:600;color:var(--ink-2);text-transform:uppercase;letter-spacing:.04em;margin:0 0 8px}
+.fitnotes .gapi{border-top:1px solid var(--rule-2);padding:9px 0}
+.fitnotes .gapi b{color:var(--gap);display:block}
+@media print{
+  @page{size:A4;margin:0}
+  body.printing-cv>*:not(#cv-ov){display:none!important}
+  body.printing-cv{background:#fff}
+  body.printing-cv #cv-ov{position:static;display:block;background:#fff;overflow:visible}
+  body.printing-cv .cv-bar,body.printing-cv .fitnotes{display:none!important}
+  body.printing-cv .cv-body{display:block;padding:0;margin:0}
+  body.printing-cv .sheet-scale{transform:none!important;height:auto!important}
+  body.printing-cv .sheet{box-shadow:none;width:210mm;min-height:0;padding:44px 54px}
+  body.printing-cv .sheet.over::after{display:none}
+}
+@media (max-width:980px){.cv-body{grid-template-columns:1fr}}
+
 @media (max-width:760px){
   .hero{grid-template-columns:1fr;gap:18px}
   .radar-box{max-width:340px;width:100%;margin:0 auto;order:2}
@@ -180,7 +222,7 @@ footer a{color:var(--ink-2)}
 <body>
 <header><div class="wrap">
   <div class="top"><span><b>Job Radar</b>, updated <span id="updated"></span> from <span id="nsrc"></span> sources</span>
-    <button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></div>
+    <span style="display:flex;gap:6px"><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
   <div class="hero">
     <div class="radar-box">
       <svg id="radar" viewBox="-280 -235 560 470" role="img" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
@@ -248,6 +290,23 @@ footer a{color:var(--ink-2)}
   <table><thead><tr><th>Source</th><th class="r">Jobs today</th></tr></thead><tbody id="feed-rows"></tbody></table>
 </div></section>
 </main>
+
+<div class="cv-ov" id="cv-ov" role="dialog" aria-modal="true" aria-labelledby="cv-title">
+  <div class="cv-bar"><div class="wrap">
+    <h2 id="cv-title">Resume<small id="cv-sub"></small></h2>
+    <div class="seg" id="cv-mode" role="group" aria-label="Format">
+      <button data-v="resume" aria-pressed="true">Resume, 1 page</button><button data-v="cv" aria-pressed="false">Full CV</button>
+    </div>
+    <input id="cv-email" type="email" placeholder="Email (kept in this browser)" aria-label="Email for the resume">
+    <input id="cv-phone" type="tel" placeholder="Phone (kept in this browser)" aria-label="Phone for the resume">
+    <button class="btn2" id="cv-print" style="background:var(--accent);color:#fff;border-color:var(--accent)">Save as PDF</button>
+    <button class="btn2" id="cv-close" aria-label="Close">Close</button>
+  </div></div>
+  <div class="cv-body">
+    <div class="sheet-wrap" id="sheet-wrap"><div class="sheet-scale" id="sheet-scale"><div class="sheet" id="sheet"></div></div></div>
+    <aside class="fitnotes" id="fitnotes"></aside>
+  </div>
+</div>
 
 <footer><div class="wrap">Built with Python and SQLite, run daily on GitHub Actions. Saved and applied marks stay in this browser only.
   Code: <a href="https://github.com/muhd-muaz/job-radar">github.com/muhd-muaz/job-radar</a></div></footer>
@@ -387,6 +446,7 @@ function row(j) {
         ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
         <div class="actions">
           ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
+          ${D.cv.name ? `<button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>` : ""}
           ${j.reach_out && D.outreach.body ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
         </div>
         ${j.reach_out && D.outreach.body ? reachBox(j) : ""}
@@ -518,6 +578,98 @@ $("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(s)}${
     <p class="st" style="margin-top:6px">Pale bar: all open jobs. Dark part and first number: jobs scoring 60 or more.</p>`;
 })();
 
+// ---------- Tailored resume and CV ----------
+const NICE = { sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Power BI", "power query": "Power Query (M)", sqlite: "SQLite",
+  kpi: "KPIs", erp: "ERP", git: "Git", "ci/cd": "CI/CD", aws: "AWS", gcp: "GCP", uat: "UAT", "data pipeline": "Data pipelines", dbt: "dbt" };
+const nice = s => NICE[s] || (s === s.toLowerCase() ? s[0].toUpperCase() + s.slice(1) : s);
+const cvState = { job: null, mode: "resume" };
+const contact = store.get("jr-contact", { email: "", phone: "" });
+function rel(tags, job) {
+  if (!job) return 0;
+  return tags.filter(t => job.matched.includes(t)).length * 2 + tags.filter(t => job.missing.includes(t)).length;
+}
+function buildSheet(job, mode, keep, nproj = 2) {
+  const C = D.cv, track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
+  const score = b => rel(b.tags, job) * 2 + (b.tracks.includes(track) ? 3 : 0);
+  const rank = list => list.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s);
+  const jobsHtml = C.jobs.map((r, k) => {
+    let bs = rank(r.bullets);
+    if (mode === "resume") bs = bs.slice(0, k === 0 ? keep : 2);
+    return `<div class="rrow"><span>${esc(r.title)}</span><span>${esc(r.dates)}</span></div><div class="org">${esc(r.org)}, ${esc(r.where)}</div>
+      <ul>${bs.map(b => `<li>${esc(b.text)}</li>`).join("")}</ul>`;
+  }).join("");
+  const projs = C.projects.map(p => ({ ...p, s: rel(p.tags, job) })).sort((a, b) => b.s - a.s).slice(0, mode === "resume" ? nproj : 9);
+  const asked = job ? job.matched : [];
+  const skills = Object.entries(C.skills).map(([g, list]) => {
+    const sorted = list.slice().sort((a, b) => asked.includes(b) - asked.includes(a));
+    return `<p class="skl"><b>${esc(g)}:</b> ${sorted.map(s => asked.includes(s) ? `<b>${esc(nice(s))}</b>` : esc(nice(s))).join(", ")}</p>`;
+  }).join("");
+  const learning = (job ? job.missing.filter(s => D.learning.includes(s)) : D.learning.slice(0, 4)).map(nice);
+  const edu = C.education.filter(e => mode === "cv" || !e.cv_only);
+  const extras = C.extras.filter(e => mode === "cv" || !e.cv_only);
+  const links = [contact.email && esc(contact.email), contact.phone && esc(contact.phone),
+    ...C.links.map(l => `<a href="${esc(l.url)}">${esc(l.label)}</a>`)].filter(Boolean);
+  return `<h1>${esc(C.name)}</h1>
+    <div class="contact">${esc(C.location)} · ${links.join(" · ")}</div>
+    <h3>Summary</h3><p>${esc(C.summary[track])}</p>
+    <h3>Technical skills</h3>${skills}${learning.length ? `<p class="skl"><b>Currently learning:</b> ${esc(learning.join(", "))}</p>` : ""}
+    <h3>Work experience</h3>${jobsHtml}
+    <h3>Projects</h3>${projs.map(p => `<div class="rrow"><span>${esc(p.name)}</span><span>${esc(p.stack)}</span></div>
+      <ul><li>${esc(p.text)}${p.url ? ` <a href="${esc(p.url)}">${esc(p.url.replace(/^https:\/\//, ""))}</a>` : ""}</li></ul>`).join("")}
+    <h3>Education</h3>${edu.map(e => `<div class="rrow"><span>${esc(e.title)}</span><span>${esc(e.dates)}</span></div><div class="org">${esc(e.org)}</div>
+      ${e.notes.length ? `<ul>${e.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}`).join("")}
+    <h3>${mode === "cv" ? "Certifications, awards and activities" : "Certifications and awards"}</h3><ul>${extras.map(x => `<li>${esc(x.text)}</li>`).join("")}</ul>
+    ${mode === "cv" ? "<p>References available on request.</p>" : ""}`;
+}
+function renderCv() {
+  const job = cvState.job, sheet = $("#sheet");
+  // one page: drop the least relevant lines, then the second project, until it fits
+  const steps = [[6, 2], [5, 2], [5, 1], [4, 1], [3, 1]];
+  sheet.style.minHeight = "0";              // measure the content, not the A4 frame
+  for (const [keep, nproj] of steps) {
+    sheet.innerHTML = buildSheet(job, cvState.mode, keep, nproj);
+    if (cvState.mode !== "resume" || sheet.scrollHeight <= 1110) break;
+  }
+  sheet.classList.toggle("over", cvState.mode === "resume" && sheet.scrollHeight > 1110);
+  sheet.style.minHeight = "";
+  fitSheet();
+  $("#cv-sub").textContent = job ? `Tailored for ${job.title}, ${job.company}` : "General version, aimed at data engineering";
+  const gp = D.cv.gap_plan || {};
+  $("#fitnotes").innerHTML = job ? `<div class="panel">
+      <h4>Keywords you can honestly claim</h4>
+      <div class="chips">${job.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") || "<span>None tracked in this ad.</span>"}</div>
+      <p class="why">Those skills are moved to the front and in bold. The work lines that use them are listed first.</p>
+      <h4 style="margin-top:16px">What you're missing, and a realistic way to prepare</h4>
+      ${job.missing.length ? job.missing.map(s => `<div class="gapi"><b>${esc(s)}${D.learning.includes(s) ? " · learning" : ""}</b>${esc(gp[s] || "Not covered yet. Leave it off the resume; if asked, say you're keen to learn it and name something close you've done.")}</div>`).join("") : "<p>No gaps found in this ad.</p>"}
+      <p class="why">Only gaps you have actually practised go on the resume. Missing skills are never added to it automatically.</p>
+    </div>` : `<div class="panel"><h4>Tip</h4><p>Open any job and press <b>Tailored resume</b> to put that ad's keywords first and see what you're missing.</p></div>`;
+}
+function fitSheet() {
+  const w = $("#sheet-wrap").clientWidth, k = Math.min(1, w / 794), sc = $("#sheet-scale");
+  sc.style.transform = `scale(${k})`; sc.style.height = ($("#sheet").offsetHeight * k) + "px";
+}
+function openCv(id) {
+  cvState.job = id ? D.jobs.concat(D.closed).find(j => j.id === id) || null : null;
+  $("#cv-email").value = contact.email; $("#cv-phone").value = contact.phone;
+  $("#cv-ov").classList.add("on"); document.body.style.overflow = "hidden";
+  renderCv(); $("#cv-close").focus();
+}
+function closeCv() { $("#cv-ov").classList.remove("on"); document.body.style.overflow = ""; }
+$("#cv-close").addEventListener("click", closeCv);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#cv-ov").classList.contains("on")) closeCv(); });
+$("#cv-mode").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  cvState.mode = b.dataset.v; $("#cv-mode").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderCv();
+});
+["email", "phone"].forEach(k => $("#cv-" + k).addEventListener("input", e => { contact[k] = e.target.value.trim(); store.set("jr-contact", contact); renderCv(); }));
+$("#cv-print").addEventListener("click", () => {
+  const old = document.title, co = cvState.job ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
+  document.title = `Muhammad_Muaz${co}_${cvState.mode === "cv" ? "CV" : "Resume"}`;   // becomes the PDF file name
+  document.body.classList.add("printing-cv"); window.print();
+  document.body.classList.remove("printing-cv"); document.title = old;
+});
+addEventListener("resize", () => { if ($("#cv-ov").classList.contains("on")) fitSheet(); });
+
 // Sources panel
 $("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name)).map(f =>
   `<tr><td>${esc(f.name)}${f.ok ? "" : ' <span class="st bad">not reachable today</span>'}</td><td class="r num">${f.jobs}</td></tr>`).join("");
@@ -542,6 +694,8 @@ document.addEventListener("click", e => {
     render(); open.forEach(id => document.getElementById(id)?.classList.add("open"));
     return;
   }
+  const cvb = e.target.closest("[data-cv]");
+  if (cvb) { openCv(cvb.dataset.cv); return; }
   const r = e.target.closest("[data-reach]");
   if (r) { document.getElementById("reach-" + r.dataset.reach)?.classList.toggle("on"); return; }
   const c = e.target.closest("[data-copy]");

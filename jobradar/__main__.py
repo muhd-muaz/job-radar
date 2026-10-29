@@ -63,7 +63,8 @@ def main(argv):
         "SELECT * FROM runs WHERE rowid IN (SELECT max(rowid) FROM runs WHERE run_date = ? GROUP BY company)", (today,))]
     closed = store.closed_jobs(db, since, (dt.date.today() - dt.timedelta(days=45)).isoformat())
     posts = store.post_counts(db)
-    report.build(ROOT / "docs", active, runs, profile, today, closed, posts)
+    cv = load("cv.json") if (ROOT / "config" / "cv.json").exists() else None
+    report.build(ROOT / "docs", active, runs, profile, today, closed, posts, cv)
     if "--offline" not in argv:
         notify.send_new_matches(active, today, profile)
     print(f"{len(jobs)} collected today, {len(active)} active, report in docs/index.html")
