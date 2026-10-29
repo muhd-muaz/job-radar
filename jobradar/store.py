@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS jobs (
   posted TEXT, description TEXT, first_seen TEXT, last_seen TEXT,
   score INTEGER, matched TEXT, missing TEXT, learning TEXT, projects TEXT
 );
+CREATE TABLE IF NOT EXISTS notified (id TEXT PRIMARY KEY, day TEXT);
 CREATE TABLE IF NOT EXISTS runs (
   run_date TEXT, source TEXT, company TEXT, ok INTEGER, jobs INTEGER, error TEXT
 );

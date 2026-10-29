@@ -1,3 +1,4 @@
+import datetime as dt
 """Writes docs/index.html (the shortlist page) and docs/jobs.json.
 The page is one static file: job data is embedded as JSON and rendered in the browser."""
 import json
@@ -41,7 +42,7 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, 
         jobs.append(slim(j, posts))
     gaps = Counter(s for j in jobs for s in j["missing"]).most_common(15)
     data = {
-        "today": today, "jobs": jobs, "gaps": gaps,
+        "today": today, "built": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"), "jobs": jobs, "gaps": gaps,
         "closed": [slim(j, posts) for j in closed],
         "learning": profile.get("learning_skills", []),
         "preferred": profile.get("preferred_locations", []),

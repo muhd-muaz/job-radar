@@ -234,9 +234,13 @@
     "talent"
   ],
   "outreach": {
-    "_note": "Draft for the 'Ask about junior roles' button. {intro}, {links} and {name} come from the CV loaded in your browser (sample CV otherwise). Nothing is sent automatically.",
+    "_note": "Drafts for the 'Ask about junior roles' button, one per tone (the first is the default). {intro}, {links} and {name} come from the CV loaded in your browser (sample CV otherwise). Nothing is sent automatically.",
     "subject": "Junior {track} roles at {company}?",
-    "body": "Hi {company} hiring team,\n\nI saw your {title} opening. I know it is a senior role and I am earlier in my career, so I would like to ask whether your team has, or expects to have, a junior or associate position in {track}.\n\n{intro}\n\n{links}\n\nIf someone else handles this, I would be grateful if you could point me to them.\n\nThank you for your time,\n{name}"
+    "tones": {
+      "Formal": "Hi {company} hiring team,\n\nI saw your {title} opening. I know it is a senior role and I am earlier in my career, so I would like to ask whether your team has, or expects to have, a junior or associate position in {track}.\n\n{intro}\n\n{links}\n\nIf someone else handles this, I would be grateful if you could point me to them.\n\nThank you for your time,\n{name}",
+      "Friendly": "Hi {company} team,\n\nI came across your {title} role. I am still early in my career, so it is a step ahead of me for now, but I would love to know if you have, or are planning, any junior or associate {track} roles.\n\n{intro}\n\n{links}\n\nIf this is not the right inbox, a pointer to the right person would mean a lot.\n\nThank you for your time,\n{name}",
+      "Short": "Hi {company} team,\n\nI saw your {title} opening. Do you have, or expect to have, a junior {track} role?\n\n{intro}\n\n{links}\n\nThank you for your time,\n{name}"
+    }
   },
   "public_teaser": {
     "_note": "The only part of your own resume shown to everyone (recruiter preview). Keep it LinkedIn-level: no phone, email or internal numbers.",

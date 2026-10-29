@@ -1,6 +1,6 @@
 # Job Radar
 
-A small daily pipeline that finds data analyst, business analyst and data engineering jobs in Malaysia, scores each one against my skills, and publishes a ranked shortlist.
+A small pipeline, run every 4 hours, that finds data analyst, business analyst and data engineering jobs in Malaysia, scores each one against my skills, and publishes a ranked shortlist.
 
 **Live shortlist:** https://muhd-muaz.github.io/job-radar/
 
@@ -46,7 +46,7 @@ python -m pytest tests        # tests (needs pytest)
 | `ALERT_IMAP_USER`, `ALERT_IMAP_PASSWORD` | reading job-alert emails (use a mailbox made only for alerts, with an app password) |
 | `CAREERJET_AFFID` | Careerjet search API |
 | `JOOBLE_KEY` | Jooble search API |
-| `NOTIFY_TO` | daily email of new strong KL/Selangor matches (sent from the alerts mailbox) |
+| `NOTIFY_TO` | email of new strong KL/Selangor matches, each job sent once (sent from the alerts mailbox) |
 
 ## Data and ethics
 
@@ -62,5 +62,6 @@ Job Radar isn't tied to data jobs. What it collects and how it scores comes from
 2. **`config/profile.json`**: put your own job titles in `target_titles` (for example `"hr executive": 3`, `"admin": 2`, `"mechanical engineer": 3`), your skills in `have_skills`, the skills you're learning in `learning_skills`, and your preferred towns in `preferred_locations`.
 3. **`config/companies.json`**: change `workday_search_terms` to your job titles. The monthly discovery run finds companies with jobs in Malaysia by itself.
 4. **Your CV stays private.** The public page only carries a sample CV (`config/cv.sample.json`). Press **My resume → Template**, fill in your own details, then **Load my CV**. The file is kept in your browser and never uploaded. Don't commit a real `config/cv.json` (it's in `.gitignore`).
+5. **Your CV on any device, without a password.** After loading your CV, press **Make my private link**. It downloads `cv.locked.json` (your CV, encrypted) and copies a link with the key in it. Commit the file to `config/cv.locked.json`, then open the link once in any browser. Only someone with the link can read the CV; keep it like a password.
 
 Alert emails (JobStreet, LinkedIn and others) need a separate Gmail mailbox and two repository secrets. See `inbox/README.md`.

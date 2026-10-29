@@ -128,6 +128,7 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .reach p{margin:0 0 8px;font-size:13px;color:var(--mute)}
 .reach input,.reach textarea{width:100%;border:1px solid var(--rule);border-radius:7px;background:var(--paper);color:var(--ink);font:13.5px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:8px 10px}
 .reach textarea{height:260px;resize:vertical;margin-top:6px}
+.reach .tone{margin-bottom:8px}
 /* Pizza charts (Football Manager style): one wedge per attribute, length = value */
 .pz .bg{fill:var(--rule-2)}
 .pz .grid{fill:none;stroke:var(--panel);stroke-width:1;stroke-dasharray:2 3}
@@ -184,8 +185,8 @@ footer a{color:var(--ink-2)}
 .steps{counter-reset:s;list-style:none;margin:10px 0 0;padding:0}
 .steps li{counter-increment:s;position:relative;padding:10px 0 10px 34px;border-top:1px solid var(--rule-2);font-size:14.5px;color:var(--ink-2)}
 .steps li::before{content:counter(s);position:absolute;left:0;top:10px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:12px;font-weight:600;display:grid;place-items:center}
-.guide{animation:guide 1.25s cubic-bezier(.16,1,.3,1) 2;position:relative;z-index:1}
-@keyframes guide{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent)}100%{box-shadow:0 0 0 14px color-mix(in srgb,var(--accent) 0%,transparent)}}
+.guide{animation:guide 1.1s cubic-bezier(.16,1,.3,1) 4;outline:3px solid var(--accent-ink);outline-offset:5px;position:relative;z-index:1}
+@keyframes guide{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 90%,transparent),0 0 24px 4px color-mix(in srgb,var(--accent) 60%,transparent)}100%{box-shadow:0 0 0 22px color-mix(in srgb,var(--accent) 0%,transparent),0 0 24px 4px color-mix(in srgb,var(--accent) 0%,transparent)}}
 @media (prefers-reduced-motion:reduce){.guide{animation:none;outline:3px solid var(--accent);outline-offset:4px}}
 .cta{margin-top:28px;padding:20px;border:1px dashed var(--rule);border-radius:12px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
 .cta p{margin:0;color:var(--ink-2);font-size:15px}
@@ -269,7 +270,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 <body>
 <header><div class="wrap">
   <div class="top"><span><b>Job Radar</b>, updated <span id="updated"></span> from <span id="nsrc"></span> sources</span>
-    <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign in</button><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
+    <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign out</button><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
   <div class="hero">
     <div class="radar-box">
       <svg id="radar" viewBox="-280 -235 560 470" role="img" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
@@ -287,7 +288,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
       <div class="paths">
         <button class="path" data-go="list">Browse today's jobs</button>
         <button class="path" data-go="resume" data-anchor="open-tool">Tailor your own resume</button>
-        <button class="path" data-go="resume" data-anchor="teaser">Recruiter? See who built this</button>
+        <button class="path" data-go="resume" data-anchor="teaser" id="go-teaser">Recruiter? See who built this</button>
       </div>
     </div>
   </div>
@@ -359,7 +360,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <table><thead><tr><th>Source</th><th class="r">Jobs today</th></tr></thead><tbody id="feed-rows"></tbody></table>
 </div></section>
 <div class="cta"><p><b>Hiring for data roles?</b> The person behind this page is looking for a junior data engineering job in KL or Selangor.</p>
-  <button class="btn2" data-go="resume" data-anchor="teaser">See the resume preview</button></div>
+  <button class="btn2" data-go="resume" data-anchor="teaser" id="go-teaser">See the resume preview</button></div>
 </main>
 
 <div class="cv-ov" id="cv-ov" role="dialog" aria-modal="true" aria-labelledby="cv-title">
@@ -371,7 +372,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
     <label class="fld">Email<input id="cv-email" type="email" placeholder="name@example.com"></label>
     <label class="fld">Phone<input id="cv-phone" type="tel" placeholder="012-345 6789"></label>
     <label class="btn2" for="cv-file" style="cursor:pointer">Load my CV</label><input id="cv-file" type="file" accept=".json,application/json" hidden>
-    <button class="btn2" id="cv-lock" hidden title="Encrypt your CV with a password so you can sign in from any device">Set a password</button>
+    <button class="btn2" id="cv-lock" hidden title="Make a private link that opens your CV in any browser">Make my private link</button>
     <button class="btn2" id="cv-forget" hidden>Remove my CV</button>
     <a class="btn2" id="cv-template" download="my-cv.json">Template</a>
     <button class="btn2" id="cv-print" style="background:var(--accent);color:#fff;border-color:var(--accent)">Save as PDF</button>
@@ -384,18 +385,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   </div>
 </div>
 
-<div class="cv-ov" id="pw-ov" role="dialog" aria-modal="true" aria-labelledby="pw-title" style="z-index:60">
-  <div class="panel" style="max-width:420px;margin:12vh auto 0">
-    <h2 id="pw-title">Sign in</h2>
-    <p class="lede" id="pw-lede"></p>
-    <input id="pw1" type="password" autocomplete="current-password" placeholder="Password" style="width:100%;height:42px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px">
-    <input id="pw2" type="password" autocomplete="new-password" placeholder="Type it again" hidden style="width:100%;height:42px;margin-top:8px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px">
-    <p class="st bad" id="pw-msg" style="min-height:1.4em;margin:8px 0"></p>
-    <div class="actions"><button class="btn2" id="pw-go" style="background:var(--accent);color:#fff;border-color:var(--accent)">Unlock</button><button class="btn2" id="pw-cancel">Cancel</button></div>
-  </div>
-</div>
-
-<footer><div class="wrap">Built with Python and SQLite, run daily on GitHub Actions. Saved and applied marks stay in this browser only.
+<footer><div class="wrap">Built with Python and SQLite, refreshed every 4 hours on GitHub Actions. Saved and applied marks stay in this browser only.
   Code: <a href="https://github.com/muhd-muaz/job-radar">github.com/muhd-muaz/job-radar</a></div></footer>
 
 <script>
@@ -487,13 +477,17 @@ function fill(t, j) {
   const C = CV(), skills = list3((j.matched.length ? j.matched : ["python", "sql"]).slice(0, 3).map(s => s.length <= 4 ? s.toUpperCase() : s));
   const sub = x => x.replace(/\{company\}/g, j.company).replace(/\{title\}/g, j.title).replace(/\{track\}/g, TRACK_WORDS[j.track] || "data")
           .replace(/\{skills\}/g, skills);
-  return sub(t.replace(/\{intro\}/g, C.outreach_intro || "").replace(/\{links\}/g, (C.outreach_links || []).join("\n"))
-              .replace(/\{name\}/g, C.outreach_name || C.name || ""));
+  return (sub(t.replace(/\{intro\}/g, C.outreach_intro || "").replace(/\{links\}/g, (C.outreach_links || []).join("\n"))
+              .replace(/\{name\}/g, C.outreach_name || C.name || ""))).replace(/\n{3,}/g, "\n\n");
 }
+const TONES = () => D.outreach.tones || { Formal: D.outreach.body };
+let tone = store.get("jr-tone", Object.keys(TONES())[0]);
 function reachBox(j) {
-  const subj = fill(D.outreach.subject, j), body = fill(D.outreach.body, j);
+  const T = TONES(); if (!T[tone]) tone = Object.keys(T)[0];
+  const subj = fill(D.outreach.subject, j), body = fill(T[tone], j);
   return `<div class="reach" id="reach-${esc(j.id)}">
     <p>This is a senior role, but the team may have junior openings. Send this draft to the company's careers email, or as a LinkedIn message to the hiring manager or recruiter. Read it once and change anything that doesn't sound like you. Nothing is sent automatically.</p>
+    <div class="seg tone" role="group" aria-label="Tone">${Object.keys(T).map(t => `<button data-tone="${esc(t)}" data-job="${esc(j.id)}" aria-pressed="${t === tone}">${esc(t)}</button>`).join("")}</div>
     <input readonly value="${esc(subj)}" aria-label="Subject">
     <textarea aria-label="Email draft">${esc(body)}</textarea>
     <div class="actions"><button class="btn2" data-copy="${esc(j.id)}">Copy email</button>
@@ -541,9 +535,9 @@ function row(j) {
         <div class="actions">
           ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
           <button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>
-          ${j.reach_out && D.outreach.body ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
+          ${j.reach_out && (D.outreach.tones || D.outreach.body) ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
         </div>
-        ${j.reach_out && D.outreach.body ? reachBox(j) : ""}
+        ${j.reach_out && (D.outreach.tones || D.outreach.body) ? reachBox(j) : ""}
       </div>
     </div></div></div>`;
 }
@@ -643,7 +637,7 @@ $("#radar").addEventListener("click", e => {
 
 // Header copy from real numbers
 const local = D.jobs.filter(isLocal), strong = local.filter(j => j.score >= 60), fresh = local.filter(j => j.first_seen === D.today);
-$("#updated").textContent = fmtDate(D.today);
+$("#updated").textContent = D.built ? new Date(D.built).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) : fmtDate(D.today);
 $("#nsrc").textContent = D.feeds.length || "my";
 $("#headline").textContent = strong.length ? `${strong.length} jobs in KL and Selangor score 60 or more today` : "No strong fits in KL and Selangor today";
 $("#lede").textContent = `${local.length} open data, BA and BI roles nearby, ${fresh.length} new today. The radar and list show the ${local.filter(j => j.score >= 40).length} that score 40 or more.`;
@@ -718,7 +712,9 @@ function buildSheet(job, mode, keep, nproj = 2) {
   const learning = (job ? job.missing.filter(s => D.learning.includes(s)) : D.learning.slice(0, 4)).map(nice);
   const edu = C.education.filter(e => mode === "cv" || !e.cv_only);
   const extras = C.extras.filter(e => mode === "cv" || !e.cv_only);
-  const links = [contact.email && esc(contact.email), contact.phone && esc(contact.phone),
+  // the sample always shows made-up details, so nobody's real email or phone appears on someone else's sample
+  const ct = MYCV ? { email: contact.email || C.email, phone: contact.phone || C.phone } : { email: D.cv.email, phone: D.cv.phone };
+  const links = [ct.email && esc(ct.email), ct.phone && esc(ct.phone),
     ...C.links.map(l => `<a href="${esc(l.url)}">${esc(l.label)}</a>`)].filter(Boolean);
   return `<h1>${esc(C.name)}</h1>
     <div class="contact">${esc(C.location)} · ${links.join(" · ")}</div>
@@ -747,6 +743,8 @@ function renderCv() {
   $("#cv-sub").textContent = (job ? `Tailored for ${job.title}${job.company ? ", " + job.company : ""}` : "General version") +
     (MYCV ? " · your CV, kept in this browser only" : " · showing a SAMPLE person: press Load my CV");
   $("#cv-forget").hidden = !MYCV; $("#cv-lock").hidden = !MYCV;
+  ["email", "phone"].forEach(k => { const f = $("#cv-" + k); f.disabled = !MYCV;
+    if (document.activeElement !== f) f.value = MYCV ? contact[k] || CV()[k] || "" : D.cv[k] || ""; });
   const gp = CV().gap_plan || D.cv.gap_plan || {};
   $("#fitnotes").innerHTML = job ? `<div class="panel">
       <h4>Keywords you can honestly claim</h4>
@@ -775,14 +773,15 @@ function pastedJob(raw) {
     matched: asked.filter(s => mine.has(s)), missing: asked.filter(s => !mine.has(s)),
     adWords: new Set(t.split(/[^a-z0-9+#]+/).filter(w => w.length > 4 && !stop.has(w))) };
 }
-// Password lock: the CV is encrypted in this browser (PBKDF2 + AES-GCM); only the scrambled file is ever published.
+// Private link: the CV is encrypted (PBKDF2 + AES-GCM) and only the scrambled file is published.
+// The key travels in the link's #fragment, which browsers never send to the server, and stays in this browser after first use.
 const b64 = u => btoa(String.fromCharCode(...new Uint8Array(u))), unb64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 async function keyFor(pw, salt, iter) {
   const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]);
   return crypto.subtle.deriveKey({ name: "PBKDF2", salt, iterations: iter, hash: "SHA-256" }, base, { name: "AES-GCM", length: 256 }, false, ["encrypt", "decrypt"]);
 }
-async function lockCv(cv, pw) {
-  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12)), iter = 600000;
+async function lockCv(cv, pw, iter = 100000) {
+  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
   const ct = await crypto.subtle.encrypt({ name: "AES-GCM", iv }, await keyFor(pw, salt, iter), new TextEncoder().encode(JSON.stringify(cv)));
   return { v: 1, kdf: "PBKDF2-SHA256", iter, salt: b64(salt), iv: b64(iv), ct: b64(ct) };
 }
@@ -790,46 +789,21 @@ async function unlockCv(L, pw) {
   const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: unb64(L.iv) }, await keyFor(pw, unb64(L.salt), L.iter), unb64(L.ct));
   return JSON.parse(new TextDecoder().decode(pt));
 }
-let pwMode = "unlock";
-function askPw(mode) {
-  pwMode = mode; $("#pw1").value = $("#pw2").value = ""; $("#pw-msg").textContent = "";
-  $("#pw2").hidden = mode !== "lock";
-  $("#pw-title").textContent = mode === "lock" ? "Set a password" : "Sign in";
-  $("#pw-go").textContent = mode === "lock" ? "Create locked file" : "Unlock";
-  $("#pw-lede").textContent = mode === "lock"
-    ? "Your CV gets scrambled with this password and downloaded as cv.locked.json. Publish that file and you can sign in from any device. Use 4 or more random words. The password is never stored or sent anywhere, and it can't be recovered if you forget it."
-    : "Enter your password to load your own CV on this device.";
-  $("#pw-ov").classList.add("on"); $("#pw1").focus();
+async function ownerUnlock() {
+  const m = location.hash.match(/[#&]me=([^&]+)/), key = m ? decodeURIComponent(m[1]) : store.get("jr-key", null);
+  if (m) history.replaceState(null, "", location.pathname + location.search);  // keep the key out of the address bar
+  if (!key || !D.locked) return;
+  try {  // decrypt the published copy every visit, so an updated CV shows up without doing anything
+    MYCV = await unlockCv(D.locked, key); store.set("jr-key", key); store.set("jr-cv", MYCV);
+    syncSignin(); render(); if ($("#cv-ov").classList.contains("on")) renderCv();
+  } catch { if (m) alert("This private link doesn't match the published CV. It may be an old link."); }
 }
-$("#pw-cancel").addEventListener("click", () => $("#pw-ov").classList.remove("on"));
-$("#pw1").addEventListener("keydown", e => { if (e.key === "Enter" && pwMode === "unlock") $("#pw-go").click(); });
-$("#pw-go").addEventListener("click", async () => {
-  const pw = $("#pw1").value, msg = $("#pw-msg");
-  try {
-    if (pwMode === "lock") {
-      if (pw.length < 12) return msg.textContent = "Use at least 12 characters (4 random words is best).";
-      if (pw !== $("#pw2").value) return msg.textContent = "The two passwords don't match.";
-      msg.textContent = "Scrambling…";
-      const L = await lockCv(MYCV, pw), a = document.createElement("a");
-      a.href = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(L)); a.download = "cv.locked.json"; a.click();
-      msg.textContent = ""; $("#pw-ov").classList.remove("on");
-    } else {
-      msg.textContent = "Checking…";
-      MYCV = await unlockCv(D.locked, pw); store.set("jr-cv", MYCV);
-      $("#pw-ov").classList.remove("on"); syncSignin(); render(); if ($("#cv-ov").classList.contains("on")) renderCv();
-    }
-  } catch { msg.textContent = pwMode === "lock" ? "Couldn't create the file in this browser." : "Wrong password."; }
-});
-function syncSignin() {
-  const b = $("#signin"); b.hidden = !D.locked && !MYCV;
-  b.textContent = MYCV ? "Sign out" : "Sign in";
-}
+function syncSignin() { $("#signin").hidden = !MYCV; }
 $("#signin").addEventListener("click", () => {
-  if (MYCV) { if (!confirm("Sign out? Your CV is removed from this browser.")) return;
-    MYCV = null; try { localStorage.removeItem("jr-cv"); } catch {} syncSignin(); render(); return; }
-  askPw("unlock");
+  if (!confirm("Sign out? Your CV is removed from this browser until you open your private link again.")) return;
+  MYCV = null; ["jr-cv", "jr-key"].forEach(k => { try { localStorage.removeItem(k); } catch {} }); syncSignin(); render();
 });
-syncSignin();
+syncSignin(); ownerUnlock(); addEventListener("hashchange", ownerUnlock);
 
 function fitSheet() {
   const w = $("#sheet-wrap").clientWidth, k = Math.min(1, w / 794), sc = $("#sheet-scale");
@@ -837,7 +811,6 @@ function fitSheet() {
 }
 function openCv(id) {
   cvState.job = id ? D.jobs.concat(D.closed).find(j => j.id === id) || null : null;
-  $("#cv-email").value = contact.email; $("#cv-phone").value = contact.phone;
   $("#cv-ov").classList.add("on"); document.body.style.overflow = "hidden";
   renderCv(); $("#cv-close").focus();
 }
@@ -845,7 +818,6 @@ function closeCv() { $("#cv-ov").classList.remove("on"); document.body.style.ove
 $("#cv-close").addEventListener("click", closeCv);
 document.addEventListener("keydown", e => {
   if (e.key !== "Escape") return;
-  if ($("#pw-ov").classList.contains("on")) { $("#pw-ov").classList.remove("on"); return; }
   if ($("#cv-ov").classList.contains("on")) closeCv();
 });
 $("#cv-mode").addEventListener("click", e => {
@@ -866,10 +838,18 @@ $("#cv-file").addEventListener("change", async e => {
     const c = JSON.parse(await f.text());
     if (!c.name || !Array.isArray(c.jobs)) throw new Error("missing name or jobs");
     $("#cv-msg").hidden = true; MYCV = c; store.set("jr-cv", c); renderCv(); render(); syncSignin();
-  } catch (err) { $("#cv-msg").textContent = "That file isn't in the template's format. Press Template to compare."; $("#cv-msg").hidden = false; }
+  } catch (err) { $("#cv-msg").classList.add("bad"); $("#cv-msg").textContent = "That file isn't in the template's format. Press Template to compare."; $("#cv-msg").hidden = false; }
   e.target.value = "";
 });
-$("#cv-lock").addEventListener("click", () => askPw("lock"));
+$("#cv-lock").addEventListener("click", async () => {
+  const key = b64(crypto.getRandomValues(new Uint8Array(18))).replace(/\+/g, "-").replace(/\//g, "_");
+  const a = document.createElement("a"), link = location.origin + location.pathname + "#me=" + key;
+  a.href = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(await lockCv(MYCV, key)));
+  a.download = "cv.locked.json"; a.click(); store.set("jr-key", key);
+  navigator.clipboard?.writeText(link).catch(() => {});
+  const msg = $("#cv-msg"); msg.classList.remove("bad"); msg.hidden = false;
+  msg.textContent = `Downloaded cv.locked.json. Put it in your copy of the project at config/cv.locked.json. Your private link (copied, keep it like a password): ${link}`;
+});
 $("#fitnotes").addEventListener("click", e => {
   if (!e.target.closest("#ad-go")) return;
   const t = $("#ad-text").value.trim(); if (t) { cvState.job = pastedJob(t); renderCv(); }
@@ -900,7 +880,7 @@ function goTab(id, anchor) {
   // bring the next thing to press into view and ring it, so the two links never feel like the same page
   el.scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "center" });
   el.classList.remove("guide"); void el.offsetWidth; el.classList.add("guide");
-  setTimeout(() => el.classList.remove("guide"), 2600);
+  setTimeout(() => el.classList.remove("guide"), 5000);
 }
 
 // Sources panel
@@ -933,6 +913,12 @@ document.addEventListener("click", e => {
   if (cvb) { openCv(cvb.dataset.cv); return; }
   const r = e.target.closest("[data-reach]");
   if (r) { document.getElementById("reach-" + r.dataset.reach)?.classList.toggle("on"); return; }
+  const tb = e.target.closest("[data-tone]");
+  if (tb) {  // swap the draft's wording; the choice is remembered for the next draft
+    tone = tb.dataset.tone; store.set("jr-tone", tone);
+    const box = document.getElementById("reach-" + tb.dataset.job), j = D.jobs.concat(D.closed).find(x => x.id === tb.dataset.job);
+    box.outerHTML = reachBox(j); document.getElementById("reach-" + tb.dataset.job).classList.add("on"); return;
+  }
   const c = e.target.closest("[data-copy]");
   if (c) {
     const box = document.getElementById("reach-" + c.dataset.copy), text = `Subject: ${box.querySelector("input").value}\n\n${box.querySelector("textarea").value}`;

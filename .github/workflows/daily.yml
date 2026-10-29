@@ -2,7 +2,7 @@ name: daily-run
 
 on:
   schedule:
-    - cron: "30 0 * * *"   # 08:30 Malaysia time
+    - cron: "30 */4 * * *"   # every 4 hours, from 08:30 Malaysia time
   workflow_dispatch:
   push:
     branches: [main]

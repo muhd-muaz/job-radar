@@ -1,4 +1,4 @@
-"""Daily email of new strong matches, sent from the alerts mailbox.
+"""Email of new strong matches, sent from the alerts mailbox.
 Needs ALERT_IMAP_USER / ALERT_IMAP_PASSWORD (same Gmail app password) and NOTIFY_TO. Silent when nothing is new."""
 import html
 import os
@@ -15,11 +15,12 @@ def pick(active, today, profile, min_score=60):
     return sorted(new, key=lambda j: -j["score"])[:15]
 
 
-def send_new_matches(active, today, profile):
+def send_new_matches(db, active, today, profile):
     user, pw, to = (os.environ.get(k) for k in ("ALERT_IMAP_USER", "ALERT_IMAP_PASSWORD", "NOTIFY_TO"))
     if not (user and pw and to):
         return
-    new = pick(active, today, profile)
+    sent = {r[0] for r in db.execute("SELECT id FROM notified")}  # runs every 4 hours; each job is emailed once
+    new = [j for j in pick(active, today, profile) if j["id"] not in sent]
     if not new:
         print("notify: no new strong matches, no email")
         return
@@ -38,4 +39,6 @@ def send_new_matches(active, today, profile):
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
         s.login(user, pw.replace(" ", ""))
         s.send_message(msg)
+    db.executemany("INSERT OR IGNORE INTO notified VALUES (?,?)", [(j["id"], today) for j in new])
+    db.commit()
     print(f"notify: emailed {len(new)} new matches")

@@ -2,6 +2,8 @@
   "_note": "SAMPLE CV for a made-up person. Copy this file, fill in your own details and load it from the page (My resume > Load my CV). Your file stays in your browser and is never uploaded. Tags are skill names from config/skills.json; tracks are job tracks (Data engineering, BI and reporting, Data analysis, Data science, Business and systems, Other).",
   "name": "Nur Syazwina binti Jamaludin (sample)",
   "location": "Petaling Jaya, Selangor",
+  "email": "syazwina.sample@example.com",
+  "phone": "012-345 6789",
   "links": [
     {
       "label": "github.com/your-name",
@@ -164,7 +166,7 @@
   ],
   "outreach_intro": "I am a junior data analyst at a retail company, where I use {skills} day to day.",
   "outreach_links": [],
-  "outreach_name": "Syazwina",
+  "outreach_name": "Syazwina Jamaludin",
   "gap_plan": {
     "_note": "Realistic ways to close a gap, shown beside the tailored resume (never printed).",
     "airflow": "Run Job Radar's daily job as an Airflow DAG in Docker on your laptop. About 2 weekends; then you can say you've scheduled a real pipeline with Airflow.",
