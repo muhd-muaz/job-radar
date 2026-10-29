@@ -5144,6 +5144,51 @@
   "posts": 1
  },
  {
+  "id": "wd:ocbc:JR00008401",
+  "company": "Ocbc",
+  "title": "Business Analyst (Finance)",
+  "location": "OCBC Malaysia, Menara OCBC",
+  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Menara-OCBC/Business-Analyst--MRPA_JR00008401",
+  "source": "workday",
+  "score": 50,
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-10-29",
+  "matched": [
+   "automation",
+   "dashboard",
+   "excel",
+   "power bi",
+   "power query",
+   "python",
+   "requirements gathering",
+   "sql",
+   "statistics"
+  ],
+  "missing": [
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 83,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:intel:JR0287791",
   "company": "Intel",
   "title": "E-Core CPU Design Automation Engineer",
