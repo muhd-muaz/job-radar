@@ -1,0 +1,197 @@
+{
+  "_note": "SAMPLE CV for a made-up person. Copy this file, fill in your own details and load it from the page (My resume > Load my CV). Your file stays in your browser and is never uploaded. Tags are skill names from config/skills.json; tracks are job tracks (Data engineering, BI and reporting, Data analysis, Data science, Business and systems, Other).",
+  "name": "Aina Rahman (sample)",
+  "location": "Petaling Jaya, Selangor",
+  "links": [
+    {
+      "label": "github.com/your-name",
+      "url": "https://github.com/"
+    }
+  ],
+  "summary": {
+    "Data engineering": "Junior data analyst moving into data engineering: builds SQL and Python pipelines that feed weekly sales reporting. BSc Statistics graduate, seeking a junior data engineering role.",
+    "BI and reporting": "Junior data analyst who builds Power BI dashboards and the SQL behind them for a retail sales team. BSc Statistics graduate, seeking a BI or reporting role.",
+    "Data analysis": "Junior data analyst who turns retail sales data into weekly insights with SQL, Python and Power BI. BSc Statistics graduate.",
+    "Data science": "Statistics graduate with regression and forecasting coursework, now analysing retail sales in Python and SQL.",
+    "Business and systems": "Junior analyst who gathers reporting requirements from sales managers and turns them into dashboards and process fixes.",
+    "Other": "Junior data analyst working with SQL, Python and Power BI."
+  },
+  "jobs": [
+    {
+      "title": "Junior Data Analyst",
+      "org": "Example Retail Sdn Bhd",
+      "where": "Petaling Jaya",
+      "dates": "Jan 2026 – Present",
+      "bullets": [
+        {
+          "text": "Built a Python and SQL job that loads daily sales from the point-of-sale system into a reporting database, replacing a manual CSV merge.",
+          "tags": [
+            "python",
+            "sql",
+            "etl",
+            "data pipeline",
+            "automation"
+          ],
+          "tracks": [
+            "Data engineering",
+            "BI and reporting"
+          ]
+        },
+        {
+          "text": "Created a Power BI sales dashboard used in the weekly managers' meeting.",
+          "tags": [
+            "power bi",
+            "dashboard",
+            "kpi",
+            "data visualization"
+          ],
+          "tracks": [
+            "BI and reporting",
+            "Data analysis"
+          ]
+        },
+        {
+          "text": "Found that two product lines drove most returns, which led to a supplier review.",
+          "tags": [
+            "statistics",
+            "stakeholder management"
+          ],
+          "tracks": [
+            "Data analysis"
+          ]
+        },
+        {
+          "text": "Wrote data checks that flag missing or duplicate transactions each morning.",
+          "tags": [
+            "data quality",
+            "python",
+            "sql"
+          ],
+          "tracks": [
+            "Data engineering",
+            "Data analysis"
+          ]
+        },
+        {
+          "text": "Gathered reporting requirements from store managers and documented them for the IT team.",
+          "tags": [
+            "requirements gathering",
+            "stakeholder management"
+          ],
+          "tracks": [
+            "Business and systems"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Intern",
+      "org": "Example Logistics Bhd",
+      "where": "Shah Alam",
+      "dates": "Jul 2025 – Dec 2025",
+      "bullets": [
+        {
+          "text": "Cleaned and merged delivery records in Excel and Power Query for a monthly on-time report.",
+          "tags": [
+            "excel",
+            "power query",
+            "data quality"
+          ],
+          "tracks": [
+            "Data analysis",
+            "BI and reporting"
+          ]
+        },
+        {
+          "text": "Automated a weekly email report with Python.",
+          "tags": [
+            "python",
+            "automation"
+          ],
+          "tracks": [
+            "Data engineering"
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sample project",
+      "stack": "Python, SQLite",
+      "url": "",
+      "text": "A small pipeline that pulls open data from data.gov.my into SQLite and charts it.",
+      "tags": [
+        "python",
+        "sqlite",
+        "etl",
+        "data visualization"
+      ]
+    }
+  ],
+  "skills": {
+    "Data": [
+      "python",
+      "sql",
+      "etl",
+      "power query",
+      "excel"
+    ],
+    "BI": [
+      "power bi",
+      "dashboard",
+      "statistics"
+    ],
+    "Languages": [
+      "Malay (native)",
+      "English (fluent)"
+    ]
+  },
+  "education": [
+    {
+      "title": "BSc Statistics",
+      "org": "Example University",
+      "dates": "2021 – 2025",
+      "notes": [
+        "CGPA 3.40"
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "text": "Sample certificate (2025)"
+    }
+  ],
+  "outreach_intro": "I am a junior data analyst at a retail company, where I use {skills} day to day.",
+  "outreach_links": [],
+  "outreach_name": "Aina",
+  "gap_plan": {
+    "_note": "Realistic ways to close a gap, shown beside the tailored resume (never printed).",
+    "airflow": "Run Job Radar's daily job as an Airflow DAG in Docker on your laptop. About 2 weekends; then you can say you've scheduled a real pipeline with Airflow.",
+    "dbt": "Do the free dbt Fundamentals course, then model Job Radar's SQLite tables with dbt-duckdb. About 1–2 weeks of evenings.",
+    "docker": "Package Job Radar in a Dockerfile and run it locally. One weekend, and it pairs well with Airflow.",
+    "spark": "Databricks free edition with a PySpark notebook on a public dataset (e.g. data.gov.my). About 2 weeks; say 'learning', not 'expert'.",
+    "databricks": "Databricks free edition plus the free Databricks Academy fundamentals badge. About 1–2 weeks.",
+    "snowflake": "Snowflake 30-day free trial: load Job Radar's jobs table and write the same queries. One weekend.",
+    "aws": "AWS free tier: put the daily SQLite or CSV output in S3 and query it with Athena. 1–2 weekends.",
+    "azure": "Microsoft Learn's free Azure Data Fundamentals (DP-900) path; the exam is often free in Microsoft events. About 3 weeks.",
+    "gcp": "Google Cloud free tier: load a CSV into BigQuery and schedule a query. One weekend.",
+    "tableau": "Tableau Public (free): rebuild your breakdown dashboard on synthetic data and link it. One weekend.",
+    "ci/cd": "You already run GitHub Actions in Job Radar. Add a test step to a second repo and mention it. A few evenings.",
+    "data modeling": "Draw the star schema behind your breakdown report (facts: callbacks, PM; dimensions: lift, site, date). Real work you already did; just document it. One evening.",
+    "data warehouse": "Same as data modelling, plus a small dbt or DuckDB warehouse of public data. 1–2 weeks.",
+    "stakeholder management": "Already true: you train maintenance staff, handle user requests and escalate to vendors. Use those as interview examples rather than learning anything new.",
+    "data quality": "Already true: your invoice reconciliation and ticket matching are data-quality checks. Say so in the interview.",
+    "process mapping": "Draw the Callback work-order flow (Create > Approve > Process > Realize) as a diagram. One evening; real work.",
+    "uat": "Already close: you test Synergy changes before users get them. Describe one change you tested.",
+    "agile": "Read the Scrum Guide (free, 20 min) and frame your pipeline work as small weekly releases.",
+    "jira": "Free Jira account: track Job Radar's backlog for a month. Small effort; mention only if asked.",
+    "kafka": "Confluent's free Kafka 101 course. Mention as 'learning' only.",
+    "linux": "Use WSL on your laptop to run Job Radar from a Linux shell. A few evenings.",
+    "machine learning": "Your coursework (regression, PCA, SVR) counts; keep it modest.",
+    "r": "Course-level R from UMT counts; list it only if the ad asks.",
+    "salesforce": "Free Trailhead badges (Admin Beginner). Only if you want CRM roles.",
+    "sap": "openSAP free courses. Only if you want ERP roles; your Exact experience transfers.",
+    "excel": "Already strong (Power Query). No action."
+  }
+}

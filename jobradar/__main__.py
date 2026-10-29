@@ -63,7 +63,7 @@ def main(argv):
         "SELECT * FROM runs WHERE rowid IN (SELECT max(rowid) FROM runs WHERE run_date = ? GROUP BY company)", (today,))]
     closed = store.closed_jobs(db, since, (dt.date.today() - dt.timedelta(days=45)).isoformat())
     posts = store.post_counts(db)
-    cv = load("cv.json") if (ROOT / "config" / "cv.json").exists() else None
+    cv = load("cv.sample.json")  # the public page only ever carries the sample; real CVs stay in the browser
     report.build(ROOT / "docs", active, runs, profile, today, closed, posts, cv)
     if "--offline" not in argv:
         notify.send_new_matches(active, today, profile)

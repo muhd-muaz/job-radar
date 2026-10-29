@@ -301,6 +301,9 @@ footer a{color:var(--ink-2)}
     </div>
     <input id="cv-email" type="email" placeholder="Email (kept in this browser)" aria-label="Email for the resume">
     <input id="cv-phone" type="tel" placeholder="Phone (kept in this browser)" aria-label="Phone for the resume">
+    <label class="btn2" for="cv-file" style="cursor:pointer">Load my CV</label><input id="cv-file" type="file" accept=".json,application/json" hidden>
+    <button class="btn2" id="cv-forget" hidden>Remove my CV</button>
+    <a class="btn2" id="cv-template" download="my-cv.json">Template</a>
     <button class="btn2" id="cv-print" style="background:var(--accent);color:#fff;border-color:var(--accent)">Save as PDF</button>
     <button class="btn2" id="cv-close" aria-label="Close">Close</button>
   </div></div>
@@ -393,10 +396,16 @@ function explain(j) {
 const TRACK_WORDS = { "Data engineering": "data engineering", "BI and reporting": "BI and reporting", "Data analysis": "data analysis",
   "Data science": "data science", "Business and systems": "business or systems analysis", "Other": "data" };
 const list3 = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a[0] || "";
+// The CV in use: the one loaded into this browser, else the public sample. Real CVs never reach the server.
+function loadCv() { const c = store.get("jr-cv", null); return c && c.name && Array.isArray(c.jobs) ? c : null; }
+let MYCV = loadCv();
+const CV = () => MYCV || D.cv;
 function fill(t, j) {
-  const skills = list3((j.matched.length ? j.matched : ["python", "sql"]).slice(0, 3).map(s => s.length <= 4 ? s.toUpperCase() : s));
-  return t.replace(/\{company\}/g, j.company).replace(/\{title\}/g, j.title).replace(/\{track\}/g, TRACK_WORDS[j.track] || "data")
-          .replace(/\{skills\}/g, skills).replace(/\{name\}/g, D.outreach.name || "");
+  const C = CV(), skills = list3((j.matched.length ? j.matched : ["python", "sql"]).slice(0, 3).map(s => s.length <= 4 ? s.toUpperCase() : s));
+  const sub = x => x.replace(/\{company\}/g, j.company).replace(/\{title\}/g, j.title).replace(/\{track\}/g, TRACK_WORDS[j.track] || "data")
+          .replace(/\{skills\}/g, skills);
+  return sub(t.replace(/\{intro\}/g, C.outreach_intro || "").replace(/\{links\}/g, (C.outreach_links || []).join("\n"))
+              .replace(/\{name\}/g, C.outreach_name || C.name || ""));
 }
 function reachBox(j) {
   const subj = fill(D.outreach.subject, j), body = fill(D.outreach.body, j);
@@ -448,7 +457,7 @@ function row(j) {
         ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
         <div class="actions">
           ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
-          ${D.cv.name ? `<button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>` : ""}
+          <button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>
           ${j.reach_out && D.outreach.body ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
         </div>
         ${j.reach_out && D.outreach.body ? reachBox(j) : ""}
@@ -591,7 +600,7 @@ function rel(tags, job) {
   return tags.filter(t => job.matched.includes(t)).length * 2 + tags.filter(t => job.missing.includes(t)).length;
 }
 function buildSheet(job, mode, keep, nproj = 2) {
-  const C = D.cv, track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
+  const C = CV(), track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
   const score = b => rel(b.tags, job) * 2 + (b.tracks.includes(track) ? 3 : 0);
   const rank = list => list.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s);
   const jobsHtml = C.jobs.map((r, k) => {
@@ -635,8 +644,10 @@ function renderCv() {
   sheet.classList.toggle("over", cvState.mode === "resume" && sheet.scrollHeight > 1110);
   sheet.style.minHeight = "";
   fitSheet();
-  $("#cv-sub").textContent = job ? `Tailored for ${job.title}, ${job.company}` : "General version, aimed at data engineering";
-  const gp = D.cv.gap_plan || {};
+  $("#cv-sub").textContent = (job ? `Tailored for ${job.title}, ${job.company}` : "General version") +
+    (MYCV ? " · your CV, kept in this browser only" : " · showing a SAMPLE person: press Load my CV");
+  $("#cv-forget").hidden = !MYCV;
+  const gp = CV().gap_plan || D.cv.gap_plan || {};
   $("#fitnotes").innerHTML = job ? `<div class="panel">
       <h4>Keywords you can honestly claim</h4>
       <div class="chips">${job.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") || "<span>None tracked in this ad.</span>"}</div>
@@ -666,9 +677,23 @@ $("#cv-mode").addEventListener("click", e => {
 ["email", "phone"].forEach(k => $("#cv-" + k).addEventListener("input", e => { contact[k] = e.target.value.trim(); store.set("jr-contact", contact); renderCv(); }));
 $("#cv-print").addEventListener("click", () => {
   const old = document.title, co = cvState.job ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
-  document.title = `Muhammad_Muaz${co}_${cvState.mode === "cv" ? "CV" : "Resume"}`;   // becomes the PDF file name
+  document.title = `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${cvState.mode === "cv" ? "CV" : "Resume"}`;   // becomes the PDF file name
   document.body.classList.add("printing-cv"); window.print();
   document.body.classList.remove("printing-cv"); document.title = old;
+});
+$("#cv-template").href = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(D.cv, null, 2));
+$("#cv-file").addEventListener("change", async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const c = JSON.parse(await f.text());
+    if (!c.name || !Array.isArray(c.jobs)) throw new Error("missing name or jobs");
+    MYCV = c; store.set("jr-cv", c); renderCv(); render();
+  } catch (err) { alert("That file isn't a CV in the template's format (" + err.message + "). Press Template to see the format."); }
+  e.target.value = "";
+});
+$("#cv-forget").addEventListener("click", () => {
+  if (!confirm("Remove your CV from this browser? The public page will show the sample again.")) return;
+  MYCV = null; try { localStorage.removeItem("jr-cv"); } catch {} renderCv(); render();
 });
 addEventListener("resize", () => { if ($("#cv-ov").classList.contains("on")) fitSheet(); });
 

@@ -53,3 +53,14 @@ python -m pytest tests        # tests (needs pytest)
 Only public, unauthenticated career-site APIs are used, at most once a day, with an identifying user agent. No scraping of LinkedIn, JobStreet or other boards, and no logged-in sessions; those jobs only arrive through the alert emails the sites send. Job descriptions are stored for scoring; the published page shows only title, company, location, link and skills.
 
 The SQLite database is kept on the `data` branch as a single commit, so the main branch's history doesn't grow every day.
+
+## Use it for your own job search (any profession)
+
+Job Radar isn't tied to data jobs. What it collects and how it scores comes from two files:
+
+1. **Copy the repo** (Fork, or "Use this template" on GitHub) and turn on Actions and Pages (Settings → Pages → `main` / `docs`).
+2. **`config/profile.json`**: put your own job titles in `target_titles` (for example `"hr executive": 3`, `"admin": 2`, `"mechanical engineer": 3`), your skills in `have_skills`, the skills you're learning in `learning_skills`, and your preferred towns in `preferred_locations`.
+3. **`config/companies.json`**: change `workday_search_terms` to your job titles. The monthly discovery run finds companies with jobs in Malaysia by itself.
+4. **Your CV stays private.** The public page only carries a sample CV (`config/cv.sample.json`). Press **My resume → Template**, fill in your own details, then **Load my CV**. The file is kept in your browser and never uploaded. Don't commit a real `config/cv.json` (it's in `.gitignore`).
+
+Alert emails (JobStreet, LinkedIn and others) need a separate Gmail mailbox and two repository secrets. See `inbox/README.md`.
