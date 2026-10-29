@@ -27,6 +27,7 @@
   --accent:#3987e5;--accent-ink:#8ab8f0;--accent-soft:#1a2a3d;--ring:#2c3833;--sweep:rgba(57,135,229,.18);
   --have:#7fd1a6;--have-soft:#16291f;--gap:#e7b17a;--gap-soft:#2c2116}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);caret-color:var(--accent);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -48,7 +49,9 @@ header{padding:28px 0 8px}
 #radar .spoke{stroke:var(--rule-2);stroke-width:1}
 #radar .blip{fill:var(--accent);stroke:var(--panel);stroke-width:2;cursor:pointer;transition:r .12s}
 #radar .blip.old{fill:var(--panel);stroke:var(--accent);stroke-width:2}
-#radar .blip:hover,#radar .blip.hot{r:8}
+#radar .blip:hover,#radar .blip.hot,#radar .blip:focus-visible{r:8}
+#radar .blip:focus-visible{outline:none;stroke:var(--ink);stroke-width:3}
+@media (hover:none){.tip{display:none}}
 #radar .sweep{fill:url(#sweepGrad);transform-origin:0 0}
 #radar .sector.me{fill:var(--accent-soft);opacity:.55}
 #radar .sector-label{fill:var(--ink);font-size:15px;font-weight:600}
@@ -236,8 +239,6 @@ footer a{color:var(--ink-2)}
 @media (max-width:760px){
   .hero{grid-template-columns:1fr;gap:18px}
   .radar-box{max-width:340px;width:100%;margin:0 auto;order:2}
-  .head{grid-template-columns:48px minmax(0,1fr);gap:12px}
-  .mark{grid-column:2}
   .more{padding-left:4px}
   .detail{grid-template-columns:1fr}
   .detail .pz{margin:0 auto;width:100%;max-width:380px;height:auto;aspect-ratio:460/360}
@@ -245,6 +246,24 @@ footer a{color:var(--ink-2)}
   .sk{grid-template-columns:110px 1fr 32px}
 }
 @media (prefers-reduced-motion:reduce){#radar .sweep{display:none}.row.flash{animation:none}}
+.sub span{max-width:30ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sub .co{max-width:none}
+#teaser{scroll-margin-top:64px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .teaser{background:#f4f4f1;box-shadow:0 0 0 1px var(--rule)}}
+:root[data-theme="dark"] .teaser{background:#f4f4f1;box-shadow:0 0 0 1px var(--rule)}
+nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+@media (min-width:761px){nav.tabs .wrap{-webkit-mask-image:none;mask-image:none}}
+@media (max-width:760px){
+  .head{grid-template-columns:44px minmax(0,1fr) auto;gap:10px}
+  .mark{grid-column:auto;flex-direction:column;gap:4px}
+  .mark .icon{width:40px;height:40px}
+  .cv-bar{position:static}
+  .cv-bar .wrap{gap:6px}
+  .cv-bar .fld{flex:1 1 140px}.cv-bar .fld input{width:100%}
+  .cv-body{display:flex;flex-direction:column-reverse}
+  .sheet-wrap{overflow-x:auto}
+  .paths{flex-direction:column;gap:0}
+}
 </style>
 </head>
 <body>
@@ -261,10 +280,10 @@ footer a{color:var(--ink-2)}
       <p id="lede"></p>
       <ol class="how">
         <li data-n="1"><b>Each slice is a job track</b>, worked out from the job title. The number beside it counts the open jobs shown. Data engineering, the track I'm aiming for, is shaded.</li>
-        <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles.</li>
+        <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60; jobs under 40 are left off. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles.</li>
         <li data-n="3"><b>Tap a dot</b> to open the job and see its score broken down as a pizza chart.</li>
       </ol>
-      <div class="key"><span><i></i>New today</span><span><i class="o"></i>Seen before</span></div>
+      <div class="key"><span><i></i><b id="key-new" style="font-weight:400">New today</b></span><span><i class="o"></i>Seen before</span></div>
       <div class="paths">
         <button class="path" data-go="list">Browse today's jobs</button>
         <button class="path" data-go="resume" data-anchor="open-tool">Tailor your own resume</button>
@@ -358,6 +377,7 @@ footer a{color:var(--ink-2)}
     <button class="btn2" id="cv-print" style="background:var(--accent);color:#fff;border-color:var(--accent)">Save as PDF</button>
     <button class="btn2" id="cv-close" aria-label="Close">Close</button>
   </div></div>
+  <p class="st bad" id="cv-msg" role="status" hidden style="max-width:1280px;margin:10px auto 0;padding:0 16px;font-size:14.5px"></p>
   <div class="cv-body">
     <div class="sheet-wrap" id="sheet-wrap"><div class="sheet-scale" id="sheet-scale"><div class="sheet" id="sheet"></div></div></div>
     <aside class="fitnotes" id="fitnotes"></aside>
@@ -438,7 +458,8 @@ const SHORT = { "Job title": "Title", "Entry-friendly": "Entry level" };
 function jobPizza(j) {
   return pizza(Object.entries(j.parts).map(([k, v], i) => ({
     label: SHORT[k] || k, value: v, shown: v, note: PART_NOTE[k],
-    color: i < 2 ? "var(--accent)" : v >= 50 ? "var(--have)" : "var(--gap)", ink: i < 2 ? "var(--accent-ink)" : undefined
+    color: i < 2 ? "var(--accent)" : v >= 50 ? "color-mix(in srgb,var(--have) 38%,var(--panel))" : "var(--gap)",
+    ink: i < 2 ? "var(--accent-ink)" : v >= 50 ? "var(--have)" : undefined
   })), { R: 118, r0: 34, font: 19, core: j.score });
 }
 function explain(j) {
@@ -495,11 +516,11 @@ function row(j) {
   const tags = (j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
     (j.closed ? '<span class="tag off">Closed</span>' : "") +
     (j.posts > 1 ? `<span class="tag warn" title="Posted ${j.posts} times. It may be hard to fill, or a listing that never closes.">Posted ${j.posts} times</span>` : "");
-  const chips = j.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") +
-                j.missing.map(s => `<span class="chip gap">${esc(s)}</span>`).join("");
+  const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(s)}</span>`).join("") +
+                j.missing.map(s => `<span class="chip gap">+ ${esc(s)}</span>`).join("");
   const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
   return `<div class="row${m === "applied" ? " applied" : ""}" id="r-${esc(j.id)}">
-    <div class="head" data-toggle tabindex="0" role="button" aria-label="Show skills for ${esc(j.title)}">
+    <div class="head" data-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Show details for ${esc(j.title)}">
       <div class="score${j.score < 40 ? " low" : ""}"><b class="num">${j.score}</b><div class="bar"><span style="width:${j.score}%"></span></div></div>
       <div>${title}${tags}
         <div class="sub"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span>${j.salary ? `<span class="pay num">${esc(j.salary)}</span>` : ""}<span>${age(j.first_seen)}</span></div>
@@ -510,7 +531,7 @@ function row(j) {
       </div>
     </div>
     <div class="more"><div class="detail">
-      ${j.parts ? `<div><h4>Why it scores ${j.score}</h4><svg class="pz" viewBox="-230 -180 460 360" role="img" aria-label="Score breakdown">${jobPizza(j)}</svg>
+      ${j.parts ? `<div><h4>Why it scores ${j.score}</h4><svg class="pz" viewBox="-230 -180 460 360" role="img" aria-label="Score ${j.score}: ${Object.entries(j.parts).map(([k, v]) => k + " " + v).join(", ")}">${jobPizza(j)}</svg>
         <div class="pz-legend"><span><i style="background:var(--accent)"></i>Makes the score</span><span><i style="background:var(--have)"></i>Check passed</span><span><i style="background:var(--gap)"></i>Points off</span></div></div>` : ""}
       <div>
         <h4>${esc(j.track || "Skills")}</h4>
@@ -572,7 +593,7 @@ function drawRadar(list) {
     const i = Math.max(0, TRACKS.indexOf(j.track)), pad = 0.08;
     const a = A0 + i * SPAN + pad + hash01(j.id + j.company) * (SPAN - 2 * pad), r = Math.max(7, rOf(j.score));
     const [x, y] = P(r, a);
-    return `<circle class="blip${j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="-1"/>`;
+    return `<circle class="blip${j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="0" role="button" aria-label="${esc(j.title)}, ${esc(j.company)}, score ${j.score}"/>`;
   }).join("");
   svg.innerHTML = `<defs><radialGradient id="sweepGrad" cx="0" cy="0" r="${R}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--accent)" stop-opacity=".22"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
@@ -599,6 +620,20 @@ $("#radar").addEventListener("pointermove", e => {
   tip.style.left = (e.clientX - box.left) + "px"; tip.style.top = (e.clientY - box.top) + "px"; tip.style.opacity = 1;
 });
 $("#radar").addEventListener("pointerleave", () => { $("#tip").style.opacity = 0; });
+$("#radar").addEventListener("keydown", e => {
+  const b = e.target.closest(".blip"); if (!b) return;
+  if (e.key === "Enter" || e.key === " ") { e.preventDefault(); b.dispatchEvent(new MouseEvent("click", { bubbles: true })); }
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault();
+    const all = [...document.querySelectorAll("#radar .blip")], i = all.indexOf(b);
+    all[(i + (e.key === "ArrowRight" ? 1 : all.length - 1)) % all.length].focus(); }
+});
+$("#radar").addEventListener("focusin", e => {
+  const b = e.target.closest(".blip"); if (!b) return;
+  const j = byId(b.dataset.id), box = $(".radar-box").getBoundingClientRect(), r = b.getBoundingClientRect(), tip = $("#tip");
+  tip.innerHTML = `<b>${esc(j.title)}</b>${esc(j.company)}, score ${j.score}`;
+  tip.style.left = (r.left + r.width / 2 - box.left) + "px"; tip.style.top = (r.top - box.top) + "px"; tip.style.opacity = 1;
+});
+$("#radar").addEventListener("focusout", () => { $("#tip").style.opacity = 0; });
 $("#radar").addEventListener("click", e => {
   const b = e.target.closest(".blip"); if (!b) return;
   const r = document.getElementById("r-" + b.dataset.id); if (!r) return;
@@ -610,8 +645,9 @@ $("#radar").addEventListener("click", e => {
 const local = D.jobs.filter(isLocal), strong = local.filter(j => j.score >= 60), fresh = local.filter(j => j.first_seen === D.today);
 $("#updated").textContent = fmtDate(D.today);
 $("#nsrc").textContent = D.feeds.length || "my";
-$("#headline").textContent = strong.length ? `${strong.length} jobs in KL and Selangor fit me well today` : "No strong fits in KL and Selangor today";
-$("#lede").textContent = `${local.length} open data, BA and BI roles nearby, ${fresh.length} of them new since yesterday.`;
+$("#headline").textContent = strong.length ? `${strong.length} jobs in KL and Selangor score 60 or more today` : "No strong fits in KL and Selangor today";
+$("#lede").textContent = `${local.length} open data, BA and BI roles nearby, ${fresh.length} new today. The radar and list show the ${local.filter(j => j.score >= 40).length} that score 40 or more.`;
+$("#key-new").textContent = `New today (${local.filter(j => j.score >= 40 && j.first_seen === D.today).length})`;
 
 // Skills panel: one hue; "learning" is said in words, not colour
 const peak = Math.max(1, ...D.gaps.map(g => g[1]));
@@ -807,7 +843,11 @@ function openCv(id) {
 }
 function closeCv() { $("#cv-ov").classList.remove("on"); document.body.style.overflow = ""; }
 $("#cv-close").addEventListener("click", closeCv);
-document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#cv-ov").classList.contains("on")) closeCv(); });
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  if ($("#pw-ov").classList.contains("on")) { $("#pw-ov").classList.remove("on"); return; }
+  if ($("#cv-ov").classList.contains("on")) closeCv();
+});
 $("#cv-mode").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   cvState.mode = b.dataset.v; $("#cv-mode").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderCv();
@@ -825,8 +865,8 @@ $("#cv-file").addEventListener("change", async e => {
   try {
     const c = JSON.parse(await f.text());
     if (!c.name || !Array.isArray(c.jobs)) throw new Error("missing name or jobs");
-    MYCV = c; store.set("jr-cv", c); renderCv(); render(); syncSignin();
-  } catch (err) { alert("That file isn't a CV in the template's format (" + err.message + "). Press Template to see the format."); }
+    $("#cv-msg").hidden = true; MYCV = c; store.set("jr-cv", c); renderCv(); render(); syncSignin();
+  } catch (err) { $("#cv-msg").textContent = "That file isn't in the template's format. Press Template to compare."; $("#cv-msg").hidden = false; }
   e.target.value = "";
 });
 $("#cv-lock").addEventListener("click", () => askPw("lock"));
@@ -901,11 +941,11 @@ document.addEventListener("click", e => {
     return;
   }
   const h = e.target.closest("[data-toggle]");
-  if (h && !e.target.closest("a")) h.parentElement.classList.toggle("open");
+  if (h && !e.target.closest("a")) h.setAttribute("aria-expanded", h.parentElement.classList.toggle("open"));
 });
 document.addEventListener("keydown", e => {
   const h = e.target.closest?.("[data-toggle]");
-  if (h && e.target === h && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); h.parentElement.classList.toggle("open"); }
+  if (h && e.target === h && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); h.setAttribute("aria-expanded", h.parentElement.classList.toggle("open")); }
 });
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
