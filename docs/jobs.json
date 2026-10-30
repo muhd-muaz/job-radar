@@ -15429,6 +15429,44 @@
   "posts": 1
  },
  {
+  "id": "wd:mdlz:R-179012",
+  "company": "Mondelez",
+  "title": "Data Management Business Partner (18 months contract)",
+  "location": "Business Office - Selangor, Malaysia",
+  "url": "https://wd3.myworkdaysite.com/recruiting/mdlz/External/job/Business-Office---Selangor-Malaysia/Data-Management-Business-Partner_R-179012",
+  "source": "workday",
+  "score": 10,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "erp",
+   "kpi",
+   "power bi"
+  ],
+  "missing": [
+   "data quality",
+   "process mapping"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 57,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 10,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:prudential:26080118",
   "company": "Prudential",
   "title": "Assistant Director, Analytics & Insights",
@@ -17650,36 +17688,6 @@
    "Full-time": 100,
    "Language": 100,
    "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:mdlz:R-179012",
-  "company": "Mondelez",
-  "title": "Data Management Business Partner (18 months contract)",
-  "location": "Business Office - Selangor, Malaysia",
-  "url": "https://wd3.myworkdaysite.com/recruiting/mdlz/External/job/Business-Office---Selangor-Malaysia/Data-Management-Business-Partner_R-179012",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
-  "matched": [],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 10,
-   "Language": 100,
-   "Location": 100
   },
   "track": "Data analysis",
   "reach_out": false,
