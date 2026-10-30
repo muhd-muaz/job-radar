@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "30 */4 * * *"   # every 4 hours, from 08:30 Malaysia time
   workflow_dispatch:
+    inputs:
+      keywords:
+        description: "Extra job titles to search for this run, comma separated (e.g. junior engineer, hr executive)"
+        required: false
+        default: ""
   push:
     branches: [main]
     paths: ["inbox/**", "config/**", "jobradar/**"]
@@ -36,6 +41,7 @@ jobs:
         env:
           CAREERJET_AFFID: ${{ secrets.CAREERJET_AFFID }}
           JOOBLE_KEY: ${{ secrets.JOOBLE_KEY }}
+          EXTRA_TITLES: ${{ github.event.inputs.keywords }}
           ALERT_IMAP_USER: ${{ secrets.ALERT_IMAP_USER }}
           ALERT_IMAP_PASSWORD: ${{ secrets.ALERT_IMAP_PASSWORD }}
           NOTIFY_TO: ${{ secrets.NOTIFY_TO }}

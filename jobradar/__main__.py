@@ -5,6 +5,7 @@
 """
 import datetime as dt
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -21,6 +22,10 @@ def load(name):
 def main(argv):
     profile, comp, skills = load("profile.json"), load("companies.json"), load("skills.json")["skills"]
     targets = list(profile["target_titles"])
+    # a one-off keyword search (Actions > daily-run > Run workflow) widens this run only
+    extra = [k.strip().lower() for k in os.environ.get("EXTRA_TITLES", "").split(",") if k.strip()]
+    targets += extra
+    comp["workday_search_terms"] = comp["workday_search_terms"] + extra
     find = build_skill_finder(skills)
     today = dt.date.today().isoformat()
     (ROOT / "data").mkdir(exist_ok=True)

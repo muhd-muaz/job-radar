@@ -211,6 +211,9 @@ footer a{color:var(--ink-2)}
 .sheet .contact a{color:#111;text-decoration:none}
 .sheet h3{font-size:10.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:11px 0 4px;padding-bottom:3px;border-bottom:1.2px solid #111}
 .sheet p{margin:0 0 4px}
+.sheet .letter{margin-top:26px;font-size:10.5pt;line-height:1.5;outline:none}
+.sheet .letter p{margin:0 0 12px}
+.sheet .letter:focus{box-shadow:0 0 0 2px #2a78d6 inset;border-radius:4px}
 .sheet .rrow{display:flex;justify-content:space-between;gap:12px;font-weight:600;margin-top:6px}
 .sheet .rrow span:last-child{font-weight:400;white-space:nowrap}
 .sheet .org{font-style:italic;color:#222}
@@ -319,6 +322,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
     </select>
   </div>
   <p class="count num" id="count"></p>
+  <p class="why" id="elsewhere" hidden style="margin:0 0 10px"></p>
   <div class="list" id="jobs"></div>
 </section>
 
@@ -367,7 +371,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <div class="cv-bar"><div class="wrap">
     <h2 id="cv-title">Resume<small id="cv-sub"></small></h2>
     <div class="seg" id="cv-mode" role="group" aria-label="Format">
-      <button data-v="resume" aria-pressed="true">Resume, 1 page</button><button data-v="cv" aria-pressed="false">Full CV</button>
+      <button data-v="resume" aria-pressed="true">Resume, 1 page</button><button data-v="cv" aria-pressed="false">Full CV</button><button data-v="letter" aria-pressed="false">Cover letter</button>
     </div>
     <label class="fld">Email<input id="cv-email" type="email" placeholder="name@example.com"></label>
     <label class="fld">Phone<input id="cv-phone" type="tel" placeholder="012-345 6789"></label>
@@ -396,6 +400,16 @@ const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
 };
+// Skill names in Title Case ("data cleaning" -> "Data Cleaning"), with the usual spellings for acronyms and brands
+const NICE = { sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Power BI", "power query": "Power Query (M)", sqlite: "SQLite",
+  kpi: "KPIs", erp: "ERP", git: "Git", "ci/cd": "CI/CD", aws: "AWS", gcp: "GCP", uat: "UAT", "data pipeline": "Data Pipelines", dbt: "dbt",
+  sap: "SAP", api: "API", nosql: "NoSQL", pyspark: "PySpark", javascript: "JavaScript", r: "R" };
+const SMALL = new Set(["and", "or", "of", "for", "the", "to", "in", "on", "with"]);
+function nice(s) {
+  if (NICE[s]) return NICE[s];
+  if (s !== s.toLowerCase()) return s;
+  return s.split(" ").map((w, i) => i && SMALL.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
 let marks = store.get("jr-marks", {});           // id -> "saved" | "applied"
 const state = { q: "", where: "local", min: 40, sort: "score" };
 const isLocal = j => D.preferred.some(w => (j.location + " ").toLowerCase().includes(w));
@@ -510,8 +524,8 @@ function row(j) {
   const tags = (j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
     (j.closed ? '<span class="tag off">Closed</span>' : "") +
     (j.posts > 1 ? `<span class="tag warn" title="Posted ${j.posts} times. It may be hard to fill, or a listing that never closes.">Posted ${j.posts} times</span>` : "");
-  const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(s)}</span>`).join("") +
-                j.missing.map(s => `<span class="chip gap">+ ${esc(s)}</span>`).join("");
+  const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(nice(s))}</span>`).join("") +
+                j.missing.map(s => `<span class="chip gap">+ ${esc(nice(s))}</span>`).join("");
   const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
   return `<div class="row${m === "applied" ? " applied" : ""}" id="r-${esc(j.id)}">
     <div class="head" data-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Show details for ${esc(j.title)}">
@@ -546,6 +560,16 @@ function render() {
   const list = filtered();
   $("#jobs").innerHTML = list.map(row).join("") || `<p class="empty">No jobs match these filters. Try a lower score or All Malaysia.</p>`;
   $("#count").textContent = `${list.length} of ${D.jobs.length} jobs. Tap a row for skills and projects to mention.`;
+  const q = state.q.trim(), e = encodeURIComponent(q), slug = q.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  // boards with no public feed still get a one-tap search, opened in a new tab
+  $("#elsewhere").hidden = !q;
+  if (q) $("#elsewhere").innerHTML = `Search “${esc(q)}” on other sites: ` + [
+    ["JobStreet", `https://my.jobstreet.com/${slug}-jobs/in-Kuala-Lumpur`],
+    ["LinkedIn", `https://www.linkedin.com/jobs/search/?keywords=${e}&location=Kuala%20Lumpur%2C%20Malaysia`],
+    ["Indeed", `https://malaysia.indeed.com/jobs?q=${e}&l=Kuala+Lumpur`],
+    ["Hiredly", `https://my.hiredly.com/jobs?search=${e}`],
+    ["Google Jobs", `https://www.google.com/search?q=${e}+jobs+Kuala+Lumpur&ibp=htl;jobs`]
+  ].map(([n, u]) => `<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join(" · ");
   $("#n-list").textContent = list.length;
   const closed = D.closed.map(j => ({ ...j, closed: true }));
   const saved = D.jobs.concat(closed).filter(j => marks[j.id])
@@ -645,7 +669,7 @@ $("#key-new").textContent = `New today (${local.filter(j => j.score >= 40 && j.f
 
 // Skills panel: one hue; "learning" is said in words, not colour
 const peak = Math.max(1, ...D.gaps.map(g => g[1]));
-$("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(s)}${D.learning.includes(s) ? "<small>learning</small>" : ""}</span>
+$("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(nice(s))}${D.learning.includes(s) ? "<small>learning</small>" : ""}</span>
   <div class="track"><div class="fill" style="width:${(n / peak * 100).toFixed(1)}%"></div></div><span class="v num">${n}</span></div>`).join("")
   || `<p class="empty">No skill gaps found yet.</p>`;
 
@@ -682,9 +706,6 @@ $("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(s)}${
 })();
 
 // ---------- Tailored resume and CV ----------
-const NICE = { sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Power BI", "power query": "Power Query (M)", sqlite: "SQLite",
-  kpi: "KPIs", erp: "ERP", git: "Git", "ci/cd": "CI/CD", aws: "AWS", gcp: "GCP", uat: "UAT", "data pipeline": "Data pipelines", dbt: "dbt" };
-const nice = s => NICE[s] || (s === s.toLowerCase() ? s[0].toUpperCase() + s.slice(1) : s);
 const cvState = { job: null, mode: "resume" };
 const contact = store.get("jr-contact", { email: "", phone: "" });
 function rel(tags, job, text = "") {
@@ -720,6 +741,8 @@ function buildSheet(job, mode, keep, nproj = 2) {
     <div class="contact">${esc(C.location)} · ${links.join(" · ")}</div>
     <h3>Summary</h3><p>${esc(C.summary[track])}</p>
     <h3>Technical skills</h3>${skills}${learning.length ? `<p class="skl"><b>Currently learning:</b> ${esc(learning.join(", "))}</p>` : ""}
+    ${mode === "cv" && Object.keys(C.skill_notes || {}).length ? `<h3>Skills in practice</h3><ul>${Object.entries(C.skill_notes)
+      .sort(([a], [b]) => asked.includes(b) - asked.includes(a)).map(([k, v]) => `<li><b>${esc(nice(k))}:</b> ${esc(v)}</li>`).join("")}</ul>` : ""}
     <h3>Work experience</h3>${jobsHtml}
     <h3>Projects</h3>${projs.map(p => `<div class="rrow"><span>${esc(p.name)}</span><span>${esc(p.stack)}</span></div>
       <ul><li>${esc(p.text)}${p.url ? ` <a href="${esc(p.url)}">${esc(p.url.replace(/^https:\/\//, ""))}</a>` : ""}</li></ul>`).join("")}
@@ -728,12 +751,37 @@ function buildSheet(job, mode, keep, nproj = 2) {
     <h3>${mode === "cv" ? "Certifications, awards and activities" : "Certifications and awards"}</h3><ul>${extras.map(x => `<li>${esc(x.text)}</li>`).join("")}</ul>
     ${mode === "cv" ? "<p>References available on request.</p>" : ""}`;
 }
+// Cover letter: built from the CV's most relevant lines for this job, plus a few answers only the applicant can give
+const letterInfo = store.get("jr-letter", { why: "", manager: "", start: "", source: "" });
+function buildLetter(job) {
+  const C = CV(), now = C.jobs[0] || {}, track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
+  const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 3 : 0);
+  const best = now.bullets ? now.bullets.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s).slice(0, 2) : [];
+  const proj = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) })).sort((a, b) => b.s - a.s)[0];
+  const notes = C.skill_notes || {}, used = (job ? job.matched : []).filter(s => notes[s]).slice(0, 1);
+  const learning = (job ? job.missing.filter(s => D.learning.includes(s)) : []).map(nice);
+  const role = job ? job.title : "the role", co = job?.company || "your company", L = letterInfo;
+  const lower = t => t.charAt(0).toLowerCase() + t.slice(1).replace(/\.$/, "");
+  const ct = MYCV ? { email: contact.email || C.email, phone: contact.phone || C.phone } : { email: D.cv.email, phone: D.cv.phone };
+  const today = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+  return `<h1>${esc(C.name)}</h1><div class="contact">${[C.location, ct.email, ct.phone].filter(Boolean).map(esc).join(" · ")}</div>
+    <div class="letter" contenteditable="true" spellcheck="true">
+    <p>${today}</p>
+    <p>${L.manager ? `Dear ${esc(L.manager)},` : "Dear Hiring Manager,"}</p>
+    <p>I am writing to apply for the ${esc(role)} position at ${esc(co)}${L.source ? `, which I saw on ${esc(L.source)}` : ""}. ${esc(C.letter_intro || "")}</p>
+    <p>${now.title ? `As ${/^[aeiou]/i.test(now.title) ? "an" : "a"} ${esc(now.title)} at ${esc(now.org)}, I` : "In my current work, I"} ${best.map(b => esc(lower(b.text))).join(". I also ")}.</p>
+    ${proj ? `<p>Outside work, I built ${esc(proj.name)}: ${esc(lower(proj.text))}.${used.length ? " " + used.map(s => `With ${esc(nice(s))}, I ${esc(lower(notes[s]))}.`).join(" ") : ""}</p>` : ""}
+    <p>${L.why ? esc(L.why) : `I would like to join ${esc(co)} because [one specific reason: a product, a project, or something in the job ad that matches what you enjoy].`}${learning.length ? ` I am also currently learning ${esc(list3(learning))}, which the role mentions.` : ""}</p>
+    <p>${L.start ? `I can start ${esc(L.start)}. ` : ""}I would welcome the chance to discuss how I can help your team. Thank you for your time and consideration.</p>
+    <p>Yours sincerely,<br>${esc(C.name.replace(/\s*\(sample\)/, ""))}</p></div>`;
+}
 function renderCv() {
   const job = cvState.job, sheet = $("#sheet");
   // one page: drop the least relevant lines, then the second project, until it fits
   const steps = [[6, 2], [5, 2], [5, 1], [4, 1], [3, 1]];
   sheet.style.minHeight = "0";              // measure the content, not the A4 frame
   for (const [keep, nproj] of steps) {
+    if (cvState.mode === "letter") { sheet.innerHTML = buildLetter(job); break; }
     sheet.innerHTML = buildSheet(job, cvState.mode, keep, nproj);
     if (cvState.mode !== "resume" || sheet.scrollHeight <= 1110) break;
   }
@@ -745,15 +793,22 @@ function renderCv() {
   $("#cv-forget").hidden = !MYCV; $("#cv-lock").hidden = !MYCV;
   ["email", "phone"].forEach(k => { const f = $("#cv-" + k); f.disabled = !MYCV;
     if (document.activeElement !== f) f.value = MYCV ? contact[k] || CV()[k] || "" : D.cv[k] || ""; });
-  const gp = CV().gap_plan || D.cv.gap_plan || {};
-  $("#fitnotes").innerHTML = job ? `<div class="panel">
+  const gp = CV().gap_plan || D.cv.gap_plan || {}, notes = CV().skill_notes || {};
+  const LI = [["manager", "Hiring manager's name", "Leave blank for: Dear Hiring Manager"], ["source", "Where you saw the ad", "e.g. JobStreet, LinkedIn"],
+    ["why", "Why this company? (one sentence)", "e.g. I use your app every week and want to work on the data behind it."], ["start", "When you can start", "e.g. after one month's notice"]];
+  const letterPanel = cvState.mode === "letter" ? `<div class="panel" style="margin-bottom:16px"><h4>A few answers only you can give</h4>
+      <p class="why" style="margin-top:0">The letter uses your most relevant work lines and project for this job. Fill these in, then click the letter to edit any sentence before saving as PDF.</p>
+      ${LI.map(([k, l, ph]) => `<label class="fld" style="display:block;margin-top:10px">${l}<input data-letter="${k}" value="${esc(letterInfo[k] || "")}" placeholder="${esc(ph)}" style="display:block;width:100%;height:42px;margin-top:4px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px"></label>`).join("")}</div>` : "";
+  $("#fitnotes").innerHTML = letterPanel + (job ? `<div class="panel">
       <h4>Keywords you can honestly claim</h4>
-      <div class="chips">${job.matched.map(s => `<span class="chip have">${esc(s)}</span>`).join("") || "<span>None tracked in this ad.</span>"}</div>
+      <div class="chips">${job.matched.map(s => `<span class="chip have">${esc(nice(s))}</span>`).join("") || "<span>None tracked in this ad.</span>"}</div>
       <p class="why">Those skills are moved to the front and in bold. The work lines that use them are listed first.</p>
+      ${job.matched.some(s => notes[s]) ? `<h4 style="margin-top:16px">How you've used them (say this in the interview)</h4>
+        ${job.matched.filter(s => notes[s]).map(s => `<div class="gapi"><b>${esc(nice(s))}</b>${esc(notes[s].charAt(0).toUpperCase() + notes[s].slice(1))}</div>`).join("")}` : ""}
       <h4 style="margin-top:16px">What you're missing, and a realistic way to prepare</h4>
-      ${job.missing.length ? job.missing.map(s => `<div class="gapi"><b>${esc(s)}${D.learning.includes(s) ? " · learning" : ""}</b>${esc(gp[s] || "Not covered yet. Leave it off the resume; if asked, say you're keen to learn it and name something close you've done.")}</div>`).join("") : "<p>No gaps found in this ad.</p>"}
+      ${job.missing.length ? job.missing.map(s => `<div class="gapi"><b>${esc(nice(s))}${D.learning.includes(s) ? " · learning" : ""}</b>${esc(gp[s] || "Not covered yet. Leave it off the resume; if asked, say you're keen to learn it and name something close you've done.")}</div>`).join("") : "<p>No gaps found in this ad.</p>"}
       <p class="why">Only gaps you have actually practised go on the resume. Missing skills are never added to it automatically.</p>
-    </div>` : "";
+    </div>` : "");
   $("#fitnotes").innerHTML += `<div class="panel" style="margin-top:${job ? 16 : 0}px"><h4>Tailor to any job ad</h4>
       <p class="why" style="margin-top:0">Paste a job ad from anywhere, any profession. Your matching lines move to the top. Nothing leaves this browser.</p>
       <textarea id="ad-text" style="width:100%;height:150px;margin-top:8px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:13.5px/1.5 inherit;padding:8px">${job && job.id === "pasted" ? esc(job.raw) : ""}</textarea>
@@ -827,7 +882,7 @@ $("#cv-mode").addEventListener("click", e => {
 ["email", "phone"].forEach(k => $("#cv-" + k).addEventListener("input", e => { contact[k] = e.target.value.trim(); store.set("jr-contact", contact); renderCv(); }));
 $("#cv-print").addEventListener("click", () => {
   const old = document.title, co = cvState.job ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
-  document.title = `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${cvState.mode === "cv" ? "CV" : "Resume"}`;   // becomes the PDF file name
+  document.title = `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${{ cv: "CV", letter: "Cover_Letter" }[cvState.mode] || "Resume"}`;   // becomes the PDF file name
   document.body.classList.add("printing-cv"); window.print();
   document.body.classList.remove("printing-cv"); document.title = old;
 });
@@ -849,6 +904,10 @@ $("#cv-lock").addEventListener("click", async () => {
   navigator.clipboard?.writeText(link).catch(() => {});
   const msg = $("#cv-msg"); msg.classList.remove("bad"); msg.hidden = false;
   msg.textContent = `Downloaded cv.locked.json. Put it in your copy of the project at config/cv.locked.json. Your private link (copied, keep it like a password): ${link}`;
+});
+$("#fitnotes").addEventListener("change", e => {
+  const k = e.target.dataset?.letter; if (!k) return;
+  letterInfo[k] = e.target.value.trim(); store.set("jr-letter", letterInfo); renderCv();
 });
 $("#fitnotes").addEventListener("click", e => {
   if (!e.target.closest("#ad-go")) return;

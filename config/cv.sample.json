@@ -18,6 +18,7 @@
     "Business and systems": "Junior analyst who gathers reporting requirements from sales managers and turns them into dashboards and process fixes.",
     "Other": "Junior data analyst working with SQL, Python and Power BI."
   },
+  "letter_intro": "I am a junior data analyst in retail, moving into data engineering, with a BSc in Statistics.",
   "jobs": [
     {
       "title": "Junior Data Analyst",
@@ -148,6 +149,14 @@
       "Malay (native)",
       "English (fluent)"
     ]
+  },
+  "skill_notes": {
+    "sql": "wrote the queries that load daily point-of-sale sales into the reporting database and check for missing stores",
+    "python": "scheduled a script that downloads the daily sales files, cleans them and loads them into SQL",
+    "power query": "merged the stock and sales exports from three branches into one weekly report, replacing manual copy and paste",
+    "power bi": "built the weekly sales dashboard the store managers use on Monday mornings",
+    "etl": "replaced a manual CSV merge with a daily job that cleans and loads sales data before 8 am",
+    "excel": "built the stock reorder sheet with lookups and pivot tables used by three branches"
   },
   "education": [
     {
