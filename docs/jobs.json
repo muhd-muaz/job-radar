@@ -762,6 +762,53 @@
   "posts": 1
  },
  {
+  "id": "wd:genpact:JR10024825",
+  "company": "Genpact",
+  "title": "Data Engineer - Data Engineering 4A",
+  "location": "1702-HS Malaysia: Sunway Geo Tower Jalan, Selangor, Malaysia",
+  "url": "https://genpact.wd108.myworkdayjobs.com/External_Careers/job/1702-HS-Malaysia-Sunway-Geo-Tower-Jalan-Selangor-Malaysia/Data-Engineer---Data-Engineering-4A_JR10024825",
+  "source": "workday",
+  "score": 76,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "data pipeline",
+   "etl",
+   "statistics"
+  ],
+  "missing": [
+   "agile",
+   "azure",
+   "data quality",
+   "databricks",
+   "snowflake",
+   "spark"
+  ],
+  "learning": [
+   "azure",
+   "databricks",
+   "snowflake",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 42,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:sutherland:743999958441104",
   "company": "Sutherland",
   "title": "ERP Oilfield Services Program (Malaysia)",
@@ -5089,6 +5136,40 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-71469",
+  "company": "AIA",
+  "title": "Finance, Analyst (Takaful reporting)",
+  "location": "Kuala Lumpur, MY-AIA Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Finance--Analyst--Takaful-reporting-_JR-71469",
+  "source": "workday",
+  "score": 50,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "erp",
+   "excel",
+   "requirements gathering"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 90,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "BI and reporting",
   "reach_out": false,
   "posts": 1
  },
@@ -12060,7 +12141,7 @@
   },
   "track": "Data analysis",
   "reach_out": false,
-  "posts": 1
+  "posts": 2
  },
  {
   "id": "sr:nielseniq:744000131339558",
@@ -14991,6 +15072,40 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:carrier:30199581",
+  "company": "Carrier",
+  "title": "Data Centre - Marketing Manager - AME",
+  "location": "#08-01/02, Perennial Business City, 1 Venture Avenue, Singapore 608521, Carrier (Malaysia) Sdn Bhd, No 10F-1, 10th Floor, Tower 5 @ PFCC , Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong, Selangor",
+  "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/08-0102-Perennial-Business-City-1-Venture-Avenue-Singapore-608521/Mgr--Vertical---Channel-Marketing_30199581-1",
+  "source": "workday",
+  "score": 12,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "kpi"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 35,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
