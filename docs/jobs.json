@@ -4420,6 +4420,41 @@
   "posts": 1
  },
  {
+  "id": "wd:zoom:R19576",
+  "company": "Zoom",
+  "title": "Enterprise Account Executive, Malaysia",
+  "location": "Malaysia (MYS)",
+  "url": "https://zoom.wd5.myworkdayjobs.com/Zoom/job/Malaysia-MYS/Enterprise-Account-Executive--Malaysia_R19576",
+  "source": "workday",
+  "score": 53,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "data pipeline"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 42,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:jabil:J2421179",
   "company": "Jabil",
   "title": "Enterprise Business Integration (IT System Application Admin)",
@@ -7223,6 +7258,52 @@
    "Location": 100
   },
   "track": "Other",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:WesternDigital:744000158655189",
+  "company": "Western Digital",
+  "title": "Internship - Data Engineering ",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000158655189-internship-data-engineering-",
+  "source": "smartrecruiters",
+  "score": 45,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "automation",
+   "dashboard",
+   "data pipeline",
+   "etl",
+   "git",
+   "kpi",
+   "pandas",
+   "power bi",
+   "python",
+   "rest api",
+   "sql"
+  ],
+  "missing": [
+   "data quality"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 93,
+   "Level": 20,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
   "reach_out": false,
   "posts": 1
  },
@@ -12188,14 +12269,14 @@
   "posts": 1
  },
  {
-  "id": "sr:nielseniq:744000158477589",
+  "id": "sr:nielseniq:744000158634545",
   "company": "NielsenIQ",
   "title": "Jr. Customer Support Analyst (Mandarin Speaker) – Data Troubleshooting",
   "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158477589-jr-customer-support-analyst-mandarin-speaker-data-troubleshooting",
+  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158634545-jr-customer-support-analyst-mandarin-speaker-data-troubleshooting",
   "source": "smartrecruiters",
   "score": 25,
-  "first_seen": "2026-10-29",
+  "first_seen": "2026-10-30",
   "last_seen": "2026-10-30",
   "matched": [
    "excel"
@@ -12217,7 +12298,7 @@
   },
   "track": "Data analysis",
   "reach_out": false,
-  "posts": 1
+  "posts": 2
  },
  {
   "id": "wd:altera:R03303",
@@ -13621,6 +13702,34 @@
    "Skills": 0,
    "Level": 100,
    "Entry-friendly": 80,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:fourseasons:REQ10396580",
+  "company": "Four Seasons",
+  "title": "Commis 3 - Pastry",
+  "location": "Four Seasons Hotel Kuala Lumpur",
+  "url": "https://fourseasons.wd3.myworkdayjobs.com/search/job/Four-Seasons-Hotel-Kuala-Lumpur/Commis-3---Pastry_REQ10396580",
+  "source": "workday",
+  "score": 18,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-10-30",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 75,
    "Full-time": 100,
    "Language": 0,
    "Location": 100
