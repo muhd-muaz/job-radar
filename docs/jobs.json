@@ -8,7 +8,7 @@
   "source": "greenhouse",
   "score": 95,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline",
@@ -62,7 +62,7 @@
   "source": "smartrecruiters",
   "score": 90,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -144,7 +144,7 @@
   "source": "smartrecruiters",
   "score": 88,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "etl",
    "excel",
@@ -179,7 +179,7 @@
   "source": "greenhouse",
   "score": 88,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "etl",
    "python",
@@ -321,7 +321,7 @@
   "source": "smartrecruiters",
   "score": 84,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "data visualization",
@@ -546,7 +546,7 @@
   "source": "smartrecruiters",
   "score": 80,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "git",
@@ -599,7 +599,7 @@
   "source": "smartrecruiters",
   "score": 79,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -688,7 +688,7 @@
   "source": "smartrecruiters",
   "score": 78,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "python",
@@ -770,7 +770,7 @@
   "source": "workday",
   "score": 76,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "etl",
@@ -817,7 +817,7 @@
   "source": "smartrecruiters",
   "score": 76,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -849,7 +849,7 @@
   "source": "smartrecruiters",
   "score": 76,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -927,7 +927,7 @@
   "source": "greenhouse",
   "score": 75,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "etl",
@@ -1007,7 +1007,7 @@
   "source": "greenhouse",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "git",
@@ -1128,7 +1128,7 @@
   "source": "smartrecruiters",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -1174,7 +1174,7 @@
   "source": "smartrecruiters",
   "score": 74,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -1225,7 +1225,7 @@
   "source": "smartrecruiters",
   "score": 72,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "sql"
   ],
@@ -1425,7 +1425,7 @@
   "source": "lever",
   "score": 71,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "etl",
@@ -1552,7 +1552,7 @@
   "source": "greenhouse",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "excel",
@@ -1588,52 +1588,6 @@
   },
   "track": "BI and reporting",
   "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:grab:744000156936610",
-  "company": "Grab",
-  "title": "Senior Data Scientist (Product Analytics)",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Grab/744000156936610-senior-data-scientist-product-analytics-",
-  "source": "smartrecruiters",
-  "score": 70,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "data visualization",
-   "kpi",
-   "power bi",
-   "python",
-   "sql",
-   "statistics"
-  ],
-  "missing": [
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 95,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data science",
-  "reach_out": true,
   "posts": 1
  },
  {
@@ -1685,7 +1639,7 @@
   "source": "greenhouse",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "excel",
@@ -1723,7 +1677,7 @@
   "source": "smartrecruiters",
   "score": 69,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -1859,7 +1813,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "requirements gathering"
@@ -1895,7 +1849,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "requirements gathering"
@@ -1931,7 +1885,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -2017,7 +1971,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "etl",
@@ -2067,7 +2021,7 @@
   "source": "smartrecruiters",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "erp",
@@ -2626,7 +2580,7 @@
   "source": "smartrecruiters",
   "score": 63,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "python",
@@ -2740,7 +2694,7 @@
   "source": "smartrecruiters",
   "score": 63,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "data visualization",
@@ -2820,7 +2774,7 @@
   "source": "smartrecruiters",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -2923,7 +2877,7 @@
   "source": "smartrecruiters",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "etl",
@@ -2971,7 +2925,7 @@
   "source": "greenhouse",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "erp",
@@ -3029,7 +2983,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "excel"
@@ -3476,7 +3430,7 @@
   "source": "greenhouse",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "etl"
@@ -3557,7 +3511,7 @@
   "source": "workday",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "power bi",
@@ -3594,7 +3548,7 @@
   "source": "smartrecruiters",
   "score": 59,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -3819,7 +3773,7 @@
   "source": "smartrecruiters",
   "score": 57,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "erp"
@@ -3854,7 +3808,7 @@
   "source": "smartrecruiters",
   "score": 57,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering"
@@ -3887,7 +3841,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -3937,7 +3891,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline",
@@ -4061,7 +4015,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "machine learning",
@@ -4331,7 +4285,7 @@
   "source": "greenhouse",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "python"
@@ -4366,7 +4320,7 @@
   "source": "greenhouse",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "machine learning"
   ],
@@ -4546,7 +4500,7 @@
   "source": "greenhouse",
   "score": 53,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering",
    "sql"
@@ -4727,7 +4681,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering",
    "sql"
@@ -4761,7 +4715,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "sql"
@@ -4794,7 +4748,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "git",
@@ -4842,7 +4796,7 @@
   "source": "smartrecruiters",
   "score": 51,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline",
@@ -5020,7 +4974,7 @@
   "source": "greenhouse",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering",
    "sql"
@@ -5061,7 +5015,7 @@
   "source": "smartrecruiters",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline",
@@ -5112,7 +5066,7 @@
   "source": "lever",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "rest api"
   ],
@@ -5226,7 +5180,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "power bi",
@@ -5268,7 +5222,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -5303,43 +5257,6 @@
   "track": "Business and systems",
   "reach_out": false,
   "posts": 1
- },
- {
-  "id": "wd:intel:JR0287791",
-  "company": "Intel",
-  "title": "E-Core CPU Design Automation Engineer",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/E-Core-CPU-Design-Automation-Engineer_JR0287791",
-  "source": "workday",
-  "score": 50,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "machine learning",
-   "python",
-   "statistics"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 100,
-   "Level": 100,
-   "Entry-friendly": 100,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 2
  },
  {
   "id": "wd:aia:JR-66644",
@@ -5416,85 +5333,6 @@
   "posts": 1
  },
  {
-  "id": "sr:BoschGroup:744000154351264",
-  "company": "Bosch",
-  "title": "Technician - Production (Automation Line)",
-  "location": "Bayan Lepas, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154351264-technician-production-automation-line-",
-  "source": "smartrecruiters",
-  "score": 50,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "erp",
-   "kpi"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 90,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:pwc:765474WD",
-  "company": "PwC",
-  "title": "Experienced Associate - HRMS Business Process & Automation Specialist",
-  "location": "Kuala Lumpur",
-  "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/Kuala-Lumpur/Experienced-Associate---HRMS-Business-Process---Automation-Specialist_765474WD",
-  "source": "workday",
-  "score": 50,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data visualization",
-   "excel",
-   "power query",
-   "python",
-   "sql"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 81,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:prudential:26100236",
   "company": "Prudential",
   "title": "HR Project Delivery & Application Support Analyst",
@@ -5529,42 +5367,6 @@
    "Location": 100
   },
   "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:WesternDigital:744000152066139",
-  "company": "Western Digital",
-  "title": "Robotics Automation Engineer, Manufacturing Engineering",
-  "location": "Kuching, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/WesternDigital/744000152066139-robotics-automation-engineer-manufacturing-engineering",
-  "source": "smartrecruiters",
-  "score": 50,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "python",
-   "sql"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 90,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -5687,7 +5489,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "requirements gathering"
@@ -5723,7 +5525,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "requirements gathering"
@@ -5759,7 +5561,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "requirements gathering"
@@ -5876,7 +5678,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "excel",
@@ -5915,7 +5717,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -5950,7 +5752,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline",
@@ -6020,7 +5822,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering",
@@ -6057,7 +5859,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "kpi"
@@ -6096,7 +5898,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -6146,7 +5948,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "kpi",
@@ -6382,7 +6184,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "erp",
@@ -6513,7 +6315,7 @@
   "source": "smartrecruiters",
   "score": 49,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "kpi",
@@ -6556,7 +6358,7 @@
   "source": "lever",
   "score": 48,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "machine learning"
   ],
@@ -6586,7 +6388,7 @@
   "source": "smartrecruiters",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -6714,7 +6516,7 @@
   "source": "greenhouse",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "machine learning",
@@ -6755,7 +6557,7 @@
   "source": "smartrecruiters",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering",
@@ -6845,7 +6647,7 @@
   "source": "lever",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "machine learning"
   ],
@@ -7065,7 +6867,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -7097,7 +6899,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -7173,7 +6975,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "erp",
@@ -7210,41 +7012,6 @@
   "posts": 1
  },
  {
-  "id": "wd:nttlimited:R-145519",
-  "company": "Nttlimited",
-  "title": "Data Centre Technology Sales Specialist",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Petaling-Jaya-Malaysia/Data-Centre-Technology-Sales-Specialist_R-145519",
-  "source": "workday",
-  "score": 46,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "data pipeline"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 42,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "lv:shopback-2:6991bd29-14dd-434b-bdc0-ed229d5f83c6",
   "company": "ShopBack",
   "title": "Key Account Manager - Payments (Enterprise)",
@@ -7253,7 +7020,7 @@
   "source": "lever",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline"
   ],
@@ -7286,7 +7053,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "kpi"
   ],
@@ -7310,39 +7077,6 @@
   "posts": 1
  },
  {
-  "id": "wd:abbott:31161774",
-  "company": "Abbott",
-  "title": "Associate, HR Service Center (Pipeline)",
-  "location": "Malaysia > Selangor : Imazium, No. 8, Jalan SS 21/37",
-  "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers/job/Malaysia--Selangor--Imazium-No-8-Jalan-SS-2137/Associate--HR-Service-Center--Pipeline-_31161774",
-  "source": "workday",
-  "score": 46,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "data pipeline"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 70,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:WesternDigital:744000158655189",
   "company": "Western Digital",
   "title": "Internship - Data Engineering ",
@@ -7351,7 +7085,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -7478,7 +7212,7 @@
   "source": "greenhouse",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "etl",
    "machine learning",
@@ -7517,7 +7251,7 @@
   "source": "greenhouse",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -7556,7 +7290,7 @@
   "source": "lever",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "python",
@@ -7642,7 +7376,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7681,7 +7415,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7720,7 +7454,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7759,7 +7493,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering"
@@ -8116,7 +7850,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "sql"
   ],
@@ -8148,7 +7882,7 @@
   "source": "smartrecruiters",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline",
@@ -8224,7 +7958,7 @@
   "source": "smartrecruiters",
   "score": 43,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "kpi",
@@ -8257,41 +7991,6 @@
   },
   "track": "Data science",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "wd:intel:JR0288232",
-  "company": "Intel",
-  "title": "EDA Design Automation Engineer",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/EDA-Design-Automation-Engineer_JR0288232",
-  "source": "workday",
-  "score": 42,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "python"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 80,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -8340,7 +8039,7 @@
   "source": "smartrecruiters",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "erp"
@@ -8380,7 +8079,7 @@
   "source": "smartrecruiters",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "sql"
   ],
@@ -8492,7 +8191,7 @@
   "source": "greenhouse",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -8568,7 +8267,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "excel",
@@ -8725,7 +8424,7 @@
   "source": "greenhouse",
   "score": 41,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "git",
@@ -9076,7 +8775,7 @@
   "source": "smartrecruiters",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "kpi",
@@ -9325,7 +9024,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "excel"
@@ -9360,7 +9059,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "excel",
@@ -9400,7 +9099,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -9428,7 +9127,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -9456,7 +9155,7 @@
   "source": "greenhouse",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "kpi",
@@ -9531,7 +9230,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard"
   ],
@@ -9603,7 +9302,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "python",
@@ -9736,7 +9435,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline"
   ],
@@ -9904,7 +9603,7 @@
   "source": "greenhouse",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "excel",
@@ -9951,7 +9650,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "dashboard",
@@ -10028,7 +9727,7 @@
   "source": "greenhouse",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -10064,7 +9763,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -10135,7 +9834,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data visualization",
    "sql"
@@ -10173,7 +9872,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "git",
@@ -10423,7 +10122,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "kpi",
    "requirements gathering",
@@ -10772,42 +10471,6 @@
   "posts": 1
  },
  {
-  "id": "wd:jabil:J2457282",
-  "company": "Jabil",
-  "title": "Automation Design Engineer Sr",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Automation-Design-Engineer-Sr_J2457282",
-  "source": "workday",
-  "score": 32,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "data visualization",
-   "statistics"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 90,
-   "Level": 70,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 2
- },
- {
   "id": "wd:prudential:26070330",
   "company": "Prudential",
   "title": "Manager, Data Quality",
@@ -10992,36 +10655,6 @@
   "posts": 1
  },
  {
-  "id": "wd:iqvia:R1567216",
-  "company": "IQVIA",
-  "title": "Business Operations Analyst (6 months contract)",
-  "location": "Wilayah Persekutuan Kuala Lumpur, Malaysia",
-  "url": "https://iqvia.wd1.myworkdayjobs.com/IQVIA/job/Wilayah-Persekutuan-Kuala-Lumpur-Malaysia/Business-Operations-Analyst_R1567216",
-  "source": "workday",
-  "score": 32,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "excel"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 70,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 10,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-63770",
   "company": "AIA",
   "title": "Business Analyst & User Acceptance Testing (Hong Kong Market)",
@@ -11132,7 +10765,7 @@
   "source": "greenhouse",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -11225,7 +10858,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "excel",
@@ -11355,7 +10988,7 @@
   "source": "workday",
   "score": 30,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "power bi",
@@ -11392,7 +11025,7 @@
   "source": "smartrecruiters",
   "score": 29,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "excel",
@@ -11507,7 +11140,7 @@
   "source": "workday",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel",
    "statistics"
@@ -11582,7 +11215,7 @@
   "source": "smartrecruiters",
   "score": 28,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "erp",
@@ -11609,94 +11242,6 @@
    "Location": 100
   },
   "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:jabil:J2457274",
-  "company": "Jabil",
-  "title": "Automation Design Engineer I",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Automation-Design-Engineer-I_J2457274",
-  "source": "workday",
-  "score": 28,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 70,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:agilent:4039190",
-  "company": "Agilent",
-  "title": "IBP Supply Planning Data Scientist",
-  "location": "Singapore-Yishun, Malaysia-Remote Location, India-Remote Location-Manesar, India-Remote Location, China-Shanghai, US-DE-Newport, US-CA-Folsom, US-DE-Newport, Germany-Waldbronn, Malaysia-Penang, US-DE-Wilmington, US-CA-Santa Clara, US-TX-Cedar Creek",
-  "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/Singapore-Yishun/IBP-Supply-Planning-Data-Scientist_4039190",
-  "source": "workday",
-  "score": 28,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data visualization",
-   "kpi",
-   "machine learning",
-   "power bi",
-   "python",
-   "sql",
-   "statistics"
-  ],
-  "missing": [
-   "aws",
-   "azure",
-   "data quality",
-   "gcp",
-   "qlik",
-   "stakeholder management",
-   "tableau"
-  ],
-  "learning": [
-   "aws",
-   "azure",
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 63,
-   "Level": 70,
-   "Entry-friendly": 65,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Data science",
   "reach_out": false,
   "posts": 1
  },
@@ -11811,7 +11356,7 @@
   "source": "smartrecruiters",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -11843,7 +11388,7 @@
   "source": "lever",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -11941,7 +11486,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "machine learning",
    "pandas",
@@ -12021,7 +11566,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "requirements gathering"
@@ -12088,7 +11633,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel"
   ],
@@ -12120,7 +11665,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel"
   ],
@@ -12152,7 +11697,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel"
   ],
@@ -12212,54 +11757,6 @@
   "posts": 1
  },
  {
-  "id": "sr:BoschGroup:744000150296530",
-  "company": "Bosch",
-  "title": "SMT Digitalization & Automation Project Lead",
-  "location": "Bayan Lepas, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150296530-smt-digitalization-automation-project-lead",
-  "source": "smartrecruiters",
-  "score": 26,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "data visualization",
-   "erp",
-   "power bi",
-   "python",
-   "rest api",
-   "sql"
-  ],
-  "missing": [
-   "spark",
-   "tableau"
-  ],
-  "learning": [
-   "spark",
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 92,
-   "Level": 50,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:accionlabs2:743999652288686",
   "company": "AccionLabs",
   "title": "SQL & .NET Senior Consultant",
@@ -12268,7 +11765,7 @@
   "source": "smartrecruiters",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "sql"
   ],
@@ -12328,7 +11825,7 @@
   "source": "smartrecruiters",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -12358,7 +11855,7 @@
   "source": "smartrecruiters",
   "score": 25,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel"
   ],
@@ -12437,7 +11934,7 @@
   "source": "greenhouse",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "data visualization",
@@ -12483,7 +11980,7 @@
   "source": "smartrecruiters",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "etl",
@@ -12637,7 +12134,7 @@
   "source": "smartrecruiters",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "kpi",
    "python",
@@ -12715,7 +12212,7 @@
   "source": "greenhouse",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "python"
   ],
@@ -12843,40 +12340,6 @@
   "posts": 1
  },
  {
-  "id": "wd:kimberlyclark:885852",
-  "company": "Kimberlyclark",
-  "title": "Credit Analyst I",
-  "location": "Petaling Jaya, Selangor, Malaysia",
-  "url": "https://kimberlyclark.wd1.myworkdayjobs.com/GLOBAL/job/Petaling-Jaya-Selangor-Malaysia/Credit-Analyst-I_885852",
-  "source": "workday",
-  "score": 24,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp"
-  ],
-  "missing": [
-   "process mapping"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 42,
-   "Level": 70,
-   "Entry-friendly": 65,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:rbc:R-0000185072",
   "company": "Rbc",
   "title": "Intern, Enterprise Control Testing",
@@ -12920,7 +12383,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -12985,7 +12448,7 @@
   "source": "smartrecruiters",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13081,7 +12544,7 @@
   "source": "greenhouse",
   "score": 22,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "erp",
@@ -13139,7 +12602,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "kpi"
   ],
@@ -13281,7 +12744,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -13364,7 +12827,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel"
   ],
@@ -13396,7 +12859,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "data pipeline"
@@ -13600,53 +13063,6 @@
   "posts": 1
  },
  {
-  "id": "sr:BoschGroup:744000131638937",
-  "company": "Bosch",
-  "title": "Senior Data Specialist",
-  "location": "Batu Kawan, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/BoschGroup/744000131638937-senior-data-specialist",
-  "source": "smartrecruiters",
-  "score": 19,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "erp",
-   "excel",
-   "kpi",
-   "power bi",
-   "sql"
-  ],
-  "missing": [
-   "data quality",
-   "process mapping",
-   "spark",
-   "stakeholder management"
-  ],
-  "learning": [
-   "spark"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 71,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:prudential:25120026",
   "company": "Prudential",
   "title": "Assistant Manager, IFRS 17 Reporting",
@@ -13694,7 +13110,7 @@
   "source": "greenhouse",
   "score": 19,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "etl",
@@ -13828,7 +13244,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "kpi"
   ],
@@ -13863,7 +13279,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "kpi"
   ],
@@ -13890,40 +13306,6 @@
   "posts": 3
  },
  {
-  "id": "wd:flextronics:WD227899",
-  "company": "Flex",
-  "title": "Automation Engineer",
-  "location": "Malaysia, Johor",
-  "url": "https://flextronics.wd1.myworkdayjobs.com/Careers/job/Malaysia-Johor/Automation-Engineer_WD227899",
-  "source": "workday",
-  "score": 18,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 70,
-   "Level": 70,
-   "Entry-friendly": 75,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:aecom2:744000155007840",
   "company": "AECOM",
   "title": "Data Center Senior Design Manager",
@@ -13932,7 +13314,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
@@ -13966,7 +13348,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -14022,7 +13404,7 @@
   "source": "smartrecruiters",
   "score": 17,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "excel"
   ],
@@ -14118,49 +13500,6 @@
   "posts": 1
  },
  {
-  "id": "wd:prudential:26100115",
-  "company": "Prudential",
-  "title": "Manager, Security Automation & Engineering",
-  "location": "Kuala Lumpur (Group Head Office)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/Manager--Security-Automation---Engineering_26100115",
-  "source": "workday",
-  "score": 17,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "kpi",
-   "python",
-   "requirements gathering"
-  ],
-  "missing": [
-   "data modeling",
-   "data quality",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 71,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:grab:744000154054769",
   "company": "Grab",
   "title": "Assistant Finance Manager, RTR - General Ledger & Reporting",
@@ -14169,7 +13508,7 @@
   "source": "smartrecruiters",
   "score": 17,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "erp"
@@ -14320,7 +13659,7 @@
   "source": "greenhouse",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "etl",
    "python",
@@ -14413,39 +13752,6 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:HMGroup:744000152081077",
-  "company": "H&M Group",
-  "title": "Floor Manager (Kuala Lumpur) - Pipeline Hiring",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/HMGroup/744000152081077-floor-manager-kuala-lumpur-pipeline-hiring",
-  "source": "smartrecruiters",
-  "score": 16,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "data pipeline"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 70,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -14553,79 +13859,6 @@
   "posts": 1
  },
  {
-  "id": "sr:DeliveryHero:744000145880579",
-  "company": "Delivery Hero / foodpanda",
-  "title": "Senior Specialist, AM Ops Automation and Efficiency",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000145880579-senior-specialist-am-ops-automation-and-efficiency",
-  "source": "smartrecruiters",
-  "score": 15,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "data visualization",
-   "kpi",
-   "machine learning",
-   "sql"
-  ],
-  "missing": [
-   "stakeholder management",
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 77,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:equinix:JR-161144",
-  "company": "Equinix",
-  "title": "Data Center Critical Facilities Engineer (A0/A1 Chargeman)",
-  "location": "JH2, Malaysia",
-  "url": "https://equinix.wd1.myworkdayjobs.com/External/job/JH2-Malaysia/Data-Center-Critical-Facilities-Engineer--A0-A1-Chargeman-_JR-161144-1",
-  "source": "workday",
-  "score": 15,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:accenture:R00352185",
   "company": "Avanade",
   "title": "Senior Business Analyst (M365 Copilot Advisory - Adoption & Change Management)",
@@ -14634,7 +13867,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "requirements gathering"
@@ -14910,7 +14143,7 @@
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard",
    "excel",
@@ -14948,7 +14181,7 @@
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "requirements gathering"
@@ -14988,7 +14221,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "dashboard"
   ],
@@ -15194,41 +14427,6 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-62758",
-  "company": "AIA",
-  "title": "Intern, Transformation Automation-2",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Intern--Transformation-Automation-2_JR-62758-1",
-  "source": "workday",
-  "score": 12,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "rest api"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 80,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:grab:744000146882649",
   "company": "Grab",
   "title": "Key Account Manager, Enterprise Merchants",
@@ -15237,7 +14435,7 @@
   "source": "smartrecruiters",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation"
   ],
@@ -15273,7 +14471,7 @@
   "source": "smartrecruiters",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "statistics"
   ],
@@ -15327,41 +14525,6 @@
    "Location": 100
   },
   "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:afry:744000109475870",
-  "company": "AFRY",
-  "title": "Lead Subsea Pipeline Engineer",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/AFRY/744000109475870-lead-subsea-pipeline-engineer",
-  "source": "smartrecruiters",
-  "score": 12,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "data pipeline",
-   "rest api"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 80,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -15501,43 +14664,6 @@
   },
   "track": "Data analysis",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "wd:airasia:JR0035455",
-  "company": "Airasia",
-  "title": "Data Analyst, Internal Audit",
-  "location": "Kuala Lumpur - RedQ",
-  "url": "https://airasia.wd3.myworkdayjobs.com/Careers/job/Kuala-Lumpur---RedQ/Data-Analyst--Internal-Audit_JR0035455",
-  "source": "workday",
-  "score": 10,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "dashboard",
-   "data visualization"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 44,
-   "Level": 0,
-   "Entry-friendly": 65,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -15761,7 +14887,7 @@
   "source": "smartrecruiters",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15789,7 +14915,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp",
    "kpi"
@@ -15825,7 +14951,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "sql"
   ],
@@ -15979,7 +15105,7 @@
   "source": "lever",
   "score": 8,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16046,7 +15172,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "spark",
@@ -16415,7 +15541,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline",
    "etl",
@@ -16461,7 +15587,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline"
   ],
@@ -16484,41 +15610,6 @@
    "Location": 50
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:DeliveryHero:744000133509270",
-  "company": "Delivery Hero / foodpanda",
-  "title": "Manager, Process & Automation",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000133509270-manager-process-automation",
-  "source": "smartrecruiters",
-  "score": 7,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "kpi"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 80,
-   "Level": 10,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -16651,6 +15742,34 @@
   "posts": 1
  },
  {
+  "id": "lv:usasurveyjob:5498d44e-88b6-496d-88f9-0fbc59786e48",
+  "company": "TowardJobs",
+  "title": "Work From Home Data Entry",
+  "location": "Kuala Lumpur",
+  "url": "https://jobs.lever.co/usasurveyjob/5498d44e-88b6-496d-88f9-0fbc59786e48",
+  "source": "lever",
+  "score": 6,
+  "first_seen": "2026-10-31",
+  "last_seen": "2026-10-31",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 65,
+   "Full-time": 40,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 2
+ },
+ {
   "id": "wd:abbott:31165486",
   "company": "Abbott",
   "title": "Senior Master Data Analyst",
@@ -16690,40 +15809,6 @@
   },
   "track": "Data analysis",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "lv:ninjavan:ad6f5641-e233-472c-9e7d-38827d34d232",
-  "company": "Ninja Van",
-  "title": "Intern, Automation (Warehouse)",
-  "location": "Shah Alam, Selangor, Malaysia",
-  "url": "https://jobs.lever.co/ninjavan/ad6f5641-e233-472c-9e7d-38827d34d232",
-  "source": "lever",
-  "score": 6,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 70,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Other",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -16912,37 +15997,6 @@
   "posts": 1
  },
  {
-  "id": "wd:citi:261001078",
-  "company": "Citi",
-  "title": "Fraud Operations Analyst (Mandarin and Cantonese Proficient)",
-  "location": "Kuala Lumpur Selangor Malaysia",
-  "url": "https://citi.wd5.myworkdayjobs.com/2/job/Kuala-Lumpur-Selangor-Malaysia/Fraud-Operations-Analyst--Mandarin-and-Cantonese-Proficient-_261001078",
-  "source": "workday",
-  "score": 6,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [],
-  "missing": [
-   "data quality",
-   "process mapping"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:fwd:JR-0028372",
   "company": "FWD",
   "title": "Manager, Tax Reporting",
@@ -16973,34 +16027,6 @@
   },
   "track": "BI and reporting",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "lv:usasurveyjob:a653f4b9-eecc-4b04-9f8e-2e9bf159c818",
-  "company": "TowardJobs",
-  "title": "Work From Home Data Entry",
-  "location": "Kuala Lumpur",
-  "url": "https://jobs.lever.co/usasurveyjob/a653f4b9-eecc-4b04-9f8e-2e9bf159c818",
-  "source": "lever",
-  "score": 6,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 65,
-   "Full-time": 40,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -17047,7 +16073,7 @@
   "source": "smartrecruiters",
   "score": 5,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "automation",
    "erp",
@@ -17087,7 +16113,7 @@
   "source": "greenhouse",
   "score": 5,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "linux"
@@ -17109,43 +16135,6 @@
   "posts": 1
  },
  {
-  "id": "sr:smithsgroup2:744000155171159",
-  "company": "Smiths Group",
-  "title": "Accountant (Manufacturing Finance & SAP) - 12 Month Contract",
-  "location": "Johor Bahru, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/SmithsGroup2/744000155171159-accountant-manufacturing-finance-sap-12-month-contract",
-  "source": "smartrecruiters",
-  "score": 4,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "erp",
-   "excel",
-   "kpi"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 70,
-   "Level": 70,
-   "Entry-friendly": 75,
-   "Full-time": 10,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:ramboll3:744000156002668",
   "company": "Ramboll",
   "title": "Electrical Engineer & Senior Electrical Engineer - Data Center",
@@ -17154,7 +16143,7 @@
   "source": "smartrecruiters",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17182,7 +16171,7 @@
   "source": "smartrecruiters",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17275,7 +16264,7 @@
   "source": "smartrecruiters",
   "score": 2,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "erp"
   ],
@@ -17537,7 +16526,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "statistics"
   ],
@@ -17555,77 +16544,6 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:intel:JR0288233",
-  "company": "Intel",
-  "title": "Senior EDA Design Automation Engineer - Digital Implementation",
-  "location": "Malaysia, Penang",
-  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Senior-EDA-Design-Automation-Engineer---Digital-Implementation_JR0288233",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation",
-   "python"
-  ],
-  "missing": [],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 80,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:hp:3169071",
-  "company": "HP",
-  "title": "Factory Automation Technical Specialist",
-  "location": "Batu Kawan, Pulau Pinang (Penang), Malaysia",
-  "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Batu-Kawan-Pulau-Pinang-Penang-Malaysia/Factory-Automation-Technical-Specialist_3169071-1",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [
-   "automation"
-  ],
-  "missing": [
-   "process mapping"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 0,
-   "Skills": 35,
-   "Level": 70,
-   "Entry-friendly": 65,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -17871,7 +16789,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17965,7 +16883,7 @@
   "source": "greenhouse",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17995,7 +16913,7 @@
   "source": "lever",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18171,7 +17089,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18261,7 +17179,7 @@
   "source": "lever",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18289,7 +17207,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18319,7 +17237,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18349,7 +17267,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18377,7 +17295,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18405,7 +17323,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18435,7 +17353,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18465,7 +17383,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18493,7 +17411,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18521,7 +17439,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18551,7 +17469,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18579,7 +17497,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18609,7 +17527,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18639,7 +17557,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18667,7 +17585,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18695,7 +17613,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18725,7 +17643,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18745,34 +17663,6 @@
   "posts": 1
  },
  {
-  "id": "sr:turnertownsend:744000148926159",
-  "company": "Turner & Townsend",
-  "title": "Mechanical Engineer - Data Center ",
-  "location": "Johor Bahru, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000148926159-mechanical-engineer-data-center-",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-27",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 0
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:turnertownsend:744000140151369",
   "company": "Turner & Townsend",
   "title": "(MEP/CSA) Cost Manager - Data Centre",
@@ -18781,7 +17671,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18811,7 +17701,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -18841,7 +17731,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "data pipeline"
   ],
@@ -18876,7 +17766,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -19043,7 +17933,7 @@
   "source": "greenhouse",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "matched": [
    "requirements gathering"
   ],
