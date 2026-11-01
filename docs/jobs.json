@@ -8,7 +8,7 @@
   "source": "greenhouse",
   "score": 95,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -62,7 +62,7 @@
   "source": "smartrecruiters",
   "score": 90,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -144,7 +144,7 @@
   "source": "smartrecruiters",
   "score": 88,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "etl",
    "excel",
@@ -179,7 +179,7 @@
   "source": "greenhouse",
   "score": 88,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "etl",
    "python",
@@ -224,7 +224,7 @@
   "source": "workday",
   "score": 87,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "excel",
@@ -269,7 +269,7 @@
   "source": "workday",
   "score": 86,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -321,7 +321,7 @@
   "source": "smartrecruiters",
   "score": 84,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -358,7 +358,7 @@
   "source": "workday",
   "score": 83,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -397,7 +397,7 @@
   "source": "workday",
   "score": 82,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "power bi"
@@ -430,7 +430,7 @@
   "source": "workday",
   "score": 82,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "requirements gathering"
@@ -463,7 +463,7 @@
   "source": "workday",
   "score": 82,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "power bi"
@@ -496,7 +496,7 @@
   "source": "workday",
   "score": 82,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -546,7 +546,7 @@
   "source": "smartrecruiters",
   "score": 80,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "git",
@@ -599,7 +599,7 @@
   "source": "smartrecruiters",
   "score": 79,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -651,7 +651,7 @@
   "source": "workday",
   "score": 78,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "machine learning",
    "python",
@@ -688,7 +688,7 @@
   "source": "smartrecruiters",
   "score": 78,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "python",
@@ -724,7 +724,7 @@
   "source": "workday",
   "score": 77,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -770,7 +770,7 @@
   "source": "workday",
   "score": 76,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -817,7 +817,7 @@
   "source": "smartrecruiters",
   "score": 76,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -849,7 +849,7 @@
   "source": "smartrecruiters",
   "score": 76,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -881,7 +881,7 @@
   "source": "workday",
   "score": 75,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -927,7 +927,7 @@
   "source": "greenhouse",
   "score": 75,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "etl",
@@ -968,7 +968,7 @@
   "source": "workday",
   "score": 75,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -1007,7 +1007,7 @@
   "source": "greenhouse",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "git",
@@ -1051,7 +1051,7 @@
   "source": "workday",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -1095,7 +1095,7 @@
   "source": "workday",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel"
@@ -1128,7 +1128,7 @@
   "source": "smartrecruiters",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -1174,7 +1174,7 @@
   "source": "smartrecruiters",
   "score": 74,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -1225,7 +1225,7 @@
   "source": "smartrecruiters",
   "score": 72,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "sql"
   ],
@@ -1257,7 +1257,7 @@
   "source": "workday",
   "score": 72,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -1298,7 +1298,7 @@
   "source": "workday",
   "score": 72,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -1381,7 +1381,7 @@
   "source": "workday",
   "score": 71,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel",
@@ -1425,7 +1425,7 @@
   "source": "lever",
   "score": 71,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -1474,7 +1474,7 @@
   "source": "workday",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi",
@@ -1509,7 +1509,7 @@
   "source": "workday",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -1552,7 +1552,7 @@
   "source": "greenhouse",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "excel",
@@ -1599,7 +1599,7 @@
   "source": "workday",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -1639,7 +1639,7 @@
   "source": "greenhouse",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "excel",
@@ -1677,7 +1677,7 @@
   "source": "smartrecruiters",
   "score": 69,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -1724,7 +1724,7 @@
   "source": "workday",
   "score": 69,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "etl",
    "machine learning",
@@ -1769,7 +1769,7 @@
   "source": "workday",
   "score": 69,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "git",
@@ -1813,7 +1813,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "requirements gathering"
@@ -1849,7 +1849,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "requirements gathering"
@@ -1885,7 +1885,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -1937,7 +1937,7 @@
   "source": "workday",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "excel",
@@ -1971,7 +1971,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -2021,7 +2021,7 @@
   "source": "smartrecruiters",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -2058,7 +2058,7 @@
   "source": "workday",
   "score": 67,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -2105,7 +2105,7 @@
   "source": "workday",
   "score": 67,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "machine learning",
@@ -2149,7 +2149,7 @@
   "source": "workday",
   "score": 67,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -2195,7 +2195,7 @@
   "source": "workday",
   "score": 67,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "kpi"
@@ -2229,7 +2229,7 @@
   "source": "workday",
   "score": 66,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -2273,7 +2273,7 @@
   "source": "workday",
   "score": 66,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "machine learning",
@@ -2315,7 +2315,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -2366,7 +2366,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -2450,7 +2450,7 @@
   "source": "workday",
   "score": 64,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -2480,7 +2480,7 @@
   "source": "workday",
   "score": 64,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "machine learning"
@@ -2513,7 +2513,7 @@
   "source": "workday",
   "score": 64,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -2580,7 +2580,7 @@
   "source": "smartrecruiters",
   "score": 63,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "python",
@@ -2618,7 +2618,7 @@
   "source": "workday",
   "score": 63,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel",
@@ -2656,7 +2656,7 @@
   "source": "workday",
   "score": 63,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -2694,7 +2694,7 @@
   "source": "smartrecruiters",
   "score": 63,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "data visualization",
@@ -2736,7 +2736,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -2774,7 +2774,7 @@
   "source": "smartrecruiters",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -2806,7 +2806,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -2841,7 +2841,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "rest api"
@@ -2877,7 +2877,7 @@
   "source": "smartrecruiters",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -2925,7 +2925,7 @@
   "source": "greenhouse",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "erp",
@@ -2983,7 +2983,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel"
@@ -3018,7 +3018,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel",
@@ -3054,7 +3054,7 @@
   "source": "workday",
   "score": 61,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -3094,7 +3094,7 @@
   "source": "workday",
   "score": 61,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -3166,7 +3166,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -3260,7 +3260,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -3340,7 +3340,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi",
@@ -3386,7 +3386,7 @@
   "source": "workday",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "kpi",
@@ -3430,7 +3430,7 @@
   "source": "greenhouse",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl"
@@ -3511,7 +3511,7 @@
   "source": "workday",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "power bi",
@@ -3548,7 +3548,7 @@
   "source": "smartrecruiters",
   "score": 59,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -3600,7 +3600,7 @@
   "source": "workday",
   "score": 58,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -3687,7 +3687,7 @@
   "source": "workday",
   "score": 58,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "machine learning",
@@ -3773,7 +3773,7 @@
   "source": "smartrecruiters",
   "score": 57,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp"
@@ -3808,7 +3808,7 @@
   "source": "smartrecruiters",
   "score": 57,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -3841,7 +3841,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -3891,7 +3891,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -3945,7 +3945,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -3977,7 +3977,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -4015,7 +4015,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "machine learning",
@@ -4058,7 +4058,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -4100,7 +4100,7 @@
   "source": "workday",
   "score": 55,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -4151,7 +4151,7 @@
   "source": "workday",
   "score": 55,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "power bi",
@@ -4196,7 +4196,7 @@
   "source": "workday",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "etl"
@@ -4244,7 +4244,7 @@
   "source": "workday",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -4285,7 +4285,7 @@
   "source": "greenhouse",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "python"
@@ -4320,7 +4320,7 @@
   "source": "greenhouse",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "machine learning"
   ],
@@ -4392,7 +4392,7 @@
   "source": "workday",
   "score": 54,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline"
@@ -4429,7 +4429,7 @@
   "source": "workday",
   "score": 53,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline"
   ],
@@ -4464,7 +4464,7 @@
   "source": "workday",
   "score": 53,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "sql"
@@ -4500,7 +4500,7 @@
   "source": "greenhouse",
   "score": 53,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering",
    "sql"
@@ -4540,7 +4540,7 @@
   "source": "workday",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "requirements gathering"
@@ -4574,7 +4574,7 @@
   "source": "workday",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -4631,7 +4631,7 @@
   "source": "workday",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -4681,7 +4681,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering",
    "sql"
@@ -4715,7 +4715,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "sql"
@@ -4748,7 +4748,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "git",
@@ -4796,7 +4796,7 @@
   "source": "smartrecruiters",
   "score": 51,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -4847,7 +4847,7 @@
   "source": "workday",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "power bi"
   ],
@@ -4880,7 +4880,7 @@
   "source": "workday",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -4933,7 +4933,7 @@
   "source": "workday",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "python",
@@ -4974,7 +4974,7 @@
   "source": "greenhouse",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering",
    "sql"
@@ -5015,7 +5015,7 @@
   "source": "smartrecruiters",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -5066,7 +5066,7 @@
   "source": "lever",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "rest api"
   ],
@@ -5102,7 +5102,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel",
@@ -5180,7 +5180,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "power bi",
@@ -5222,7 +5222,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -5267,7 +5267,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel"
@@ -5302,7 +5302,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "requirements gathering"
@@ -5341,7 +5341,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "kpi",
@@ -5379,7 +5379,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "power bi",
@@ -5411,7 +5411,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -5450,7 +5450,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -5489,7 +5489,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "requirements gathering"
@@ -5525,7 +5525,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "requirements gathering"
@@ -5561,7 +5561,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "requirements gathering"
@@ -5598,7 +5598,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -5638,7 +5638,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -5678,7 +5678,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "excel",
@@ -5717,7 +5717,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -5752,7 +5752,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -5822,7 +5822,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering",
@@ -5859,7 +5859,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi"
@@ -5898,7 +5898,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -5948,7 +5948,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "kpi",
@@ -5988,7 +5988,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -6074,7 +6074,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -6109,7 +6109,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering",
@@ -6150,7 +6150,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -6184,7 +6184,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "erp",
@@ -6275,7 +6275,7 @@
   "source": "workday",
   "score": 49,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -6315,7 +6315,7 @@
   "source": "smartrecruiters",
   "score": 49,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "kpi",
@@ -6358,7 +6358,7 @@
   "source": "lever",
   "score": 48,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "machine learning"
   ],
@@ -6388,7 +6388,7 @@
   "source": "smartrecruiters",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -6436,7 +6436,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -6477,7 +6477,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -6516,7 +6516,7 @@
   "source": "greenhouse",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "machine learning",
@@ -6557,7 +6557,7 @@
   "source": "smartrecruiters",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering",
@@ -6594,7 +6594,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -6647,7 +6647,7 @@
   "source": "lever",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "machine learning"
   ],
@@ -6677,7 +6677,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization"
@@ -6714,7 +6714,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "etl",
@@ -6759,7 +6759,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -6867,7 +6867,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -6899,7 +6899,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -6931,7 +6931,7 @@
   "source": "workday",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -6975,7 +6975,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "erp",
@@ -7020,7 +7020,7 @@
   "source": "lever",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline"
   ],
@@ -7053,7 +7053,7 @@
   "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -7085,7 +7085,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -7175,7 +7175,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "etl",
@@ -7212,7 +7212,7 @@
   "source": "greenhouse",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "etl",
    "machine learning",
@@ -7251,7 +7251,7 @@
   "source": "greenhouse",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -7290,7 +7290,7 @@
   "source": "lever",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "python",
@@ -7333,7 +7333,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -7376,7 +7376,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7415,7 +7415,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7454,7 +7454,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7493,7 +7493,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7532,7 +7532,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -7580,7 +7580,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -7673,7 +7673,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel"
@@ -7708,7 +7708,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -7785,7 +7785,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel",
@@ -7820,7 +7820,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "statistics"
   ],
@@ -7850,7 +7850,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "sql"
   ],
@@ -7882,7 +7882,7 @@
   "source": "smartrecruiters",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -7923,7 +7923,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -7958,7 +7958,7 @@
   "source": "smartrecruiters",
   "score": 43,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "kpi",
@@ -8002,7 +8002,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -8039,7 +8039,7 @@
   "source": "smartrecruiters",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp"
@@ -8079,7 +8079,7 @@
   "source": "smartrecruiters",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "sql"
   ],
@@ -8111,7 +8111,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -8191,7 +8191,7 @@
   "source": "greenhouse",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -8225,7 +8225,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -8267,7 +8267,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel",
@@ -8306,7 +8306,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "git",
@@ -8350,7 +8350,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp"
@@ -8388,7 +8388,7 @@
   "source": "workday",
   "score": 42,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi"
@@ -8424,7 +8424,7 @@
   "source": "greenhouse",
   "score": 41,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "git",
@@ -8462,46 +8462,6 @@
   "posts": 1
  },
  {
-  "id": "sr:nielseniq:744000151600317",
-  "company": "NielsenIQ",
-  "title": "Senior Data Scientist",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000151600317-senior-data-scientist",
-  "source": "smartrecruiters",
-  "score": 41,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "kpi",
-   "python",
-   "sql",
-   "statistics"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 69,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data science",
-  "reach_out": false,
-  "posts": 2
- },
- {
   "id": "wd:paloaltonetworks:JR-021840",
   "company": "Paloaltonetworks",
   "title": "Solutions Consultant - Enterprise",
@@ -8510,7 +8470,7 @@
   "source": "workday",
   "score": 41,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -8592,7 +8552,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -8638,7 +8598,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -8678,7 +8638,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -8728,7 +8688,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -8775,7 +8735,7 @@
   "source": "smartrecruiters",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "kpi",
@@ -8822,7 +8782,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "git",
@@ -8865,7 +8825,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "kpi"
@@ -8901,7 +8861,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "kpi",
@@ -8945,7 +8905,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "rest api"
@@ -8982,7 +8942,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi",
@@ -9024,7 +8984,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel"
@@ -9059,7 +9019,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel",
@@ -9099,7 +9059,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -9127,7 +9087,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -9155,7 +9115,7 @@
   "source": "greenhouse",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi",
@@ -9199,7 +9159,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "process mapping",
@@ -9230,7 +9190,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard"
   ],
@@ -9265,7 +9225,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "python",
@@ -9302,7 +9262,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "python",
@@ -9346,7 +9306,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -9397,7 +9357,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi"
@@ -9435,7 +9395,7 @@
   "source": "smartrecruiters",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline"
   ],
@@ -9534,7 +9494,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "data quality",
@@ -9567,7 +9527,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -9603,7 +9563,7 @@
   "source": "greenhouse",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "excel",
@@ -9650,7 +9610,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -9693,7 +9653,7 @@
   "source": "workday",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation"
   ],
@@ -9727,7 +9687,7 @@
   "source": "greenhouse",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -9763,7 +9723,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -9787,45 +9747,6 @@
   "posts": 1
  },
  {
-  "id": "wd:fwd:JR-0028110",
-  "company": "FWD",
-  "title": "Manager, EV Reporting and Persistency Management",
-  "location": "Malaysia - KL Eco City",
-  "url": "https://fwd.wd3.myworkdayjobs.com/FWDcareersite/job/Malaysia---KL-Eco-City/Manager--EV-Reporting-and-Persistency-Management_JR-0028110",
-  "source": "workday",
-  "score": 36,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "automation",
-   "kpi",
-   "statistics"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 50,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "BI and reporting",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "sr:grab:744000155411014",
   "company": "Grab",
   "title": "Assistant Manager, Growth Analytics",
@@ -9834,7 +9755,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "sql"
@@ -9872,7 +9793,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "git",
@@ -9919,7 +9840,7 @@
   "source": "workday",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -9954,7 +9875,7 @@
   "source": "workday",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -10004,7 +9925,7 @@
   "source": "workday",
   "score": 36,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data visualization",
    "erp",
@@ -10082,7 +10003,7 @@
   "source": "workday",
   "score": 35,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "erp",
@@ -10122,7 +10043,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "requirements gathering",
@@ -10157,7 +10078,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -10241,7 +10162,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp"
@@ -10278,7 +10199,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -10313,7 +10234,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -10348,7 +10269,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -10393,7 +10314,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10421,7 +10342,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10479,7 +10400,7 @@
   "source": "workday",
   "score": 32,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "requirements gathering"
@@ -10521,7 +10442,7 @@
   "source": "workday",
   "score": 32,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -10568,7 +10489,7 @@
   "source": "workday",
   "score": 32,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data visualization",
@@ -10617,7 +10538,7 @@
   "source": "workday",
   "score": 32,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -10655,6 +10576,49 @@
   "posts": 1
  },
  {
+  "id": "sr:nielseniq:744000152160106",
+  "company": "NielsenIQ",
+  "title": "Senior Data Scientist",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000152160106-senior-data-scientist",
+  "source": "smartrecruiters",
+  "score": 32,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-01",
+  "matched": [
+   "data pipeline",
+   "data visualization",
+   "excel",
+   "machine learning",
+   "rest api",
+   "statistics"
+  ],
+  "missing": [
+   "agile",
+   "gcp",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 65,
+   "Level": 30,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data science",
+  "reach_out": false,
+  "posts": 2
+ },
+ {
   "id": "wd:aia:JR-63770",
   "company": "AIA",
   "title": "Business Analyst & User Acceptance Testing (Hong Kong Market)",
@@ -10663,7 +10627,7 @@
   "source": "workday",
   "score": 32,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -10697,7 +10661,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "excel",
@@ -10765,7 +10729,7 @@
   "source": "greenhouse",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -10802,7 +10766,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10830,7 +10794,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10858,7 +10822,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel",
@@ -10900,7 +10864,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "machine learning",
@@ -10934,52 +10898,6 @@
   "posts": 1
  },
  {
-  "id": "wd:airasia:JR0035629",
-  "company": "Airasia",
-  "title": "Intern Rewards & OD Data Scientist",
-  "location": "Kuala Lumpur - RedQ",
-  "url": "https://airasia.wd3.myworkdayjobs.com/Careers/job/Kuala-Lumpur---RedQ/Intern-Rewards---OD-Data-Scientist_JR0035629",
-  "source": "workday",
-  "score": 30,
-  "first_seen": "2026-10-28",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "dashboard",
-   "data pipeline",
-   "data visualization",
-   "kpi",
-   "power bi",
-   "python",
-   "sql",
-   "statistics"
-  ],
-  "missing": [
-   "looker",
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 86,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data science",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:ocbc:JR00010112",
   "company": "Ocbc",
   "title": "Assistant Manager / Manager, Management Reporting",
@@ -10988,7 +10906,7 @@
   "source": "workday",
   "score": 30,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "power bi",
@@ -11025,7 +10943,7 @@
   "source": "smartrecruiters",
   "score": 29,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel",
@@ -11054,47 +10972,6 @@
   "posts": 1
  },
  {
-  "id": "sr:louisdreyfuscompany:744000105559375",
-  "company": "Louis Dreyfus Company",
-  "title": "SAP Senior Solution Specialist – FICO",
-  "location": "Subang Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/LouisDreyfusCompany/744000105559375-sap-senior-solution-specialist-fico",
-  "source": "smartrecruiters",
-  "score": 29,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "automation",
-   "data pipeline",
-   "erp",
-   "kpi",
-   "requirements gathering"
-  ],
-  "missing": [
-   "jira",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 75,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:nttlimited:R-151729",
   "company": "Nttlimited",
   "title": "Data Centre Deployment & Service Delivery Lead (Port Dickson)",
@@ -11103,7 +10980,7 @@
   "source": "workday",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard"
@@ -11140,7 +11017,7 @@
   "source": "workday",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "statistics"
@@ -11174,7 +11051,7 @@
   "source": "workday",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -11215,7 +11092,7 @@
   "source": "smartrecruiters",
   "score": 28,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -11254,7 +11131,7 @@
   "source": "workday",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -11314,7 +11191,7 @@
   "source": "workday",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -11356,7 +11233,7 @@
   "source": "smartrecruiters",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -11388,7 +11265,7 @@
   "source": "lever",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -11420,7 +11297,7 @@
   "source": "workday",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -11486,7 +11363,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "machine learning",
    "pandas",
@@ -11532,7 +11409,7 @@
   "source": "workday",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -11566,7 +11443,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -11633,7 +11510,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -11665,7 +11542,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -11697,7 +11574,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -11729,7 +11606,7 @@
   "source": "workday",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -11765,7 +11642,7 @@
   "source": "smartrecruiters",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "sql"
   ],
@@ -11797,7 +11674,7 @@
   "source": "workday",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11825,7 +11702,7 @@
   "source": "smartrecruiters",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -11855,7 +11732,7 @@
   "source": "smartrecruiters",
   "score": 25,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -11887,7 +11764,7 @@
   "source": "workday",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -11934,7 +11811,7 @@
   "source": "greenhouse",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -11980,7 +11857,7 @@
   "source": "smartrecruiters",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "etl",
@@ -12046,47 +11923,6 @@
   "posts": 1
  },
  {
-  "id": "wd:uobgroup:JR85571",
-  "company": "United Overseas Bank",
-  "title": "VP2, Data Analytics & Insights Specialist, Compliance",
-  "location": "Kuala Lumpur NBE",
-  "url": "https://uobgroup.wd3.myworkdayjobs.com/UOBExternal/job/Kuala-Lumpur-NBE/VP2--Data-Analytics---Insights-Specialist--Compliance_JR85571",
-  "source": "workday",
-  "score": 25,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "data pipeline",
-   "machine learning",
-   "pandas",
-   "python",
-   "scikit-learn",
-   "statistics"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 85,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "wd:ag:JR10451900",
   "company": "Ag",
   "title": "Senior Aircraft Configuration Data Officer",
@@ -12095,7 +11931,7 @@
   "source": "workday",
   "score": 24,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -12134,7 +11970,7 @@
   "source": "smartrecruiters",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "python",
@@ -12178,7 +12014,7 @@
   "source": "workday",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "excel"
@@ -12212,7 +12048,7 @@
   "source": "greenhouse",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "python"
   ],
@@ -12246,7 +12082,7 @@
   "source": "workday",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -12276,7 +12112,7 @@
   "source": "workday",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -12310,7 +12146,7 @@
   "source": "workday",
   "score": 24,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -12383,7 +12219,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -12418,7 +12254,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -12448,7 +12284,7 @@
   "source": "smartrecruiters",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12476,7 +12312,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -12506,7 +12342,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -12544,7 +12380,7 @@
   "source": "greenhouse",
   "score": 22,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "erp",
@@ -12602,7 +12438,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -12634,7 +12470,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel"
@@ -12671,7 +12507,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -12709,7 +12545,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel",
    "kpi"
@@ -12744,7 +12580,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -12776,7 +12612,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "git",
    "machine learning",
@@ -12827,7 +12663,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -12859,7 +12695,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline"
@@ -12894,7 +12730,7 @@
   "source": "workday",
   "score": 21,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering",
    "rest api"
@@ -12932,7 +12768,7 @@
   "source": "workday",
   "score": 21,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -12968,7 +12804,7 @@
   "source": "workday",
   "score": 21,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -13003,7 +12839,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13031,7 +12867,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -13071,7 +12907,7 @@
   "source": "workday",
   "score": 19,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel"
@@ -13110,7 +12946,7 @@
   "source": "greenhouse",
   "score": 19,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "etl",
@@ -13151,7 +12987,7 @@
   "source": "workday",
   "score": 19,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation"
   ],
@@ -13216,7 +13052,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13244,7 +13080,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -13279,7 +13115,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -13314,7 +13150,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -13348,7 +13184,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13376,7 +13212,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13404,7 +13240,7 @@
   "source": "smartrecruiters",
   "score": 17,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -13436,7 +13272,7 @@
   "source": "workday",
   "score": 17,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -13508,7 +13344,7 @@
   "source": "smartrecruiters",
   "score": 17,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp"
@@ -13538,49 +13374,6 @@
   "posts": 1
  },
  {
-  "id": "wd:ocbc:JR00010704",
-  "company": "Ocbc",
-  "title": "Data Scientist Team Lead",
-  "location": "OCBC Malaysia, Menara OCBC",
-  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Menara-OCBC/Data-Scientist_JR00010704",
-  "source": "workday",
-  "score": 17,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "automation",
-   "machine learning",
-   "python",
-   "scikit-learn",
-   "sql"
-  ],
-  "missing": [
-   "spark",
-   "stakeholder management"
-  ],
-  "learning": [
-   "spark"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 77,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data science",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:medtronic:R76967",
   "company": "Medtronic",
   "title": "Senior IT Business Analyst (SAP/ERP)",
@@ -13589,7 +13382,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -13624,7 +13417,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -13659,7 +13452,7 @@
   "source": "greenhouse",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "etl",
    "python",
@@ -13697,7 +13490,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard"
   ],
@@ -13732,7 +13525,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -13764,7 +13557,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -13799,7 +13592,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -13829,7 +13622,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "requirements gathering"
@@ -13867,7 +13660,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "requirements gathering"
@@ -13911,7 +13704,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "machine learning"
@@ -13952,7 +13745,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -13988,7 +13781,7 @@
   "source": "workday",
   "score": 14,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel"
@@ -14021,7 +13814,7 @@
   "source": "workday",
   "score": 14,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering",
@@ -14059,7 +13852,7 @@
   "source": "workday",
   "score": 14,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering",
    "sql"
@@ -14143,7 +13936,7 @@
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "excel",
@@ -14181,7 +13974,7 @@
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "requirements gathering"
@@ -14221,7 +14014,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard"
   ],
@@ -14286,7 +14079,7 @@
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "process mapping",
@@ -14317,7 +14110,7 @@
   "source": "workday",
   "score": 12,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -14351,7 +14144,7 @@
   "source": "workday",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "machine learning",
@@ -14394,7 +14187,7 @@
   "source": "workday",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -14435,7 +14228,7 @@
   "source": "smartrecruiters",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation"
   ],
@@ -14471,7 +14264,7 @@
   "source": "smartrecruiters",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "statistics"
   ],
@@ -14501,7 +14294,7 @@
   "source": "workday",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -14537,7 +14330,7 @@
   "source": "workday",
   "score": 11,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "requirements gathering"
@@ -14572,7 +14365,7 @@
   "source": "workday",
   "score": 11,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -14600,7 +14393,7 @@
   "source": "workday",
   "score": 10,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi",
@@ -14638,7 +14431,7 @@
   "source": "workday",
   "score": 10,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi",
    "power bi",
@@ -14675,7 +14468,7 @@
   "source": "workday",
   "score": 10,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi",
@@ -14714,7 +14507,7 @@
   "source": "workday",
   "score": 10,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "dashboard",
@@ -14766,7 +14559,7 @@
   "source": "workday",
   "score": 10,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline"
   ],
@@ -14802,7 +14595,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "etl",
    "power bi",
@@ -14853,7 +14646,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -14887,7 +14680,7 @@
   "source": "smartrecruiters",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -14915,7 +14708,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi"
@@ -14951,7 +14744,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "sql"
   ],
@@ -14988,7 +14781,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -15021,7 +14814,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "machine learning",
@@ -15069,7 +14862,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi"
@@ -15105,7 +14898,7 @@
   "source": "lever",
   "score": 8,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15133,7 +14926,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "excel",
@@ -15172,7 +14965,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "spark",
@@ -15205,7 +14998,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15233,7 +15026,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15261,7 +15054,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15289,7 +15082,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15317,7 +15110,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15345,7 +15138,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15373,7 +15166,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15401,7 +15194,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15429,7 +15222,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15457,7 +15250,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15485,7 +15278,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15513,7 +15306,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15541,7 +15334,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline",
    "etl",
@@ -15587,7 +15380,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline"
   ],
@@ -15622,7 +15415,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -15665,7 +15458,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline",
@@ -15713,7 +15506,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "kpi"
@@ -15750,7 +15543,7 @@
   "source": "lever",
   "score": 6,
   "first_seen": "2026-10-31",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15778,7 +15571,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp",
    "excel",
@@ -15848,7 +15641,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi"
@@ -15884,7 +15677,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "process mapping",
@@ -15915,7 +15708,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15943,7 +15736,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "process mapping",
@@ -15974,7 +15767,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "data quality",
@@ -16005,7 +15798,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -16038,7 +15831,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -16073,7 +15866,7 @@
   "source": "smartrecruiters",
   "score": 5,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "erp",
@@ -16113,7 +15906,7 @@
   "source": "greenhouse",
   "score": 5,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "linux"
@@ -16143,7 +15936,7 @@
   "source": "smartrecruiters",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16171,7 +15964,7 @@
   "source": "smartrecruiters",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16199,7 +15992,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16227,7 +16020,7 @@
   "source": "workday",
   "score": 2,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "kpi"
@@ -16264,7 +16057,7 @@
   "source": "smartrecruiters",
   "score": 2,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "erp"
   ],
@@ -16296,7 +16089,7 @@
   "source": "workday",
   "score": 2,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -16328,7 +16121,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16356,7 +16149,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16384,7 +16177,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16412,7 +16205,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16440,7 +16233,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16468,7 +16261,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16488,36 +16281,6 @@
   "posts": 1
  },
  {
-  "id": "sr:aecom2:744000158108619",
-  "company": "AECOM",
-  "title": "Relocate to Australia: Data Centre - Mechanical Engineer, Associate Director",
-  "location": "Malaysia, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/AECOM2/744000158108619-relocate-to-australia-data-centre-mechanical-engineer-associate-director",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-10-28",
-  "last_seen": "2026-10-28",
-  "matched": [],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 20,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 2
- },
- {
   "id": "sr:nielseniq:744000157965649",
   "company": "NielsenIQ",
   "title": "Data Operation Analyst Intern (Mandarin Speaker)",
@@ -16526,7 +16289,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "statistics"
   ],
@@ -16556,7 +16319,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "gdpr / pdpa",
@@ -16587,7 +16350,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "airflow",
@@ -16620,7 +16383,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16648,7 +16411,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "machine learning",
@@ -16729,7 +16492,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -16759,7 +16522,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -16789,7 +16552,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16809,72 +16572,6 @@
   "posts": 1
  },
  {
-  "id": "sr:aecom2:744000134750946",
-  "company": "AECOM",
-  "title": "Relocate to Australia: Data Centre - Electrical Engineering, Associate Director",
-  "location": "Malaysia, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/AECOM2/744000134750946-relocate-to-australia-data-centre-electrical-engineering-associate-director",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 20,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "gh:binance:5002681101",
-  "company": "Binance",
-  "title": "Binance Accelerator Program - Data Scientist (Transaction Monitoring)",
-  "location": "Australia; Hong Kong; Malaysia; New Zealand; Singapore; Taiwan",
-  "url": "https://job-boards.eu.greenhouse.io/binance/jobs/5002681101",
-  "source": "greenhouse",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-28",
-  "matched": [
-   "automation"
-  ],
-  "missing": [
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 35,
-   "Level": 100,
-   "Entry-friendly": 80,
-   "Full-time": 10,
-   "Language": 0,
-   "Location": 50
-  },
-  "track": "Data science",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "gh:binance:5002333101",
   "company": "Binance",
   "title": "Business Analytics & Strategic Partnerships (Tokenisation) Manager",
@@ -16883,7 +16580,7 @@
   "source": "greenhouse",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -16913,7 +16610,7 @@
   "source": "lever",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16941,7 +16638,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "kpi"
@@ -16978,7 +16675,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "kpi"
   ],
@@ -17012,7 +16709,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "erp"
@@ -17049,7 +16746,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "automation",
    "data pipeline"
@@ -17089,7 +16786,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17117,7 +16814,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "excel"
   ],
@@ -17149,7 +16846,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17179,7 +16876,7 @@
   "source": "lever",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17207,7 +16904,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17237,7 +16934,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17267,7 +16964,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17295,7 +16992,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17323,7 +17020,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17353,7 +17050,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17383,7 +17080,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17411,7 +17108,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17439,7 +17136,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17469,7 +17166,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17497,7 +17194,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17527,7 +17224,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17557,7 +17254,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17585,7 +17282,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17613,7 +17310,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17643,7 +17340,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17671,7 +17368,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17701,7 +17398,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17731,7 +17428,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "data pipeline"
   ],
@@ -17766,7 +17463,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -17796,7 +17493,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "dashboard",
    "data visualization",
@@ -17842,7 +17539,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -17877,7 +17574,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17905,7 +17602,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17933,7 +17630,7 @@
   "source": "greenhouse",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [
    "requirements gathering"
   ],
@@ -17968,7 +17665,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-01",
   "matched": [],
   "missing": [
    "data quality",
