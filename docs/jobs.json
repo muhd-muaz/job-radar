@@ -5094,6 +5094,50 @@
   "posts": 1
  },
  {
+  "id": "wd:msd:R418133",
+  "company": "Msd",
+  "title": "Associate Specialist – Accounting to Reporting (AtR)",
+  "location": "MYS - Selangor - Petaling Jaya (Ascent Paradigm)",
+  "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/MYS---Selangor---Petaling-Jaya-Ascent-Paradigm/Associate-Specialist---Accounting-to-Reporting--AtR-_R418133",
+  "source": "workday",
+  "score": 50,
+  "first_seen": "2026-11-01",
+  "last_seen": "2026-11-01",
+  "matched": [
+   "automation",
+   "erp",
+   "excel",
+   "kpi",
+   "power bi",
+   "power query"
+  ],
+  "missing": [
+   "data modeling",
+   "spark"
+  ],
+  "learning": [
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 81,
+   "Level": 100,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 3
+ },
+ {
   "id": "wd:aia:JR-71469",
   "company": "AIA",
   "title": "Finance, Analyst (Takaful reporting)",
@@ -5126,50 +5170,6 @@
   "track": "BI and reporting",
   "reach_out": false,
   "posts": 1
- },
- {
-  "id": "wd:msd:R421908",
-  "company": "Msd",
-  "title": "Associate Specialist – Accounting to Reporting (AtR)",
-  "location": "MYS - Selangor - Petaling Jaya (Ascent Paradigm)",
-  "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/MYS---Selangor---Petaling-Jaya-Ascent-Paradigm/Associate-Specialist---Accounting-to-Reporting--AtR-_R421908",
-  "source": "workday",
-  "score": 50,
-  "first_seen": "2026-10-29",
-  "last_seen": "2026-10-29",
-  "matched": [
-   "automation",
-   "erp",
-   "excel",
-   "kpi",
-   "power bi",
-   "power query"
-  ],
-  "missing": [
-   "data modeling",
-   "spark"
-  ],
-  "learning": [
-   "spark"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 81,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "BI and reporting",
-  "reach_out": false,
-  "posts": 2
  },
  {
   "id": "wd:ocbc:JR00004985",
