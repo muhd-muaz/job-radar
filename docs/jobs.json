@@ -617,6 +617,39 @@
   "posts": 1
  },
  {
+  "id": "sr:sutherland:743999958441104",
+  "company": "Sutherland",
+  "title": "ERP Oilfield Services Program (Malaysia)",
+  "location": "Bangsar South, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Sutherland/743999958441104-erp-oilfield-services-program-malaysia-",
+  "source": "smartrecruiters",
+  "score": 82,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "sla"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 80,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:rbc:R-0000167195",
   "company": "Rbc",
   "title": "Application Support Analyst",
@@ -958,6 +991,47 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-69700",
+  "company": "AIA",
+  "title": "Lead Analyst, Actuarial and Finance ETL Application Support",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Actuarial-and-Finance-ETL-Application-Support_JR-69700-1",
+  "source": "workday",
+  "score": 76,
+  "first_seen": "2026-10-23",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "data pipeline",
+   "etl",
+   "incident management",
+   "sla",
+   "sql"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 87,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:bpinternational:RQ115461",
   "company": "Bpinternational (bpCareers)",
   "title": "Graduate-Technology-Enterprise Tech-Malaysia",
@@ -1175,6 +1249,49 @@
   },
   "track": "Data analysis",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "gh:encora10:5170059007",
+  "company": "Encora",
+  "title": "Senior Oracle PL SQL Developer",
+  "location": "Kuala Lumpur",
+  "url": "https://job-boards.greenhouse.io/encora10/jobs/5170059007",
+  "source": "greenhouse",
+  "score": 73,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "etl",
+   "requirements gathering",
+   "sla",
+   "sql"
+  ],
+  "missing": [
+   "critical facilities",
+   "data modeling",
+   "linux",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 58,
+   "Level": 60,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -1524,6 +1641,45 @@
   "posts": 1
  },
  {
+  "id": "wd:nttglobaldatacenters:JR101622",
+  "company": "Data centers",
+  "title": "Associate Specialist, Procurement - DC Operations & Client Fit Out",
+  "location": "Cyberjaya, Malaysia, Cikarang - Bekasi, Indonesia",
+  "url": "https://nttglobaldatacenters.wd501.myworkdayjobs.com/External/job/Cyberjaya-Malaysia/Associate-Specialist--Procurement---DC-Operations---Client-Fit-Out_JR101622-1",
+  "source": "workday",
+  "score": 70,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "erp",
+   "vendor management"
+  ],
+  "missing": [
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 57,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Other",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:avnet:JR-021291",
   "company": "Avnet",
   "title": "Business Analyst",
@@ -1610,6 +1766,95 @@
    "Location": 50
   },
   "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:grab:744000153686320",
+  "company": "Grab",
+  "title": "Senior Data Engineer",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Grab/744000153686320-senior-data-engineer",
+  "source": "smartrecruiters",
+  "score": 70,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "data pipeline",
+   "etl",
+   "python",
+   "sla",
+   "sql"
+  ],
+  "missing": [
+   "airflow",
+   "data quality",
+   "data warehouse",
+   "spark",
+   "stakeholder management"
+  ],
+  "learning": [
+   "airflow",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 67,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:nttlimited:R-151368",
+  "company": "Nttlimited",
+  "title": "Enterprise Tools & Observability Engineer (L3)",
+  "location": "Cyberjaya, Malaysia",
+  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Cyberjaya-Malaysia/Enterprise-Tools---Observability-Engineer_R-151368",
+  "source": "workday",
+  "score": 70,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "dashboard",
+   "data pipeline",
+   "git",
+   "rest api",
+   "sla"
+  ],
+  "missing": [
+   "ci/cd"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 86,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
   "reach_out": false,
   "posts": 1
  },
@@ -1929,49 +2174,6 @@
   "posts": 1
  },
  {
-  "id": "gh:encora10:5170059007",
-  "company": "Encora",
-  "title": "Senior Oracle PL SQL Developer",
-  "location": "Kuala Lumpur",
-  "url": "https://job-boards.greenhouse.io/encora10/jobs/5170059007",
-  "source": "greenhouse",
-  "score": 68,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "etl",
-   "requirements gathering",
-   "sql"
-  ],
-  "missing": [
-   "critical facilities",
-   "data modeling",
-   "linux",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 50,
-   "Level": 60,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data engineering",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "wd:nttlimited:R-145234",
   "company": "Nttlimited",
   "title": "Data & AI Pre-sales",
@@ -2104,6 +2306,43 @@
   "posts": 1
  },
  {
+  "id": "wd:swift:2026-16586",
+  "company": "Swift",
+  "title": "Data Management Specialist",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://swift.wd3.myworkdayjobs.com/Join-Swift/job/Kuala-Lumpur-Malaysia/Data-Management-Specialist_2026-16586",
+  "source": "workday",
+  "score": 67,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "excel",
+   "requirements gathering",
+   "sla"
+  ],
+  "missing": [
+   "salesforce"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 80,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "gh:bybit:4943346101",
   "company": "Bybit",
   "title": "Senior Data Engineer",
@@ -2135,54 +2374,6 @@
   ],
   "learning": [
    "docker",
-   "spark"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 60,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data engineering",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "sr:grab:744000153686320",
-  "company": "Grab",
-  "title": "Senior Data Engineer",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Grab/744000153686320-senior-data-engineer",
-  "source": "smartrecruiters",
-  "score": 66,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "dashboard",
-   "data pipeline",
-   "etl",
-   "python",
-   "sql"
-  ],
-  "missing": [
-   "airflow",
-   "data quality",
-   "data warehouse",
-   "sla",
-   "spark",
-   "stakeholder management"
-  ],
-  "learning": [
-   "airflow",
    "spark"
   ],
   "projects": [
@@ -2456,6 +2647,44 @@
   "posts": 1
  },
  {
+  "id": "wd:jabil:J2421185",
+  "company": "Jabil",
+  "title": "Enterprise Solutions Specialist (SAP IMWM)",
+  "location": "Penang",
+  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solutions-Specialist--SAP-IMWM-_J2421185",
+  "source": "workday",
+  "score": 64,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "kpi",
+   "requirements gathering",
+   "sla"
+  ],
+  "missing": [
+   "asset management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 80,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:centific:JR103904",
   "company": "Centific",
   "title": "Data Analyst",
@@ -2599,47 +2828,6 @@
    "Location": 100
   },
   "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-69700",
-  "company": "AIA",
-  "title": "Lead Analyst, Actuarial and Finance ETL Application Support",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--Actuarial-and-Finance-ETL-Application-Support_JR-69700-1",
-  "source": "workday",
-  "score": 64,
-  "first_seen": "2026-10-23",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "data pipeline",
-   "etl",
-   "sql"
-  ],
-  "missing": [
-   "incident management",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 65,
-   "Level": 50,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data engineering",
   "reach_out": false,
   "posts": 1
  },
@@ -2815,47 +3003,6 @@
   "posts": 1
  },
  {
-  "id": "wd:nttlimited:R-151368",
-  "company": "Nttlimited",
-  "title": "Enterprise Tools & Observability Engineer (L3)",
-  "location": "Cyberjaya, Malaysia",
-  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Cyberjaya-Malaysia/Enterprise-Tools---Observability-Engineer_R-151368",
-  "source": "workday",
-  "score": 63,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "git",
-   "rest api"
-  ],
-  "missing": [
-   "ci/cd",
-   "sla"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 73,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:nxp:R-10065871",
   "company": "Nxp",
   "title": "Business system data analyst",
@@ -2936,6 +3083,44 @@
   "posts": 1
  },
  {
+  "id": "wd:nttglobaldatacenters:JR101895",
+  "company": "Data centers",
+  "title": "184 - Associate Critical Facilities Maintenance Engineer",
+  "location": "Cyberjaya, Malaysia",
+  "url": "https://nttglobaldatacenters.wd501.myworkdayjobs.com/External/job/Cyberjaya-Malaysia/XMLNAME-184---Associate-Critical-Facilities-Maintenance-Engineer_JR101895",
+  "source": "workday",
+  "score": 62,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "cmms",
+   "excel",
+   "preventive maintenance"
+  ],
+  "missing": [
+   "asset management",
+   "critical facilities",
+   "data centre",
+   "electrical systems",
+   "hvac"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 26,
+   "Level": 100,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Other",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:sanofi:R2875579",
   "company": "Sanofi",
   "title": "A2R Closing and Reporting Senior Analyst",
@@ -3002,6 +3187,47 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:airproducts:JR-2026-22394",
+  "company": "Air Products",
+  "title": "Customer Master Data Administrator",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "url": "https://airproducts.wd5.myworkdayjobs.com/AP0001/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Customer-Master-Data-Administrator_JR-2026-22394",
+  "source": "workday",
+  "score": 62,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "erp",
+   "excel",
+   "requirements gathering",
+   "sla"
+  ],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 71,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -3218,6 +3444,97 @@
   "posts": 1
  },
  {
+  "id": "sr:sutherland:744000037238625",
+  "company": "Sutherland",
+  "title": "ERP - Vietnamese Bilingual",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Sutherland/744000037238625-erp-vietnamese-bilingual",
+  "source": "smartrecruiters",
+  "score": 62,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "erp",
+   "sla"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 90,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:bpinternational:RQ114207",
+  "company": "Bpinternational (bpCareers)",
+  "title": "Senior Enterprise Technology Engineer",
+  "location": "Malaysia - Kuala Lumpur",
+  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Senior-Enterprise-Technology-Engineer_RQ114207",
+  "source": "workday",
+  "score": 61,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "dashboard",
+   "data pipeline",
+   "data visualization",
+   "erp",
+   "etl",
+   "excel",
+   "kpi",
+   "preventive maintenance",
+   "requirements gathering",
+   "sql"
+  ],
+  "missing": [
+   "agile",
+   "azure",
+   "data modeling",
+   "data warehouse",
+   "databricks",
+   "mongodb",
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [
+   "azure",
+   "databricks"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 63,
+   "Level": 60,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
+  "posts": 3
+ },
+ {
   "id": "wd:nexperia:R-20014145",
   "company": "Nexperia",
   "title": "Enterprise Domain Architect - Enterprise Applications",
@@ -3232,40 +3549,6 @@
   ],
   "missing": [
    "gdpr / pdpa"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 42,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:sutherland:743999958441104",
-  "company": "Sutherland",
-  "title": "ERP Oilfield Services Program (Malaysia)",
-  "location": "Bangsar South, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Sutherland/743999958441104-erp-oilfield-services-program-malaysia-",
-  "source": "smartrecruiters",
-  "score": 61,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp"
-  ],
-  "missing": [
-   "sla"
   ],
   "learning": [],
   "projects": [
@@ -3692,61 +3975,6 @@
   "posts": 1
  },
  {
-  "id": "wd:bpinternational:RQ114207",
-  "company": "Bpinternational (bpCareers)",
-  "title": "Senior Enterprise Technology Engineer",
-  "location": "Malaysia - Kuala Lumpur",
-  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Senior-Enterprise-Technology-Engineer_RQ114207",
-  "source": "workday",
-  "score": 58,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
-  "matched": [
-   "dashboard",
-   "data pipeline",
-   "data visualization",
-   "erp",
-   "etl",
-   "excel",
-   "kpi",
-   "requirements gathering",
-   "sql"
-  ],
-  "missing": [
-   "agile",
-   "azure",
-   "data modeling",
-   "data warehouse",
-   "databricks",
-   "mongodb",
-   "preventive maintenance",
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [
-   "azure",
-   "databricks"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 59,
-   "Level": 60,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": true,
-  "posts": 3
- },
- {
   "id": "wd:sedgwick:R75646",
   "company": "Sedgwick",
   "title": "Senior Data Scientist",
@@ -3921,47 +4149,6 @@
    "Location": 50
   },
   "track": "Data engineering",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:airproducts:JR-2026-22394",
-  "company": "Air Products",
-  "title": "Customer Master Data Administrator",
-  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
-  "url": "https://airproducts.wd5.myworkdayjobs.com/AP0001/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Customer-Master-Data-Administrator_JR-2026-22394",
-  "source": "workday",
-  "score": 56,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "erp",
-   "excel",
-   "requirements gathering"
-  ],
-  "missing": [
-   "data quality",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 60,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -4217,6 +4404,43 @@
   "posts": 1
  },
  {
+  "id": "wd:nttglobaldatacenters:JR100945",
+  "company": "Data centers",
+  "title": "5231 Associate Critical Facilities Maintenance Engineer",
+  "location": "Cyberjaya, Malaysia",
+  "url": "https://nttglobaldatacenters.wd501.myworkdayjobs.com/External/job/Cyberjaya-Malaysia/XMLNAME-5231-Critical-Facilities-Maintenance-Technician_JR100945",
+  "source": "workday",
+  "score": 54,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "excel"
+  ],
+  "missing": [
+   "asset management",
+   "critical facilities",
+   "data centre",
+   "electrical systems",
+   "hvac",
+   "ups"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 10,
+   "Level": 100,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Other",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:abbott:31155836",
   "company": "Abbott",
   "title": "Enterprise Architect – Data & Analytics (CoE)",
@@ -4331,43 +4555,6 @@
   "posts": 1
  },
  {
-  "id": "wd:swift:2026-16586",
-  "company": "Swift",
-  "title": "Data Management Specialist",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://swift.wd3.myworkdayjobs.com/Join-Swift/job/Kuala-Lumpur-Malaysia/Data-Management-Specialist_2026-16586",
-  "source": "workday",
-  "score": 54,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp",
-   "excel",
-   "requirements gathering"
-  ],
-  "missing": [
-   "salesforce",
-   "sla"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 57,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-66156",
   "company": "AIA",
   "title": "Specialist - Data Scientist",
@@ -4401,6 +4588,44 @@
    "Location": 100
   },
   "track": "Data science",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-68375",
+  "company": "AIA",
+  "title": "Enterprise Risk Management, Consultant",
+  "location": "Kuala Lumpur, MY-AIA Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Enterprise-Risk-Management--Consultant_JR-68375",
+  "source": "workday",
+  "score": 53,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "data visualization",
+   "incident management"
+  ],
+  "missing": [
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 54,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
   "reach_out": false,
   "posts": 1
  },
@@ -4511,44 +4736,6 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:jabil:J2421185",
-  "company": "Jabil",
-  "title": "Enterprise Solutions Specialist (SAP IMWM)",
-  "location": "Penang",
-  "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Penang/Enterprise-Solutions-Specialist--SAP-IMWM-_J2421185",
-  "source": "workday",
-  "score": 52,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp",
-   "kpi",
-   "requirements gathering"
-  ],
-  "missing": [
-   "asset management",
-   "sla"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 57,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Business and systems",
   "reach_out": false,
   "posts": 1
  },
@@ -4723,6 +4910,78 @@
    "Location": 100
   },
   "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "lv:shopback-2:6991bd29-14dd-434b-bdc0-ed229d5f83c6",
+  "company": "ShopBack",
+  "title": "Key Account Manager - Payments (Enterprise)",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.lever.co/shopback-2/6991bd29-14dd-434b-bdc0-ed229d5f83c6",
+  "source": "lever",
+  "score": 52,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "data pipeline",
+   "sla"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 80,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:cw:R341440",
+  "company": "Cw",
+  "title": "Critical Facilities Technician",
+  "location": "Client Site - MYS - Johor - Kulai - Digital Utama no. 15, Taman Perindustrian",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/Client-Site---MYS---Johor---Kulai---Digital-Utama-no-15-Taman-Perindustrian/Critical-Facilities-Technician_R341440",
+  "source": "workday",
+  "score": 51,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "cmms",
+   "kpi",
+   "preventive maintenance",
+   "sla"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 56,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -5049,11 +5308,11 @@
    "excel",
    "kpi",
    "power bi",
-   "power query"
+   "power query",
+   "sla"
   ],
   "missing": [
    "data modeling",
-   "sla",
    "spark"
   ],
   "learning": [
@@ -5067,7 +5326,7 @@
   "salary": "",
   "parts": {
    "Job title": 67,
-   "Skills": 72,
+   "Skills": 82,
    "Level": 100,
    "Entry-friendly": 100,
    "Full-time": 100,
@@ -5200,6 +5459,39 @@
   "posts": 1
  },
  {
+  "id": "sr:aumovio:744000158197359",
+  "company": "Aumovio",
+  "title": "SAP HR IT APAC Support",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Aumovio/744000158197359-sap-hr-it-apac-support",
+  "source": "smartrecruiters",
+  "score": 50,
+  "first_seen": "2026-10-28",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "vendor management"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 80,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:aia:JR-66644",
   "company": "AIA",
   "title": "Business & Financial Reporting, Specialist",
@@ -5274,6 +5566,47 @@
   "posts": 1
  },
  {
+  "id": "wd:prudential:26100236",
+  "company": "Prudential",
+  "title": "HR Project Delivery & Application Support Analyst",
+  "location": "Kuala Lumpur (Group Head Office)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/HR-Project-Delivery---Application-Support-Analyst_26100236-4",
+  "source": "workday",
+  "score": 50,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "kpi",
+   "rest api",
+   "sla",
+   "vendor management"
+  ],
+  "missing": [
+   "itil",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 67,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:aig:JR2602620",
   "company": "Aig",
   "title": "Enterprise Resiliency Officer",
@@ -5285,11 +5618,11 @@
   "last_seen": "2026-11-02",
   "matched": [
    "excel",
+   "incident management",
    "power bi",
    "power query"
   ],
   "missing": [
-   "incident management",
    "itil"
   ],
   "learning": [],
@@ -5297,7 +5630,7 @@
   "salary": "",
   "parts": {
    "Job title": 67,
-   "Skills": 54,
+   "Skills": 78,
    "Level": 100,
    "Entry-friendly": 50,
    "Full-time": 100,
@@ -5305,6 +5638,47 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:alcon:R-2026-48762",
+  "company": "Alcon",
+  "title": "Sr. Associate II Accounting & Reporting - India",
+  "location": "Selangor – AGS",
+  "url": "https://alcon.wd5.myworkdayjobs.com/careers_alcon/job/Selangor--AGS/Sr-Associate-II-Accounting---Reporting---India_R-2026-48762-2",
+  "source": "workday",
+  "score": 50,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "erp",
+   "excel",
+   "kpi",
+   "sla"
+  ],
+  "missing": [
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 71,
+   "Level": 30,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "BI and reporting",
   "reach_out": false,
   "posts": 1
  },
@@ -6132,6 +6506,60 @@
   "posts": 1
  },
  {
+  "id": "wd:guidewire:JR_14845",
+  "company": "Guidewire",
+  "title": "Senior Site Reliability Engineer (Data Platform)",
+  "location": "Malaysia - Kuala Lumpur",
+  "url": "https://wd5.myworkdaysite.com/recruiting/guidewire/external/job/Malaysia---Kuala-Lumpur/Senior-Site-Reliability-Engineer--Data-Platform-_JR_14845",
+  "source": "workday",
+  "score": 49,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "dashboard",
+   "data pipeline",
+   "git",
+   "incident management",
+   "kpi",
+   "python",
+   "rest api"
+  ],
+  "missing": [
+   "agile",
+   "aws",
+   "ci/cd",
+   "docker",
+   "kafka",
+   "kubernetes",
+   "redshift",
+   "spark"
+  ],
+  "learning": [
+   "aws",
+   "docker",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 57,
+   "Level": 30,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "lv:rws:0a1ba562-de05-4bc4-825b-53cf0762abf6",
   "company": "RWS TrainAI",
   "title": "AI Data Specialist - Malay",
@@ -6289,6 +6717,36 @@
   },
   "track": "Data analysis",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:coface:744000154013814",
+  "company": "Coface",
+  "title": "Senior Credit Analyst",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Coface/744000154013814-senior-credit-analyst",
+  "source": "smartrecruiters",
+  "score": 48,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "sla"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 70,
+   "Level": 30,
+   "Entry-friendly": 80,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -6618,57 +7076,44 @@
   "posts": 1
  },
  {
-  "id": "wd:guidewire:JR_14845",
-  "company": "Guidewire",
-  "title": "Senior Site Reliability Engineer (Data Platform)",
-  "location": "Malaysia - Kuala Lumpur",
-  "url": "https://wd5.myworkdaysite.com/recruiting/guidewire/external/job/Malaysia---Kuala-Lumpur/Senior-Site-Reliability-Engineer--Data-Platform-_JR_14845",
-  "source": "workday",
+  "id": "sr:fusionconsulting:744000148964204",
+  "company": "Fusion Consulting",
+  "title": "SAP MM Consultant",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/FusionConsulting/744000148964204-sap-mm-consultant",
+  "source": "smartrecruiters",
   "score": 46,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
   "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "git",
-   "kpi",
-   "python",
-   "rest api"
+   "erp",
+   "requirements gathering",
+   "vendor management"
   ],
   "missing": [
-   "agile",
-   "aws",
-   "ci/cd",
-   "docker",
-   "incident management",
-   "kafka",
-   "kubernetes",
-   "redshift",
-   "spark"
+   "asset management",
+   "spark",
+   "stakeholder management",
+   "uat"
   ],
   "learning": [
-   "aws",
-   "docker",
    "spark"
   ],
   "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "parts": {
-   "Job title": 100,
-   "Skills": 52,
-   "Level": 30,
+   "Job title": 33,
+   "Skills": 42,
+   "Level": 100,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
    "Location": 100
   },
-  "track": "Data engineering",
-  "reach_out": true,
+  "track": "Business and systems",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -6714,6 +7159,39 @@
   },
   "track": "BI and reporting",
   "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:nttlimited:R-148715",
+  "company": "Nttlimited",
+  "title": "Data Centre Service Delivery Field Support Engineer (L2)",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Petaling-Jaya-Malaysia/Data-Centre-Service-Delivery-Field-Support-Engineer--L2-_R-148715",
+  "source": "workday",
+  "score": 46,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "sla"
+  ],
+  "missing": [
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 14,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -6896,6 +7374,48 @@
    "Location": 0
   },
   "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:alcon:R-2026-48174",
+  "company": "Alcon",
+  "title": "Sr. Associate II, Master Data Governance & Management  (Supply Chain Master Data)",
+  "location": "Selangor – AGS",
+  "url": "https://alcon.wd5.myworkdayjobs.com/careers_alcon/job/Selangor--AGS/Sr-Associate-II--Master-Data-Governance---Management---Supply-Chain-Master-Data-_R-2026-48174-1",
+  "source": "workday",
+  "score": 45,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-31",
+  "matched": [
+   "dashboard",
+   "erp",
+   "excel",
+   "kpi",
+   "requirements gathering",
+   "sla"
+  ],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 76,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -7178,6 +7698,48 @@
   "posts": 1
  },
  {
+  "id": "sr:louisdreyfuscompany:744000117547758",
+  "company": "Louis Dreyfus Company",
+  "title": "Senior Business Analyst, SAP Controlling",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/LouisDreyfusCompany/744000117547758-senior-business-analyst-sap-controlling",
+  "source": "smartrecruiters",
+  "score": 45,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "data pipeline",
+   "erp",
+   "kpi",
+   "requirements gathering",
+   "sla"
+  ],
+  "missing": [
+   "jira",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 76,
+   "Level": 30,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:rytbank:JR00000496",
   "company": "Rytbank",
   "title": "Business Intelligence Intern",
@@ -7430,47 +7992,6 @@
   "posts": 1
  },
  {
-  "id": "wd:prudential:26100236",
-  "company": "Prudential",
-  "title": "HR Project Delivery & Application Support Analyst",
-  "location": "Kuala Lumpur (Group Head Office)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Group-Head-Office/HR-Project-Delivery---Application-Support-Analyst_26100236-4",
-  "source": "workday",
-  "score": 44,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "kpi",
-   "rest api"
-  ],
-  "missing": [
-   "itil",
-   "sla",
-   "stakeholder management",
-   "vendor management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 39,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:airasia:JR0035375",
   "company": "Airasia",
   "title": "Senior Executive, Enterprise Application Platforms & Automation",
@@ -7511,47 +8032,6 @@
   },
   "track": "Business and systems",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "wd:alcon:R-2026-48762",
-  "company": "Alcon",
-  "title": "Sr. Associate II Accounting & Reporting - India",
-  "location": "Selangor – AGS",
-  "url": "https://alcon.wd5.myworkdayjobs.com/careers_alcon/job/Selangor--AGS/Sr-Associate-II-Accounting---Reporting---India_R-2026-48762-2",
-  "source": "workday",
-  "score": 44,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "erp",
-   "excel",
-   "kpi"
-  ],
-  "missing": [
-   "process mapping",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 60,
-   "Level": 30,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "BI and reporting",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -7652,43 +8132,6 @@
   "posts": 1
  },
  {
-  "id": "sr:sutherland:744000037238625",
-  "company": "Sutherland",
-  "title": "ERP - Vietnamese Bilingual",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Sutherland/744000037238625-erp-vietnamese-bilingual",
-  "source": "smartrecruiters",
-  "score": 44,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "erp"
-  ],
-  "missing": [
-   "sla"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 57,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-69947",
   "company": "AIA",
   "title": "Business Analyst, Specialist",
@@ -7753,44 +8196,6 @@
    "Job title": 67,
    "Skills": 82,
    "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-68375",
-  "company": "AIA",
-  "title": "Enterprise Risk Management, Consultant",
-  "location": "Kuala Lumpur, MY-AIA Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Enterprise-Risk-Management--Consultant_JR-68375",
-  "source": "workday",
-  "score": 43,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "dashboard",
-   "data visualization"
-  ],
-  "missing": [
-   "incident management",
-   "process mapping",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 36,
-   "Level": 70,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
@@ -7879,6 +8284,117 @@
   },
   "track": "Data science",
   "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:jci:WD30266781",
+  "company": "Jci",
+  "title": "Sales Engineer, BMS, Data Center Solutions",
+  "location": "Petaling Jaya-Selangor-Malaysia",
+  "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Petaling-Jaya-Selangor-Malaysia/Sales-Engineer--BMS--Data-Center-Solutions_WD30266781",
+  "source": "workday",
+  "score": 43,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "data pipeline",
+   "rest api"
+  ],
+  "missing": [
+   "data centre",
+   "hvac",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 36,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:sgs:744000147381224",
+  "company": "SGS",
+  "title": "Sales Executive (Infrastructure, Data Centre Inspection)",
+  "location": "TELOK PANGLIMA GARANG, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/SGS/744000147381224-sales-executive-infrastructure-data-centre-inspection-",
+  "source": "smartrecruiters",
+  "score": 43,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "data pipeline"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-55295",
+  "company": "AIA",
+  "title": "Lead Analyst, GASC-USC – Service Hub – RPA",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--GASC-USC---Service-Hub---RPA_JR-55295-1",
+  "source": "workday",
+  "score": 42,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "sla"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 80,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -8146,6 +8662,42 @@
   "posts": 1
  },
  {
+  "id": "wd:wilhelmsen:JOBREQ_13166",
+  "company": "Wilhelmsen",
+  "title": "Technical Data Protection Specialist",
+  "location": "Kuala Lumpur",
+  "url": "https://wilhelmsen.wd3.myworkdayjobs.com/Wilhelmsen/job/Kuala-Lumpur/Information-Protection-Specialist_JOBREQ_13166-1",
+  "source": "workday",
+  "score": 42,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "incident management",
+   "kpi"
+  ],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 34,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:dyson:JR38523",
   "company": "Dyson",
   "title": "Senior Business Analyst, Finance Planning",
@@ -8270,6 +8822,47 @@
   "posts": 1
  },
  {
+  "id": "wd:dayone:JR3246",
+  "company": "DayOne",
+  "title": "Customer Success Specialist, Data Center ",
+  "location": "Johor",
+  "url": "https://dayone.wd102.myworkdayjobs.com/external/job/Johor/Customer-Success-Specialist--Data-Center-_JR3246",
+  "source": "workday",
+  "score": 41,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "sla"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "itil",
+   "project coordination",
+   "stakeholder management",
+   "ups"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 20,
+   "Level": 100,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:paloaltonetworks:JR-021840",
   "company": "Paloaltonetworks",
   "title": "Solutions Consultant - Enterprise",
@@ -8305,6 +8898,42 @@
   "track": "Business and systems",
   "reach_out": false,
   "posts": 1
+ },
+ {
+  "id": "wd:ocbc:JR00011271",
+  "company": "Ocbc",
+  "title": "Data Entry Processor (1 year contract)",
+  "location": "OCBC Malaysia, Menara GE2",
+  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Menara-GE2/Data-Entry-Processor--1-year-contract-_JR00011271",
+  "source": "workday",
+  "score": 40,
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "kpi",
+   "requirements gathering",
+   "sla",
+   "statistics"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 100,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 10,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 5
  },
  {
   "id": "wd:prudential:25090375",
@@ -8352,28 +8981,33 @@
   "posts": 1
  },
  {
-  "id": "wd:alcon:R-2026-48174",
+  "id": "wd:alcon:R-2026-48450",
   "company": "Alcon",
-  "title": "Sr. Associate II, Master Data Governance & Management  (Supply Chain Master Data)",
+  "title": "Order Monitoring & Data Analyst (Tableau) - supporting China market",
   "location": "Selangor – AGS",
-  "url": "https://alcon.wd5.myworkdayjobs.com/careers_alcon/job/Selangor--AGS/Sr-Associate-II--Master-Data-Governance---Management---Supply-Chain-Master-Data-_R-2026-48174-1",
+  "url": "https://alcon.wd5.myworkdayjobs.com/careers_alcon/job/Selangor--AGS/Associate-I--Customer-Service-Support--Order-Monitoring---Data-Analyst---OTI-_R-2026-48450",
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-10-31",
+  "last_seen": "2026-11-02",
   "matched": [
+   "automation",
    "dashboard",
+   "data visualization",
    "erp",
    "excel",
    "kpi",
-   "requirements gathering"
+   "power bi",
+   "sla"
   ],
   "missing": [
-   "data quality",
-   "sla",
-   "stakeholder management"
+   "process mapping",
+   "stakeholder management",
+   "tableau"
   ],
-  "learning": [],
+  "learning": [
+   "tableau"
+  ],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -8381,12 +9015,12 @@
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
-   "Skills": 67,
-   "Level": 60,
+   "Job title": 67,
+   "Skills": 77,
+   "Level": 70,
    "Entry-friendly": 50,
    "Full-time": 100,
-   "Language": 100,
+   "Language": 0,
    "Location": 100
   },
   "track": "Data analysis",
@@ -8482,48 +9116,6 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "sr:louisdreyfuscompany:744000117547758",
-  "company": "Louis Dreyfus Company",
-  "title": "Senior Business Analyst, SAP Controlling",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/LouisDreyfusCompany/744000117547758-senior-business-analyst-sap-controlling",
-  "source": "smartrecruiters",
-  "score": 40,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "data pipeline",
-   "erp",
-   "kpi",
-   "requirements gathering"
-  ],
-  "missing": [
-   "jira",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 67,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
   "reach_out": true,
   "posts": 1
  },
@@ -8751,44 +9343,49 @@
   "posts": 1
  },
  {
-  "id": "sr:fusionconsulting:744000148964204",
-  "company": "Fusion Consulting",
-  "title": "SAP MM Consultant",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/FusionConsulting/744000148964204-sap-mm-consultant",
-  "source": "smartrecruiters",
+  "id": "lv:BTSE:0b882a20-ee49-44a2-b839-7dc65ee5880c",
+  "company": "BTSE",
+  "title": "Senior Database Administrator (PostgreSQL)",
+  "location": "Southeast Asia, Malaysia, Hong Kong",
+  "url": "https://jobs.lever.co/BTSE/0b882a20-ee49-44a2-b839-7dc65ee5880c",
+  "source": "lever",
   "score": 39,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
   "matched": [
-   "erp",
-   "requirements gathering"
+   "automation",
+   "incident management",
+   "python",
+   "sql",
+   "statistics"
   ],
   "missing": [
-   "asset management",
-   "spark",
-   "stakeholder management",
-   "uat",
-   "vendor management"
+   "aws",
+   "ci/cd",
+   "critical facilities",
+   "data centre",
+   "linux"
   ],
   "learning": [
-   "spark"
+   "aws"
   ],
   "projects": [
-   "ERP automation (Exact Synergy REST)"
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
-   "Skills": 29,
-   "Level": 100,
+   "Job title": 67,
+   "Skills": 53,
+   "Level": 60,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
-   "Location": 100
+   "Location": 50
   },
-  "track": "Business and systems",
-  "reach_out": false,
+  "track": "Data engineering",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -9042,6 +9639,38 @@
   "posts": 1
  },
  {
+  "id": "wd:cw:R332460",
+  "company": "Cw",
+  "title": "Project Planner/Scheduler (Data Centre)",
+  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/Project-Planner-Scheduler--Data-Centre-_R332460-1",
+  "source": "workday",
+  "score": 38,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:dxctechnology:51590743",
   "company": "Dxctechnology",
   "title": "SAP Intern (SAP Concur / SAP ABAP)",
@@ -9119,6 +9748,54 @@
    "Location": 50
   },
   "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:grab:744000151313094",
+  "company": "Grab",
+  "title": "Senior Infrastructure Engineer, Data Compute Platform",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Grab/744000151313094-senior-infrastructure-engineer-data-compute-platform",
+  "source": "smartrecruiters",
+  "score": 38,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "git",
+   "incident management",
+   "machine learning",
+   "python"
+  ],
+  "missing": [
+   "airflow",
+   "aws",
+   "ci/cd",
+   "kubernetes",
+   "spark"
+  ],
+  "learning": [
+   "airflow",
+   "aws",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 53,
+   "Level": 60,
+   "Entry-friendly": 80,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -9440,6 +10117,44 @@
   "posts": 1
  },
  {
+  "id": "wd:nttlimited:R-151729",
+  "company": "Nttlimited",
+  "title": "Data Centre Deployment & Service Delivery Lead (Port Dickson)",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Petaling-Jaya-Malaysia/Data-Centre-Deployment---Service-Delivery-Lead--Port-Dickson-_R-151729",
+  "source": "workday",
+  "score": 37,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "dashboard"
+  ],
+  "missing": [
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 44,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "sr:grab:744000159050479",
   "company": "Grab",
   "title": "Assistant Manager, Growth Analytics",
@@ -9476,53 +10191,6 @@
   "track": "Data analysis",
   "reach_out": true,
   "posts": 2
- },
- {
-  "id": "wd:alcon:R-2026-48450",
-  "company": "Alcon",
-  "title": "Order Monitoring & Data Analyst (Tableau) - supporting China market",
-  "location": "Selangor – AGS",
-  "url": "https://alcon.wd5.myworkdayjobs.com/careers_alcon/job/Selangor--AGS/Associate-I--Customer-Service-Support--Order-Monitoring---Data-Analyst---OTI-_R-2026-48450",
-  "source": "workday",
-  "score": 36,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data visualization",
-   "erp",
-   "excel",
-   "kpi",
-   "power bi"
-  ],
-  "missing": [
-   "process mapping",
-   "sla",
-   "stakeholder management",
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 70,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
  },
  {
   "id": "gh:capco:8241864",
@@ -9589,6 +10257,45 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:cw:R341450",
+  "company": "Cw",
+  "title": "Data Center Operations Assistant",
+  "location": "Client Site - MYS - Johor - Kulai - Digital Utama no. 15, Taman Perindustrian",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/Client-Site---MYS---Johor---Kulai---Digital-Utama-no-15-Taman-Perindustrian/Data-Center-Operations-Assistant_R341450-1",
+  "source": "workday",
+  "score": 36,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "incident management",
+   "kpi",
+   "preventive maintenance"
+  ],
+  "missing": [
+   "asset management",
+   "critical facilities",
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 30,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -9721,52 +10428,6 @@
   "posts": 1
  },
  {
-  "id": "lv:BTSE:0b882a20-ee49-44a2-b839-7dc65ee5880c",
-  "company": "BTSE",
-  "title": "Senior Database Administrator (PostgreSQL)",
-  "location": "Southeast Asia, Malaysia, Hong Kong",
-  "url": "https://jobs.lever.co/BTSE/0b882a20-ee49-44a2-b839-7dc65ee5880c",
-  "source": "lever",
-  "score": 35,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "python",
-   "sql",
-   "statistics"
-  ],
-  "missing": [
-   "aws",
-   "ci/cd",
-   "critical facilities",
-   "data centre",
-   "incident management",
-   "linux"
-  ],
-  "learning": [
-   "aws"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 45,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data engineering",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "wd:dexcom:JR121288",
   "company": "Dexcom",
   "title": "Sr Business Process Analyst",
@@ -9847,6 +10508,75 @@
   "track": "Business and systems",
   "reach_out": false,
   "posts": 2
+ },
+ {
+  "id": "wd:equinix:JR-164327",
+  "company": "Equinix",
+  "title": "Data Center Critical Facilities Engineer III - Chargeman A0/A1",
+  "location": "JH2, Malaysia",
+  "url": "https://equinix.wd1.myworkdayjobs.com/External/job/JH2-Malaysia/Data-Center-Critical-Facilities-Engineer-III---Chargeman-A0-A1_JR-164327",
+  "source": "workday",
+  "score": 34,
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "preventive maintenance"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "electrical systems",
+   "stakeholder management",
+   "ups"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 6,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 2
+ },
+ {
+  "id": "wd:manulife:JR26081069",
+  "company": "Manulife",
+  "title": "Wealth Operations Analyst",
+  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
+  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Investment-Operations-Analyst_JR26081069",
+  "source": "workday",
+  "score": 34,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-10-30",
+  "matched": [
+   "excel",
+   "sla"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 48,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
  },
  {
   "id": "wd:manulife:JR26081314",
@@ -10165,59 +10895,11 @@
   "posts": 1
  },
  {
-  "id": "sr:grab:744000151313094",
-  "company": "Grab",
-  "title": "Senior Infrastructure Engineer, Data Compute Platform",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Grab/744000151313094-senior-infrastructure-engineer-data-compute-platform",
-  "source": "smartrecruiters",
-  "score": 33,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "git",
-   "machine learning",
-   "python"
-  ],
-  "missing": [
-   "airflow",
-   "aws",
-   "ci/cd",
-   "incident management",
-   "kubernetes",
-   "spark"
-  ],
-  "learning": [
-   "airflow",
-   "aws",
-   "spark"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 44,
-   "Level": 60,
-   "Entry-friendly": 80,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:wilhelmsen:JOBREQ_13166",
-  "company": "Wilhelmsen",
-  "title": "Technical Data Protection Specialist",
-  "location": "Kuala Lumpur",
-  "url": "https://wilhelmsen.wd3.myworkdayjobs.com/Wilhelmsen/job/Kuala-Lumpur/Information-Protection-Specialist_JOBREQ_13166-1",
+  "id": "wd:cw:R332463",
+  "company": "Cw",
+  "title": "Document Controller (Data Centre)",
+  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/Document-Controller--Data-Centre-_R332463-1",
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
@@ -10226,8 +10908,8 @@
    "kpi"
   ],
   "missing": [
-   "data quality",
-   "incident management",
+   "critical facilities",
+   "data centre",
    "stakeholder management"
   ],
   "learning": [],
@@ -10236,17 +10918,50 @@
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 18,
    "Level": 100,
    "Entry-friendly": 50,
-   "Full-time": 100,
+   "Full-time": 55,
    "Language": 100,
    "Location": 100
   },
   "track": "Data analysis",
   "reach_out": false,
   "posts": 1
+ },
+ {
+  "id": "sr:nielseniq:744000158634545",
+  "company": "NielsenIQ",
+  "title": "Jr. Customer Support Analyst (Mandarin Speaker) – Data Troubleshooting",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158634545-jr-customer-support-analyst-mandarin-speaker-data-troubleshooting",
+  "source": "smartrecruiters",
+  "score": 32,
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "excel",
+   "sla"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 48,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 2
  },
  {
   "id": "wd:bpinternational:RQ115470",
@@ -10466,36 +11181,46 @@
   "posts": 1
  },
  {
-  "id": "sr:aumovio:744000158197359",
-  "company": "Aumovio",
-  "title": "SAP HR IT APAC Support",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Aumovio/744000158197359-sap-hr-it-apac-support",
-  "source": "smartrecruiters",
+  "id": "wd:cw:R341444",
+  "company": "Cw",
+  "title": "Critical Facilities Supervisor",
+  "location": "Client Site - MYS - Johor - Kulai - Digital Utama no. 15, Taman Perindustrian",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/Client-Site---MYS---Johor---Kulai---Digital-Utama-no-15-Taman-Perindustrian/Critical-Facilities-Supervisor_R341444",
+  "source": "workday",
   "score": 31,
-  "first_seen": "2026-10-28",
+  "first_seen": "2026-11-02",
   "last_seen": "2026-11-02",
   "matched": [
-   "erp"
+   "cmms",
+   "dashboard",
+   "incident management",
+   "kpi",
+   "preventive maintenance",
+   "sla"
   ],
   "missing": [
-   "vendor management"
+   "asset management",
+   "critical facilities",
+   "data centre",
+   "data quality",
+   "stakeholder management"
   ],
   "learning": [],
   "projects": [
-   "ERP automation (Exact Synergy REST)"
+   "Lift breakdown analytics",
+   "Job radar (this project)"
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
-   "Skills": 42,
+   "Job title": 67,
+   "Skills": 47,
    "Level": 70,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
-   "Location": 100
+   "Location": 0
   },
-  "track": "Business and systems",
+  "track": "Other",
   "reach_out": false,
   "posts": 1
  },
@@ -10700,41 +11425,6 @@
   },
   "track": "BI and reporting",
   "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "lv:shopback-2:6991bd29-14dd-434b-bdc0-ed229d5f83c6",
-  "company": "ShopBack",
-  "title": "Key Account Manager - Payments (Enterprise)",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.lever.co/shopback-2/6991bd29-14dd-434b-bdc0-ed229d5f83c6",
-  "source": "lever",
-  "score": 31,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "data pipeline"
-  ],
-  "missing": [
-   "sla"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 42,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": true,
   "posts": 1
  },
  {
@@ -10976,6 +11666,46 @@
   "posts": 1
  },
  {
+  "id": "wd:ag:JR10451900",
+  "company": "Ag",
+  "title": "Senior Aircraft Configuration Data Officer",
+  "location": "Putrajaya",
+  "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Putrajaya/Senior-Aircraft-Configuration-Data-Officer_JR10451900",
+  "source": "workday",
+  "score": 30,
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "dashboard",
+   "kpi",
+   "sla"
+  ],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 67,
+   "Level": 60,
+   "Entry-friendly": 75,
+   "Full-time": 55,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:prudential:26070330",
   "company": "Prudential",
   "title": "Manager, Data Quality",
@@ -11053,6 +11783,51 @@
   },
   "track": "BI and reporting",
   "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:cisco:2020646",
+  "company": "Cisco",
+  "title": "Consulting Engineer - Data Center (Japanese speaking)",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Kuala-Lumpur-Malaysia/Consulting-Engineer---Data-Center--Japanese-speaking-_2020646-1",
+  "source": "workday",
+  "score": 29,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "python",
+   "requirements gathering"
+  ],
+  "missing": [
+   "aws",
+   "azure",
+   "data centre",
+   "gcp",
+   "kubernetes"
+  ],
+  "learning": [
+   "aws",
+   "azure"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 42,
+   "Level": 70,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -11212,6 +11987,44 @@
   },
   "track": "Data analysis",
   "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "sr:turnertownsend:744000138559159",
+  "company": "Turner & Townsend",
+  "title": "Energy Marshal - Data Center",
+  "location": "Shah Alam, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000138559159-energy-marshal-data-center",
+  "source": "smartrecruiters",
+  "score": 29,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "kpi"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "electrical systems",
+   "hvac",
+   "ups"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 12,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -11378,82 +12191,6 @@
   "posts": 1
  },
  {
-  "id": "wd:jci:WD30266781",
-  "company": "Jci",
-  "title": "Sales Engineer, BMS, Data Center Solutions",
-  "location": "Petaling Jaya-Selangor-Malaysia",
-  "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Petaling-Jaya-Selangor-Malaysia/Sales-Engineer--BMS--Data-Center-Solutions_WD30266781",
-  "source": "workday",
-  "score": 28,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "data pipeline",
-   "rest api"
-  ],
-  "missing": [
-   "data centre",
-   "hvac",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 36,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:sgs:744000147381224",
-  "company": "SGS",
-  "title": "Sales Executive (Infrastructure, Data Centre Inspection)",
-  "location": "TELOK PANGLIMA GARANG, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/SGS/744000147381224-sales-executive-infrastructure-data-centre-inspection-",
-  "source": "smartrecruiters",
-  "score": 28,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "data pipeline"
-  ],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-51089",
   "company": "AIA",
   "title": "Associate-Operations Optimization (Data Management) - Mandarin Support",
@@ -11531,6 +12268,41 @@
   },
   "track": "Data science",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:aecom2:744000155007840",
+  "company": "AECOM",
+  "title": "Data Center Senior Design Manager",
+  "location": "Bukit Damansara, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/AECOM2/744000155007840-data-center-senior-design-manager",
+  "source": "smartrecruiters",
+  "score": 27,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "requirements gathering"
+  ],
+  "missing": [
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 40,
+   "Entry-friendly": 80,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -11866,6 +12638,49 @@
   "posts": 1
  },
  {
+  "id": "wd:swift:2026-15984",
+  "company": "Swift",
+  "title": "Senior SAP Basis Specialist",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://swift.wd3.myworkdayjobs.com/Join-Swift/job/Kuala-Lumpur-Malaysia/Senior-SAP-Basis-Specialist_2026-15984",
+  "source": "workday",
+  "score": 26,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "erp",
+   "kpi",
+   "requirements gathering",
+   "sla",
+   "sql"
+  ],
+  "missing": [
+   "itil",
+   "linux",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 68,
+   "Level": 30,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:linkedin:senior data engineer, analytics:ryt bank · greater kuala lumpur (on-site)",
   "company": "Ryt Bank · Greater Kuala Lumpur (On-site)",
   "title": "Senior Data Engineer, Analytics",
@@ -11993,6 +12808,91 @@
    "Location": 0
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "gh:bybit:4975178101",
+  "company": "Bybit",
+  "title": "Senior Data Analyst",
+  "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
+  "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101",
+  "source": "greenhouse",
+  "score": 25,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "data visualization",
+   "kpi",
+   "machine learning",
+   "power bi",
+   "python",
+   "sla",
+   "sql",
+   "statistics"
+  ],
+  "missing": [
+   "looker",
+   "tableau"
+  ],
+  "learning": [
+   "tableau"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 86,
+   "Level": 30,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:electrolux:JR80956",
+  "company": "Electrolux Group",
+  "title": "Specialist, People Direct & Data",
+  "location": "Petaling Jaya",
+  "url": "https://electrolux.wd3.myworkdayjobs.com/ElectroluxCareerSite/job/Petaling-Jaya/Specialist--People-Direct---Data_JR80956",
+  "source": "workday",
+  "score": 25,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "sla"
+  ],
+  "missing": [
+   "data quality",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 34,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -12254,36 +13154,80 @@
   "posts": 1
  },
  {
-  "id": "wd:cw:R332460",
-  "company": "Cw",
-  "title": "Project Planner/Scheduler (Data Centre)",
-  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
-  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/Project-Planner-Scheduler--Data-Centre-_R332460-1",
+  "id": "wd:aia:JR-68270",
+  "company": "AIA",
+  "title": "Assistant Manager, Reporting",
+  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Reporting_JR-68270-1",
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
-  "matched": [],
+  "matched": [
+   "erp",
+   "requirements gathering",
+   "sla"
+  ],
   "missing": [
-   "critical facilities",
-   "data centre",
+   "data modeling",
    "stakeholder management"
   ],
   "learning": [],
-  "projects": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
   "salary": "",
   "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
+   "Job title": 67,
+   "Skills": 54,
+   "Level": 10,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "BI and reporting",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:cw:R332458",
+  "company": "Cw",
+  "title": "Project Manager (Data Centre)",
+  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/Project-Manager--Data-Centre-_R332458",
+  "source": "workday",
+  "score": 23,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "vendor management"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "electrical systems",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 27,
+   "Level": 40,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
+  "reach_out": true,
+  "posts": 2
  },
  {
   "id": "sr:nielseniq:744000156225889",
@@ -12297,38 +13241,6 @@
   "last_seen": "2026-11-02",
   "matched": [],
   "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:nttlimited:R-148715",
-  "company": "Nttlimited",
-  "title": "Data Centre Service Delivery Field Support Engineer (L2)",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Petaling-Jaya-Malaysia/Data-Centre-Service-Delivery-Field-Support-Engineer--L2-_R-148715",
-  "source": "workday",
-  "score": 23,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "data centre",
-   "sla",
-   "stakeholder management"
-  ],
   "learning": [],
   "projects": [],
   "salary": "",
@@ -12552,47 +13464,6 @@
   "posts": 1
  },
  {
-  "id": "wd:dayone:JR3246",
-  "company": "DayOne",
-  "title": "Customer Success Specialist, Data Center ",
-  "location": "Johor",
-  "url": "https://dayone.wd102.myworkdayjobs.com/external/job/Johor/Customer-Success-Specialist--Data-Center-_JR3246",
-  "source": "workday",
-  "score": 22,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "dashboard"
-  ],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "itil",
-   "project coordination",
-   "sla",
-   "stakeholder management",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 12,
-   "Level": 100,
-   "Entry-friendly": 100,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:dxctechnology:51580985",
   "company": "Dxctechnology",
   "title": "Senior Data Scientist",
@@ -12676,44 +13547,6 @@
   "posts": 1
  },
  {
-  "id": "wd:nttlimited:R-151729",
-  "company": "Nttlimited",
-  "title": "Data Centre Deployment & Service Delivery Lead (Port Dickson)",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://nttlimited.wd3.myworkdayjobs.com/NTT_Careers/job/Petaling-Jaya-Malaysia/Data-Centre-Deployment---Service-Delivery-Lead--Port-Dickson-_R-151729",
-  "source": "workday",
-  "score": 22,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "dashboard"
-  ],
-  "missing": [
-   "data centre",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 44,
-   "Level": 50,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "sr:progressionrecruitmentllp:75558839",
   "company": "Progression Recruitment LLP",
   "title": "Sales Manager (Data Capture)",
@@ -12749,35 +13582,37 @@
   "posts": 1
  },
  {
-  "id": "wd:manulife:JR26081069",
-  "company": "Manulife",
-  "title": "Wealth Operations Analyst",
-  "location": "Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
-  "url": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs/job/Kuala-Lumpur-Wilayah-Persekutuan-Kuala-Lumpur/Investment-Operations-Analyst_JR26081069",
+  "id": "wd:carrier:30199581",
+  "company": "Carrier",
+  "title": "Data Centre - Marketing Manager - AME",
+  "location": "#08-01/02, Perennial Business City, 1 Venture Avenue, Singapore 608521, Carrier (Malaysia) Sdn Bhd, No 10F-1, 10th Floor, Tower 5 @ PFCC , Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong, Selangor",
+  "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/08-0102-Perennial-Business-City-1-Venture-Avenue-Singapore-608521/Mgr--Vertical---Channel-Marketing_30199581-1",
   "source": "workday",
   "score": 21,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-10-30",
+  "first_seen": "2026-10-30",
+  "last_seen": "2026-11-02",
   "matched": [
-   "excel"
+   "kpi"
   ],
   "missing": [
-   "sla",
+   "data centre",
    "stakeholder management"
   ],
   "learning": [],
-  "projects": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 23,
-   "Level": 70,
+   "Level": 40,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
    "Location": 100
   },
-  "track": "Business and systems",
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -12856,49 +13691,6 @@
   "posts": 1
  },
  {
-  "id": "wd:swift:2026-15984",
-  "company": "Swift",
-  "title": "Senior SAP Basis Specialist",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://swift.wd3.myworkdayjobs.com/Join-Swift/job/Kuala-Lumpur-Malaysia/Senior-SAP-Basis-Specialist_2026-15984",
-  "source": "workday",
-  "score": 21,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "erp",
-   "kpi",
-   "requirements gathering",
-   "sql"
-  ],
-  "missing": [
-   "itil",
-   "linux",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 60,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:wilhelmsen:JOBREQ_13167",
   "company": "Wilhelmsen",
   "title": "Technical Data Protection Expert",
@@ -12934,83 +13726,6 @@
   "posts": 1
  },
  {
-  "id": "wd:ag:JR10451900",
-  "company": "Ag",
-  "title": "Senior Aircraft Configuration Data Officer",
-  "location": "Putrajaya",
-  "url": "https://ag.wd3.myworkdayjobs.com/Airbus/job/Putrajaya/Senior-Aircraft-Configuration-Data-Officer_JR10451900",
-  "source": "workday",
-  "score": 20,
-  "first_seen": "2026-10-29",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "dashboard",
-   "kpi"
-  ],
-  "missing": [
-   "data quality",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 48,
-   "Level": 60,
-   "Entry-friendly": 75,
-   "Full-time": 55,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:ocbc:JR00011271",
-  "company": "Ocbc",
-  "title": "Data Entry Processor (1 year contract)",
-  "location": "OCBC Malaysia, Menara GE2",
-  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Menara-GE2/Data-Entry-Processor--1-year-contract-_JR00011271",
-  "source": "workday",
-  "score": 20,
-  "first_seen": "2026-10-29",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "kpi",
-   "requirements gathering",
-   "statistics"
-  ],
-  "missing": [
-   "sla"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 64,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 10,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 5
- },
- {
   "id": "wd:flextronics:WD226285",
   "company": "Flex",
   "title": "Delivery Business Systems Analyst",
@@ -13039,33 +13754,28 @@
   "posts": 1
  },
  {
-  "id": "gh:bybit:4975178101",
-  "company": "Bybit",
-  "title": "Senior Data Analyst",
-  "location": "Abu Dhabi, UAE; Kuala Lumpur, Malaysia",
-  "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/4975178101",
+  "id": "gh:capco:8200755",
+  "company": "Capco",
+  "title": "Project Manager – Data Management & Transformation",
+  "location": "Malaysia - Kuala Lumpur",
+  "url": "https://job-boards.greenhouse.io/capco/jobs/8200755",
   "source": "greenhouse",
   "score": 20,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
   "matched": [
    "dashboard",
-   "data visualization",
+   "etl",
+   "excel",
    "kpi",
-   "machine learning",
-   "power bi",
-   "python",
-   "sql",
-   "statistics"
+   "requirements gathering",
+   "vendor management"
   ],
   "missing": [
-   "looker",
-   "sla",
-   "tableau"
+   "data quality",
+   "stakeholder management"
   ],
-  "learning": [
-   "tableau"
-  ],
+  "learning": [],
   "projects": [
    "Lift breakdown analytics",
    "ERP automation (Exact Synergy REST)",
@@ -13073,16 +13783,50 @@
   ],
   "salary": "",
   "parts": {
-   "Job title": 67,
-   "Skills": 77,
-   "Level": 30,
+   "Job title": 33,
+   "Skills": 76,
+   "Level": 10,
    "Entry-friendly": 50,
    "Full-time": 100,
-   "Language": 0,
+   "Language": 100,
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": true,
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:simedarby:JR111911",
+  "company": "Sime",
+  "title": "Senior Engineer - Maintenance & Facilities SAP System",
+  "location": "Malaysia | Kedah  | Inokom Kulim (K002)",
+  "url": "https://simedarby.wd3.myworkdayjobs.com/SimeCareerSite/job/Malaysia--Kedah---Inokom-Kulim-K002/Senior-Engineer---Maintenance---Facilities-SAP-System_JR111911",
+  "source": "workday",
+  "score": 20,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "excel",
+   "preventive maintenance"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 90,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 55,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Business and systems",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -13124,39 +13868,6 @@
   "track": "Business and systems",
   "reach_out": true,
   "posts": 1
- },
- {
-  "id": "sr:nielseniq:744000158634545",
-  "company": "NielsenIQ",
-  "title": "Jr. Customer Support Analyst (Mandarin Speaker) – Data Troubleshooting",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158634545-jr-customer-support-analyst-mandarin-speaker-data-troubleshooting",
-  "source": "smartrecruiters",
-  "score": 19,
-  "first_seen": "2026-10-30",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "excel"
-  ],
-  "missing": [
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 2
  },
  {
   "id": "wd:prudential:25120026",
@@ -13296,36 +14007,35 @@
   "posts": 3
  },
  {
-  "id": "wd:cw:R332463",
-  "company": "Cw",
-  "title": "Document Controller (Data Centre)",
-  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
-  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/Document-Controller--Data-Centre-_R332463-1",
+  "id": "wd:astreya:R0012106",
+  "company": "Astreya",
+  "title": "Data Center Embedded Tech Specialist II",
+  "location": "Johor, Malaysia",
+  "url": "https://astreya.wd5.myworkdayjobs.com/life-at-astreya-opportunities/job/Johor-Malaysia/Data-Center-Embedded-Tech-Specialist-II_R0012106-1",
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
   "matched": [
-   "kpi"
+   "requirements gathering"
   ],
   "missing": [
-   "critical facilities",
    "data centre",
-   "stakeholder management"
+   "linux"
   ],
   "learning": [],
   "projects": [
-   "Lift breakdown analytics"
+   "ERP automation (Exact Synergy REST)"
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
-   "Skills": 18,
-   "Level": 100,
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 70,
    "Entry-friendly": 50,
-   "Full-time": 55,
+   "Full-time": 100,
    "Language": 100,
-   "Location": 100
+   "Location": 0
   },
   "track": "Data analysis",
   "reach_out": false,
@@ -13362,6 +14072,45 @@
   "posts": 1
  },
  {
+  "id": "wd:dayone:JR886",
+  "company": "DayOne",
+  "title": "Supply Chain & Procurement Manager Data Center (Other Region)",
+  "location": "Corporate Office-Kuala Lumpur, Malaysia",
+  "url": "https://dayone.wd102.myworkdayjobs.com/external/job/Corporate-Office-Kuala-Lumpur/Supply-Chain---Procurement-Manager-Data-Center--Other-Region-_JR886",
+  "source": "workday",
+  "score": 18,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "kpi",
+   "vendor management"
+  ],
+  "missing": [
+   "data centre",
+   "dcim",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 45,
+   "Level": 10,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:fourseasons:REQ10393494",
   "company": "Four Seasons",
   "title": "Commis 3 - IRD, Bar & Lounge",
@@ -13386,6 +14135,68 @@
    "Location": 100
   },
   "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:ramboll3:744000156002668",
+  "company": "Ramboll",
+  "title": "Electrical Engineer & Senior Electrical Engineer - Data Center",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Ramboll3/744000156002668-electrical-engineer-senior-electrical-engineer-data-center",
+  "source": "smartrecruiters",
+  "score": 18,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [
+   "data centre",
+   "electrical systems",
+   "ups"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "sr:ramboll3:744000156002509",
+  "company": "Ramboll",
+  "title": "Mechanical Engineer & Senior Mechanical Engineer - Data Center",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Ramboll3/744000156002509-mechanical-engineer-senior-mechanical-engineer-data-center",
+  "source": "smartrecruiters",
+  "score": 18,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [
+   "data centre"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -13426,6 +14237,43 @@
   "posts": 1
  },
  {
+  "id": "sr:turnertownsend:744000157000772",
+  "company": "Turner & Townsend",
+  "title": "Planner - Data Center ",
+  "location": "Johor Bahru, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000157000772-planner-data-center-",
+  "source": "smartrecruiters",
+  "score": 18,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard"
+  ],
+  "missing": [
+   "data centre",
+   "project coordination",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:ikanoretail:744000158189724",
   "company": "Ikano-Retail",
   "title": "Business Analyst, Ikano Centres",
@@ -13458,39 +14306,37 @@
   "posts": 2
  },
  {
-  "id": "wd:aia:JR-55295",
-  "company": "AIA",
-  "title": "Lead Analyst, GASC-USC – Service Hub – RPA",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Lead-Analyst--GASC-USC---Service-Hub---RPA_JR-55295-1",
-  "source": "workday",
+  "id": "sr:turnertownsend:744000158207749",
+  "company": "Turner & Townsend",
+  "title": "QA/QC Lead - Data Center",
+  "location": "Cyberjaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000158207749-qa-qc-lead-data-center",
+  "source": "smartrecruiters",
   "score": 17,
-  "first_seen": "2026-10-27",
+  "first_seen": "2026-10-28",
   "last_seen": "2026-11-02",
   "matched": [
-   "automation"
+   "kpi"
   ],
   "missing": [
-   "sla"
+   "data centre"
   ],
   "learning": [],
   "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
+   "Lift breakdown analytics"
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 35,
-   "Level": 50,
+   "Level": 20,
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
    "Location": 100
   },
-  "track": "Business and systems",
-  "reach_out": false,
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -13527,6 +14373,46 @@
   },
   "track": "BI and reporting",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:equinix:JR-161142",
+  "company": "Equinix",
+  "title": "Senior Data Center Critical Facilities",
+  "location": "JH2, Malaysia",
+  "url": "https://equinix.wd1.myworkdayjobs.com/External/job/JH2-Malaysia/Data-Center-Critical-Facilities-V_JR-161142",
+  "source": "workday",
+  "score": 17,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "incident management",
+   "sla"
+  ],
+  "missing": [
+   "airflow",
+   "critical facilities",
+   "data centre",
+   "hvac",
+   "stakeholder management",
+   "ups"
+  ],
+  "learning": [
+   "airflow"
+  ],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 12,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -13676,44 +14562,6 @@
   "posts": 1
  },
  {
-  "id": "wd:electrolux:JR80956",
-  "company": "Electrolux Group",
-  "title": "Specialist, People Direct & Data",
-  "location": "Petaling Jaya",
-  "url": "https://electrolux.wd3.myworkdayjobs.com/ElectroluxCareerSite/job/Petaling-Jaya/Specialist--People-Direct---Data_JR80956",
-  "source": "workday",
-  "score": 16,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation"
-  ],
-  "missing": [
-   "data quality",
-   "sla",
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 18,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-37965",
   "company": "AIA",
   "title": "Senior Business Analyst - Operational Risk Management System Support",
@@ -13777,41 +14625,6 @@
   "track": "Data science",
   "reach_out": false,
   "posts": 1
- },
- {
-  "id": "wd:equinix:JR-164327",
-  "company": "Equinix",
-  "title": "Data Center Critical Facilities Engineer III - Chargeman A0/A1",
-  "location": "JH2, Malaysia",
-  "url": "https://equinix.wd1.myworkdayjobs.com/External/job/JH2-Malaysia/Data-Center-Critical-Facilities-Engineer-III---Chargeman-A0-A1_JR-164327",
-  "source": "workday",
-  "score": 15,
-  "first_seen": "2026-10-29",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "electrical systems",
-   "preventive maintenance",
-   "stakeholder management",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 2
  },
  {
   "id": "wd:prudential:26100339",
@@ -13937,93 +14750,6 @@
   "posts": 1
  },
  {
-  "id": "gh:capco:8200755",
-  "company": "Capco",
-  "title": "Project Manager – Data Management & Transformation",
-  "location": "Malaysia - Kuala Lumpur",
-  "url": "https://job-boards.greenhouse.io/capco/jobs/8200755",
-  "source": "greenhouse",
-  "score": 15,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "dashboard",
-   "etl",
-   "excel",
-   "kpi",
-   "requirements gathering"
-  ],
-  "missing": [
-   "data quality",
-   "stakeholder management",
-   "vendor management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 67,
-   "Level": 10,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:cisco:2020646",
-  "company": "Cisco",
-  "title": "Consulting Engineer - Data Center (Japanese speaking)",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Kuala-Lumpur-Malaysia/Consulting-Engineer---Data-Center--Japanese-speaking-_2020646-1",
-  "source": "workday",
-  "score": 14,
-  "first_seen": "2026-11-02",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "python",
-   "requirements gathering"
-  ],
-  "missing": [
-   "aws",
-   "azure",
-   "data centre",
-   "gcp",
-   "kubernetes"
-  ],
-  "learning": [
-   "aws",
-   "azure"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 42,
-   "Level": 70,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:ocbc:JR00012260",
   "company": "Ocbc",
   "title": "Team Lead - Enterprise Banking Department",
@@ -14094,44 +14820,6 @@
   "posts": 1
  },
  {
-  "id": "sr:turnertownsend:744000138559159",
-  "company": "Turner & Townsend",
-  "title": "Energy Marshal - Data Center",
-  "location": "Shah Alam, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000138559159-energy-marshal-data-center",
-  "source": "smartrecruiters",
-  "score": 14,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "kpi"
-  ],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "electrical systems",
-   "hvac",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 12,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:aia:JR-68261",
   "company": "AIA",
   "title": "Intern, Enterprise Solutions",
@@ -14174,40 +14862,45 @@
   "posts": 1
  },
  {
-  "id": "wd:aia:JR-68270",
+  "id": "wd:aia:JR-66507",
   "company": "AIA",
-  "title": "Assistant Manager, Reporting",
-  "location": "Kuala Lumpur, AIA Digital+ Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Reporting_JR-68270-1",
+  "title": "Internship - Technology or Data",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Internship---Technology-Data_JR-66507",
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
   "matched": [
-   "erp",
+   "automation",
+   "dashboard",
+   "data pipeline",
+   "excel",
+   "incident management",
+   "power bi",
    "requirements gathering"
   ],
   "missing": [
-   "data modeling",
-   "sla",
-   "stakeholder management"
+   "process mapping"
   ],
   "learning": [],
   "projects": [
-   "ERP automation (Exact Synergy REST)"
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
   ],
   "salary": "",
   "parts": {
-   "Job title": 67,
-   "Skills": 36,
-   "Level": 10,
-   "Entry-friendly": 50,
+   "Job title": 33,
+   "Skills": 88,
+   "Level": 20,
+   "Entry-friendly": 80,
    "Full-time": 100,
-   "Language": 100,
+   "Language": 0,
    "Location": 100
   },
-  "track": "BI and reporting",
-  "reach_out": true,
+  "track": "Data analysis",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -14290,6 +14983,43 @@
   },
   "track": "Business and systems",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:sgs:744000135869159",
+  "company": "SGS",
+  "title": "Business Development Manager - Data Centre / Building & Infrastructure",
+  "location": "Teluk Panglima Garang, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/SGS/744000135869159-business-development-manager-data-centre-building-infrastructure",
+  "source": "smartrecruiters",
+  "score": 13,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "data pipeline"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -14425,41 +15155,6 @@
    "Skills": 53,
    "Level": 20,
    "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:aecom2:744000155007840",
-  "company": "AECOM",
-  "title": "Data Center Senior Design Manager",
-  "location": "Bukit Damansara, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/AECOM2/744000155007840-data-center-senior-design-manager",
-  "source": "smartrecruiters",
-  "score": 12,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "data centre",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 40,
-   "Entry-friendly": 80,
    "Full-time": 100,
    "Language": 100,
    "Location": 100
@@ -14766,45 +15461,6 @@
   "posts": 1
  },
  {
-  "id": "wd:cw:R341450",
-  "company": "Cw",
-  "title": "Data Center Operations Assistant",
-  "location": "Client Site - MYS - Johor - Kulai - Digital Utama no. 15, Taman Perindustrian",
-  "url": "https://cw.wd1.myworkdayjobs.com/External/job/Client-Site---MYS---Johor---Kulai---Digital-Utama-no-15-Taman-Perindustrian/Data-Center-Operations-Assistant_R341450-1",
-  "source": "workday",
-  "score": 10,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "kpi"
-  ],
-  "missing": [
-   "asset management",
-   "critical facilities",
-   "data centre",
-   "incident management",
-   "preventive maintenance",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 10,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:wk:R0059254",
   "company": "Wk",
   "title": "Strategic Enterprise Account Manager",
@@ -14841,33 +15497,43 @@
   "posts": 1
  },
  {
-  "id": "sr:coface:744000154013814",
-  "company": "Coface",
-  "title": "Senior Credit Analyst",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Coface/744000154013814-senior-credit-analyst",
-  "source": "smartrecruiters",
+  "id": "wd:mdlz:R-179012",
+  "company": "Mondelez",
+  "title": "Data Management Business Partner (18 months contract)",
+  "location": "Business Office - Selangor, Malaysia",
+  "url": "https://wd3.myworkdaysite.com/recruiting/mdlz/External/job/Business-Office---Selangor-Malaysia/Data-Management-Business-Partner_R-179012",
+  "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
+  "matched": [
+   "erp",
+   "kpi",
+   "power bi",
    "sla"
   ],
+  "missing": [
+   "data quality",
+   "process mapping",
+   "ups"
+  ],
   "learning": [],
-  "projects": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
   "salary": "",
   "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 30,
-   "Entry-friendly": 80,
-   "Full-time": 100,
+   "Job title": 33,
+   "Skills": 57,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 10,
    "Language": 100,
    "Location": 100
   },
-  "track": "Business and systems",
-  "reach_out": true,
+  "track": "Data analysis",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -15038,6 +15704,44 @@
   },
   "track": "Data analysis",
   "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "wd:prudential:26040151",
+  "company": "Prudential",
+  "title": "PBTB | Senior Manager, Data Governance and Privacy",
+  "location": "Kuala Lumpur (Takaful)",
+  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Takaful/Senior-Manager--Data-Governance_26040151",
+  "source": "workday",
+  "score": 8,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "incident management",
+   "kpi"
+  ],
+  "missing": [
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 54,
+   "Level": 10,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
   "posts": 1
  },
  {
@@ -15377,6 +16081,46 @@
   "posts": 1
  },
  {
+  "id": "wd:nttglobaldatacenters:JR100583",
+  "company": "Data centers",
+  "title": "Senior Associate IT Data Centre Operations Analyst",
+  "location": "Cyberjaya, Malaysia",
+  "url": "https://nttglobaldatacenters.wd501.myworkdayjobs.com/External/job/Cyberjaya-Malaysia/Senior-Associate-IT-Data-Centre-Operations-Analyst_JR100583",
+  "source": "workday",
+  "score": 8,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "requirements gathering",
+   "sla"
+  ],
+  "missing": [
+   "asset management",
+   "critical facilities",
+   "data centre",
+   "electrical systems",
+   "hvac",
+   "ups"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 16,
+   "Level": 60,
+   "Entry-friendly": 80,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "sr:fusionconsulting:744000153565661",
   "company": "Fusion Consulting",
   "title": "Data Modeler Lead (Snowflake)",
@@ -15420,6 +16164,131 @@
   },
   "track": "Data analysis",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:rytbank:JR00000529",
+  "company": "Rytbank",
+  "title": "Head of Enterprise Engineering",
+  "location": "Kuala Lumpur",
+  "url": "https://rytbank.wd3.myworkdayjobs.com/External_Career/job/Kuala-Lumpur/Head-of-Enterprise-Engineering_JR00000529",
+  "source": "workday",
+  "score": 8,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "machine learning",
+   "python",
+   "rest api",
+   "vendor management"
+  ],
+  "missing": [
+   "aws",
+   "azure",
+   "critical facilities",
+   "docker",
+   "gcp",
+   "kubernetes",
+   "stakeholder management"
+  ],
+  "learning": [
+   "aws",
+   "azure",
+   "docker"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 45,
+   "Level": 0,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "sr:turnertownsend:744000153925817",
+  "company": "Turner & Townsend",
+  "title": "(MEP/CSA) Assistant Cost Manager - Data Centre",
+  "location": "Kuala Lumpur, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000153925817--mep-csa-assistant-cost-manager-data-centre",
+  "source": "smartrecruiters",
+  "score": 8,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 4
+ },
+ {
+  "id": "wd:abbott:31165486",
+  "company": "Abbott",
+  "title": "Senior Master Data Analyst",
+  "location": "Malaysia > Selangor : Imazium, No. 8, Jalan SS 21/37",
+  "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers/job/Malaysia--Selangor--Imazium-No-8-Jalan-SS-2137/Senior-Master-Data-Analyst_31165486",
+  "source": "workday",
+  "score": 7,
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "excel",
+   "kpi",
+   "sla",
+   "sql"
+  ],
+  "missing": [
+   "data modeling",
+   "data quality",
+   "data warehouse",
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 52,
+   "Level": 30,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -15468,48 +16337,6 @@
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-66507",
-  "company": "AIA",
-  "title": "Internship - Technology or Data",
-  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Internship---Technology-Data_JR-66507",
-  "source": "workday",
-  "score": 7,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "dashboard",
-   "data pipeline",
-   "excel",
-   "power bi",
-   "requirements gathering"
-  ],
-  "missing": [
-   "incident management",
-   "process mapping"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 78,
-   "Level": 20,
-   "Entry-friendly": 80,
-   "Full-time": 100,
-   "Language": 0,
    "Location": 100
   },
   "track": "Data analysis",
@@ -15586,41 +16413,6 @@
   "track": "Data analysis",
   "reach_out": false,
   "posts": 2
- },
- {
-  "id": "wd:carrier:30199581",
-  "company": "Carrier",
-  "title": "Data Centre - Marketing Manager - AME",
-  "location": "#08-01/02, Perennial Business City, 1 Venture Avenue, Singapore 608521, Carrier (Malaysia) Sdn Bhd, No 10F-1, 10th Floor, Tower 5 @ PFCC , Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong, Selangor",
-  "url": "https://carrier.wd5.myworkdayjobs.com/jobs/job/08-0102-Perennial-Business-City-1-Venture-Avenue-Singapore-608521/Mgr--Vertical---Channel-Marketing_30199581-1",
-  "source": "workday",
-  "score": 6,
-  "first_seen": "2026-10-30",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "kpi"
-  ],
-  "missing": [
-   "data centre",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
  },
  {
   "id": "wd:alcon:R-2026-48215",
@@ -15808,6 +16600,41 @@
   "posts": 1
  },
  {
+  "id": "wd:cw:R332462",
+  "company": "Cw",
+  "title": "EHS Manager (Data Centre)",
+  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/EHS-Manager--Data-Centre-_R332462",
+  "source": "workday",
+  "score": 6,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "kpi"
+  ],
+  "missing": [
+   "critical facilities",
+   "data centre"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 10,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:dayone:JR2820",
   "company": "DayOne",
   "title": "Manager, Reporting and Capacity Management",
@@ -15973,123 +16800,25 @@
   "posts": 1
  },
  {
-  "id": "wd:rytbank:JR00000529",
-  "company": "Rytbank",
-  "title": "Head of Enterprise Engineering",
-  "location": "Kuala Lumpur",
-  "url": "https://rytbank.wd3.myworkdayjobs.com/External_Career/job/Kuala-Lumpur/Head-of-Enterprise-Engineering_JR00000529",
-  "source": "workday",
-  "score": 4,
+  "id": "sr:turnertownsend:744000154615890",
+  "company": "Turner & Townsend",
+  "title": "Site Safety Supervisor - Data Center ",
+  "location": "Johor Bahru, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000154615890-site-safety-supervisor-data-center-",
+  "source": "smartrecruiters",
+  "score": 5,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "machine learning",
-   "python",
-   "rest api"
-  ],
+  "matched": [],
   "missing": [
-   "aws",
-   "azure",
-   "critical facilities",
-   "docker",
-   "gcp",
-   "kubernetes",
-   "stakeholder management",
-   "vendor management"
+   "data centre"
   ],
-  "learning": [
-   "aws",
-   "azure",
-   "docker"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
+  "learning": [],
+  "projects": [],
   "salary": "",
   "parts": {
    "Job title": 67,
-   "Skills": 38,
-   "Level": 0,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Business and systems",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "wd:abbott:31165486",
-  "company": "Abbott",
-  "title": "Senior Master Data Analyst",
-  "location": "Malaysia > Selangor : Imazium, No. 8, Jalan SS 21/37",
-  "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers/job/Malaysia--Selangor--Imazium-No-8-Jalan-SS-2137/Senior-Master-Data-Analyst_31165486",
-  "source": "workday",
-  "score": 3,
-  "first_seen": "2026-10-29",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp",
-   "excel",
-   "kpi",
-   "sql"
-  ],
-  "missing": [
-   "data modeling",
-   "data quality",
-   "data warehouse",
-   "process mapping",
-   "sla",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 45,
-   "Level": 30,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "wd:astreya:R0012106",
-  "company": "Astreya",
-  "title": "Data Center Embedded Tech Specialist II",
-  "location": "Johor, Malaysia",
-  "url": "https://astreya.wd5.myworkdayjobs.com/life-at-astreya-opportunities/job/Johor-Malaysia/Data-Center-Embedded-Tech-Specialist-II_R0012106-1",
-  "source": "workday",
-  "score": 3,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "data centre",
-   "linux"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
+   "Skills": 0,
    "Level": 70,
    "Entry-friendly": 50,
    "Full-time": 100,
@@ -16098,6 +16827,50 @@
   },
   "track": "Data analysis",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:cw:R325331",
+  "company": "Cw",
+  "title": "Data Centre Project Account Lead (Johor)",
+  "location": "Client Site - MYS - Johor - Kulai - Digital Utama no. 15, Taman Perindustrian",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/Client-Site---MYS---Johor---Kulai---Digital-Utama-no-15-Taman-Perindustrian/Data-Centre-Project-Account-Lead--Johor-_R325331",
+  "source": "workday",
+  "score": 3,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "incident management",
+   "kpi",
+   "preventive maintenance",
+   "vendor management"
+  ],
+  "missing": [
+   "asset management",
+   "critical facilities",
+   "data centre",
+   "itil",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 41,
+   "Level": 20,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -16139,68 +16912,6 @@
   "posts": 1
  },
  {
-  "id": "sr:ramboll3:744000156002668",
-  "company": "Ramboll",
-  "title": "Electrical Engineer & Senior Electrical Engineer - Data Center",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Ramboll3/744000156002668-electrical-engineer-senior-electrical-engineer-data-center",
-  "source": "smartrecruiters",
-  "score": 3,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "data centre",
-   "electrical systems",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:ramboll3:744000156002509",
-  "company": "Ramboll",
-  "title": "Mechanical Engineer & Senior Mechanical Engineer - Data Center",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Ramboll3/744000156002509-mechanical-engineer-senior-mechanical-engineer-data-center",
-  "source": "smartrecruiters",
-  "score": 3,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "data centre"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:rytbank:JR00000656",
   "company": "Rytbank",
   "title": "Senior Specialist, Regulatory Reporting",
@@ -16226,77 +16937,6 @@
   },
   "track": "BI and reporting",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "sr:turnertownsend:744000157000772",
-  "company": "Turner & Townsend",
-  "title": "Planner - Data Center ",
-  "location": "Johor Bahru, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000157000772-planner-data-center-",
-  "source": "smartrecruiters",
-  "score": 3,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "dashboard"
-  ],
-  "missing": [
-   "data centre",
-   "project coordination",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:turnertownsend:744000158207749",
-  "company": "Turner & Townsend",
-  "title": "QA/QC Lead - Data Center",
-  "location": "Cyberjaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000158207749-qa-qc-lead-data-center",
-  "source": "smartrecruiters",
-  "score": 2,
-  "first_seen": "2026-10-28",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "kpi"
-  ],
-  "missing": [
-   "data centre"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 35,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -16332,43 +16972,45 @@
   "posts": 1
  },
  {
-  "id": "wd:cw:R332458",
-  "company": "Cw",
-  "title": "Project Manager (Data Centre)",
-  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
-  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/Project-Manager--Data-Centre-_R332458",
+  "id": "wd:electrolux:JR81662",
+  "company": "Electrolux Group",
+  "title": "PS&S Manager, People data & Payroll",
+  "location": "Petaling Jaya",
+  "url": "https://electrolux.wd3.myworkdayjobs.com/ElectroluxCareerSite/job/Petaling-Jaya/PS-S-Manager--People-data---Payroll_JR81662",
   "source": "workday",
   "score": 2,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
   "matched": [
-   "dashboard"
+   "automation",
+   "data pipeline",
+   "sla"
   ],
   "missing": [
-   "critical facilities",
-   "data centre",
-   "electrical systems",
+   "data quality",
+   "process mapping",
    "stakeholder management",
-   "vendor management"
+   "uat"
   ],
   "learning": [],
   "projects": [
    "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
    "Job radar (this project)"
   ],
   "salary": "",
   "parts": {
    "Job title": 33,
-   "Skills": 16,
-   "Level": 40,
-   "Entry-friendly": 50,
+   "Skills": 39,
+   "Level": 10,
+   "Entry-friendly": 65,
    "Full-time": 100,
    "Language": 100,
    "Location": 100
   },
   "track": "Data analysis",
   "reach_out": false,
-  "posts": 2
+  "posts": 1
  },
  {
   "id": "wd:uobgroup:JR89289",
@@ -16464,46 +17106,6 @@
    "Location": 100
   },
   "track": "BI and reporting",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:mdlz:R-179012",
-  "company": "Mondelez",
-  "title": "Data Management Business Partner (18 months contract)",
-  "location": "Business Office - Selangor, Malaysia",
-  "url": "https://wd3.myworkdaysite.com/recruiting/mdlz/External/job/Business-Office---Selangor-Malaysia/Data-Management-Business-Partner_R-179012",
-  "source": "workday",
-  "score": 1,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp",
-   "kpi",
-   "power bi"
-  ],
-  "missing": [
-   "data quality",
-   "process mapping",
-   "sla",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 42,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 10,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -16661,41 +17263,6 @@
   "posts": 2
  },
  {
-  "id": "wd:simedarby:JR111911",
-  "company": "Sime",
-  "title": "Senior Engineer - Maintenance & Facilities SAP System",
-  "location": "Malaysia | Kedah  | Inokom Kulim (K002)",
-  "url": "https://simedarby.wd3.myworkdayjobs.com/SimeCareerSite/job/Malaysia--Kedah---Inokom-Kulim-K002/Senior-Engineer---Maintenance---Facilities-SAP-System_JR111911",
-  "source": "workday",
-  "score": 1,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp",
-   "excel"
-  ],
-  "missing": [
-   "preventive maintenance"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 57,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 55,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:uobgroup:JR92552",
   "company": "United Overseas Bank",
   "title": "Senior Credit Analyst (FIG)",
@@ -16744,7 +17311,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -16753,7 +17320,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -16868,45 +17435,6 @@
    "Full-time": 100,
    "Language": 100,
    "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:equinix:JR-161142",
-  "company": "Equinix",
-  "title": "Senior Data Center Critical Facilities",
-  "location": "JH2, Malaysia",
-  "url": "https://equinix.wd1.myworkdayjobs.com/External/job/JH2-Malaysia/Data-Center-Critical-Facilities-V_JR-161142",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "airflow",
-   "critical facilities",
-   "data centre",
-   "hvac",
-   "incident management",
-   "sla",
-   "stakeholder management",
-   "ups"
-  ],
-  "learning": [
-   "airflow"
-  ],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
   },
   "track": "Data analysis",
   "reach_out": false,
@@ -17054,44 +17582,6 @@
   "posts": 1
  },
  {
-  "id": "wd:prudential:26040151",
-  "company": "Prudential",
-  "title": "PBTB | Senior Manager, Data Governance and Privacy",
-  "location": "Kuala Lumpur (Takaful)",
-  "url": "https://prudential.wd3.myworkdayjobs.com/prudential/job/Kuala-Lumpur-Takaful/Senior-Manager--Data-Governance_26040151",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "dashboard",
-   "kpi"
-  ],
-  "missing": [
-   "data quality",
-   "incident management",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 36,
-   "Level": 10,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:ingrammicro:R-112580",
   "company": "Ingram Micro",
   "title": "Senior Professional, Pre-Sales  (ICT Enterprise Solution)",
@@ -17210,85 +17700,6 @@
   "posts": 1
  },
  {
-  "id": "wd:cw:R325331",
-  "company": "Cw",
-  "title": "Data Centre Project Account Lead (Johor)",
-  "location": "Client Site - MYS - Johor - Kulai - Digital Utama no. 15, Taman Perindustrian",
-  "url": "https://cw.wd1.myworkdayjobs.com/External/job/Client-Site---MYS---Johor---Kulai---Digital-Utama-no-15-Taman-Perindustrian/Data-Centre-Project-Account-Lead--Johor-_R325331",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "kpi"
-  ],
-  "missing": [
-   "asset management",
-   "critical facilities",
-   "data centre",
-   "incident management",
-   "itil",
-   "preventive maintenance",
-   "stakeholder management",
-   "vendor management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 16,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:cw:R332462",
-  "company": "Cw",
-  "title": "EHS Manager (Data Centre)",
-  "location": "CW Site - MYS - Kuala Lumpur - 32-11, Q Sentral, 2A Jalan Stesen Sentral 2, Kuala Lumpur Sentral",
-  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/EHS-Manager--Data-Centre-_R332462",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "kpi"
-  ],
-  "missing": [
-   "critical facilities",
-   "data centre"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 10,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:cw:R338317",
   "company": "Cw",
   "title": "Project Lead (Data Centre)",
@@ -17312,7 +17723,7 @@
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 18,
    "Level": 20,
    "Entry-friendly": 50,
@@ -17321,86 +17732,7 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:nttglobaldatacenters:JR100583",
-  "company": "Data centers",
-  "title": "Senior Associate IT Data Centre Operations Analyst",
-  "location": "Cyberjaya, Malaysia",
-  "url": "https://nttglobaldatacenters.wd501.myworkdayjobs.com/External/job/Cyberjaya-Malaysia/Senior-Associate-IT-Data-Centre-Operations-Analyst_JR100583",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "requirements gathering"
-  ],
-  "missing": [
-   "asset management",
-   "critical facilities",
-   "data centre",
-   "electrical systems",
-   "hvac",
-   "sla",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 9,
-   "Level": 60,
-   "Entry-friendly": 80,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:dayone:JR886",
-  "company": "DayOne",
-  "title": "Supply Chain & Procurement Manager Data Center (Other Region)",
-  "location": "Corporate Office-Kuala Lumpur, Malaysia",
-  "url": "https://dayone.wd102.myworkdayjobs.com/external/job/Corporate-Office-Kuala-Lumpur/Supply-Chain---Procurement-Manager-Data-Center--Other-Region-_JR886",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "erp",
-   "kpi"
-  ],
-  "missing": [
-   "data centre",
-   "dcim",
-   "stakeholder management",
-   "vendor management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 31,
-   "Level": 10,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -17441,47 +17773,6 @@
   "posts": 1
  },
  {
-  "id": "wd:electrolux:JR81662",
-  "company": "Electrolux Group",
-  "title": "PS&S Manager, People data & Payroll",
-  "location": "Petaling Jaya",
-  "url": "https://electrolux.wd3.myworkdayjobs.com/ElectroluxCareerSite/job/Petaling-Jaya/PS-S-Manager--People-data---Payroll_JR81662",
-  "source": "workday",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "data pipeline"
-  ],
-  "missing": [
-   "data quality",
-   "process mapping",
-   "sla",
-   "stakeholder management",
-   "uat"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 27,
-   "Level": 10,
-   "Entry-friendly": 65,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:ocbc:JR00011846",
   "company": "Ocbc",
   "title": "Credit Analyst - Middle Market - AVP",
@@ -17507,43 +17798,6 @@
   },
   "track": "Business and systems",
   "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "sr:sgs:744000135869159",
-  "company": "SGS",
-  "title": "Business Development Manager - Data Centre / Building & Infrastructure",
-  "location": "Teluk Panglima Garang, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/SGS/744000135869159-business-development-manager-data-centre-building-infrastructure",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "data pipeline"
-  ],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 23,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
   "posts": 1
  },
  {
@@ -17659,7 +17913,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17668,7 +17922,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 2
  },
  {
@@ -17692,7 +17946,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17701,7 +17955,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -17722,7 +17976,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17731,7 +17985,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -17753,7 +18007,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17775,18 +18029,19 @@
   "score": 0,
   "first_seen": "2026-10-27",
   "last_seen": "2026-11-02",
-  "matched": [],
+  "matched": [
+   "vendor management"
+  ],
   "missing": [
    "data centre",
-   "stakeholder management",
-   "vendor management"
+   "stakeholder management"
   ],
   "learning": [],
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
-   "Skills": 0,
+   "Job title": 67,
+   "Skills": 14,
    "Level": 10,
    "Entry-friendly": 50,
    "Full-time": 100,
@@ -17794,7 +18049,7 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -17816,7 +18071,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17825,7 +18080,7 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -17846,7 +18101,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17877,7 +18132,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -17886,7 +18141,7 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -17909,7 +18164,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 40,
    "Entry-friendly": 50,
@@ -17918,70 +18173,8 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
- },
- {
-  "id": "sr:turnertownsend:744000154615890",
-  "company": "Turner & Townsend",
-  "title": "Site Safety Supervisor - Data Center ",
-  "location": "Johor Bahru, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000154615890-site-safety-supervisor-data-center-",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "data centre"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:turnertownsend:744000153925817",
-  "company": "Turner & Townsend",
-  "title": "(MEP/CSA) Assistant Cost Manager - Data Centre",
-  "location": "Kuala Lumpur, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000153925817--mep-csa-assistant-cost-manager-data-centre",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 4
  },
  {
   "id": "sr:turnertownsend:744000153910909",
@@ -18003,7 +18196,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -18012,7 +18205,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18034,7 +18227,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 20,
    "Entry-friendly": 50,
@@ -18065,7 +18258,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 20,
    "Entry-friendly": 50,
@@ -18074,7 +18267,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18096,7 +18289,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 20,
    "Entry-friendly": 50,
@@ -18105,7 +18298,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18127,7 +18320,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -18136,7 +18329,7 @@
    "Location": 0
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18160,7 +18353,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -18169,7 +18362,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18191,7 +18384,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -18200,7 +18393,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18228,7 +18421,7 @@
   ],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 23,
    "Level": 0,
    "Entry-friendly": 50,
@@ -18237,7 +18430,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
@@ -18259,7 +18452,7 @@
   "projects": [],
   "salary": "",
   "parts": {
-   "Job title": 33,
+   "Job title": 67,
    "Skills": 0,
    "Level": 10,
    "Entry-friendly": 50,
@@ -18268,7 +18461,7 @@
    "Location": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
+  "reach_out": true,
   "posts": 1
  },
  {
