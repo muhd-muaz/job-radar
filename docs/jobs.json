@@ -182,6 +182,39 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:erp strategist (power bi):linaco group of companies shah alam, selangor",
+  "company": "Linaco Group of Companies Shah Alam, Selangor",
+  "title": "ERP Strategist (Power BI)",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhKSQG6LVVZQTy1iuvwT_Pmf-OFTWiSOa8RRZAHDWuT_lLnBe5WKrmkmm1GodNT4axe7ddV_uisdz29fqHh6_B-eNVMHLBEuGYQthW8BsRBC_BxL-Mly9uymLMEzTG5H3j6kyrWSgxAIk6Zl7cO5B-G/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h85/h001.TQOof2nUxttC8xdksiqOo4WjNUlSbIEaz80gN_uxvug",
+  "source": "jobstreet alert",
+  "score": 89,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp",
+   "power bi"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 80,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:accionlabs2:743999652287788",
   "company": "AccionLabs",
   "title": "Data Engineer",
@@ -1145,6 +1178,61 @@
   "posts": 1
  },
  {
+  "id": "paste:13d12cee6115",
+  "company": "GSR TECHNOLOGY LIMITED",
+  "title": "DevOps / Full-Stack / Data Engineer – Fresh Graduates Welcome",
+  "location": "Kuala Lumpur",
+  "url": "",
+  "source": "pasted",
+  "score": 72,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "data pipeline",
+   "data visualization",
+   "etl",
+   "git",
+   "pandas",
+   "python",
+   "requirements gathering",
+   "rest api",
+   "sql"
+  ],
+  "missing": [
+   "aws",
+   "azure",
+   "ci/cd",
+   "data modeling",
+   "gcp",
+   "linux",
+   "numpy",
+   "stakeholder management"
+  ],
+  "learning": [
+   "aws",
+   "azure"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "RM 5,000 – 7,000",
+  "parts": {
+   "Job title": 100,
+   "Skills": 62,
+   "Level": 100,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:accionlabs2:743999652289467",
   "company": "AccionLabs",
   "title": ".NET & SQL Analyst",
@@ -1649,6 +1737,38 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:business operations executive (erp, procurement & data analysis):agensi pekerjaan trust recruit sdn. bhd. selangor rm 3,500 – rm 5,000 per month",
+  "company": "AGENSI PEKERJAAN TRUST RECRUIT SDN. BHD. Selangor RM 3,500 – RM 5,000 per month",
+  "title": "Business Operations Executive (ERP, Procurement & Data Analysis)",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAg-Eb7G3IUtQzKl4jq52RJl6fxQ2ZCOIzyJT-6e47eLB4560-Gz5EtmE_gl2Tj9xq3DZoqcT66d2r5E-UNblhlW7V6nAhAul6KW2XnVjH-E7oYScbqOYRo7K5MEL5V1yK2gHUeDKqenAOkQDdBOBC_T/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h67/h001.CSqdtMl-4TVnjQUncX3GjxiDyxkHTW20Uevz4llKXz4",
+  "source": "jobstreet alert",
+  "score": 68,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "erp"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "RM 3,500 – 5,000",
+  "parts": {
+   "Job title": 67,
+   "Skills": 70,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -6625,6 +6745,34 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:data engineer:strato solutions sdn bhd kota damansara, selangor",
+  "company": "Strato Solutions Sdn Bhd Kota Damansara, Selangor",
+  "title": "Data Engineer",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAht-vjvtsNBvE9zHnk11BE7IPcrCQFXx9xIz6oE2PkwBvqMCnohzNkXFm1Ys-g7bwCf4dNvJu5iGIR8dBxa230CG79wOcjQLqOdR9EpkUH4BEzPuqgcCDr1c8av5ewVCQF-mnp21JiH7hLjMWgXCkEZ/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h91/h001.ar5bmuQOTMGUQgMy908ZsOvUC7ktEnvuhAAafbw4RHU",
+  "source": "jobstreet alert",
+  "score": 45,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:WesternDigital:744000158655189",
   "company": "Western Digital",
   "title": "Internship - Data Engineering ",
@@ -10632,6 +10780,146 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:business data analyst – ai tools & growth:aa alive sdn bhd batu caves, selangor rm 4,000 – rm 4,500 per month",
+  "company": "AA Alive Sdn Bhd Batu Caves, Selangor RM 4,000 – RM 4,500 per month",
+  "title": "Business Data Analyst – AI Tools & Growth",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgTCCXhUf1Cs_aEA-BTeXmlHowUudvaDH0jyVJw8--SrPTu1zbSqd1dvpMKXb1HX_iuJOAY40OGAzJZvCMjQFPpFXuma39X4NRVbn_cUiZ2cJRWnpGgunhoZJVss4aPO43mvrL3Ev5auR_BclTkN85r/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h57/h001.SYjZAwOD_hH2I9YGrmBg-aVDZa9OuNlQE5O7CCnkVCQ",
+  "source": "jobstreet alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 4,000 – 4,500",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:application support analyst:sunway healthcare group bandar sunway, selangor",
+  "company": "Sunway Healthcare Group Bandar Sunway, Selangor",
+  "title": "Application Support Analyst",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAi0D-PPqV0rlZQOW9shGfd_7d1dgEF-qcFe88BETpPeJa4FzljwV5CtdisIevf0X_zloZcwppxZShLyW6bhPvmFYnRf0m7BHHgoVkyHTCAajXz2OJUVBAA-c6txGQSd1oa5NBN1TH6lZOvI8qEs2afJ/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h75/h001.izK7TaxYwNjaBKcH61lEMSPq-27O6jmeWFFRpz_GTjs",
+  "source": "jobstreet alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:business analyst - it healthcare (his):nova msc berhad kuala lumpur sentral, kuala lumpur rm 5,000 – rm 7,500 per month",
+  "company": "NOVA MSC BERHAD Kuala Lumpur Sentral, Kuala Lumpur RM 5,000 – RM 7,500 per month",
+  "title": "Business Analyst - IT Healthcare (HIS)",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAg7sGRAXNbOXZyuWzdquEK0VoCouAv85HitZgSYReapJurph_v1SS8N32XuKdEe9QGbLGAM9Xh5VUN7krFhe79uGKvbSOmNMDycSEWuHJ2p3fpUB78YaSuk73V8hggrdKJ7aibN-BofYuDCTZn8V6-m/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h83/h001.lcj0t-ihuYO6dZmXkxFjGm1QEzcyEzJcv6AFnblx2CI",
+  "source": "jobstreet alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 5,000 – 7,500",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data analyst, service operations:tesla posted on 23 oct 2026 cyberjaya, selangor",
+  "company": "TESLA Posted on 23 Oct 2026 Cyberjaya, Selangor",
+  "title": "Data Analyst, Service Operations",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAijOmuBM-SMis1mcbpbXXupVzoU5ajUQFueX34MD8bhdJpGKCFCkqBGkJWStIRJqhPel9zQenPBXiCxmG20G6abfbzzEA54kPn5Dyfcibnv3yWkWZdXeGEhKeSl-Qvirpb0NM9c4LvUXjXVDQ9imyHM/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h98/h001.9taUvXziXoKFD9j-HVTLWmBN6Jk89X4PWZxd9ZutyMw",
+  "source": "jobstreet alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data analyst:prizm posted on 29 oct 2026 kuala lumpur rm 4,000 – rm 6,000 per month",
+  "company": "PRIZM Posted on 29 Oct 2026 Kuala Lumpur RM 4,000 – RM 6,000 per month",
+  "title": "Data Analyst",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgL3z-RUDw6UnnB_teTpPpHH0Q53mhYFnzGJCxFz8fYKDHMQY7MDkxXQs-FrKo4h-E1KBfZ_HOeM2sql75DT6fNf8kTYfXKqhS1-q8OpaCuLeotnrvwjxCjAoDuoJIaDRkMxkDj_eWkMgQK0q9VFIQp/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h100/h001.5wakL3K6k9exliz6VOCHjst9i45BzvBBvSkIB6iTNKA",
+  "source": "jobstreet alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 4,000 – 6,000",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:prudential:26070330",
   "company": "Prudential",
   "title": "Manager, Data Quality",
@@ -11574,6 +11862,34 @@
    "Location": 50
   },
   "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:senior bi developer:zempot malaysia sdn. bhd. iskandar puteri, johor",
+  "company": "Zempot Malaysia Sdn. Bhd. Iskandar Puteri, Johor",
+  "title": "Senior BI Developer",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjdsm9fjWeSH7XgCmJUiRqdJ7pJcP7KqpuRqYbwbKTw6TR6ctxMirzCRdMM-7PObKb8hjf3gzi15Ft8xOhEEjlqF1hoBvKpC7pk_JhKWPGTHesyuos0P9OZ6RwgWavhfjPGdSfauyF1XqqEvVDVDRnE/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h79/h001.Rk3lZL63MYnMewTfKgbv9CrkCSSk-Erj2SOn6CeyAe4",
+  "source": "jobstreet alert",
+  "score": 25,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "BI and reporting",
   "reach_out": true,
   "posts": 1
  },
@@ -13377,6 +13693,36 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:data scientist:capital dynamics asset management sdn bhd kuala lumpur city centre, kuala lumpur",
+  "company": "Capital Dynamics Asset Management Sdn Bhd Kuala Lumpur City Centre, Kuala Lumpur",
+  "title": "Data Scientist",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhRg2PZZ8QlM5oDR_4deWZZRT7P7_P8aAtyqXLNdENSwHMOYLk6tM61Bni5DRIIzHWu199k1kfzy9416TS4u4ZGMDnrtputUBIPuXOwuEJTZ5WANnq3aNLIG03eoBUKfpYFJqYdzJUAhtID6BsSqJKV/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h77/h001.B44K8o7axG2mUWS-VENgpBoDimrJMDt85P3cAXLUTn4",
+  "source": "jobstreet alert",
+  "score": 15,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [
+   "asset management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data science",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:equinix:JR-164327",
   "company": "Equinix",
   "title": "Data Center Critical Facilities Engineer III - Chargeman A0/A1",
@@ -14228,6 +14574,34 @@
    "Location": 100
   },
   "track": "BI and reporting",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:senior data analyst:private advertiser johor bahru, johor rm 4,500 – rm 6,000 per month",
+  "company": "Private Advertiser Johor Bahru, Johor RM 4,500 – RM 6,000 per month",
+  "title": "Senior Data Analyst",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhlItY2r_73sylcYlMY23oWhaAKQYqcm7lIEDbyKgtFNdJnbFTDeh5dG3JaabdfmuGv2L5t8FC2KVFRjMWNHzlor022x7tP_u-DoRYkYd08JuLcAqJbh_uV0pdUSVbu-UEztmShRUP1xVHbwpqYtefM/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h63/h001.5XO4igWBAUw127HcMaD8-x9ivxxdBBQLeNOrbL8TK2o",
+  "source": "jobstreet alert",
+  "score": 10,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 4,500 – 6,000",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
   "reach_out": true,
   "posts": 1
  },
@@ -15457,6 +15831,34 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:business analytics, planning & reporting (bapr) – staff finance analyst:advanced micro devices global services (m) sdn. bhd. penang",
+  "company": "Advanced Micro Devices Global Services (M) Sdn. Bhd. Penang",
+  "title": "Business Analytics, Planning & Reporting (BAPR) – Staff Finance Analyst",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjAzrbp5CQICQwlD_3UuWcgHXejBCB6HuiR1pSVhr3PVuYGT5Pvc1mov0Gl-KMCRPfP_-d_qK2hKXONdlu-uQKAsBt92RMVVtUOpC9-QH7P5ADkY-EKhNsyNo36XJ01vdbwFFAwnO2RqpRoAZllzk_Z/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h69/h001.FahRvJPW38vU1VOYG5R0KNdNUf8P5wdEbClVnVYw_cI",
+  "source": "jobstreet alert",
+  "score": 5,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "gh:mariadbplc:4944075101",
   "company": "MariaDB plc",
   "title": "Enterprise Customer Success Manager",
@@ -16265,6 +16667,62 @@
    "Full-time": 100,
    "Language": 100,
    "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data analyst (1 yr contract):viridian solutions sdn bhd kuala lumpur rm 4,500 – rm 6,500 per month",
+  "company": "Viridian Solutions Sdn Bhd Kuala Lumpur RM 4,500 – RM 6,500 per month",
+  "title": "Data Analyst (1 yr Contract)",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhDMzulrFH02_5l-_bOCIp9K-NwCCHn2BijOWi0xrDr7f7qH2bT8bCIRQk_DwLCXX-5ewLJNW5r2TvEX3v1_dxi9U87m_ro6OzRamRjBbJrr2POqMQJz7QARnuLxPk_NxRXL-ArN8_PcziyxLKY1P9B/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h61/h001.WuZRiQ0hAVtbawsnkutFZP7oTZ4YbWHWhVKMgReBY8I",
+  "source": "jobstreet alert",
+  "score": 0,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 4,500 – 6,500",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 10,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:team lead global oe data research:zf sales and service (malaysia) sdn bhd petaling jaya, selangor",
+  "company": "ZF SALES AND SERVICE (MALAYSIA) SDN BHD Petaling Jaya, Selangor",
+  "title": "Team Lead Global OE Data Research",
+  "location": "",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjgGk0mfgB9lz04zhIiUi20iY0Shk9gtwaD7vRXBEHQOcR03an0sumnMXR99XzX_bHjMTyYt2t0u6k_UnD_reCU2q5ib7bCyhHTe4Hv_Wq5C52ZN9Z-qRlMn8mOC0fnng4qabCDwgrUwflfv4VySjM8/4vd/LeQAKJ14Q7K3DRccwpVxSQ/h87/h001.OuZSKScmHWVzAubWAiZb-RzvONtuDZc7Ebz-p0SjulM",
+  "source": "jobstreet alert",
+  "score": 0,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 0,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
   },
   "track": "Data analysis",
   "reach_out": false,
