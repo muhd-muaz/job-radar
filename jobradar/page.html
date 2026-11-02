@@ -820,8 +820,8 @@ function buildLetter(job) {
 }
 function renderCv() {
   const job = cvState.job, sheet = $("#sheet");
-  // one page: drop the least relevant lines, then the second project, until it fits
-  const steps = [[6, 2], [5, 2], [5, 1], [4, 1], [3, 1]];
+  // one page: drop the least relevant lines and projects until it fits, keeping at least two projects while it can
+  const steps = [[6, 3], [5, 3], [5, 2], [4, 2], [3, 2], [3, 1]];
   sheet.style.minHeight = "0";              // measure the content, not the A4 frame
   for (const [keep, nproj] of steps) {
     if (cvState.mode === "letter") { sheet.innerHTML = buildLetter(job); break; }
