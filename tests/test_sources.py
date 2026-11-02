@@ -51,3 +51,19 @@ def test_missing_key_is_skipped(monkeypatch):
     import pytest
     with pytest.raises(sources.Skip):
         sources.jooble({"name": "J"}, TARGETS, ["data"])
+
+
+def test_all_jobs_index(tmp_path):
+    from jobradar import sources
+    from jobradar.__main__ import write_all
+    sources.ALL.clear()
+    c = {"name": "Acme Sdn Bhd"}
+    sources.seen_any(c, "Mechanical Engineer", "Shah Alam, Selangor", "https://x/1")
+    sources.seen_any(c, "Chef", "Singapore", "https://x/2")          # not Malaysia: left out
+    write_all(tmp_path / "all.json", [{"title": "Data Engineer", "company": "Acme Sdn Bhd", "location": "Kuala Lumpur",
+                                       "url": "https://x/3", "posted": "2026-11-01"}], "2026-11-02")
+    import json
+    d = json.loads((tmp_path / "all.json").read_text())
+    assert d["companies"] == ["Acme Sdn Bhd"]
+    assert sorted(r[0] for r in d["jobs"]) == ["Data Engineer", "Mechanical Engineer"]
+    sources.ALL.clear()

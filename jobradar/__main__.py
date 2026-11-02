@@ -73,8 +73,24 @@ def main(argv):
     locked = load("cv.locked.json") if (ROOT / "config" / "cv.locked.json").exists() else None
     report.build(ROOT / "docs", active, runs, profile, today, closed, posts, cv, skills, locked)
     if "--offline" not in argv:
+        write_all(ROOT / "docs" / "all.json", jobs, today)
+    if "--offline" not in argv:
         notify.send_new_matches(db, active, today, profile)
     print(f"{len(jobs)} collected today, {len(active)} active, report in docs/index.html")
+
+
+def write_all(path, jobs, today):
+    """Every Malaysian job seen this run, any field, for searching any keyword on the page. Compact rows."""
+    rows, seen = [], set()
+    for t, co, loc, url, posted in [[j["title"], j["company"], j["location"], j["url"], j.get("posted", "")] for j in jobs] + sources.ALL:
+        if url in seen:
+            continue
+        seen.add(url)
+        rows.append([t, co, loc, url, (posted or "")[:10]])
+    names = sorted({r[1] for r in rows})
+    idx = {n: i for i, n in enumerate(names)}
+    path.write_text(json.dumps({"built": today, "companies": names, "jobs": [[r[0], idx[r[1]], r[2], r[3], r[4]] for r in rows]},
+                               ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
 if __name__ == "__main__":

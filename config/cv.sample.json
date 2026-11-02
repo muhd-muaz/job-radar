@@ -19,6 +19,7 @@
     "Other": "Junior data analyst working with SQL, Python and Power BI."
   },
   "letter_intro": "I am a junior data analyst in retail, moving into data engineering, with a BSc in Statistics.",
+  "letter_attribute": "I like fixing the cause, not the symptom: when the weekly report kept missing stores, I traced it to a late file and added a check that flags it before 8 am.",
   "jobs": [
     {
       "title": "Junior Data Analyst",

@@ -38,6 +38,14 @@ def in_malaysia(location):
     return any(w in loc for w in MY_WORDS)
 
 
+ALL = []  # every Malaysian job seen this run, any field: published as docs/all.json for the page's "search everything"
+
+
+def seen_any(c, title, location, url, posted=""):
+    if title and in_malaysia(location):
+        ALL.append([title.strip(), c["name"], location, url, (posted or "")[:10]])
+
+
 def title_wanted(title, targets):
     t = (title or "").lower()
     return any(k in t for k in targets)
@@ -53,7 +61,13 @@ def workday(c, targets, terms):
             posts = res.get("jobPostings", [])
             for p in posts:
                 path = p.get("externalPath", "")
-                if path in seen or not title_wanted(p.get("title"), targets):
+                if path in seen:
+                    continue
+                if not title_wanted(p.get("title"), targets):
+                    seen.add(path)
+                    loc = p.get("locationsText", "")  # "2 Locations" from a Malaysia search is kept, without a detail fetch
+                    seen_any(c, p.get("title"), "Malaysia (several locations)" if "locations" in loc.lower() else loc,
+                             f"https://{c['host']}/{c['site']}{path}")
                     continue
                 seen.add(path)
                 loc = p.get("locationsText", "")
@@ -77,6 +91,9 @@ def workday(c, targets, terms):
 
 def greenhouse(c, targets, terms):
     res = http_json(f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs?content=true")
+    for j in res.get("jobs", []):
+        if not title_wanted(j["title"], targets):
+            seen_any(c, j["title"], (j.get("location") or {}).get("name"), j.get("absolute_url", ""), j.get("updated_at"))
     return [{
         "id": f"gh:{c['slug']}:{j['id']}", "source": "greenhouse", "company": c["name"],
         "title": j["title"], "location": (j.get("location") or {}).get("name", ""),
@@ -91,7 +108,9 @@ def lever(c, targets, terms):
     out = []
     for j in res:
         loc = ", ".join((j.get("categories") or {}).get("allLocations") or [(j.get("categories") or {}).get("location", "")])
-        if title_wanted(j.get("text"), targets) and in_malaysia(loc):
+        if not title_wanted(j.get("text"), targets):
+            seen_any(c, j.get("text"), loc, j.get("hostedUrl", ""))
+        elif in_malaysia(loc):
             out.append({
                 "id": f"lv:{c['slug']}:{j['id']}", "source": "lever", "company": c["name"],
                 "title": j["text"], "location": loc, "url": j.get("hostedUrl", ""),
@@ -107,6 +126,9 @@ def smartrecruiters(c, targets, terms):
     out = []
     for j in res.get("content", []):
         if not title_wanted(j.get("name"), targets):
+            loc = j.get("location") or {}
+            seen_any(c, j.get("name"), ", ".join(filter(None, [loc.get("city"), "Malaysia"])),
+                     f"https://jobs.smartrecruiters.com/{c['slug']}/{j['id']}", j.get("releasedDate"))
             continue
         d = http_json(f"{base}/{j['id']}")
         sections = (d.get("jobAd") or {}).get("sections") or {}
