@@ -9440,6 +9440,44 @@
   "posts": 1
  },
  {
+  "id": "sr:grab:744000159050479",
+  "company": "Grab",
+  "title": "Assistant Manager, Growth Analytics",
+  "location": "Petaling Jaya, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/Grab/744000159050479-assistant-manager-growth-analytics",
+  "source": "smartrecruiters",
+  "score": 36,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "data visualization",
+   "sql"
+  ],
+  "missing": [
+   "stakeholder management",
+   "tableau"
+  ],
+  "learning": [
+   "tableau"
+  ],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 50,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 2
+ },
+ {
   "id": "wd:alcon:R-2026-48450",
   "company": "Alcon",
   "title": "Order Monitoring & Data Analyst (Tableau) - supporting China market",
@@ -9552,44 +9590,6 @@
   },
   "track": "Business and systems",
   "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "sr:grab:744000155411014",
-  "company": "Grab",
-  "title": "Assistant Manager, Growth Analytics",
-  "location": "Petaling Jaya, Malaysia",
-  "url": "https://jobs.smartrecruiters.com/Grab/744000155411014-assistant-manager-growth-analytics",
-  "source": "smartrecruiters",
-  "score": 36,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "data visualization",
-   "sql"
-  ],
-  "missing": [
-   "stakeholder management",
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 50,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
-  "reach_out": true,
   "posts": 1
  },
  {
@@ -10906,6 +10906,62 @@
   "learning": [],
   "projects": [],
   "salary": "RM 4,000 – 6,000",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:your job alert for data analyst:4 new jobs in malaysia match your preferences.",
+  "company": "4 new jobs in Malaysia match your preferences.",
+  "title": "Your job alert for data analyst",
+  "location": "<td",
+  "url": "https://www.linkedin.com/comm/jobs/search-results/?keywords=data+analyst&f_TPR=a1793461072-&f_SAL=f_SA_id_227001%3A276001%2C279001%24f_SA_id_226001%3A272015&geoId=106808692&origin=SEMANTIC_SEARCH_JOB_ALERT_EMAIL&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bj9fhp1NjSmyotWEM25UIzQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=19EY4cX8ri8Iw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-header_ssid_16262187156_fmid_ju8vz3~mvyv0r78~9w&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-header_ssid_16262187156_fmid_ju8vz3~mvyv0r78~9w-null-ju8vz3~mvyv0r78~9w-null-null&eid=ju8vz3-mvyv0r78-9w&otpToken=MThmZDE0ZTIxOWZkMzVhNTMyN2I0ZDExZTc4OGU0ODUxMTRlMzMxMTFkM2VkNmVmYWRjZjg3NzdiY2JjOWMyYmNmMjc2YTE0OTY1Yzk3MDg3MTdjZmMzYjczYjg3NDY1Mzk2NDU0MjBjOTQ3YmUwZTVjYzJjZmUwZWNhMjcyZDA1M2RlNGJjYzEyYWNkZjEyYjcsMiwx",
+  "source": "linkedin alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:specialist, prepaid insights & analytics:u mobile · kuala lumpur",
+  "company": "U Mobile · Kuala Lumpur",
+  "title": "Specialist, Prepaid Insights & Analytics",
+  "location": "<td class=\"job-card-flavor__container_redesign_shaded_background\" style=\"-webkit-text-size-adjust",
+  "url": "https://www.linkedin.com/comm/jobs/view/4432628837/?trackingId=KswJS%2FywuVWRQ5T4J0vR%2Bg%3D%3D&refId=GjRVFxQR8XJggasVEG%2B5Fg%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bj9fhp1NjSmyotWEM25UIzQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=19EY4cX8ri8Iw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4432628837_ssid_16262187156_fmid_ju8vz3~mvyv0r78~9w&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4432628837_ssid_16262187156_fmid_ju8vz3~mvyv0r78~9w-null-ju8vz3~mvyv0r78~9w-null-null&eid=ju8vz3-mvyv0r78-9w&otpToken=MThmZDE0ZTIxOWZkMzVhNTMyN2I0ZDExZTc4OGU0ODUxMTRlMzMxMTFkM2VkNmVmYWRjZjg3NzdiY2JjOWMyYmNmMjc2YTE0OTY1Yzk3MDg3MTdjZmMzYjczYjg3NDY1Mzk2NDU0MjBjOTQ3YmUwZTVjYzJjZmUwZWNhMjcyZDA1M2RlNGJjYzEyYWNkZjEyYjcsMiwx",
+  "source": "linkedin alert",
+  "score": 30,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
   "parts": {
    "Job title": 67,
    "Skills": 0,
@@ -14602,6 +14658,34 @@
    "Location": 50
   },
   "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:senior business intelligence analyst:ryt bank · greater kuala lumpur (on-site)",
+  "company": "Ryt Bank · Greater Kuala Lumpur (On-site)",
+  "title": "Senior Business Intelligence Analyst",
+  "location": "<td class=\"job-card-flavor__container_redesign_shaded_background\" style=\"-webki",
+  "url": "https://www.linkedin.com/comm/jobs/view/4473849069/?trackingId=5HvSOmRlX3Sf8iOa01Cq4w%3D%3D&refId=GjRVFxQR8XJggasVEG%2B5Fg%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bj9fhp1NjSmyotWEM25UIzQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=19EY4cX8ri8Iw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4473849069_ssid_16262187156_fmid_ju8vz3~mvyv0r78~9w&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4473849069_ssid_16262187156_fmid_ju8vz3~mvyv0r78~9w-null-ju8vz3~mvyv0r78~9w-null-null&eid=ju8vz3-mvyv0r78-9w&otpToken=MThmZDE0ZTIxOWZkMzVhNTMyN2I0ZDExZTc4OGU0ODUxMTRlMzMxMTFkM2VkNmVmYWRjZjg3NzdiY2JjOWMyYmNmMjc2YTE0OTY1Yzk3MDg3MTdjZmMzYjczYjg3NDY1Mzk2NDU0MjBjOTQ3YmUwZTVjYzJjZmUwZWNhMjcyZDA1M2RlNGJjYzEyYWNkZjEyYjcsMiwx",
+  "source": "linkedin alert",
+  "score": 10,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "BI and reporting",
   "reach_out": true,
   "posts": 1
  },
