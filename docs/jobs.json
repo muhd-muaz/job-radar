@@ -1680,6 +1680,42 @@
   "posts": 1
  },
  {
+  "id": "wd:ocbc:JR00012188",
+  "company": "Ocbc",
+  "title": "Data Entry Processor",
+  "location": "OCBC Malaysia, Menara GE2",
+  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Menara-GE2/Data-Entry-Processor_JR00012188",
+  "source": "workday",
+  "score": 70,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "kpi",
+   "requirements gathering",
+   "sla",
+   "statistics"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 100,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:avnet:JR-021291",
   "company": "Avnet",
   "title": "Business Analyst",
