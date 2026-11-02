@@ -391,6 +391,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
     <button class="btn2" id="cv-forget" hidden>Remove my CV</button>
     <a class="btn2" id="cv-template" download="my-cv.json">Template</a>
     <button class="btn2" id="cv-print" data-primary>Save as PDF</button>
+    <button class="btn2" id="cv-word" title="Download an editable copy that opens in Microsoft Word or Google Docs">Save as Word</button>
     <button class="btn2" id="cv-close" aria-label="Close">Close</button>
   </div></div>
   <p class="st bad" id="cv-msg" role="status" hidden style="max-width:1280px;margin:10px auto 0;padding:0 16px;font-size:14.5px"></p>
@@ -926,6 +927,24 @@ $("#cv-mode").addEventListener("click", e => {
   cvState.mode = b.dataset.v; $("#cv-mode").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderCv();
 });
 ["email", "phone"].forEach(k => $("#cv-" + k).addEventListener("input", e => { contact[k] = e.target.value.trim(); store.set("jr-contact", contact); renderCv(); }));
+// Editable copy: Word opens HTML saved as .doc, so the sheet is rewritten with Word-friendly markup (tables, not flexbox)
+function fileBase() {
+  const co = cvState.job?.company ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
+  return `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${{ cv: "CV", letter: "Cover_Letter" }[cvState.mode] || "Resume"}`;
+}
+$("#cv-word").addEventListener("click", () => {
+  const c = $("#sheet").cloneNode(true);
+  c.querySelectorAll(".rrow").forEach(r => r.outerHTML = `<table width="100%" cellpadding="0" cellspacing="0" style="margin-top:6pt"><tr><td><b>${r.children[0].innerHTML}</b></td><td align="right">${r.children[1].innerHTML}</td></tr></table>`);
+  c.querySelectorAll("[contenteditable]").forEach(e => e.removeAttribute("contenteditable"));
+  const css = `body,h1,h3,p,li,td{font-family:Calibri,Arial,sans-serif}body{font-size:10pt;color:#111}h1{font-size:20pt;margin:0 0 2pt}.contact{font-size:9pt;color:#333;margin-bottom:6pt}
+    h3{font-size:10.5pt;text-transform:uppercase;letter-spacing:.5pt;border-bottom:1pt solid #111;margin:10pt 0 3pt;padding-bottom:2pt}
+    p{margin:0 0 3pt}ul{margin:2pt 0 3pt}li{margin:0 0 2pt}.org{font-style:italic}.letter p{margin:0 0 10pt}a{color:#111}`;
+  const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8">
+    <style>@page{size:21cm 29.7cm;margin:1.6cm 1.9cm}${css}</style></head><body>${c.innerHTML}</body></html>`;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["\ufeff" + html], { type: "application/msword" }));
+  a.download = fileBase() + ".doc"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
 $("#cv-print").addEventListener("click", () => {
   const old = document.title, co = cvState.job ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
   document.title = `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${{ cv: "CV", letter: "Cover_Letter" }[cvState.mode] || "Resume"}`;   // becomes the PDF file name
