@@ -3809,6 +3809,62 @@
   "posts": 1
  },
  {
+  "id": "wd:bpinternational:RQ117295",
+  "company": "Bpinternational (bpCareers)",
+  "title": "Senior Data Engineer",
+  "location": "Malaysia - Kuala Lumpur",
+  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Senior-Data-Engineer_RQ117295-1",
+  "source": "workday",
+  "score": 59,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "git",
+   "incident management",
+   "kpi",
+   "python",
+   "requirements gathering",
+   "sql"
+  ],
+  "missing": [
+   "aws",
+   "azure",
+   "ci/cd",
+   "data modeling",
+   "data quality",
+   "databricks",
+   "mongodb",
+   "redshift",
+   "spark",
+   "stakeholder management"
+  ],
+  "learning": [
+   "aws",
+   "azure",
+   "databricks",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 47,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:dexcom:JR118601",
   "company": "Dexcom",
   "title": "Business Process Analyst",
@@ -8242,6 +8298,39 @@
   "posts": 1
  },
  {
+  "id": "wd:ocbc:JR00010735",
+  "company": "Ocbc",
+  "title": "Trade Finance Process Analyst",
+  "location": "OCBC Malaysia, Menara GE2",
+  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Menara-GE2/Trade-Finance-Process-Analyst_JR00010735",
+  "source": "workday",
+  "score": 43,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "excel"
+  ],
+  "missing": [
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "gh:genscript:4494601007",
   "company": "GenScript/ProBio",
   "title": "Senior Scientist in AI & Big Data Center",
@@ -10882,6 +10971,50 @@
   "posts": 1
  },
  {
+  "id": "wd:bpinternational:RQ116847",
+  "company": "Bpinternational (bpCareers)",
+  "title": "Senior Enterprise Technology Engineer (ServiceNow)",
+  "location": "Malaysia - Kuala Lumpur",
+  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Senior-Enterprise-Technology-Engineer--ServiceNow-_RQ116847",
+  "source": "workday",
+  "score": 33,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "kpi",
+   "requirements gathering"
+  ],
+  "missing": [
+   "agile",
+   "ci/cd",
+   "data modeling",
+   "data quality",
+   "itil",
+   "mongodb",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 27,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:citi:25872584",
   "company": "Citi",
   "title": "KYC Operations Analyst 1 - C09 - KUALA LUMPUR",
@@ -12571,6 +12704,41 @@
    "Entry-friendly": 50,
    "Full-time": 100,
    "Language": 100,
+   "Location": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:aia:JR-71586",
+  "company": "AIA",
+  "title": "Business Analyst & User Acceptance Testing (Hong Kong Market) - Cantonese Speaking",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Business-Analyst---User-Acceptance-Testing--Hong-Kong-Market----Cantonese-Speaking_JR-71586",
+  "source": "workday",
+  "score": 26,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "requirements gathering"
+  ],
+  "missing": [
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 23,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 0,
    "Location": 100
   },
   "track": "Business and systems",
@@ -17450,6 +17618,52 @@
   },
   "track": "Data analysis",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:rgare:J28915",
+  "company": "RGA",
+  "title": "Executive Director, Data and AI Enablement",
+  "location": "Malaysia, Kuala Lumpur",
+  "url": "https://rgare.wd1.myworkdayjobs.com/Careers/job/Malaysia-Kuala-Lumpur/Executive-Director--Data-and-AI-Enablement_J28915",
+  "source": "workday",
+  "score": 0,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "kpi",
+   "machine learning",
+   "statistics"
+  ],
+  "missing": [
+   "bigquery",
+   "data quality",
+   "databricks",
+   "snowflake",
+   "stakeholder management"
+  ],
+  "learning": [
+   "databricks",
+   "snowflake"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 43,
+   "Level": 0,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
   "posts": 1
  },
  {
