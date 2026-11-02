@@ -98,6 +98,44 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-71176",
+  "company": "AIA",
+  "title": "Associate, Data & Reporting Automation",
+  "location": "Putrajaya, MY-AIA Shared Services Malaysia",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Shared-Services-Malaysia/Associate--Data---Reporting-Automation_JR-71176",
+  "source": "workday",
+  "score": 93,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "dashboard",
+   "excel",
+   "power bi",
+   "python"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 100,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:grab:744000156928706",
   "company": "Grab",
   "title": "Data Scientist (Product Analytics)",
@@ -1286,6 +1324,48 @@
    "Location": 50
   },
   "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:evonik:R51651",
+  "company": "Evonik",
+  "title": "Data & AI Consultant",
+  "location": "Selangor",
+  "url": "https://evonik.wd3.myworkdayjobs.com/External_Careers/job/Selangor/Consultant-Data-Management---AI-Ready-Data_R51651-1",
+  "source": "workday",
+  "score": 72,
+  "first_seen": "2026-10-27",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "automation",
+   "erp",
+   "kpi",
+   "machine learning",
+   "power bi"
+  ],
+  "missing": [
+   "data quality",
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 62,
+   "Level": 70,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -2619,6 +2699,53 @@
    "Location": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:evonik:R52295",
+  "company": "Evonik",
+  "title": "Consultant SAP Cloud Data Management",
+  "location": "Selangor",
+  "url": "https://evonik.wd3.myworkdayjobs.com/External_Careers/job/Selangor/Consultant-SAP-Cloud-Data-Management_R52295",
+  "source": "workday",
+  "score": 63,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "dashboard",
+   "data pipeline",
+   "data visualization",
+   "erp",
+   "etl",
+   "power bi",
+   "requirements gathering"
+  ],
+  "missing": [
+   "azure",
+   "data modeling",
+   "data quality",
+   "stakeholder management"
+  ],
+  "learning": [
+   "azure"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 72,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -8055,48 +8182,6 @@
    "Location": 100
   },
   "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:evonik:R51651",
-  "company": "Evonik",
-  "title": "Consultant Data Management & AI-Ready Data",
-  "location": "Selangor",
-  "url": "https://evonik.wd3.myworkdayjobs.com/External_Careers/job/Selangor/Consultant-Data-Management---AI-Ready-Data_R51651-1",
-  "source": "workday",
-  "score": 42,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-02",
-  "matched": [
-   "automation",
-   "erp",
-   "kpi",
-   "machine learning",
-   "power bi"
-  ],
-  "missing": [
-   "data quality",
-   "process mapping",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 62,
-   "Level": 70,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
@@ -13646,6 +13731,38 @@
   },
   "track": "Business and systems",
   "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:ocbc:JR00012260",
+  "company": "Ocbc",
+  "title": "Team Lead - Enterprise Banking Department",
+  "location": "OCBC Malaysia, Penang",
+  "url": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Malaysia-Penang/Team-Lead---Enterprise-Banking-Department_JR00012260",
+  "source": "workday",
+  "score": 14,
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-02",
+  "matched": [
+   "excel"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 35,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "track": "Business and systems",
+  "reach_out": true,
   "posts": 1
  },
  {
