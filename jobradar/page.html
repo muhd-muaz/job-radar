@@ -338,6 +338,9 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
     <select id="min" aria-label="Minimum score">
       <option value="0">Any score</option><option value="40" selected>40 and up</option><option value="60">60 and up</option><option value="80">80 and up</option>
     </select>
+    <select id="src" aria-label="Which jobs">
+      <option value="all">All jobs</option><option value="mine">Added by me</option><option value="found">Found by the radar</option>
+    </select>
     <select id="sort" aria-label="Sort by">
       <option value="score">Best fit first</option><option value="new">Newest first</option><option value="company">Company A to Z</option>
     </select>
@@ -435,7 +438,7 @@ function nice(s) {
   return s.split(" ").map((w, i) => i && SMALL.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
 let marks = store.get("jr-marks", {});           // id -> "saved" | "applied"
-const state = { q: "", where: "local", min: 40, sort: "score" };
+const state = { q: "", where: "local", min: 40, sort: "score", src: "all" };
 const isLocal = j => D.preferred.some(w => (j.location + " ").toLowerCase().includes(w));
 const days = d => Math.round((new Date(D.today) - new Date(d)) / 864e5);
 const age = d => { const n = days(d); return n <= 0 ? "found today" : n === 1 ? "found yesterday" : `found ${n} days ago`; };
@@ -535,7 +538,9 @@ function reachBox(j) {
 
 function filtered() {
   const q = state.q.toLowerCase();
-  const list = D.jobs.filter(j => j.score >= state.min && (state.where === "all" || isLocal(j)) &&
+  // your own ads skip the score and place filters, so they never vanish from view
+  const list = D.jobs.filter(j => (state.src === "all" || (state.src === "mine") === !!j.mine) &&
+    (j.mine || j.score >= state.min && (state.where === "all" || isLocal(j))) &&
     (!q || [j.title, j.company, j.location, ...j.matched, ...j.missing].join(" ").toLowerCase().includes(q)));
   const by = { score: (a, b) => b.score - a.score, new: (a, b) => b.first_seen.localeCompare(a.first_seen) || b.score - a.score,
                company: (a, b) => a.company.localeCompare(b.company) };
@@ -545,7 +550,7 @@ function filtered() {
 function row(j) {
   const m = marks[j.id];
   const title = j.url ? `<a class="t" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="t">${esc(j.title)}</span>`;
-  const tags = (j.mine ? '<span class="tag mine">Added by you</span>' : j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
+  const tags = (j.mine ? `<span class="tag mine">Added by you${j.first_seen === D.today ? " today" : ", " + esc(fmtDate(j.first_seen))}</span>` : j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
     (j.closed ? '<span class="tag off">Closed</span>' : "") +
     (j.posts > 1 ? `<span class="tag warn" title="Posted ${j.posts} times. It may be hard to fill, or a listing that never closes.">Posted ${j.posts} times</span>` : "");
   const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(nice(s))}</span>`).join("") +
@@ -573,7 +578,7 @@ function row(j) {
         <div class="actions">
           ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
           <button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>
-          ${j.mine ? `<button class="btn2" data-unmine="${esc(j.id)}">Remove</button>` : ""}
+          ${j.mine ? `<button class="btn2" data-editmine="${esc(j.id)}">Edit</button><button class="btn2" data-unmine="${esc(j.id)}">Remove</button>` : ""}
           ${j.reach_out && (D.outreach.tones || D.outreach.body) ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
         </div>
         ${j.reach_out && (D.outreach.tones || D.outreach.body) ? reachBox(j) : ""}
@@ -1027,6 +1032,7 @@ $("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.
 $("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("#min").addEventListener("change", e => { state.min = +e.target.value; render(); });
 $("#sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+$("#src").addEventListener("change", e => { state.src = e.target.value; render(); });
 $("#where").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   state.where = b.dataset.v;
@@ -1092,14 +1098,23 @@ function parseAd(raw) {
     url, score: Math.min(score, 99), first_seen: D.today, matched: j.matched, missing: j.missing, track, projects: [], posts: 1 };
 }
 function loadMine() { D.jobs = D.jobs.filter(j => !j.mine).concat(store.get("jr-mine", []).map(m => ({ ...parseAd(m.raw), id: m.id, first_seen: m.added, url: parseAd(m.raw).url }))); }
+let editing = null;   // id of the ad being edited, if any
 $("#add-go").addEventListener("click", () => {
   const raw = $("#add-text").value.trim(); if (raw.length < 30) { $("#add-msg").textContent = "Paste the whole ad first."; return; }
-  const j = parseAd(raw), mine = store.get("jr-mine", []);
-  mine.push({ id: j.id, raw, added: D.today }); store.set("jr-mine", mine); loadMine(); $("#key-mine").hidden = false;
-  $("#add-text").value = ""; $("#add-msg").textContent = `Added “${j.title}”, estimated score ${j.score}.`;
-  state.min = 0; $("#min").value = "0"; render();
+  const j = parseAd(raw), mine = store.get("jr-mine", []), old = editing && mine.find(m => m.id === editing);
+  if (old) old.raw = raw; else mine.push({ id: j.id, raw, added: D.today });
+  store.set("jr-mine", mine); loadMine(); $("#key-mine").hidden = false;
+  $("#add-text").value = ""; $("#add-msg").textContent = `${old ? "Saved" : "Added"} “${j.title}”, estimated score ${j.score}.`;
+  editing = null; $("#add-go").textContent = "Add to my list"; render();
 });
 document.addEventListener("click", e => {
+  const ed = e.target.closest("[data-editmine]");
+  if (ed) {  // load the ad back into the box; saving replaces it and keeps its date, marks and place
+    const m = store.get("jr-mine", []).find(x => x.id === ed.dataset.editmine); if (!m) return;
+    editing = m.id; $("#addjob").open = true; $("#add-text").value = m.raw; $("#add-go").textContent = "Save changes";
+    $("#add-msg").textContent = "Editing. Add the link or fix any line, then save."; $("#addjob").scrollIntoView({ block: "start", behavior: "smooth" }); $("#add-text").focus();
+    return;
+  }
   const b = e.target.closest("[data-unmine]"); if (!b) return;
   store.set("jr-mine", store.get("jr-mine", []).filter(m => m.id !== b.dataset.unmine)); loadMine(); render();
 });

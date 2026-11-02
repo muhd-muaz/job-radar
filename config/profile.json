@@ -44,7 +44,12 @@
     "ai and data": 3,
     "data and ai": 3,
     "graduate data": 3,
-    "artificial intelligence & data": 3
+    "artificial intelligence & data": 3,
+    "data centre": 2,
+    "data center": 2,
+    "datacenter": 2,
+    "critical facilities": 2,
+    "dc operations": 2
   },
   "have_skills": {
     "python": 3,
@@ -66,7 +71,12 @@
     "pandas": 2,
     "scikit-learn": 1,
     "machine learning": 1,
-    "statistics": 1
+    "statistics": 1,
+    "cmms": 1,
+    "preventive maintenance": 1,
+    "incident management": 1,
+    "sla": 1,
+    "vendor management": 1
   },
   "learning_skills": [
     "dbt",
