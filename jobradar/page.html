@@ -754,7 +754,7 @@ function buildSheet(job, mode, keep, nproj = 2, other = 2) {
     return `<div class="rrow"><span>${esc(r.title)}</span><span>${esc(r.dates)}</span></div><div class="org">${esc(r.org)}, ${esc(r.where)}</div>
       <ul>${bs.map(b => `<li>${esc(b.text)}</li>`).join("")}</ul>`;
   }).join("");
-  const projs = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) })).sort((a, b) => b.s - a.s).slice(0, mode === "resume" ? nproj : 9);
+  const projs = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) + (p.pin ? 100 : 0) })).sort((a, b) => b.s - a.s).slice(0, mode === "resume" ? nproj : 9);
   const asked = job ? job.matched : [];
   const skills = Object.entries(C.skills).map(([g, list]) => {
     const sorted = list.slice().sort((a, b) => asked.includes(b) - asked.includes(a));
@@ -788,7 +788,7 @@ function buildLetter(job) {
   const C = CV(), now = C.jobs[0] || {}, track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
   const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 5 : 0);
   const best = now.bullets ? now.bullets.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s).slice(0, 2) : [];
-  const proj = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) })).sort((a, b) => b.s - a.s)[0];
+  const proj = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) + (p.pin ? 100 : 0) })).sort((a, b) => b.s - a.s)[0];
   const notes = C.skill_notes || {}, asked = job ? job.matched : [];
   const top = (asked.length ? asked : Object.values(C.skills)[0] || []).slice(0, 3).map(nice);
   const noted = asked.filter(s => notes[s])[0];
