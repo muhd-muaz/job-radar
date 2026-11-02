@@ -37,7 +37,14 @@
     "database developer": 2,
     "sql developer": 3,
     "data warehouse": 3,
-    "data pipeline": 3
+    "data pipeline": 3,
+    "graduate analyst": 2,
+    "ai & data": 3,
+    "data & ai": 3,
+    "ai and data": 3,
+    "data and ai": 3,
+    "graduate data": 3,
+    "artificial intelligence & data": 3
   },
   "have_skills": {
     "python": 3,
