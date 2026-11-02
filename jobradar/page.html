@@ -14,18 +14,18 @@
   color-scheme:light;
   --paper:#f3f5f4;--panel:#ffffff;--ink:#101a17;--ink-2:#33413b;--mute:#56635e;--rule:#d9e0dc;--rule-2:#e8ecea;
   --accent:#2a78d6;--on-accent:#fbfdff;--accent-ink:#1d5fae;--accent-soft:#e3edf9;--ring:#c9d3ce;--sweep:rgba(42,120,214,.16);
-  --have:#1b6b45;--have-soft:#e2f1e8;--gap:#8a4b0f;--gap-soft:#f6ebdc;
+  --have:#1b6b45;--have-soft:#e2f1e8;--mine:#6a3fc9;--mine-soft:#eee8fb;--gap:#8a4b0f;--gap-soft:#f6ebdc;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   color-scheme:dark;
   --paper:#101614;--panel:#151c19;--ink:#e8eeeb;--ink-2:#bcc7c2;--mute:#8d9a95;--rule:#27312d;--rule-2:#1d2522;
   --accent:#3987e5;--accent-ink:#8ab8f0;--accent-soft:#1a2a3d;--ring:#2c3833;--sweep:rgba(57,135,229,.18);
-  --have:#7fd1a6;--have-soft:#16291f;--gap:#e7b17a;--gap-soft:#2c2116}}
+  --have:#7fd1a6;--have-soft:#16291f;--mine:#b79cf5;--mine-soft:#241c38;--gap:#e7b17a;--gap-soft:#2c2116}}
 :root[data-theme="dark"]{
   color-scheme:dark;
   --paper:#101614;--panel:#151c19;--ink:#e8eeeb;--ink-2:#bcc7c2;--mute:#8d9a95;--rule:#27312d;--rule-2:#1d2522;
   --accent:#3987e5;--accent-ink:#8ab8f0;--accent-soft:#1a2a3d;--ring:#2c3833;--sweep:rgba(57,135,229,.18);
-  --have:#7fd1a6;--have-soft:#16291f;--gap:#e7b17a;--gap-soft:#2c2116}
+  --have:#7fd1a6;--have-soft:#16291f;--mine:#b79cf5;--mine-soft:#241c38;--gap:#e7b17a;--gap-soft:#2c2116}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
@@ -108,6 +108,9 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .sub .pay{color:var(--have);font-weight:500}
 .tag{display:inline-block;font-size:12px;font-weight:600;padding:1px 7px;border-radius:5px;margin-left:8px;vertical-align:1px;background:var(--accent-soft);color:var(--accent-ink)}
 .tag.warn{background:var(--gap-soft);color:var(--gap)}
+.tag.mine{background:var(--mine-soft);color:var(--mine)}
+.row.mine{box-shadow:inset 4px 0 0 var(--mine);background:color-mix(in srgb,var(--mine-soft) 45%,transparent)}
+#radar .blip.mine{fill:var(--mine);stroke:var(--mine)}
 .tag.off{background:var(--rule-2);color:var(--mute)}
 .mark{display:flex;gap:6px}
 .icon{appearance:none;border:1px solid var(--rule);background:var(--panel);color:var(--mute);width:44px;height:44px;border-radius:8px;display:grid;place-items:center;cursor:pointer}
@@ -116,6 +119,9 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .more{display:none;padding:0 4px 16px 84px}
 .row.open .more{display:block}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
+.addjob{border:1px solid var(--rule);border-radius:10px;background:var(--panel);padding:12px 16px;margin:0 0 14px}
+.addjob summary{cursor:pointer;font-weight:600;min-height:28px;display:flex;align-items:center}
+.addjob textarea{width:100%;height:160px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:14px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:8px 10px}
 #anyjobs{border:1px solid var(--rule);border-radius:10px;background:var(--panel);padding:14px 16px;margin:0 0 14px}
 #anyjobs h3{font:700 16px/1.3 "IBM Plex Sans",system-ui,sans-serif;margin:0 0 4px}
 #anyjobs ul{list-style:none;margin:8px 0 0;padding:0}
@@ -297,7 +303,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
         <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60; jobs under 40 are left off. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles.</li>
         <li data-n="3"><b>Tap a dot</b> to open the job and see its score broken down as a pizza chart.</li>
       </ol>
-      <div class="key"><span><i></i><b id="key-new" style="font-weight:400">New today</b></span><span><i class="o"></i>Seen before</span></div>
+      <div class="key"><span><i></i><b id="key-new" style="font-weight:400">New today</b></span><span><i class="o"></i>Seen before</span><span id="key-mine" hidden><i style="background:var(--mine);border-color:var(--mine)"></i>Added by you</span></div>
       <div class="paths">
         <button class="path" data-go="list">Browse today's jobs</button>
         <button class="path" data-go="resume" data-anchor="open-tool">Tailor your own resume</button>
@@ -317,6 +323,11 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 
 <main class="wrap">
 <section id="list" class="on">
+  <details class="addjob" id="addjob"><summary>Add a job ad from anywhere</summary>
+    <p class="why" style="margin:6px 0 8px">Paste an ad from JobStreet, LinkedIn or any company site. It's scored against your skills and added to this list, kept in this browser only and never uploaded. Start with <code>Title:</code>, <code>Company:</code> and <code>Location:</code> lines for the best match.</p>
+    <textarea id="add-text" aria-label="Job ad to add" placeholder="Title: Data Engineer&#10;Company: Example Sdn Bhd&#10;Location: Kuala Lumpur&#10;https://link-to-the-ad&#10;&#10;Paste the ad here…"></textarea>
+    <div class="actions"><button class="btn2" id="add-go" data-primary>Add to my list</button><span class="why" id="add-msg" role="status"></span></div>
+  </details>
   <div class="toolbar">
     <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Search title, company or skill" aria-label="Search jobs"></label>
@@ -534,13 +545,13 @@ function filtered() {
 function row(j) {
   const m = marks[j.id];
   const title = j.url ? `<a class="t" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="t">${esc(j.title)}</span>`;
-  const tags = (j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
+  const tags = (j.mine ? '<span class="tag mine">Added by you</span>' : j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
     (j.closed ? '<span class="tag off">Closed</span>' : "") +
     (j.posts > 1 ? `<span class="tag warn" title="Posted ${j.posts} times. It may be hard to fill, or a listing that never closes.">Posted ${j.posts} times</span>` : "");
   const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(nice(s))}</span>`).join("") +
                 j.missing.map(s => `<span class="chip gap">+ ${esc(nice(s))}</span>`).join("");
   const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
-  return `<div class="row${m === "applied" ? " applied" : ""}" id="r-${esc(j.id)}">
+  return `<div class="row${m === "applied" ? " applied" : ""}${j.mine ? " mine" : ""}" id="r-${esc(j.id)}">
     <div class="head" data-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Show details for ${esc(j.title)}">
       <div class="score${j.score < 40 ? " low" : ""}"><b class="num">${j.score}</b><div class="bar"><span style="width:${j.score}%"></span></div></div>
       <div>${title}${tags}
@@ -562,6 +573,7 @@ function row(j) {
         <div class="actions">
           ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
           <button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>
+          ${j.mine ? `<button class="btn2" data-unmine="${esc(j.id)}">Remove</button>` : ""}
           ${j.reach_out && (D.outreach.tones || D.outreach.body) ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
         </div>
         ${j.reach_out && (D.outreach.tones || D.outreach.body) ? reachBox(j) : ""}
@@ -641,7 +653,7 @@ function drawRadar(list) {
     const i = Math.max(0, TRACKS.indexOf(j.track)), pad = 0.08;
     const a = A0 + i * SPAN + pad + hash01(j.id + j.company) * (SPAN - 2 * pad), r = Math.max(7, rOf(j.score));
     const [x, y] = P(r, a);
-    return `<circle class="blip${j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="0" role="button" aria-label="${esc(j.title)}, ${esc(j.company)}, score ${j.score}"/>`;
+    return `<circle class="blip${j.mine ? " mine" : j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="0" role="button" aria-label="${esc(j.title)}, ${esc(j.company)}, score ${j.score}"/>`;
   }).join("");
   svg.innerHTML = `<defs><radialGradient id="sweepGrad" cx="0" cy="0" r="${R}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--accent)" stop-opacity=".22"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
@@ -1067,6 +1079,31 @@ $("#theme").addEventListener("click", () => {
   const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
   root.dataset.theme = dark ? "light" : "dark"; store.set("jr-theme", root.dataset.theme);
 });
+// Ads added on the page: parsed and scored here, kept in this browser (jr-mine), never sent anywhere
+function parseAd(raw) {
+  const lines = raw.split("\n").map(l => l.trim()).filter(Boolean), field = k => (lines.find(l => new RegExp("^" + k + "\\s*:", "i").test(l)) || "").replace(/^[^:]+:\s*/, "");
+  const plain = lines.filter(l => !/^(title|company|location|url)\s*:/i.test(l) && !/^https?:\/\//.test(l));
+  const url = field("url") || (raw.match(/https?:\/\/\S+/) || [""])[0];
+  const j = pastedJob(raw), title = field("title") || plain[0] || "Job ad";
+  const track = (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0], asked = j.matched.length + j.missing.length;
+  // an estimate: the job title's track plus how much of what the ad asks for you already have
+  const score = Math.round((track === "Other" ? 15 : 40) + 60 * (asked ? j.matched.length / asked : 0.3));
+  return { id: "mine:" + Date.now(), mine: true, raw, title, company: field("company") || plain[1] || "", location: field("location") || plain[2] || "",
+    url, score: Math.min(score, 99), first_seen: D.today, matched: j.matched, missing: j.missing, track, projects: [], posts: 1 };
+}
+function loadMine() { D.jobs = D.jobs.filter(j => !j.mine).concat(store.get("jr-mine", []).map(m => ({ ...parseAd(m.raw), id: m.id, first_seen: m.added, url: parseAd(m.raw).url }))); }
+$("#add-go").addEventListener("click", () => {
+  const raw = $("#add-text").value.trim(); if (raw.length < 30) { $("#add-msg").textContent = "Paste the whole ad first."; return; }
+  const j = parseAd(raw), mine = store.get("jr-mine", []);
+  mine.push({ id: j.id, raw, added: D.today }); store.set("jr-mine", mine); loadMine(); $("#key-mine").hidden = false;
+  $("#add-text").value = ""; $("#add-msg").textContent = `Added “${j.title}”, estimated score ${j.score}.`;
+  state.min = 0; $("#min").value = "0"; render();
+});
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-unmine]"); if (!b) return;
+  store.set("jr-mine", store.get("jr-mine", []).filter(m => m.id !== b.dataset.unmine)); loadMine(); render();
+});
+loadMine(); $("#key-mine").hidden = !D.jobs.some(j => j.mine);
 render();
 </script>
 </body>
