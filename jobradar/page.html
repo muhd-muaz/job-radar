@@ -228,6 +228,7 @@ footer a{color:var(--ink-2)}
 .sheet .letter{margin-top:26px;font-size:10.5pt;line-height:1.5;outline:none}
 .sheet .letter p{margin:0 0 12px}
 .sheet .letter ul{margin:0 0 12px;padding-left:18px}
+.sheet .letter .sign{margin-top:36px;font-weight:600}
 .sheet .letter li{margin:0 0 6px}
 .sheet .letter:focus{box-shadow:0 0 0 2px #2a78d6 inset;border-radius:4px}
 .sheet .rrow{display:flex;justify-content:space-between;gap:12px;font-weight:600;margin-top:6px}
@@ -799,9 +800,17 @@ function buildSheet(job, mode, keep, nproj = 2, other = 2) {
     ${mode === "cv" ? "<p>References available on request.</p>" : ""}`;
 }
 // Cover letter: built from the CV's most relevant lines for this job, plus a few answers only the applicant can give
-const letterInfo = store.get("jr-letter", { why: "", manager: "", start: "", source: "" });
+// Answers are kept per job: "where you saw it", the manager's name and "why this company" belong to one ad only.
+// The old single set of answers carried one ad's source into every letter, so only "start" is kept from it.
+const letterStore = (o => o.jobs ? o : { start: o.start || "", jobs: {} })(store.get("jr-letter", {}));
+const letterKey = job => !job ? "general" : job.id === "pasted" ? "p:" + job.title + "|" + job.company : job.id;
+const letterFor = job => ({ manager: "", source: "", why: "", ...(letterStore.jobs[letterKey(job)] || {}), start: letterStore.start || "" });
+// "Pipeline that runs…" reads as "Job Radar, a pipeline that runs…"; "Joined four datasets…" as "For X, I joined…"
+const projLine = p => { const w = p.text.split(" ")[0], t = p.text.charAt(0).toLowerCase() + p.text.slice(1).replace(/\.$/, "");
+  return esc(/ed$/.test(w) ? `Outside work, for ${p.name}, I ${t}.` : `Outside work, I built ${p.name}, ${/^(a|an) /i.test(p.text) ? "" : "a "}${t}.`); };
 function buildLetter(job) {
-  // structure follows JobStreet's free cover letter template: opener, then experience / skills / achievement, then close
+  // Standard business letter: sender, date, recipient, subject, four short paragraphs (application, experience,
+  // skills and project, fit), close. Written without contractions; every sentence can still be edited on the page.
   const C = CV(), now = C.jobs[0] || {}, track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
   const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 5 : 0);
   const best = now.bullets ? now.bullets.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s).slice(0, 2) : [];
@@ -810,31 +819,33 @@ function buildLetter(job) {
   const top = (asked.length ? asked : Object.values(C.skills)[0] || []).slice(0, 3).map(nice);
   const noted = asked.filter(s => notes[s])[0];
   const learning = (job ? job.missing.filter(s => D.learning.includes(s)) : []).map(nice);
-  const role = job ? job.title : "the advertised", co = job?.company || "your company", L = letterInfo;
+  // "GSR TECHNOLOGY LIMITED" -> "GSR Technology Limited": keep short acronyms, soften shouting names
+  const tidy = n => n === n.toUpperCase() && /[A-Z]{4}/.test(n) ? n.replace(/[A-Z]+/g, w => w.length <= 3 && !/^(SDN|BHD)$/.test(w) ? w : w[0] + w.slice(1).toLowerCase()) : n;
+  const L = letterFor(job), co = tidy(job?.company || ""), role = job ? job.title : "";
   const lower = t => t.charAt(0).toLowerCase() + t.slice(1).replace(/\.$/, "");
   const ct = MYCV ? { email: contact.email || C.email, phone: contact.phone || C.phone } : { email: D.cv.email, phone: D.cv.phone };
   const today = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
-  const seen = L.source ? ` advertised on ${esc(L.source)}` : "";
-  const opener = L.why
-    ? `${esc(L.why)} That's why I was excited to see the ${esc(role)} position at ${esc(co)}${seen}.`
-    : `I'm starting out my career in ${esc(TRACK_WORDS[track] || "data")} with a strong focus on ${esc(list3(top))}. That's why the ${esc(role)} role at ${esc(co)}${seen} is so appealing to me.`;
-  return `<h1>${esc(C.name)}</h1><div class="contact">${[ct.phone, ct.email, C.location].filter(Boolean).map(esc).join("<br>")}</div>
+  const where = job?.location && !/several|^malaysia$/i.test(job.location) ? job.location : "";
+  const p1 = `I am writing to apply for ${role ? `the ${esc(role)} position` : "a suitable position"}${co ? ` at ${esc(co)}` : ""}${L.source ? `, as advertised on ${esc(L.source)}` : ""}.`
+    + (L.why ? " " + esc(L.why) : "") + (C.letter_intro ? " " + esc(C.letter_intro) : "");
+  const p2 = best.length ? `In my current role${now.org ? ` at ${esc(now.org)}` : ""}, I ${esc(lower(best[0].text))}.`
+    + (best[1] ? ` I also ${esc(lower(best[1].text))}.` : "") : "";
+  const p3 = `This role draws on ${esc(list3(top))}, which I have used in practice.`
+    + (noted ? ` With ${esc(nice(noted))}, I ${esc(lower(notes[noted]))}.` : "")
+    + (proj ? " " + projLine(proj) : "")
+    + (learning.length ? ` I am currently learning ${esc(list3(learning))}, which the role also mentions.` : "");
+  const p4 = C.letter_attribute ? esc(C.letter_attribute) : "";
+  const p5 = `I would welcome the opportunity to discuss how I could contribute to ${co ? esc(co) : "your team"}.`
+    + (L.start ? ` I am available to start ${esc(L.start)}.` : "") + " Thank you for your time and consideration.";
+  return `<h1>${esc(C.name)}</h1><div class="contact">${[ct.phone, ct.email, C.location].filter(Boolean).map(esc).join(" · ")}</div>
     <div class="letter" contenteditable="true" spellcheck="true">
     <p>${today}</p>
-    <p>${L.manager ? esc(L.manager) + "<br>" : ""}${esc(co.replace(/^your company$/, "Hiring Manager"))}</p>
+    <p>${L.manager ? esc(L.manager) : "The Hiring Manager"}${co ? "<br>" + esc(co) : ""}${where ? "<br>" + esc(where) : ""}</p>
+    <p><b>Re: Application for ${role ? esc(role) : "employment"}</b></p>
     <p>${L.manager ? `Dear ${esc(L.manager)},` : "Dear Hiring Manager,"}</p>
-    <p><b>Re: ${esc(job ? job.title : "Job application")}${job ? " position" : ""}</b></p>
-    <p>${opener}</p>
-    <p>I'm confident that I am a great match for the role, and can use my skills, experience and attributes to help ${esc(co)} reach its goals:</p>
-    <ul>
-      ${C.letter_intro ? `<li><b>Experience:</b> ${esc(C.letter_intro)}${best[0] ? ` In my current role, I ${esc(lower(best[0].text))}.` : ""}</li>` : best[0] ? `<li><b>Experience:</b> I ${esc(lower(best[0].text))}.</li>` : ""}
-      <li><b>Skills:</b> ${esc(list3(top))}${noted ? `. With ${esc(nice(noted))}, I ${esc(lower(notes[noted]))}` : ""}.${learning.length ? ` I'm also learning ${esc(list3(learning))}, which the role mentions.` : ""}</li>
-      ${C.letter_attribute ? `<li><b>Attributes:</b> ${esc(C.letter_attribute)}</li>` : ""}
-      ${best[1] ? `<li><b>Achievement:</b> I ${esc(lower(best[1].text))}.</li>` : proj ? `<li><b>Achievement:</b> I built ${esc(proj.name)}: ${esc(lower(proj.text))}.</li>` : ""}
-    </ul>
-    <p>I welcome the opportunity to speak with you in more detail about this position and how I could use my skills to benefit your organisation.${L.start ? ` I can start ${esc(L.start)}.` : ""}</p>
-    <p>Thank you for considering my application. I look forward to hearing from you.</p>
-    <p>Yours sincerely,<br>${esc(C.name.replace(/\s*\(sample\)/, ""))}</p></div>`;
+    ${[p1, p2, p3, p4, p5].filter(Boolean).map(t => `<p>${t}</p>`).join("\n    ")}
+    <p>${L.manager ? "Yours sincerely" : "Yours faithfully"},</p>
+    <p class="sign">${esc(C.name.replace(/\s*\(sample\)/, ""))}</p></div>`;
 }
 function renderCv() {
   const job = cvState.job, sheet = $("#sheet");
@@ -855,11 +866,11 @@ function renderCv() {
   ["email", "phone"].forEach(k => { const f = $("#cv-" + k); f.disabled = !MYCV;
     if (document.activeElement !== f) f.value = MYCV ? contact[k] || CV()[k] || "" : D.cv[k] || ""; });
   const gp = CV().gap_plan || D.cv.gap_plan || {}, notes = CV().skill_notes || {};
-  const LI = [["manager", "Hiring manager's name", "Leave blank for: Dear Hiring Manager"], ["source", "Where you saw the ad", "e.g. JobStreet, LinkedIn"],
+  const LI = [["manager", "Hiring manager's name", "Leave blank for: Dear Hiring Manager"], ["source", "Where you saw this ad (optional)", "e.g. JobStreet or LinkedIn. Leave blank to skip"],
     ["why", "Why this company? (your opening sentence)", "e.g. I've used your app for years and want to work on the data behind it."], ["start", "When you can start", "e.g. after one month's notice"]];
   const letterPanel = cvState.mode === "letter" ? `<div class="panel" style="margin-bottom:16px"><h4>A few answers only you can give</h4>
       <p class="why" style="margin-top:0">The letter uses your most relevant work lines and project for this job. Fill these in, then click the letter to edit any sentence before saving as PDF.</p>
-      ${LI.map(([k, l, ph]) => `<label class="fld" style="display:block;margin-top:10px">${l}<input data-letter="${k}" value="${esc(letterInfo[k] || "")}" placeholder="${esc(ph)}" style="display:block;width:100%;height:42px;margin-top:4px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px"></label>`).join("")}</div>` : "";
+      ${LI.map(([k, l, ph]) => `<label class="fld" style="display:block;margin-top:10px">${l}<input data-letter="${k}" value="${esc(letterFor(job)[k] || "")}" placeholder="${esc(ph)}" style="display:block;width:100%;height:42px;margin-top:4px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;padding:0 12px"></label>`).join("")}</div>` : "";
   $("#fitnotes").innerHTML = letterPanel + (job ? `<div class="panel">
       <h4>Keywords you can honestly claim</h4>
       <div class="chips">${job.matched.map(s => `<span class="chip have">${esc(nice(s))}</span>`).join("") || "<span>None tracked in this ad.</span>"}</div>
@@ -881,14 +892,15 @@ const TRACK_KEYS = [["Data centre", /data cent(er|re)|datacent|critical facilit|
   ["BI and reporting", /\bbi\b|business intelligence|power bi|reporting|dashboard/], ["Data science", /data scientist|machine learning/],
   ["Data analysis", /data analyst|analytics|insight|data/], ["Business and systems", /business analyst|systems? analyst|erp|sap|application support|analyst/]];
 function pastedJob(raw) {
-  const C = CV(), t = raw.toLowerCase(), title = raw.trim().split("\n")[0].slice(0, 90) || "Pasted job ad";
+  // same reading as the Add a job box: markdown links, filler lines and the company line are handled there
+  const ad = adFields(raw), C = CV(), t = raw.toLowerCase(), title = (ad.title || "Pasted job ad").slice(0, 90);
   // in the order the ad mentions them: what an ad names first is usually what it cares about most
   const at = rx => Math.min(...rx.map(r => { const m = r.exec(t); return m ? m.index : Infinity; }));
   const asked = FIND.map(([s, rx]) => [s, at(rx)]).filter(([, i]) => i < Infinity).sort((a, b) => a[1] - b[1]).map(([s]) => s);
   const mine = new Set(C.jobs.flatMap(j => j.bullets.flatMap(b => b.tags)).concat(...Object.values(C.skills)).map(x => x.toLowerCase()));
   if ([...mine].some(x => x.startsWith("malay"))) mine.add("bahasa malaysia");   // "Malay (native)" answers a Bahasa Malaysia requirement
   const stop = new Set("about above after again their there these those which while would should could where other being having years skills ability strong working experience candidate requirements responsibilities".split(" "));
-  return { id: "pasted", raw, title, company: "", track: (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0],
+  return { id: "pasted", raw, title, company: ad.company || "", location: ad.location || "", track: (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0],
     matched: asked.filter(s => mine.has(s)), missing: asked.filter(s => !mine.has(s)),
     adWords: new Set(t.split(/[^a-z0-9+#]+/).filter(w => w.length > 4 && !stop.has(w))) };
 }
@@ -989,7 +1001,10 @@ $("#cv-lock").addEventListener("click", async () => {
 });
 $("#fitnotes").addEventListener("change", e => {
   const k = e.target.dataset?.letter; if (!k) return;
-  letterInfo[k] = e.target.value.trim(); store.set("jr-letter", letterInfo); renderCv();
+  const v = e.target.value.trim();
+  if (k === "start") letterStore.start = v;
+  else { const key = letterKey(cvState.job); letterStore.jobs[key] = { ...(letterStore.jobs[key] || {}), [k]: v }; }
+  store.set("jr-letter", letterStore); renderCv();
 });
 $("#fitnotes").addEventListener("click", e => {
   if (!e.target.closest("#ad-go")) return;
@@ -1086,7 +1101,7 @@ $("#theme").addEventListener("click", () => {
   root.dataset.theme = dark ? "light" : "dark"; store.set("jr-theme", root.dataset.theme);
 });
 // Ads added on the page: parsed and scored here, kept in this browser (jr-mine), never sent anywhere
-function parseAd(raw) {
+function adFields(raw) {
   // JobStreet and LinkedIn copies carry links as [text](url) or bare URLs, and filler lines like "View all jobs"
   const urls = [...raw.matchAll(/https?:\/\/[^\s)\]]+/g)].map(m => m[0]);
   raw = raw.replace(/\[([^\]]*)\]\((https?:[^)]*)\)/g, "$1");
@@ -1095,11 +1110,14 @@ function parseAd(raw) {
   const plain = lines.filter(l => !/^(title|company|location|url)\s*:/i.test(l) && !/^https?:\/\//.test(l));
   const url = field("url") || urls.find(u => /\/job\/|\/jobs\/view\/|viewjob/.test(u)) || urls[0] || "";
   const place = plain.slice(1, 8).find(l => l.length < 60 && /kuala lumpur|selangor|petaling|shah alam|cyberjaya|putrajaya|penang|johor|malaysia|klang|subang|remote/i.test(l));
-  const j = pastedJob(raw), title = field("title") || plain[0] || "Job ad";
+  return { raw, url, title: field("title") || plain[0] || "", company: field("company") || plain[1] || "", location: field("location") || place || "" };
+}
+function parseAd(raw) {
+  const { url, title: t0, company, location } = adFields(raw), j = pastedJob(raw), title = t0 || "Job ad";
   const track = (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0], asked = j.matched.length + j.missing.length;
   // an estimate: the job title's track plus how much of what the ad asks for you already have
   const score = Math.round((track === "Other" ? 15 : 40) + 60 * (asked ? j.matched.length / asked : 0.3));
-  return { id: "mine:" + Date.now(), mine: true, raw, title, company: field("company") || plain[1] || "", location: field("location") || place || "",
+  return { id: "mine:" + Date.now(), mine: true, raw, title, company, location,
     url, score: Math.min(score, 99), first_seen: D.today, matched: j.matched, missing: j.missing, track, projects: [], posts: 1 };
 }
 function loadMine() { D.jobs = D.jobs.filter(j => !j.mine).concat(store.get("jr-mine", []).map(m => ({ ...parseAd(m.raw), id: m.id, first_seen: m.added, url: parseAd(m.raw).url }))); }
