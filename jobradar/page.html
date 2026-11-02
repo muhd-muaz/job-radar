@@ -1087,14 +1087,19 @@ $("#theme").addEventListener("click", () => {
 });
 // Ads added on the page: parsed and scored here, kept in this browser (jr-mine), never sent anywhere
 function parseAd(raw) {
-  const lines = raw.split("\n").map(l => l.trim()).filter(Boolean), field = k => (lines.find(l => new RegExp("^" + k + "\\s*:", "i").test(l)) || "").replace(/^[^:]+:\s*/, "");
+  // JobStreet and LinkedIn copies carry links as [text](url) or bare URLs, and filler lines like "View all jobs"
+  const urls = [...raw.matchAll(/https?:\/\/[^\s)\]]+/g)].map(m => m[0]);
+  raw = raw.replace(/\[([^\]]*)\]\((https?:[^)]*)\)/g, "$1");
+  const noise = /^(view all jobs|full time|part time|contract|casual|posted \d|rm\s?[\d,]|apply|save|high application)/i;
+  const lines = raw.split("\n").map(l => l.trim()).filter(l => l && !noise.test(l)), field = k => (lines.find(l => new RegExp("^" + k + "\\s*:", "i").test(l)) || "").replace(/^[^:]+:\s*/, "");
   const plain = lines.filter(l => !/^(title|company|location|url)\s*:/i.test(l) && !/^https?:\/\//.test(l));
-  const url = field("url") || (raw.match(/https?:\/\/\S+/) || [""])[0];
+  const url = field("url") || urls.find(u => /\/job\/|\/jobs\/view\/|viewjob/.test(u)) || urls[0] || "";
+  const place = plain.slice(1, 8).find(l => l.length < 60 && /kuala lumpur|selangor|petaling|shah alam|cyberjaya|putrajaya|penang|johor|malaysia|klang|subang|remote/i.test(l));
   const j = pastedJob(raw), title = field("title") || plain[0] || "Job ad";
   const track = (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0], asked = j.matched.length + j.missing.length;
   // an estimate: the job title's track plus how much of what the ad asks for you already have
   const score = Math.round((track === "Other" ? 15 : 40) + 60 * (asked ? j.matched.length / asked : 0.3));
-  return { id: "mine:" + Date.now(), mine: true, raw, title, company: field("company") || plain[1] || "", location: field("location") || plain[2] || "",
+  return { id: "mine:" + Date.now(), mine: true, raw, title, company: field("company") || plain[1] || "", location: field("location") || place || "",
     url, score: Math.min(score, 99), first_seen: D.today, matched: j.matched, missing: j.missing, track, projects: [], posts: 1 };
 }
 function loadMine() { D.jobs = D.jobs.filter(j => !j.mine).concat(store.get("jr-mine", []).map(m => ({ ...parseAd(m.raw), id: m.id, first_seen: m.added, url: parseAd(m.raw).url }))); }
