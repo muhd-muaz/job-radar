@@ -414,7 +414,8 @@ const store = {
 // Skill names in Title Case ("data cleaning" -> "Data Cleaning"), with the usual spellings for acronyms and brands
 const NICE = { sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Power BI", "power query": "Power Query (M)", sqlite: "SQLite",
   kpi: "KPIs", erp: "ERP", git: "Git", "ci/cd": "CI/CD", aws: "AWS", gcp: "GCP", uat: "UAT", "data pipeline": "Data Pipelines", dbt: "dbt",
-  sap: "SAP", api: "API", nosql: "NoSQL", pyspark: "PySpark", javascript: "JavaScript", r: "R" };
+  sap: "SAP", api: "API", nosql: "NoSQL", pyspark: "PySpark", javascript: "JavaScript", r: "R",
+  sla: "SLA Reporting", cmms: "CMMS", itil: "ITIL", dcim: "DCIM", ups: "UPS", hvac: "HVAC" };
 const SMALL = new Set(["and", "or", "of", "for", "the", "to", "in", "on", "with"]);
 function nice(s) {
   if (NICE[s]) return NICE[s];
@@ -491,7 +492,7 @@ function explain(j) {
 }
 
 // ---------- Cold-email draft for senior roles in my track ----------
-const TRACK_WORDS = { "Data engineering": "data engineering", "BI and reporting": "BI and reporting", "Data analysis": "data analysis",
+const TRACK_WORDS = { "Data centre": "data centre operations", "Data engineering": "data engineering", "BI and reporting": "BI and reporting", "Data analysis": "data analysis",
   "Data science": "data science", "Business and systems": "business or systems analysis", "Other": "data" };
 const list3 = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a[0] || "";
 // The CV in use: the one loaded into this browser, else the public sample. Real CVs never reach the server.
@@ -744,7 +745,7 @@ function rel(tags, job, text = "") {
 }
 function buildSheet(job, mode, keep, nproj = 2) {
   const C = CV(), track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
-  const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 3 : 0);
+  const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 5 : 0);
   const rank = list => list.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s);
   const jobsHtml = C.jobs.map((r, k) => {
     let bs = rank(r.bullets);
@@ -784,7 +785,7 @@ const letterInfo = store.get("jr-letter", { why: "", manager: "", start: "", sou
 function buildLetter(job) {
   // structure follows JobStreet's free cover letter template: opener, then experience / skills / achievement, then close
   const C = CV(), now = C.jobs[0] || {}, track = job?.track && C.summary[job.track] ? job.track : "Data engineering";
-  const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 3 : 0);
+  const score = b => rel(b.tags, job, b.text) * 2 + (b.tracks.includes(track) ? 5 : 0);
   const best = now.bullets ? now.bullets.map((b, i) => ({ ...b, s: score(b) - i * 0.01 })).sort((a, b) => b.s - a.s).slice(0, 2) : [];
   const proj = C.projects.map(p => ({ ...p, s: rel(p.tags, job, p.text) })).sort((a, b) => b.s - a.s)[0];
   const notes = C.skill_notes || {}, asked = job ? job.matched : [];
@@ -858,13 +859,16 @@ function renderCv() {
 }
 const FIND = Object.entries(D.skills).map(([s, al]) => [s, (s.length > 1 ? [s] : []).concat(al).filter(t => t.trim())
   .map(t => new RegExp("(?<![a-z0-9])" + t.trim().toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![a-z0-9])"))]);
-const TRACK_KEYS = [["Data engineering", /data engineer|analytics engineer|etl|data pipeline|data platform|data warehouse|data integration|big data|database|sql developer/],
+const TRACK_KEYS = [["Data centre", /data cent(er|re)|datacent|critical facilit|mission critical|\bdcim\b|\bnoc\b/], ["Data engineering", /data engineer|analytics engineer|etl|data pipeline|data platform|data warehouse|data integration|big data|database|sql developer/],
   ["BI and reporting", /\bbi\b|business intelligence|power bi|reporting|dashboard/], ["Data science", /data scientist|machine learning/],
   ["Data analysis", /data analyst|analytics|insight|data/], ["Business and systems", /business analyst|systems? analyst|erp|sap|application support|analyst/]];
 function pastedJob(raw) {
   const C = CV(), t = raw.toLowerCase(), title = raw.trim().split("\n")[0].slice(0, 90) || "Pasted job ad";
-  const asked = FIND.filter(([, rx]) => rx.some(r => r.test(t))).map(([s]) => s);
+  // in the order the ad mentions them: what an ad names first is usually what it cares about most
+  const at = rx => Math.min(...rx.map(r => { const m = r.exec(t); return m ? m.index : Infinity; }));
+  const asked = FIND.map(([s, rx]) => [s, at(rx)]).filter(([, i]) => i < Infinity).sort((a, b) => a[1] - b[1]).map(([s]) => s);
   const mine = new Set(C.jobs.flatMap(j => j.bullets.flatMap(b => b.tags)).concat(...Object.values(C.skills)).map(x => x.toLowerCase()));
+  if ([...mine].some(x => x.startsWith("malay"))) mine.add("bahasa malaysia");   // "Malay (native)" answers a Bahasa Malaysia requirement
   const stop = new Set("about above after again their there these those which while would should could where other being having years skills ability strong working experience candidate requirements responsibilities".split(" "));
   return { id: "pasted", raw, title, company: "", track: (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0],
     matched: asked.filter(s => mine.has(s)), missing: asked.filter(s => !mine.has(s)),
