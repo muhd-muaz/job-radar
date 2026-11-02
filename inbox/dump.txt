@@ -2,3 +2,185 @@ PASTE JOB ADS BELOW THE LINE. Old or new, as many as you like.
 Put a line with --- between ads (or start each ad with its link). The daily run reads everything,
 removes duplicates, files the ads away and empties this file again.
 ==================== PASTE BELOW ====================
+DevOps / Full-Stack / Data Engineer – Fresh Graduates Welcome
+
+GSR TECHNOLOGY LIMITED 
+View all jobs
+Kuala Lumpur
+Engineering - Software (Information & Communication Technology)
+Full time
+RM 5,000 – RM 7,000 per month
+Posted 18d ago
+High application volume
+
+About Us
+We are a global internet and technology company dedicated to developing innovative products and services that improve people's lives worldwide. Our businesses span social platforms, fintech, cloud computing, advertising, entertainment (games, video, music, literature), and artificial intelligence. We are committed to driving technological innovation and creating value for users, partners, and society.
+
+Role Overview
+We are looking for passionate engineers to join our Kuala Lumpur team. Based on your experience and interest, you may apply for one of the following roles:
+
+Role 1 – DevOps Engineer – Fresh graduates welcome
+
+Role 2 – Full-Stack Developer (AI-Enabled Projects) – 3+ years experience
+
+Role 3 – Full-Stack Developer (Middle Platform / Agent Tools) – Fresh graduates welcome
+
+Role 4 – Data Engineer – Fresh graduates or up to 1 year experience
+
+Key Responsibilities
+Role 1 – DevOps Engineer
+Responsible for deployment, change, issue triage, and infrastructure management of overseas games and relevant components and systems, such as game monitoring systems and login services.
+
+Responsible for monitoring and dashboarding for game observability, ensuring the game is reliable, scalable, and secure.
+
+Understand game architecture, analyze, evaluate, and respond to potential risks such as hidden issues and performance bottlenecks.
+
+Responsible for daily communication and coordination between various teams.
+
+Role 2 – Full-Stack Developer (AI-Enabled Projects)
+Responsible for full-stack development of PC and mobile projects; build front-end interfaces based on React and Vue frameworks; develop back-end APIs with Python, Go, or Node.js; complete database design, service deployment, and operations.
+
+Empower business with AI technology; develop and iterate intelligent modules such as LLM docking, intelligent interaction, AI visualization, and intelligent recommendation.
+
+Complete front-end and back-end data joint debugging, interface encapsulation, data verification, and exception handling; ensure system performance, data security, and cross-browser compatibility.
+
+Deeply participate in requirement analysis, technology selection, architecture design, code review, and technical documentation.
+
+Responsible for front-end engineering construction, version control, and automated build; troubleshoot online problems and complete version iterations.
+
+Role 3 – Full-Stack Developer (Middle Platform / Agent Tools)
+Develop and maintain full-stack projects for the middle-platform team, including backend services, APIs, and frontend pages.
+
+Implement basic algorithm logic based on business requirements, and work with algorithm engineers to turn their solutions into production code.
+
+Take part in building LLM-based Agent tools, such as prompt tuning and tool-calling integration.
+
+Use SQL to query and process data and to build business reports.
+
+Communicate proactively with team members and deliver tasks on time and to a high standard.
+
+Role 4 – Data Engineer
+Perform ETL (Extract, Transform, Load) processes on large and complex transaction datasets to support business reporting, modelling, and analytical needs.
+
+Develop, maintain, and optimise data processing pipelines for data modelling, analysis, and business intelligence.
+
+Work with relational and distributed databases to extract, transform, process, and manage large volumes of data efficiently.
+
+Write and optimise SQL queries and data processing scripts to ensure data accuracy, performance, and reliability.
+
+Support the development of batch and streaming data pipelines for big data processing and analytics.
+
+Collaborate with business stakeholders and cross-functional teams to understand data requirements, conduct analysis, and deliver effective data solutions.
+
+Communicate with China-based stakeholders in Mandarin to gather business requirements, clarify technical specifications, and discuss data-related issues.
+
+Required Qualifications
+For Role 1 – DevOps Engineer / Jr. SRE (Tech Ops)
+Bachelor's degree or higher in Computer Science, Software Engineering, or a related field.
+
+Proficiency in at least one major cloud service provider (e.g., AWS, Azure, Google Cloud, Alibaba Cloud, Tencent Cloud, or Huawei Cloud) is a plus.
+
+Prior experience in cloud resource management, O&M, monitoring, cost optimization, and security configuration is a plus.
+
+Proficient in scripting and programming languages such as Bash, Python, and SQL.
+
+Bilingual proficiency in Chinese and English.
+
+Excellent English communication skills, a strong ability to learn, and proven analytical and problem-solving capabilities.
+
+High sense of responsibility and a collaborative teamwork spirit.
+
+Ability to work night shifts is preferred.
+
+For Role 2 – Full-Stack Developer (AI-Enabled Projects)
+Bachelor's degree or above in Computer Science or a related field.
+
+3+ years of development experience, with full-stack project experience and the ability to handle frontend-backend integration independently.
+
+Proficient in HTML, CSS, ES6+, and JavaScript, with solid practical development experience in Vue and React; skilled in component encapsulation, state management, routing configuration, and front-end performance optimization.
+
+Capable of independent full-stack development; proficient in at least one back-end language including Python, Go, and Node.js; familiar with database design, business interface development, service deployment, and operations.
+
+Familiar with mainstream front-end engineering tools (Webpack, Vite, Gulp), Git version control tools, and CI/CD automated processes.
+
+Master HTTP protocol and browser working principles; familiar with network security and cross-terminal adaptation solutions.
+
+Possess practical capabilities in AI application implementation; familiar with LLM API docking and Prompt engineering; experience in RAG retrieval enhancement, intelligent dialogue, and AI automation business scenarios is preferred.
+
+Proficient in responsive layout and mobile terminal adaptation technology.
+
+Proficiency in SQL, with the ability to write routine data queries and build reports.
+
+A solid grounding in algorithms, familiarity with common data structures and algorithms, and experience with tools such as pandas and NumPy.
+
+Understanding of LLM application development (prompting, function calling, RAG, etc.); experience with Agent projects is a plus.
+
+Good architectural thinking, problem-solving ability, and teamwork spirit; able to complete daily work docking and document writing in both Chinese and English.
+
+Strong sense of responsibility, reliability, and proactive communication.
+
+For Role 3 – Full-Stack Developer (Middle Platform / Agent Tools)
+Bachelor's degree or above in Computer Science or a related field.
+
+Open to fresh graduates or candidates with relevant internship/project experience.
+
+Familiarity with at least one frontend framework and at least one backend framework, with hands-on experience in both.
+
+Proficiency in SQL, with the ability to write routine data queries and build reports.
+
+A solid grounding in algorithms, familiarity with common data structures and algorithms, and experience with tools such as pandas and NumPy.
+
+Understanding of LLM application development (prompting, function calling, RAG, etc.); experience with Agent projects is a plus.
+
+A strong sense of responsibility, reliability, and proactive communication.
+
+Bilingual proficiency in Chinese and English for daily communication and documentation.
+
+For Role 4 – Data Engineer
+Bachelor's degree in Computer Science, Information Technology, Data Science, or a related technical field.
+
+Open to fresh graduates or candidates with up to 1 year of relevant working experience in data analysis, data engineering, or a related field.
+
+Good understanding of relational databases and distributed database systems.
+
+Familiarity with Python or Java, SQL, HiveQL, and/or SparkSQL.
+
+Basic understanding of SQL query optimisation, performance tuning, and data processing best practices.
+
+Good analytical and problem-solving skills, with an understanding of batch and streaming data pipeline concepts.
+
+Business proficiency in Mandarin, both written and spoken, to communicate effectively with China-based stakeholders who do not primarily communicate in English.
+
+What We Offer
+Competitive salary and benefits package (including shift allowances where applicable).
+
+Opportunity to work on global-scale gaming, AI, and data infrastructure projects.
+
+Multicultural, international working environment in KL Sentral.
+
+Clear career growth paths and internal rotation opportunities.
+
+Training and certification support.
+
+Ready to Apply?
+Click Apply Now and specify which role you are applying for:
+DevOps Engineer / Full-Stack Developer (AI Projects) / Full-Stack Developer (Middle Platform) / Data Engineer
+
+
+
+Company information
+Registration No.
+202401026883
+Employer questions
+Your application will include the following questions:
+Which of the following statements best describes your right to work in Malaysia?
+What's your expected monthly basic salary?
+Which of the following types of qualifications do you have?
+Which of the following languages are you fluent in?
+Do you have experience using Linux Servers?
+How many years' experience do you have as a full stack developer?
+How many years experience in Data Engineering do you have?
+Report this job advert
+Be careful
+Don’t provide your bank or credit card details when applying for jobs.
+Learn how to protect yourself
