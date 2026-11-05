@@ -23158,6 +23158,60 @@
   "posts": 3
  },
  {
+  "id": "wd:brenntag:JR113461",
+  "company": "Brenntag",
+  "title": "Senior Analyst, Master Data",
+  "location": "Bandar Sunway, Malaysia",
+  "url": "https://brenntag.wd3.myworkdayjobs.com/brenntag_jobs/job/Bandar-SunwayMalaysia/Senior-Analyst--Master-Data_JR113461",
+  "source": "workday",
+  "score": 9,
+  "first_seen": "2026-11-05",
+  "last_seen": "2026-11-05",
+  "matched": [
+   "erp",
+   "requirements gathering"
+  ],
+  "missing": [
+   "data quality"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 57,
+   "Level": 60,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 50
+  },
+  "math": {
+   "title": 15,
+   "skills": 31,
+   "adjust": [
+    [
+     "Junior-friendly",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -20
+    ],
+    [
+     "Needs another language",
+     -25
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:mdlz:R-179012",
   "company": "Mondelez",
   "title": "Data Management Business Partner (18 months contract)",
