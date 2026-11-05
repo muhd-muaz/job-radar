@@ -3,6 +3,7 @@
   python -m jobradar check    test each company feed once and print what works
   python -m jobradar --offline  skip the web; only rescore pasted jobs in inbox/
 """
+import re
 import datetime as dt
 import json
 import os
@@ -55,6 +56,8 @@ def main(argv):
     jobs += sources.inbox(ROOT / "inbox", ROOT / "data" / "pasted.jsonl")
 
     for j in jobs:
+        if not re.match(r"https?://", j.get("url") or "", re.I):   # never store or email a non-web link
+            j["url"] = ""
         store.upsert(db, j, score(j, profile, find(j["title"] + "\n" + j["description"])), today)
     db.commit()
 
@@ -75,7 +78,10 @@ def main(argv):
     if "--offline" not in argv:
         write_all(ROOT / "docs" / "all.json", jobs, today)
     if "--offline" not in argv:
-        notify.send_new_matches(db, active, today, profile)
+        try:   # a mail problem must not stop the page and database from being saved
+            notify.send_new_matches(db, active, today, profile)
+        except Exception as e:
+            print(f"notify: email failed, page still saved ({type(e).__name__}: {e})")
     print(f"{len(jobs)} collected today, {len(active)} active, report in docs/index.html")
 
 

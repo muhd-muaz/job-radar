@@ -91,3 +91,14 @@ def test_title_decides_track():
     acct = score(job("Financial Reporting Accountant", desc), PROFILE, FIND(desc))
     other = score(job("Enterprise Resiliency Officer", desc), PROFILE, FIND(desc))
     assert de["score"] >= 80 and acct["score"] <= 50 and other["score"] <= 50
+
+
+def test_keywords_match_whole_words():
+    from jobradar.score import has, needs_language, track
+    assert not has("intern", "international business analyst") and has("intern", "data intern")
+    assert not has("erp", "enterprise account executive") and has("erp", "erp consultant")
+    assert has("analyst", "analysts") and has("visuali", "data visualisation")
+    assert not needs_language("thai", "data analyst", "covering malaysia and thailand")
+    assert not needs_language("japanese", "data analyst", "join a japanese mnc")
+    assert needs_language("mandarin", "data analyst", "proficiency in mandarin is required")
+    assert track("Data Centre Operations Engineer") == "Data centre"

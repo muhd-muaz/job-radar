@@ -8,9 +8,9 @@ from email.message import EmailMessage
 PAGE = "https://muhd-muaz.github.io/job-radar/"
 
 
-def pick(active, today, profile, min_score=60):
+def pick(active, today, profile, min_score=60, skip=()):
     local = profile.get("preferred_locations", [])
-    new = [j for j in active if j["first_seen"] == today and j["score"] >= min_score
+    new = [j for j in active if j["first_seen"] == today and j["score"] >= min_score and j.get("id") not in skip
            and any(w in (j["location"] + " ").lower() for w in local)]
     return sorted(new, key=lambda j: -j["score"])[:15]
 
@@ -20,7 +20,7 @@ def send_new_matches(db, active, today, profile):
     if not (user and pw and to):
         return
     sent = {r[0] for r in db.execute("SELECT id FROM notified")}  # runs every 4 hours; each job is emailed once
-    new = [j for j in pick(active, today, profile) if j["id"] not in sent]
+    new = pick(active, today, profile, skip=sent)   # already-sent jobs drop out before the top 15 is taken
     if not new:
         print("notify: no new strong matches, no email")
         return

@@ -12,6 +12,7 @@ import urllib.parse
 import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
+from .score import any_has
 
 UA = "job-radar/1.0 (personal job search; github.com/muhd-muaz/job-radar)"
 MY_WORDS = ("malaysia", "kuala lumpur", "petaling jaya", "selangor", "penang", "pulau pinang",
@@ -48,7 +49,7 @@ def seen_any(c, title, location, url, posted=""):
 
 def title_wanted(title, targets):
     t = (title or "").lower()
-    return any(k in t for k in targets)
+    return any_has(targets, t)
 
 
 def workday(c, targets, terms):
@@ -224,20 +225,51 @@ def email_alerts(c, targets, terms):
     return out
 
 
+_STATES = r"Kuala Lumpur|Selangor|Penang|Pulau Pinang|Johor|Putrajaya|Cyberjaya|Perak|Kedah|Melaka|Malacca|Sabah|Sarawak|" \
+          r"Negeri Sembilan|Pahang|Terengganu|Kelantan|Perlis|Labuan|Malaysia"
+_COMPANY_END = re.compile(r"^(.*?\b(?:Sdn\.? ?Bhd\.?|Berhad|Bhd\.?|Limited|Ltd\.?|Inc\.?|PLC|LLP))\s+(.+)$", re.I)
+
+
+def alert_who_where(lines):
+    """Company, location and pay from the text under an alert's job link.
+    LinkedIn writes "Company · Place"; JobStreet runs "Company Suburb, State RM3,000 – RM4,000 per month" together."""
+    text = " ".join(lines)
+    pay = re.search(r"RM\s?[\d,]+(?:\s*[–-]\s*RM\s?[\d,]+)?(?:\s*per month)?", text)
+    text = re.sub(r"RM\s?[\d,]+.*$", "", text)                            # pay and anything after it
+    text = re.sub(r"\b(Posted on|Application started) \d{1,2} \w+ \d{4}", " ", text)
+    text = re.sub(r"\s+", " ", text).strip(" ·")
+    if " · " in text:
+        company, place = text.split(" · ", 1)
+        return company.strip(), place.strip(), pay and pay.group(0)
+    m = _COMPANY_END.match(text)
+    if m and re.search(_STATES, m.group(2)):
+        return m.group(1).strip(), m.group(2).strip(), pay and pay.group(0)
+    # no company ending to cut at: take "Suburb, State" (up to two words before the comma) or a bare state at the end
+    m = re.search(r"((?:\S+ )?\S+, (?:%s)|(?:%s))$" % (_STATES, _STATES), text)
+    if m and m.start() > 0:
+        return text[:m.start()].strip(), m.group(1), pay and pay.group(0)
+    return text, "", pay and pay.group(0)
+
+
 def parse_alert_html(body, site, targets):
     """Pull job links out of an alert email: any link whose text looks like a wanted job title."""
     out, seen = [], set()
     for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', body, flags=re.S | re.I):
         href, title = m.group(1), strip_html(m.group(2))
-        if not (5 < len(title) < 120) or not title_wanted(title, targets) or title in seen:
+        if not (5 < len(title) < 120) or not title_wanted(title, targets):
             continue
-        seen.add(title)
         # the lines right after the link usually hold company and location
         nxt = body[m.end():m.end() + 1500].split("<a ", 1)[0]
+        nxt = re.sub(r"<[^>]*$", "", nxt)   # the 1,500-character cut can end inside a tag
         rest = [l.strip() for l in strip_html(nxt).split("\n") if l.strip()][:2]
+        company, place, pay = alert_who_where(rest)
+        key = (title, rest[0] if rest else "")   # same title at different companies = different jobs
+        if key in seen:
+            continue
+        seen.add(key)
         out.append({
             "id": f"mail:{site}:{title}:{rest[0] if rest else ''}".lower(), "source": f"{site} alert",
-            "company": rest[0] if rest else "?", "title": title, "location": rest[1] if len(rest) > 1 else "",
+            "company": company or "?", "title": title, "location": place,
             "url": html.unescape(href), "posted": "", "description": " ".join(rest),
         })
     return out

@@ -35,7 +35,13 @@ jobs:
       - name: Restore database
         run: |
           mkdir -p data
-          git fetch -q origin data && git show origin/data:jobs.sqlite > data/jobs.sqlite || echo "no database yet"
+          # Only a missing branch means "start fresh". Any other fetch error stops the run, so an empty
+          # database is never force-pushed over the real one (that would re-send every alert email).
+          if git ls-remote --exit-code --heads origin data >/dev/null; then
+            git fetch -q origin data && git show origin/data:jobs.sqlite > data/jobs.sqlite
+          else
+            code=$?; [ "$code" = 2 ] && echo "no database yet" || exit 1
+          fi
       - name: Collect, score and build the shortlist
         run: python -m jobradar
         env:
@@ -57,5 +63,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs inbox data/pasted.jsonl
           git diff --cached --quiet || git commit -m "daily run $(date -u +%F)"
-          git pull -q --rebase -X theirs origin main   # two back-to-back runs: the newer page wins
+          # Two back-to-back runs: the newer page wins. inbox/dump.txt is the exception: if ads were pasted
+          # on main during this run, keep that version so they are not wiped (the inbox skips ads it already has).
+          git fetch -q origin main
+          pasted=no; git diff --quiet "$GITHUB_SHA" origin/main -- inbox/dump.txt || pasted=yes
+          git pull -q --rebase -X theirs origin main
+          if [ "$pasted" = yes ]; then
+            git checkout origin/main -- inbox/dump.txt
+            git diff --cached --quiet || git commit -qm "keep ads pasted during the run"
+          fi
           git push

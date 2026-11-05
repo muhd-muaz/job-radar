@@ -5,6 +5,7 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
+from .score import TRACKS
 
 TEMPLATE = Path(__file__).with_name("page.html")
 
@@ -51,6 +52,7 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, 
         "outreach": profile.get("outreach", {}),
         "cv": cv or {},
         "skills": skills or {},
+        "tracks": [[name, list(keys)] for name, keys in TRACKS],
         "teaser": profile.get("public_teaser", {}),
         "locked": locked or None,
         "feeds": [{"name": r["company"], "ok": bool(r["ok"]), "jobs": r["jobs"], "error": r["error"]} for r in runs],

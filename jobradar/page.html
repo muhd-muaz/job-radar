@@ -96,7 +96,8 @@ select{height:44px;border:1px solid var(--rule);border-radius:8px;background:var
 .row.flash{animation:flash 1.2s ease-out}
 @keyframes flash{from{background:var(--accent-soft)}to{background:transparent}}
 .head{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:16px;align-items:center;padding:13px 4px;cursor:pointer}
-.score{display:flex;flex-direction:column;gap:5px}
+.score{display:flex;flex-direction:column;gap:5px;appearance:none;border:0;background:none;padding:0;margin:0;font:inherit;color:inherit;text-align:left;cursor:pointer;min-height:44px;justify-content:center}
+.score .bar{display:block}.score:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
 .score b{font-size:17px;font-weight:600;line-height:1}
 .bar{height:4px;background:var(--rule-2);border-radius:2px;overflow:hidden}
 .bar span{display:block;height:100%;background:var(--accent);border-radius:2px}
@@ -151,7 +152,6 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 
 .pz .core{fill:var(--panel);stroke:var(--rule)}
 /* core */.pz .core-n{fill:var(--ink);font:700 30px "Bricolage Grotesque",system-ui,sans-serif}
-.pz .core-t{fill:var(--ink-2);font-size:12px;font-weight:500}
 .pz-legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--ink-2);margin-top:8px}
 .pz-legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 .two{display:grid;grid-template-columns:minmax(0,540px) minmax(0,1fr);gap:28px;align-items:start}
@@ -293,7 +293,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
     <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign out</button><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
   <div class="hero">
     <div class="radar-box">
-      <svg id="radar" viewBox="-280 -235 560 470" role="img" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
+      <svg id="radar" viewBox="-280 -235 560 470" role="group" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
       <div class="tip" id="tip"></div>
     </div>
     <div>
@@ -308,7 +308,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
       <div class="paths">
         <button class="path" data-go="list">Browse today's jobs</button>
         <button class="path" data-go="resume" data-anchor="open-tool">Tailor your own resume</button>
-        <button class="path" data-go="resume" data-anchor="teaser" id="go-teaser">Recruiter? See who built this</button>
+        <button class="path" data-go="resume" data-anchor="teaser">Recruiter? See who built this</button>
       </div>
     </div>
   </div>
@@ -390,7 +390,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <table><thead><tr><th>Source</th><th class="r">Jobs today</th></tr></thead><tbody id="feed-rows"></tbody></table>
 </div></section>
 <div class="cta"><p><b>Hiring for data roles?</b> The person behind this page is looking for a junior data engineering job in KL or Selangor.</p>
-  <button class="btn2" data-go="resume" data-anchor="teaser" id="go-teaser">See the resume preview</button></div>
+  <button class="btn2" data-go="resume" data-anchor="teaser" >See the resume preview</button></div>
 </main>
 
 <div class="cv-ov" id="cv-ov" role="dialog" aria-modal="true" aria-labelledby="cv-title">
@@ -422,6 +422,9 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 <script>
 const D = __DATA__;
 const $ = s => document.querySelector(s);
+// Links from job feeds, alert emails and pasted ads: only http(s) is allowed, so a "javascript:" link can never run
+// on this page (it holds the decrypted CV and the private key)
+const safeUrl = u => /^https?:\/\//i.test(String(u ?? "").trim()) ? esc(String(u).trim()) : "#";
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const store = {
   get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
@@ -550,16 +553,16 @@ function filtered() {
 
 function row(j) {
   const m = marks[j.id];
-  const title = j.url ? `<a class="t" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="t">${esc(j.title)}</span>`;
+  const title = j.url ? `<a class="t" href="${safeUrl(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>` : `<span class="t">${esc(j.title)}</span>`;
   const tags = (j.mine ? `<span class="tag mine">Added by you${j.first_seen === D.today ? " today" : ", " + esc(fmtDate(j.first_seen))}</span>` : j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
     (j.closed ? '<span class="tag off">Closed</span>' : "") +
     (j.posts > 1 ? `<span class="tag warn" title="Posted ${j.posts} times. It may be hard to fill, or a listing that never closes.">Posted ${j.posts} times</span>` : "");
   const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(nice(s))}</span>`).join("") +
                 j.missing.map(s => `<span class="chip gap">+ ${esc(nice(s))}</span>`).join("");
-  const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${esc(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
+  const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${safeUrl(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
   return `<div class="row${m === "applied" ? " applied" : ""}${j.mine ? " mine" : ""}" id="r-${esc(j.id)}">
-    <div class="head" data-toggle tabindex="0" role="button" aria-expanded="false" aria-label="Show details for ${esc(j.title)}">
-      <div class="score${j.score < 40 ? " low" : ""}"><b class="num">${j.score}</b><div class="bar"><span style="width:${j.score}%"></span></div></div>
+    <div class="head" data-toggle>
+      <button class="score${j.score < 40 ? " low" : ""}" data-exp aria-expanded="false" aria-label="Score ${j.score}. Show details for ${esc(j.title)}"><b class="num">${j.score}</b><span class="bar"><span style="width:${j.score}%"></span></span></button>
       <div>${title}${tags}
         <div class="sub"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span>${j.salary ? `<span class="pay num">${esc(j.salary)}</span>` : ""}<span>${age(j.first_seen)}</span></div>
       </div>
@@ -577,7 +580,7 @@ function row(j) {
         ${j.parts ? `<p class="why">${explain(j)}</p>` : ""}
         ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
         <div class="actions">
-          ${j.url ? `<a class="apply" style="margin:0" href="${esc(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
+          ${j.url ? `<a class="apply" style="margin:0" href="${safeUrl(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
           <button class="btn2" data-cv="${esc(j.id)}">Tailored resume</button>
           ${j.mine ? `<button class="btn2" data-editmine="${esc(j.id)}">Edit</button><button class="btn2" data-unmine="${esc(j.id)}">Remove</button>` : ""}
           ${j.reach_out && (D.outreach.tones || D.outreach.body) ? `<button class="btn2" data-reach="${esc(j.id)}">Ask about junior roles</button>` : ""}
@@ -600,7 +603,7 @@ async function searchAll(q) {
   box.hidden = !ALLJOBS.jobs.length;
   box.innerHTML = `<h3>${hits.length} ${hits.length === 1 ? "job" : "jobs"} in any field matching “${esc(q)}”</h3>
     <p class="why" style="margin:0">From all ${ALLJOBS.jobs.length.toLocaleString()} jobs in Malaysia on ${ALLJOBS.companies.length} company career sites, refreshed every 4 hours. These aren't scored; open one and paste it into the resume tool to tailor for it.</p>
-    <ul>${hits.slice(0, 40).map(r => `<li><a href="${esc(r[3])}" target="_blank" rel="noopener">${esc(r[0])}</a><span>${esc(ALLJOBS.companies[r[1]])}</span><span>${esc(r[2])}</span></li>`).join("")}</ul>
+    <ul>${hits.slice(0, 40).map(r => `<li><a href="${safeUrl(r[3])}" target="_blank" rel="noopener">${esc(r[0])}</a><span>${esc(ALLJOBS.companies[r[1]])}</span><span>${esc(r[2])}</span></li>`).join("")}</ul>
     ${hits.length > 40 ? `<p class="why">Showing the first 40. Add another word to narrow it down.</p>` : ""}`;
 }
 function render() {
@@ -622,7 +625,7 @@ function render() {
   const closed = D.closed.map(j => ({ ...j, closed: true }));
   const saved = D.jobs.concat(closed).filter(j => marks[j.id])
     .sort((a, b) => (marks[a.id] > marks[b.id]) - (marks[a.id] < marks[b.id]) || b.score - a.score);
-  $("#saved-jobs").innerHTML = saved.map(row).join("") || `<p class="empty">Nothing saved yet. Use the bookmark or tick on any job.</p>`;
+  $("#saved-jobs").innerHTML = saved.map(j => row(j).replace('id="r-', 'id="s-').replace('id="reach-', 'id="sreach-')).join("") || `<p class="empty">Nothing saved yet. Use the bookmark or tick on any job.</p>`;
   const na = saved.filter(j => marks[j.id] === "applied").length;
   $("#count-saved").textContent = saved.length ? `${na} applied, ${saved.length - na} saved. Jobs that leave their company's site show as Closed.` : "";
   $("#n-saved").textContent = saved.length || "";
@@ -656,7 +659,7 @@ function drawRadar(list) {
       `<tspan class="c num" x="${lx}" dy="16">${count[t]} job${count[t] === 1 ? "" : "s"}</tspan></text>`;
   }).join("");
   const blips = pts.map(j => {
-    const i = Math.max(0, TRACKS.indexOf(j.track)), pad = 0.08;
+    const i = TRACKS.includes(j.track) ? TRACKS.indexOf(j.track) : TRACKS.indexOf("Other"), pad = 0.08;   // e.g. Data centre sits in Other, where it is counted
     const a = A0 + i * SPAN + pad + hash01(j.id + j.company) * (SPAN - 2 * pad), r = Math.max(7, rOf(j.score));
     const [x, y] = P(r, a);
     return `<circle class="blip${j.mine ? " mine" : j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="0" role="button" aria-label="${esc(j.title)}, ${esc(j.company)}, score ${j.score}"/>`;
@@ -703,7 +706,7 @@ $("#radar").addEventListener("focusout", () => { $("#tip").style.opacity = 0; })
 $("#radar").addEventListener("click", e => {
   const b = e.target.closest(".blip"); if (!b) return;
   const r = document.getElementById("r-" + b.dataset.id); if (!r) return;
-  r.classList.add("open"); r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
+  r.classList.add("open"); r.querySelector("[data-exp]")?.setAttribute("aria-expanded", "true"); r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
   r.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
 });
 
@@ -784,7 +787,7 @@ function buildSheet(job, mode, keep, nproj = 2, other = 2) {
   // the sample always shows made-up details, so nobody's real email or phone appears on someone else's sample
   const ct = MYCV ? { email: contact.email || C.email, phone: contact.phone || C.phone } : { email: D.cv.email, phone: D.cv.phone };
   const links = [ct.email && esc(ct.email), ct.phone && esc(ct.phone),
-    ...C.links.map(l => `<a href="${esc(l.url)}">${esc(l.label)}</a>`)].filter(Boolean);
+    ...C.links.map(l => `<a href="${safeUrl(l.url)}">${esc(l.label)}</a>`)].filter(Boolean);
   return `<h1>${esc(C.name)}</h1>
     <div class="contact">${esc(C.location)} · ${links.join(" · ")}</div>
     <h3>Summary</h3><p>${esc(C.summary[track])}</p>
@@ -793,7 +796,7 @@ function buildSheet(job, mode, keep, nproj = 2, other = 2) {
       .sort(([a], [b]) => asked.includes(b) - asked.includes(a)).map(([k, v]) => `<li><b>${esc(nice(k))}:</b> ${esc(v)}</li>`).join("")}</ul>` : ""}
     <h3>Work experience</h3>${jobsHtml}
     <h3>Projects</h3>${projs.map(p => `<div class="rrow"><span>${esc(p.name)}</span><span>${esc(p.stack)}</span></div>
-      <ul><li>${esc(p.text)}${p.url ? ` <a href="${esc(p.url)}">${esc(p.url.replace(/^https:\/\//, ""))}</a>` : ""}</li></ul>`).join("")}
+      <ul><li>${esc(p.text)}${p.url ? ` <a href="${safeUrl(p.url)}">${esc(p.url.replace(/^https:\/\//, ""))}</a>` : ""}</li></ul>`).join("")}
     <h3>Education</h3>${edu.map(e => `<div class="rrow"><span>${esc(e.title)}</span><span>${esc(e.dates)}</span></div><div class="org">${esc(e.org)}</div>
       ${e.notes.length ? `<ul>${e.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}`).join("")}
     <h3>${mode === "cv" ? "Certifications, awards and activities" : "Certifications and awards"}</h3><ul>${extras.map(x => `<li>${esc(x.text)}</li>`).join("")}</ul>
@@ -888,9 +891,11 @@ function renderCv() {
 }
 const FIND = Object.entries(D.skills).map(([s, al]) => [s, (s.length > 1 ? [s] : []).concat(al).filter(t => t.trim())
   .map(t => new RegExp("(?<![a-z0-9])" + t.trim().toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![a-z0-9])"))]);
-const TRACK_KEYS = [["Data centre", /data cent(er|re)|datacent|critical facilit|mission critical|\bdcim\b|\bnoc\b/], ["Data engineering", /data engineer|analytics engineer|etl|data pipeline|data platform|data warehouse|data integration|big data|database|sql developer/],
-  ["BI and reporting", /\bbi\b|business intelligence|power bi|reporting|dashboard/], ["Data science", /data scientist|machine learning/],
-  ["Data analysis", /data analyst|analytics|insight|data/], ["Business and systems", /business analyst|systems? analyst|erp|sap|application support|analyst/]];
+// Same tracks and keyword rules as the daily scorer (score.TRACKS and has()), sent in the page data, so a pasted ad
+// lands in the same track as a feed job with the same title
+const ENDINGS = "(?:s|es|ed|er|ers|or|ors|ing|ings|ment|ments|ial|y|ry|ist|ists|ic|ics|ation|ations|[sz]ation|[sz]ations)?";
+const TRACK_KEYS = (D.tracks || []).map(([name, keys]) => [name, new RegExp(keys.map(k => "(?<![a-z0-9])" +
+  k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + (/[a-z0-9]$/.test(k) ? ENDINGS + "(?![a-z0-9])" : "")).join("|"))]);
 function pastedJob(raw) {
   // same reading as the Add a job box: markdown links, filler lines and the company line are handled there
   const ad = adFields(raw), C = CV(), t = raw.toLowerCase(), title = (ad.title || "Pasted job ad").slice(0, 90);
@@ -900,7 +905,7 @@ function pastedJob(raw) {
   const mine = new Set(C.jobs.flatMap(j => j.bullets.flatMap(b => b.tags)).concat(...Object.values(C.skills)).map(x => x.toLowerCase()));
   if ([...mine].some(x => x.startsWith("malay"))) mine.add("bahasa malaysia");   // "Malay (native)" answers a Bahasa Malaysia requirement
   const stop = new Set("about above after again their there these those which while would should could where other being having years skills ability strong working experience candidate requirements responsibilities".split(" "));
-  return { id: "pasted", raw, title, company: ad.company || "", location: ad.location || "", track: (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0],
+  return { id: "pasted", raw, title, company: ad.company || "", location: ad.location || "", track: (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase() + " ")) || ["Other"])[0],
     matched: asked.filter(s => mine.has(s)), missing: asked.filter(s => !mine.has(s)),
     adWords: new Set(t.split(/[^a-z0-9+#]+/).filter(w => w.length > 4 && !stop.has(w))) };
 }
@@ -975,8 +980,8 @@ $("#cv-word").addEventListener("click", () => {
   a.download = fileBase() + ".doc"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 });
 $("#cv-print").addEventListener("click", () => {
-  const old = document.title, co = cvState.job ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
-  document.title = `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${{ cv: "CV", letter: "Cover_Letter" }[cvState.mode] || "Resume"}`;   // becomes the PDF file name
+  const old = document.title;
+  document.title = fileBase();   // becomes the PDF file name
   document.body.classList.add("printing-cv"); window.print();
   document.body.classList.remove("printing-cv"); document.title = old;
 });
@@ -1026,7 +1031,7 @@ addEventListener("resize", () => { if ($("#cv-ov").classList.contains("on")) fit
       <div class="k">Experience</div></div>
     <div class="blur" aria-hidden="true">${bars(4)}<br>${bars(3)}<div class="k" style="margin-top:18px">Projects</div>${bars(3)}<div class="k">Education</div>${bars(2)}</div>
     <div class="gate"><p>The full resume and CV are available on request.</p>
-      <div class="actions">${T.contact.map((c, i) => `<a class="btn2" ${i === 0 ? "data-primary" : ""} href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.label)}</a>`).join("")}</div></div>`;
+      <div class="actions">${T.contact.map((c, i) => `<a class="btn2" ${i === 0 ? "data-primary" : ""} href="${safeUrl(c.url)}" target="_blank" rel="noopener">${esc(c.label)}</a>`).join("")}</div></div>`;
 })();
 function goTab(id, anchor) {
   document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x.dataset.tab === id));
@@ -1044,7 +1049,8 @@ $("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.
   `<tr><td>${esc(f.name)}${f.ok ? "" : ' <span class="st bad">not reachable today</span>'}</td><td class="r num">${f.jobs}</td></tr>`).join("");
 
 // Events
-$("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
+let qTimer;   // re-render once typing pauses, not on every key
+$("#q").addEventListener("input", e => { state.q = e.target.value; clearTimeout(qTimer); qTimer = setTimeout(render, 150); });
 $("#min").addEventListener("change", e => { state.min = +e.target.value; render(); });
 $("#sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
 $("#src").addEventListener("change", e => { state.src = e.target.value; render(); });
@@ -1061,7 +1067,7 @@ document.addEventListener("click", e => {
     if (marks[id] === mark) delete marks[id]; else marks[id] = mark;
     store.set("jr-marks", marks);
     const open = [...document.querySelectorAll(".row.open")].map(r => r.id);
-    render(); open.forEach(id => document.getElementById(id)?.classList.add("open"));
+    render(); open.forEach(id => { const r = document.getElementById(id); r?.classList.add("open"); r?.querySelector("[data-exp]")?.setAttribute("aria-expanded", "true"); });
     return;
   }
   const go = e.target.closest("[data-go]");
@@ -1069,26 +1075,24 @@ document.addEventListener("click", e => {
   const cvb = e.target.closest("[data-cv]");
   if (cvb) { openCv(cvb.dataset.cv); return; }
   const r = e.target.closest("[data-reach]");
-  if (r) { document.getElementById("reach-" + r.dataset.reach)?.classList.toggle("on"); return; }
+  if (r) { r.closest(".row")?.querySelector(".reach")?.classList.toggle("on"); return; }
   const tb = e.target.closest("[data-tone]");
   if (tb) {  // swap the draft's wording; the choice is remembered for the next draft
     tone = tb.dataset.tone; store.set("jr-tone", tone);
-    const box = document.getElementById("reach-" + tb.dataset.job), j = D.jobs.concat(D.closed).find(x => x.id === tb.dataset.job);
-    box.outerHTML = reachBox(j); document.getElementById("reach-" + tb.dataset.job).classList.add("on"); return;
+    // the same job can be on the Shortlist and Saved tabs: work on the copy that was clicked, never look it up by id
+    const box = tb.closest(".reach"), row = box.closest(".row"), j = D.jobs.concat(D.closed).find(x => x.id === tb.dataset.job);
+    box.outerHTML = reachBox(j); row.querySelector(".reach").classList.add("on"); return;
   }
   const c = e.target.closest("[data-copy]");
   if (c) {
-    const box = document.getElementById("reach-" + c.dataset.copy), text = `Subject: ${box.querySelector("input").value}\n\n${box.querySelector("textarea").value}`;
+    const box = c.closest(".reach"), text = `Subject: ${box.querySelector("input").value}\n\n${box.querySelector("textarea").value}`;
     navigator.clipboard?.writeText(text).then(() => { c.textContent = "Copied"; setTimeout(() => c.textContent = "Copy email", 1500); },
       () => { box.querySelector("textarea").select(); });
     return;
   }
   const h = e.target.closest("[data-toggle]");
-  if (h && !e.target.closest("a")) h.setAttribute("aria-expanded", h.parentElement.classList.toggle("open"));
-});
-document.addEventListener("keydown", e => {
-  const h = e.target.closest?.("[data-toggle]");
-  if (h && e.target === h && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); h.setAttribute("aria-expanded", h.parentElement.classList.toggle("open")); }
+  // the whole row head opens on a mouse click; keyboard and screen-reader users get the real button on the score
+  if (h && !e.target.closest("a")) h.querySelector("[data-exp]").setAttribute("aria-expanded", h.parentElement.classList.toggle("open"));
 });
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
@@ -1114,13 +1118,13 @@ function adFields(raw) {
 }
 function parseAd(raw) {
   const { url, title: t0, company, location } = adFields(raw), j = pastedJob(raw), title = t0 || "Job ad";
-  const track = (TRACK_KEYS.find(([, r]) => r.test(title.toLowerCase())) || ["Other"])[0], asked = j.matched.length + j.missing.length;
+  const track = j.track, asked = j.matched.length + j.missing.length;
   // an estimate: the job title's track plus how much of what the ad asks for you already have
   const score = Math.round((track === "Other" ? 15 : 40) + 60 * (asked ? j.matched.length / asked : 0.3));
   return { id: "mine:" + Date.now(), mine: true, raw, title, company, location,
     url, score: Math.min(score, 99), first_seen: D.today, matched: j.matched, missing: j.missing, track, projects: [], posts: 1 };
 }
-function loadMine() { D.jobs = D.jobs.filter(j => !j.mine).concat(store.get("jr-mine", []).map(m => ({ ...parseAd(m.raw), id: m.id, first_seen: m.added, url: parseAd(m.raw).url }))); }
+function loadMine() { D.jobs = D.jobs.filter(j => !j.mine).concat(store.get("jr-mine", []).map(m => ({ ...parseAd(m.raw), id: m.id, first_seen: m.added }))); }
 let editing = null;   // id of the ad being edited, if any
 $("#add-go").addEventListener("click", () => {
   const raw = $("#add-text").value.trim(); if (raw.length < 30) { $("#add-msg").textContent = "Paste the whole ad first."; return; }

@@ -67,3 +67,10 @@ def test_all_jobs_index(tmp_path):
     assert d["companies"] == ["Acme Sdn Bhd"]
     assert sorted(r[0] for r in d["jobs"]) == ["Data Engineer", "Mechanical Engineer"]
     sources.ALL.clear()
+
+
+def test_alert_company_and_place():
+    from jobradar.sources import alert_who_where
+    assert alert_who_where(["DKSH · Petaling Jaya"])[:2] == ("DKSH", "Petaling Jaya")
+    assert alert_who_where(["ESRI Malaysia Sdn Bhd Shah Alam, Selangor"])[:2] == ("ESRI Malaysia Sdn Bhd", "Shah Alam, Selangor")
+    assert alert_who_where(["PRIZM Posted on 29 Oct 2026 Kuala Lumpur RM 4,000 – RM 6,000 per month"])[:2] == ("PRIZM", "Kuala Lumpur")
