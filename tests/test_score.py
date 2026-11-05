@@ -35,7 +35,8 @@ def test_word_boundaries():
     assert "erp" not in FIND("enterprise")
 
 
-def test_inbox_dump(tmp_path):
+def test_inbox_dump(tmp_path, monkeypatch):
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)   # local runs tidy dump.txt; the scheduled run leaves inbox/ alone
     inbox, archive = tmp_path / "inbox", tmp_path / "data" / "pasted.jsonl"
     inbox.mkdir()
     ad1 = (ROOT / "tests/fixtures/ad-with-headers.txt").read_text()
