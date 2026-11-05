@@ -1165,6 +1165,78 @@
   "posts": 1
  },
  {
+  "id": "gh:wppmedia:5465679008",
+  "company": "WPP Media",
+  "title": "Executive, Data Analytics and Insights",
+  "location": "Kuala Lumpur",
+  "url": "https://job-boards.greenhouse.io/wppmedia/jobs/5465679008",
+  "source": "greenhouse",
+  "score": 77,
+  "first_seen": "2026-11-05",
+  "last_seen": "2026-11-05",
+  "matched": [
+   "automation",
+   "dashboard",
+   "data visualization",
+   "git",
+   "machine learning",
+   "power bi",
+   "python",
+   "sql",
+   "statistics"
+  ],
+  "missing": [
+   "agile",
+   "aws",
+   "azure",
+   "data warehouse",
+   "gcp",
+   "jira",
+   "spark",
+   "stakeholder management",
+   "tableau"
+  ],
+  "learning": [
+   "aws",
+   "azure",
+   "spark",
+   "tableau"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 56,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 31,
+   "adjust": [
+    [
+     "Junior-friendly",
+     8
+    ],
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:citi:24819263",
   "company": "Citi",
   "title": "Custody Ops Readiness (Business Analyst) Intmd Analyst - Hybrid",
@@ -12913,7 +12985,7 @@
   "company": "Setel",
   "title": "Executive, Data Analytics [RID-00718]",
   "location": "Kuala Lumpur",
-  "url": "https://www.linkedin.com/comm/jobs/view/4487267103/?trackingId=icMw7oFkVjqwx9fznbDVaQ%3D%3D&refId=cfXV8a4QmL5y6WyGhS026g%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BTmkTf3EwRgqsSrFDdjfviQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=0qPBYrSTiOcYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4487267103_ssid_16262187156_fmid_ju8vz3~mw35canr~zc_crv_9&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4487267103_ssid_16262187156_fmid_ju8vz3~mw35canr~zc_crv_9-null-ju8vz3~mw35canr~zc-null-null&eid=ju8vz3-mw35canr-zc&otpToken=ODFlYzAzYzE1Nzc3OTE5NjBjODc0MmRkMTQyNmZiY2RlZDhlOGY5NmRhOGMzNTNmNDEyYzgxNTBmMDg1ZjMyMmVlYTM4ZWI1ZDY4MGE1MDFhZmM1M2NmZmQyZDVjMmE0MzkwZGRmNDRkOTM1ZTA2OTk0MDczODI4N2Q1YjBkMmMzZTUxZTNlM2JjYjc5NmI0NWIsMiwx",
+  "url": "https://www.linkedin.com/comm/jobs/view/4487267103/?trackingId=X8cvJjxeZZv3BAzj7FcQHA%3D%3D&refId=Z0N0IKtoqsnami4csP%2BsIw%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BDCmWxFxATk%2BogZUMYvMW4A%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=1exmM-QDAGdcw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4487267103_ssid_16262187148_fmid_ju8vz3~mw39mm1w~4o_crv_7&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4487267103_ssid_16262187148_fmid_ju8vz3~mw39mm1w~4o_crv_7-null-ju8vz3~mw39mm1w~4o-null-null&eid=ju8vz3-mw39mm1w-4o&otpToken=ZTg5OTMwNWY5ZWQ3ZjAyNGY4NDdkMjFlYmNjNjdhZTdhYWFhMzQ3NzA1YThjYThmYTk5NWFmY2E0MzdhNTA4ZmM3OTlkZjQzNjc1ZTJhNzI3NjMzOTYwZjdmNmJiYzY5MmExZmY5ZTMzOGRlMzljMDllMGU5NTEwMzc2YmM2NzEzYmNlM2Y0YTIyMmExMDI3OTIsMiwx",
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-05",
@@ -12952,7 +13024,7 @@
   "company": "UOB",
   "title": "Associate Data Analyst",
   "location": "Kuala Lumpur",
-  "url": "https://www.linkedin.com/comm/jobs/view/4486342558/?trackingId=dqgZNsGrbL7Nv9tnwCmM7g%3D%3D&refId=cfXV8a4QmL5y6WyGhS026g%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BTmkTf3EwRgqsSrFDdjfviQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=0qPBYrSTiOcYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4486342558_ssid_16262187156_fmid_ju8vz3~mw35canr~zc_crv_9&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4486342558_ssid_16262187156_fmid_ju8vz3~mw35canr~zc_crv_9-null-ju8vz3~mw35canr~zc-null-null&eid=ju8vz3-mw35canr-zc&otpToken=ODFlYzAzYzE1Nzc3OTE5NjBjODc0MmRkMTQyNmZiY2RlZDhlOGY5NmRhOGMzNTNmNDEyYzgxNTBmMDg1ZjMyMmVlYTM4ZWI1ZDY4MGE1MDFhZmM1M2NmZmQyZDVjMmE0MzkwZGRmNDRkOTM1ZTA2OTk0MDczODI4N2Q1YjBkMmMzZTUxZTNlM2JjYjc5NmI0NWIsMiwx",
+  "url": "https://www.linkedin.com/comm/jobs/view/4486342558/?trackingId=DzQ8j5SquLk5MdR%2BaDzgwA%3D%3D&refId=Z0N0IKtoqsnami4csP%2BsIw%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BDCmWxFxATk%2BogZUMYvMW4A%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=1exmM-QDAGdcw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4486342558_ssid_16262187148_fmid_ju8vz3~mw39mm1w~4o_crv_7&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4486342558_ssid_16262187148_fmid_ju8vz3~mw39mm1w~4o_crv_7-null-ju8vz3~mw39mm1w~4o-null-null&eid=ju8vz3-mw39mm1w-4o&otpToken=ZTg5OTMwNWY5ZWQ3ZjAyNGY4NDdkMjFlYmNjNjdhZTdhYWFhMzQ3NzA1YThjYThmYTk5NWFmY2E0MzdhNTA4ZmM3OTlkZjQzNjc1ZTJhNzI3NjMzOTYwZjdmNmJiYzY5MmExZmY5ZTMzOGRlMzljMDllMGU5NTEwMzc2YmM2NzEzYmNlM2Y0YTIyMmExMDI3OTIsMiwx",
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-05",
@@ -13061,6 +13133,45 @@
    "cap": 100
   },
   "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:it business analyst - retail:dyson · greater kuala lumpur",
+  "company": "Dyson",
+  "title": "IT Business Analyst - Retail",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4478778421/?trackingId=uGBQLZPR36e%2BLtv9OyxiRA%3D%3D&refId=Z0N0IKtoqsnami4csP%2BsIw%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BDCmWxFxATk%2BogZUMYvMW4A%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=1exmM-QDAGdcw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4478778421_ssid_16262187148_fmid_ju8vz3~mw39mm1w~4o_crv_7&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4478778421_ssid_16262187148_fmid_ju8vz3~mw39mm1w~4o_crv_7-null-ju8vz3~mw39mm1w~4o-null-null&eid=ju8vz3-mw39mm1w-4o&otpToken=ZTg5OTMwNWY5ZWQ3ZjAyNGY4NDdkMjFlYmNjNjdhZTdhYWFhMzQ3NzA1YThjYThmYTk5NWFmY2E0MzdhNTA4ZmM3OTlkZjQzNjc1ZTJhNzI3NjMzOTYwZjdmNmJiYzY5MmExZmY5ZTMzOGRlMzljMDllMGU5NTEwMzc2YmM2NzEzYmNlM2Y0YTIyMmExMDI3OTIsMiwx",
+  "source": "linkedin alert",
+  "score": 38,
+  "first_seen": "2026-11-05",
+  "last_seen": "2026-11-05",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Business and systems",
   "reach_out": false,
   "posts": 1
  },
@@ -18231,7 +18342,7 @@
   },
   "track": "Data analysis",
   "reach_out": false,
-  "posts": 2
+  "posts": 3
  },
  {
   "id": "sr:nielseniq:744000131339558",
@@ -24446,6 +24557,59 @@
   "track": "Data centre",
   "reach_out": true,
   "posts": 4
+ },
+ {
+  "id": "wd:spgi:332571",
+  "company": "S&P Global",
+  "title": "Senior Process Analyst, Process Excellence",
+  "location": "Penang",
+  "url": "https://spgi.wd5.myworkdayjobs.com/SPGI_Internal/job/Metro-Manila-PH/Senior-Process-Analyst--Process-Excellence--_332571",
+  "source": "workday",
+  "score": 7,
+  "first_seen": "2026-11-05",
+  "last_seen": "2026-11-05",
+  "matched": [
+   "automation",
+   "kpi"
+  ],
+  "missing": [
+   "process mapping",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 40,
+   "Level": 30,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "math": {
+   "title": 30,
+   "skills": 22,
+   "adjust": [
+    [
+     "Outside KL and Selangor",
+     -10
+    ],
+    [
+     "Senior title or 5+ years",
+     -35
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Business and systems",
+  "reach_out": true,
+  "posts": 1
  },
  {
   "id": "wd:abbott:31165486",
