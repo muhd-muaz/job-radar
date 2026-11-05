@@ -5,15 +5,47 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
-from .score import TRACKS
+from .score import TRACKS, is_preferred
 from .sources import alert_who_where, not_a_job, _STATES
 
 # careers-site slugs turned into names; the real names people know
-NAMES = {"bpinternational": "bp", "ocbc": "OCBC", "cw": "Cushman & Wakefield", "rbc": "RBC", "nttlimited": "NTT",
+NAMES = {"bpinternational": "bp", "gehc": "GE HealthCare", "jj": "Johnson & Johnson", "wk": "Wolters Kluwer", "hlb": "Hong Leong Bank",
+         "suse": "SUSE", "fico": "FICO", "lseg": "LSEG", "tsys": "TSYS", "jll": "JLL", "kla": "KLA", "erm": "ERM", "abb": "ABB", "cgg": "CGG", "cnx": "CNX", "wmg": "WMG", "us gutor": "Gutor", "sec": "SEC", "rhe": "RHE", "ag": "AG", "ext": "EXT",
+         "data centers": "Data Centers", "ikano-retail": "Ikano Retail", "ocbc": "OCBC", "cw": "Cushman & Wakefield", "rbc": "RBC", "nttlimited": "NTT",
          "rytbank": "Ryt Bank", "spgi": "S&P Global", "dxctechnology": "DXC Technology", "nxp": "NXP", "airasia": "AirAsia",
          "bdx": "BD", "msd": "MSD", "aig": "AIG", "hpe": "HPE", "jci": "Johnson Controls", "propertyguru": "PropertyGuru",
          "paloaltonetworks": "Palo Alto Networks", "airliquidehr": "Air Liquide", "brooksauto": "Brooks Automation",
          "unhcr": "UNHCR", "sime": "Sime Darby", "aveva": "AVEVA"}
+
+
+CITIES = {"kuala lumpur": "", "putrajaya": "", "labuan": "", "cyberjaya": "Selangor", "petaling jaya": "Selangor", "shah alam": "Selangor",
+          "subang jaya": "Selangor", "puchong": "Selangor", "bandar sunway": "Selangor", "seri kembangan": "Selangor",
+          "telok panglima garang": "Selangor", "setia alam": "Selangor", "ara damansara": "Selangor", "kota damansara": "Selangor",
+          "klang": "Selangor", "kajang": "Selangor", "bangsar": "Kuala Lumpur", "mont kiara": "Kuala Lumpur", "bukit bintang": "Kuala Lumpur",
+          "bukit jalil": "Kuala Lumpur", "cheras": "Kuala Lumpur", "johor bahru": "Johor", "iskandar puteri": "Johor", "kulai": "Johor",
+          "batu kawan": "Penang", "bayan lepas": "Penang", "kulim": "Kedah", "ipoh": "Perak", "seremban": "Negeri Sembilan",
+          "bandar enstek": "Negeri Sembilan", "nilai": "Negeri Sembilan", "kota kinabalu": "Sabah", "kuching": "Sarawak"}
+STATES = ["Selangor", "Kuala Lumpur", "Penang", "Pulau Pinang", "Johor", "Kedah", "Perak", "Melaka", "Negeri Sembilan", "Pahang",
+          "Sabah", "Sarawak", "Kelantan", "Terengganu", "Putrajaya"]
+
+
+REAL_WORDS = {"Wise", "Flex", "Luno", "Citi", "Coda", "Grab", "Omya", "Visa", "Zoom", "Axi", "Sime", "Ryt", "Arm", "Dell", "Intel", "Ford", "Shell", "Agoda", "Maxis", "Celcom", "Petronas", "Lazada", "Gojek", "Monee", "Wahed", "Bosch", "Dyson", "Jabil", "Capco", "Swift", "Strada", "Ramboll", "Avnet", "Zalora", "Astro"}
+
+
+def my_place(loc):
+    """'MYS, Petaling Jaya (NDMY)' -> 'Petaling Jaya, Selangor'. Finds the first Malaysian town or state named; else ''."""
+    low = (loc or "").lower()
+    if "<" in low:
+        return "Malaysia"
+    hits = sorted((low.find(c), c) for c in CITIES if c in low)
+    if hits:
+        c = hits[0][1]
+        name = "Kuala Lumpur" if c == "kuala lumpur" else c.title()
+        return f"{name}, {CITIES[c]}" if CITIES[c] else name
+    st = sorted((low.find(x.lower()), x) for x in STATES if x.lower() in low)
+    if st:
+        return "Penang" if st[0][1] == "Pulau Pinang" else st[0][1]
+    return "Malaysia" if "malaysia" in low or re.search(r"\bmys?\b", low) else ""
 
 
 def tidy(company, location, source=""):
@@ -29,11 +61,14 @@ def tidy(company, location, source=""):
     c = NAMES.get(key, c)
     if c.isupper() and len(c) > 5:
         c = c.title().replace("Sdn. Bhd.", "Sdn. Bhd.").replace("Sdn Bhd", "Sdn Bhd")
-    m = re.match(r"^(?:Malaysia|MYS|MY)\s*[-–]\s*(.+)$", loc)
-    if m:
-        loc = m.group(1)
-    if loc.isupper():
-        loc = loc.title()
+    if re.fullmatch(r"[A-Z][a-z]{1,3}", c) and c not in REAL_WORDS:   # short slugs are initials: Abb -> ABB
+        c = c.upper()
+    if c.lower() == c and len(c) > 3:
+        c = c.title()
+    tidy_loc = my_place(loc)
+    # the page decides "nearby" from the shown place, so only swap when that answer stays the same
+    if tidy_loc and is_preferred(tidy_loc, PROFILE) == is_preferred(loc, PROFILE):
+        loc = tidy_loc
     return c, loc
 
 TEMPLATE = Path(__file__).with_name("page.html")
@@ -61,8 +96,12 @@ def slim(j, posts):
     return out
 
 
+PROFILE = {}
+
+
 def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, skills=None, locked=None):
     posts = posts or {}
+    PROFILE.update(profile)
     outdir.mkdir(exist_ok=True)
     jobs, shown = [], set()
     for j in active:
@@ -87,7 +126,7 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, 
         "tracks": [[name, list(keys)] for name, keys in TRACKS],
         "teaser": profile.get("public_teaser", {}),
         "locked": locked or None,
-        "feeds": [{"name": r["company"], "ok": bool(r["ok"]), "jobs": r["jobs"], "error": r["error"]} for r in runs],
+        "feeds": [{"name": tidy(r["company"], "")[0], "ok": bool(r["ok"]), "jobs": r["jobs"], "error": r["error"]} for r in runs],
     }
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     (outdir / "index.html").write_text(TEMPLATE.read_text(encoding="utf-8").replace("__DATA__", blob), encoding="utf-8")

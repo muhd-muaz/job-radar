@@ -42,7 +42,7 @@ html,body{overflow-x:clip}
 header{padding:28px 0 8px}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--mute);font-size:13px}
 .top b{color:var(--ink);font-weight:600}
-.theme{appearance:none;white-space:nowrap;background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:14px;min-height:40px;padding:6px 14px;border-radius:999px;cursor:pointer}
+.theme{appearance:none;white-space:nowrap;background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:14px;min-height:44px;padding:6px 14px;border-radius:999px;cursor:pointer}
 .hero{display:grid;grid-template-columns:minmax(0,540px) 1fr;gap:32px;align-items:center;margin-top:18px}
 .radar-box{position:relative;aspect-ratio:560/470}
 #radar{width:100%;height:100%;display:block;overflow:visible}
@@ -50,7 +50,7 @@ header{padding:28px 0 8px}
 #radar .ring-label{fill:var(--ink-2);font-size:13px;font-weight:600}
 #radar .spoke{stroke:var(--rule-2);stroke-width:1}
 #radar .blip{fill:var(--accent);stroke:var(--panel);stroke-width:2;cursor:pointer;transition:r .12s}
-#radar .blip.old{fill:var(--panel);stroke:color-mix(in srgb,var(--accent) 70%,var(--panel));stroke-width:1.5}
+#radar .blip.old{fill:var(--panel);stroke:var(--accent);stroke-width:1.5}
 #radar .blip:hover,#radar .blip.hot,#radar .blip:focus-visible{r:8}
 #radar .blip:focus-visible{outline:none;stroke:var(--ink);stroke-width:3}
 @media (hover:none){.tip{display:none}}
@@ -96,6 +96,10 @@ body.recruiter nav.tabs,body.recruiter .hero .how,body.recruiter .hero .paths,bo
 body.recruiter #resume .duo{grid-template-columns:1fr 1fr}
 .built-list{margin:0 0 12px;padding-left:18px}.built-list li{margin:0 0 8px}
 .linkbtn{appearance:none;border:0;background:none;padding:0 0 0 6px;font:inherit;color:var(--accent-ink);text-decoration:underline;cursor:pointer;min-height:24px}
+@media (pointer:coarse){.linkbtn{min-height:44px;padding:0 6px}}
+body.compact .hero{display:block;margin-top:8px}body.compact .hero .radar-box,body.compact .hero #lede,body.compact .hero .how,body.compact .hero .key,body.compact .hero .paths,body.compact .hero .track-pill{display:none}
+body.compact .hero h1{font-size:22px;margin:0;max-width:none}
+body.compact nav.tabs{margin-top:10px}
 kbd{font:12px/1 ui-monospace,monospace;border:1px solid var(--rule);border-bottom-width:2px;border-radius:4px;padding:2px 5px;background:var(--panel)}
 @media (hover:none){.keys{display:none}}
 .picks-h{font-size:17px;font-weight:600;margin:14px 0 2px}.picks-h .n{color:var(--mute);font-weight:500;margin-left:4px}
@@ -133,7 +137,7 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .row.open .more{display:block}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
 .addjob{border:1px solid var(--rule);border-radius:10px;background:var(--panel);padding:12px 16px;margin:0 0 14px}
-.addjob summary{cursor:pointer;font-weight:600;min-height:28px;display:flex;align-items:center}
+.addjob summary{cursor:pointer;font-weight:600;min-height:44px;display:flex;align-items:center}
 .addjob textarea{width:100%;height:160px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:14px/1.5 "IBM Plex Sans",system-ui,sans-serif;padding:8px 10px}
 #anyjobs{border:1px solid var(--rule);border-radius:10px;background:var(--panel);padding:14px 16px;margin:0 0 14px}
 #anyjobs h3{font:700 16px/1.3 "IBM Plex Sans",system-ui,sans-serif;margin:0 0 4px}
@@ -148,11 +152,14 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .detail{display:grid;grid-template-columns:380px minmax(0,1fr);gap:24px;align-items:start}
 .detail .pz{width:380px;height:297px;overflow:visible}
 .toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:var(--panel);padding:10px 16px;border-radius:10px;font-size:14.5px;max-width:calc(100vw - 32px);transition:opacity .2s,transform .2s;z-index:60}
-.toast.on{opacity:1;transform:translate(-50%,0)}
+.toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.toast .linkbtn{color:inherit;text-decoration:underline;font-weight:600;min-height:32px}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
 .skip{position:absolute;left:12px;top:-60px;z-index:70;background:var(--panel);color:var(--ink);padding:10px 14px;border-radius:8px;box-shadow:0 0 0 2px var(--accent)}
 .skip:focus{top:12px}
 nav.tabs:focus{outline:none}
+.track-pill{margin:6px 0 0;padding:8px 12px;border-radius:10px;background:var(--accent-soft);font-size:14.5px}
+.quiet{margin-top:12px}.quiet summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent-ink);font-weight:500}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .detail h3,.panel h3{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
@@ -186,6 +193,12 @@ nav.tabs:focus{outline:none}
 .panel{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:20px}
 .panel h2{font:700 20px/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 4px;letter-spacing:-.01em}
 .panel .lede{color:var(--ink-2);font-size:14.5px;margin:0 0 16px;max-width:60ch}
+.sb{display:grid;grid-template-columns:minmax(0,1fr) 34% minmax(64px,max-content);gap:10px;align-items:center;padding:7px 0;font-size:14.5px;border-top:1px solid var(--rule-2)}
+.sb small{display:block;color:var(--mute);font-size:12.5px}.sb b small{display:inline;font-weight:400}
+.sb b{text-align:right}.sb .track{height:10px;background:var(--rule-2);border-radius:4px}.sb .fill{height:100%;border-radius:0 4px 4px 0;background:var(--accent)}
+.sb.plus .fill{background:var(--have)}.sb.minus .fill{background:var(--gap)}.sb.minus b{color:var(--gap-ink,var(--ink))}
+.sb.total{font-weight:600;border-top:2px solid var(--rule)}
+.core-u{font-size:11px;fill:var(--mute)}
 .sk{display:grid;grid-template-columns:180px 1fr 56px;gap:12px;align-items:center;padding:6px 0;font-size:15px}
 .sk .track{height:10px;background:var(--rule-2);border-radius:4px}
 .sk .fill{height:100%;background:var(--accent);border-radius:0 4px 4px 0}
@@ -230,7 +243,9 @@ footer a{color:var(--ink-2)}
 .cv-ov.on{display:block}
 .cv-bar{position:sticky;top:0;z-index:2;background:var(--panel);border-bottom:1px solid var(--rule)}
 .cv-bar .wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-top:10px;padding-bottom:10px;max-width:1280px}
-.cv-bar h2{font:700 18px/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 auto 0 0;min-width:0}
+.cv-bar h2{font:700 18px/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0;min-width:0;order:-2;flex:1 1 calc(100% - 110px)}
+.cv-bar #cv-close{order:-1}   /* title and Close on the first line; modes left, actions right on the second */
+.cv-bar .seg{margin-right:auto}
 .cv-bar h2 small{display:block;font:500 13px "IBM Plex Sans",system-ui,sans-serif;color:var(--ink-2)}
 .fld{display:flex;flex-direction:column;font-size:12.5px;font-weight:600;color:var(--ink-2);gap:2px}
 .cv-bar input{height:40px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;padding:0 10px;width:190px}
@@ -331,6 +346,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
         <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60; jobs under 40 are left off. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles and a few points added for junior-friendly roles in KL or Selangor.</li>
         <li data-n="3"><b>Select a dot</b> to open the job and see how its score adds up.</li>
       </ol>
+      <p class="track-pill" id="track-pill" role="status" hidden></p>
       <div class="key"><span><i></i><b id="key-new" style="font-weight:400">Strong fit, 60+</b></span><span><i class="o"></i>Worth a look, 40 to 59</span><span id="key-mine" hidden><i style="background:var(--mine);border-color:var(--mine)"></i>Added by you</span></div>
       <div class="paths">
         <button class="path" data-go="list">Browse the shortlist</button>
@@ -342,15 +358,15 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 </div></header>
 
 <nav class="tabs" id="tabs-start" tabindex="-1"><div class="wrap" role="tablist">
-  <button class="tab" role="tab" data-tab="list" aria-selected="true">Shortlist<span class="n num" id="n-list"></span></button>
-  <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved<span class="long"> and applied</span><span class="n num" id="n-saved"></span></button>
-  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills<span class="long"> and market</span></button>
-  <button class="tab" role="tab" data-tab="resume" aria-selected="false">Resume</button>
-  <button class="tab" role="tab" data-tab="feeds" aria-selected="false">Sources</button>
+  <button class="tab" role="tab" id="tab-list" aria-controls="list" data-tab="list" aria-selected="true">Shortlist<span class="n num" id="n-list"></span></button>
+  <button class="tab" role="tab" id="tab-saved" aria-controls="saved" data-tab="saved" aria-selected="false">Saved<span class="long"> and applied</span><span class="n num" id="n-saved"></span></button>
+  <button class="tab" role="tab" id="tab-skills" aria-controls="skills" data-tab="skills" aria-selected="false">Skills<span class="long"> and market</span></button>
+  <button class="tab" role="tab" id="tab-resume" aria-controls="resume" data-tab="resume" aria-selected="false">Resume</button>
+  <button class="tab" role="tab" id="tab-feeds" aria-controls="feeds" data-tab="feeds" aria-selected="false">Sources</button>
 </div></nav>
 
 <main class="wrap">
-<section id="list" class="on"><h2 class="vh">Shortlist</h2>
+<section id="list" class="on" role="tabpanel" aria-labelledby="tab-list"><h2 class="vh">Shortlist</h2>
   <details class="addjob" id="addjob"><summary>Add a job ad from anywhere</summary>
     <p class="why" style="margin:6px 0 8px">Paste an ad from JobStreet, LinkedIn or any company site. It's scored against your skills and added to this list, kept in this browser only and never uploaded. Start with <code>Title:</code>, <code>Company:</code> and <code>Location:</code> lines for the best match.</p>
     <textarea id="add-text" aria-label="Job ad to add" placeholder="Title: Data Engineer&#10;Company: Example Sdn Bhd&#10;Location: Kuala Lumpur&#10;https://link-to-the-ad&#10;&#10;Paste the ad here…"></textarea>
@@ -378,7 +394,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <div id="anyjobs" hidden></div>
   <div id="picks-wrap" hidden>
     <h3 class="picks-h">Act on these first <span class="num n" id="picks-n"></span></h3>
-    <p class="why" style="margin:0 0 6px">Strong fits nearby that you haven't applied to yet, best first. <button class="linkbtn" id="save-picks">Save all of these</button><span class="keys"> Keys: <kbd>/</kbd> search, <kbd>s</kbd> save, <kbd>a</kbd> applied.</span></p>
+    <p class="why" style="margin:0 0 6px">Strong fits nearby that you haven't applied to yet, best first. <button class="linkbtn" id="save-picks">Save all of these</button><span class="keys"> Keys: <kbd>/</kbd> search, <kbd>j</kbd> <kbd>k</kbd> move, <kbd>s</kbd> save, <kbd>a</kbd> applied, <kbd>u</kbd> undo, <kbd>?</kbd> all keys.</span></p>
     <div class="list" id="picks"></div>
   </div>
   <details class="all-wrap" id="all-wrap"><summary id="all-n"></summary>
@@ -386,14 +402,14 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   </details>
 </section>
 
-<section id="saved"><h2 class="vh">Saved and applied</h2><p class="count" id="count-saved"></p><div class="list" id="saved-jobs"></div></section>
+<section id="saved" role="tabpanel" aria-labelledby="tab-saved"><h2 class="vh">Saved and applied</h2><p class="count" id="count-saved"></p><div class="list" id="saved-jobs"></div></section>
 
-<section id="skills"><div class="panel" style="margin-bottom:16px">
+<section id="skills" role="tabpanel" aria-labelledby="tab-skills"><div class="panel" style="margin-bottom:16px">
   <h2>What the market asks for, and what I bring</h2>
   <p class="lede" id="pz-lede"></p>
   <div class="two">
-    <div><svg class="pz" id="market" viewBox="-265 -225 530 450" role="img" aria-label="Chart of the skills nearby data jobs ask for most"></svg>
-      <div class="pz-legend"><span><i style="background:var(--have)"></i>I have it</span><span><i style="background:var(--accent)"></i>Learning now</span><span><i style="background:var(--gap)"></i>Gap</span></div></div>
+    <div><svg class="pz" id="market" viewBox="-310 -225 620 450" role="img" aria-label="Chart of the skills nearby data jobs ask for most"></svg>
+      <div class="pz-legend"><span><i style="background:var(--have)"></i>I have it</span><span id="leg-learn"><i style="background:var(--accent)"></i>Learning now</span><span><i style="background:var(--gap)"></i>Gap</span></div></div>
     <div class="notes" id="market-notes"></div>
   </div>
 </div><div class="panel">
@@ -402,7 +418,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <div id="bars"></div>
 </div></section>
 
-<section id="resume"><h2 class="vh">Resume and who built this</h2><div class="duo">
+<section id="resume" role="tabpanel" aria-labelledby="tab-resume"><h2 class="vh">Resume and who built this</h2><div class="duo">
   <div class="teaser" id="teaser"></div>
   <div class="panel built" id="built" hidden></div>
   <div class="panel">
@@ -419,10 +435,12 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   </div>
 </div></section>
 
-<section id="feeds"><div class="panel">
+<section id="feeds" role="tabpanel" aria-labelledby="tab-feeds"><div class="panel">
   <h2>Where the jobs come from</h2>
   <p class="lede">Public company career pages, checked every 4 hours. JobStreet, LinkedIn, Hiredly and Maukerja jobs arrive through the job alerts those sites email me.</p>
+  <p class="why" id="feed-n"></p>
   <table><thead><tr><th>Source</th><th class="r">Jobs today</th></tr></thead><tbody id="feed-rows"></tbody></table>
+  <details class="quiet" id="feed-quiet"></details>
 </div></section>
 <div class="cta"><p><b>Hiring for data roles?</b> The person behind this page is looking for a junior data engineering job in KL or Selangor.</p>
   <button class="btn2" data-go="resume" data-anchor="teaser" >See the resume preview</button></div>
@@ -431,7 +449,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="cv-ov" id="cv-ov" role="dialog" aria-modal="true" aria-labelledby="cv-title">
   <div class="cv-bar"><div class="wrap">
-    <h2 id="cv-title">Resume<small id="cv-sub"></small></h2>
+    <h2 id="cv-title"><span id="cv-name">Resume</span><small id="cv-sub"></small></h2>
     <div class="seg" id="cv-mode" role="group" aria-label="Format">
       <button data-v="resume" aria-pressed="true">Resume, 1 page</button><button data-v="cv" aria-pressed="false">Full CV</button><button data-v="letter" aria-pressed="false">Cover letter</button>
     </div>
@@ -467,7 +485,7 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
 };
 // Skill names in Title Case ("data cleaning" -> "Data Cleaning"), with the usual spellings for acronyms and brands
-const NICE = { sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Power BI", "power query": "Power Query (M)", sqlite: "SQLite",
+const NICE = { "gdpr / pdpa": "GDPR / PDPA", gdpr: "GDPR", pdpa: "PDPA", sql: "SQL", etl: "ETL", "rest api": "REST APIs", "power bi": "Power BI", "power query": "Power Query (M)", sqlite: "SQLite",
   kpi: "KPIs", erp: "ERP", git: "Git", "ci/cd": "CI/CD", aws: "AWS", gcp: "GCP", uat: "UAT", "data pipeline": "Data Pipelines", dbt: "dbt",
   sap: "SAP", api: "API", nosql: "NoSQL", pyspark: "PySpark", javascript: "JavaScript", r: "R",
   sla: "SLA Reporting", cmms: "CMMS", itil: "ITIL", dcim: "DCIM", ups: "UPS", hvac: "HVAC" };
@@ -497,7 +515,7 @@ function wedge(r0, r1, a0, a1) {
   return `M${x0} ${y0}L${x1} ${y1}A${r1} ${r1} 0 ${big} 1 ${x2} ${y2}L${x3} ${y3}A${r0} ${r0} 0 ${big} 0 ${x0} ${y0}Z`;
 }
 // items: [{label, value 0-100 (slice length), shown (badge text), color, note}]
-function pizza(items, { R, r0, font, core }) {
+function pizza(items, { R, r0, font, core, coreUnit }) {
   const n = items.length, step = Math.PI * 2 / n, gap = 0.035;
   let out = items.map((it, i) => {
     const a0 = -Math.PI / 2 + i * step + gap, a1 = a0 + step - 2 * gap, mid = (a0 + a1) / 2;
@@ -509,13 +527,13 @@ function pizza(items, { R, r0, font, core }) {
       `<g class="slice"><title>${esc(it.label)}: ${esc(it.shown)}${it.note ? ". " + esc(it.note) : ""}</title>
       <path d="${wedge(r0, R, a0, a1)}" fill="transparent"/>
       <circle cx="${bx}" cy="${by}" r="${font * 1.25}" fill="var(--panel)" stroke="${it.color}" stroke-width="2.5"/>
-      <text class="val num" x="${bx}" y="${by}" dy="${font * .36}" text-anchor="middle" style="fill:${it.ink || it.color};font-size:${font * .95}px">${esc(it.shown)}</text>
+      <text class="val num" x="${bx}" y="${by}" dy="${font * .36}" text-anchor="middle" style="fill:${it.ink || it.color};font-size:${font * (String(it.shown).length > 2 ? .78 : .95)}px">${esc(it.shown)}</text>
       <text class="lab" x="${lx}" y="${ly}" dy="${dy - (it.label.length > 12 && it.label.includes(" ") ? font * .5 : 0)}" text-anchor="${anchor}" style="font-size:${font}px">${
         it.label.length > 12 && it.label.includes(" ") ? it.label.replace(/^(\S+(?:\s\S+)?)\s(.+)$/, (m, a, b) => `${esc(a)}<tspan x="${lx}" dy="${font * 1.1}">${esc(b)}</tspan>`) : esc(it.label)}</text></g>`];
   });
   const grid = [25, 50, 75].map(v => `<circle class="grid" r="${(r0 + (R - r0) * v / 100).toFixed(1)}"/>`).join("");
   out = out.map(o => o[0]).join("") + grid + out.map(o => o[1]).join("");
-  if (core) out += `<circle class="core" r="${r0 - 2}"/><text class="core-n num" text-anchor="middle" dy="5">${esc(core)}</text>`;
+  if (core) out += `<circle class="core" r="${r0 - 2}"/><text class="core-n num" text-anchor="middle" dy="${coreUnit ? 0 : 5}">${esc(core)}</text>${coreUnit ? `<text class="core-u" text-anchor="middle" dy="15">${esc(coreUnit)}</text>` : ""}`;
   return out;
 }
 const PART_NOTE = {
@@ -528,6 +546,17 @@ const PART_NOTE = {
   "Location": "Full in KL and Selangor, empty in other states"
 };
 const SHORT = { "Job title": "Title", "Entry-friendly": "Entry level" };
+// The score as points: the same numbers as the sentence under it, in the same order
+function scoreBars(j) {
+  const m = j.math, raw = m.title + m.skills + m.adjust.reduce((a, [, v]) => a + v, 0);
+  const bar = (label, v, max, cls, tip) => `<div class="sb ${cls}"><span>${esc(label)}${tip ? `<small>${esc(tip)}</small>` : ""}</span>
+    <div class="track"><div class="fill" style="width:${(Math.min(Math.abs(v), max) / max * 100).toFixed(1)}%"></div></div><b class="num">${cls === "base" ? `${v}<small> of ${max}</small>` : (v > 0 ? "+" : "−") + Math.abs(v)}</b></div>`;
+  return `<div><h3>Why it scores ${j.score}</h3>
+    ${bar("Job title", m.title, 45, "base", "how close the title is to my target roles")}
+    ${bar("Skills", m.skills, 55, "base", "skills in the ad that I have")}
+    ${m.adjust.map(([k, v]) => bar(k, v, 30, v > 0 ? "plus" : "minus")).join("")}
+    <div class="sb total"><span>Score</span><span></span><b class="num">${raw > m.cap ? `${m.cap}<small> (${raw}, capped)</small>` : j.score}</b></div></div>`;
+}
 function jobPizza(j) {
   return pizza(Object.entries(j.parts).map(([k, v], i) => ({
     label: SHORT[k] || k, value: v, shown: v, note: PART_NOTE[k],
@@ -624,12 +653,12 @@ function detailHtml(j) {
                 j.missing.map(s => `<span class="chip gap">+ ${esc(nice(s))}</span>`).join("");
   const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${safeUrl(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
   return `<div class="detail">
-      ${j.parts ? `<div><h3>Why it scores ${j.score}</h3><svg class="pz" viewBox="-230 -180 460 360" role="img" aria-label="Score ${j.score}: ${Object.entries(j.parts).map(([k, v]) => k + " " + v).join(", ")}">${jobPizza(j)}</svg>
+      ${j.math ? scoreBars(j) : j.parts ? `<div><h3>Why it scores ${j.score}</h3><svg class="pz" viewBox="-230 -180 460 360" role="img" aria-label="Score ${j.score}: ${Object.entries(j.parts).map(([k, v]) => k + " " + v).join(", ")}">${jobPizza(j)}</svg>
         <div class="pz-legend"><span><i style="background:var(--accent)"></i>Makes the score</span><span><i style="background:var(--have)"></i>Check passed</span><span><i style="background:var(--gap)"></i>Points off</span></div></div>` : ""}
       <div>
         <h3>${esc(j.track || "Skills")}</h3>
         ${chips ? `<div class="chips">${chips}</div>` : '<p class="why">The ad names no skills I track.</p>'}
-        ${j.parts ? `<p class="why">${explain(j)}</p>` : ""}
+        ${j.parts && !j.math ? `<p class="why">${explain(j)}</p>` : ""}
         ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
         <div class="actions">
           ${j.url ? `<a class="apply" style="margin:0" href="${safeUrl(j.url)}" target="_blank" rel="noopener">Open the job ad</a>` : ""}
@@ -662,9 +691,32 @@ async function searchAll(q) {
   const hits = ALLJOBS.jobs.filter(r => { const t = (r[0] + " " + ALLJOBS.companies[r[1]]).toLowerCase(); return words.every(w => t.includes(w)); });
   box.hidden = !ALLJOBS.jobs.length;
   box.innerHTML = `<h3>${hits.length} ${hits.length === 1 ? "job" : "jobs"} in any field matching “${esc(q)}”</h3>
-    <p class="why" style="margin:0">From all ${ALLJOBS.jobs.length.toLocaleString()} jobs in Malaysia on ${ALLJOBS.companies.length} company career sites, refreshed every 4 hours. These aren't scored; open one and paste it into the resume tool to tailor for it.</p>
+    <p class="why" style="margin:0">From all ${ALLJOBS.jobs.length.toLocaleString()} jobs in Malaysia, in any field, on the same career sites, refreshed every 4 hours. These aren't scored; open one and paste it into the resume tool to tailor for it.</p>
     <ul>${hits.slice(0, 40).map(r => `<li><a href="${safeUrl(r[3])}" target="_blank" rel="noopener">${esc(r[0])}</a><span>${esc(ALLJOBS.companies[r[1]])}</span><span>${esc(r[2])}</span></li>`).join("")}</ul>
     ${hits.length > 40 ? `<p class="why">Showing the first 40. Add another word to narrow it down.</p>` : ""}`;
+}
+// Empty list: say which thing caused it (the search or the filters) and offer the one fix that works
+const lev = (a, b) => { const d = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) { let prev = d[0]; d[0] = i;
+    for (let k = 1; k <= b.length; k++) { const t = d[k]; d[k] = Math.min(d[k] + 1, d[k - 1] + 1, prev + (a[i - 1] !== b[k - 1])); prev = t; } }
+  return d[b.length]; };
+let VOCAB = null;
+function didYouMean(q) {
+  VOCAB ||= [...new Set(D.jobs.flatMap(j => [j.title, j.company, ...j.matched, ...j.missing].join(" ").toLowerCase().split(/[^a-z0-9+#.]+/)).filter(w => w.length > 2))];
+  let changed = false;
+  const out = q.toLowerCase().split(/\s+/).map(w => { if (w.length < 4 || VOCAB.includes(w)) return w;
+    const best = VOCAB.map(v => [v, lev(w, v)]).filter(([, d]) => d <= 2).sort((a, b) => a[1] - b[1])[0];
+    if (best) { changed = true; return best[0]; } return w; }).join(" ");
+  return changed ? out : "";
+}
+function emptyHtml() {
+  const q = state.q.trim();
+  if (!q) return `<p class="empty">No jobs at ${state.min} or more${state.where === "all" ? "" : " nearby"}${state.track ? " in this track" : ""}. <button class="linkbtn" data-relax>Show any score in all of Malaysia</button></p>`;
+  const loose = D.jobs.filter(j => [j.title, j.company, j.location, ...j.matched, ...j.missing].join(" ").toLowerCase().includes(q.toLowerCase())).length;
+  const dym = didYouMean(q);
+  return `<p class="empty">No shortlisted job matches “${esc(q)}”. <button class="linkbtn" data-clearq>Clear search</button>` +
+    (dym ? ` Did you mean <button class="linkbtn" data-q="${esc(dym)}">${esc(dym)}</button>?` : "") +
+    (loose ? ` ${loose} match${loose === 1 ? "es" : ""} at a lower score or outside KL and Selangor. <button class="linkbtn" data-relax>Show ${loose === 1 ? "it" : "them"}</button>` : "") + `</p>`;
 }
 function render() {
   const list = filtered();
@@ -678,9 +730,11 @@ function render() {
   $("#all-wrap").classList.toggle("folded", !!picks.length);
   if (!picks.length) $("#all-wrap").open = true;
   $("#all-n").textContent = picks.length ? `All ${list.length} jobs on the list` : "";
-  $("#jobs").innerHTML = list.map(row).join("") || `<p class="empty">No jobs match these filters. Try a lower score or All Malaysia${state.track ? ", or clear the track" : ""}.</p>`;
+  $("#jobs").innerHTML = list.map(row).join("") || emptyHtml();
   const base = state.where === "all" ? `${D.jobs.length} in Malaysia` : `${D.jobs.filter(isLocal).length} nearby`;
-  $("#count").innerHTML = `Showing ${list.length} of ${esc(base)}${state.track ? ` in <b>${esc(TRACK_LABEL[state.track] || state.track)}</b> <button class="linkbtn" id="clear-track">Show all tracks</button>` : ""}. Open a row for skills and projects to mention.`;
+  const pill = $("#track-pill"); pill.hidden = !state.track;
+  if (state.track) pill.innerHTML = `Showing ${list.length} ${esc(TRACK_LABEL[state.track] || state.track)} job${list.length === 1 ? "" : "s"}. <button class="linkbtn" data-go="list" data-anchor="count">View the list</button> <button class="linkbtn" id="clear-track2">Show all</button>`;
+  $("#count").innerHTML = `Showing ${list.length} of ${esc(base)}${state.track ? ` in <b>${esc(TRACK_LABEL[state.track] || state.track)}</b> <button class="linkbtn" id="clear-track">Show all tracks</button>` : ""}${list.length ? ". Open a row for skills and projects to mention." : "."}`;
   const q = state.q.trim(), e = encodeURIComponent(q), slug = q.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   // boards with no public feed still get a one-tap search, opened in a new tab
   $("#elsewhere").hidden = !q;
@@ -775,14 +829,19 @@ $("#radar").addEventListener("pointermove", e => {
 $("#radar").addEventListener("pointerleave", () => { $("#tip").style.opacity = 0; });
 $("#radar").addEventListener("keydown", e => {
   const s = e.target.closest(".sector-label");
-  if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); setTrack(s.dataset.track); return; }
+  if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); const t = s.dataset.track; setTrack(t);
+    $(`#radar .sector-label[data-track="${CSS.escape(t)}"]`)?.focus(); return; }
+  if (s && ["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) { e.preventDefault();
+    const ls = [...document.querySelectorAll("#radar .sector-label")], i = ls.indexOf(s);
+    const n = e.key === "Home" ? 0 : e.key === "End" ? ls.length - 1 : (i + (e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : ls.length - 1)) % ls.length;
+    ls[n].focus(); return; }
   const b = e.target.closest(".blip"); if (!b) return;
   if (e.key === "Enter" || e.key === " ") { e.preventDefault(); b.dispatchEvent(new MouseEvent("click", { bubbles: true })); }
-  if (["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp"].includes(e.key)) { e.preventDefault();
+  if (["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) { e.preventDefault();
     // clockwise around the radar from 12 o'clock, so focus moves to the neighbouring dot, not by score
     const ang = c => (Math.atan2(+c.getAttribute("cx"), -c.getAttribute("cy")) + 2 * Math.PI) % (2 * Math.PI);
     const all = [...document.querySelectorAll("#radar .blip")].sort((x, y) => ang(x) - ang(y)), i = all.indexOf(b);
-    const next = all[(i + (e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : all.length - 1)) % all.length];
+    const next = e.key === "Home" ? all[0] : e.key === "End" ? all[all.length - 1] : all[(i + (e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : all.length - 1)) % all.length];
     b.tabIndex = -1; next.tabIndex = 0; next.focus(); }
 });
 $("#radar").addEventListener("focusin", e => {
@@ -794,7 +853,16 @@ $("#radar").addEventListener("focusin", e => {
 $("#radar").addEventListener("focusout", () => { $("#tip").style.opacity = 0; });
 // a slice (or its label) filters the list to that track; tapping it again clears the filter
 function setTrack(t) { state.track = state.track === t ? null : t; render(); }
+// small dots on a phone: a tap within 14px of a dot counts as that dot
+function nearBlip(e) {
+  if (e.target.closest(".blip") || !e.clientX) return e.target.closest(".blip");
+  let best = null, bd = 14;
+  document.querySelectorAll("#radar .blip").forEach(b => { const r = b.getBoundingClientRect(), d = Math.hypot(r.left + r.width / 2 - e.clientX, r.top + r.height / 2 - e.clientY); if (d < bd) { bd = d; best = b; } });
+  return best;
+}
 $("#radar").addEventListener("click", e => {
+  const near = !e.target.closest(".sector-label") && nearBlip(e);
+  if (near && near !== e.target) { near.dispatchEvent(new MouseEvent("click", { bubbles: true })); return; }
   const s = !e.target.closest(".blip") && e.target.closest("[data-track]");
   if (s) { setTrack(s.dataset.track); return; }
   const b = e.target.closest(".blip"); if (!b) return;
@@ -804,6 +872,7 @@ $("#radar").addEventListener("click", e => {
   if (!r) return;
   setOpen(r, true); r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
   r.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
+  r.querySelector("[data-exp]")?.focus({ preventScroll: true });   // keyboard focus goes where the eye goes
 });
 
 // Header copy from real numbers
@@ -841,9 +910,10 @@ $("#bars").innerHTML = gapsTop.map(([s, n]) => `<div class="sk"><span>${esc(nice
   const colour = { have: "var(--have)", learning: "var(--accent)", gap: "var(--gap)" };
   const order = { have: 0, learning: 1, gap: 2 };
   const slices = top.slice().sort((a, b) => order[kind(a[0])] - order[kind(b[0])] || b[1] - a[1]);
-  $("#market").innerHTML = pizza(slices.map(([s, n]) => ({ label: nice(s), value: Math.sqrt(n / peak) * 100, shown: pct(n),
-    note: `asked for in ${n} of ${pool.length} jobs`, color: colour[kind(s)], ink: kind(s) === "learning" ? "var(--accent-ink)" : undefined })), { R: 145, r0: 36, font: 17, core: pool.length });
+  $("#market").innerHTML = pizza(slices.map(([s, n]) => ({ label: nice(s), value: Math.sqrt(n / peak) * 100, shown: pct(n) + "%",
+    note: `asked for in ${n} of ${pool.length} jobs`, color: colour[kind(s)], ink: kind(s) === "learning" ? "var(--accent-ink)" : undefined })), { R: 145, r0: 36, font: 17, core: pool.length, coreUnit: "ads" });
   $("#pz-lede").textContent = `The ${top.length} skills most asked for in the ${pool.length} nearby data roles whose ads list skills (the number in the middle). The rest of the ${D.jobs.filter(isLocal).length} nearby ads name no skills or are off-track, so they're left out here. Slices are grouped like a player profile: skills I have, then skills I'm learning, then gaps. A longer slice means the skill is asked for more often, and the badge gives the share of jobs that ask for it, in percent.`;
+  $("#leg-learn").hidden = !top.some(([s]) => kind(s) === "learning");
   const mine = top.filter(([s]) => kind(s) === "have"), learn = top.filter(([s]) => kind(s) === "learning"), gaps = top.filter(([s]) => kind(s) === "gap");
   const de = pool.filter(j => j.track === "Data engineering"), deAsks = {};
   de.forEach(j => j.missing.forEach(s => deAsks[s] = (deAsks[s] || 0) + 1));
@@ -855,7 +925,7 @@ $("#bars").innerHTML = gapsTop.map(([s, n]) => `<div class="sk"><span>${esc(nice
     <p><b>I already cover ${mine.length} of the top ${top.length}:</b> ${esc(list3(mine.map(m => nice(m[0])))) || "none yet"}.</p>
     ${learn.length ? `<p><b>Learning now:</b> ${esc(list3(learn.map(m => nice(m[0]))))}.</p>` : ""}
     ${gaps.length ? `<p><b>Gaps worth closing:</b> ${esc(list3(gaps.map(m => `${nice(m[0])} (${pct(m[1])}%)`)))}.</p>` : ""}
-    ${deTop.length ? `<p><b>Of these, ${de.length} are data engineering roles.</b> Their most common missing skills are ${esc(list3(deTop))}.</p>` : ""}
+    ${deTop.length ? `<p><b>${de.length} of the ${pool.length} ads that list skills are data engineering roles.</b> Their most common missing skills are ${esc(list3(deTop))}.</p>` : ""}
     <h3 style="margin-top:16px">Jobs on the radar, by track</h3>
     ${byTrack.map(([t, n, g]) => `<div class="sk"><span>${esc(t)}</span><div class="track"><div class="fill" style="width:${(n / peakT * 100).toFixed(1)}%;background:color-mix(in srgb,var(--accent) 28%,transparent)"><div class="fill" style="width:${n ? (g / n * 100).toFixed(1) : 0}%"></div></div></div><span class="v num">${g}/${n}</span></div>`).join("")}
     <p class="st" style="margin-top:6px">Pale bar: nearby jobs scoring 40 or more (the radar's count). Dark part and first number: strong fits, 60 or more.</p>`;
@@ -971,6 +1041,7 @@ function renderCv() {
   $("#cv-sub").textContent = (job ? `Tailored for ${job.title}${job.company ? ", " + job.company : ""}` : "General version") +
     (MYCV ? " · your CV, kept in this browser only" : " · showing a SAMPLE person: press Load my CV");
   $("#cv-forget").hidden = !MYCV; $("#cv-lock").hidden = !MYCV;
+  $("#cv-name").textContent = { cv: "Full CV", letter: "Cover letter" }[cvState.mode] || "Resume";
   // while the sample shows, loading your own CV is the main action, and saving says it saves the sample
   $("label[for=cv-file]").toggleAttribute("data-primary", !MYCV); $("#cv-print").toggleAttribute("data-primary", !!MYCV);
   $("#cv-print").textContent = MYCV ? "Save as PDF" : "Save sample as PDF"; $("#cv-word").textContent = MYCV ? "Save as Word" : "Save sample as Word";
@@ -1079,7 +1150,7 @@ $("#cv-mode").addEventListener("click", e => {
 // Editable copy: Word opens HTML saved as .doc, so the sheet is rewritten with Word-friendly markup (tables, not flexbox)
 function fileBase() {
   const co = cvState.job?.company ? "_" + cvState.job.company.replace(/[^A-Za-z0-9]+/g, "") : "";
-  return `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${{ cv: "CV", letter: "Cover_Letter" }[cvState.mode] || "Resume"}`;
+  return `${CV().name.replace(/\(.*?\)/g, "").trim().split(/\s+/).slice(0, 2).join("_").replace(/[^A-Za-z_]/g, "")}${co}_${MYCV ? "" : "SAMPLE_"}${{ cv: "CV", letter: "Cover_Letter" }[cvState.mode] || "Resume"}`;
 }
 $("#cv-word").addEventListener("click", () => {
   const c = $("#sheet").cloneNode(true);
@@ -1155,10 +1226,9 @@ function recruiterView() {
   document.body.classList.toggle("recruiter", on);
   $("#built").hidden = !on;
   if (!on) return;
-  const ok = D.feeds.filter(f => f.ok).length;
   $("#built").innerHTML = `<h2>How Job Radar works</h2>
     <ul class="built-list">
-      <li><b>Collects</b> about ${D.jobs.length.toLocaleString()} Malaysian data, BA and BI jobs from ${ok} company career sites (Workday, Greenhouse, Lever, SmartRecruiters) plus job-alert emails, every 4 hours, 16 sources at a time.</li>
+      <li><b>Collects</b> data, BA and BI jobs across Malaysia (${D.jobs.length.toLocaleString()} today, ${D.jobs.filter(isLocal).length} of them in KL and Selangor) from ${D.feeds.length} sources: company career sites on Workday, Greenhouse, Lever and SmartRecruiters, plus job-alert emails. Every 4 hours, 16 sources at a time.</li>
       <li><b>Stores</b> every job in SQLite with first-seen, last-seen and closed dates, so reposts and closed roles are tracked over time.</li>
       <li><b>Scores</b> each job against a skills profile: job title track, skills the ad asks for, seniority, contract and language checks, all as whole-word matching with unit tests.</li>
       <li><b>Publishes</b> this page and emails new strong matches, through GitHub Actions and GitHub Pages, with no server to run.</li>
@@ -1176,18 +1246,35 @@ function showTab(id) {
   document.querySelectorAll(".tab").forEach(x => { x.setAttribute("aria-selected", x.dataset.tab === id); x.tabIndex = x.dataset.tab === id ? 0 : -1; });
   document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === id));
   $(".cta").hidden = id === "resume";   // the Resume tab already is the pitch
+  document.body.classList.toggle("compact", id !== "list");   // the radar hero belongs to the shortlist only
 }
 $(".skip").addEventListener("click", e => { e.preventDefault(); showTab("list"); $("nav.tabs").focus(); $(".tab[aria-selected=true]").focus(); });
 // shortcuts: / to search; on a job row, s saves it and a marks it applied
 document.addEventListener("keydown", e => {
   if (e.ctrlKey || e.metaKey || e.altKey || e.target.closest("input,textarea,select,[contenteditable]") || $("#cv-ov").classList.contains("on")) return;
   if (e.key === "/") { e.preventDefault(); showTab("list"); $("#q").focus(); return; }
+  if (e.key === "u" && undoLast) { e.preventDefault(); doUndo(); return; }
+  if (e.key === "?") { e.preventDefault(); say("Keys: / search · j and k move between jobs · Enter opens a job · s save · a applied · u undo"); return; }
+  if (e.key === "j" || e.key === "k") {   // move between visible rows
+    const rows = [...document.querySelectorAll("main section.on .row")].filter(r => r.offsetParent);
+    const cur = rows.indexOf(e.target.closest(".row")), n = cur < 0 ? 0 : Math.max(0, Math.min(rows.length - 1, cur + (e.key === "j" ? 1 : -1)));
+    rows[n]?.querySelector("[data-exp]")?.focus(); rows[n]?.scrollIntoView({ block: "nearest" }); e.preventDefault(); return;
+  }
   const row = e.target.closest(".row"); if (!row || !["s", "a"].includes(e.key)) return;
   row.querySelector(`[data-mark="${e.key === "s" ? "saved" : "applied"}"]`)?.click();
 });
 // one polite message area: screen readers hear it, everyone sees it briefly
 let toastTimer;
-function say(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("on"), 2600); }
+let undoLast = null;
+function say(msg, undo) {
+  const t = $("#toast"); undoLast = undo || null;
+  t.innerHTML = esc(msg) + (undo ? ` <button class="linkbtn" id="undo">Undo</button><span class="keys"> (u)</span>` : "");
+  t.classList.add("on"); clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.classList.remove("on"); undoLast = null; }, undo ? 6000 : 2600);
+}
+function doUndo() { if (!undoLast) return; const f = undoLast; undoLast = null; f(); $("#toast").classList.remove("on"); }
+// a snapshot of the marks, restored by Undo
+const snapMarks = () => { const before = { ...marks }; return () => { Object.keys(marks).forEach(k => delete marks[k]); Object.assign(marks, before);
+  store.set("jr-marks", marks); render(); say("Undone."); }; };
 function goTab(id, anchor) {
   showTab(id);
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches, el = anchor && document.getElementById(anchor);
@@ -1199,8 +1286,15 @@ function goTab(id, anchor) {
 }
 
 // Sources panel
-$("#feed-rows").innerHTML = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name)).map(f =>
-  `<tr><td>${esc(f.name)}${f.ok ? "" : ' <span class="st bad">not reachable today</span>'}</td><td class="r num">${f.jobs}</td></tr>`).join("");
+{ // sources with jobs today first; the long tail of quiet ones is folded
+  const fs = D.feeds.slice().sort((a, b) => b.jobs - a.jobs || a.name.localeCompare(b.name));
+  const tr = f => `<tr><td>${esc(f.name)}${f.ok ? "" : ' <span class="st bad">not reachable today</span>'}</td><td class="r num">${f.jobs}</td></tr>`;
+  const busy = fs.filter(f => f.jobs > 0 || !f.ok), quiet = fs.filter(f => f.jobs === 0 && f.ok);
+  $("#feed-rows").innerHTML = busy.map(tr).join("");
+  $("#feed-n").textContent = `${D.feeds.length} sources checked; ${fs.filter(f => f.jobs > 0).length} have matching jobs today.`;
+  $("#feed-quiet").hidden = !quiet.length;
+  $("#feed-quiet").innerHTML = `<summary>${quiet.length} more sources with no matching jobs today</summary><table><tbody>${quiet.map(tr).join("")}</tbody></table>`;
+}
 
 // Events
 let qTimer;   // re-render once typing pauses, not on every key
@@ -1215,23 +1309,35 @@ $("#where").addEventListener("click", e => {
   render();
 });
 document.addEventListener("click", e => {
-  if (e.target.id === "clear-track") { state.track = null; render(); return; }
+  if (e.target.id === "clear-track" || e.target.id === "clear-track2") { state.track = null; render(); return; }
+  if (e.target.closest("[data-clearq],[data-q]")) { state.q = e.target.dataset.q || ""; $("#q").value = state.q; render(); $("#q").focus(); return; }
+  if (e.target.closest("[data-relax]")) { state.min = 0; state.where = "all"; state.track = null; $("#min").value = "0";
+    $("#where").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === "all")); render(); say(`Showing ${filtered().length} jobs at any score in all of Malaysia.`); return; }
+  if (e.target.id === "undo") { doUndo(); return; }
   if (e.target.id === "save-picks") {
+    const undo = snapMarks();
     const ids = [...document.querySelectorAll("#picks .row")].map(r => r.dataset.job).filter(id => !marks[id]);
     ids.forEach(id => marks[id] = "saved"); store.set("jr-marks", marks); render();
-    say(ids.length ? `Saved ${ids.length} job${ids.length > 1 ? "s" : ""}. Find them under Saved.` : "These are all saved already."); return;
+    say(ids.length ? `Saved ${ids.length} job${ids.length > 1 ? "s" : ""}. Find them under Saved.` : "These are all saved already.", ids.length ? undo : null); return;
   }
   const b = e.target.closest("[data-mark]");
   if (b) {
-    const { id, mark } = b.dataset;
+    const { id, mark } = b.dataset, undo = snapMarks();
+    const rowsBefore = [...(b.closest(".list")?.querySelectorAll(".row") || [])].map(r => r.dataset.job);
     if (marks[id] === mark) delete marks[id]; else marks[id] = mark;
     const t = jobById(id)?.title || "Job";
-    say(marks[id] ? `${t}: ${mark === "applied" ? "marked applied" : "saved"}.` : `${t}: ${mark === "applied" ? "no longer marked applied" : "removed from saved"}.`);
+    say(marks[id] ? `${t}: ${mark === "applied" ? "marked applied" : "saved"}.` : `${t}: ${mark === "applied" ? "no longer marked applied" : "removed from saved"}.`, undo);
     store.set("jr-marks", marks);
     const open = [...document.querySelectorAll(".row.open")].map(r => r.id), list = b.closest(".list")?.id;
     render(); open.forEach(id => setOpen(document.getElementById(id), true));
     // the list was redrawn: put keyboard focus back on the same button
-    document.querySelector(`#${list || "jobs"} [data-mark="${mark}"][data-id="${CSS.escape(id)}"]`)?.focus();
+    const same = document.querySelector(`#${list || "jobs"} [data-mark="${mark}"][data-id="${CSS.escape(id)}"]`);
+    if (same) same.focus();
+    else {   // the row left this list (e.g. marked applied): focus the next one down
+      const next = rowsBefore.slice(rowsBefore.indexOf(id) + 1).concat(rowsBefore.slice(0, rowsBefore.indexOf(id)).reverse())
+        .map(x => document.querySelector(`#${list} [data-job="${CSS.escape(x)}"] [data-mark="${mark}"]`)).find(Boolean);
+      (next || $("#all-n") || $("#q")).focus();
+    }
     return;
   }
   const go = e.target.closest("[data-go]");
@@ -1275,10 +1381,12 @@ $("nav.tabs").addEventListener("keydown", e => {
 showTab("list");
 const root = document.documentElement, theme = store.get("jr-theme", null);
 if (theme) root.dataset.theme = theme;
+const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+const themeLabel = () => { const d = isDark(); $("#theme").textContent = d ? "Light mode" : "Dark mode"; $("#theme").setAttribute("aria-label", `Dark mode is ${d ? "on" : "off"}. Switch to ${d ? "light" : "dark"} mode`); };
 $("#theme").addEventListener("click", () => {
-  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
-  root.dataset.theme = dark ? "light" : "dark"; store.set("jr-theme", root.dataset.theme);
+  root.dataset.theme = isDark() ? "light" : "dark"; store.set("jr-theme", root.dataset.theme); themeLabel();
 });
+themeLabel();
 // Ads added on the page: parsed and scored here, kept in this browser (jr-mine), never sent anywhere
 function adFields(raw) {
   // JobStreet and LinkedIn copies carry links as [text](url) or bare URLs, and filler lines like "View all jobs"
