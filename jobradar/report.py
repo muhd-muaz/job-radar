@@ -57,6 +57,7 @@ def tidy(company, location, source=""):
     if (source.endswith("alert") and (not loc or re.search(r", (?:%s)$" % _STATES, c))) or " · " in c or "<" in c or " RM" in c or "Posted on" in c or re.search(r"\b(Sdn\.? ?Bhd|Berhad|Limited)\b.+", c, re.I):
         c2, place, _ = alert_who_where([re.sub(r"<.*", "", c)])
         c, loc = c2 or c, loc or place
+    c = re.sub(r"\s*\((?:“|\")[^)]*(?:”|\")\)", "", c).strip()
     key = re.sub(r"\s*\(.*?\)$", "", c).lower()
     c = NAMES.get(key, c)
     if c.isupper() and len(c) > 5:
@@ -69,7 +70,24 @@ def tidy(company, location, source=""):
     # the page decides "nearby" from the shown place, so only swap when that answer stays the same
     if tidy_loc and is_preferred(tidy_loc, PROFILE) == is_preferred(loc, PROFILE):
         loc = tidy_loc
+    else:   # kept as written: at least fix the spacing and shouting
+        loc = re.sub(r"\s*,\s*", ", ", loc).strip(", ")
+        loc = ", ".join(p.title() if p.isupper() and len(p) > 3 else p for p in loc.split(", "))
+    c = re.sub(r"\bSdn\.? ?Bhd\.?", "Sdn Bhd", c)
     return c, loc
+
+
+ACRONYMS = {"Ai", "Bi", "Etl", "Sql", "It", "Hr", "Ui", "Ux", "Erp", "Sap", "Aws", "Gcp", "Ml", "Qa", "Kl", "Ba", "Bd"}
+
+
+def tidy_title(t):
+    """' DATA ENGINEER' -> 'Data Engineer'; 'Graduate-Technology-Data & AI-Malaysia' -> 'Graduate, Technology, Data & AI, Malaysia'."""
+    t = re.sub(r"\s+", " ", t or "").strip()
+    if t.isupper() and len(t) > 4:
+        t = " ".join(w if w in {"&", "-"} else (w.title() if w.title() not in ACRONYMS else w) for w in t.split())
+    if t.count("-") >= 2 and " - " not in t and re.search(r"[A-Za-z]-[A-Z]", t):
+        t = re.sub(r"(?<=[A-Za-z&)])-(?=[A-Z])", ", ", t)
+    return t
 
 TEMPLATE = Path(__file__).with_name("page.html")
 
@@ -90,6 +108,7 @@ def slim(j, posts):
     out = {k: j[k] for k in ("id", "company", "title", "location", "url", "source", "score",
                              "first_seen", "last_seen", "matched", "missing", "learning", "projects")}
     out["company"], out["location"] = tidy(j["company"], j.get("location"), j.get("source", ""))
+    out["title"] = tidy_title(j["title"])
     out["salary"] = salary(j.get("description"))
     out.update({k: j.get(k) for k in ("parts", "math", "track", "reach_out")})
     out["posts"] = posts.get((j["company"].lower(), j["title"].strip().lower()), 1)
