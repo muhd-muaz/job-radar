@@ -162,6 +162,8 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .skip:focus{top:12px}
 nav.tabs:focus{outline:none}
 .track-pill{margin:6px 0 0;padding:8px 12px;border-radius:10px;background:var(--accent-soft);font-size:14.5px}
+.howscore dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:8px 16px;margin:8px 0 4px;font-size:14.5px}.howscore dt{font-weight:600}.howscore dd{margin:0;color:var(--ink-2)}.howscore p{margin:8px 0 0;color:var(--ink-2)}
+@media (max-width:760px){.howscore dl{grid-template-columns:1fr;gap:2px}.howscore dd{margin-bottom:8px}}
 .quiet{margin-top:12px}.quiet summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent-ink);font-weight:500}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .detail h3,.panel h3{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
@@ -347,7 +349,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
       <ol class="how">
         <li data-n="1"><b>Each slice is a job track</b>, worked out from the job title. The number beside it counts the open jobs shown. Data engineering, the track I'm aiming for, is shaded.</li>
         <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60; jobs under 40 are left off. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles and a few points added for junior-friendly roles in KL or Selangor.</li>
-        <li data-n="3"><b>Select a dot</b> to open the job and see how its score adds up.</li>
+        <li data-n="3"><b>Select a dot</b> to open the job and see how its score adds up. <button class="linkbtn" data-howscore style="padding:0">How scoring works</button></li>
       </ol>
       <p class="track-pill" id="track-pill" role="status" hidden></p>
       <div class="key"><span><i></i><b id="key-new" style="font-weight:400">Strong fit, 60+</b></span><span><i class="o"></i>Worth a look, 40 to 59</span><span id="key-mine" hidden><i style="background:var(--mine);border-color:var(--mine)"></i>Added by you</span></div>
@@ -370,6 +372,19 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 
 <main class="wrap">
 <section id="list" class="on" role="tabpanel" aria-labelledby="tab-list"><h2 class="vh">Shortlist</h2>
+  <details class="addjob" id="how-score"><summary>How scoring works</summary>
+    <div class="howscore">
+      <p>Every job gets up to 100 points. Open any job to see its own sum.</p>
+      <dl>
+        <dt>Job title, up to 45</dt><dd>Data engineering, ETL, warehouse and pipeline titles get the full 45; data analyst, BA and BI titles get 30.</dd>
+        <dt>Skills, up to 55</dt><dd>The share of skills the ad asks for that I have. Skills I'm learning count as half a gap. An ad naming only one or two skills counts for less.</dd>
+        <dt>Points added</dt><dd>Up to +10 when the ad welcomes fresh graduates or juniors, and +8 for KL or Selangor.</dd>
+        <dt>Points off</dt><dd>15 to 40 for senior titles or 5+ years asked; 20 to 40 for contract or part-time; 25 when another language is required; 10 for elsewhere in Malaysia.</dd>
+        <dt>Caps</dt><dd>Contract and internship roles stop at 45. Titles outside my tracks (finance, sales and so on) stop at 50.</dd>
+        <dt>Bands</dt><dd>60 or more is a strong fit. 40 to 59 is worth a look. Under 40 is left off the radar and list.</dd>
+      </dl>
+    </div>
+  </details>
   <details class="addjob" id="addjob"><summary>Add a job ad from anywhere</summary>
     <p class="why" style="margin:6px 0 8px">Paste an ad from JobStreet, LinkedIn or any company site. It's scored against your skills and added to this list, kept in this browser only and never uploaded. Start with <code>Title:</code>, <code>Company:</code> and <code>Location:</code> lines for the best match.</p>
     <textarea id="add-text" aria-label="Job ad to add" placeholder="Title: Data Engineer&#10;Company: Example Sdn Bhd&#10;Location: Kuala Lumpur&#10;https://link-to-the-ad&#10;&#10;Paste the ad here…"></textarea>
@@ -562,7 +577,7 @@ function scoreBars(j) {
   const m = j.math, raw = m.title + m.skills + m.adjust.reduce((a, [, v]) => a + v, 0);
   const bar = (label, v, max, cls, tip) => `<div class="sb ${cls}"><span>${esc(label)}${tip ? `<small>${esc(tip)}</small>` : ""}</span>
     <div class="track"><div class="fill" style="width:${(Math.min(Math.abs(v), 55) / 55 * 100).toFixed(1)}%"></div></div><b class="num">${cls === "base" ? `${v}<small> of ${max}</small>` : (v > 0 ? "+" : "−") + Math.abs(v)}</b></div>`;
-  return `<div><h3>Why it scores ${j.score}</h3>
+  return `<div><h3>Why it scores ${j.score} <button class="linkbtn" data-howscore style="font-weight:400;font-size:13.5px">How scoring works</button></h3>
     ${bar("Job title", m.title, 45, "base", "how close the title is to my target roles")}
     ${bar("Skills", m.skills, 55, "base", "skills in the ad that I have")}
     ${m.adjust.map(([k, v]) => bar(k, v, 30, v > 0 ? "plus" : "minus")).join("")}
@@ -729,7 +744,14 @@ function emptyHtml() {
     (dym ? ` Did you mean <button class="linkbtn" data-q="${esc(dym)}">${esc(dym)}</button>?` : "") +
     (loose ? ` ${loose} match${loose === 1 ? "es" : ""} at a lower score or outside KL and Selangor. <button class="linkbtn" data-relax>Show ${loose === 1 ? "it" : "them"}</button>` : "") + `</span>`;
 }
+function saveView() {
+  const u = new URLSearchParams();
+  if (state.where !== "local") u.set("where", state.where); if (state.min !== 40) u.set("min", state.min);
+  if (state.track) u.set("track", state.track); if (state.q.trim()) u.set("q", state.q.trim()); if (state.sort !== "score") u.set("sort", state.sort);
+  const qs = u.toString(); try { history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash); } catch {}
+}
 function render() {
+  saveView();
   const list = filtered();
   // "Act on these": up to 12 strong fits nearby you haven't applied to, best first. Shown on the plain view only;
   // any search or filter goes straight to the full list.
@@ -1262,8 +1284,7 @@ function recruiterView() {
   scrollTo(0, 0);
 }
 addEventListener("hashchange", recruiterView);
-document.addEventListener("click", e => { if (e.target.id === "leave-recruiter") { e.preventDefault(); history.replaceState(null, "", location.pathname + location.search); recruiterView(); showTab("list");
-recruiterView(); } });
+document.addEventListener("click", e => { if (e.target.id === "leave-recruiter") { e.preventDefault(); history.replaceState(null, "", location.pathname + location.search); recruiterView(); showTab("list"); } });
 function showTab(id) {
   document.querySelectorAll(".tab").forEach(x => { x.setAttribute("aria-selected", x.dataset.tab === id); x.tabIndex = x.dataset.tab === id ? 0 : -1; });
   document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === id));
@@ -1349,6 +1370,7 @@ document.addEventListener("click", e => {
     $("#where").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === "all")); render(); say(`Showing ${filtered().length} jobs at any score in all of Malaysia.`); return; }
   if (e.target.id === "undo") { doUndo(); return; }
   if (e.target.id === "show-keys") { openKeys(); return; }
+  if (e.target.closest("[data-howscore]")) { showTab("list"); const d = $("#how-score"); d.open = true; d.scrollIntoView({ block: "start" }); d.querySelector("summary").focus(); return; }
   if (e.target.id === "save-picks") {
     const undo = snapMarks(document.querySelector("#picks .row")?.dataset.job);
     const ids = [...document.querySelectorAll("#picks .row")].map(r => r.dataset.job).filter(id => !marks[id]);
@@ -1465,7 +1487,16 @@ document.addEventListener("click", e => {
   store.set("jr-mine", store.get("jr-mine", []).filter(m => m.id !== b.dataset.unmine)); loadMine(); render();
 });
 loadMine(); $("#key-mine").hidden = !D.jobs.some(j => j.mine);
+{ // a bookmarked or shared view: ?where=all&min=60&track=Data%20engineering&q=python
+  const u = new URLSearchParams(location.search);
+  if (u.get("where") === "all") { state.where = "all"; $("#where").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === "all")); }
+  if (["0", "40", "60", "80"].includes(u.get("min"))) { state.min = +u.get("min"); $("#min").value = u.get("min"); }
+  if (TRACKS.includes(u.get("track")) || u.get("track") === "Other") state.track = u.get("track");
+  if (["score", "new", "company"].includes(u.get("sort"))) { state.sort = u.get("sort"); $("#sort").value = state.sort; }
+  if (u.get("q")) { state.q = u.get("q").slice(0, 80); $("#q").value = state.q; }
+}
 render();
+recruiterView();   // a #for-recruiters link opens straight on the recruiter view
 </script>
 </body>
 </html>
