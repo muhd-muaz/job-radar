@@ -103,3 +103,13 @@ def test_keywords_match_whole_words():
     assert not needs_language("japanese", "data analyst", "join a japanese mnc")
     assert needs_language("mandarin", "data analyst", "proficiency in mandarin is required")
     assert track("Data Centre Operations Engineer") == "Data centre"
+
+
+def test_report_tidies_names_and_places():
+    from jobradar.report import tidy
+    from jobradar.sources import not_a_job
+    assert tidy("Bpinternational (bpCareers)", "Malaysia - Kuala Lumpur") == ("bp", "Kuala Lumpur")
+    assert tidy("Linaco Group of Companies Shah Alam, Selangor", "", "jobstreet alert") == ("Linaco Group of Companies", "Shah Alam, Selangor")
+    assert tidy("Ryt Bank · Greater Kuala Lumpur (On-site)", "", "linkedin alert")[0] == "Ryt Bank"
+    assert not_a_job("Your job alert for data engineer", "https://www.linkedin.com/comm/jobs/search-results/?k=1")
+    assert not not_a_job("Data Engineer", "https://example.com/job/1")

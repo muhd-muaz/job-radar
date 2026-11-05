@@ -6,7 +6,7 @@ import re
 from collections import Counter
 from pathlib import Path
 from .score import TRACKS
-from .sources import alert_who_where, not_a_job
+from .sources import alert_who_where, not_a_job, _STATES
 
 # careers-site slugs turned into names; the real names people know
 NAMES = {"bpinternational": "bp", "ocbc": "OCBC", "cw": "Cushman & Wakefield", "rbc": "RBC", "nttlimited": "NTT",
@@ -22,7 +22,7 @@ def tidy(company, location, source=""):
     if re.match(r"\d+ new jobs? in", c) or c.startswith("<"):   # an alert header, not a company
         c = ""
     c = re.sub(r"\s*\b(Strong applicant|Actively recruiting|Early applicant)\b", "", c)
-    if (source.endswith("alert") and not loc) or " · " in c or "<" in c or " RM" in c or "Posted on" in c or re.search(r"\b(Sdn\.? ?Bhd|Berhad|Limited)\b.+", c, re.I):
+    if (source.endswith("alert") and (not loc or re.search(r", (?:%s)$" % _STATES, c))) or " · " in c or "<" in c or " RM" in c or "Posted on" in c or re.search(r"\b(Sdn\.? ?Bhd|Berhad|Limited)\b.+", c, re.I):
         c2, place, _ = alert_who_where([re.sub(r"<.*", "", c)])
         c, loc = c2 or c, loc or place
     key = re.sub(r"\s*\(.*?\)$", "", c).lower()
