@@ -50,7 +50,7 @@ header{padding:28px 0 8px}
 #radar .ring-label{fill:var(--ink-2);font-size:13px;font-weight:600}
 #radar .spoke{stroke:var(--rule-2);stroke-width:1}
 #radar .blip{fill:var(--accent);stroke:var(--panel);stroke-width:2;cursor:pointer;transition:r .12s}
-#radar .blip.old{fill:var(--panel);stroke:var(--accent);stroke-width:2}
+#radar .blip.old{fill:var(--panel);stroke:color-mix(in srgb,var(--accent) 70%,var(--panel));stroke-width:1.5}
 #radar .blip:hover,#radar .blip.hot,#radar .blip:focus-visible{r:8}
 #radar .blip:focus-visible{outline:none;stroke:var(--ink);stroke-width:3}
 @media (hover:none){.tip{display:none}}
@@ -96,6 +96,8 @@ body.recruiter nav.tabs,body.recruiter .hero .how,body.recruiter .hero .paths,bo
 body.recruiter #resume .duo{grid-template-columns:1fr 1fr}
 .built-list{margin:0 0 12px;padding-left:18px}.built-list li{margin:0 0 8px}
 .linkbtn{appearance:none;border:0;background:none;padding:0 0 0 6px;font:inherit;color:var(--accent-ink);text-decoration:underline;cursor:pointer;min-height:24px}
+kbd{font:12px/1 ui-monospace,monospace;border:1px solid var(--rule);border-bottom-width:2px;border-radius:4px;padding:2px 5px;background:var(--panel)}
+@media (hover:none){.keys{display:none}}
 .picks-h{font-size:17px;font-weight:600;margin:14px 0 2px}.picks-h .n{color:var(--mute);font-weight:500;margin-left:4px}
 .all-wrap{margin-top:18px}.all-wrap>summary{display:none}
 .all-wrap.folded>summary{display:list-item;cursor:pointer;font-weight:600;padding:12px 4px;border-top:1px solid var(--rule);min-height:24px}
@@ -145,6 +147,12 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .why{font-size:14.5px;color:var(--ink-2);margin:10px 0 0}
 .detail{display:grid;grid-template-columns:380px minmax(0,1fr);gap:24px;align-items:start}
 .detail .pz{width:380px;height:297px;overflow:visible}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:var(--panel);padding:10px 16px;border-radius:10px;font-size:14.5px;max-width:calc(100vw - 32px);transition:opacity .2s,transform .2s;z-index:60}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+.skip{position:absolute;left:12px;top:-60px;z-index:70;background:var(--panel);color:var(--ink);padding:10px 14px;border-radius:8px;box-shadow:0 0 0 2px var(--accent)}
+.skip:focus{top:12px}
+nav.tabs:focus{outline:none}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .detail h3,.panel h3{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
@@ -292,7 +300,10 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 @media (max-width:760px){
   .head{grid-template-columns:44px minmax(0,1fr) auto;gap:10px}
   .mark{grid-column:auto;flex-direction:column;gap:4px}
-  .mark .icon{width:40px;height:40px}
+  .mark{gap:8px}
+  .tab .long{display:none}
+  .tab{padding:13px 7px 11px;font-size:14px}
+  a.t{display:inline-block;padding:6px 0;margin:-6px 0}
   .cv-bar{position:static}
   .cv-bar .wrap{gap:6px}
   .cv-bar .fld{flex:1 1 140px}.cv-bar .fld input{width:100%}
@@ -303,6 +314,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 </style>
 </head>
 <body>
+<a class="skip" href="#tabs-start">Skip to the job list</a>
 <header><div class="wrap">
   <div class="top"><span><b>Job Radar</b>, updated <span id="updated"></span> from <span id="nsrc"></span> sources</span>
     <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign out</button><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
@@ -316,10 +328,10 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
       <p id="lede"></p>
       <ol class="how">
         <li data-n="1"><b>Each slice is a job track</b>, worked out from the job title. The number beside it counts the open jobs shown. Data engineering, the track I'm aiming for, is shaded.</li>
-        <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60; jobs under 40 are left off. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles.</li>
-        <li data-n="3"><b>Select a dot</b> to open the job and see its score broken down as a pizza chart.</li>
+        <li data-n="2"><b>Closer to the centre means a better fit.</b> The rings mark scores of 90, 80 and 60; jobs under 40 are left off. The score combines the job title (45%) and the skills the ad asks for (55%), with points off for senior, contract or other-language roles and a few points added for junior-friendly roles in KL or Selangor.</li>
+        <li data-n="3"><b>Select a dot</b> to open the job and see how its score adds up.</li>
       </ol>
-      <div class="key"><span><i></i><b id="key-new" style="font-weight:400">New today</b></span><span><i class="o"></i>Seen before</span><span id="key-mine" hidden><i style="background:var(--mine);border-color:var(--mine)"></i>Added by you</span></div>
+      <div class="key"><span><i></i><b id="key-new" style="font-weight:400">Strong fit, 60+</b></span><span><i class="o"></i>Worth a look, 40 to 59</span><span id="key-mine" hidden><i style="background:var(--mine);border-color:var(--mine)"></i>Added by you</span></div>
       <div class="paths">
         <button class="path" data-go="list">Browse the shortlist</button>
         <button class="path" data-go="resume" data-anchor="open-tool">Tailor your own resume</button>
@@ -329,10 +341,10 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   </div>
 </div></header>
 
-<nav class="tabs"><div class="wrap" role="tablist">
+<nav class="tabs" id="tabs-start" tabindex="-1"><div class="wrap" role="tablist">
   <button class="tab" role="tab" data-tab="list" aria-selected="true">Shortlist<span class="n num" id="n-list"></span></button>
-  <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved and applied<span class="n num" id="n-saved"></span></button>
-  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills and market</button>
+  <button class="tab" role="tab" data-tab="saved" aria-selected="false">Saved<span class="long"> and applied</span><span class="n num" id="n-saved"></span></button>
+  <button class="tab" role="tab" data-tab="skills" aria-selected="false">Skills<span class="long"> and market</span></button>
   <button class="tab" role="tab" data-tab="resume" aria-selected="false">Resume</button>
   <button class="tab" role="tab" data-tab="feeds" aria-selected="false">Sources</button>
 </div></nav>
@@ -346,7 +358,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   </details>
   <div class="toolbar">
     <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="q" type="search" placeholder="Search title, company or skill" aria-label="Search jobs"></label>
+      <input id="q" type="search" placeholder="Search title, company or skill  ( / )" aria-label="Search jobs" aria-keyshortcuts="/"></label>
     <div class="seg" id="where" role="group" aria-label="Location">
       <button data-v="local" aria-pressed="true">KL and Selangor</button>
       <button data-v="all" aria-pressed="false">All Malaysia</button>
@@ -366,7 +378,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <div id="anyjobs" hidden></div>
   <div id="picks-wrap" hidden>
     <h3 class="picks-h">Act on these first <span class="num n" id="picks-n"></span></h3>
-    <p class="why" style="margin:0 0 6px">Strong fits nearby that you haven't applied to yet, best first.</p>
+    <p class="why" style="margin:0 0 6px">Strong fits nearby that you haven't applied to yet, best first. <button class="linkbtn" id="save-picks">Save all of these</button><span class="keys"> Keys: <kbd>/</kbd> search, <kbd>s</kbd> save, <kbd>a</kbd> applied.</span></p>
     <div class="list" id="picks"></div>
   </div>
   <details class="all-wrap" id="all-wrap"><summary id="all-n"></summary>
@@ -380,13 +392,13 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <h2>What the market asks for, and what I bring</h2>
   <p class="lede" id="pz-lede"></p>
   <div class="two">
-    <div><svg class="pz" id="market" viewBox="-265 -225 530 450" role="img" aria-label="Pizza chart of the skills data jobs ask for most"></svg>
+    <div><svg class="pz" id="market" viewBox="-265 -225 530 450" role="img" aria-label="Chart of the skills nearby data jobs ask for most"></svg>
       <div class="pz-legend"><span><i style="background:var(--have)"></i>I have it</span><span><i style="background:var(--accent)"></i>Learning now</span><span><i style="background:var(--gap)"></i>Gap</span></div></div>
     <div class="notes" id="market-notes"></div>
   </div>
 </div><div class="panel">
   <h2>Skills employers ask for that I don't list yet</h2>
-  <p class="lede">How many open matches mention each skill. Learning the top few opens the most doors.</p>
+  <p class="lede" id="bars-lede">How many jobs mention each skill. Learning the top few opens the most doors.</p>
   <div id="bars"></div>
 </div></section>
 
@@ -416,6 +428,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <button class="btn2" data-go="resume" data-anchor="teaser" >See the resume preview</button></div>
 </main>
 
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 <div class="cv-ov" id="cv-ov" role="dialog" aria-modal="true" aria-labelledby="cv-title">
   <div class="cv-bar"><div class="wrap">
     <h2 id="cv-title">Resume<small id="cv-sub"></small></h2>
@@ -531,6 +544,13 @@ function explain(j) {
   const good = [];
   if (p["Entry-friendly"] > 50) good.push("open to juniors or fresh graduates");
   if (p["Location"] === 100) good.push("in KL or Selangor");
+  const m = j.math;
+  if (m) {
+    const raw = m.title + m.skills + m.adjust.reduce((a, [, v]) => a + v, 0);
+    const adj = m.adjust.map(([k, v]) => `${v > 0 ? "+" : "−"} ${Math.abs(v)} ${k[0].toLowerCase() + k.slice(1)}`).join(" ");
+    const end = raw > m.cap ? `${raw}, capped at ${m.cap}${m.cap < 100 ? (m.cap === 45 ? " (contract or internship)" : " (title outside my tracks)") : ""}` : raw < 0 ? `${raw}, floored at 0` : "";
+    return `How the ${j.score} adds up: title ${m.title} of 45 + skills ${m.skills} of 55${adj ? " " + adj : ""} = ${end || j.score}.`;
+  }
   return `Blue slices make the score: title ${p["Job title"]} and skills ${p["Skills"]} out of 100. ` +
     (bad.length ? `Points off: ${bad.join(", ")}. ` : "") + (good.length ? `In its favour: ${good.join(", ")}.` : "");
 }
@@ -587,7 +607,7 @@ function row(j) {
     <div class="head" data-toggle>
       <button class="score${j.score < 40 ? " low" : ""}" data-exp aria-expanded="false" aria-label="Score ${j.score}. Show details for ${esc(j.title)}"><b class="num">${j.score}</b><span class="bar"><span style="width:${j.score}%"></span></span></button>
       <div>${title}${tags}
-        <div class="sub"><span class="co">${esc(j.company)}</span><span>${esc(j.location || "Malaysia")}</span>${j.salary ? `<span class="pay num">${esc(j.salary)}</span>` : ""}<span>${age(j.first_seen)}</span></div>
+        <div class="sub"><span class="co">${esc(j.company || "Company not named")}</span><span>${esc(j.location || "Malaysia")}</span>${j.salary ? `<span class="pay num">${esc(j.salary)}</span>` : ""}<span>${age(j.first_seen)}</span></div>
       </div>
       <div class="mark">
         <button class="icon" data-mark="saved" data-id="${esc(j.id)}" aria-pressed="${m === "saved"}" aria-label="Save" title="Save">${ICON.save}</button>
@@ -726,7 +746,7 @@ function drawRadar(list) {
       if (d >= GAP) break;
     }
     const [x, y] = P(r, best); placed.push([x, y]);
-    return `<circle class="blip${j.mine ? " mine" : j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="${placed.length === 1 ? 0 : -1}" role="button" aria-label="${esc(j.title)}, ${esc(j.company)}, score ${j.score}"/>`;
+    return `<circle class="blip${j.mine ? " mine" : j.score >= 60 ? "" : " old"}" r="${j.score >= 60 ? 6 : 4}" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="${placed.length === 1 ? 0 : -1}" role="button" aria-label="${esc(j.title.length > 48 ? j.title.slice(0, 45) + "…" : j.title)}, score ${j.score}"/>`;
   }).join("");   // one Tab stop for the whole radar; arrow keys move between dots
   svg.innerHTML = `<defs><radialGradient id="sweepGrad" cx="0" cy="0" r="${R}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="var(--accent)" stop-opacity=".22"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
@@ -759,7 +779,9 @@ $("#radar").addEventListener("keydown", e => {
   const b = e.target.closest(".blip"); if (!b) return;
   if (e.key === "Enter" || e.key === " ") { e.preventDefault(); b.dispatchEvent(new MouseEvent("click", { bubbles: true })); }
   if (["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp"].includes(e.key)) { e.preventDefault();
-    const all = [...document.querySelectorAll("#radar .blip")], i = all.indexOf(b);
+    // clockwise around the radar from 12 o'clock, so focus moves to the neighbouring dot, not by score
+    const ang = c => (Math.atan2(+c.getAttribute("cx"), -c.getAttribute("cy")) + 2 * Math.PI) % (2 * Math.PI);
+    const all = [...document.querySelectorAll("#radar .blip")].sort((x, y) => ang(x) - ang(y)), i = all.indexOf(b);
     const next = all[(i + (e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : all.length - 1)) % all.length];
     b.tabIndex = -1; next.tabIndex = 0; next.focus(); }
 });
@@ -792,19 +814,26 @@ $("#nsrc").textContent = D.feeds.length || "my";
 $("#headline").textContent = strong.length ? `${strong.length} strong fits in KL and Selangor` : "No strong fits in KL and Selangor yet";
 $("#lede").textContent = `Out of ${local.length} open data, BA and BI roles nearby, ${local.filter(j => j.score >= 40).length} score 40 or more and are shown on the radar and list` +
   (fresh.length ? `; ${fresh.length} of them are new today.` : ". Strong fits score 60 or more.");
-{ const nNew = local.filter(j => j.score >= 40 && j.first_seen === D.today).length; $("#key-new").textContent = `New today (${nNew})`; $("#key-new").parentElement.hidden = !nNew; }
+$("#key-new").textContent = `Strong fit, 60+ (${local.filter(j => j.score >= 60).length})`;
 
 // Skills panel: one hue; "learning" is said in words, not colour
-const peak = Math.max(1, ...D.gaps.map(g => g[1]));
-$("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(nice(s))}${D.learning.includes(s) ? "<small>learning</small>" : ""}</span>
+function drawGaps(pool) {
+const gapCount = {};
+pool.forEach(j => new Set(j.missing).forEach(s => gapCount[s] = (gapCount[s] || 0) + 1));
+const gapsTop = Object.entries(gapCount).sort((a, b) => b[1] - a[1]).slice(0, 15);
+const peak = Math.max(1, ...gapsTop.map(g => g[1]));
+$("#bars-lede").textContent = `How many of the same ${pool.length} roles mention each skill I don't list yet. Learning the top few opens the most doors.`;
+$("#bars").innerHTML = gapsTop.map(([s, n]) => `<div class="sk"><span>${esc(nice(s))}${D.learning.includes(s) ? "<small>learning</small>" : ""}</span>
   <div class="track"><div class="fill" style="width:${(n / peak * 100).toFixed(1)}%"></div></div><span class="v num">${n}</span></div>`).join("")
   || `<p class="empty">No skill gaps found yet.</p>`;
+}
 
 // Market pizza: how often on-track jobs near me ask for each skill, coloured by whether I have it
 (() => {
   const pool = D.jobs.filter(j => isLocal(j) && j.track && j.track !== "Other" && (j.matched.length + j.missing.length));
   const asks = {};
   pool.forEach(j => new Set(j.matched.concat(j.missing)).forEach(s => asks[s] = (asks[s] || 0) + 1));
+  drawGaps(pool);
   const top = Object.entries(asks).sort((a, b) => b[1] - a[1]).slice(0, 12);
   if (!top.length) { $("#pz-lede").textContent = "Not enough jobs yet."; return; }
   const peak = top[0][1], pct = n => Math.round(n / pool.length * 100);
@@ -812,21 +841,21 @@ $("#bars").innerHTML = D.gaps.map(([s, n]) => `<div class="sk"><span>${esc(nice(
   const colour = { have: "var(--have)", learning: "var(--accent)", gap: "var(--gap)" };
   const order = { have: 0, learning: 1, gap: 2 };
   const slices = top.slice().sort((a, b) => order[kind(a[0])] - order[kind(b[0])] || b[1] - a[1]);
-  $("#market").innerHTML = pizza(slices.map(([s, n]) => ({ label: s, value: Math.sqrt(n / peak) * 100, shown: pct(n),
+  $("#market").innerHTML = pizza(slices.map(([s, n]) => ({ label: nice(s), value: Math.sqrt(n / peak) * 100, shown: pct(n),
     note: `asked for in ${n} of ${pool.length} jobs`, color: colour[kind(s)], ink: kind(s) === "learning" ? "var(--accent-ink)" : undefined })), { R: 145, r0: 36, font: 17, core: pool.length });
-  $("#pz-lede").textContent = `The ${top.length} skills most asked for across the ${pool.length} nearby roles whose ads name skills (the number in the middle; ${D.jobs.filter(isLocal).length} nearby in all). Slices are grouped like a player profile: skills I have, then skills I'm learning, then gaps. A longer slice means the skill is asked for more often, and the badge gives the share of jobs that ask for it, in percent.`;
+  $("#pz-lede").textContent = `The ${top.length} skills most asked for in the ${pool.length} nearby data roles whose ads list skills (the number in the middle). The rest of the ${D.jobs.filter(isLocal).length} nearby ads name no skills or are off-track, so they're left out here. Slices are grouped like a player profile: skills I have, then skills I'm learning, then gaps. A longer slice means the skill is asked for more often, and the badge gives the share of jobs that ask for it, in percent.`;
   const mine = top.filter(([s]) => kind(s) === "have"), learn = top.filter(([s]) => kind(s) === "learning"), gaps = top.filter(([s]) => kind(s) === "gap");
   const de = pool.filter(j => j.track === "Data engineering"), deAsks = {};
   de.forEach(j => j.missing.forEach(s => deAsks[s] = (deAsks[s] || 0) + 1));
-  const deTop = Object.entries(deAsks).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([s, n]) => `${s} (${n})`);
+  const deTop = Object.entries(deAsks).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([s, n]) => `${nice(s)} (${n})`);
   const byTrack = TRACKS.map(t => { const js = D.jobs.filter(j => isLocal(j) && j.score >= 40 && (TRACKS.includes(j.track) ? j.track : "Other") === t);   // same jobs the radar counts
     return [t, js.length, js.filter(j => j.score >= 60).length]; });
   const peakT = Math.max(1, ...byTrack.map(r => r[1]));
   $("#market-notes").innerHTML = `
-    <p><b>I already cover ${mine.length} of the top ${top.length}:</b> ${esc(list3(mine.map(m => m[0]))) || "none yet"}.</p>
-    ${learn.length ? `<p><b>Learning now:</b> ${esc(list3(learn.map(m => m[0])))}.</p>` : ""}
-    ${gaps.length ? `<p><b>Gaps worth closing:</b> ${esc(list3(gaps.map(m => `${m[0]} (${pct(m[1])}%)`)))}.</p>` : ""}
-    ${deTop.length ? `<p><b>Across the ${de.length} nearby data engineering ads</b>, the most common missing skills are ${esc(list3(deTop))}.</p>` : ""}
+    <p><b>I already cover ${mine.length} of the top ${top.length}:</b> ${esc(list3(mine.map(m => nice(m[0])))) || "none yet"}.</p>
+    ${learn.length ? `<p><b>Learning now:</b> ${esc(list3(learn.map(m => nice(m[0]))))}.</p>` : ""}
+    ${gaps.length ? `<p><b>Gaps worth closing:</b> ${esc(list3(gaps.map(m => `${nice(m[0])} (${pct(m[1])}%)`)))}.</p>` : ""}
+    ${deTop.length ? `<p><b>Of these, ${de.length} are data engineering roles.</b> Their most common missing skills are ${esc(list3(deTop))}.</p>` : ""}
     <h3 style="margin-top:16px">Jobs on the radar, by track</h3>
     ${byTrack.map(([t, n, g]) => `<div class="sk"><span>${esc(t)}</span><div class="track"><div class="fill" style="width:${(n / peakT * 100).toFixed(1)}%;background:color-mix(in srgb,var(--accent) 28%,transparent)"><div class="fill" style="width:${n ? (g / n * 100).toFixed(1) : 0}%"></div></div></div><span class="v num">${g}/${n}</span></div>`).join("")}
     <p class="st" style="margin-top:6px">Pale bar: nearby jobs scoring 40 or more (the radar's count). Dark part and first number: strong fits, 60 or more.</p>`;
@@ -942,7 +971,10 @@ function renderCv() {
   $("#cv-sub").textContent = (job ? `Tailored for ${job.title}${job.company ? ", " + job.company : ""}` : "General version") +
     (MYCV ? " · your CV, kept in this browser only" : " · showing a SAMPLE person: press Load my CV");
   $("#cv-forget").hidden = !MYCV; $("#cv-lock").hidden = !MYCV;
-  ["email", "phone"].forEach(k => { const f = $("#cv-" + k); f.disabled = !MYCV;
+  // while the sample shows, loading your own CV is the main action, and saving says it saves the sample
+  $("label[for=cv-file]").toggleAttribute("data-primary", !MYCV); $("#cv-print").toggleAttribute("data-primary", !!MYCV);
+  $("#cv-print").textContent = MYCV ? "Save as PDF" : "Save sample as PDF"; $("#cv-word").textContent = MYCV ? "Save as Word" : "Save sample as Word";
+  ["email", "phone"].forEach(k => { const f = $("#cv-" + k); f.disabled = !MYCV; f.parentElement.hidden = !MYCV;   // the sample's contact lines are fixed
     if (document.activeElement !== f) f.value = MYCV ? contact[k] || CV()[k] || "" : D.cv[k] || ""; });
   const gp = CV().gap_plan || D.cv.gap_plan || {}, notes = CV().skill_notes || {};
   const LI = [["manager", "Hiring manager's name", "Leave blank for: Dear Hiring Manager"], ["source", "Where you saw this ad (optional)", "e.g. JobStreet or LinkedIn. Leave blank to skip"],
@@ -1143,7 +1175,19 @@ recruiterView(); } });
 function showTab(id) {
   document.querySelectorAll(".tab").forEach(x => { x.setAttribute("aria-selected", x.dataset.tab === id); x.tabIndex = x.dataset.tab === id ? 0 : -1; });
   document.querySelectorAll("main section").forEach(s => s.classList.toggle("on", s.id === id));
+  $(".cta").hidden = id === "resume";   // the Resume tab already is the pitch
 }
+$(".skip").addEventListener("click", e => { e.preventDefault(); showTab("list"); $("nav.tabs").focus(); $(".tab[aria-selected=true]").focus(); });
+// shortcuts: / to search; on a job row, s saves it and a marks it applied
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey || e.metaKey || e.altKey || e.target.closest("input,textarea,select,[contenteditable]") || $("#cv-ov").classList.contains("on")) return;
+  if (e.key === "/") { e.preventDefault(); showTab("list"); $("#q").focus(); return; }
+  const row = e.target.closest(".row"); if (!row || !["s", "a"].includes(e.key)) return;
+  row.querySelector(`[data-mark="${e.key === "s" ? "saved" : "applied"}"]`)?.click();
+});
+// one polite message area: screen readers hear it, everyone sees it briefly
+let toastTimer;
+function say(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("on"), 2600); }
 function goTab(id, anchor) {
   showTab(id);
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches, el = anchor && document.getElementById(anchor);
@@ -1172,10 +1216,17 @@ $("#where").addEventListener("click", e => {
 });
 document.addEventListener("click", e => {
   if (e.target.id === "clear-track") { state.track = null; render(); return; }
+  if (e.target.id === "save-picks") {
+    const ids = [...document.querySelectorAll("#picks .row")].map(r => r.dataset.job).filter(id => !marks[id]);
+    ids.forEach(id => marks[id] = "saved"); store.set("jr-marks", marks); render();
+    say(ids.length ? `Saved ${ids.length} job${ids.length > 1 ? "s" : ""}. Find them under Saved.` : "These are all saved already."); return;
+  }
   const b = e.target.closest("[data-mark]");
   if (b) {
     const { id, mark } = b.dataset;
     if (marks[id] === mark) delete marks[id]; else marks[id] = mark;
+    const t = jobById(id)?.title || "Job";
+    say(marks[id] ? `${t}: ${mark === "applied" ? "marked applied" : "saved"}.` : `${t}: ${mark === "applied" ? "no longer marked applied" : "removed from saved"}.`);
     store.set("jr-marks", marks);
     const open = [...document.querySelectorAll(".row.open")].map(r => r.id), list = b.closest(".list")?.id;
     render(); open.forEach(id => setOpen(document.getElementById(id), true));

@@ -6,6 +6,35 @@ import re
 from collections import Counter
 from pathlib import Path
 from .score import TRACKS
+from .sources import alert_who_where, not_a_job
+
+# careers-site slugs turned into names; the real names people know
+NAMES = {"bpinternational": "bp", "ocbc": "OCBC", "cw": "Cushman & Wakefield", "rbc": "RBC", "nttlimited": "NTT",
+         "rytbank": "Ryt Bank", "spgi": "S&P Global", "dxctechnology": "DXC Technology", "nxp": "NXP", "airasia": "AirAsia",
+         "bdx": "BD", "msd": "MSD", "aig": "AIG", "hpe": "HPE", "jci": "Johnson Controls", "propertyguru": "PropertyGuru",
+         "paloaltonetworks": "Palo Alto Networks", "airliquidehr": "Air Liquide", "brooksauto": "Brooks Automation",
+         "unhcr": "UNHCR", "sime": "Sime Darby", "aveva": "AVEVA"}
+
+
+def tidy(company, location, source=""):
+    """Older alert rows ran company, place and pay together; slugs like 'Bpinternational (bpCareers)' read badly."""
+    c, loc = (company or "").strip(), (location or "").strip()
+    if re.match(r"\d+ new jobs? in", c) or c.startswith("<"):   # an alert header, not a company
+        c = ""
+    c = re.sub(r"\s*\b(Strong applicant|Actively recruiting|Early applicant)\b", "", c)
+    if (source.endswith("alert") and not loc) or " · " in c or "<" in c or " RM" in c or "Posted on" in c or re.search(r"\b(Sdn\.? ?Bhd|Berhad|Limited)\b.+", c, re.I):
+        c2, place, _ = alert_who_where([re.sub(r"<.*", "", c)])
+        c, loc = c2 or c, loc or place
+    key = re.sub(r"\s*\(.*?\)$", "", c).lower()
+    c = NAMES.get(key, c)
+    if c.isupper() and len(c) > 5:
+        c = c.title().replace("Sdn. Bhd.", "Sdn. Bhd.").replace("Sdn Bhd", "Sdn Bhd")
+    m = re.match(r"^(?:Malaysia|MYS|MY)\s*[-–]\s*(.+)$", loc)
+    if m:
+        loc = m.group(1)
+    if loc.isupper():
+        loc = loc.title()
+    return c, loc
 
 TEMPLATE = Path(__file__).with_name("page.html")
 
@@ -25,8 +54,9 @@ def salary(text):
 def slim(j, posts):
     out = {k: j[k] for k in ("id", "company", "title", "location", "url", "source", "score",
                              "first_seen", "last_seen", "matched", "missing", "learning", "projects")}
+    out["company"], out["location"] = tidy(j["company"], j.get("location"), j.get("source", ""))
     out["salary"] = salary(j.get("description"))
-    out.update({k: j.get(k) for k in ("parts", "track", "reach_out")})
+    out.update({k: j.get(k) for k in ("parts", "math", "track", "reach_out")})
     out["posts"] = posts.get((j["company"].lower(), j["title"].strip().lower()), 1)
     return out
 
@@ -36,6 +66,8 @@ def build(outdir, active, runs, profile, today, closed=(), posts=None, cv=None, 
     outdir.mkdir(exist_ok=True)
     jobs, shown = [], set()
     for j in active:
+        if not_a_job(j["title"], j.get("url", "")):   # older alert rows saved before the parser skipped these
+            continue
         key = (j["company"].lower(), j["title"].strip().lower())
         if key in shown:  # same role posted twice
             continue

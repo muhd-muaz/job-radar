@@ -35,7 +35,7 @@ def upsert(db, job, s, today):
         extra=excluded.extra
     """, {**job, "today": today, "score": s["score"],
           **{k: json.dumps(s[k]) for k in ("matched", "missing", "learning", "projects")},
-          "extra": json.dumps({k: s.get(k) for k in ("parts", "track", "reach_out")})})
+          "extra": json.dumps({k: s.get(k) for k in ("parts", "math", "track", "reach_out")})})
 
 
 def log_run(db, today, source, company, ok, n, error=""):

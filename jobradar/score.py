@@ -113,7 +113,7 @@ def score(job, profile, found):
         cap = min(cap, 50)
     if any_has(profile.get("off_track_titles", []), title) and title_pts < 3:
         cap = min(cap, 50)
-    pts = title_pts / 3 * 45 + skill_fit * 55 - penalty
+    pts = round(title_pts / 3 * 45) + round(skill_fit * 55) - penalty  # rounded parts, so the page sum adds up
     projects = [p["name"] for p in profile["projects"] if set(p["skills"]) & set(matched)]
     # each part on a 0-100 scale for the page's pizza chart (100 = no problem on that front)
     parts = {
@@ -128,9 +128,14 @@ def score(job, profile, found):
     on_track = title_pts >= 2 and not any_has(profile.get("off_track_titles", []), title)
     # a senior role in my track: worth a polite note asking about junior openings in the same team
     reach_out = on_track and seniority >= 20 and not any_has(("intern", "internship", "trainee"), title)
+    # the sum behind the score, so the page can show it adds up
+    adjust = [[k, v] for k, v in (("Junior-friendly", level), ("In KL or Selangor", place if place > 0 else 0),
+              ("Outside KL and Selangor", place if place < 0 else 0), ("Senior title or 5+ years", -seniority),
+              ("Needs another language", -language), ("Not permanent full-time", -job_type)) if v]
+    math = {"title": round(title_pts / 3 * 45), "skills": round(skill_fit * 55), "adjust": adjust, "cap": cap}
     return {
         "score": max(0, min(cap, round(pts))),
-        "parts": parts, "track": track(job["title"]), "reach_out": reach_out,
+        "parts": parts, "math": math, "track": track(job["title"]), "reach_out": reach_out,
         "matched": matched, "missing": missing,
         "learning": sorted(s for s in missing if s in profile.get("learning_skills", [])),
         "projects": projects,

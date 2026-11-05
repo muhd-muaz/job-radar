@@ -256,6 +256,7 @@ def alert_who_where(lines):
     pay = re.search(r"RM\s?[\d,]+(?:\s*[–-]\s*RM\s?[\d,]+)?(?:\s*per month)?", text)
     text = re.sub(r"RM\s?[\d,]+.*$", "", text)                            # pay and anything after it
     text = re.sub(r"\b(Posted on|Application started) \d{1,2} \w+ \d{4}", " ", text)
+    text = re.sub(r"\b(Strong applicant|Actively recruiting|Early applicant)\b", " ", text)
     text = re.sub(r"\s+", " ", text).strip(" ·")
     if " · " in text:
         company, place = text.split(" · ", 1)
@@ -270,18 +271,25 @@ def alert_who_where(lines):
     return text, "", pay and pay.group(0)
 
 
+def not_a_job(title, url):
+    """Alert headers and 'see all results' links, not job ads."""
+    return bool(re.match(r"(your job alert|\d+ new jobs?)\b", title, re.I) or "/jobs/search-results" in url)
+
+
 def parse_alert_html(body, site, targets):
     """Pull job links out of an alert email: any link whose text looks like a wanted job title."""
     out, seen = [], set()
     for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', body, flags=re.S | re.I):
         href, title = m.group(1), strip_html(m.group(2))
-        if not (5 < len(title) < 120) or not title_wanted(title, targets):
+        if not (5 < len(title) < 120) or not title_wanted(title, targets) or not_a_job(title, href):
             continue
         # the lines right after the link usually hold company and location
         nxt = body[m.end():m.end() + 1500].split("<a ", 1)[0]
         nxt = re.sub(r"<[^>]*$", "", nxt)   # the 1,500-character cut can end inside a tag
         rest = [l.strip() for l in strip_html(nxt).split("\n") if l.strip()][:2]
         company, place, pay = alert_who_where(rest)
+        if re.match(r"\d+ new jobs? in", company) or company.startswith("<"):   # a header line, not the company
+            company = ""
         key = (title, rest[0] if rest else "")   # same title at different companies = different jobs
         if key in seen:
             continue
