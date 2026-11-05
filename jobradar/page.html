@@ -161,7 +161,8 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .skip{position:absolute;left:12px;top:-60px;z-index:70;background:var(--panel);color:var(--ink);padding:10px 14px;border-radius:8px;box-shadow:0 0 0 2px var(--accent)}
 .skip:focus{top:12px}
 nav.tabs:focus{outline:none}
-.track-pill{margin:6px 0 0;padding:8px 12px;border-radius:10px;background:var(--accent-soft);font-size:14.5px}
+.track-pill{margin:6px 0 0;padding:4px 12px;border-radius:10px;background:var(--accent-soft);font-size:14.5px;display:flex;flex-wrap:wrap;align-items:center;gap:0 4px}
+.track-pill[hidden]{display:none}
 .howscore dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:8px 16px;margin:8px 0 4px;font-size:14.5px}.howscore dt{font-weight:600}.howscore dd{margin:0;color:var(--ink-2)}.howscore p{margin:8px 0 0;color:var(--ink-2)}
 @media (max-width:760px){.howscore dl{grid-template-columns:1fr;gap:2px}.howscore dd{margin-bottom:8px}}
 .quiet{margin-top:12px}.quiet summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--accent-ink);font-weight:500}
@@ -337,7 +338,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 <a class="skip" href="#tabs-start">Skip to the job list</a>
 <header><div class="wrap">
   <div class="top"><span><b>Job Radar</b>, updated <span id="updated"></span> from <span id="nsrc"></span> sources</span>
-    <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign out</button><button class="theme" data-cv="" aria-label="Open my resume">My resume</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
+    <span style="display:flex;gap:6px"><button class="theme" id="signin" hidden>Sign out</button><button class="theme" data-cv="" aria-label="Open the resume tool">Resume tool</button><button class="theme" id="theme" aria-label="Switch light or dark mode">Theme</button></span></div>
   <div class="hero">
     <div class="radar-box">
       <svg id="radar" viewBox="-280 -235 560 470" role="group" aria-label="Radar of open jobs: closer to the centre means a better fit"></svg>
@@ -1243,7 +1244,8 @@ $("#fitnotes").addEventListener("click", e => {
   if (!e.target.closest("#ad-go")) return;
   const t = $("#ad-text").value.trim();
   if (t.length < 30) { $("#ad-msg").textContent = t ? "That looks too short. Paste the whole job ad, from the title down to the requirements." : "Paste a job ad into the box first."; $("#ad-text").focus(); return; }
-  $("#ad-msg").textContent = ""; cvState.job = pastedJob(t); renderCv();
+  cvState.job = pastedJob(t); renderCv();
+  $("#ad-msg").textContent = `Tailored to “${cvState.job.title}”. Matching lines moved to the top.`;
 });
 $("#cv-forget").addEventListener("click", () => {
   if (!confirm("Remove your CV from this browser? The public page will show the sample again.")) return;
@@ -1323,11 +1325,11 @@ function say(msg, undo) {
 }
 function doUndo() { if (!undoLast) return; const f = undoLast; undoLast = null; f(); $("#toast").classList.remove("on"); }
 // a snapshot of the marks, restored by Undo
-const snapMarks = focusId => { const before = { ...marks }; return () => { Object.keys(marks).forEach(k => delete marks[k]); Object.assign(marks, before);
+const snapMarks = (focusId, focusEl) => { const before = { ...marks }; return () => { Object.keys(marks).forEach(k => delete marks[k]); Object.assign(marks, before);
   store.set("jr-marks", marks); render(); say("Undone.");
   // focus back on the job that changed, so j, k, s and a carry on from there
   const r = focusId && [...document.querySelectorAll(`main section.on [data-job="${CSS.escape(focusId)}"]`)].find(x => x.offsetParent);
-  (r?.querySelector("[data-exp]") || $("#q")).focus(); }; };
+  ((focusEl && document.getElementById(focusEl)) || r?.querySelector("[data-exp]") || $("#q")).focus(); }; };
 function goTab(id, anchor) {
   showTab(id);
   const calm = matchMedia("(prefers-reduced-motion: reduce)").matches, el = anchor && document.getElementById(anchor);
@@ -1372,7 +1374,7 @@ document.addEventListener("click", e => {
   if (e.target.id === "show-keys") { openKeys(); return; }
   if (e.target.closest("[data-howscore]")) { showTab("list"); const d = $("#how-score"); d.open = true; d.scrollIntoView({ block: "start" }); d.querySelector("summary").focus(); return; }
   if (e.target.id === "save-picks") {
-    const undo = snapMarks(document.querySelector("#picks .row")?.dataset.job);
+    const undo = snapMarks(null, "save-picks");
     const ids = [...document.querySelectorAll("#picks .row")].map(r => r.dataset.job).filter(id => !marks[id]);
     ids.forEach(id => marks[id] = "saved"); store.set("jr-marks", marks); render();
     say(ids.length ? `Saved ${ids.length} job${ids.length > 1 ? "s" : ""}. Find them under Saved.` : "These are all saved already.", ids.length ? undo : null); return;

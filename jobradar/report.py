@@ -83,6 +83,9 @@ ACRONYMS = {"Ai", "Bi", "Etl", "Sql", "It", "Hr", "Ui", "Ux", "Erp", "Sap", "Aws
 def tidy_title(t):
     """' DATA ENGINEER' -> 'Data Engineer'; 'Graduate-Technology-Data & AI-Malaysia' -> 'Graduate, Technology, Data & AI, Malaysia'."""
     t = re.sub(r"\s+", " ", t or "").strip()
+    t = re.sub(r"^\d{3,}\s*[-:]?\s+", "", t)                                   # leading requisition number
+    t = re.sub(r"\s*\((?:m|f|w|d|x)(?:/(?:m|f|w|d|x))+\)[\"”]?", "", t, flags=re.I)   # (m/f/d)
+    t = re.sub(r"\s*(?:\((?:Malaysia|MY|KL)\)|[,-]\s*Malaysia)$", "", t).strip(' "”')
     if t.isupper() and len(t) > 4:
         t = " ".join(w if w in {"&", "-"} else (w.title() if w.title() not in ACRONYMS else w) for w in t.split())
     if t.count("-") >= 2 and " - " not in t and re.search(r"[A-Za-z]-[A-Z]", t):
