@@ -91,17 +91,22 @@ def workday(c, targets, terms):
 
 
 def greenhouse(c, targets, terms):
-    res = http_json(f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs?content=true")
-    for j in res.get("jobs", []):
+    # the board list without descriptions is small; the full text is fetched only for wanted jobs in Malaysia
+    base = f"https://boards-api.greenhouse.io/v1/boards/{c['slug']}/jobs"
+    out = []
+    for j in http_json(base).get("jobs", []):
+        loc = (j.get("location") or {}).get("name", "")
         if not title_wanted(j["title"], targets):
-            seen_any(c, j["title"], (j.get("location") or {}).get("name"), j.get("absolute_url", ""), j.get("updated_at"))
-    return [{
-        "id": f"gh:{c['slug']}:{j['id']}", "source": "greenhouse", "company": c["name"],
-        "title": j["title"], "location": (j.get("location") or {}).get("name", ""),
-        "url": j.get("absolute_url", ""), "posted": (j.get("updated_at") or "")[:10],
-        "description": strip_html(html.unescape(j.get("content", ""))),
-    } for j in res.get("jobs", [])
-        if title_wanted(j["title"], targets) and in_malaysia((j.get("location") or {}).get("name"))]
+            seen_any(c, j["title"], loc, j.get("absolute_url", ""), j.get("updated_at"))
+        elif in_malaysia(loc):
+            full = http_json(f"{base}/{j['id']}")
+            out.append({
+                "id": f"gh:{c['slug']}:{j['id']}", "source": "greenhouse", "company": c["name"],
+                "title": j["title"], "location": loc, "url": j.get("absolute_url", ""),
+                "posted": (j.get("updated_at") or "")[:10],
+                "description": strip_html(html.unescape(full.get("content", ""))),
+            })
+    return out
 
 
 def lever(c, targets, terms):
@@ -203,25 +208,39 @@ def email_alerts(c, targets, terms):
     box.select("INBOX", readonly=True)
     since = (date.today() - timedelta(days=c.get("days", 4))).strftime("%d-%b-%Y")
     _, ids = box.search(None, "SINCE", since)
-    out, seen = [], {}
-    for mid in ids[0].split():
-        _, data = box.fetch(mid, "(RFC822)")
-        msg = email.message_from_bytes(data[0][1])
-        sender = (msg.get("From") or "").lower()
-        site = next((s for s in ALERT_SENDERS if s in sender), None)
-        dom = sender.rsplit("@", 1)[-1].strip("> ") if "@" in sender else "?"
-        if not site:
-            seen[dom] = seen.get(dom, 0) + 1
-            continue
-        body = next((p.get_payload(decode=True).decode(p.get_content_charset() or "utf-8", "ignore")
-                     for p in msg.walk() if p.get_content_type() == "text/html"), "")
-        got = parse_alert_html(body, site, targets)
-        seen[site] = seen.get(site, 0) + 1
-        seen[site + " jobs"] = seen.get(site + " jobs", 0) + len(got)
-        out += got
+    out, seen, wanted = [], {}, []
+    all_ids = ids[0].split()
+    # one round trip for every sender, then one for the bodies of alert mails only
+    if all_ids:
+        _, heads = box.fetch(b",".join(all_ids), "(BODY.PEEK[HEADER.FIELDS (FROM)])")
+        for part in heads:
+            if not isinstance(part, tuple):
+                continue
+            mid = part[0].split()[0]
+            sender = (email.message_from_bytes(part[1]).get("From") or "").lower()
+            site = next((s for s in ALERT_SENDERS if s in sender), None)
+            if site:
+                wanted.append((mid, site))
+            else:
+                dom = sender.rsplit("@", 1)[-1].strip("> ") if "@" in sender else "?"
+                seen[dom] = seen.get(dom, 0) + 1
+    if wanted:
+        site_of = dict(wanted)
+        _, data = box.fetch(b",".join(m for m, _ in wanted), "(BODY.PEEK[])")
+        for part in data:
+            if not isinstance(part, tuple):
+                continue
+            site = site_of[part[0].split()[0]]
+            msg = email.message_from_bytes(part[1])
+            body = next((p.get_payload(decode=True).decode(p.get_content_charset() or "utf-8", "ignore")
+                         for p in msg.walk() if p.get_content_type() == "text/html"), "")
+            got = parse_alert_html(body, site, targets)
+            seen[site] = seen.get(site, 0) + 1
+            seen[site + " jobs"] = seen.get(site + " jobs", 0) + len(got)
+            out += got
     box.logout()
     # kept in the runs table so a 0 can be told apart: no mail arriving, or mail the parser can't read
-    NOTES["email_alerts"] = f"{len(ids[0].split())} emails since {since}; by sender: {seen}"
+    NOTES["email_alerts"] = f"{len(all_ids)} emails since {since}; by sender: {seen}"
     return out
 
 
@@ -280,8 +299,9 @@ COLLECTORS = {"workday": workday, "greenhouse": greenhouse, "lever": lever, "sma
 
 
 DUMP_HEADER = """PASTE JOB ADS BELOW THE LINE. Old or new, as many as you like.
-Put a line with --- between ads (or start each ad with its link). The daily run reads everything,
-removes duplicates, files the ads away and empties this file again.
+Put a line with --- between ads (or start each ad with its link). Each run reads everything and files
+new ads away; ads it already has are skipped, so clear this file whenever you like.
+Easier: use "Add a job ad from anywhere" on the website instead (private to your browser).
 ==================== PASTE BELOW ====================
 """
 SEPARATOR = re.compile(r"^\s*(-{3,}|={3,}|\*{3,}|_{3,})\s*$")
@@ -345,7 +365,10 @@ def inbox(folder, archive, keep_days=30, today=None):
             added += 1
     archive.parent.mkdir(exist_ok=True)
     archive.write_text("".join(json.dumps(j, ensure_ascii=False) + "\n" for j in old.values()), encoding="utf-8")
-    dump.write_text(DUMP_HEADER, encoding="utf-8")
+    # The scheduled run never writes to inbox/: you own that folder, the bot owns docs/ and data/,
+    # so a run can't overwrite ads you paste while it is going. Local runs still tidy the file.
+    if not os.environ.get("GITHUB_ACTIONS"):
+        dump.write_text(DUMP_HEADER, encoding="utf-8")
     cutoff = (date.fromisoformat(today) - timedelta(days=keep_days)).isoformat()
     print(f"inbox: {len(texts)} ads read, {added} new, {len(old)} in archive")
     return [{k: v for k, v in j.items() if k != "added"} for j in old.values() if j["added"] >= cutoff]

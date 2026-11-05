@@ -1,4 +1,5 @@
 PASTE JOB ADS BELOW THE LINE. Old or new, as many as you like.
-Put a line with --- between ads (or start each ad with its link). The daily run reads everything,
-removes duplicates, files the ads away and empties this file again.
+Put a line with --- between ads (or start each ad with its link). Each run reads everything and files
+new ads away; ads it already has are skipped, so clear this file whenever you like.
+Easier: use "Add a job ad from anywhere" on the website instead (private to your browser).
 ==================== PASTE BELOW ====================

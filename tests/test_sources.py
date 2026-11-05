@@ -26,12 +26,18 @@ def test_workday_keeps_only_malaysia(monkeypatch):
 
 
 def test_greenhouse(monkeypatch):
-    monkeypatch.setattr(sources, "http_json", lambda url, **k: {"jobs": [
-        {"id": 1, "title": "Data Analyst", "location": {"name": "Kuala Lumpur"}, "content": "&lt;p&gt;Python&lt;/p&gt;"},
-        {"id": 2, "title": "Data Analyst", "location": {"name": "Jakarta"}, "content": ""},
-    ]})
+    calls = []
+
+    def fake(url, **k):
+        calls.append(url)
+        if url.endswith("/jobs/1"):
+            return {"content": "&lt;p&gt;Python&lt;/p&gt;"}
+        return {"jobs": [{"id": 1, "title": "Data Analyst", "location": {"name": "Kuala Lumpur"}},
+                         {"id": 2, "title": "Data Analyst", "location": {"name": "Jakarta"}}]}
+    monkeypatch.setattr(sources, "http_json", fake)
     jobs = sources.greenhouse({"name": "G", "slug": "g"}, TARGETS, [])
     assert len(jobs) == 1 and jobs[0]["description"] == "Python"
+    assert len(calls) == 2   # the list, then one description: only for the wanted job in Malaysia
 
 
 def test_alert_email_parsing():

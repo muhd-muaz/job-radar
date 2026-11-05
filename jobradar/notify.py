@@ -5,13 +5,14 @@ import os
 import smtplib
 from email.message import EmailMessage
 
+from .score import is_preferred
+
 PAGE = "https://muhd-muaz.github.io/job-radar/"
 
 
 def pick(active, today, profile, min_score=60, skip=()):
-    local = profile.get("preferred_locations", [])
     new = [j for j in active if j["first_seen"] == today and j["score"] >= min_score and j.get("id") not in skip
-           and any(w in (j["location"] + " ").lower() for w in local)]
+           and is_preferred(j["location"], profile)]
     return sorted(new, key=lambda j: -j["score"])[:15]
 
 

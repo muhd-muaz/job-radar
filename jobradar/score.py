@@ -69,6 +69,13 @@ def build_skill_finder(skills_cfg):
     return find
 
 
+def is_preferred(location, profile):
+    """KL/Selangor (profile.preferred_locations). The single rule for scoring and the email;
+    the page's isLocal() mirrors it for ads pasted in the browser."""
+    loc = (location or "").lower() + " "
+    return any(w in loc for w in profile.get("preferred_locations", []))
+
+
 def score(job, profile, found):
     title = job["title"].lower() + " "   # so keys like "temp " also match at the end of a title
     title_pts = max((w for k, w in profile["target_titles"].items() if has(k, title)), default=0)
@@ -94,7 +101,7 @@ def score(job, profile, found):
     loc = job.get("location", "").lower()
     bonus = profile.get("location_bonus", {})
     place = 0
-    if any(w in loc for w in profile.get("preferred_locations", [])):
+    if is_preferred(loc, profile):
         place = bonus.get("preferred", 0)
     elif any(w in loc for w in ("penang", "pulau pinang", "johor", "kedah", "kulim", "melaka", "sabah", "sarawak", "ipoh", "perak")):
         place = bonus.get("elsewhere_in_malaysia", 0)

@@ -57,19 +57,11 @@ jobs:
           git init -q -b data && git add jobs.sqlite
           git -c user.name=job-radar-bot -c user.email=41898282+github-actions[bot]@users.noreply.github.com commit -qm "database $(date -u +%F)"
           git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:data
-      - name: Commit page and inbox
+      - name: Commit page and archive
         run: |
           git config user.name "job-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs inbox data/pasted.jsonl
+          git add docs data/pasted.jsonl   # only files the bot owns; inbox/ is yours
           git diff --cached --quiet || git commit -m "daily run $(date -u +%F)"
-          # Two back-to-back runs: the newer page wins. inbox/dump.txt is the exception: if ads were pasted
-          # on main during this run, keep that version so they are not wiped (the inbox skips ads it already has).
-          git fetch -q origin main
-          pasted=no; git diff --quiet "$GITHUB_SHA" origin/main -- inbox/dump.txt || pasted=yes
-          git pull -q --rebase -X theirs origin main
-          if [ "$pasted" = yes ]; then
-            git checkout origin/main -- inbox/dump.txt
-            git diff --cached --quiet || git commit -qm "keep ads pasted during the run"
-          fi
+          git pull -q --rebase -X theirs origin main   # two back-to-back runs: the newer page wins
           git push

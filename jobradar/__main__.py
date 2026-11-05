@@ -4,6 +4,7 @@
   python -m jobradar --offline  skip the web; only rescore pasted jobs in inbox/
 """
 import re
+from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
 import json
 import os
@@ -39,17 +40,24 @@ def main(argv):
 
     jobs = []
     if "--offline" not in argv:
-        for c in comp["companies"]:
+        # Feeds are independent web requests, so 16 run at once. Results are logged here on the main thread,
+        # because the SQLite connection must not be shared between threads.
+        def collect(c):
             try:
-                got = sources.COLLECTORS[c["ats"]](c, targets, comp["workday_search_terms"])
-                store.log_run(db, today, c["ats"], c["name"], True, len(got), sources.NOTES.pop(c["ats"], ""))
-                jobs += got
-                print(f"ok    {c['name']:<28} {len(got)} jobs")
-            except sources.Skip as e:
-                print(f"skip  {c['name']:<28} {e}")
+                return c, sources.COLLECTORS[c["ats"]](c, targets, comp["workday_search_terms"]), None
             except Exception as e:  # one broken feed must not stop the run
-                store.log_run(db, today, c["ats"], c["name"], False, 0, repr(e))
-                print(f"FAIL  {c['name']:<28} {e!r}")
+                return c, None, e
+        with ThreadPoolExecutor(max_workers=16) as pool:
+            for c, got, e in pool.map(collect, comp["companies"]):
+                if isinstance(e, sources.Skip):
+                    print(f"skip  {c['name']:<28} {e}")
+                elif e is not None:
+                    store.log_run(db, today, c["ats"], c["name"], False, 0, repr(e))
+                    print(f"FAIL  {c['name']:<28} {e!r}")
+                else:
+                    store.log_run(db, today, c["ats"], c["name"], True, len(got), sources.NOTES.pop(c["ats"], ""))
+                    jobs += got
+                    print(f"ok    {c['name']:<28} {len(got)} jobs")
     if "check" in argv:
         db.commit()
         return

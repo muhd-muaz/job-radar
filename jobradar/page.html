@@ -135,7 +135,8 @@ a.t:hover{color:var(--accent-ink);text-decoration:underline;text-underline-offse
 .why{font-size:14.5px;color:var(--ink-2);margin:10px 0 0}
 .detail{display:grid;grid-template-columns:380px minmax(0,1fr);gap:24px;align-items:start}
 .detail .pz{width:380px;height:297px;overflow:visible}
-.detail h4,.panel h3{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.detail h3,.panel h3{font-size:16px;font-weight:600;color:var(--ink);margin:0 0 8px}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .btn2{appearance:none;display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);font:inherit;font-weight:600;font-size:15px;padding:8px 14px;border-radius:8px;cursor:pointer;text-decoration:none}
 .reach{display:none;margin-top:12px;border:1px solid var(--rule);border-radius:10px;padding:12px;background:var(--panel)}
@@ -258,8 +259,12 @@ footer a{color:var(--ink-2)}
 @media (max-width:980px){.cv-body{grid-template-columns:1fr}}
 
 @media (max-width:760px){
-  .hero{grid-template-columns:1fr;gap:18px}
-  .radar-box{max-width:340px;width:100%;margin:0 auto;order:2}
+  /* phones: headline, one line of numbers, the radar and the way into the list come first; the how-to-read notes after */
+  .hero{grid-template-columns:1fr;gap:14px}
+  .hero>div:last-child{display:contents}
+  .hero h1{order:1;margin:0}.hero #lede{order:2;margin:0}
+  .radar-box{max-width:340px;width:100%;margin:0 auto;order:3}
+  .hero .key{order:4}.hero .paths{order:5}.hero .how{order:6}
   .more{padding-left:4px}
   .detail{grid-template-columns:1fr}
   .detail .pz{margin:0 auto;width:100%;max-width:380px;height:auto;aspect-ratio:460/360}
@@ -323,7 +328,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
 </div></nav>
 
 <main class="wrap">
-<section id="list" class="on">
+<section id="list" class="on"><h2 class="vh">Shortlist</h2>
   <details class="addjob" id="addjob"><summary>Add a job ad from anywhere</summary>
     <p class="why" style="margin:6px 0 8px">Paste an ad from JobStreet, LinkedIn or any company site. It's scored against your skills and added to this list, kept in this browser only and never uploaded. Start with <code>Title:</code>, <code>Company:</code> and <code>Location:</code> lines for the best match.</p>
     <textarea id="add-text" aria-label="Job ad to add" placeholder="Title: Data Engineer&#10;Company: Example Sdn Bhd&#10;Location: Kuala Lumpur&#10;https://link-to-the-ad&#10;&#10;Paste the ad here…"></textarea>
@@ -352,7 +357,7 @@ nav.tabs .wrap{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);ma
   <div class="list" id="jobs"></div>
 </section>
 
-<section id="saved"><p class="count" id="count-saved"></p><div class="list" id="saved-jobs"></div></section>
+<section id="saved"><h2 class="vh">Saved and applied</h2><p class="count" id="count-saved"></p><div class="list" id="saved-jobs"></div></section>
 
 <section id="skills"><div class="panel" style="margin-bottom:16px">
   <h2>What the market asks for, and what I bring</h2>
@@ -443,6 +448,7 @@ function nice(s) {
 }
 let marks = store.get("jr-marks", {});           // id -> "saved" | "applied"
 const state = { q: "", where: "local", min: 40, sort: "score", src: "all" };
+// same rule as score.is_preferred() on the server
 const isLocal = j => D.preferred.some(w => (j.location + " ").toLowerCase().includes(w));
 const days = d => Math.round((new Date(D.today) - new Date(d)) / 864e5);
 const age = d => { const n = days(d); return n <= 0 ? "found today" : n === 1 ? "found yesterday" : `found ${n} days ago`; };
@@ -557,10 +563,7 @@ function row(j) {
   const tags = (j.mine ? `<span class="tag mine">Added by you${j.first_seen === D.today ? " today" : ", " + esc(fmtDate(j.first_seen))}</span>` : j.first_seen === D.today ? '<span class="tag">New</span>' : "") +
     (j.closed ? '<span class="tag off">Closed</span>' : "") +
     (j.posts > 1 ? `<span class="tag warn" title="Posted ${j.posts} times. It may be hard to fill, or a listing that never closes.">Posted ${j.posts} times</span>` : "");
-  const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(nice(s))}</span>`).join("") +
-                j.missing.map(s => `<span class="chip gap">+ ${esc(nice(s))}</span>`).join("");
-  const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${safeUrl(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
-  return `<div class="row${m === "applied" ? " applied" : ""}${j.mine ? " mine" : ""}" id="r-${esc(j.id)}">
+  return `<div class="row${m === "applied" ? " applied" : ""}${j.mine ? " mine" : ""}" id="r-${esc(j.id)}" data-job="${esc(j.id)}">
     <div class="head" data-toggle>
       <button class="score${j.score < 40 ? " low" : ""}" data-exp aria-expanded="false" aria-label="Score ${j.score}. Show details for ${esc(j.title)}"><b class="num">${j.score}</b><span class="bar"><span style="width:${j.score}%"></span></span></button>
       <div>${title}${tags}
@@ -571,11 +574,20 @@ function row(j) {
         <button class="icon" data-mark="applied" data-id="${esc(j.id)}" aria-pressed="${m === "applied"}" aria-label="Mark applied" title="Mark applied">${ICON.applied}</button>
       </div>
     </div>
-    <div class="more"><div class="detail">
-      ${j.parts ? `<div><h4>Why it scores ${j.score}</h4><svg class="pz" viewBox="-230 -180 460 360" role="img" aria-label="Score ${j.score}: ${Object.entries(j.parts).map(([k, v]) => k + " " + v).join(", ")}">${jobPizza(j)}</svg>
+    <div class="more"></div></div>`;
+}
+
+// A row's details (pizza chart, skills, actions, reach-out draft) are built the first time it is opened,
+// so the page doesn't create thousands of hidden elements up front
+function detailHtml(j) {
+  const chips = j.matched.map(s => `<span class="chip have">✓ ${esc(nice(s))}</span>`).join("") +
+                j.missing.map(s => `<span class="chip gap">+ ${esc(nice(s))}</span>`).join("");
+  const proj = j.projects.slice(0, 2).map(p => D.projects[p] ? `<a href="${safeUrl(D.projects[p])}" target="_blank" rel="noopener">${esc(p)}</a>` : esc(p)).join(" and ");
+  return `<div class="detail">
+      ${j.parts ? `<div><h3>Why it scores ${j.score}</h3><svg class="pz" viewBox="-230 -180 460 360" role="img" aria-label="Score ${j.score}: ${Object.entries(j.parts).map(([k, v]) => k + " " + v).join(", ")}">${jobPizza(j)}</svg>
         <div class="pz-legend"><span><i style="background:var(--accent)"></i>Makes the score</span><span><i style="background:var(--have)"></i>Check passed</span><span><i style="background:var(--gap)"></i>Points off</span></div></div>` : ""}
       <div>
-        <h4>${esc(j.track || "Skills")}</h4>
+        <h3>${esc(j.track || "Skills")}</h3>
         ${chips ? `<div class="chips">${chips}</div>` : '<p class="why">The ad names no skills I track.</p>'}
         ${j.parts ? `<p class="why">${explain(j)}</p>` : ""}
         ${proj ? `<p class="why">Projects to mention: ${proj}</p>` : ""}
@@ -587,7 +599,15 @@ function row(j) {
         </div>
         ${j.reach_out && (D.outreach.tones || D.outreach.body) ? reachBox(j) : ""}
       </div>
-    </div></div></div>`;
+</div>`;
+}
+const jobById = id => D.jobs.find(x => x.id === id) || D.closed.find(x => x.id === id);
+function setOpen(r, open) {
+  if (!r) return;
+  const more = r.querySelector(".more");
+  if (open && !more.firstChild) { const j = jobById(r.dataset.job); if (j) more.innerHTML = detailHtml(j); }
+  r.classList.toggle("open", open);
+  r.querySelector("[data-exp]")?.setAttribute("aria-expanded", open);
 }
 
 // Every Malaysian job the last run saw, any field (docs/all.json, loaded on the first search), so anyone can look up any keyword
@@ -658,10 +678,22 @@ function drawRadar(list) {
       `<text class="sector-label" x="${lx}" y="${ly}" dy="${dy}" text-anchor="${anchor}">${esc(TRACK_LABEL[t] || t)}` +
       `<tspan class="c num" x="${lx}" dy="16">${count[t]} job${count[t] === 1 ? "" : "s"}</tspan></text>`;
   }).join("");
+  // The distance from the centre is the score, so it never moves. The angle within the slice is free: when a dot
+  // would sit on top of another, it slides sideways along its ring (inside its slice) to the nearest clear spot.
+  const placed = [], pad = 0.08, GAP = 10.5;
   const blips = pts.map(j => {
-    const i = TRACKS.includes(j.track) ? TRACKS.indexOf(j.track) : TRACKS.indexOf("Other"), pad = 0.08;   // e.g. Data centre sits in Other, where it is counted
-    const a = A0 + i * SPAN + pad + hash01(j.id + j.company) * (SPAN - 2 * pad), r = Math.max(7, rOf(j.score));
-    const [x, y] = P(r, a);
+    const i = TRACKS.includes(j.track) ? TRACKS.indexOf(j.track) : TRACKS.indexOf("Other");   // e.g. Data centre sits in Other, where it is counted
+    const lo0 = A0 + i * SPAN + pad, hi0 = A0 + (i + 1) * SPAN - pad, r = Math.max(7, rOf(j.score));
+    const base = lo0 + hash01(j.id + j.company) * (hi0 - lo0), step = GAP / r * 0.6;
+    let best = base, bestD = -1;
+    for (let k = 0; k < 40; k++) {
+      const a = base + (k % 2 ? 1 : -1) * Math.ceil(k / 2) * step;
+      if (a < lo0 || a > hi0) continue;
+      const [x, y] = P(r, a), d = placed.reduce((m, [px, py]) => Math.min(m, Math.hypot(px - x, py - y)), Infinity);
+      if (d > bestD) { best = a; bestD = d; }
+      if (d >= GAP) break;
+    }
+    const [x, y] = P(r, best); placed.push([x, y]);
     return `<circle class="blip${j.mine ? " mine" : j.first_seen === D.today ? "" : " old"}" r="5" cx="${x}" cy="${y}" data-id="${esc(j.id)}" tabindex="0" role="button" aria-label="${esc(j.title)}, ${esc(j.company)}, score ${j.score}"/>`;
   }).join("");
   svg.innerHTML = `<defs><radialGradient id="sweepGrad" cx="0" cy="0" r="${R}" gradientUnits="userSpaceOnUse">
@@ -706,7 +738,7 @@ $("#radar").addEventListener("focusout", () => { $("#tip").style.opacity = 0; })
 $("#radar").addEventListener("click", e => {
   const b = e.target.closest(".blip"); if (!b) return;
   const r = document.getElementById("r-" + b.dataset.id); if (!r) return;
-  r.classList.add("open"); r.querySelector("[data-exp]")?.setAttribute("aria-expanded", "true"); r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
+  setOpen(r, true); r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
   r.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
 });
 
@@ -1067,7 +1099,7 @@ document.addEventListener("click", e => {
     if (marks[id] === mark) delete marks[id]; else marks[id] = mark;
     store.set("jr-marks", marks);
     const open = [...document.querySelectorAll(".row.open")].map(r => r.id);
-    render(); open.forEach(id => { const r = document.getElementById(id); r?.classList.add("open"); r?.querySelector("[data-exp]")?.setAttribute("aria-expanded", "true"); });
+    render(); open.forEach(id => setOpen(document.getElementById(id), true));
     return;
   }
   const go = e.target.closest("[data-go]");
@@ -1092,7 +1124,7 @@ document.addEventListener("click", e => {
   }
   const h = e.target.closest("[data-toggle]");
   // the whole row head opens on a mouse click; keyboard and screen-reader users get the real button on the score
-  if (h && !e.target.closest("a")) h.querySelector("[data-exp]").setAttribute("aria-expanded", h.parentElement.classList.toggle("open"));
+  if (h && !e.target.closest("a")) setOpen(h.parentElement, !h.parentElement.classList.contains("open"));
 });
 document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
   document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
