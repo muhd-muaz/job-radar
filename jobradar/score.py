@@ -87,7 +87,7 @@ def score(job, profile, found):
     # skills I'm actively learning count as half a gap, so data-engineering ads aren't buried
     gap = sum(1 if s in learning and profile.get("learning_counts_half") else 2 for s in missing)
     skill_fit = sum(have[s] for s in matched) / max(1, sum(have[s] for s in matched) + gap)
-    skill_fit *= 0.6 + 0.4 * min(1, len(matched) / 4)  # an ad naming only 1-2 skills is weak evidence
+    skill_fit *= 0.4 + 0.6 * min(1, len(matched) / 5)  # full skill points only when 5+ of my skills are named; 1-2 is weak evidence
     seniority = max((p for k, p in profile["seniority_penalty"].items() if has(k, title)), default=0)
     yrs = [int(n) for n in re.findall(r"(\d{1,2})\s*\+?\s*(?:-\s*\d+\s*)?years?", job["description"].lower()) if int(n) < 20]
     if yrs and min(yrs) >= 5:
