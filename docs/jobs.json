@@ -7870,6 +7870,57 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-71852",
+  "company": "AIA",
+  "title": "Assistant Manager, Data Engineering",
+  "location": "Kuala Lumpur",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-AIA-Digital-Malaysia/Assistant-Manager--Data-Engineering_JR-71852-1",
+  "source": "workday",
+  "score": 48,
+  "first_seen": "2026-11-06",
+  "last_seen": "2026-11-06",
+  "matched": [
+   "data pipeline",
+   "power bi"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 46,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 25,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -30
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:regional data analyst (open for fresh graduate):eco-shop marketing berhad petaling jaya, selangor",
   "company": "Eco-Shop Marketing Berhad",
   "title": "Regional Data Analyst (Open for fresh graduate)",
@@ -17085,6 +17136,76 @@
    "cap": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "wd:bpinternational:RQ101989",
+  "company": "bp",
+  "title": "Lead Solution Architect - Data Architecture",
+  "location": "Kuala Lumpur",
+  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Lead-Solution-Architect---Data-Architecture_RQ101989",
+  "source": "workday",
+  "score": 26,
+  "first_seen": "2026-11-06",
+  "last_seen": "2026-11-06",
+  "matched": [
+   "data pipeline",
+   "erp",
+   "etl",
+   "power bi",
+   "requirements gathering",
+   "sql"
+  ],
+  "missing": [
+   "asset management",
+   "aws",
+   "azure",
+   "data modeling",
+   "data quality",
+   "databricks",
+   "gdpr / pdpa",
+   "redshift",
+   "spark",
+   "stakeholder management"
+  ],
+  "learning": [
+   "aws",
+   "azure",
+   "databricks",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 50,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 28,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -25
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
   "reach_out": false,
   "posts": 1
  },
