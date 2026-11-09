@@ -8084,6 +8084,79 @@
   "posts": 1
  },
  {
+  "id": "wd:insulet:REQ-2026-17633",
+  "company": "Insulet Corporation",
+  "title": "Senior Analytics Engineer",
+  "location": "Johor",
+  "url": "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Gelang-Patah-Johor/Senior-Analytics-Engineer_REQ-2026-17633",
+  "source": "workday",
+  "score": 47,
+  "first_seen": "2026-11-09",
+  "last_seen": "2026-11-09",
+  "matched": [
+   "dashboard",
+   "power bi",
+   "python",
+   "sql",
+   "statistics"
+  ],
+  "missing": [
+   "azure",
+   "bigquery",
+   "data quality",
+   "data warehouse",
+   "databricks",
+   "mongodb",
+   "salesforce",
+   "spark",
+   "stakeholder management",
+   "tableau"
+  ],
+  "learning": [
+   "azure",
+   "databricks",
+   "spark",
+   "tableau"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 43,
+   "Level": 60,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "math": {
+   "title": 45,
+   "skills": 24,
+   "adjust": [
+    [
+     "Junior-friendly",
+     8
+    ],
+    [
+     "Outside KL and Selangor",
+     -10
+    ],
+    [
+     "Senior title or 5+ years",
+     -20
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:cw:R341440",
   "company": "Cushman & Wakefield",
   "title": "Critical Facilities Technician",
