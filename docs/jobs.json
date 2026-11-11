@@ -2635,6 +2635,74 @@
   "posts": 1
  },
  {
+  "id": "wd:bpinternational:RQ115305",
+  "company": "bp",
+  "title": "Senior Data Engineer",
+  "location": "Kuala Lumpur",
+  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Senior-Data-Engineer_RQ115305",
+  "source": "workday",
+  "score": 63,
+  "first_seen": "2026-11-11",
+  "last_seen": "2026-11-11",
+  "matched": [
+   "automation",
+   "data pipeline",
+   "git",
+   "kpi",
+   "python",
+   "requirements gathering",
+   "sql"
+  ],
+  "missing": [
+   "aws",
+   "ci/cd",
+   "data modeling",
+   "data quality",
+   "databricks",
+   "mongodb",
+   "spark",
+   "stakeholder management"
+  ],
+  "learning": [
+   "aws",
+   "databricks",
+   "spark"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 55,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 30,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -20
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 2
+ },
+ {
   "id": "mail:jobstreet:data & ai engineer - entry level:techstreet petaling jaya, selangor",
   "company": "Techstreet",
   "title": "Data & AI Engineer - Entry Level",
@@ -3640,77 +3708,6 @@
    "cap": 100
   },
   "track": "Business and systems",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "wd:bpinternational:RQ117295",
-  "company": "bp",
-  "title": "Senior Data Engineer",
-  "location": "Kuala Lumpur",
-  "url": "https://bpinternational.wd3.myworkdayjobs.com/bpCareers/job/Malaysia---Kuala-Lumpur/Senior-Data-Engineer_RQ117295-1",
-  "source": "workday",
-  "score": 59,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-09",
-  "matched": [
-   "automation",
-   "git",
-   "incident management",
-   "kpi",
-   "python",
-   "requirements gathering",
-   "sql"
-  ],
-  "missing": [
-   "aws",
-   "azure",
-   "ci/cd",
-   "data modeling",
-   "data quality",
-   "databricks",
-   "mongodb",
-   "redshift",
-   "spark",
-   "stakeholder management"
-  ],
-  "learning": [
-   "aws",
-   "azure",
-   "databricks",
-   "spark"
-  ],
-  "projects": [
-   "Lift breakdown analytics",
-   "ERP automation (Exact Synergy REST)",
-   "Job radar (this project)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 47,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 45,
-   "skills": 26,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -20
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data engineering",
   "reach_out": true,
   "posts": 1
  },
@@ -8331,7 +8328,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "cmms",
    "kpi",
@@ -13399,7 +13396,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -14072,6 +14069,64 @@
   "posts": 1
  },
  {
+  "id": "sr:DeliveryHero:744000161057711",
+  "company": "Delivery Hero / foodpanda",
+  "title": "Specialist, Product Ops & Data",
+  "location": "Kuala Lumpur",
+  "url": "https://jobs.smartrecruiters.com/DeliveryHero/744000161057711-specialist-product-ops-data",
+  "source": "smartrecruiters",
+  "score": 36,
+  "first_seen": "2026-11-11",
+  "last_seen": "2026-11-11",
+  "matched": [
+   "automation",
+   "kpi",
+   "sql"
+  ],
+  "missing": [
+   "a/b testing",
+   "bigquery",
+   "jira",
+   "looker",
+   "salesforce",
+   "snowflake",
+   "stakeholder management",
+   "uat"
+  ],
+  "learning": [
+   "snowflake"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 24,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 13,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:DeliveryHero:744000156463079",
   "company": "Delivery Hero / foodpanda",
   "title": "Specialist, Product Ops & Data Specialist",
@@ -14573,7 +14628,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "incident management",
    "kpi",
@@ -16014,7 +16069,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "cmms",
    "dashboard",
@@ -16531,7 +16586,7 @@
   "source": "workday",
   "score": 30,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "kpi"
   ],
@@ -19599,7 +19654,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [],
   "missing": [
    "data centre",
@@ -19723,7 +19778,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [],
   "missing": [
    "data centre"
@@ -19951,7 +20006,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "dashboard",
    "vendor management"
@@ -24688,7 +24743,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "kpi"
   ],
@@ -25485,7 +25540,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "dashboard",
    "excel",
@@ -25597,7 +25652,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "vendor management"
   ],
@@ -26455,7 +26510,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-10",
+  "last_seen": "2026-11-11",
   "matched": [
    "kpi"
   ],
