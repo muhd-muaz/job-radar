@@ -4052,6 +4052,64 @@
   "posts": 1
  },
  {
+  "id": "wd:intel:JR0287108",
+  "company": "Intel",
+  "title": "Supply Chain Data Scientist",
+  "location": "Penang",
+  "url": "https://intel.wd1.myworkdayjobs.com/External/job/Malaysia-Penang/Supply-Chain-Data-Scientist_JR0287108",
+  "source": "workday",
+  "score": 56,
+  "first_seen": "2026-11-12",
+  "last_seen": "2026-11-12",
+  "matched": [
+   "automation",
+   "excel",
+   "machine learning",
+   "power bi",
+   "python",
+   "sql",
+   "statistics"
+  ],
+  "missing": [
+   "data modeling",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 78,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 0
+  },
+  "math": {
+   "title": 15,
+   "skills": 43,
+   "adjust": [
+    [
+     "Junior-friendly",
+     8
+    ],
+    [
+     "Outside KL and Selangor",
+     -10
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data science",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "sr:grab:744000161020474",
   "company": "Grab",
   "title": "Senior Data Scientist (Trust & Fraud)",
