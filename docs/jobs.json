@@ -1282,7 +1282,7 @@
   "source": "workday",
   "score": 73,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "data pipeline",
    "etl",
@@ -2284,7 +2284,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "dashboard",
    "erp",
@@ -3395,7 +3395,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "cmms",
    "excel",
@@ -6197,7 +6197,7 @@
   "source": "workday",
   "score": 52,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "excel"
   ],
@@ -15505,7 +15505,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "sql"
   ],
@@ -16670,7 +16670,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "erp",
    "excel"
@@ -22118,7 +22118,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [],
   "missing": [
    "data centre"
@@ -25986,7 +25986,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-16",
+  "last_seen": "2026-11-17",
   "matched": [
    "requirements gathering",
    "sla"
