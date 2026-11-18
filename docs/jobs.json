@@ -15369,7 +15369,7 @@
   "source": "workday",
   "score": 35,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-17",
+  "last_seen": "2026-11-18",
   "matched": [
    "automation",
    "requirements gathering"
@@ -23722,6 +23722,53 @@
     [
      "Senior title or 5+ years",
      -45
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data centre",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "sr:aecom2:744000162249064",
+  "company": "AECOM",
+  "title": "Architectural Lead, Data Centres",
+  "location": "Bukit Damansara, Malaysia",
+  "url": "https://jobs.smartrecruiters.com/AECOM2/744000162249064-architectural-lead-data-centres",
+  "source": "smartrecruiters",
+  "score": 13,
+  "first_seen": "2026-11-18",
+  "last_seen": "2026-11-18",
+  "matched": [],
+  "missing": [
+   "critical facilities",
+   "data centre",
+   "electrical systems"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 50,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -25
     ]
    ],
    "cap": 100
