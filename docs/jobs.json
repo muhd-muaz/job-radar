@@ -26497,6 +26497,67 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-70639",
+  "company": "AIA",
+  "title": "Data Science, Principal",
+  "location": "Kuala Lumpur",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Kuala-Lumpur-MY-AIA-Malaysia/Data-Science--Principal_JR-70639",
+  "source": "workday",
+  "score": 2,
+  "first_seen": "2026-11-21",
+  "last_seen": "2026-11-21",
+  "matched": [
+   "automation",
+   "machine learning",
+   "python",
+   "sql",
+   "statistics"
+  ],
+  "missing": [
+   "azure",
+   "ci/cd",
+   "databricks",
+   "stakeholder management"
+  ],
+  "learning": [
+   "azure",
+   "databricks"
+  ],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 62,
+   "Level": 0,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 34,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -55
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "wd:dayone:JR2820",
   "company": "DayOne",
   "title": "Manager, Reporting and Capacity Management",
