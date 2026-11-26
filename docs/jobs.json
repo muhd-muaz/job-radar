@@ -8,7 +8,7 @@
   "source": "greenhouse",
   "score": 95,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -77,7 +77,7 @@
   "source": "workday",
   "score": 92,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "excel",
@@ -133,7 +133,7 @@
   "source": "smartrecruiters",
   "score": 90,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -190,7 +190,7 @@
   "source": "jobstreet alert",
   "score": 88,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "python"
@@ -236,7 +236,7 @@
   "source": "workday",
   "score": 88,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -290,7 +290,7 @@
   "source": "greenhouse",
   "score": 88,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl",
    "python",
@@ -346,7 +346,7 @@
   "source": "workday",
   "score": 87,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "excel",
@@ -469,7 +469,7 @@
   "source": "smartrecruiters",
   "score": 84,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -521,7 +521,7 @@
   "source": "linkedin alert",
   "score": 82,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl"
   ],
@@ -565,7 +565,7 @@
   "source": "linkedin alert",
   "score": 82,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl"
   ],
@@ -653,7 +653,7 @@
   "source": "smartrecruiters",
   "score": 80,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl",
    "excel",
@@ -703,7 +703,7 @@
   "source": "smartrecruiters",
   "score": 79,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -766,7 +766,7 @@
   "source": "workday",
   "score": 78,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -870,7 +870,7 @@
   "source": "greenhouse",
   "score": 77,
   "first_seen": "2026-11-05",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -942,7 +942,7 @@
   "source": "workday",
   "score": 77,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -1003,7 +1003,7 @@
   "source": "smartrecruiters",
   "score": 76,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -1073,7 +1073,7 @@
   "source": "workday",
   "score": 76,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -1188,7 +1188,7 @@
   "source": "smartrecruiters",
   "score": 74,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -1253,7 +1253,7 @@
   "source": "smartrecruiters",
   "score": 73,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "incident management"
@@ -1297,7 +1297,7 @@
   "source": "workday",
   "score": 73,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl",
@@ -1355,7 +1355,7 @@
   "source": "greenhouse",
   "score": 73,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "etl",
@@ -1417,7 +1417,7 @@
   "source": "workday",
   "score": 73,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "power bi"
@@ -1461,7 +1461,7 @@
   "source": "workday",
   "score": 73,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -1505,7 +1505,7 @@
   "source": "workday",
   "score": 72,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -1619,7 +1619,7 @@
   "source": "pasted",
   "score": 72,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -1693,7 +1693,7 @@
   "source": "workday",
   "score": 72,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -1740,7 +1740,7 @@
   "source": "workday",
   "score": 71,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "machine learning",
    "python",
@@ -1788,7 +1788,7 @@
   "source": "workday",
   "score": 71,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -1850,7 +1850,7 @@
   "source": "workday",
   "score": 71,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel",
@@ -1909,7 +1909,7 @@
   "source": "workday",
   "score": 70,
   "first_seen": "2026-11-13",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -1963,7 +1963,7 @@
   "source": "workday",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -2017,7 +2017,7 @@
   "source": "smartrecruiters",
   "score": 70,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -2080,7 +2080,7 @@
   "source": "greenhouse",
   "score": 68,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl",
@@ -2145,7 +2145,7 @@
   "source": "jobstreet alert",
   "score": 67,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sql"
   ],
@@ -2193,7 +2193,7 @@
   "source": "jobstreet alert",
   "score": 67,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation"
   ],
@@ -2238,7 +2238,7 @@
   "source": "jobstreet alert",
   "score": 67,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -2281,7 +2281,7 @@
   "source": "workday",
   "score": 66,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl",
    "machine learning",
@@ -2341,7 +2341,7 @@
   "source": "workday",
   "score": 66,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl",
@@ -2403,7 +2403,7 @@
   "source": "linkedin alert",
   "score": 65,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "excel"
@@ -2443,7 +2443,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -2497,7 +2497,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -2613,7 +2613,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel"
@@ -2652,7 +2652,7 @@
   "source": "workday",
   "score": 65,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -2704,7 +2704,7 @@
   "source": "greenhouse",
   "score": 64,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -2755,7 +2755,7 @@
   "source": "greenhouse",
   "score": 64,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -2806,7 +2806,7 @@
   "source": "linkedin alert",
   "score": 63,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -2849,7 +2849,7 @@
   "source": "workday",
   "score": 63,
   "first_seen": "2026-11-03",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl",
@@ -2912,7 +2912,7 @@
   "source": "workday",
   "score": 63,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data pipeline",
@@ -2970,7 +2970,7 @@
   "source": "linkedin alert",
   "score": 62,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation"
   ],
@@ -3019,7 +3019,7 @@
   "source": "jobstreet alert",
   "score": 62,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl"
   ],
@@ -3067,7 +3067,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -3127,7 +3127,7 @@
   "source": "smartrecruiters",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sql"
   ],
@@ -3178,7 +3178,7 @@
   "source": "smartrecruiters",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl",
@@ -3241,7 +3241,7 @@
   "source": "greenhouse",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -3314,7 +3314,7 @@
   "source": "workday",
   "score": 62,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel",
@@ -3362,7 +3362,7 @@
   "source": "linkedin alert",
   "score": 61,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -3405,7 +3405,7 @@
   "source": "smartrecruiters",
   "score": 60,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -3459,7 +3459,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "requirements gathering"
@@ -3511,7 +3511,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "cmms",
    "excel",
@@ -3564,7 +3564,7 @@
   "source": "greenhouse",
   "score": 60,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -3616,7 +3616,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "requirements gathering"
@@ -3668,7 +3668,7 @@
   "source": "workday",
   "score": 60,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -3725,7 +3725,7 @@
   "source": "workday",
   "score": 59,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "machine learning",
    "python",
@@ -3779,7 +3779,7 @@
   "source": "workday",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "kpi",
@@ -3834,7 +3834,7 @@
   "source": "workday",
   "score": 59,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel",
@@ -3883,7 +3883,7 @@
   "source": "workday",
   "score": 58,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "machine learning",
@@ -3943,7 +3943,7 @@
   "source": "smartrecruiters",
   "score": 58,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "data visualization",
@@ -3996,7 +3996,7 @@
   "source": "jobstreet alert",
   "score": 57,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl"
   ],
@@ -4036,58 +4036,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:data analyst executive – sql, tableau & power bi (mandarin):cekap link tech sdn. bhd. kuala lumpur sentral, kuala lumpur rm 5,000 – rm 7,000 per month",
-  "company": "Cekap Link Tech Sdn Bhd",
-  "title": "Data Analyst Executive – SQL, Tableau & Power BI (mandarin)",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAi8eRlJVvrB2N8_LlaID9i9ufyR-V3LqV5ZI_Ibcb6hMwN4P3Uk-aLz_LMM5P5gYSLMeA8QNBpmpn4NBYgoItfz6oPyS0i3nYUMy9u4KZt_7_SYJgX_V_32fuV144SjA9JvgVbroZtvolkyhMSwfxcw/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h62/h001.A7DH5tHVnOhKOLyBacrLMdXon3SSjmgCZsFPUc92HUM",
-  "source": "jobstreet alert",
-  "score": 57,
-  "first_seen": "2026-11-10",
-  "last_seen": "2026-11-22",
-  "matched": [
-   "power bi",
-   "sql"
-  ],
-  "missing": [
-   "tableau"
-  ],
-  "learning": [
-   "tableau"
-  ],
-  "projects": [
-   "Lift breakdown analytics"
-  ],
-  "salary": "RM 5,000 – 7,000",
-  "parts": {
-   "Job title": 100,
-   "Skills": 53,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 0,
-   "Location": 100
-  },
-  "math": {
-   "title": 45,
-   "skills": 29,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Needs another language",
-     -25
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "BI and reporting",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:intel:JR0287108",
   "company": "Intel",
   "title": "Supply Chain Data Scientist",
@@ -4096,7 +4044,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-11-12",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel",
@@ -4154,7 +4102,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-11-11",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "machine learning",
@@ -4216,7 +4164,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-11-10",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -4263,7 +4211,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "python",
@@ -4316,7 +4264,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -4373,7 +4321,7 @@
   "source": "smartrecruiters",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -4438,7 +4386,7 @@
   "source": "workday",
   "score": 56,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -4495,7 +4443,7 @@
   "source": "workday",
   "score": 55,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -4557,7 +4505,7 @@
   "source": "workday",
   "score": 55,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "power bi",
@@ -4621,7 +4569,7 @@
   "source": "greenhouse",
   "score": 54,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl"
@@ -4673,7 +4621,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -4712,7 +4660,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data warehouse"
@@ -4753,7 +4701,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -4792,7 +4740,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -4831,7 +4779,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -4870,7 +4818,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -4909,7 +4857,7 @@
   "source": "workday",
   "score": 53,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi",
    "requirements gathering",
@@ -4956,7 +4904,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -4995,7 +4943,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-22",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5034,7 +4982,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5073,7 +5021,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5112,7 +5060,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5151,7 +5099,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "snowflake"
@@ -5194,7 +5142,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5233,7 +5181,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5272,7 +5220,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5311,7 +5259,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5350,7 +5298,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5389,7 +5337,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5428,7 +5376,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5467,7 +5415,7 @@
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-15",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5627,7 +5575,7 @@
   "source": "linkedin alert",
   "score": 53,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -5738,84 +5686,6 @@
   "posts": 2
  },
  {
-  "id": "mail:jobstreet:data platform engineer:private advertiser kuala lumpur",
-  "company": "Private Advertiser",
-  "title": "Data Platform Engineer",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgoSMHZCddEEsA-YwA9NKSVhn8GxuZkw5B6cg4Kouxakl5xzHQfMDaToYaS9voJW8zIe07bOySEaMFB9QFfCWHEbIkG-NiZt5K53M-A0T3vsfBn2jCNpYdWmNq-M_Yc_8lRhDso8P4C-_N-nFDkI5zr/4vn/DDnrDaYtQSaG2SeWU1oAIg/h62/h001.-DQbJ60JTDdUI-6hm-zzLaeYWCAXoUrIMFHdi5NaGZw",
-  "source": "jobstreet alert",
-  "score": 53,
-  "first_seen": "2026-11-10",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 45,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data engineering",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:jobstreet:data engineer - ods, silver/gold & migration:click global talent kuala lumpur city centre, kuala lumpur",
-  "company": "Click Global Talent Kuala Lumpur",
-  "title": "Data Engineer - ODS, Silver/Gold & Migration",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgRzhr8h4uWxguSLPNVNi__F6ReLd4lDgzgkO3yNIb3hZw7NG7zORaOLh-TrP1NsyGGx4vTMXMLiGIvpKWcjora6oG9S3-vLFmfIawtg21pS7LAS4iH3OxCsMCPfOqA12c4nFBR1Y2C3VBiOEdl8jiI/4vn/DDnrDaYtQSaG2SeWU1oAIg/h94/h001.-iFnasRqeO8R0KP5jQJmrRM5oH7FlQXjvBB2fRF_79c",
-  "source": "jobstreet alert",
-  "score": 53,
-  "first_seen": "2026-11-10",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 45,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data engineering",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "mail:jobstreet:data engineer:pentas flora management services sdn bhd posted on 3 nov 2026 kuala lumpur",
   "company": "Pentas Flora Management Services Sdn Bhd",
   "title": "Data Engineer",
@@ -5902,7 +5772,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -6047,7 +5917,7 @@
   "source": "workday",
   "score": 52,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel"
   ],
@@ -6099,7 +5969,7 @@
   "source": "workday",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -6175,7 +6045,7 @@
   "source": "smartrecruiters",
   "score": 52,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -6222,7 +6092,7 @@
   "source": "workday",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "etl"
@@ -6281,7 +6151,7 @@
   "source": "workday",
   "score": 51,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -6334,7 +6204,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "requirements gathering",
@@ -6379,7 +6249,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-11-10",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -6433,7 +6303,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering",
    "rest api"
@@ -6483,7 +6353,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel",
@@ -6528,7 +6398,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "power bi",
@@ -6576,7 +6446,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -6627,7 +6497,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel"
@@ -6677,7 +6547,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "requirements gathering"
@@ -6731,7 +6601,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -6791,7 +6661,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -6845,7 +6715,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -6900,7 +6770,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -6951,7 +6821,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "excel",
@@ -7005,7 +6875,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -7051,7 +6921,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -7104,7 +6974,7 @@
   "source": "greenhouse",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering",
    "sql"
@@ -7155,7 +7025,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -7224,7 +7094,7 @@
   "source": "smartrecruiters",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "etl",
@@ -7281,7 +7151,7 @@
   "source": "workday",
   "score": 50,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -7327,7 +7197,7 @@
   "source": "workday",
   "score": 49,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -7396,7 +7266,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel"
@@ -7434,49 +7304,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:regional data analyst (open for fresh graduate):eco-shop marketing berhad posted on 4 nov 2026 petaling jaya, selangor",
-  "company": "Eco-Shop Marketing Berhad",
-  "title": "Regional Data Analyst (Open for fresh graduate)",
-  "location": "Petaling Jaya, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgQzQSdJumE_8FyRzS_Q3DqY-70kq9RDkMCFqm1vZ2RbWTGEKLX4eAlQbPCk8HcfIqOvEes3WUb1yYNpBLao2Oc7eYIOXnCOQ63CpOzNaKPvKHZNCcGT6o0iDY0svKhHjaNRz45L9q0ZvO8vl9G8YcO/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h99/h001.714eHgk2vQw3h4l9J60G3WBAmJbprlVwKJEMZa5o-9Y",
-  "source": "jobstreet alert",
-  "score": 48,
-  "first_seen": "2026-11-08",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 100,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "Junior-friendly",
-     10
-    ],
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 2
- },
- {
   "id": "wd:aia:JR-71852",
   "company": "AIA",
   "title": "Assistant Manager, Data Engineering",
@@ -7485,7 +7312,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "power bi"
@@ -7580,7 +7407,7 @@
   "source": "smartrecruiters",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -7643,7 +7470,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -7697,7 +7524,7 @@
   "source": "greenhouse",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "machine learning",
@@ -7753,7 +7580,7 @@
   "source": "workday",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -7810,7 +7637,7 @@
   "source": "greenhouse",
   "score": 48,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering",
    "sql"
@@ -7862,7 +7689,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-11-09",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "power bi",
@@ -7935,7 +7762,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "cmms",
    "kpi",
@@ -7984,7 +7811,7 @@
   "source": "workday",
   "score": 47,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "etl",
@@ -8044,7 +7871,7 @@
   "source": "linkedin alert",
   "score": 46,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -8130,7 +7957,7 @@
   "source": "greenhouse",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -8181,7 +8008,7 @@
   "source": "greenhouse",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "requirements gathering"
@@ -8232,7 +8059,7 @@
   "source": "workday",
   "score": 46,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -8295,7 +8122,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "kpi",
@@ -8355,7 +8182,7 @@
   "source": "linkedin alert",
   "score": 45,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -8423,7 +8250,7 @@
   "source": "linkedin alert",
   "score": 45,
   "first_seen": "2026-11-10",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -8457,7 +8284,7 @@
   "source": "smartrecruiters",
   "score": 45,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -8518,7 +8345,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -8575,7 +8402,7 @@
   "source": "greenhouse",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -8629,7 +8456,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -8696,7 +8523,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -8759,7 +8586,7 @@
   "source": "workday",
   "score": 45,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -8809,7 +8636,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel",
@@ -8860,7 +8687,7 @@
   "source": "linkedin alert",
   "score": 44,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -8903,7 +8730,7 @@
   "source": "workday",
   "score": 44,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sla"
   ],
@@ -8947,7 +8774,7 @@
   "source": "smartrecruiters",
   "score": 43,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering",
    "sql"
@@ -9000,7 +8827,7 @@
   "source": "smartrecruiters",
   "score": 43,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "git",
@@ -9064,7 +8891,7 @@
   "source": "smartrecruiters",
   "score": 42,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "sla"
@@ -9116,7 +8943,7 @@
   "source": "greenhouse",
   "score": 42,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "sql",
@@ -9162,7 +8989,7 @@
   "source": "jobstreet alert",
   "score": 41,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -9266,7 +9093,7 @@
   "source": "smartrecruiters",
   "score": 41,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "requirements gathering",
@@ -9371,7 +9198,7 @@
   "source": "workday",
   "score": 41,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -9433,7 +9260,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -9492,7 +9319,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -9558,7 +9385,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -9613,7 +9440,7 @@
   "source": "smartrecruiters",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline"
   ],
@@ -9656,7 +9483,7 @@
   "source": "workday",
   "score": 40,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -9721,7 +9548,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel"
@@ -9769,7 +9596,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "git",
@@ -9827,7 +9654,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "rest api"
@@ -9881,7 +9708,7 @@
   "source": "workday",
   "score": 39,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "kpi",
@@ -9938,7 +9765,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -9977,7 +9804,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -10018,7 +9845,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10057,7 +9884,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10096,7 +9923,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10135,7 +9962,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10174,7 +10001,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10213,7 +10040,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10252,7 +10079,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10291,7 +10118,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10330,7 +10157,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10369,7 +10196,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -10410,7 +10237,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10449,7 +10276,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10488,7 +10315,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10527,7 +10354,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10566,7 +10393,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10605,7 +10432,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-22",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10644,7 +10471,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10683,7 +10510,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10722,7 +10549,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10761,7 +10588,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10800,7 +10627,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -10841,7 +10668,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10880,7 +10707,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10919,7 +10746,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10958,7 +10785,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -10997,7 +10824,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11036,7 +10863,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11075,7 +10902,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11114,7 +10941,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11153,7 +10980,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11192,7 +11019,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11231,7 +11058,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11270,7 +11097,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11309,7 +11136,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11348,7 +11175,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11387,7 +11214,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11426,7 +11253,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11465,7 +11292,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11504,7 +11331,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11543,7 +11370,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11582,7 +11409,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11621,7 +11448,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11660,7 +11487,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11699,7 +11526,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11738,7 +11565,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11777,7 +11604,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11816,7 +11643,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11855,7 +11682,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11894,7 +11721,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -11933,7 +11760,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -11974,7 +11801,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12013,7 +11840,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12052,7 +11879,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12091,7 +11918,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12130,7 +11957,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12169,7 +11996,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -12210,7 +12037,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -12251,7 +12078,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12329,7 +12156,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -12713,240 +12540,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:system analyst - financial risk & regulatory reporting (frr):cognizant kuala lumpur city centre, kuala lumpur",
-  "company": "Cognizant Kuala Lumpur",
-  "title": "System Analyst - Financial Risk & Regulatory Reporting (FRR)",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiIZ077ljVTOr3UAEdMuGpLE6txFf_ESzVI4MmPCf__WqDHiFdKKW4j7BMzDufKa3qcQvAPbS47hjEyEJcXBQlC5APCcdWXL4iB0LILDj8AsBE-11vZ8bCBACb7aYSunajGKa5zKGalBVpytKswkral/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h88/h001.ZzEhLCQFfFe50kEMl3l_SFY2D3_XO9_v_sgsZ33lTTg",
-  "source": "jobstreet alert",
-  "score": 38,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 50
-  },
-  "track": "BI and reporting",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:jobstreet:business analyst – insurance / financial services:cognizant kuala lumpur city centre, kuala lumpur",
-  "company": "Cognizant Kuala Lumpur",
-  "title": "Business Analyst – Insurance / Financial Services",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiPAo2AaeqtP7RTk3LGt0FNxVXome6_Sr4Q36QTyHU6CdhVWM_eb1-r9rbI8of3eQCwjfmA2HwrBHYaAby8TH7TepH89SRL7phwNMMBZeguvdC4BnVJYFjdcpEjZgSEDQRjcnr8lYPepiuv1YCkZGOs/4vn/cZh-e-aUToy_LPPXCFQkeQ/h90/h001.BJBAA4-aQ7p0uCwljYnzUzZMRW73aKvqHtH1sTBYge8",
-  "source": "jobstreet alert",
-  "score": 38,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 50
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:linkedin:business analyst:hsbc · kuala lumpur (hybrid)",
-  "company": "HSBC",
-  "title": "Business Analyst",
-  "location": "Kuala Lumpur",
-  "url": "https://www.linkedin.com/comm/jobs/view/4489914356/?trackingId=QPP80b0UfG9tap2AA8U8fQ%3D%3D&refId=UVFXdOFqngTWZszpHhUhew%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B8LL6wLfeS6eyiM%2FSzD6EoQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=3CVkQ5EBIymIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4489914356_ssid_16262187148_fmid_ju8vz3~mwcwumdb~4b_crv_3&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4489914356_ssid_16262187148_fmid_ju8vz3~mwcwumdb~4b_crv_3-null-ju8vz3~mwcwumdb~4b-null-null&eid=ju8vz3-mwcwumdb-4b&otpToken=NTE2MTA2Njk2NWFhMTk2NzM3ZmY2M2QwMzk2NzlmNmYxOTkyMjYxODFiOWQ0YTQ4OTcwYzM3NzliOTk2NjkzYTZkNGU4OWJkZThjYWZjZDdlNTQ5YWZlNDgxMTQ5NWQ4YzhhZThlNGRhZjc3ZTRmM2VlMmFmODI1OGRlZDY0YWI0NmJhNzRmMjA2NTYwODFmMTYsMiwx",
-  "source": "linkedin alert",
-  "score": 38,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:jobstreet:clinical data analyst i:parexel apex international co., ltd. petaling, selangor",
-  "company": "PAREXEL APEX International Co., Ltd.",
-  "title": "Clinical Data Analyst I",
-  "location": "Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiwvSAjfFM-i4Rec_1JQa11jPOn96lG9w8xZcGkh1XWMSrEqlZwtFvtlb7Py935y_qDl5HWOwvoJFxKjKtAycL7-vpTAH1CTFHwVjYLSA5-RspkjbRSOHoo7Eob3N5LX8_y3o6erU89KeudrMOctAHy/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h86/h001.6jkQ6YjupaDhq6oRkoXL3b_Fg1QGsvcB6A6N1RIa-2w",
-  "source": "jobstreet alert",
-  "score": 38,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:linkedin:fso - technology consulting - business / data analyst (core banking):ey · kuala lumpur",
-  "company": "EY",
-  "title": "FSO - Technology Consulting - Business / Data Analyst (Core Banking)",
-  "location": "Kuala Lumpur",
-  "url": "https://www.linkedin.com/comm/jobs/view/4385038696/?trackingId=BnvIvN9T1Kej3x4CndQpQQ%3D%3D&refId=nf48yBe9vjnieArA2C4VHA%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BaU1QndoFQjy1R5ly2dtZpw%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=2m6qTt7zEimYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4385038696_ssid_16262187156_fmid_ju8vz3~mwd5f9vr~i3_crv_1&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4385038696_ssid_16262187156_fmid_ju8vz3~mwd5f9vr~i3_crv_1-null-ju8vz3~mwd5f9vr~i3-null-null&eid=ju8vz3-mwd5f9vr-i3&otpToken=MmZhN2NhZTRmZjhkODgxZGJkMWE2NzNhODk5N2Y3NjA3MmRlODhiNzUzZGFlYTRhNTI4YzIzNGE4Y2ExZGI2NTFiYzZlZWEzYjVlYTlmN2M1NzdkYzUyNTlkYzlkMTc0MzYxOWY5M2E0ZDI1Nzc5MTY2NmUwMmE4M2RkZDc3YjYwYjk5NjY0MzYyYzYzZmViMzIsMiwx",
-  "source": "linkedin alert",
-  "score": 38,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:linkedin:fso - technology consulting - business analyst / data analyst (core insurance):ey · kuala lumpur",
-  "company": "EY",
-  "title": "FSO - Technology Consulting - Business Analyst / Data Analyst (Core Insurance)",
-  "location": "Kuala Lumpur",
-  "url": "https://www.linkedin.com/comm/jobs/view/4385038827/?trackingId=%2FArIEKwX9XQVCBuI%2BWe4iQ%3D%3D&refId=nf48yBe9vjnieArA2C4VHA%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BaU1QndoFQjy1R5ly2dtZpw%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=2m6qTt7zEimYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4385038827_ssid_16262187156_fmid_ju8vz3~mwd5f9vr~i3_crv_1&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4385038827_ssid_16262187156_fmid_ju8vz3~mwd5f9vr~i3_crv_1-null-ju8vz3~mwd5f9vr~i3-null-null&eid=ju8vz3-mwd5f9vr-i3&otpToken=MmZhN2NhZTRmZjhkODgxZGJkMWE2NzNhODk5N2Y3NjA3MmRlODhiNzUzZGFlYTRhNTI4YzIzNGE4Y2ExZGI2NTFiYzZlZWEzYjVlYTlmN2M1NzdkYzUyNTlkYzlkMTc0MzYxOWY5M2E0ZDI1Nzc5MTY2NmUwMmE4M2RkZDc3YjYwYjk5NjY0MzYyYzYzZmViMzIsMiwx",
-  "source": "linkedin alert",
-  "score": 38,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "mail:jobstreet:workday reporting analyst:cochlear malaysia sdn bhd kuala lumpur",
   "company": "Cochlear Malaysia Sdn Bhd",
   "title": "Workday Reporting Analyst",
@@ -13025,84 +12618,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:workday reporting analyst:cochlear limited. kuala lumpur",
-  "company": "Cochlear Limited.",
-  "title": "Workday Reporting Analyst",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiGkNh_iFHECc0kY-IbZF97rsGQfLlDUe4zYKDeBqVbBo4iJz6S1St_Wxv9L0gd5vrPlpoJdUyR1sR5fUW1DyZh92SusNIxOoPd_jOlbUkaenIRzj9zJq6XDfksn0IlrICH-L18W6kuv8OdSDae2tw4/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h90/h001.WI1YuVX4U-2NxiLfi6x1zNzkZgUXo1JMugV3UfdhURc",
-  "source": "jobstreet alert",
-  "score": 38,
-  "first_seen": "2026-11-11",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "BI and reporting",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:jobstreet:assistant business analytics expert:tdcx malaysia kuala lumpur",
-  "company": "TDCX Malaysia",
-  "title": "Assistant Business Analytics Expert",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgZjS3jApVB3MEAL4MJn87bTo9_ZGD1lBlJiALhy6g732EPzhAuR-CSHZSOrlKWeu4R0fiZAN-2Aa0jQUH8KQn0yPZYAyB4Hfo4dfxyGkOs9Qqzkro5uq_KsdhheNzXndN8FihvYEU6Fzc-khZ44UQC/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h72/h001.XVVi8TfZ_dyFkjNqMMSvh9pYy3_cs9Y1GpKMaI7gN_I",
-  "source": "jobstreet alert",
-  "score": 38,
-  "first_seen": "2026-11-11",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "mail:linkedin:clinical data analyst i:parexel · petaling jaya",
   "company": "Parexel",
   "title": "Clinical Data Analyst I",
@@ -13150,7 +12665,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-11-10",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sla",
    "statistics"
@@ -13194,7 +12709,7 @@
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-05",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13233,7 +12748,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13272,7 +12787,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13311,7 +12826,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13350,7 +12865,7 @@
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-03",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -13389,7 +12904,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel",
@@ -13482,7 +12997,7 @@
   "source": "lever",
   "score": 38,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "machine learning"
   ],
@@ -13531,7 +13046,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel"
@@ -13581,7 +13096,7 @@
   "source": "greenhouse",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "kpi",
@@ -13640,7 +13155,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "process mapping",
@@ -13682,7 +13197,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -13725,7 +13240,7 @@
   "source": "lever",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "machine learning"
   ],
@@ -13774,7 +13289,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "incident management",
    "kpi"
@@ -13821,7 +13336,7 @@
   "source": "workday",
   "score": 38,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp"
@@ -13874,7 +13389,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -13977,7 +13492,7 @@
   "source": "smartrecruiters",
   "score": 37,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -14036,7 +13551,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -14088,7 +13603,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -14143,7 +13658,7 @@
   "source": "greenhouse",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "excel",
@@ -14201,7 +13716,7 @@
   "source": "workday",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -14264,7 +13779,7 @@
   "source": "greenhouse",
   "score": 37,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -14370,7 +13885,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "sla",
@@ -14423,7 +13938,7 @@
   "source": "smartrecruiters",
   "score": 36,
   "first_seen": "2026-11-11",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "kpi",
@@ -14481,7 +13996,7 @@
   "source": "workday",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -14534,7 +14049,7 @@
   "source": "greenhouse",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "python"
@@ -14582,7 +14097,7 @@
   "source": "workday",
   "score": 36,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -14647,7 +14162,7 @@
   "source": "linkedin alert",
   "score": 35,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -14686,7 +14201,7 @@
   "source": "workday",
   "score": 35,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -14750,7 +14265,7 @@
   "source": "jobstreet alert",
   "score": 35,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -14789,7 +14304,7 @@
   "source": "workday",
   "score": 35,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "kpi",
@@ -14849,7 +14364,7 @@
   "source": "workday",
   "score": 35,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "requirements gathering"
@@ -14904,7 +14419,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -14964,7 +14479,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "incident management",
    "kpi",
@@ -15014,7 +14529,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "statistics"
   ],
@@ -15059,7 +14574,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sql"
   ],
@@ -15106,7 +14621,7 @@
   "source": "workday",
   "score": 34,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "kpi"
@@ -15159,7 +14674,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi",
    "requirements gathering",
@@ -15206,7 +14721,7 @@
   "source": "jobstreet alert",
   "score": 33,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15249,7 +14764,7 @@
   "source": "linkedin alert",
   "score": 33,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15292,7 +14807,7 @@
   "source": "linkedin alert",
   "score": 33,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15335,7 +14850,7 @@
   "source": "linkedin alert",
   "score": 33,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15378,7 +14893,7 @@
   "source": "linkedin alert",
   "score": 33,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15421,7 +14936,7 @@
   "source": "jobstreet alert",
   "score": 33,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data warehouse"
@@ -15587,55 +15102,6 @@
   "posts": 1
  },
  {
-  "id": "mail:linkedin:data engineer (senior level-databricks and pyspark):unison group · kl metropolis (on-site)",
-  "company": "Unison Group",
-  "title": "Data Engineer (Senior Level-Databricks and Pyspark)",
-  "location": "KL Metropolis (On-site)",
-  "url": "https://www.linkedin.com/comm/jobs/view/4488639844/?trackingId=x3AoXTLFmDi4pt1QYHjD4w%3D%3D&refId=mfqX2r%2Fj8A%2BqswrbGIZI4A%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BislaFAEpQ1GiT%2FvdLg3RFQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=2v-KKHJL2qmIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4488639844_ssid_16262187164_fmid_ju8vz3~mwd14xkb~r7_crv_2&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4488639844_ssid_16262187164_fmid_ju8vz3~mwd14xkb~r7_crv_2-null-ju8vz3~mwd14xkb~r7-null-null&eid=ju8vz3-mwd14xkb-r7&otpToken=YjZlZDM0Y2JhN2UyZDk0ODYyNTU4NDhlNTk5ZmVmMzBkZGQ1YmRjNDg3NWUyZjJmMTlmMmEwYmIzZDEwNzY4MzhhZDAwYjIwNzRhZjY0NThiYWE0NzY2NDY2YjEyZTU2MWIwMDA2M2VkNDc0MDNkNmNmMzNmZDg2YzFjODEzN2EzNDE1OTQ1MzI3MWI4Y2NiODMsMiwx",
-  "source": "linkedin alert",
-  "score": 33,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [
-   "databricks",
-   "spark"
-  ],
-  "learning": [
-   "databricks",
-   "spark"
-  ],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 100,
-   "Skills": 0,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 45,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -20
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data engineering",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "wd:prudential:26100426",
   "company": "Prudential",
   "title": "Assistant Manager, Financial Reporting",
@@ -15644,7 +15110,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "kpi",
@@ -15696,7 +15162,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "preventive maintenance"
   ],
@@ -15738,7 +15204,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -15798,7 +15264,7 @@
   "source": "greenhouse",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -15853,7 +15319,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15896,7 +15362,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -15939,7 +15405,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data visualization",
@@ -15999,7 +15465,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard"
@@ -16052,7 +15518,7 @@
   "source": "workday",
   "score": 33,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel"
@@ -16102,7 +15568,7 @@
   "source": "smartrecruiters",
   "score": 32,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sql"
   ],
@@ -16153,7 +15619,7 @@
   "source": "smartrecruiters",
   "score": 32,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "git",
@@ -16216,7 +15682,7 @@
   "source": "workday",
   "score": 32,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "erp",
@@ -16257,49 +15723,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:data analysis junior executive:jasmine food corporation sdn bhd posted on 4 nov 2026 shah alam, selangor",
-  "company": "Jasmine Food Corporation Sdn Bhd",
-  "title": "Data Analysis Junior Executive",
-  "location": "Shah Alam, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjA6litwGFNAqJNXJad1ZiMOmZutpp1bwEL-UGoASGmaavKXzJlxos7iAgsRiD7xN9By0QbwBOUmGtytVC-wWU8pJ3FDvw05D33HmZBIx6mv28dMDSk4K0v8_zLH99XL2A7WtQuTnGcH9OukrGZacvv/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h101/h001.pNjG34qUGxTZQky81YuZSlpeCVR91YN_WCUgVZ0xD-M",
-  "source": "jobstreet alert",
-  "score": 31,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 15,
-   "skills": 0,
-   "adjust": [
-    [
-     "Junior-friendly",
-     8
-    ],
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 2
- },
- {
   "id": "wd:cw:R341444",
   "company": "Cushman & Wakefield",
   "title": "Critical Facilities Supervisor",
@@ -16308,7 +15731,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "cmms",
    "dashboard",
@@ -16367,7 +15790,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel"
@@ -16419,7 +15842,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "excel",
@@ -16478,7 +15901,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "kpi",
@@ -16532,7 +15955,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16575,7 +15998,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16618,7 +16041,7 @@
   "source": "workday",
   "score": 31,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "kpi"
@@ -16670,7 +16093,7 @@
   "source": "jobstreet alert",
   "score": 30,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16704,7 +16127,7 @@
   "source": "linkedin alert",
   "score": 30,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16738,7 +16161,7 @@
   "source": "linkedin alert",
   "score": 30,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16772,7 +16195,7 @@
   "source": "linkedin alert",
   "score": 30,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16806,7 +16229,7 @@
   "source": "jobstreet alert",
   "score": 30,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -16851,41 +16274,7 @@
   "source": "linkedin alert",
   "score": 30,
   "first_seen": "2026-11-12",
-  "last_seen": "2026-11-25",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 50
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [],
-   "cap": 100
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:linkedin:business systems analyst:axiom · batu kawan (on-site)",
-  "company": "Axiom",
-  "title": "Business Systems Analyst",
-  "location": "Batu Kawan, Penang",
-  "url": "https://www.linkedin.com/comm/jobs/view/4488602527/?trackingId=KIecY7OFt6BAe4Y%2BoG%2BnJw%3D%3D&refId=UVFXdOFqngTWZszpHhUhew%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B8LL6wLfeS6eyiM%2FSzD6EoQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=3CVkQ5EBIymIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4488602527_ssid_16262187148_fmid_ju8vz3~mwcwumdb~4b_crv_3&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4488602527_ssid_16262187148_fmid_ju8vz3~mwcwumdb~4b_crv_3-null-ju8vz3~mwcwumdb~4b-null-null&eid=ju8vz3-mwcwumdb-4b&otpToken=NTE2MTA2Njk2NWFhMTk2NzM3ZmY2M2QwMzk2NzlmNmYxOTkyMjYxODFiOWQ0YTQ4OTcwYzM3NzliOTk2NjkzYTZkNGU4OWJkZThjYWZjZDdlNTQ5YWZlNDgxMTQ5NWQ4YzhhZThlNGRhZjc3ZTRmM2VlMmFmODI1OGRlZDY0YWI0NmJhNzRmMjA2NTYwODFmMTYsMiwx",
-  "source": "linkedin alert",
-  "score": 30,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -16919,7 +16308,7 @@
   "source": "smartrecruiters",
   "score": 30,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data visualization",
    "sql"
@@ -16972,7 +16361,7 @@
   "source": "workday",
   "score": 30,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -17023,7 +16412,7 @@
   "source": "workday",
   "score": 30,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -17073,7 +16462,7 @@
   "source": "smartrecruiters",
   "score": 29,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi",
    "requirements gathering"
@@ -17122,7 +16511,7 @@
   "source": "workday",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "sla"
@@ -17170,7 +16559,7 @@
   "source": "greenhouse",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -17222,7 +16611,7 @@
   "source": "workday",
   "score": 29,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -17282,7 +16671,7 @@
   "source": "jobstreet alert",
   "score": 28,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17325,7 +16714,7 @@
   "source": "linkedin alert",
   "score": 28,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17368,7 +16757,7 @@
   "source": "jobstreet alert",
   "score": 28,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -17411,7 +16800,7 @@
   "source": "workday",
   "score": 28,
   "first_seen": "2026-11-13",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "python",
@@ -17473,7 +16862,7 @@
   "source": "workday",
   "score": 28,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -17743,7 +17132,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "machine learning",
    "pandas",
@@ -17804,7 +17193,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -17855,7 +17244,7 @@
   "source": "smartrecruiters",
   "score": 27,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "statistics"
   ],
@@ -17900,7 +17289,7 @@
   "source": "workday",
   "score": 27,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -17949,7 +17338,7 @@
   "source": "workday",
   "score": 26,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "etl",
@@ -18017,7 +17406,7 @@
   "source": "workday",
   "score": 26,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "vendor management"
   ],
@@ -18061,7 +17450,7 @@
   "source": "workday",
   "score": 26,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "erp",
@@ -18131,7 +17520,7 @@
   "source": "workday",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18174,7 +17563,7 @@
   "source": "workday",
   "score": 26,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "power bi",
@@ -18222,7 +17611,7 @@
   "source": "linkedin alert",
   "score": 25,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18261,7 +17650,7 @@
   "source": "jobstreet alert",
   "score": 25,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18300,7 +17689,7 @@
   "source": "linkedin alert",
   "score": 25,
   "first_seen": "2026-11-13",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18339,7 +17728,7 @@
   "source": "workday",
   "score": 25,
   "first_seen": "2026-11-04",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "kpi",
@@ -18394,7 +17783,7 @@
   "source": "greenhouse",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -18460,7 +17849,7 @@
   "source": "workday",
   "score": 25,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -18521,7 +17910,7 @@
   "source": "smartrecruiters",
   "score": 24,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "python",
@@ -18580,7 +17969,7 @@
   "source": "linkedin alert",
   "score": 23,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18619,7 +18008,7 @@
   "source": "linkedin alert",
   "score": 23,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18658,7 +18047,7 @@
   "source": "smartrecruiters",
   "score": 23,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "sql"
@@ -18709,7 +18098,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-22",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18748,7 +18137,7 @@
   "source": "linkedin alert",
   "score": 23,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18787,7 +18176,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18826,7 +18215,7 @@
   "source": "linkedin alert",
   "score": 23,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18865,7 +18254,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18904,7 +18293,7 @@
   "source": "linkedin alert",
   "score": 23,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18943,7 +18332,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -18982,7 +18371,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19021,7 +18410,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19060,7 +18449,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19099,7 +18488,7 @@
   "source": "linkedin alert",
   "score": 23,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19177,7 +18566,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -19222,7 +18611,7 @@
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19503,7 +18892,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-11-03",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "requirements gathering"
@@ -19555,7 +18944,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -19613,7 +19002,7 @@
   "source": "smartrecruiters",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -19669,7 +19058,7 @@
   "source": "smartrecruiters",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19708,7 +19097,7 @@
   "source": "workday",
   "score": 23,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -19747,7 +19136,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation"
   ],
@@ -19798,7 +19187,7 @@
   "source": "smartrecruiters",
   "score": 22,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel"
   ],
@@ -19900,7 +19289,7 @@
   "source": "greenhouse",
   "score": 22,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -19977,7 +19366,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -20030,7 +19419,7 @@
   "source": "workday",
   "score": 22,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "git",
    "machine learning",
@@ -20100,7 +19489,7 @@
   "source": "smartrecruiters",
   "score": 21,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp"
   ],
@@ -20149,7 +19538,7 @@
   "source": "workday",
   "score": 21,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "requirements gathering"
@@ -20207,7 +19596,7 @@
   "source": "workday",
   "score": 21,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "sla"
@@ -20264,7 +19653,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -20303,7 +19692,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -20342,7 +19731,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -20383,7 +19772,7 @@
   "source": "linkedin alert",
   "score": 20,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "azure"
@@ -20426,7 +19815,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "erp",
@@ -20484,7 +19873,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -20523,7 +19912,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -20565,7 +19954,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-22",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -20606,7 +19995,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -20645,7 +20034,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -20684,7 +20073,7 @@
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -20717,45 +20106,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:data analyst:socoe sdn. bhd. kuching, sarawak",
-  "company": "Socoe Sdn Bhd",
-  "title": "Data Analyst",
-  "location": "Kuching, Sarawak",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgjldC2cDMCfuhPkmXkDHAgjokgW479UIoLeJUylOcXiov3zhtBGJxECiVf9toyBHHMWEJKDg_eLoRJWH3RzHq_FuhFZTVfmhroUz9U3mV4vq_1a44LmD9bSZVYrHIm56VBW7BNCR5P_dO-Eb4-zOIa/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h68/h001.Diw-UQCu1bzPAvoGep_Zies6ylHpUjRNXe8be2IhA0w",
-  "source": "jobstreet alert",
-  "score": 20,
-  "first_seen": "2026-11-10",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "Outside KL and Selangor",
-     -10
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "wd:cw:R-MYS023",
   "company": "Cushman & Wakefield",
   "title": "Scheduler/Project Planner (Data Centre in JB)",
@@ -20764,7 +20114,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -20806,7 +20156,7 @@
   "source": "workday",
   "score": 20,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -20895,7 +20245,7 @@
   "source": "smartrecruiters",
   "score": 19,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel",
    "vendor management"
@@ -21048,7 +20398,7 @@
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21091,7 +20441,7 @@
   "source": "linkedin alert",
   "score": 18,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21134,7 +20484,7 @@
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -21179,7 +20529,7 @@
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21222,7 +20572,7 @@
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21265,7 +20615,7 @@
   "source": "linkedin alert",
   "score": 18,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data quality"
@@ -21310,7 +20660,7 @@
   "source": "linkedin alert",
   "score": 18,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21439,7 +20789,7 @@
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-13",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21483,92 +20833,6 @@
   "score": 18,
   "first_seen": "2026-11-13",
   "last_seen": "2026-11-23",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -20
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "mail:jobstreet:senior business analytics expert:tdcx malaysia kuala lumpur",
-  "company": "TDCX Malaysia",
-  "title": "Senior Business Analytics Expert",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjaLG317eeLQz92UcWg2bwXvdWzy3QNvURfxyDqTyuX-ewJIrIPcFlfcxUK2ELWLsmOzc2jH4PrK1wZYwgw3c7Qn9VbBYFYa4yW0Tl4lm2n_YEW2gMbL5MKM4SCbgjEvgDmsDdOWY-XzmY3cfl_O1c-/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h76/h001.JZrfIy1AUtmSed2AhRX5MrtCdfIbGzuAtvwLL5zDDQI",
-  "source": "jobstreet alert",
-  "score": 18,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 60,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -20
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "mail:linkedin:senior data analyst (quick commerce):foodpanda · kuala lumpur (on-site)",
-  "company": "Foodpanda",
-  "title": "Senior Data Analyst (Quick Commerce)",
-  "location": "Kuala Lumpur",
-  "url": "https://www.linkedin.com/comm/jobs/view/4480748645/?trackingId=9jibeQQemO5gFdmtbALKiQ%3D%3D&refId=nf48yBe9vjnieArA2C4VHA%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BaU1QndoFQjy1R5ly2dtZpw%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=2m6qTt7zEimYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4480748645_ssid_16262187156_fmid_ju8vz3~mwd5f9vr~i3_crv_1&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4480748645_ssid_16262187156_fmid_ju8vz3~mwd5f9vr~i3_crv_1-null-ju8vz3~mwd5f9vr~i3-null-null&eid=ju8vz3-mwd5f9vr-i3&otpToken=MmZhN2NhZTRmZjhkODgxZGJkMWE2NzNhODk5N2Y3NjA3MmRlODhiNzUzZGFlYTRhNTI4YzIzNGE4Y2ExZGI2NTFiYzZlZWEzYjVlYTlmN2M1NzdkYzUyNTlkYzlkMTc0MzYxOWY5M2E0ZDI1Nzc5MTY2NmUwMmE4M2RkZDc3YjYwYjk5NjY0MzYyYzYzZmViMzIsMiwx",
-  "source": "linkedin alert",
-  "score": 18,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -21654,7 +20918,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "requirements gathering",
@@ -21706,7 +20970,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -21751,7 +21015,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -21804,7 +21068,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -21851,7 +21115,7 @@
   "source": "smartrecruiters",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -21896,7 +21160,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -21946,7 +21210,7 @@
   "source": "workday",
   "score": 18,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -21996,7 +21260,7 @@
   "source": "smartrecruiters",
   "score": 17,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -22053,7 +21317,7 @@
   "source": "smartrecruiters",
   "score": 17,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "sql"
   ],
@@ -22104,7 +21368,7 @@
   "source": "workday",
   "score": 17,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering",
    "rest api"
@@ -22157,7 +21421,7 @@
   "source": "workday",
   "score": 17,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "machine learning",
@@ -22211,7 +21475,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -22272,7 +21536,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel"
@@ -22324,7 +21588,7 @@
   "source": "workday",
   "score": 16,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp",
@@ -22385,7 +21649,7 @@
   "source": "smartrecruiters",
   "score": 15,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -22431,7 +21695,7 @@
   "source": "linkedin alert",
   "score": 15,
   "first_seen": "2026-11-22",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -22465,7 +21729,7 @@
   "source": "linkedin alert",
   "score": 15,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -22499,7 +21763,7 @@
   "source": "jobstreet alert",
   "score": 15,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -22533,7 +21797,7 @@
   "source": "smartrecruiters",
   "score": 15,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -22579,7 +21843,7 @@
   "source": "linkedin alert",
   "score": 15,
   "first_seen": "2026-11-10",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -22613,7 +21877,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel"
@@ -22671,7 +21935,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline",
    "excel"
@@ -22720,7 +21984,7 @@
   "source": "workday",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -22770,7 +22034,7 @@
   "source": "smartrecruiters",
   "score": 15,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard"
   ],
@@ -22822,7 +22086,7 @@
   "source": "smartrecruiters",
   "score": 14,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "statistics"
   ],
@@ -22874,7 +22138,7 @@
   "source": "workday",
   "score": 14,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "kpi",
@@ -22928,7 +22192,7 @@
   "source": "jobstreet alert",
   "score": 13,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -22971,7 +22235,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -23017,7 +22281,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -23063,7 +22327,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -23110,7 +22374,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -23155,7 +22419,7 @@
   "source": "jobstreet alert",
   "score": 13,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -23245,7 +22509,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -23375,49 +22639,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:lead analyst, business analyst (tss-cloud application transformation):aia digital+ malaysia kuala lumpur",
-  "company": "AIA Digital+ Malaysia",
-  "title": "Lead Analyst, Business Analyst (TSS-Cloud Application Transformation)",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjq1IXpRd622_rzXQPq8fhuJXN75vci6iwZ7aoJ0fNCl7_ZAO30Jvi2T8dgKM7-UvIcgfoeUr8-ccE66WVRWCuDk2lx4_Yp3lg3-A_gfOUo3UwatBBcjmjlSwWmJbq5NNw4_vqN71xFk_j6gm8Y6HAz/4vn/cZh-e-aUToy_LPPXCFQkeQ/h88/h001.zUfuP0OcwQTQpzl3QJn7-iUBCbF9UBD9Wm7SoyB7t_I",
-  "source": "jobstreet alert",
-  "score": 13,
-  "first_seen": "2026-11-07",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 50,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -25
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Business and systems",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "sr:grab:744000154054769",
   "company": "Grab",
   "title": "Assistant Finance Manager, RTR - General Ledger & Reporting",
@@ -23426,7 +22647,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "erp"
@@ -23479,7 +22700,7 @@
   "source": "smartrecruiters",
   "score": 13,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline"
@@ -23529,7 +22750,7 @@
   "source": "workday",
   "score": 13,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -23579,7 +22800,7 @@
   "source": "jobstreet alert",
   "score": 12,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation"
   ],
@@ -23628,7 +22849,7 @@
   "source": "smartrecruiters",
   "score": 12,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -23677,7 +22898,7 @@
   "source": "workday",
   "score": 12,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "requirements gathering"
@@ -23736,7 +22957,7 @@
   "source": "workday",
   "score": 11,
   "first_seen": "2026-10-28",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "requirements gathering"
@@ -23875,7 +23096,7 @@
   "source": "workday",
   "score": 10,
   "first_seen": "2026-11-10",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "cmms",
    "incident management",
@@ -23934,7 +23155,7 @@
   "source": "smartrecruiters",
   "score": 10,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline"
   ],
@@ -23982,7 +23203,7 @@
   "source": "workday",
   "score": 9,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi",
    "machine learning",
@@ -24040,7 +23261,7 @@
   "source": "linkedin alert",
   "score": 8,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24083,7 +23304,7 @@
   "source": "jobstreet alert",
   "score": 8,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24169,7 +23390,7 @@
   "source": "linkedin alert",
   "score": 8,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24204,53 +23425,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:data analyst (fresh graduate opportunity/internship placement):huawei technologies (malaysia) sdn. bhd posted on 28 oct 2026 kuala lumpur",
-  "company": "Huawei Technologies (Malaysia) Sdn Bhd",
-  "title": "Data Analyst (Fresh Graduate Opportunity/Internship placement)",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAifk73MCY-oxyExZTjOeoASHdAaAMnWwECynk9PGbB9by3Vqoq3re217z369NyurUqHRyrMvoWHY0frggoCGysqJDGjOMOqFy5-VtC3eRRfYAkiPyBs2elb8RIDhmIBdL5GGChRHAqI2UInW_HTcyj8/4vn/z1YjDYkQSB6SQ2y7RBrwQA/h97/h001.f5ocV9wQLdvofYVHOPl4Yli6u6fK8IDK0EJl3OttlGw",
-  "source": "jobstreet alert",
-  "score": 8,
-  "first_seen": "2026-11-03",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 20,
-   "Entry-friendly": 100,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "Junior-friendly",
-     10
-    ],
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -40
-    ]
-   ],
-   "cap": 45
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "lv:usasurveyjob:33664afb-f593-42c0-aaec-90befe193558",
   "company": "TowardJobs",
   "title": "Remote Data Entry Clerk - Work at Home",
@@ -24259,7 +23433,7 @@
   "source": "lever",
   "score": 8,
   "first_seen": "2026-10-30",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24302,7 +23476,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24349,7 +23523,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24396,7 +23570,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24443,7 +23617,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24490,7 +23664,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24537,7 +23711,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24584,7 +23758,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24631,7 +23805,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24678,7 +23852,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24725,7 +23899,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24772,7 +23946,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -24819,7 +23993,7 @@
   "source": "workday",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -24864,7 +24038,7 @@
   "source": "smartrecruiters",
   "score": 8,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -24911,7 +24085,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "requirements gathering"
@@ -24969,7 +24143,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "excel",
@@ -25031,7 +24205,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "etl",
    "power bi",
@@ -25098,7 +24272,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "dashboard",
@@ -25159,7 +24333,7 @@
   "source": "workday",
   "score": 7,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "data visualization",
@@ -25221,7 +24395,7 @@
   "source": "lever",
   "score": 6,
   "first_seen": "2026-10-31",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -25268,7 +24442,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "kpi",
@@ -25327,7 +24501,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi",
    "power bi",
@@ -25379,7 +24553,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "process mapping",
@@ -25429,7 +24603,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -25476,7 +24650,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "process mapping",
@@ -25526,7 +24700,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering",
    "sla"
@@ -25589,7 +24763,7 @@
   "source": "workday",
   "score": 6,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel"
   ],
@@ -25641,7 +24815,7 @@
   "source": "linkedin alert",
   "score": 5,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -25680,7 +24854,7 @@
   "source": "jobstreet alert",
   "score": 5,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -25719,7 +24893,7 @@
   "source": "jobstreet alert",
   "score": 5,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -25758,7 +24932,7 @@
   "source": "smartrecruiters",
   "score": 5,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "agile",
@@ -25801,7 +24975,7 @@
   "source": "jobstreet alert",
   "score": 5,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -25879,7 +25053,7 @@
   "source": "smartrecruiters",
   "score": 5,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -25924,7 +25098,7 @@
   "source": "smartrecruiters",
   "score": 4,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "statistics"
@@ -25976,7 +25150,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26023,7 +25197,7 @@
   "source": "jobstreet alert",
   "score": 3,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26066,7 +25240,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-11-05",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "kpi"
@@ -26119,7 +25293,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-11-05",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "requirements gathering"
@@ -26173,7 +25347,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "incident management",
@@ -26226,7 +25400,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -26276,7 +25450,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel"
   ],
@@ -26324,7 +25498,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26367,7 +25541,7 @@
   "source": "workday",
   "score": 3,
   "first_seen": "2026-10-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "requirements gathering"
   ],
@@ -26421,7 +25595,7 @@
   "source": "workday",
   "score": 2,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "machine learning",
@@ -26482,7 +25656,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-29",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26529,7 +25703,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26576,7 +25750,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26623,7 +25797,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26670,7 +25844,7 @@
   "source": "workday",
   "score": 1,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26717,7 +25891,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-25",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -26763,7 +25937,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26806,7 +25980,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -26851,7 +26025,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "aws",
@@ -26899,7 +26073,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -26942,7 +26116,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-11-23",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -26988,7 +26162,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-21",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -27031,7 +26205,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -27077,7 +26251,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -27123,7 +26297,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-20",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -27169,7 +26343,7 @@
   "source": "linkedin alert",
   "score": 0,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -27212,7 +26386,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-19",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -27255,7 +26429,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-18",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "salesforce"
@@ -27300,7 +26474,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -27343,7 +26517,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-17",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -27388,7 +26562,7 @@
   "source": "linkedin alert",
   "score": 0,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -27427,7 +26601,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-16",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -27481,7 +26655,7 @@
   "source": "jobstreet alert",
   "score": 0,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -27524,7 +26698,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-13",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -27648,94 +26822,6 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:intern, enterprise solutions (business analyst cum sit tester):aia digital+ malaysia kuala lumpur city centre, kuala lumpur",
-  "company": "AIA Digital+ Malaysia Kuala Lumpur",
-  "title": "Intern, Enterprise Solutions (Business Analyst cum SIT Tester)",
-  "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAg_-eOAtwbs01WA6e5XjCWvhtOM4_vWSMpQ2yu4D5kXScYl5UsiX6YS9v7xp8NNegY3UlylFLw5RtwPDArQ7Dflyl5KlvxVvsfSjlzGclplcQlNc8AOv0nech1Wa1_k0aoOc-bqlXCFTLkMI6Gt0VJP/4vn/cZh-e-aUToy_LPPXCFQkeQ/h96/h001.sWzBnwYhvYbol_SXRGVisaTGtgUVkb6TPGzJtUgFysg",
-  "source": "jobstreet alert",
-  "score": 0,
-  "first_seen": "2026-11-12",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 20,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -40
-    ]
-   ],
-   "cap": 45
-  },
-  "track": "Business and systems",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "mail:jobstreet:pm/ apm/ mep engineer / csa manager / project planner / qs (pmc - data center):idapmc sdn. bhd. iskandar puteri, johor",
-  "company": "Idapmc Sdn Bhd",
-  "title": "PM/ APM/ MEP Engineer / CSA Manager / Project Planner / QS (PMC - Data Center)",
-  "location": "Iskandar Puteri, Johor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAivW1ebl-Jbz8_JuJx-8Co3RMhm19nuk34RLyB9j-sDuOLiUF3tZxg_xMDGmSsU8W5wxBI9Rfhpcl9688R14qpV9PYiyFcK_EBrBo6xdq5Blc__uhA6R3l23OsVq1wk7rnDjIlIk6oLSKX5dMdcytlq/4vn/DDnrDaYtQSaG2SeWU1oAIg/h72/h001.9kCPcPlJTyNFD0bbCtqhGyGboKiedBT5UwnuhWVn7c8",
-  "source": "jobstreet alert",
-  "score": 0,
-  "first_seen": "2026-11-11",
-  "last_seen": "2026-11-22",
-  "matched": [],
-  "missing": [
-   "data centre"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 40,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 0
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "Outside KL and Selangor",
-     -10
-    ],
-    [
-     "Senior title or 5+ years",
-     -30
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data centre",
-  "reach_out": true,
-  "posts": 1
- },
- {
   "id": "wd:cw:R342901",
   "company": "Cushman & Wakefield",
   "title": "Business Operations Manager, Data Centre Group Asia Pacific",
@@ -27744,7 +26830,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "dashboard",
    "excel",
@@ -27804,7 +26890,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-11-06",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "data pipeline"
   ],
@@ -27856,7 +26942,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-11-03",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "process mapping",
@@ -27906,7 +26992,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-11-02",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "kpi",
@@ -27971,7 +27057,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "excel",
@@ -28029,7 +27115,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "gdpr / pdpa",
@@ -28075,7 +27161,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -28118,7 +27204,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "machine learning",
@@ -28179,7 +27265,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -28224,7 +27310,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -28271,7 +27357,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "kpi"
   ],
@@ -28322,7 +27408,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "automation",
    "data pipeline",
@@ -28382,7 +27468,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "erp",
    "kpi"
@@ -28439,7 +27525,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "excel"
   ],
@@ -28490,7 +27576,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "stakeholder management"
@@ -28535,7 +27621,7 @@
   "source": "lever",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -28582,7 +27668,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -28632,7 +27718,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -28680,7 +27766,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre"
@@ -28725,7 +27811,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -28771,7 +27857,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [
    "vendor management"
   ],
@@ -28819,7 +27905,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -28865,7 +27951,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -28911,7 +27997,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -28958,7 +28044,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -29005,7 +28091,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -29051,7 +28137,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "critical facilities",
@@ -29099,7 +28185,7 @@
   "source": "smartrecruiters",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [
    "data centre",
@@ -29145,7 +28231,7 @@
   "source": "workday",
   "score": 0,
   "first_seen": "2026-10-27",
-  "last_seen": "2026-11-25",
+  "last_seen": "2026-11-26",
   "matched": [],
   "missing": [],
   "learning": [],
