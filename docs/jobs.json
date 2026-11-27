@@ -910,7 +910,7 @@
   },
   "track": "Data analysis",
   "reach_out": false,
-  "posts": 1
+  "posts": 2
  },
  {
   "id": "gh:wppmedia:5465679008",
@@ -2188,6 +2188,49 @@
   "posts": 1
  },
  {
+  "id": "wd:cnx:R1769406",
+  "company": "CNX",
+  "title": "Associate, Operations Reporting",
+  "location": "Kuala Lumpur",
+  "url": "https://cnx.wd1.myworkdayjobs.com/external_global/job/MYS-Kuala-Lumpur-Nu-Tower-2/Associate--Operations-Reporting_R1769406",
+  "source": "workday",
+  "score": 67,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "sql"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 52,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 29,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "BI and reporting",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:database engineer / data platform engineer (aws, postgresql & nosql):techstreet kuala lumpur",
   "company": "Techstreet",
   "title": "Database Engineer / Data Platform Engineer (AWS, PostgreSQL & NoSQL)",
@@ -2785,6 +2828,49 @@
    "cap": 100
   },
   "track": "Business and systems",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:data engineer executive (open to fresh grad):plaza premium group · federal territory of kuala lumpur, malaysia (on-site)",
+  "company": "Plaza Premium Group",
+  "title": "Data Engineer Executive (Open To Fresh Grad)",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4495283050/?trackingId=DA%2F88iJxz0LdvJUnhZiutw%3D%3D&refId=8yFVkS7Hr5ouB%2Fh54f2B9g%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfRI21f%2FAQcOeydTbj4rReg%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=35YWf29py2HIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4495283050_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4495283050_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9-null-ju8vz3~mwycgequ~m0-null-null&eid=ju8vz3-mwycgequ-m0&otpToken=NDFmMmYxZjM4ZGI3OTYwMDAyMTk1OWJjMWNhMDhkODlmYjY0MTBlYjA5OGFiYzgwMjE2N2YyZGU2NmI1ODcxNzQ4ZWQ0ZDhlZmEwNTEwYWUyNGY5NmY5MDkwMTg0Njk0NTJjNDZlMGQ5YTJmMGRiYTkwMjY1NzBiMWI2ZTI3MzY0Y2UyNjc5Njg2ZjZjOWJhN2YsMiwx",
+  "source": "linkedin alert",
+  "score": 63,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 0,
+   "adjust": [
+    [
+     "Junior-friendly",
+     10
+    ],
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data engineering",
   "reach_out": false,
   "posts": 1
  },
@@ -4426,6 +4512,61 @@
   "posts": 1
  },
  {
+  "id": "wd:baxter:JR-214106",
+  "company": "Baxter",
+  "title": "Global Accounts Payable Manager, Analytics & Process Intelligence",
+  "location": "Kuala Lumpur",
+  "url": "https://baxter.wd1.myworkdayjobs.com/baxter/job/Kuala-Lumpur/Global-Accounts-Payable-Manager--Analytics---Process-Intelligence_JR-214106",
+  "source": "workday",
+  "score": 55,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "automation",
+   "dashboard",
+   "erp",
+   "kpi",
+   "power bi"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 86,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 47,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -30
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "wd:aia:JR-71518",
   "company": "AIA",
   "title": "Analytics, Specialist",
@@ -4604,11 +4745,128 @@
   "posts": 1
  },
  {
+  "id": "mail:linkedin:data engineer:etiqa insurance and takaful · wp. kuala lumpur (hybrid)",
+  "company": "Etiqa Insurance and Takaful",
+  "title": "Data Engineer",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4494966904/?trackingId=qyZUmze3JgoT8MvD8Cuhwg%3D%3D&refId=8yFVkS7Hr5ouB%2Fh54f2B9g%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfRI21f%2FAQcOeydTbj4rReg%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=35YWf29py2HIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4494966904_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4494966904_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9-null-ju8vz3~mwycgequ~m0-null-null&eid=ju8vz3-mwycgequ-m0&otpToken=NDFmMmYxZjM4ZGI3OTYwMDAyMTk1OWJjMWNhMDhkODlmYjY0MTBlYjA5OGFiYzgwMjE2N2YyZGU2NmI1ODcxNzQ4ZWQ0ZDhlZmEwNTEwYWUyNGY5NmY5MDkwMTg0Njk0NTJjNDZlMGQ5YTJmMGRiYTkwMjY1NzBiMWI2ZTI3MzY0Y2UyNjc5Njg2ZjZjOWJhN2YsMiwx",
+  "source": "linkedin alert",
+  "score": 53,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data engineering",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:data and ai consultant:accenture · federal territory of kuala lumpur, malaysia (hybrid)",
+  "company": "Accenture",
+  "title": "Data and AI Consultant",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4495021333/?trackingId=bdDOxGtSQkxecyXoSs8trw%3D%3D&refId=8yFVkS7Hr5ouB%2Fh54f2B9g%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfRI21f%2FAQcOeydTbj4rReg%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=35YWf29py2HIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4495021333_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4495021333_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9-null-ju8vz3~mwycgequ~m0-null-null&eid=ju8vz3-mwycgequ-m0&otpToken=NDFmMmYxZjM4ZGI3OTYwMDAyMTk1OWJjMWNhMDhkODlmYjY0MTBlYjA5OGFiYzgwMjE2N2YyZGU2NmI1ODcxNzQ4ZWQ0ZDhlZmEwNTEwYWUyNGY5NmY5MDkwMTg0Njk0NTJjNDZlMGQ5YTJmMGRiYTkwMjY1NzBiMWI2ZTI3MzY0Y2UyNjc5Njg2ZjZjOWJhN2YsMiwx",
+  "source": "linkedin alert",
+  "score": 53,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data and ai consultant:accenture solutions sdn bhd (mu) kuala lumpur",
+  "company": "Accenture Solutions Sdn Bhd",
+  "title": "Data and AI Consultant",
+  "location": "Kuala Lumpur",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjgsJxJVI5cEl1uOzRUqITl4lZ9xWh8EuvVbEidnD1EeZ6S2IAGLWSb_2KSbPyu8ic_cJRqkqekTtASgvxJaEXTQP2sArhirTry8WOxHduodJfV_di0gSaxqWfcnTmmeC9Ty1v3ZGDEd4hslKbwQMVm/4w2/L4zPycIrSVG2Idvsz3NG0w/h94/h001.ijMZaBP9SG-yEhjLFWbqRVuNnin4CReVIWI0EiGDu9I",
+  "source": "jobstreet alert",
+  "score": 53,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:data engineer:accenture malaysia petaling, selangor",
   "company": "Accenture",
   "title": "Data Engineer",
   "location": "Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhhK2Uesp-4Gdzz2bt5nyq8_EygXci8du_er7xFl3ZiqJqdBN65l7zS3MnIk3znORw1IxQ_vaZjTollCu6BO7VkZWjzWCvWOUw3VlvNPvUEJy6pmupNWPF1V_sjG2D0f9RvsM1857UwDwxspFa8Yg3F/4w1/bctPLISnQMe4186oOem2Sg/h60/h001.yp89P9uOZEteLtuYJLXdikik1Am_BMfIdCZGANnHdi8",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhhK2Uesp-4Gdzz2bt5nyq8_EygXci8du_er7xFl3ZiqJqdBN65l7zS3MnIk3znORw1IxQ_vaZjTollCu6BO7VkZWjzWCvWOUw3VlvNPvUEJy6pmupNWPF1V_sjG2D0f9RvsM1857UwDwxspFa8Yg3F/4w2/FATGpthNSDOPN-iAnkzNvQ/h64/h001.l2mZ6cYQvsraxGCBP9qUb350J4xoikPqXT9ZYVLEMe4",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-26",
@@ -4647,7 +4905,7 @@
   "company": "Accenture",
   "title": "Analytics Engineer",
   "location": "Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhzA55WPOODLKtDaGP81-rLQ0Vk2MjCu85Rb_kCvNvujD2VFTD3apXcEZM5_VqjFRLk63J9klMTxlljfadptHOWF4KekWUdwSt-zz9OYKgiFV0QhUAtxEVczwcLsOYkezNgzTwr_UgOE_WsjqgYL2Fc/4w1/bctPLISnQMe4186oOem2Sg/h80/h001.4T9OS1lvJU-jzw73RecxDg_iSRZDdN11eUOJguAmliA",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhzA55WPOODLKtDaGP81-rLQ0Vk2MjCu85Rb_kCvNvujD2VFTD3apXcEZM5_VqjFRLk63J9klMTxlljfadptHOWF4KekWUdwSt-zz9OYKgiFV0QhUAtxEVczwcLsOYkezNgzTwr_UgOE_WsjqgYL2Fc/4w2/FATGpthNSDOPN-iAnkzNvQ/h80/h001.bUM15cY7pK799AbK-_ow2BJxCIekJzS7onBx64j5h6k",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-26",
@@ -4686,7 +4944,7 @@
   "company": "Trigence Sdn Bhd",
   "title": "Big Data Engineer",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhal8uvm9bIQivy5mxD1EcERa_g8S_NNAXD6VZMjbCaOTb9WRLSxcLF0XZps3G-FCsW_1_iZvnhPzATLSgYKbjoR_yUDw324JLMXA2oykozhQ_RPoPEldrT39da78pQ58x90imsfsaDLjiSTgqMhe6F/4w1/bctPLISnQMe4186oOem2Sg/h103/h001.kTN6_kk--kwAXDSfLD90q6ezlIb91C_LuCY_gj5dI64",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhal8uvm9bIQivy5mxD1EcERa_g8S_NNAXD6VZMjbCaOTb9WRLSxcLF0XZps3G-FCsW_1_iZvnhPzATLSgYKbjoR_yUDw324JLMXA2oykozhQ_RPoPEldrT39da78pQ58x90imsfsaDLjiSTgqMhe6F/4w2/FATGpthNSDOPN-iAnkzNvQ/h103/h001.jVcVUF9OEJYsOU5TGNYetpDFeCG3xqoc_lofPKBvwo8",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-26",
@@ -4803,7 +5061,7 @@
   "company": "amIT global",
   "title": "Data Engineer",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjS3LpoIZGpV-S___mTXw9AoNLQLN-Bey1n4GPWQv0FA3FgaBrio5ODauO0p_Jm_DObrlEvO1WxL6usSiapqFht1z6xnmx-OKLA9n2gmQvZmSLdVjR-g3XF5dTleiarWB8YeHEiZqfxE0jNF6iaVvYu/4w1/bctPLISnQMe4186oOem2Sg/h62/h001.EObGly1O5jz8llORxMjGO9n1Iz9NPD0FOYcHBiXDpsc",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjS3LpoIZGpV-S___mTXw9AoNLQLN-Bey1n4GPWQv0FA3FgaBrio5ODauO0p_Jm_DObrlEvO1WxL6usSiapqFht1z6xnmx-OKLA9n2gmQvZmSLdVjR-g3XF5dTleiarWB8YeHEiZqfxE0jNF6iaVvYu/4w2/FATGpthNSDOPN-iAnkzNvQ/h60/h001.04u-CsGluZJDfBEpOmWyRebMWGYoEYW5oF1_68SNLBo",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-25",
@@ -4842,7 +5100,7 @@
   "company": "Cavater Sdn Bhd",
   "title": "Data Warehouse Engineer",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAinJtpAE427ApE8kQaVtmj7rTEkQbsfIKxFjogPLQVoh9xOiYtzxYj87DBRb0q6akL0w-DRPkVUrg-j_gRIdC7g_vnCJKDL-W6-5d18kKfDHQ9TThHglWgAvFEU9hGvKDDI6EznLGU43VWWP-wwZNI1/4w1/bctPLISnQMe4186oOem2Sg/h58/h001.zPDG9hEKg3nSpHZYFQdfT_OKJwBNU1Cr5Yc--u0mJIc",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAinJtpAE427ApE8kQaVtmj7rTEkQbsfIKxFjogPLQVoh9xOiYtzxYj87DBRb0q6akL0w-DRPkVUrg-j_gRIdC7g_vnCJKDL-W6-5d18kKfDHQ9TThHglWgAvFEU9hGvKDDI6EznLGU43VWWP-wwZNI1/4w2/FATGpthNSDOPN-iAnkzNvQ/h62/h001.O_Y8spwb2ViiKeQ2XmYw4KBoN8O--wp5Ces5CP2BihM",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-25",
@@ -5125,7 +5383,7 @@
   "company": "Mettler-Toledo Services Asia-Pac Sdn Bhd",
   "title": "Data Engineer",
   "location": "Petaling Jaya, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgzBTYaRL74dk6dIOZlXNZzmtMn9yeHIDUB-1o7lVX8GP3iDqrOJdlJOe8iErG7MEjZCWzYnfzaGF0Dp-UrAhM3aN0n0uQEBimH4MfRGIohd7HJR0PBJoPVtaKNSzbe3pZTh476bFrJ97qWcLAKBSSN/4w1/bctPLISnQMe4186oOem2Sg/h99/h001.9wicAcK62AQtD_hX32M3MhRot_xm1Z0d_fhdiByX154",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgzBTYaRL74dk6dIOZlXNZzmtMn9yeHIDUB-1o7lVX8GP3iDqrOJdlJOe8iErG7MEjZCWzYnfzaGF0Dp-UrAhM3aN0n0uQEBimH4MfRGIohd7HJR0PBJoPVtaKNSzbe3pZTh476bFrJ97qWcLAKBSSN/4w2/FATGpthNSDOPN-iAnkzNvQ/h99/h001.NX0s6tNV7b-togBsqvcg7YRRycea3lxDzO7fg6GztSc",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-22",
@@ -5480,7 +5738,7 @@
   "company": "Averis Sdn Bhd",
   "title": "Data Engineer",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAg1cy5YOfhAABs76D1dEZb4sBiTzqwqkZj3dYz4VGpojIVJHLDWUTL5GSR8JFiz2qL9TCnGgCYqfDZIQH-4kV8LgPkOAtVpxKEXj5V6BgQfAP6ZV2wBaECPH3oTetv4JNJN0hKSIh4pKtXZ3NVYr4P5/4vv/RmyO7U18SkW6WwWojdavMw/h98/h001.mCh4xBdCrdFy2X4wm-8puZkNNzV-sjHs_Clvi6cYBWU",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAg1cy5YOfhAABs76D1dEZb4sBiTzqwqkZj3dYz4VGpojIVJHLDWUTL5GSR8JFiz2qL9TCnGgCYqfDZIQH-4kV8LgPkOAtVpxKEXj5V6BgQfAP6ZV2wBaECPH3oTetv4JNJN0hKSIh4pKtXZ3NVYr4P5/4w2/FATGpthNSDOPN-iAnkzNvQ/h101/h001.X_Jr2S-6SfQb-UcZ12a6QUafon1JAMYVqHC6HZwAW_I",
   "source": "jobstreet alert",
   "score": 53,
   "first_seen": "2026-11-16",
@@ -5794,6 +6052,45 @@
   "posts": 1
  },
  {
+  "id": "mail:linkedin:t&t analyst - artificial intelligence & data - my:deloitte · kuala lumpur",
+  "company": "Deloitte",
+  "title": "T&T Analyst - Artificial Intelligence & Data - MY",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4478869111/?trackingId=Ngr%2FUQVMZHUPeqBqgoYFOg%3D%3D&refId=Lu1Fi4%2F8qTJSIkwoPqqfsg%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZx5d6NQMS2KCcWCgfGvOmw%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=0lNy4TdMJOHYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4478869111_ssid_16262187148_fmid_ju8vz3~mwyl11cu~36_crv_6&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4478869111_ssid_16262187148_fmid_ju8vz3~mwyl11cu~36_crv_6-null-ju8vz3~mwyl11cu~36-null-null&eid=ju8vz3-mwyl11cu-36&otpToken=NzhhOGIwMjQ1YjIxYzE5MDI0MGM4N2Q3ZTRkYmM0ZjIzZDA1ZjdkZjI0ZGI4ODA2NDExZjI3YmZiMmM2NmRlZWRlOGI0Mzk0YzYyNDk1MGU5YzkyM2IxYTRlODkxOWNkOWEyZWUwM2MxYWIxYjFkN2MzNDVkNWMzMDBiNjkyZjE1NzdmNDllZGI1NmQ5MDQ1MWUsMiwx",
+  "source": "linkedin alert",
+  "score": 53,
+  "first_seen": "2026-11-06",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:data engineer:s p setia berhad posted on 2 nov 2026 setia alam, selangor",
   "company": "S P Setia Berhad",
   "title": "Data Engineer",
@@ -5831,6 +6128,56 @@
   "track": "Data engineering",
   "reach_out": false,
   "posts": 1
+ },
+ {
+  "id": "wd:citi:261005279",
+  "company": "Citi",
+  "title": "KYC Operations Analyst 2 - C10 - KUALA LUMPUR",
+  "location": "Kuala Lumpur",
+  "url": "https://citi.wd5.myworkdayjobs.com/2/job/Kuala-Lumpur-Selangor-Malaysia/KYC-Operations-Analyst-2---C10---KUALA-LUMPUR_261005279",
+  "source": "workday",
+  "score": 52,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "requirements gathering",
+   "statistics"
+  ],
+  "missing": [
+   "uat"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 38,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 21,
+   "adjust": [
+    [
+     "Junior-friendly",
+     8
+    ],
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Business and systems",
+  "reach_out": false,
+  "posts": 2
  },
  {
   "id": "sr:nielseniq:744000163598118",
@@ -7382,6 +7729,55 @@
   "posts": 1
  },
  {
+  "id": "wd:aia:JR-72173",
+  "company": "AIA",
+  "title": "Associate-Investment Accounting (Data Control)",
+  "location": "Putrajaya",
+  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Associate-Investment-Accounting--Data-Control-_JR-72173",
+  "source": "workday",
+  "score": 48,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "erp"
+  ],
+  "missing": [
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 31,
+   "Level": 100,
+   "Entry-friendly": 90,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 17,
+   "adjust": [
+    [
+     "Junior-friendly",
+     8
+    ],
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 2
+ },
+ {
   "id": "wd:danaher:R1322437",
   "company": "Danaher",
   "title": "Associate, Master Data",
@@ -7947,7 +8343,7 @@
   "company": "Corebase",
   "title": "Junior Business Analyst",
   "location": "Puchong, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAi2kb2GJE52qB7uXWdRRap7htbnDEbtPuKFZlolvvaxBRY7XfgC5brbzHXz35LdF4FETyIt3V_9nVLMujmPkttcnA4wCynKLsI8u0QLhqLiJ4_paPhsQdPNFvLV5pDUqqYCBOgwg-wB2uGiAEwYsXZH/4w1/NYr7wu31TMmISrh-cYNxwA/h91/h001.KvJke2zQfZzM_8O5YU8Ae8twoze_HSh9bUShQic595s",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAi2kb2GJE52qB7uXWdRRap7htbnDEbtPuKFZlolvvaxBRY7XfgC5brbzHXz35LdF4FETyIt3V_9nVLMujmPkttcnA4wCynKLsI8u0QLhqLiJ4_paPhsQdPNFvLV5pDUqqYCBOgwg-wB2uGiAEwYsXZH/4w2/L4zPycIrSVG2Idvsz3NG0w/h76/h001.J0xo53K3RZuvP0QcwaICiwoIJBVFvvcGx48jFOggGxg",
   "source": "jobstreet alert",
   "score": 46,
   "first_seen": "2026-11-26",
@@ -7990,7 +8386,7 @@
   "company": "ELK Technical Support Jobs",
   "title": "Junior BI Analyst",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjJ9E1srJ_4_oxDZm0_CtkUkN91RIe_Yk9rSk38mWOTpw7MwJR3aTg_F5R0LOk6pYMyi3cs8003WrwttC6X0fesG9mFIRv7RAzx-PueaCyPQaN_2um41g0-o6xG6-F_gRpM3FIReOohYVPI0R9jf3JH/4w1/NYr7wu31TMmISrh-cYNxwA/h61/h001.7Fm2AcsCLK2NBMZ65SXMW-KCSg0bHphqhTEvF3ZYxr0",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjJ9E1srJ_4_oxDZm0_CtkUkN91RIe_Yk9rSk38mWOTpw7MwJR3aTg_F5R0LOk6pYMyi3cs8003WrwttC6X0fesG9mFIRv7RAzx-PueaCyPQaN_2um41g0-o6xG6-F_gRpM3FIReOohYVPI0R9jf3JH/4w2/L4zPycIrSVG2Idvsz3NG0w/h58/h001.didt7s0TEfu_rKD8fdl3wk0NKBUJqh6ZtuaeX47jdAQ",
   "source": "jobstreet alert",
   "score": 46,
   "first_seen": "2026-11-26",
@@ -8701,56 +9097,6 @@
     [
      "Senior title or 5+ years",
      -15
-    ]
-   ],
-   "cap": 50
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:aia:JR-71589",
-  "company": "AIA",
-  "title": "Associate-Investment Accounting (Data Control)",
-  "location": "Putrajaya",
-  "url": "https://aia.wd3.myworkdayjobs.com/External/job/Putrajaya-MY-AIA-Global-Financial-Solutions-Malaysia/Associate-Investment-Accounting--Data-Control-_JR-71589",
-  "source": "workday",
-  "score": 45,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-27",
-  "matched": [
-   "erp"
-  ],
-  "missing": [
-   "asset management",
-   "stakeholder management"
-  ],
-  "learning": [],
-  "projects": [
-   "ERP automation (Exact Synergy REST)"
-  ],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 22,
-   "Level": 100,
-   "Entry-friendly": 100,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 15,
-   "skills": 12,
-   "adjust": [
-    [
-     "Junior-friendly",
-     10
-    ],
-    [
-     "In KL or Selangor",
-     8
     ]
    ],
    "cap": 50
@@ -10007,11 +10353,245 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:customer service data analyst specialist:j&t express (malaysia) sdn. bhd. posted on 23 nov 2026 bangsar, kuala lumpur rm 3,500 – rm 5,000 per month",
+  "company": "J&T Express (Malaysia) Sdn Bhd",
+  "title": "Customer Service Data Analyst Specialist",
+  "location": "Bangsar, Kuala Lumpur",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhVxjgEd4HHzD1mDuhai4hWK3mtnaaeTJr2ahaEO6e1w1v3K17J0--6WWmBNb3aj-IF1hKJu_bBoFHLCQEVmMRBUV1nH731fUW3q9rV36Qxh7G2-QBnpBwRZd9BPdg5Chot2LuM-d8dkN_Zz9TRkKet/4w2/L4zPycIrSVG2Idvsz3NG0w/h99/h001.VYwAK2twD5i4tt54embbThrsDMWejOuWZcRXOpOvu5c",
+  "source": "jobstreet alert",
+  "score": 38,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 3,500 – 5,000",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 2
+ },
+ {
+  "id": "mail:linkedin:data analyst:leonid group ltd · greater kuala lumpur (on-site)",
+  "company": "Leonid Group Ltd",
+  "title": "Data Analyst",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4493823582/?trackingId=Dq0EnmGeL4Y4suBa4Ydvkg%3D%3D&refId=Lu1Fi4%2F8qTJSIkwoPqqfsg%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZx5d6NQMS2KCcWCgfGvOmw%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=0lNy4TdMJOHYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4493823582_ssid_16262187148_fmid_ju8vz3~mwyl11cu~36_crv_6&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4493823582_ssid_16262187148_fmid_ju8vz3~mwyl11cu~36_crv_6-null-ju8vz3~mwyl11cu~36-null-null&eid=ju8vz3-mwyl11cu-36&otpToken=NzhhOGIwMjQ1YjIxYzE5MDI0MGM4N2Q3ZTRkYmM0ZjIzZDA1ZjdkZjI0ZGI4ODA2NDExZjI3YmZiMmM2NmRlZWRlOGI0Mzk0YzYyNDk1MGU5YzkyM2IxYTRlODkxOWNkOWEyZWUwM2MxYWIxYjFkN2MzNDVkNWMzMDBiNjkyZjE1NzdmNDllZGI1NmQ5MDQ1MWUsMiwx",
+  "source": "linkedin alert",
+  "score": 38,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data analyst (near mrt | financial industry):private advertiser kuala lumpur",
+  "company": "Private Advertiser",
+  "title": "Data Analyst (Near MRT | Financial Industry)",
+  "location": "Kuala Lumpur",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAj6R2tD0H3bB5zS-b-awOPxwpQnErtPCdpxh77Tl8AbUfZ0RdiKfcPY96t0pxMUTqfZq_gZM85fdPob_7fgQdRWF2WfatuG2eeN_v5p-Y7PceTKUXjk06rUG6NCEtxnArrYti4W5ENhqt-zISKuTnWi/4w2/L4zPycIrSVG2Idvsz3NG0w/h56/h001.lpT0INZcbGjOODZmknd07fLI1yEREgLgEcCQo831vx0",
+  "source": "jobstreet alert",
+  "score": 38,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 50
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data analyst:idynamics software sdn bhd kuala lumpur city centre, kuala lumpur",
+  "company": "iDynamics Software Sdn Bhd",
+  "title": "Data Analyst",
+  "location": "Kuala Lumpur",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgH-T0fAj-JV7LAW8_j6iII-Y3ZpjGbvmfN8yvFoiVNfT8e39J7BCYW74jXKbCH5P0Z9w8O1lJz7ZN-ce_7PRJa2oMRo3MMzB_dx29dHkxK8sD7S5TIp-1_-dujNqS46YLH4ntedUafJryUv__HwKEx/4w2/L4zPycIrSVG2Idvsz3NG0w/h60/h001.F_jqGR_c8wZOrUG3ZstDh328gR2hOpGsCOoT36hSNvw",
+  "source": "jobstreet alert",
+  "score": 38,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:data analytics specialist:amsolar sdn bhd puchong, selangor",
+  "company": "AmSolar Sdn Bhd",
+  "title": "Data Analytics Specialist",
+  "location": "Puchong, Selangor",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgHgaL-GIyw7-8BUYF7zXdZBpc3jWpXA9eZzZA54UcHo9usSoEpZU25CmjS1m7vCo4Wo6EsCVJTFANoyMg7TGCcP5xjG4O54opXMoJr_P7oE0nhdLm5l4Ek3AKXc4MX4XRUNe4i4Gy4n1WmTHHI0g0n/4w2/L4zPycIrSVG2Idvsz3NG0w/h78/h001.ofZhB-DDGNhV6ogxshMdoEZya4XP_cl6kurMfUvQIzI",
+  "source": "jobstreet alert",
+  "score": 38,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "mail:linkedin:master data analyst:singtel · kuala lumpur (on-site)",
+  "company": "Singtel",
+  "title": "Master Data Analyst",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4487709795/?trackingId=HiTTp7n3ig%2BXhPW1zFVELQ%3D%3D&refId=Lu1Fi4%2F8qTJSIkwoPqqfsg%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BZx5d6NQMS2KCcWCgfGvOmw%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=0lNy4TdMJOHYw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4487709795_ssid_16262187148_fmid_ju8vz3~mwyl11cu~36_crv_6&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4487709795_ssid_16262187148_fmid_ju8vz3~mwyl11cu~36_crv_6-null-ju8vz3~mwyl11cu~36-null-null&eid=ju8vz3-mwyl11cu-36&otpToken=NzhhOGIwMjQ1YjIxYzE5MDI0MGM4N2Q3ZTRkYmM0ZjIzZDA1ZjdkZjI0ZGI4ODA2NDExZjI3YmZiMmM2NmRlZWRlOGI0Mzk0YzYyNDk1MGU5YzkyM2IxYTRlODkxOWNkOWEyZWUwM2MxYWIxYjFkN2MzNDVkNWMzMDBiNjkyZjE1NzdmNDllZGI1NmQ5MDQ1MWUsMiwx",
+  "source": "linkedin alert",
+  "score": 38,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:business analyst:guocera sdn bhd petaling jaya, selangor",
   "company": "Guocera Sdn Bhd",
   "title": "Business Analyst",
   "location": "Petaling Jaya, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhgvLeXU4UzQ4vHrUWQJeBEorSSYd2MhRmXzWhQtjnbV8WQop19xdMik7hDagvCaacwxCJjnuOoixQyP8bjwN6NY7tfKBDvrOoksHTo6F_ewcFBR-GMdW61GeBB3QzB5e0SKeDhbmWCfOeKXk2uEUkY/4w1/y7GGcjnVS06OIqLcWHNHoQ/h75/h001.wLoXeHe5-bQFDpncoZszpY-BDD7paxohR2SF_IjlsxE",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhgvLeXU4UzQ4vHrUWQJeBEdb1DfBWgTn12kuevbXhcMx6V3PIJEa0w_hJzxdfmrWTo4ab5IwORWTSTj15f5vIXu-RV_I-U8TYwMhfkKs2XIDq7mA1MEOqBRUyxvpv5Vkjzrcq9oVrSAj1u6KdnVJZU/4w2/L4zPycIrSVG2Idvsz3NG0w/h88/h001.u4PrjFLrdNvxG3Kja8IL7AtJQoTdMnHv_G5pN1j7d-w",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-26",
@@ -10050,7 +10630,7 @@
   "company": "PERSOL Workforce Solutions Malaysia Sdn Bhd",
   "title": "Executive, Business Intelligence & Project Result Delivery",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgJZptBoSAqSz_kr04c0okq1_A1N39WcauEQrdZpq-ajsxKSGZzZva3Ix8d68MElvvobLAEy6i0hp67WvmtezEd-enj8IUUnyM1Qvg_8-lw7ve5h0vmRTznQKirpMPN537OamfORmdvv-e4c8QU-_Ov/4w1/NYr7wu31TMmISrh-cYNxwA/h67/h001.AUapkoIyfQcdsHnMxN79LhILcH33dLVCkD2RS9URyO8",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgJZptBoSAqSz_kr04c0okq1_A1N39WcauEQrdZpq-ajsxKSGZzZva3Ix8d68MElvvobLAEy6i0hp67WvmtezEd-enj8IUUnyM1Qvg_8-lw7ve5h0vmRTznQKirpMPN537OamfORmdvv-e4c8QU-_Ov/4w2/L4zPycIrSVG2Idvsz3NG0w/h82/h001.AspYikE1bxu2Jglh85Scx1sWt7wawxKatdK7D9gPGKw",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-26",
@@ -10202,50 +10782,11 @@
   "posts": 1
  },
  {
-  "id": "mail:jobstreet:customer service data analyst specialist:j&t express (malaysia) sdn. bhd. bangsar, kuala lumpur rm 3,500 – rm 5,000 per month",
-  "company": "J&T Express (Malaysia) Sdn Bhd",
-  "title": "Customer Service Data Analyst Specialist",
-  "location": "Bangsar, Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhVxjgEd4HHzD1mDuhai4hWK3mtnaaeTJr2ahaEO6e1w1v3K17J0--6WWmBNb3aj-IF1hKJu_bBoFHLCQEVmMRBUV1nH731fUW3q9rV36Qxh7G2-QBnpBwRZd9BPdg5ChqDGAQnZVRbensIXA0pTGq-/4w1/NYr7wu31TMmISrh-cYNxwA/h59/h001.lOKqbQ0L7d5CGxRdv5YwJkWf_v5RYv2sJWaE3kzcowo",
-  "source": "jobstreet alert",
-  "score": 38,
-  "first_seen": "2026-11-25",
-  "last_seen": "2026-11-27",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "RM 3,500 – 5,000",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 50,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
   "id": "mail:jobstreet:associate it data centre operation analyst (dcnoc):ntt global data centers cbj1 sdn bhd. cyberjaya, selangor",
   "company": "NTT Global Data Centers CBJ1 Sdn Bhd",
   "title": "Associate IT Data Centre Operation Analyst (DCNOC)",
   "location": "Cyberjaya, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiudl-FoAGPi5dwqsPV-yKP3mM8f1hZ-D6-ui4WCZlUQqwZeOPZgrifoxJt88icGHgXYZv880RSUfvGb_j9SrrLbo9btmZQ0T-7PBllkuug0GC7o3cJJF0ZtvuCzPEfQgO3EDSfJH8UPnVnlnSfrZ92/4w1/NYr7wu31TMmISrh-cYNxwA/h83/h001.d53WnRjPdmbtrxQFU93JWKk4XWeUj9tr8FDobPVY4PM",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiudl-FoAGPi5dwqsPV-yKP3mM8f1hZ-D6-ui4WCZlUQqwZeOPZgrifoxJt88icGHgXYZv880RSUfvGb_j9SrrLbo9btmZQ0T-7PBllkuug0GC7o3cJJF0ZtvuCzPEfQgO3EDSfJH8UPnVnlnSfrZ92/4w2/L4zPycIrSVG2Idvsz3NG0w/h84/h001.siOmtoxR1FPzprBzF-WPzSRIXjm-edfgO2xvfPuC_WI",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
@@ -10286,7 +10827,7 @@
   "company": "GAT System Sdn Bhd",
   "title": "AI & Business Intelligence (BI) Developer",
   "location": "Bangsar, Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAip2fYUYWlmSynn3g9Pt8tkqu_t5U7-xh3XvjxgwWoRpddZ3xKURrsrqoa8Kvb2OEQeyPqbiT_IF2nBhEl5nmKKEyz89iAsxu9-3KDTmBAOuDA-ilWUtRwQeqgqe67OHs3Tnz-KTSoOXfm3Hj0YNETu/4w1/NYr7wu31TMmISrh-cYNxwA/h85/h001.U5EpIXhI-miJlztr_z_x4rjnCvmMKkwt-1FVBsdwMgw",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAip2fYUYWlmSynn3g9Pt8tkqu_t5U7-xh3XvjxgwWoRpddZ3xKURrsrqoa8Kvb2OEQeyPqbiT_IF2nBhEl5nmKKEyz89iAsxu9-3KDTmBAOuDA-ilWUtRwQeqgqe67OHs3Tnz-KTSoOXfm3Hj0YNETu/4w2/L4zPycIrSVG2Idvsz3NG0w/h70/h001.nmgK4vh2m4Vskni7zQzVd7X8F3GD1beOoluvr2BG5qY",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
@@ -10403,7 +10944,7 @@
   "company": "Intellipro Singapore Pte. Ltd.",
   "title": "Business Analyst - BPO",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiLMIhz-VGRFK47gPdKuCZWGq148jlv_AvK3gPetdf040QtL9Z7vNhHpx8hjaamvQX1Xs96SWKtF_eMX1QAaSUHCbjim822LtddedEV8rRYd2lX_lDrOanG0QvS1DNfWgXQQAKelgyXAfNhO3L-u6aT/4w0/Bo2DtDiTSSqdkUYf9m-H2g/h89/h001.DUdaumLFtmdrVfpe_mlB-gsRMuRg0qAnR-IoHiqmFgk",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiLMIhz-VGRFK47gPdKuCZWQ0LEithDkK5pVgLQ8uiIRZgc_JhuZI92hlt0rgtwMC2vJMjAjdjg0L9JDDG4YPzl8eQPQHeasEBC4ZdFmwayUG8BxbI7B9zcDrCcLcbHCr-c37vacjHMk8qFRIjrljQr/4w2/3-YsxmFXRKq7FYSfYcg2bg/h98/h001.tWq2jGVcaeW69bQaiUpf2aau5p6tfFUl-NdhQLxr6xE",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-25",
@@ -10795,7 +11336,7 @@
   "company": "West Malayan Group Sdn Bhd",
   "title": "Data Analyst",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjiqf3X4aDkRsrfmTc1jCMFTzpK_c1rv_DOY20N_t7aiT2-JDH4K4LsEEX_j_q80stJ4j0I9oLRD4_Ik53F-JiukyM1pmOsfGnCPFIvpzhfYnxhzYh197xQJNehvMaZZqzuqcYK-GB3UHqKGzcyKEM0/4w1/NYr7wu31TMmISrh-cYNxwA/h100/h001.VV4A6WOUGwL3zaZygpvAZOkT3xRRJpQQcwZRpCnoXRw",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjiqf3X4aDkRsrfmTc1jCMFTzpK_c1rv_DOY20N_t7aiT2-JDH4K4LsEEX_j_q80stJ4j0I9oLRD4_Ik53F-JiukyM1pmOsfGnCPFIvpzhfYnxhzYh197xQJNehvMaZZqzuqcYK-GB3UHqKGzcyKEM0/4w2/L4zPycIrSVG2Idvsz3NG0w/h97/h001.yjTaQNN6lTwqrctWEyjZQ95oA9-WuLByWKSEMwd0ChY",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
@@ -10834,7 +11375,7 @@
   "company": "Bellcurve Advisory Sdn Bhd",
   "title": "Business Intelligence Analyst",
   "location": "Petaling Jaya, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiYnuTNq0cHQ5-WuNt8K-UvqkI1ZDYj2nAjetVIN3vSYbP4FGJ8MzRdV8SpcvQbhgEKWkx3CL7qISN0mjCt8a_a3GtEPv7u8Z4x27ZPbUxeSSFElLTjbzuQ8Zy3X56Fa1TCQZPa8Ig_SYND8lwCR4pv/4w1/NYr7wu31TMmISrh-cYNxwA/h102/h001.iyspvdGpdpQBHmpQBdCaeonXJPk62vrv0xyIPd-ZcVI",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiYnuTNq0cHQ5-WuNt8K-UvqkI1ZDYj2nAjetVIN3vSYbP4FGJ8MzRdV8SpcvQbhgEKWkx3CL7qISN0mjCt8a_a3GtEPv7u8Z4x27ZPbUxeSSFElLTjbzuQ8Zy3X56Fa1TCQZPa8Ig_SYND8lwCR4pv/4w2/L4zPycIrSVG2Idvsz3NG0w/h101/h001.uUfhYHLdSfRdiUsMa87Fj2qkyO9F1ujX_2xRYbzMxPk",
   "source": "jobstreet alert",
   "score": 38,
   "first_seen": "2026-11-23",
@@ -12675,11 +13216,11 @@
   "company": "Delfi Marketing Sdn Bhd",
   "title": "Business Analyst",
   "location": "Subang Jaya, Selangor",
-  "url": "https://www.linkedin.com/comm/jobs/view/4489544826/?trackingId=VixJyEBmknlcL10hfhZ4%2FA%3D%3D&refId=SupVeu5rf8wVkBjlpwj2kg%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BxrFNc%2FVeSjSXMwqHDck9bQ%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=1W4mSKTERypsw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4489544826_ssid_16262187156_fmid_ju8vz3~mwfrqba6~7d_crv_8&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4489544826_ssid_16262187156_fmid_ju8vz3~mwfrqba6~7d_crv_8-null-ju8vz3~mwfrqba6~7d-null-null&eid=ju8vz3-mwfrqba6-7d&otpToken=MDkwYWE0NzZhYzZhZjZlYjc2ZmIxNTZlMGZmMjMzYTVjOTA5NDY3NjA4M2VkZDU3YWM0MGU3YzFjNTQyODk3OGY2MWVhYTRjMTg2MWFmODFlNWNiZTRhYTJiZDAyZTMzODhhYzcxODI4Yzc1ZGEzNjJmZGY5Y2Q4Nzc2ODQyNDliNjA3NzhjMGM1ODliMjQ5MjgsMiwx",
+  "url": "https://www.linkedin.com/comm/jobs/view/4494974570/?trackingId=ssda2VqDTLU6UNmYIR1keQ%3D%3D&refId=2sJk9iltA0bwfFXfRM6SWA%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BMM1di07BScmwAjA5Uex0yg%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=1tljUDgIDWHIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4494974570_ssid_16262187156_fmid_ju8vz3~mwygqq73~aa_crv_3&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4494974570_ssid_16262187156_fmid_ju8vz3~mwygqq73~aa_crv_3-null-ju8vz3~mwygqq73~aa-null-null&eid=ju8vz3-mwygqq73-aa&otpToken=N2U1NGE1OWNiODBiMmY0MDhjODA0ZmVlZjc1Mjg3MTJhMWFiOTc5Nzg2ZDhmNjQyYTc0N2U2ZDhmZTBkYTBiZDA0YzI1NmMzMjkzNzQ3ZThjZTNkOTlmZWI0YWUxYzVlN2U2NmU3ZTZmMmViOTY0ZGVlMzcyM2IzNWNhYTgwNjg4NjcwMGJkNWIyOWMwODgxMjgsMiwx",
   "source": "linkedin alert",
   "score": 38,
   "first_seen": "2026-11-14",
-  "last_seen": "2026-11-24",
+  "last_seen": "2026-11-27",
   "matched": [],
   "missing": [],
   "learning": [],
@@ -14963,6 +15504,109 @@
   "posts": 1
  },
  {
+  "id": "mail:linkedin:senior teradata data engineer:accenture · greater kuala lumpur (hybrid)",
+  "company": "Accenture",
+  "title": "Senior Teradata Data Engineer",
+  "location": "Kuala Lumpur",
+  "url": "https://www.linkedin.com/comm/jobs/view/4483610439/?trackingId=eFoV6Sw2WumVaD0AbCad5w%3D%3D&refId=8yFVkS7Hr5ouB%2Fh54f2B9g%3D%3D&lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfRI21f%2FAQcOeydTbj4rReg%3D%3D&midToken=AQGUXEOTKFB7Bg&midSig=35YWf29py2HIw1&trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4483610439_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9&trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4483610439_ssid_16262187164_fmid_ju8vz3~mwycgequ~m0_crv_9-null-ju8vz3~mwycgequ~m0-null-null&eid=ju8vz3-mwycgequ-m0&otpToken=NDFmMmYxZjM4ZGI3OTYwMDAyMTk1OWJjMWNhMDhkODlmYjY0MTBlYjA5OGFiYzgwMjE2N2YyZGU2NmI1ODcxNzQ4ZWQ0ZDhlZmEwNTEwYWUyNGY5NmY5MDkwMTg0Njk0NTJjNDZlMGQ5YTJmMGRiYTkwMjY1NzBiMWI2ZTI3MzY0Y2UyNjc5Njg2ZjZjOWJhN2YsMiwx",
+  "source": "linkedin alert",
+  "score": 33,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 100,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 45,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -20
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data engineering",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "sr:sgs:744000163997412",
+  "company": "SGS",
+  "title": "Management Trainee – Business Development (Data Center & Smart Manufacturing)",
+  "location": "Shah Alam, Selangor",
+  "url": "https://jobs.smartrecruiters.com/SGS/744000163997412-management-trainee-business-development-data-center-smart-manufacturing-",
+  "source": "smartrecruiters",
+  "score": 33,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "data pipeline",
+   "requirements gathering"
+  ],
+  "missing": [
+   "data centre"
+  ],
+  "learning": [],
+  "projects": [
+   "Lift breakdown analytics",
+   "ERP automation (Exact Synergy REST)",
+   "Job radar (this project)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 46,
+   "Level": 70,
+   "Entry-friendly": 100,
+   "Full-time": 100,
+   "Language": 0,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 25,
+   "adjust": [
+    [
+     "Junior-friendly",
+     10
+    ],
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -15
+    ],
+    [
+     "Needs another language",
+     -25
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data centre",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:linkedin:senior data engineer - databricks:ultra tendency · kuala lumpur",
   "company": "Ultra Tendency",
   "title": "Senior Data Engineer - Databricks",
@@ -16158,49 +16802,6 @@
    "cap": 100
   },
   "track": "Data analysis",
-  "reach_out": false,
-  "posts": 1
- },
- {
-  "id": "wd:citi:24782240",
-  "company": "Citi",
-  "title": "KYC Operations Analyst 2 - C10 - KUALA LUMPUR",
-  "location": "Kuala Lumpur",
-  "url": "https://citi.wd5.myworkdayjobs.com/2/job/Kuala-Lumpur-Selangor-Malaysia/KYC-Operations-Analyst-2---C10---KUALA-LUMPUR_24782240",
-  "source": "workday",
-  "score": 31,
-  "first_seen": "2026-10-27",
-  "last_seen": "2026-11-27",
-  "matched": [],
-  "missing": [],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 33,
-   "Skills": 0,
-   "Level": 100,
-   "Entry-friendly": 90,
-   "Full-time": 100,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 15,
-   "skills": 0,
-   "adjust": [
-    [
-     "Junior-friendly",
-     8
-    ],
-    [
-     "In KL or Selangor",
-     8
-    ]
-   ],
-   "cap": 100
-  },
-  "track": "Business and systems",
   "reach_out": false,
   "posts": 1
  },
@@ -18047,11 +18648,50 @@
   "posts": 1
  },
  {
+  "id": "mail:jobstreet:data scientist:beyondsoft (malaysia) sdn. bhd. - profile 3 kl eco city, kuala lumpur",
+  "company": "Beyondsoft (Malaysia) Sdn Bhd",
+  "title": "Data Scientist",
+  "location": "Kuala Lumpur",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhs8PpTIo3jIgpTxzwLIHIqvLWT8RDvn4vHb7pelGOf2N91OWukchGz555Gc6MD33qJZhphV35hCj_WJBx2s1dj117o7W-4TzGx6Rb2mygzKLFezxrT08IdjEqg7wAmXN5TS4CN9azuQzm7PUTfIvVv/4w2/L4zPycIrSVG2Idvsz3NG0w/h72/h001.tybcs3XsQ9ITpYDfqGViPghRhLkK1WTWOwg7ZaaQ8o8",
+  "source": "jobstreet alert",
+  "score": 23,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 0,
+   "Level": 100,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data science",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:hr operations analyst (hr ssc):mcc shared service centre sdn bhd selangor",
   "company": "MCC Shared Service Centre Sdn Bhd",
   "title": "HR Operations Analyst (HR SSC)",
   "location": "Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiMmhhvOoMha1sRm_81pFwQ6XWn0oBbYUlbHJSm3j9AwwU9mdAj0QhRs1b9nc7D5ubde4YROJIDYqd4jz4igSWVnAaFu1CCvqiBeT4shtlIQzG6VhEL1FHefwK5THI3oU8iO4rxr62SfuWJZT9eE34B/4w1/y7GGcjnVS06OIqLcWHNHoQ/h81/h001.gBaS4HRI4T7kg6Jk8jm49MGeBLWXuZCFGJosB46Pk1k",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiMmhhvOoMha1sRm_81pFwQ6XWn0oBbYUlbHJSm3j9AwwU9mdAj0QhRs1b9nc7D5ubde4YROJIDYqd4jz4igSWVnAaFu1CCvqiBeT4shtlIQzG6VhEL1FHefwK5THI3oU8iO4rxr62SfuWJZT9eE34B/4w2/3-YsxmFXRKq7FYSfYcg2bg/h90/h001.v9gBzZmEkafN7c7Xh3A3Ym94Ma9jDSNKm-fI5RZFhLI",
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-26",
@@ -18129,7 +18769,7 @@
   "company": "AIA Digital+ Malaysia",
   "title": "Manager, Data Engineering (Azure Cloud)",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiMBzDL0AkdAKbLouMvOdPAF_RB3hykfhWBRlUsrverxSQddMC4t3vzU4QaKk9_b7aW4CgrRrM7MvGy6juR71LQzEfpfavY1xMm-mPZ3PPVFyn8EYcis0HJHAq70NzDUjhimo88A3S2wd62UwuePyRM/4w1/bctPLISnQMe4186oOem2Sg/h68/h001.BpdU4YRkOgdOItw30bM5aeOw4Yyf97MLFapd6xuiFwA",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiMBzDL0AkdAKbLouMvOdPAF_RB3hykfhWBRlUsrverxSQddMC4t3vzU4QaKk9_b7aW4CgrRrM7MvGy6juR71LQzEfpfavY1xMm-mPZ3PPVFyn8EYcis0HJHAq70NzDUjhimo88A3S2wd62UwuePyRM/4w2/FATGpthNSDOPN-iAnkzNvQ/h72/h001.FKE6lpCN75QZ3j_zjelHWURYGhM0NgOi1_ber0jkp4A",
   "source": "jobstreet alert",
   "score": 23,
   "first_seen": "2026-11-26",
@@ -19731,7 +20371,7 @@
   "company": "Maica Laminates Sdn Bhd",
   "title": "Business Analyst",
   "location": "Kulim, Kedah",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhJLNBC8pBzUUp9Mll_uSWBjWYKHv1x4m-Sjjf3FNoaXJV5PUM3sbYKz2RVRzBBGvk8780iN7FqdQuCT_pHPE3B-X0WyS6j5dvpi-XYe-aOqC2p5fyVOvj1YLW-xeaUgD7e-j__aCTbrWt-bxKPdFsy/4w1/NYr7wu31TMmISrh-cYNxwA/h81/h001.h40mKBtg6DAMDV465vFLmYsj4Vhf5cvp4ffs-2-N8IE",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhJLNBC8pBzUUp9Mll_uSWBjWYKHv1x4m-Sjjf3FNoaXJV5PUM3sbYKz2RVRzBBGvk8780iN7FqdQuCT_pHPE3B-X0WyS6j5dvpi-XYe-aOqC2p5fyVOvj1YLW-xeaUgD7e-j__aCTbrWt-bxKPdFsy/4w2/L4zPycIrSVG2Idvsz3NG0w/h90/h001.oCBNXWYW4_TtrEOx2oayvRqyD6JPtoPcytAf1r_HsYs",
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-26",
@@ -19770,7 +20410,7 @@
   "company": "Infinity 8",
   "title": "Data Quality Analyst (Johor Bahru)",
   "location": "Johor Bahru, Johor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiqKTcmQbmbCZNeO9UmyDz3ilL8juSejekCqnr9LNa1Q2IguhDZ9sqa1PKM6Nslf29BR0tXynL0A0ARBkHELcqy-oTMRIbtOZnO0j1em6m8ZYC3zaSlrVA51oEd7qGMHXAJP8APtXhkahAWBvbAh8ie/4w1/NYr7wu31TMmISrh-cYNxwA/h65/h001.csVi3P3k0qTKUaMelbdKhaGVHqKaklXYPnkpt-9ro8M",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiqKTcmQbmbCZNeO9UmyDz3ilL8juSejekCqnr9LNa1Q2IguhDZ9sqa1PKM6Nslf29BR0tXynL0A0ARBkHELcqy-oTMRIbtOZnO0j1em6m8ZYC3zaSlrVA51oEd7qGMHXAJP8APtXhkahAWBvbAh8ie/4w2/L4zPycIrSVG2Idvsz3NG0w/h66/h001.GWRe27FNOdGOOT93IOCL5ddwb67HPrCHEvLo916qV0I",
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-26",
@@ -19811,7 +20451,7 @@
   "company": "DayOne Data Center",
   "title": "DC Admin (Data Center)",
   "location": "Johor Bahru, Johor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjdqlwW1d2J6pnOCOI0ED8n6PqnL0s5S-OSaCN8mBxqt0eNiUEfTjFx3xpasmOaqPvp2jCo0wEp1oTmMOOrKIM7s502tWBm2aFzB1NL74LjZL7RXgrUph44ld8WJhBN9PgwzLV_5Hs3oL1IxwLadXpR/4w1/bctPLISnQMe4186oOem2Sg/h96/h001.8f1a-9K5XE3C12lafV-bGvPJRk_vkitmBuzxr4q06qo",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjdqlwW1d2J6pnOCOI0ED8n6PqnL0s5S-OSaCN8mBxqt0eNiUEfTjFx3xpasmOaqPvp2jCo0wEp1oTmMOOrKIM7s502tWBm2aFzB1NL74LjZL7RXgrUph44ld8WJhBN9PgwzLV_5Hs3oL1IxwLadXpR/4w2/FATGpthNSDOPN-iAnkzNvQ/h86/h001.42szsX6m6uHi-paAMAcGnvgFQsUoR1wOmfxhheXtqmo",
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-26",
@@ -19891,7 +20531,7 @@
   "company": "Agensi Pekerjaan KELLY OCG Sdn Bhd",
   "title": "Procurement Data Analyst",
   "location": "Penang",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhJCC7-jNgYNCECjwQN3EU-HH2aCc2lQNF8_fTU1L6le5nOyUZ9Wtzz58LH7VBVr3WHFVckRxcxu7Ljce2m-1Eo9j98ExhRaHHxDO8sYGzYzpDqNqaj_0jW5MH1py7zIJGk_RRkHw396FpWMhnXtInq/4w1/NYr7wu31TMmISrh-cYNxwA/h75/h001.brLfXDCrFjflLlxYBcQ3Gex17VuqSGNyFmdKvVEVuSk",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhJCC7-jNgYNCECjwQN3EU-HH2aCc2lQNF8_fTU1L6le5nOyUZ9Wtzz58LH7VBVr3WHFVckRxcxu7Ljce2m-1Eo9j98ExhRaHHxDO8sYGzYzpDqNqaj_0jW5MH1py7zIJGk_RRkHw396FpWMhnXtInq/4w2/L4zPycIrSVG2Idvsz3NG0w/h64/h001.R2R-1DgNDD1PgxicVwshrAZWQr8b-fGAL95jlC5zAFw",
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-25",
@@ -19930,7 +20570,7 @@
   "company": "AG Staffing Malaysia",
   "title": "Project Engineers- Sr/Jr/Fresh- Site/Planner/QAQC (Data Centre Construction) JB",
   "location": "Johor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAj2sI_YKaZ9YW35ry3NSn3S2DGnkfoDC3fxx092ub_Qq-KB6QyAHEPFCfLQEFZpT60uEoDSohabghfEZ0kly7Rfr6yl5Tpe5SXOMJ5jNJGsVova9tffA5PP7lhm_cfVO230D-jD2vkCDPpCEMZO6ajq/4w0/YGGQMvomQzCiB_NxX6Gdcg/h74/h001.RQDvgV3DMKZl2nFvYUqNNDlePgOihIl9E4YbLBxbDCA",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAj2sI_YKaZ9YW35ry3NSn3S2DGnkfoDC3fxx092ub_Qq-KB6QyAHEPFCfLQEFZpT60uEoDSohabghfEZ0kly7Rfr6yl5Tpe5SXOMJ5jNJGsVova9tffA5PP7lhm_cfVO230D-jD2vkCDPpCEMZO6ajq/4w2/FATGpthNSDOPN-iAnkzNvQ/h94/h001.0pOcQ8HhWTsPpxSdVur0frsnqEE0LBhn4EtzsAGd4wc",
   "source": "jobstreet alert",
   "score": 20,
   "first_seen": "2026-11-25",
@@ -20593,11 +21233,59 @@
   "posts": 1
  },
  {
+  "id": "wd:cw:R-MYS033",
+  "company": "Cushman & Wakefield",
+  "title": "CSA Manager (Data Centre, Johor Bahru)",
+  "location": "Kuala Lumpur",
+  "url": "https://cw.wd1.myworkdayjobs.com/External/job/CW-Site---MYS---Kuala-Lumpur---32-11-Q-Sentral-2A-Jalan-Stesen-Sentral-2-Kuala-Lumpur-Sentral/CSA-Manager--Data-Centre--Johor-Bahru-_R-MYS033",
+  "source": "workday",
+  "score": 18,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "excel"
+  ],
+  "missing": [
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 17,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 10,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -30
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data centre",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:senior executive, business performance & analytics:compasia sdn bhd petaling jaya, selangor rm 4,800 – rm 6,500 per month",
   "company": "CompAsia Sdn Bhd",
   "title": "Senior Executive, Business Performance & Analytics",
   "location": "Petaling Jaya, Selangor",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjwWMJVph0Ew-BkUWFbdzaN39BAMYt1A8PKZrG0VdBB2PHcYk5tWgnt2UA9AOFSzDhfv9qGwS6hFjnV8dUAcHTxUyPD-t4FHqdlqqCXHTz_o8dPR5o6TKMCrvlhVjxYwUB937sE3VxL4kEOleFp7LMV/4w1/NYr7wu31TMmISrh-cYNxwA/h71/h001.8gONPgIr_1ZmU39ynZDQD9Ay2Ak5kRBcumPAyg2Zyfo",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAjwWMJVph0Ew-BkUWFbdzaN39BAMYt1A8PKZrG0VdBB2PHcYk5tWgnt2UA9AOFSzDhfv9qGwS6hFjnV8dUAcHTxUyPD-t4FHqdlqqCXHTz_o8dPR5o6TKMCrvlhVjxYwUB937sE3VxL4kEOleFp7LMV/4w2/L4zPycIrSVG2Idvsz3NG0w/h80/h001.WAQzVNiTQTHSsrMu7AQYKmiDldmveN4GDzKJGn053eY",
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-26",
@@ -20640,7 +21328,7 @@
   "company": "ELK Technical Support Jobs",
   "title": "Senior BI Analyst",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiOmk_ZgVPsc3FiquGdKe5KR7YzjgqXCDniQJ_Bo-PflRQhUcwuewA_inoGyZnClmcOJyDzgEPZyoPgacyjqcfdYgkdXLQwqWvRP3W4qZVi7DxWjsla7hvpzsbFst0VMjqIYji5qOw6kil5MWL4w5lv/4w1/NYr7wu31TMmISrh-cYNxwA/h73/h001.eqyMaXsgWY6isZ4Yb3NQpMxortaKUeB2VjDNEvU7Ty4",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAiOmk_ZgVPsc3FiquGdKe5KR7YzjgqXCDniQJ_Bo-PflRQhUcwuewA_inoGyZnClmcOJyDzgEPZyoPgacyjqcfdYgkdXLQwqWvRP3W4qZVi7DxWjsla7hvpzsbFst0VMjqIYji5qOw6kil5MWL4w5lv/4w2/L4zPycIrSVG2Idvsz3NG0w/h74/h001.SXy3-DAT7oXQb1proZ8EP0jwSb7-vP6Ei7f2PRCogSQ",
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-26",
@@ -20726,7 +21414,7 @@
   "company": "AEON Credit Service (M) Bhd",
   "title": "Senior Data Analyst (AEON360)",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhXavpHkEJJYfvN-JbUVZ9VmyQVw0HsNC9yVIMhij5643WpQyWe6riiOWugLStNUfIqahR60Q0o77vqT7QGiZ1pFcQAsovJVLdg2OwavPa7hNmJsDI9lMygVMIWWU7vONoZ-6jKFEmiQqs1cewoGL_G/4w1/NYr7wu31TMmISrh-cYNxwA/h69/h001.3mBvpLW_eBYTRA1pw1BEtQxbVoEesUQjkOX2VgpfANE",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhXavpHkEJJYfvN-JbUVZ9VmyQVw0HsNC9yVIMhij5643WpQyWe6riiOWugLStNUfIqahR60Q0o77vqT7QGiZ1pFcQAsovJVLdg2OwavPa7hNmJsDI9lMygVMIWWU7vONoZ-6jKFEmiQqs1cewoGL_G/4w2/L4zPycIrSVG2Idvsz3NG0w/h62/h001.msM3u32QXw6AqbzIdTPvL5u7IRpGo3vY_7hocXmXoAY",
   "source": "jobstreet alert",
   "score": 18,
   "first_seen": "2026-11-25",
@@ -22434,7 +23122,7 @@
   "company": "AEON Credit Service (M) Bhd",
   "title": "Lead Data Analyst (AEON360)",
   "location": "Kuala Lumpur",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAibbYLa_0i4LH6D-fNdCmsCwuw0XOrHW_J1AnLIZysghsVSobtOZWtmBzLm-igJ-z6L-Z3NGepuzVuGe-_i19_XYJieJzyDqtJThbnVSmDCerisXdCbdXo2hYQIYqnS5eSOLZqHZo7p0rfTvNdTgov2/4w1/NYr7wu31TMmISrh-cYNxwA/h79/h001.cPznuAH9N4UrfyBzp9VsTcdaT4M34661SfqbWT3-BGQ",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAibbYLa_0i4LH6D-fNdCmsCwuw0XOrHW_J1AnLIZysghsVSobtOZWtmBzLm-igJ-z6L-Z3NGepuzVuGe-_i19_XYJieJzyDqtJThbnVSmDCerisXdCbdXo2hYQIYqnS5eSOLZqHZo7p0rfTvNdTgov2/4w2/L4zPycIrSVG2Idvsz3NG0w/h68/h001.HEN80-vCAiJIVc4Hwd6BwSNMRYeqU2SclQ9j2TTISZs",
   "source": "jobstreet alert",
   "score": 13,
   "first_seen": "2026-11-25",
@@ -22900,6 +23588,51 @@
   "posts": 1
  },
  {
+  "id": "sr:nielseniq:744000163956259",
+  "company": "NielsenIQ",
+  "title": "Data Operation Analyst Intern",
+  "location": "Bangsar, Kuala Lumpur",
+  "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163956259-data-operation-analyst-intern",
+  "source": "smartrecruiters",
+  "score": 12,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "statistics"
+  ],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 52,
+   "Level": 20,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 29,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -40
+    ]
+   ],
+   "cap": 45
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
   "id": "mail:jobstreet:data science & automation engineering intern:able perfect sdn bhd teluk panglima garang, selangor",
   "company": "Able Perfect Sdn Bhd",
   "title": "Data Science & Automation Engineering Intern",
@@ -23106,6 +23839,47 @@
    "cap": 100
   },
   "track": "BI and reporting",
+  "reach_out": true,
+  "posts": 1
+ },
+ {
+  "id": "mail:jobstreet:qa/qc & commissioning engineer/ senior engineer (data center, ict/elv):teco ncl sdn bhd port dickson, negeri sembilan rm 5,000 – rm 7,000 per month",
+  "company": "TECO NCL Sdn Bhd",
+  "title": "QA/QC & Commissioning Engineer/ Senior Engineer (Data Center, ICT/ELV)",
+  "location": "Negeri Sembilan",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAimp3iIivtJKf5MVannbRKemxKroML1Hlie0u6DPK4WqmbyMucP-RGeO0ucQSlylNN06LkZGWLNmcUTFtSTzoAuPdotdiywcOZMddOq3e5AYDhS5RqcPrdc3IGd814GO-k_xpI4iRrjr71xtprsbB9G/4w2/FATGpthNSDOPN-iAnkzNvQ/h92/h001.zi4hSdkoeNpFk-RTJ70UBQGyMrtXSLwrCsT_2KsaRCE",
+  "source": "jobstreet alert",
+  "score": 10,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [
+   "data centre"
+  ],
+  "learning": [],
+  "projects": [],
+  "salary": "RM 5,000 – 7,000",
+  "parts": {
+   "Job title": 67,
+   "Skills": 0,
+   "Level": 60,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 50
+  },
+  "math": {
+   "title": 30,
+   "skills": 0,
+   "adjust": [
+    [
+     "Senior title or 5+ years",
+     -20
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data centre",
   "reach_out": true,
   "posts": 1
  },
@@ -24829,7 +25603,7 @@
   "company": "Ubm Tech Research Malaysia Sdn Bhd",
   "title": "Data Architect",
   "location": "Penang",
-  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgbCxabTY_F2bCWQKkgjanRy6ekOazTfQplxpt_a01cpI5VFWLkTn5rXkR9rx3ldkgleVqR_dKUbvfGulOexDL9gZ8WMNEGCKQWvHxuJUf8fGHRVdIwwqvnZNdpEjMIx74QmBRKrgo-bAb1Ik6Vf5Gq/4w1/bctPLISnQMe4186oOem2Sg/h66/h001.N5TGyiem_ev3MHYDTr7gXQTmQ5Ky1ddmKdMMAZoV1CY",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAgbCxabTY_F2bCWQKkgjanRy6ekOazTfQplxpt_a01cpI5VFWLkTn5rXkR9rx3ldkgleVqR_dKUbvfGulOexDL9gZ8WMNEGCKQWvHxuJUf8fGHRVdIwwqvnZNdpEjMIx74QmBRKrgo-bAb1Ik6Vf5Gq/4w2/FATGpthNSDOPN-iAnkzNvQ/h68/h001.mUICV4n_WEmM0ACopwKFS0LnNzUu4ZRn-498ATcVMlU",
   "source": "jobstreet alert",
   "score": 5,
   "first_seen": "2026-11-26",
@@ -25940,6 +26714,104 @@
   "posts": 2
  },
  {
+  "id": "mail:jobstreet:manager - data management & insight:mitsubishi motors malaysia sdn bhd shah alam, selangor",
+  "company": "Mitsubishi Motors Malaysia Sdn Bhd",
+  "title": "Manager - Data Management & Insight",
+  "location": "Shah Alam, Selangor",
+  "url": "https://url.jobstreet.com/uni/ss/c/u001.WSbQVsumGY0fqDbPQov6Im4oQ8-tdBXwE7nLWXh5lAhtIG6GBbDQ5I_K9x39aVWJo_Qv4Q2uvwKLKGHyI5EZ00Ws14JL9_2J5PGzReIFk3JK-ZSbLdWEvK8rJUbndeBlZXk08MwvcmU8sdXyxoY4WKQ1YCJkvQVKmT5J6kqxvVrDjJSYRMtKKYOHEPd-48nW/4w2/FATGpthNSDOPN-iAnkzNvQ/h76/h001.Tno94_ghKfg0DttsapOysRnVp8yo1rULR1-rrcU0DAs",
+  "source": "jobstreet alert",
+  "score": 0,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [],
+  "missing": [],
+  "learning": [],
+  "projects": [],
+  "salary": "",
+  "parts": {
+   "Job title": 33,
+   "Skills": 0,
+   "Level": 40,
+   "Entry-friendly": 50,
+   "Full-time": 100,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 15,
+   "skills": 0,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -30
+    ]
+   ],
+   "cap": 100
+  },
+  "track": "Data analysis",
+  "reach_out": false,
+  "posts": 1
+ },
+ {
+  "id": "sr:turnertownsend:744000163970599",
+  "company": "Turner & Townsend",
+  "title": "Contract Manager (Data Centre)",
+  "location": "Cyberjaya, Selangor",
+  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000163970599-contract-manager-data-centre-",
+  "source": "smartrecruiters",
+  "score": 0,
+  "first_seen": "2026-11-27",
+  "last_seen": "2026-11-27",
+  "matched": [
+   "erp",
+   "excel"
+  ],
+  "missing": [
+   "data centre",
+   "stakeholder management"
+  ],
+  "learning": [],
+  "projects": [
+   "ERP automation (Exact Synergy REST)"
+  ],
+  "salary": "",
+  "parts": {
+   "Job title": 67,
+   "Skills": 36,
+   "Level": 10,
+   "Entry-friendly": 50,
+   "Full-time": 10,
+   "Language": 100,
+   "Location": 100
+  },
+  "math": {
+   "title": 30,
+   "skills": 20,
+   "adjust": [
+    [
+     "In KL or Selangor",
+     8
+    ],
+    [
+     "Senior title or 5+ years",
+     -45
+    ],
+    [
+     "Not permanent full-time",
+     -30
+    ]
+   ],
+   "cap": 45
+  },
+  "track": "Data centre",
+  "reach_out": true,
+  "posts": 2
+ },
+ {
   "id": "sr:turnertownsend:744000163810239",
   "company": "Turner & Townsend",
   "title": "Mechanical Project Manager - Data Center",
@@ -26696,60 +27568,6 @@
    "cap": 100
   },
   "track": "Data analysis",
-  "reach_out": true,
-  "posts": 1
- },
- {
-  "id": "sr:turnertownsend:744000161719078",
-  "company": "Turner & Townsend",
-  "title": "Contract Manager (Data Centre)",
-  "location": "Kuala Lumpur",
-  "url": "https://jobs.smartrecruiters.com/TurnerTownsend/744000161719078-contract-manager-data-centre-",
-  "source": "smartrecruiters",
-  "score": 0,
-  "first_seen": "2026-11-16",
-  "last_seen": "2026-11-27",
-  "matched": [],
-  "missing": [
-   "critical facilities",
-   "data centre",
-   "electrical systems",
-   "hvac",
-   "stakeholder management",
-   "ups"
-  ],
-  "learning": [],
-  "projects": [],
-  "salary": "",
-  "parts": {
-   "Job title": 67,
-   "Skills": 0,
-   "Level": 10,
-   "Entry-friendly": 50,
-   "Full-time": 10,
-   "Language": 100,
-   "Location": 100
-  },
-  "math": {
-   "title": 30,
-   "skills": 0,
-   "adjust": [
-    [
-     "In KL or Selangor",
-     8
-    ],
-    [
-     "Senior title or 5+ years",
-     -45
-    ],
-    [
-     "Not permanent full-time",
-     -30
-    ]
-   ],
-   "cap": 45
-  },
-  "track": "Data centre",
   "reach_out": true,
   "posts": 1
  },
